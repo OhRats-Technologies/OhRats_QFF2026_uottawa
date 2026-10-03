@@ -183,12 +183,29 @@ def main():
     experiment.add_argument("--steps", type=int, default=81)
     experiment.add_argument("--shots", type=int, default=4096)
     experiment.add_argument("--seed", type=int, default=2026)
+    channel = sub.add_parser(
+        "channel", help="Run connectome spectral dynamics and quantum channel mixing"
+    )
+    channel.add_argument("--steps", type=int, default=16)
+    channel.add_argument("--gamma", type=float, default=0.6)
+    channel.add_argument("--output", type=Path, default=REPO / "results/spectral_channel")
+    channel.add_argument("--seed", type=int, default=2026)
     args = parser.parse_args()
     try:
         if args.command == "fetch":
             manifest = fetch_snapshot(args.data)
             print(
                 f"Saved {len(manifest['sources'])} cell-type pages as a graph snapshot in {args.data}"
+            )
+        elif args.command == "channel":
+            from .channel_cli import run as run_channel
+            run_channel(
+                [
+                    "--steps", str(args.steps),
+                    "--gamma", str(args.gamma),
+                    "--output", str(args.output),
+                    "--seed", str(args.seed),
+                ]
             )
         else:
             if (
