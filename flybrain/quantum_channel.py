@@ -10,7 +10,7 @@ to the quantum channel entanglement-breaking index n_EB(E) using Qiskit:
 """
 
 from dataclasses import dataclass
-from typing import Dict, List, Optional, Sequence, Tuple, Union
+from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 import numpy as np
 from scipy.linalg import expm
 from qiskit import QuantumCircuit, transpile
@@ -21,6 +21,7 @@ from qiskit.quantum_info import (
     Operator,
     SparsePauliOp,
     Statevector,
+    SuperOp,
     partial_trace,
 )
 from qiskit_aer import AerSimulator
@@ -116,18 +117,21 @@ class ConnectomeQuantumChannel:
             rho_out += E @ rho @ E.conj().T
         return rho_out
 
-    def power_channel(self, r: int) -> "ConnectomeQuantumChannel":
-        """Compute the r-step composed channel E^r."""
+    def power_superop(self, r: int) -> SuperOp:
+        r"""Compute the true r-step composed channel E^r = E \circ ... \circ E.
+
+        Uses exact superoperator exponentiation, avoiding the heuristic shortcut
+        that confuses repeated application of (gamma*I + (1-gamma)*D_P) with
+        gamma^r*I + (1-gamma^r)*D_{P^r}.
+        """
         if r < 1:
             raise ValueError("Steps r must be >= 1")
-        if r == 1:
-            return self
+        sop = SuperOp(self.qiskit_channel)
+        return sop.power(r)
 
-        # The classical matrix powers to P^r
-        Pr = np.linalg.matrix_power(self.P, r)
-        gamma_r = self.gamma**r
-        h_eff = self.hamiltonian * r if self.hamiltonian is not None else None
-        return ConnectomeQuantumChannel(Pr, gamma=gamma_r, hamiltonian=h_eff, dt=self.dt)
+    def power_channel(self, r: int) -> Kraus:
+        """Return Kraus representation of the true r-step composed channel."""
+        return Kraus(self.power_superop(r))
 
 
 def partial_transpose_b(density_matrix: np.ndarray, dim_a: int, dim_b: int) -> np.ndarray:
@@ -137,29 +141,38 @@ def partial_transpose_b(density_matrix: np.ndarray, dim_a: int, dim_b: int) -> n
     return transposed.reshape((dim_a * dim_b, dim_a * dim_b))
 
 
-def choi_density_matrix(channel: ConnectomeQuantumChannel) -> np.ndarray:
-    """Compute the exact Choi density matrix J(E) = (I_A otimes E_B)(|Phi^+><Phi^+|)."""
-    N = channel.n_nodes
-    # Maximally entangled state |Phi^+> = 1/sqrt(N) sum_i |i>|i>
-    phi_plus = np.zeros((N, N), dtype=complex)
-    for i in range(N):
-        phi_plus[i, i] = 1.0 / np.sqrt(N)
-    bell_vec = phi_plus.reshape(N * N)
-    bell_dm = np.outer(bell_vec, bell_vec.conj())
+def choi_density_matrix(channel: ConnectomeQuantumChannel, r: int = 1) -> np.ndarray:
+    r"""Compute the exact Choi density matrix J(E^r) = (I_A \otimes E^r_B)(|\Phi^+\rangle\langle\Phi^+|).
 
-    # Apply I_A otimes E_B
-    choi = np.zeros((N * N, N * N), dtype=complex)
-    for E_b in channel.kraus_operators:
-        E_full = np.kron(np.eye(N, dtype=complex), E_b)
-        choi += E_full @ bell_dm @ E_full.conj().T
-    return choi
+    Normalized as a valid density matrix with Tr(J) = 1.
+    """
+    N = channel.n_nodes
+    if r == 1:
+        phi_plus = np.zeros((N, N), dtype=complex)
+        for i in range(N):
+            phi_plus[i, i] = 1.0 / np.sqrt(N)
+        bell_vec = phi_plus.reshape(N * N)
+        bell_dm = np.outer(bell_vec, bell_vec.conj())
+
+        choi = np.zeros((N * N, N * N), dtype=complex)
+        for E_b in channel.kraus_operators:
+            E_full = np.kron(np.eye(N, dtype=complex), E_b)
+            choi += E_full @ bell_dm @ E_full.conj().T
+        return choi
+    else:
+        sop_r = channel.power_superop(r)
+        return Choi(sop_r).data / N
 
 
 def compute_ppt_negativity(choi_dm: np.ndarray, dim: int) -> Tuple[float, float, float]:
     """Compute Peres-Horodecki PPT negativity of bipartite Choi density matrix.
 
     Returns: (negativity, log_negativity, min_eigenvalue)
-    If negativity == 0, the state satisfies PPT (necessary for entanglement breaking).
+    - If negativity > 0, the state is strictly non-separable (provably entangled).
+    - If negativity == 0, the state satisfies PPT. For d x d bipartite systems,
+      PPT is a necessary condition for separability (giving a rigorous certified lower
+      bound on the entanglement-breaking index n_EB >= r_PPT). For generalized isotropic
+      and diagonal-mixture Choi states, PPT coincides with separability.
     """
     pt = partial_transpose_b(choi_dm, dim, dim)
     evals = np.linalg.eigvalsh(pt)
@@ -270,8 +283,7 @@ def compare_classical_and_quantum_mixing(
     eb_index = None
 
     for r in steps:
-        channel_r = base_channel.power_channel(r)
-        choi = choi_density_matrix(channel_r)
+        choi = choi_density_matrix(base_channel, r=r)
         neg, log_neg, _ = compute_ppt_negativity(choi, dim)
         negs.append(neg)
         log_negs.append(log_neg)
@@ -279,10 +291,11 @@ def compare_classical_and_quantum_mixing(
         if neg <= 1e-8 and eb_index is None:
             eb_index = r
 
-        # Output state starting from uniform superposition
+        # Output state starting from uniform superposition under true composition
         psi0 = np.ones(dim, dtype=complex) / np.sqrt(dim)
-        rho0 = np.outer(psi0, psi0.conj())
-        rho_r = channel_r.apply_density_matrix(rho0)
+        rho0 = DensityMatrix(np.outer(psi0, psi0.conj()))
+        sop_r = base_channel.power_superop(r)
+        rho_r = rho0.evolve(sop_r).data
         td = 0.5 * float(np.linalg.norm(rho_r - rho_stat, ord="nuc"))
         trace_dists.append(td)
 
@@ -296,3 +309,49 @@ def compare_classical_and_quantum_mixing(
         trace_distance_to_stationary=trace_dists,
         entanglement_breaking_index=eb_index,
     )
+
+
+def bipartite_conjugate_witness(
+    counts_z: Dict[str, int],
+    counts_x: Dict[str, int],
+    pair_indices: Sequence[Tuple[int, int]],
+) -> List[Dict[str, Any]]:
+    """Calculate the bipartite conjugate-basis witness S = <ZZ> + <XX> for each pair.
+
+    For any separable state, |<ZZ>| + |<XX>| <= 1.
+    S > 1 strictly certifies non-separability (quantum entanglement) from hardware counts.
+    """
+    total_z = sum(counts_z.values())
+    total_x = sum(counts_x.values())
+
+    results = []
+    for pair_a, pair_b in pair_indices:
+        exp_z = 0.0
+        for bits, c in counts_z.items():
+            bit_a = int(bits[-(pair_a + 1)])
+            bit_b = int(bits[-(pair_b + 1)])
+            sign = 1 if bit_a == bit_b else -1
+            exp_z += sign * (c / total_z)
+
+        exp_x = 0.0
+        for bits, c in counts_x.items():
+            bit_a = int(bits[-(pair_a + 1)])
+            bit_b = int(bits[-(pair_b + 1)])
+            sign = 1 if bit_a == bit_b else -1
+            exp_x += sign * (c / total_x)
+
+        s_val = exp_z + exp_x
+        se_z = np.sqrt(max(0.0, 1.0 - exp_z**2) / total_z)
+        se_x = np.sqrt(max(0.0, 1.0 - exp_x**2) / total_x)
+        se_s = float(np.sqrt(se_z**2 + se_x**2))
+
+        is_entangled = (s_val - 2 * se_s) > 1.0
+        results.append({
+            "pair": (pair_a, pair_b),
+            "exp_zz": float(exp_z),
+            "exp_xx": float(exp_x),
+            "witness_sum": float(s_val),
+            "standard_error": se_s,
+            "certified_entangled": is_entangled,
+        })
+    return results

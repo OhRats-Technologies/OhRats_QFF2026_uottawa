@@ -151,3 +151,7 @@
 {"ts_utc":"2026-10-03T16:34:58.375630+00:00","ts_toronto":"2026-10-03T12:34:58.375630-04:00","idea":"quantum-channel","stage":"entanglement_breaking_profile","status":"passed","elapsed_seconds":0.23171966699919722}
 {"ts_utc":"2026-10-03T16:35:18.863456+00:00","ts_toronto":"2026-10-03T12:35:18.863456-04:00","idea":"noise-interference","stage":"simulation_sweep","status":"started"}
 {"ts_utc":"2026-10-03T16:35:21.163400+00:00","ts_toronto":"2026-10-03T12:35:21.163400-04:00","idea":"noise-interference","stage":"simulation_sweep","status":"passed","elapsed_seconds":2.29994381600045,"runs":432,"repeats":12,"evidence":"results/noise/raw.csv","gates":{"probability_conservation":true,"positive_density_matrix":true,"separate_readout_and_gate_controls":true}}
+{"ts_utc":"2026-10-03T17:30:47.823309+00:00","ts_toronto":"2026-10-03T13:30:47.823309-04:00","idea":"spectral-connectome","stage":"classical_analysis","status":"started"}
+{"ts_utc":"2026-10-03T17:30:47.836700+00:00","ts_toronto":"2026-10-03T13:30:47.836700-04:00","idea":"spectral-connectome","stage":"classical_analysis","status":"passed","elapsed_seconds":0.013390247999268468}
+{"ts_utc":"2026-10-03T17:30:47.836832+00:00","ts_toronto":"2026-10-03T13:30:47.836832-04:00","idea":"quantum-channel","stage":"entanglement_breaking_profile","status":"started"}
+{"ts_utc":"2026-10-03T17:30:48.042535+00:00","ts_toronto":"2026-10-03T13:30:48.042535-04:00","idea":"quantum-channel","stage":"entanglement_breaking_profile","status":"passed","elapsed_seconds":0.2057010540002011}

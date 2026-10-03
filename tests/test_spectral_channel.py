@@ -19,6 +19,7 @@ from flybrain.quantum_channel import (
     construct_entanglement_witness,
     run_witness_aer,
     compare_classical_and_quantum_mixing,
+    bipartite_conjugate_witness,
 )
 
 
@@ -162,6 +163,27 @@ class ConnectomeSpectralAndChannelTests(unittest.TestCase):
         self.assertEqual(len(profile.choi_negativity), 6)
         # Negativity should decrease with steps
         self.assertGreaterEqual(profile.choi_negativity[0], profile.choi_negativity[-1])
+
+    def test_true_composition_counterexample(self):
+        from qiskit.quantum_info import DensityMatrix
+        # Two-node counterexample from audit: P = [[0.1, 0.9], [0.9, 0.1]], gamma = 0.6
+        P = np.array([[0.1, 0.9], [0.9, 0.1]])
+        ch = ConnectomeQuantumChannel(P, gamma=0.6)
+        rho0 = DensityMatrix([[1.0, 0], [0, 0]])
+
+        # True composition at r=2 gives [0.5392, 0.4608]
+        sop2 = ch.power_superop(2)
+        rho2 = rho0.evolve(sop2).data
+        np.testing.assert_allclose(np.diag(rho2).real, [0.5392, 0.4608], atol=1e-8)
+
+    def test_bipartite_conjugate_witness(self):
+        # Simulated counts for an entangled Bell state (measuring in Z and X)
+        counts_z = {"00": 512, "11": 512}
+        counts_x = {"00": 512, "11": 512}
+        res = bipartite_conjugate_witness(counts_z, counts_x, [(0, 1)])
+        self.assertEqual(len(res), 1)
+        self.assertAlmostEqual(res[0]["witness_sum"], 2.0, places=6)
+        self.assertTrue(res[0]["certified_entangled"])
 
 
 if __name__ == "__main__":
