@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "evidence": "real_ibm_hardware",
+  "experiment": "bell-pair",
+  "backend": "ibm_marrakesh",
+  "qubits": 2,
+  "shots": 128,
+  "counts": {
+    "11": 67,
+    "00": 58,
+    "01": 3
+  },
+  "bit_order": "Qiskit measurement string: highest-index qubit on the left",
+  "ideal_probabilities": {
+    "00": 0.5,
+    "01": 0.0,
+    "10": 0.0,
+    "11": 0.5
+  },
+  "total_variation_from_ideal": 0.046875,
+  "timing": {
+    "ibm_timestamps": {
+      "created": "2026-10-03T17:05:50.605792Z",
+      "finished": "2026-10-03T17:05:56.518692Z",
+      "running": "2026-10-03T17:05:52.12722Z"
+    },
+    "created_to_finished_seconds": 5.9129,
+    "created_to_running_seconds": 1.521428,
+    "running_to_finished_seconds": 4.391472,
+    "qpu_charge_seconds": 2,
+    "submission_api_roundtrip_seconds": 0.8885364169836976,
+    "observed_submission_to_collection_seconds": 40.393991,
+    "result_received_utc": "2026-10-03T17:06:30.221243+00:00"
+  },
+  "compiled_circuit": {
+    "depth": null,
+    "operations": null
+  },
+  "provenance": {
+    "preparation": "H(0), CX(0,1), measure both qubits"
+  },
+  "packages": {
+    "qiskit": "2.5.2",
+    "qiskit-ibm-runtime": "0.50.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "limitations": [
+    "128 shots include substantial sampling uncertainty.",
+    "Z-basis measurements alone do not certify entanglement.",
+    "Running duration includes runtime overhead; QPU charge is reported separately."
+  ]
+}

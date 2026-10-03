@@ -52,6 +52,7 @@ for (const path of [
   "bun.lock",
   "package.json",
   "serve.mjs",
+  "neuroglancer.html",
   "THIRD_PARTY_LICENSES.txt",
   "../flybrain/explorer.py",
   "../flybrain/morphology.py",

@@ -138,7 +138,8 @@ select:focus-visible,
   padding-top: 9px;
   border-top: 1px solid var(--line);
 }
-.views button {
+.views button,
+.views a {
   padding: 8px 5px;
   font: 10px var(--mono);
   color: var(--muted);
@@ -693,7 +694,8 @@ body.light {
     transform: none;
     justify-content: space-between;
   }
-  .views button {
+  .views button,
+  .views a {
     font-size: 8px;
     letter-spacing: 0;
     padding: 8px 0;
@@ -888,6 +890,7 @@ SOFTWARE. -->
       ><button data-mode="interference" aria-pressed="false">
         Interference</button
       ><button data-mode="hardware" aria-pressed="false">Compare</button>
+      <a href="./neuroglancer.html">Neuroglancer</a>
     </nav>
     <div class="top-tools">
       <button

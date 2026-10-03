@@ -6,6 +6,11 @@ const server = Bun.serve({
     const path = new URL(request.url).pathname;
     if (path === "/" || path === "/index.html")
       return new Response(file, { headers: { "Cache-Control": "no-store" } });
+    if (path === "/neuroglancer.html")
+      return new Response(
+        Bun.file(new URL("neuroglancer.html", import.meta.url)),
+        { headers: { "Cache-Control": "no-store" } },
+      );
     return new Response("Not found", { status: 404 });
   },
 });

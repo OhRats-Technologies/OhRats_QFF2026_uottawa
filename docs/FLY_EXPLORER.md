@@ -53,3 +53,9 @@ This uses a bounded proposal–build–inspect–correct workflow inspired by th
 | 9. Portability | Frozen Bun install and dependency audit, embedded-asset/hash checks, original evidence verifier, and CPU geometry fallback. HTTP/HTTPS review is verified; direct file-URL review remains blocked by tool policy. |
 
 The renderer draws only when the scene changes, orbit runs or playback runs. The CPU fallback projects the same measured geometry and honors clipping and trace draw ranges; it sparsely rasterizes region wire triangles. It is a functional fallback, not identical shaded output or a measured cross-device performance claim. Final screenshots document the reviewed build rather than a mockup.
+
+## Neuroglancer
+
+The **Neuroglancer** navigation link opens `explorer/neuroglancer.html`, a full-screen embedded upstream viewer using Janelia’s [published MaleCNS v1.0 scene](https://www.janelia.org/project-team/flyem/male-cns-connectome). It provides electron microscopy slices, neuron segmentation, neuropil outlines and synapse layers. Its original controls remain available; the floating Explorer link returns to the local model. The ↗ control opens the same scene independently if embedding is unavailable.
+
+This separate page requires internet and streams public data from the upstream viewer and dataset hosts. It does not access `.env`, call IBM, or calculate the quantum experiment. The four original Three.js views retain embedded local data. MaleCNS data attribution and CC-BY licensing remain with the upstream dataset.

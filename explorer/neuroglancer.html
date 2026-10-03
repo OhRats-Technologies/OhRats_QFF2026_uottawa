@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#101e1d" />
+    <title>Fly / Neuroglancer</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #101e1d;
+        color: #e0e7dd;
+        font:
+          12px ui-monospace,
+          monospace;
+      }
+      iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      nav {
+        position: fixed;
+        bottom: 14px;
+        left: 14px;
+        display: flex;
+        gap: 2px;
+        border: 1px solid #ffffff30;
+        background: #101e1deb;
+        border-radius: 5px;
+        z-index: 2;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        padding: 10px 12px;
+      }
+      a:hover,
+      a:focus-visible {
+        background: #ffffff16;
+        outline: 1px solid #b7c2a7;
+        outline-offset: -2px;
+      }
+      .hint {
+        position: absolute;
+        bottom: calc(100% + 8px);
+        left: 0;
+        white-space: nowrap;
+        background: #101e1df2;
+        padding: 8px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+      }
+      nav:hover .hint,
+      nav:focus-within .hint {
+        opacity: 1;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .hint {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      title="MaleCNS Neuroglancer: electron microscopy, neuron segmentation and synapses"
+      src="https://neuroglancer-demo.appspot.com/#!gs://flyem-male-cns/v1.0/male-cns-v1.0.json"
+      allow="fullscreen"
+      allowfullscreen
+      referrerpolicy="no-referrer"
+    ></iframe>
+    <nav aria-label="Viewer navigation">
+      <span class="hint">Published MaleCNS viewer · internet required</span>
+      <a href="./index.html#atlas" aria-label="Back to fly explorer"
+        >← Explorer</a
+      >
+      <a
+        href="https://neuroglancer-demo.appspot.com/#!gs://flyem-male-cns/v1.0/male-cns-v1.0.json"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open Neuroglancer in a separate tab"
+        >↗</a
+      >
+    </nav>
+  </body>
+</html>
