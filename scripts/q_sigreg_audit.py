@@ -112,6 +112,13 @@ def distribution_pilot(seed):
         "sphere": sphere,
         "student_t3": rng.standard_t(3, size=(n, 4)) / np.sqrt(3),
     }
+    ref_states = states(reference)
+    ref_density = ref_states.T @ ref_states.conj() / len(reference)
+    collapse_bound = float(
+        1
+        + np.trace(ref_density @ ref_density).real
+        - 2 * np.linalg.eigvalsh(ref_density).max()
+    )
     kyy = quantum_kernel(reference, reference)
     rows = []
     for name, z in candidates.items():
@@ -122,6 +129,7 @@ def distribution_pilot(seed):
                 "seed": seed,
                 "name": name,
                 "quantum_unbiased_mmd": unbiased_mmd(kxx, kyy, kxy),
+                "all_pure_collapses_mmd_lower_bound": collapse_bound,
                 "rbf_unbiased_mmd": unbiased_mmd(
                     rbf(z, z), rbf(reference, reference), rbf(z, reference)
                 ),

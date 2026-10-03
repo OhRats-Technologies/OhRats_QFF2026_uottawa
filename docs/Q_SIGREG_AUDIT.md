@@ -16,6 +16,9 @@ The numerical pilot constructs a finite-support version: reweighting 512 Gaussia
 
 A D-to-4 projection head also constrains only its four-dimensional output, not isotropy of the full D-dimensional encoder representation. “Projection-free” should mean no random one-dimensional slices, not no projection head. Canonical SIGReg can resample directions across training updates, so observing finite slices in one batch is not by itself a decisive disadvantage.
 
+
+There is a positive anti-collapse argument: for a completely collapsed representation, rho_Z is pure, so its squared discrepancy from a fixed target density rho_G is at least 1 + Tr(rho_G^2) - 2*lambda_max(rho_G). This is positive whenever the target is mixed. The three empirical Gaussian targets give lower bounds 0.7139 to 0.7405 over every pure state (including states unreachable by the feature map). Thus the loss penalizes complete collapse mathematically; this does not guarantee optimization escapes a stationary point, outweighs the JEPA term, prevents partial collapse, or identifies Gaussianity.
+
 ## Circuit and gradient checks
 
 The exact four-qubit map is H, RY(theta_j), RZ(theta_j), a CZ ring, shifted RY(theta_(j+1)), and another CZ ring. Theta=(pi/2)tanh(z), with scale s=1 in this pilot. Both embeddings and Gaussian reference samples receive the same transformation.

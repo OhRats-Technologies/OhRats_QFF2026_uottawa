@@ -1,8 +1,8 @@
 {
   "files_sha256": {
-    "results.json": "516fe1487ddc6d97435ff539c0c73c25f07ba777d8c5d00580bc0a8b8aae3582"
+    "results.json": "3a9c9f1e5ae36e8e05fd53739f4cafd5639d16bf8f5be71b68d7017419e3314f"
   },
   "source_sha256": {
-    "scripts/q_sigreg_audit.py": "7ae1c4d4e7ff6904d1dee850b59551088b4ecc2a3265cc5536cecfa7d1068326"
+    "scripts/q_sigreg_audit.py": "304497554ad36dac0c3b97e99df94f446acc55ec2bc42c37d296462dee673ed9"
   }
 }
