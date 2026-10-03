@@ -1,0 +1,569 @@
+{
+  "synthetic_study": {
+    "summary": {
+      "No Regularizer": {
+        "probe_accuracy_mean": 100.0,
+        "probe_accuracy_std": 0.0,
+        "effective_rank_mean": 2.5449071409207256,
+        "effective_rank_std": 0.417982703581662,
+        "held_out_rbf_mmd2_mean": 0.6237201498939657,
+        "held_out_rbf_mmd2_std": 0.009540785841190894,
+        "energy_distance_mean": 1.1285846722881352,
+        "energy_distance_std": 0.01641117742759813,
+        "elapsed_seconds_mean": 0.13235561132508641,
+        "total_circuit_evals": 0
+      },
+      "Covariance Penalty": {
+        "probe_accuracy_mean": 99.83739852905273,
+        "probe_accuracy_std": 0.22995320547543785,
+        "effective_rank_mean": 3.9261168689588497,
+        "effective_rank_std": 0.03269347447923857,
+        "held_out_rbf_mmd2_mean": 0.07890549962318409,
+        "held_out_rbf_mmd2_std": 0.006083332224800302,
+        "energy_distance_mean": 0.11664442773981243,
+        "energy_distance_std": 0.010906060550253867,
+        "elapsed_seconds_mean": 0.13636097203319272,
+        "total_circuit_evals": 0
+      },
+      "Standard SIGReg": {
+        "probe_accuracy_mean": 99.34959411621094,
+        "probe_accuracy_std": 0.4599064109508757,
+        "effective_rank_mean": 3.92763719154788,
+        "effective_rank_std": 0.03097757636230385,
+        "held_out_rbf_mmd2_mean": 0.005674347983463622,
+        "held_out_rbf_mmd2_std": 0.0034963441893234803,
+        "energy_distance_mean": 0.03630725713290639,
+        "energy_distance_std": 0.012074909874479456,
+        "elapsed_seconds_mean": 0.3707702916775209,
+        "total_circuit_evals": 0
+      },
+      "Classical RBF-MMD": {
+        "probe_accuracy_mean": 100.0,
+        "probe_accuracy_std": 0.0,
+        "effective_rank_mean": 3.526905170187994,
+        "effective_rank_std": 0.34239015412323787,
+        "held_out_rbf_mmd2_mean": 0.05841741006237089,
+        "held_out_rbf_mmd2_std": 0.013294924902776872,
+        "energy_distance_mean": 0.13180265604515418,
+        "energy_distance_std": 0.03775040685929957,
+        "elapsed_seconds_mean": 0.144221458331837,
+        "total_circuit_evals": 0
+      },
+      "Quantum MMD Only": {
+        "probe_accuracy_mean": 100.0,
+        "probe_accuracy_std": 0.0,
+        "effective_rank_mean": 2.92975587945527,
+        "effective_rank_std": 0.1998739503817512,
+        "held_out_rbf_mmd2_mean": 0.07858434555625472,
+        "held_out_rbf_mmd2_std": 0.009248715499306353,
+        "energy_distance_mean": 0.19279996208149974,
+        "energy_distance_std": 0.027283873767122237,
+        "elapsed_seconds_mean": 0.46122072198583436,
+        "total_circuit_evals": 3888
+      },
+      "Q-SIGReg (Q-MMD + Moments)": {
+        "probe_accuracy_mean": 99.67479705810547,
+        "probe_accuracy_std": 0.22995320547543785,
+        "effective_rank_mean": 3.7952482429084404,
+        "effective_rank_std": 0.035710254310692226,
+        "held_out_rbf_mmd2_mean": 0.05370298516932376,
+        "held_out_rbf_mmd2_std": 0.013641229641199544,
+        "energy_distance_mean": 0.10923007916638057,
+        "energy_distance_std": 0.02406366500472544,
+        "elapsed_seconds_mean": 0.46376518099956837,
+        "total_circuit_evals": 3888
+      }
+    },
+    "runs": [
+      {
+        "regularizer": "No Regularizer",
+        "seed": 2026,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 1.535333172597575e-07,
+        "quality_metrics": {
+          "effective_rank": 3.1336514055334925,
+          "min_eigenvalue": 5.704396851126752e-07,
+          "max_eigenvalue": 3.5425141870535556e-06,
+          "condition_number": 6.2101468034325595,
+          "mean_feature_std": 0.0012303485964321218,
+          "mean_norm": 0.0015366216861823557,
+          "covariance_frobenius_error": 1.999996881217587,
+          "held_out_rbf_mmd2": 0.6134511283386538,
+          "energy_distance": 1.1103817092397859,
+          "held_out_q_mmd2": 0.8326281645911683
+        },
+        "elapsed_seconds": 0.14738729200325906,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "No Regularizer",
+        "seed": 2027,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 4.999214127110463e-08,
+        "quality_metrics": {
+          "effective_rank": 2.2963548067842616,
+          "min_eigenvalue": 1.0231142288328455e-07,
+          "max_eigenvalue": 2.673591218600759e-06,
+          "condition_number": 26.131893617106225,
+          "mean_feature_std": 0.0009136871790340962,
+          "mean_norm": 0.0004680166164783601,
+          "covariance_frobenius_error": 1.999998147026951,
+          "held_out_rbf_mmd2": 0.6212750637876439,
+          "energy_distance": 1.1252170231675742,
+          "held_out_q_mmd2": 0.7879010378104887
+        },
+        "elapsed_seconds": 0.12429191695991904,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "No Regularizer",
+        "seed": 2028,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 5.917889023265843e-08,
+        "quality_metrics": {
+          "effective_rank": 2.2047152104444216,
+          "min_eigenvalue": 3.7627199439876323e-08,
+          "max_eigenvalue": 1.6545139646658488e-06,
+          "condition_number": 43.97122266060647,
+          "mean_feature_std": 0.0006827887726676477,
+          "mean_norm": 0.0015398419766291162,
+          "covariance_frobenius_error": 1.9999988915768387,
+          "held_out_rbf_mmd2": 0.6364342575555996,
+          "energy_distance": 1.1501552844570453,
+          "held_out_q_mmd2": 0.832802336570085
+        },
+        "elapsed_seconds": 0.12538762501208112,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "Covariance Penalty",
+        "seed": 2026,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 0.007357304310426116,
+        "quality_metrics": {
+          "effective_rank": 3.931370776845095,
+          "min_eigenvalue": 0.6989129587701527,
+          "max_eigenvalue": 1.161642837543128,
+          "condition_number": 1.6620708243659144,
+          "mean_feature_std": 0.970252394070521,
+          "mean_norm": 0.13425045143351144,
+          "covariance_frobenius_error": 0.36531511752529067,
+          "held_out_rbf_mmd2": 0.08486791141191596,
+          "energy_distance": 0.11590108943438526,
+          "held_out_q_mmd2": 0.11732445389876167
+        },
+        "elapsed_seconds": 0.14012795803137124,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "Covariance Penalty",
+        "seed": 2027,
+        "probe_accuracy": 99.5121955871582,
+        "final_jepa_loss": 0.007431380916386843,
+        "quality_metrics": {
+          "effective_rank": 3.9632717230343313,
+          "min_eigenvalue": 0.8300546589362302,
+          "max_eigenvalue": 1.1884079597881168,
+          "condition_number": 1.4317225341655693,
+          "mean_feature_std": 0.9847037738956054,
+          "mean_norm": 0.11144821956928662,
+          "covariance_frobenius_error": 0.2741737189420032,
+          "held_out_rbf_mmd2": 0.07055329468933452,
+          "energy_distance": 0.10367447700544075,
+          "held_out_q_mmd2": 0.0975628791680491
+        },
+        "elapsed_seconds": 0.13456925004720688,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "Covariance Penalty",
+        "seed": 2028,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 0.007738452753983438,
+        "quality_metrics": {
+          "effective_rank": 3.883708106997123,
+          "min_eigenvalue": 0.6808962491785087,
+          "max_eigenvalue": 1.3443276120002379,
+          "condition_number": 1.974350150440907,
+          "mean_feature_std": 0.9972741157969889,
+          "mean_norm": 0.2369526122375043,
+          "covariance_frobenius_error": 0.4836560321358093,
+          "held_out_rbf_mmd2": 0.08129529276830177,
+          "energy_distance": 0.13035771677961128,
+          "held_out_q_mmd2": 0.1094213649558225
+        },
+        "elapsed_seconds": 0.13438570802100003,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "Standard SIGReg",
+        "seed": 2026,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 0.10459977574646473,
+        "quality_metrics": {
+          "effective_rank": 3.8862930883657985,
+          "min_eigenvalue": 0.5793493385706634,
+          "max_eigenvalue": 1.1176278703607505,
+          "condition_number": 1.9291087362213897,
+          "mean_feature_std": 0.9121709491899094,
+          "mean_norm": 0.1737356152432147,
+          "covariance_frobenius_error": 0.5154346485982093,
+          "held_out_rbf_mmd2": 0.010129852215918334,
+          "energy_distance": 0.044389328486496016,
+          "held_out_q_mmd2": 0.00953005936324372
+        },
+        "elapsed_seconds": 0.36151600000448525,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "Standard SIGReg",
+        "seed": 2027,
+        "probe_accuracy": 99.0243911743164,
+        "final_jepa_loss": 0.11141938716173172,
+        "quality_metrics": {
+          "effective_rank": 3.9357627613621196,
+          "min_eigenvalue": 0.6377461869040486,
+          "max_eigenvalue": 1.0439063598363374,
+          "condition_number": 1.6368680538946085,
+          "mean_feature_std": 0.9124158880761578,
+          "mean_norm": 0.03343861856416198,
+          "covariance_frobenius_error": 0.4478389097521463,
+          "held_out_rbf_mmd2": 0.0015897179603027722,
+          "energy_distance": 0.019238740322299996,
+          "held_out_q_mmd2": -4.461497044741525e-05
+        },
+        "elapsed_seconds": 0.39060283300932497,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "Standard SIGReg",
+        "seed": 2028,
+        "probe_accuracy": 99.0243911743164,
+        "final_jepa_loss": 0.10764211528003216,
+        "quality_metrics": {
+          "effective_rank": 3.9608557249157217,
+          "min_eigenvalue": 0.6517712754905516,
+          "max_eigenvalue": 0.9702756735389495,
+          "condition_number": 1.4886751073966515,
+          "mean_feature_std": 0.9065670898514806,
+          "mean_norm": 0.23184359473168895,
+          "covariance_frobenius_error": 0.4214582430890085,
+          "held_out_rbf_mmd2": 0.005303473774169759,
+          "energy_distance": 0.04529370258992316,
+          "held_out_q_mmd2": 0.008184371753990505
+        },
+        "elapsed_seconds": 0.36019204201875255,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "Classical RBF-MMD",
+        "seed": 2026,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 0.008635328011587262,
+        "quality_metrics": {
+          "effective_rank": 3.883231270877508,
+          "min_eigenvalue": 0.4585425495483361,
+          "max_eigenvalue": 0.8548650111513916,
+          "condition_number": 1.8643090199446761,
+          "mean_feature_std": 0.810512040427838,
+          "mean_norm": 0.1266599643217419,
+          "covariance_frobenius_error": 0.7492508547699744,
+          "held_out_rbf_mmd2": 0.04920570723814721,
+          "energy_distance": 0.09917077662699825,
+          "held_out_q_mmd2": 0.049612816692404915
+        },
+        "elapsed_seconds": 0.1653158330009319,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "Classical RBF-MMD",
+        "seed": 2027,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 0.006530083133839071,
+        "quality_metrics": {
+          "effective_rank": 3.632679276510618,
+          "min_eigenvalue": 0.30351188829088677,
+          "max_eigenvalue": 1.0592872706525174,
+          "condition_number": 3.4901014145360034,
+          "mean_feature_std": 0.7783179149964685,
+          "mean_norm": 0.17878881272632755,
+          "covariance_frobenius_error": 0.9395194185933141,
+          "held_out_rbf_mmd2": 0.04882851101650154,
+          "energy_distance": 0.11152610798292617,
+          "held_out_q_mmd2": 0.05808752654519972
+        },
+        "elapsed_seconds": 0.13386208296287805,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "Classical RBF-MMD",
+        "seed": 2028,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 0.010196994314901531,
+        "quality_metrics": {
+          "effective_rank": 3.0648049631758565,
+          "min_eigenvalue": 0.08349778080067005,
+          "max_eigenvalue": 1.3545519225569858,
+          "condition_number": 16.222609865412323,
+          "mean_feature_std": 0.7947300009361072,
+          "mean_norm": 0.4406568287586551,
+          "covariance_frobenius_error": 1.1286611523943177,
+          "held_out_rbf_mmd2": 0.07721801193246391,
+          "energy_distance": 0.1847110835255381,
+          "held_out_q_mmd2": 0.0766065104350726
+        },
+        "elapsed_seconds": 0.1334864590317011,
+        "circuit_evals": 0
+      },
+      {
+        "regularizer": "Quantum MMD Only",
+        "seed": 2026,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 0.008966344944201409,
+        "quality_metrics": {
+          "effective_rank": 3.105528697121031,
+          "min_eigenvalue": 0.17242142004467545,
+          "max_eigenvalue": 1.3936978801666091,
+          "condition_number": 8.08309013929646,
+          "mean_feature_std": 0.7879470316070798,
+          "mean_norm": 0.4175193744890118,
+          "covariance_frobenius_error": 1.1818222884342466,
+          "held_out_rbf_mmd2": 0.06922208082589548,
+          "energy_distance": 0.15422352934698846,
+          "held_out_q_mmd2": 0.047931015586463066
+        },
+        "elapsed_seconds": 0.46253562497440726,
+        "circuit_evals": 1296
+      },
+      {
+        "regularizer": "Quantum MMD Only",
+        "seed": 2027,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 0.010584455449134111,
+        "quality_metrics": {
+          "effective_rank": 3.033578446649046,
+          "min_eigenvalue": 0.05338071774126797,
+          "max_eigenvalue": 1.2897545019460697,
+          "condition_number": 24.161430503752413,
+          "mean_feature_std": 0.8621716111553661,
+          "mean_norm": 0.6076496318338198,
+          "covariance_frobenius_error": 1.1013495990587743,
+          "held_out_rbf_mmd2": 0.07535541427316528,
+          "energy_distance": 0.21137489048433533,
+          "held_out_q_mmd2": 0.07921296069464517
+        },
+        "elapsed_seconds": 0.460417874972336,
+        "circuit_evals": 1296
+      },
+      {
+        "regularizer": "Quantum MMD Only",
+        "seed": 2028,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 0.008611596375703811,
+        "quality_metrics": {
+          "effective_rank": 2.650160494595732,
+          "min_eigenvalue": 0.028913029030894318,
+          "max_eigenvalue": 1.3812121448703438,
+          "condition_number": 47.771270986325334,
+          "mean_feature_std": 0.7464572146646591,
+          "mean_norm": 0.4783647624533172,
+          "covariance_frobenius_error": 1.3084589390853716,
+          "held_out_rbf_mmd2": 0.09117554156970342,
+          "energy_distance": 0.21280146641317543,
+          "held_out_q_mmd2": 0.09942111450006819
+        },
+        "elapsed_seconds": 0.46070866601075977,
+        "circuit_evals": 1296
+      },
+      {
+        "regularizer": "Q-SIGReg (Q-MMD + Moments)",
+        "seed": 2026,
+        "probe_accuracy": 99.5121955871582,
+        "final_jepa_loss": 0.008141374960541726,
+        "quality_metrics": {
+          "effective_rank": 3.806771182151689,
+          "min_eigenvalue": 0.38607862327900155,
+          "max_eigenvalue": 0.8399625044313076,
+          "condition_number": 2.175625517148368,
+          "mean_feature_std": 0.7314867737443596,
+          "mean_norm": 0.14236184006660216,
+          "covariance_frobenius_error": 0.9865606357295466,
+          "held_out_rbf_mmd2": 0.07284279012670031,
+          "energy_distance": 0.14238338890194813,
+          "held_out_q_mmd2": 0.07807538924314336
+        },
+        "elapsed_seconds": 0.4636753340018913,
+        "circuit_evals": 1296
+      },
+      {
+        "regularizer": "Q-SIGReg (Q-MMD + Moments)",
+        "seed": 2027,
+        "probe_accuracy": 100.0,
+        "final_jepa_loss": 0.005722580826841295,
+        "quality_metrics": {
+          "effective_rank": 3.746904502353964,
+          "min_eigenvalue": 0.350907566120513,
+          "max_eigenvalue": 0.9179163087672586,
+          "condition_number": 2.615835044297724,
+          "mean_feature_std": 0.759524099989686,
+          "mean_norm": 0.055359656240475445,
+          "covariance_frobenius_error": 0.9464867860736661,
+          "held_out_rbf_mmd2": 0.046224880680666935,
+          "energy_distance": 0.09930425134285326,
+          "held_out_q_mmd2": 0.04049485612062914
+        },
+        "elapsed_seconds": 0.46267320902552456,
+        "circuit_evals": 1296
+      },
+      {
+        "regularizer": "Q-SIGReg (Q-MMD + Moments)",
+        "seed": 2028,
+        "probe_accuracy": 99.5121955871582,
+        "final_jepa_loss": 0.010240534087643027,
+        "quality_metrics": {
+          "effective_rank": 3.8320690442196668,
+          "min_eigenvalue": 0.4695184394903704,
+          "max_eigenvalue": 0.9923297706206208,
+          "condition_number": 2.1135054284507455,
+          "mean_feature_std": 0.8116466999721482,
+          "mean_norm": 0.19573201615867425,
+          "covariance_frobenius_error": 0.7785862841795257,
+          "held_out_rbf_mmd2": 0.04204128470060403,
+          "energy_distance": 0.08600259725434034,
+          "held_out_q_mmd2": 0.05771788388769014
+        },
+        "elapsed_seconds": 0.4649469999712892,
+        "circuit_evals": 1296
+      }
+    ]
+  },
+  "zero_epoch_probes": [
+    {
+      "regularizer": "No Regularizer",
+      "seed": 2026,
+      "probe_accuracy": 100.0,
+      "quality_metrics": {
+        "effective_rank": 2.432286762851518,
+        "min_eigenvalue": 0.00023312749094487126,
+        "max_eigenvalue": 0.004885306210402869,
+        "condition_number": 20.95551318552182,
+        "mean_feature_std": 0.04113262458594598,
+        "mean_norm": 0.13976670483527648,
+        "covariance_frobenius_error": 1.9963882882848147,
+        "held_out_rbf_mmd2": 0.6185889568749612,
+        "energy_distance": 1.0289298001881826,
+        "held_out_q_mmd2": 0.7954393546525229
+      },
+      "elapsed_seconds": 2.92027834802866e-07,
+      "circuit_evals": 0
+    },
+    {
+      "regularizer": "No Regularizer",
+      "seed": 2027,
+      "probe_accuracy": 99.0243911743164,
+      "quality_metrics": {
+        "effective_rank": 2.351390201382772,
+        "min_eigenvalue": 0.00032582167978425727,
+        "max_eigenvalue": 0.006997977348347674,
+        "condition_number": 21.477936498827773,
+        "mean_feature_std": 0.0488149531336058,
+        "mean_norm": 0.15078572905991766,
+        "covariance_frobenius_error": 1.9949267664286743,
+        "held_out_rbf_mmd2": 0.6248686476554122,
+        "energy_distance": 1.029467429369972,
+        "held_out_q_mmd2": 0.7649106370179919
+      },
+      "elapsed_seconds": 2.919696271419525e-07,
+      "circuit_evals": 0
+    },
+    {
+      "regularizer": "No Regularizer",
+      "seed": 2028,
+      "probe_accuracy": 99.0243911743164,
+      "quality_metrics": {
+        "effective_rank": 2.707846376983542,
+        "min_eigenvalue": 9.20655598891351e-05,
+        "max_eigenvalue": 0.0019443722507247064,
+        "condition_number": 21.11943112132387,
+        "mean_feature_std": 0.027193675173833233,
+        "mean_norm": 0.10029371901774113,
+        "covariance_frobenius_error": 1.9983974989477626,
+        "held_out_rbf_mmd2": 0.6269561318623256,
+        "energy_distance": 1.0676451745157216,
+        "held_out_q_mmd2": 0.821593927832255
+      },
+      "elapsed_seconds": 1.6705598682165146e-07,
+      "circuit_evals": 0
+    }
+  ],
+  "expected_moment_penalty": [
+    {
+      "batch": 8,
+      "population_variance": 0.4,
+      "expected_penalty_analytic": 2.0971428571428574,
+      "expected_penalty_monte_carlo": 2.0956166402505243,
+      "monte_carlo_sem": 0.002651390010825558,
+      "minimizing_isotropic_variance": 0.546875
+    },
+    {
+      "batch": 8,
+      "population_variance": 0.546875,
+      "expected_penalty_analytic": 1.94921875,
+      "expected_penalty_monte_carlo": 1.9425096183091228,
+      "monte_carlo_sem": 0.003257355392692294,
+      "minimizing_isotropic_variance": 0.546875
+    },
+    {
+      "batch": 8,
+      "population_variance": 0.7,
+      "expected_penalty_analytic": 2.11,
+      "expected_penalty_monte_carlo": 2.095243723326438,
+      "monte_carlo_sem": 0.005442579695200586,
+      "minimizing_isotropic_variance": 0.546875
+    },
+    {
+      "batch": 8,
+      "population_variance": 1.0,
+      "expected_penalty_analytic": 3.357142857142857,
+      "expected_penalty_monte_carlo": 3.318797608877797,
+      "monte_carlo_sem": 0.014470135932200916,
+      "minimizing_isotropic_variance": 0.546875
+    },
+    {
+      "batch": 64,
+      "population_variance": 0.4,
+      "expected_penalty_analytic": 1.5157936507936507,
+      "expected_penalty_monte_carlo": 1.514993967497736,
+      "monte_carlo_sem": 0.0011606979597203171,
+      "minimizing_isotropic_variance": 0.919232536764706
+    },
+    {
+      "batch": 64,
+      "population_variance": 0.919232536764706,
+      "expected_penalty_analytic": 0.3517958697150735,
+      "expected_penalty_monte_carlo": 0.3495769491879534,
+      "monte_carlo_sem": 0.0008989174753246125,
+      "minimizing_isotropic_variance": 0.919232536764706
+    },
+    {
+      "batch": 64,
+      "population_variance": 0.7,
+      "expected_penalty_analytic": 0.5593055555555556,
+      "expected_penalty_monte_carlo": 0.557738397132843,
+      "monte_carlo_sem": 0.0010185330805016883,
+      "minimizing_isotropic_variance": 0.919232536764706
+    },
+    {
+      "batch": 64,
+      "population_variance": 1.0,
+      "expected_penalty_analytic": 0.37996031746031744,
+      "expected_penalty_monte_carlo": 0.37748193020663956,
+      "monte_carlo_sem": 0.0011233631080473376,
+      "minimizing_isotropic_variance": 0.919232536764706
+    }
+  ],
+  "zero_covariance_reported_effective_rank": 4.0,
+  "torch_threads": 1,
+  "elapsed_seconds": 7.003436583967414,
+  "scope": "Independent exact-statevector synthetic reproduction; no QPU or shot-based training"
+}
