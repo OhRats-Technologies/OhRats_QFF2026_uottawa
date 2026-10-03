@@ -1,0 +1,2386 @@
+{
+  "nodes": [
+    "Mi1_R",
+    "Pm2a_R",
+    "Pm1_R",
+    "Pm2b_R",
+    "Pm4_R",
+    "Tm3_R",
+    "Y3_R",
+    "T4a_R"
+  ],
+  "dataset_source_commit": "789cc6c105798ce2fd70ba85dab394f90899616b",
+  "prediction": "Sparse mutual transitions delay NPT loss relative to dense reset controls at fixed gamma; not a claim of biological quantumness or novelty.",
+  "experiments": [
+    {
+      "gamma": 0.2,
+      "npt_based_eb_lower_bound": 3,
+      "first_strict_ppt_step": 3,
+      "constructive_eb_upper_bound": 3,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.024979484971265446,
+          "population_dobrushin": 0.9636120764476976,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.003839764005230237,
+          "population_dobrushin": 0.8420635651565175,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": 0.001168387484097303,
+          "population_dobrushin": 0.7480560337318161,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.0072781194102502595
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "fly",
+      "transition_matrix": [
+        [
+          0.005945081895419112,
+          0.20729113227142482,
+          0.18781359876875336,
+          0.18412548955817765,
+          0.11061512281184699,
+          0.10630607239830328,
+          0.10202361140654913,
+          0.09587989088952564
+        ],
+        [
+          0.3885715817981927,
+          0.06483790523690773,
+          0.015847478078996058,
+          0.1230525835947765,
+          0.07213149920896683,
+          0.022256187488268575,
+          0.3127664709194755,
+          0.0005362936744161103
+        ],
+        [
+          0.8233624116037784,
+          0.02013111030816084,
+          0.024105714138233623,
+          0.01713725287771641,
+          0.008568626438858204,
+          0.03262272234553244,
+          0.07076859546791926,
+          0.0033035668198007537
+        ],
+        [
+          0.7532374763814,
+          0.07431218028480575,
+          0.010000460850730449,
+          0.009032674316788792,
+          0.10323056362044333,
+          0.025761555832065994,
+          0.02435596110419835,
+          6.912760956726116e-05
+        ],
+        [
+          0.10575802521453544,
+          0.1485061976904333,
+          0.011600805170039198,
+          0.058480771268142814,
+          0.0025426422290496875,
+          0.004158279478758343,
+          0.6686089628138574,
+          0.00034431613518381185
+        ],
+        [
+          0.05011250847666605,
+          0.004138154244497873,
+          0.2569046298008754,
+          0.004415572406140189,
+          0.22959435299919856,
+          0.23750847666605018,
+          0.011412674927563036,
+          0.20591363047900868
+        ],
+        [
+          0.5026573426573426,
+          0.13398601398601398,
+          0.03832167832167832,
+          0.037482517482517484,
+          0.0688111888111888,
+          0.06461538461538462,
+          0.1393006993006993,
+          0.014825174825174826
+        ],
+        [
+          0.015356115633988202,
+          0.0009749914688246478,
+          0.0007312436016184858,
+          0.00034124701408862673,
+          0.0003899965875298591,
+          0.00326622142056257,
+          0.07395310291034954,
+          0.9049870813630381
+        ]
+      ],
+      "rationally_certified_eb_index": 3
+    },
+    {
+      "gamma": 0.4,
+      "npt_based_eb_lower_bound": 5,
+      "first_strict_ppt_step": 5,
+      "constructive_eb_upper_bound": 5,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.049984611992926545,
+          "population_dobrushin": 0.9727090573357732,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.019319914393323426,
+          "population_dobrushin": 0.8825535849688974,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": -0.006026792580000403,
+          "population_dobrushin": 0.8163540168691492,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 4,
+          "ppt_min_eigenvalue": -0.0002431307790875352,
+          "population_dobrushin": 0.7500186465614871,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 5,
+          "ppt_min_eigenvalue": 0.001639048950082338,
+          "population_dobrushin": 0.6866603663759545,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.010281082226593522
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "fly",
+      "transition_matrix": [
+        [
+          0.005945081895419112,
+          0.20729113227142482,
+          0.18781359876875336,
+          0.18412548955817765,
+          0.11061512281184699,
+          0.10630607239830328,
+          0.10202361140654913,
+          0.09587989088952564
+        ],
+        [
+          0.3885715817981927,
+          0.06483790523690773,
+          0.015847478078996058,
+          0.1230525835947765,
+          0.07213149920896683,
+          0.022256187488268575,
+          0.3127664709194755,
+          0.0005362936744161103
+        ],
+        [
+          0.8233624116037784,
+          0.02013111030816084,
+          0.024105714138233623,
+          0.01713725287771641,
+          0.008568626438858204,
+          0.03262272234553244,
+          0.07076859546791926,
+          0.0033035668198007537
+        ],
+        [
+          0.7532374763814,
+          0.07431218028480575,
+          0.010000460850730449,
+          0.009032674316788792,
+          0.10323056362044333,
+          0.025761555832065994,
+          0.02435596110419835,
+          6.912760956726116e-05
+        ],
+        [
+          0.10575802521453544,
+          0.1485061976904333,
+          0.011600805170039198,
+          0.058480771268142814,
+          0.0025426422290496875,
+          0.004158279478758343,
+          0.6686089628138574,
+          0.00034431613518381185
+        ],
+        [
+          0.05011250847666605,
+          0.004138154244497873,
+          0.2569046298008754,
+          0.004415572406140189,
+          0.22959435299919856,
+          0.23750847666605018,
+          0.011412674927563036,
+          0.20591363047900868
+        ],
+        [
+          0.5026573426573426,
+          0.13398601398601398,
+          0.03832167832167832,
+          0.037482517482517484,
+          0.0688111888111888,
+          0.06461538461538462,
+          0.1393006993006993,
+          0.014825174825174826
+        ],
+        [
+          0.015356115633988202,
+          0.0009749914688246478,
+          0.0007312436016184858,
+          0.00034124701408862673,
+          0.0003899965875298591,
+          0.00326622142056257,
+          0.07395310291034954,
+          0.9049870813630381
+        ]
+      ],
+      "rationally_certified_eb_index": 5
+    },
+    {
+      "gamma": 0.6,
+      "npt_based_eb_lower_bound": 7,
+      "first_strict_ppt_step": 7,
+      "constructive_eb_upper_bound": 7,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.07498974094294597,
+          "population_dobrushin": 0.9818060382238487,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.044684703050283825,
+          "population_dobrushin": 0.922372997380271,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": -0.026084174430840313,
+          "population_dobrushin": 0.8806736707185273,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 4,
+          "ppt_min_eigenvalue": -0.014477219506106894,
+          "population_dobrushin": 0.8376197308289357,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 5,
+          "ppt_min_eigenvalue": -0.007130943473571806,
+          "population_dobrushin": 0.7942919538625697,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 6,
+          "ppt_min_eigenvalue": -0.00252454469535281,
+          "population_dobrushin": 0.7515609929934589,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 7,
+          "ppt_min_eigenvalue": 0.0001411614495931534,
+          "population_dobrushin": 0.7100253306256699,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.0006910034304362014
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "fly",
+      "transition_matrix": [
+        [
+          0.005945081895419112,
+          0.20729113227142482,
+          0.18781359876875336,
+          0.18412548955817765,
+          0.11061512281184699,
+          0.10630607239830328,
+          0.10202361140654913,
+          0.09587989088952564
+        ],
+        [
+          0.3885715817981927,
+          0.06483790523690773,
+          0.015847478078996058,
+          0.1230525835947765,
+          0.07213149920896683,
+          0.022256187488268575,
+          0.3127664709194755,
+          0.0005362936744161103
+        ],
+        [
+          0.8233624116037784,
+          0.02013111030816084,
+          0.024105714138233623,
+          0.01713725287771641,
+          0.008568626438858204,
+          0.03262272234553244,
+          0.07076859546791926,
+          0.0033035668198007537
+        ],
+        [
+          0.7532374763814,
+          0.07431218028480575,
+          0.010000460850730449,
+          0.009032674316788792,
+          0.10323056362044333,
+          0.025761555832065994,
+          0.02435596110419835,
+          6.912760956726116e-05
+        ],
+        [
+          0.10575802521453544,
+          0.1485061976904333,
+          0.011600805170039198,
+          0.058480771268142814,
+          0.0025426422290496875,
+          0.004158279478758343,
+          0.6686089628138574,
+          0.00034431613518381185
+        ],
+        [
+          0.05011250847666605,
+          0.004138154244497873,
+          0.2569046298008754,
+          0.004415572406140189,
+          0.22959435299919856,
+          0.23750847666605018,
+          0.011412674927563036,
+          0.20591363047900868
+        ],
+        [
+          0.5026573426573426,
+          0.13398601398601398,
+          0.03832167832167832,
+          0.037482517482517484,
+          0.0688111888111888,
+          0.06461538461538462,
+          0.1393006993006993,
+          0.014825174825174826
+        ],
+        [
+          0.015356115633988202,
+          0.0009749914688246478,
+          0.0007312436016184858,
+          0.00034124701408862673,
+          0.0003899965875298591,
+          0.00326622142056257,
+          0.07395310291034954,
+          0.9049870813630381
+        ]
+      ],
+      "rationally_certified_eb_index": 7
+    },
+    {
+      "gamma": 0.8,
+      "npt_based_eb_lower_bound": 16,
+      "first_strict_ppt_step": 16,
+      "constructive_eb_upper_bound": 16,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.09999487037505507,
+          "population_dobrushin": 0.9909030191119246,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.07991195500790128,
+          "population_dobrushin": 0.9714414489539104,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": -0.06375987701673386,
+          "population_dobrushin": 0.9454550854329864,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 4,
+          "ppt_min_eigenvalue": -0.05073790180424199,
+          "population_dobrushin": 0.9213738013968273,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 5,
+          "ppt_min_eigenvalue": -0.04021333442243767,
+          "population_dobrushin": 0.9006919631078419,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 6,
+          "ppt_min_eigenvalue": -0.03168380053906265,
+          "population_dobrushin": 0.879715932659756,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 7,
+          "ppt_min_eigenvalue": -0.024750804975000054,
+          "population_dobrushin": 0.8585483207381153,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 8,
+          "ppt_min_eigenvalue": -0.01909901183027392,
+          "population_dobrushin": 0.8372918882660808,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 9,
+          "ppt_min_eigenvalue": -0.014480073839731947,
+          "population_dobrushin": 0.8160429706880246,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 10,
+          "ppt_min_eigenvalue": -0.010700068901461123,
+          "population_dobrushin": 0.7948880841045279,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 11,
+          "ppt_min_eigenvalue": -0.007609699060314694,
+          "population_dobrushin": 0.77390253699392,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 12,
+          "ppt_min_eigenvalue": -0.005096290808442108,
+          "population_dobrushin": 0.7531502652621279,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 13,
+          "ppt_min_eigenvalue": -0.003076216421446504,
+          "population_dobrushin": 0.7326843763788499,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 14,
+          "ppt_min_eigenvalue": -0.0014858634857431267,
+          "population_dobrushin": 0.7125480697011248,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 15,
+          "ppt_min_eigenvalue": -0.00027001397036828,
+          "population_dobrushin": 0.6927757219680117,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 16,
+          "ppt_min_eigenvalue": 0.0006296583680838203,
+          "population_dobrushin": 0.6733940081782831,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.0031833744143131525
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "fly",
+      "transition_matrix": [
+        [
+          0.005945081895419112,
+          0.20729113227142482,
+          0.18781359876875336,
+          0.18412548955817765,
+          0.11061512281184699,
+          0.10630607239830328,
+          0.10202361140654913,
+          0.09587989088952564
+        ],
+        [
+          0.3885715817981927,
+          0.06483790523690773,
+          0.015847478078996058,
+          0.1230525835947765,
+          0.07213149920896683,
+          0.022256187488268575,
+          0.3127664709194755,
+          0.0005362936744161103
+        ],
+        [
+          0.8233624116037784,
+          0.02013111030816084,
+          0.024105714138233623,
+          0.01713725287771641,
+          0.008568626438858204,
+          0.03262272234553244,
+          0.07076859546791926,
+          0.0033035668198007537
+        ],
+        [
+          0.7532374763814,
+          0.07431218028480575,
+          0.010000460850730449,
+          0.009032674316788792,
+          0.10323056362044333,
+          0.025761555832065994,
+          0.02435596110419835,
+          6.912760956726116e-05
+        ],
+        [
+          0.10575802521453544,
+          0.1485061976904333,
+          0.011600805170039198,
+          0.058480771268142814,
+          0.0025426422290496875,
+          0.004158279478758343,
+          0.6686089628138574,
+          0.00034431613518381185
+        ],
+        [
+          0.05011250847666605,
+          0.004138154244497873,
+          0.2569046298008754,
+          0.004415572406140189,
+          0.22959435299919856,
+          0.23750847666605018,
+          0.011412674927563036,
+          0.20591363047900868
+        ],
+        [
+          0.5026573426573426,
+          0.13398601398601398,
+          0.03832167832167832,
+          0.037482517482517484,
+          0.0688111888111888,
+          0.06461538461538462,
+          0.1393006993006993,
+          0.014825174825174826
+        ],
+        [
+          0.015356115633988202,
+          0.0009749914688246478,
+          0.0007312436016184858,
+          0.00034124701408862673,
+          0.0003899965875298591,
+          0.00326622142056257,
+          0.07395310291034954,
+          0.9049870813630381
+        ]
+      ],
+      "rationally_certified_eb_index": 16
+    },
+    {
+      "gamma": 0.2,
+      "npt_based_eb_lower_bound": 2,
+      "first_strict_ppt_step": 2,
+      "constructive_eb_upper_bound": 2,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.0125,
+          "population_dobrushin": 0.20000000000000004,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": 0.01,
+          "population_dobrushin": 0.04000000000000002,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.08
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "uniform_reset",
+      "transition_matrix": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "rationally_certified_eb_index": 2
+    },
+    {
+      "gamma": 0.4,
+      "npt_based_eb_lower_bound": 3,
+      "first_strict_ppt_step": 3,
+      "constructive_eb_upper_bound": 3,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.040625,
+          "population_dobrushin": 0.4,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.006875000000000004,
+          "population_dobrushin": 0.16000000000000003,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": 0.006624999999999997,
+          "population_dobrushin": 0.06400000000000007,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.05299999999999998
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "uniform_reset",
+      "transition_matrix": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "rationally_certified_eb_index": 3
+    },
+    {
+      "gamma": 0.6,
+      "npt_based_eb_lower_bound": 5,
+      "first_strict_ppt_step": 5,
+      "constructive_eb_upper_bound": 5,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.06874999999999999,
+          "population_dobrushin": 0.6,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.034999999999999996,
+          "population_dobrushin": 0.36000000000000004,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": -0.014749999999999994,
+          "population_dobrushin": 0.21600000000000005,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 4,
+          "ppt_min_eigenvalue": -0.0025999999999999947,
+          "population_dobrushin": 0.12960000000000005,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 5,
+          "ppt_min_eigenvalue": 0.004690000000000005,
+          "population_dobrushin": 0.07776000000000008,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.03752000000000004
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "uniform_reset",
+      "transition_matrix": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "rationally_certified_eb_index": 5
+    },
+    {
+      "gamma": 0.8,
+      "npt_based_eb_lower_bound": 10,
+      "first_strict_ppt_step": 10,
+      "constructive_eb_upper_bound": 10,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.096875,
+          "population_dobrushin": 0.8,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.07437500000000002,
+          "population_dobrushin": 0.6400000000000001,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": -0.056375000000000015,
+          "population_dobrushin": 0.5120000000000002,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 4,
+          "ppt_min_eigenvalue": -0.04197500000000001,
+          "population_dobrushin": 0.4096000000000001,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 5,
+          "ppt_min_eigenvalue": -0.030455000000000013,
+          "population_dobrushin": 0.3276800000000001,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 6,
+          "ppt_min_eigenvalue": -0.021239000000000015,
+          "population_dobrushin": 0.26214400000000015,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 7,
+          "ppt_min_eigenvalue": -0.01386620000000001,
+          "population_dobrushin": 0.20971520000000016,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 8,
+          "ppt_min_eigenvalue": -0.007967960000000012,
+          "population_dobrushin": 0.1677721600000001,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 9,
+          "ppt_min_eigenvalue": -0.0032493680000000094,
+          "population_dobrushin": 0.13421772800000015,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 10,
+          "ppt_min_eigenvalue": 0.0005255055999999914,
+          "population_dobrushin": 0.1073741824000001,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.004204044799999931
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "uniform_reset",
+      "transition_matrix": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ]
+      ],
+      "rationally_certified_eb_index": 10
+    },
+    {
+      "gamma": 0.2,
+      "npt_based_eb_lower_bound": 2,
+      "first_strict_ppt_step": 2,
+      "constructive_eb_upper_bound": 2,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.01967490959089289,
+          "population_dobrushin": 0.2,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": 0.0013746793819580886,
+          "population_dobrushin": 0.04000000000000005,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.010309661729477011
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "stationary_reset",
+      "transition_matrix": [
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ]
+      ]
+    },
+    {
+      "gamma": 0.4,
+      "npt_based_eb_lower_bound": 4,
+      "first_strict_ppt_step": 4,
+      "constructive_eb_upper_bound": 4,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.04600497422077415,
+          "population_dobrushin": 0.4,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.014409500541327135,
+          "population_dobrushin": 0.16000000000000003,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": -0.0017776462731691053,
+          "population_dobrushin": 0.06400000000000008,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 4,
+          "ppt_min_eigenvalue": 0.003259367185253271,
+          "population_dobrushin": 0.025600000000000053,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.024485489471659103
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "stationary_reset",
+      "transition_matrix": [
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ]
+      ]
+    },
+    {
+      "gamma": 0.6,
+      "npt_based_eb_lower_bound": 6,
+      "first_strict_ppt_step": 6,
+      "constructive_eb_upper_bound": 6,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.07233638102443084,
+          "population_dobrushin": 0.6000000000000001,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.040738782343383115,
+          "population_dobrushin": 0.3600000000000001,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": -0.021781177574124934,
+          "population_dobrushin": 0.21600000000000008,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 4,
+          "ppt_min_eigenvalue": -0.010408205048492805,
+          "population_dobrushin": 0.12960000000000008,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 5,
+          "ppt_min_eigenvalue": -0.003587070030519078,
+          "population_dobrushin": 0.07776000000000007,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 6,
+          "ppt_min_eigenvalue": 0.0005012069727321784,
+          "population_dobrushin": 0.04665600000000007,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.0037572791286460336
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "stationary_reset",
+      "transition_matrix": [
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ]
+      ]
+    },
+    {
+      "gamma": 0.8,
+      "npt_based_eb_lower_bound": 14,
+      "first_strict_ppt_step": 14,
+      "constructive_eb_upper_bound": 14,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.09866812339754098,
+          "population_dobrushin": 0.8,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.07760271272042925,
+          "population_dobrushin": 0.6400000000000002,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": -0.06075049743419517,
+          "population_dobrushin": 0.5120000000000002,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 4,
+          "ppt_min_eigenvalue": -0.04726886677278456,
+          "population_dobrushin": 0.4096000000000003,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 5,
+          "ppt_min_eigenvalue": -0.03648373919887459,
+          "population_dobrushin": 0.32768000000000025,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 6,
+          "ppt_min_eigenvalue": -0.027855858324138644,
+          "population_dobrushin": 0.26214400000000027,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 7,
+          "ppt_min_eigenvalue": -0.020953830083958732,
+          "population_dobrushin": 0.20971520000000027,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 8,
+          "ppt_min_eigenvalue": -0.015432553022312103,
+          "population_dobrushin": 0.1677721600000003,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 9,
+          "ppt_min_eigenvalue": -0.011015963195120115,
+          "population_dobrushin": 0.13421772800000029,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 10,
+          "ppt_min_eigenvalue": -0.007483230925483459,
+          "population_dobrushin": 0.10737418240000031,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 11,
+          "ppt_min_eigenvalue": -0.004657719225488544,
+          "population_dobrushin": 0.08589934592000027,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 12,
+          "ppt_min_eigenvalue": -0.0023981517604923022,
+          "population_dobrushin": 0.0687194767360003,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 13,
+          "ppt_min_eigenvalue": -0.0005915486660018378,
+          "population_dobrushin": 0.05497558138880031,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 14,
+          "ppt_min_eigenvalue": 0.0008524231628409861,
+          "population_dobrushin": 0.0439804651110403,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.00639116258031925
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "stationary_reset",
+      "transition_matrix": [
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ],
+        [
+          0.21057886386608557,
+          0.08178445196912879,
+          0.06180968766527677,
+          0.05918499272410132,
+          0.05686638869412078,
+          0.04968696101331652,
+          0.13584903457910047,
+          0.34423961948886733
+        ]
+      ]
+    },
+    {
+      "gamma": 0.2,
+      "npt_based_eb_lower_bound": 3,
+      "first_strict_ppt_step": 3,
+      "constructive_eb_upper_bound": 3,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.025,
+          "population_dobrushin": 0.9801357795578943,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.004603744076249017,
+          "population_dobrushin": 0.8761689945328475,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": 0.00036119330566414904,
+          "population_dobrushin": 0.7841696707467878,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.001839219938608025
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "pruned_1000",
+      "transition_matrix": [
+        [
+          0.005945081895419112,
+          0.20729113227142482,
+          0.18781359876875336,
+          0.18412548955817765,
+          0.11061512281184699,
+          0.10630607239830328,
+          0.10202361140654913,
+          0.09587989088952564
+        ],
+        [
+          0.4041894454981591,
+          0.06744393618208189,
+          0.0,
+          0.12799843802298339,
+          0.07503068169139797,
+          0.0,
+          0.32533749860537764,
+          0.0
+        ],
+        [
+          0.9208520956009698,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.07914790439903013,
+          0.0
+        ],
+        [
+          0.7679062228382156,
+          0.0757593553994691,
+          0.0,
+          0.0,
+          0.10524090300453381,
+          0.02626324320514929,
+          0.024830275552632196,
+          0.0
+        ],
+        [
+          0.10776746194537407,
+          0.15132786354312858,
+          0.0,
+          0.05959192486235561,
+          0.0,
+          0.0,
+          0.6813127496491418,
+          0.0
+        ],
+        [
+          0.05054485535295124,
+          0.0,
+          0.25912108069455453,
+          0.0,
+          0.23157518382067185,
+          0.23955758678045672,
+          0.011511138055931229,
+          0.20769015529543441
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.07554404661122455,
+          0.9244559533887755
+        ]
+      ],
+      "rationally_certified_eb_index": 3
+    },
+    {
+      "gamma": 0.4,
+      "npt_based_eb_lower_bound": 5,
+      "first_strict_ppt_step": 5,
+      "constructive_eb_upper_bound": 5,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.05,
+          "population_dobrushin": 0.9851018346684207,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.01976886472236626,
+          "population_dobrushin": 0.9076818454413593,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": -0.006535197512409174,
+          "population_dobrushin": 0.8482066691710832,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 4,
+          "ppt_min_eigenvalue": -0.0009087646070230133,
+          "population_dobrushin": 0.786602006413538,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 5,
+          "ppt_min_eigenvalue": 0.0007291533752842002,
+          "population_dobrushin": 0.7274255088332316,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.004139611283971369
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "pruned_1000",
+      "transition_matrix": [
+        [
+          0.005945081895419112,
+          0.20729113227142482,
+          0.18781359876875336,
+          0.18412548955817765,
+          0.11061512281184699,
+          0.10630607239830328,
+          0.10202361140654913,
+          0.09587989088952564
+        ],
+        [
+          0.4041894454981591,
+          0.06744393618208189,
+          0.0,
+          0.12799843802298339,
+          0.07503068169139797,
+          0.0,
+          0.32533749860537764,
+          0.0
+        ],
+        [
+          0.9208520956009698,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.07914790439903013,
+          0.0
+        ],
+        [
+          0.7679062228382156,
+          0.0757593553994691,
+          0.0,
+          0.0,
+          0.10524090300453381,
+          0.02626324320514929,
+          0.024830275552632196,
+          0.0
+        ],
+        [
+          0.10776746194537407,
+          0.15132786354312858,
+          0.0,
+          0.05959192486235561,
+          0.0,
+          0.0,
+          0.6813127496491418,
+          0.0
+        ],
+        [
+          0.05054485535295124,
+          0.0,
+          0.25912108069455453,
+          0.0,
+          0.23157518382067185,
+          0.23955758678045672,
+          0.011511138055931229,
+          0.20769015529543441
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.07554404661122455,
+          0.9244559533887755
+        ]
+      ],
+      "rationally_certified_eb_index": 5
+    },
+    {
+      "gamma": 0.6,
+      "npt_based_eb_lower_bound": 8,
+      "first_strict_ppt_step": 8,
+      "constructive_eb_upper_bound": 8,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.075,
+          "population_dobrushin": 0.9900678897789471,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.04489679130309463,
+          "population_dobrushin": 0.9388246299887221,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": -0.026433714730839337,
+          "population_dobrushin": 0.9039213678097989,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 4,
+          "ppt_min_eigenvalue": -0.014893913468602327,
+          "population_dobrushin": 0.8660493627524694,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 5,
+          "ppt_min_eigenvalue": -0.007593284091184822,
+          "population_dobrushin": 0.8268161311416466,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 6,
+          "ppt_min_eigenvalue": -0.00307934476110159,
+          "population_dobrushin": 0.7875023008841107,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 7,
+          "ppt_min_eigenvalue": -0.0005844334506359978,
+          "population_dobrushin": 0.7489399417020552,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 8,
+          "ppt_min_eigenvalue": 0.0005774878321609164,
+          "population_dobrushin": 0.7116093775081592,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.0029327442608414796
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "pruned_1000",
+      "transition_matrix": [
+        [
+          0.005945081895419112,
+          0.20729113227142482,
+          0.18781359876875336,
+          0.18412548955817765,
+          0.11061512281184699,
+          0.10630607239830328,
+          0.10202361140654913,
+          0.09587989088952564
+        ],
+        [
+          0.4041894454981591,
+          0.06744393618208189,
+          0.0,
+          0.12799843802298339,
+          0.07503068169139797,
+          0.0,
+          0.32533749860537764,
+          0.0
+        ],
+        [
+          0.9208520956009698,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.07914790439903013,
+          0.0
+        ],
+        [
+          0.7679062228382156,
+          0.0757593553994691,
+          0.0,
+          0.0,
+          0.10524090300453381,
+          0.02626324320514929,
+          0.024830275552632196,
+          0.0
+        ],
+        [
+          0.10776746194537407,
+          0.15132786354312858,
+          0.0,
+          0.05959192486235561,
+          0.0,
+          0.0,
+          0.6813127496491418,
+          0.0
+        ],
+        [
+          0.05054485535295124,
+          0.0,
+          0.25912108069455453,
+          0.0,
+          0.23157518382067185,
+          0.23955758678045672,
+          0.011511138055931229,
+          0.20769015529543441
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.07554404661122455,
+          0.9244559533887755
+        ]
+      ],
+      "rationally_certified_eb_index": 8
+    },
+    {
+      "gamma": 0.8,
+      "npt_based_eb_lower_bound": 17,
+      "first_strict_ppt_step": 17,
+      "constructive_eb_upper_bound": 17,
+      "steps": [
+        {
+          "r": 1,
+          "ppt_min_eigenvalue": -0.1,
+          "population_dobrushin": 0.9950339448894736,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 2,
+          "ppt_min_eigenvalue": -0.07997417233928991,
+          "population_dobrushin": 0.9788694461188688,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 3,
+          "ppt_min_eigenvalue": -0.06388995922446587,
+          "population_dobrushin": 0.9557530933193614,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 4,
+          "ppt_min_eigenvalue": -0.05093488572445482,
+          "population_dobrushin": 0.9371132587091273,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 5,
+          "ppt_min_eigenvalue": -0.040468677013014744,
+          "population_dobrushin": 0.9197948384270861,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 6,
+          "ppt_min_eigenvalue": -0.03198639768133964,
+          "population_dobrushin": 0.9018536034872017,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 7,
+          "ppt_min_eigenvalue": -0.025090046594328303,
+          "population_dobrushin": 0.883416908365598,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 8,
+          "ppt_min_eigenvalue": -0.019466690056755966,
+          "population_dobrushin": 0.8646222553139136,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 9,
+          "ppt_min_eigenvalue": -0.014871680959925655,
+          "population_dobrushin": 0.8456024389054385,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 10,
+          "ppt_min_eigenvalue": -0.011115805156532953,
+          "population_dobrushin": 0.8264778277593248,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 11,
+          "ppt_min_eigenvalue": -0.008055272383954001,
+          "population_dobrushin": 0.8073530446806603,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 12,
+          "ppt_min_eigenvalue": -0.005583214862225673,
+          "population_dobrushin": 0.7883162590173773,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 13,
+          "ppt_min_eigenvalue": -0.0036207440860976537,
+          "population_dobrushin": 0.7694399437914505,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 14,
+          "ppt_min_eigenvalue": -0.0021053606383649275,
+          "population_dobrushin": 0.7507823750772395,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 15,
+          "ppt_min_eigenvalue": -0.0009768560869536057,
+          "population_dobrushin": 0.7323894309902255,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 16,
+          "ppt_min_eigenvalue": -0.0001667482430865409,
+          "population_dobrushin": 0.7142964297431602,
+          "constructive_separable": false,
+          "certificate_kind": null,
+          "minimum_residual": null
+        },
+        {
+          "r": 17,
+          "ppt_min_eigenvalue": 0.0004006886669840667,
+          "population_dobrushin": 0.696529862821292,
+          "constructive_separable": true,
+          "certificate_kind": "phase_twirl",
+          "minimum_residual": 0.0019096003076492602
+        }
+      ],
+      "scope": "Identity retention plus measured-and-prepared Markov channel only; finite-precision margins, not interval arithmetic.",
+      "model": "pruned_1000",
+      "transition_matrix": [
+        [
+          0.005945081895419112,
+          0.20729113227142482,
+          0.18781359876875336,
+          0.18412548955817765,
+          0.11061512281184699,
+          0.10630607239830328,
+          0.10202361140654913,
+          0.09587989088952564
+        ],
+        [
+          0.4041894454981591,
+          0.06744393618208189,
+          0.0,
+          0.12799843802298339,
+          0.07503068169139797,
+          0.0,
+          0.32533749860537764,
+          0.0
+        ],
+        [
+          0.9208520956009698,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.07914790439903013,
+          0.0
+        ],
+        [
+          0.7679062228382156,
+          0.0757593553994691,
+          0.0,
+          0.0,
+          0.10524090300453381,
+          0.02626324320514929,
+          0.024830275552632196,
+          0.0
+        ],
+        [
+          0.10776746194537407,
+          0.15132786354312858,
+          0.0,
+          0.05959192486235561,
+          0.0,
+          0.0,
+          0.6813127496491418,
+          0.0
+        ],
+        [
+          0.05054485535295124,
+          0.0,
+          0.25912108069455453,
+          0.0,
+          0.23157518382067185,
+          0.23955758678045672,
+          0.011511138055931229,
+          0.20769015529543441
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.07554404661122455,
+          0.9244559533887755
+        ]
+      ],
+      "rationally_certified_eb_index": 17
+    }
+  ],
+  "excluded_models": [
+    {
+      "model": "pruned_5000",
+      "reason": "Pruning creates zero-outdegree rows; no silent repair or SCC substitution."
+    }
+  ]
+}

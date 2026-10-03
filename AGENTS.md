@@ -2,7 +2,7 @@
 
 ## Project setup
 
-The active project is Quantum Reality Lab: FlyWalk on a real MaleCNS cell-type graph, plus small chemistry, materials, sustainability and QML experiments. See `datasets/fly/README.md` for provenance and `docs/FEST_IDEAS.md` for scope and candid candidate ratings. The user retired Rockland/AABC work; do not restore it from older board claims.
+The active project studies spectral and certified mixing on MaleCNS connectome-derived graphs and the connection to quantum channels, informed by “Pre-registered spectral and certified mixing analysis of the male Drosophila central nervous system connectome.” Prioritize reproducible classical baselines, explicit channel composition, entanglement witnesses and defensible bounds. Our eight-population graph is a coarse-grained experiment, not a replication of the full-CNS study. See `datasets/fly/README.md` for provenance. The festival shortlist is retired; unrelated track experiments are historical evidence, not active priorities. The user retired Rockland/AABC work; do not restore it from older board claims.
 
 Use uv with Python 3.12. Run `uv sync --locked` to install the environment and `uv run` to execute commands. Keep dependency declarations in `pyproject.toml` and update `uv.lock` with uv when dependencies change. Read `README.md` for notebook and local configuration instructions.
 

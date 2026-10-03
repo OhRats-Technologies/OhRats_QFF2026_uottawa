@@ -835,7 +835,7 @@ def main():
         "SmallOh",
     )
     p(
-        "Full commands, assumptions and candidate scoring live in README.md and docs/FEST_IDEAS.md. Frozen results are under artifacts/sprint-20261003; the portable dashboard is demo/index.html. The append-only board preserves coordination history; retired Rockland/AABC work remains removed.",
+        "Current project commands and scope live in README.md; historical experiment assumptions live in the corresponding source modules. Frozen results are under artifacts/sprint-20261003; the portable dashboard is demo/index.html. The append-only board preserves coordination history; retired Rockland/AABC work remains removed.",
         "SmallOh",
     )
     p(
