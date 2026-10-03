@@ -1,0 +1,10 @@
+{
+  "files_sha256": {
+    "results.json": "61f67be9ac6b6303fd633fbb5639d90f5abf8ed2b8763fc0b9e2d584c925db1a"
+  },
+  "source_sha256": {
+    "flybrain/channel_parameter_boxes.py": "1fdfeb1cce8933e08b7e883604e18597ca4794875c6a6071a0e167802338b135",
+    "flybrain/channel_robustness.py": "371007a92953f2bc870dbbe3dbc555de9f30ae89260d7f03c4176592d7ea7871",
+    "flybrain/channel_certificates.py": "2fc33c6d4459a3b09f64879420e0b1d546318ac64c690b123b5e5f97394d7e40"
+  }
+}
