@@ -91,7 +91,7 @@ def plot_forgetting_and_entanglement(profile, output_dir: Path):
             color="#059669",
             linestyle=":",
             linewidth=2,
-            label=f"EB Index $n_{{EB}} = {profile.entanglement_breaking_index}$",
+            label=f"PPT Onset ($n_{{EB}} \\geq {profile.entanglement_breaking_index}$)",
         )
     ax2.set_xlabel("Synaptic / Channel Steps $r$", fontsize=11)
     ax2.set_ylabel("Negativity / Trace Distance", fontsize=11)
@@ -250,7 +250,7 @@ def run(args=None):
     print(f"Results successfully saved to {out_file}")
     print(f"Spectral gap: {chain.spectral_gap:.4f}, |lambda2|: {float(np.abs(chain.lambda2)):.4f}")
     print(f"Sweep cut of lowest conductance: {[chain.node_names[i] for i in sweep.cut_nodes]} (escape prob: {sweep.escape_probability:.4f})")
-    print(f"Quantum Entanglement-Breaking Index n_EB: {profile.entanglement_breaking_index}")
+    print(f"Quantum Entanglement-Breaking Lower Bound (PPT Onset): n_EB >= {profile.entanglement_breaking_index}")
     return summary
 
 

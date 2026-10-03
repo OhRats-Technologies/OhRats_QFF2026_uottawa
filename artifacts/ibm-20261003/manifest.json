@@ -1,9 +1,12 @@
 {
   "schema_version": 1,
   "files_sha256": {
-    "choi-walk/result.json": "9ec20d7fb4229a55c7a26f4b147e58166d438a1fc41d54ce181f03708b9a04dd",
-    "choi-walk/logical-circuit.qpy": "589cf28a4dd6709bfeef33c3be184295b074c286fd56d2cc0af97601b25abda4",
+    "bell-pair/logical-circuit.qpy": "a9e47be61185fd9fc04dd5d0ef090fd14934f9f00ec46ef43880c9c0b1a5ce85",
     "bell-pair/result.json": "a5c0642c15fafb9fe841fd1013bac56ebe7aa77012e4ea4c85bd00d51a2c22aa",
-    "bell-pair/logical-circuit.qpy": "a9e47be61185fd9fc04dd5d0ef090fd14934f9f00ec46ef43880c9c0b1a5ce85"
+    "choi-walk/logical-circuit.qpy": "589cf28a4dd6709bfeef33c3be184295b074c286fd56d2cc0af97601b25abda4",
+    "choi-walk/result.json": "9ec20d7fb4229a55c7a26f4b147e58166d438a1fc41d54ce181f03708b9a04dd",
+    "conjugate-witness/logical-circuit-x.qpy": "8190be21df246f742dea8bc50ae80c130f8b7e161f60a0dbbade0bc18ebc3a77",
+    "conjugate-witness/logical-circuit-z.qpy": "d7c89277b7b8253e60514858cbd60c72d4ac5520ccef847c705902d2e101bdd2",
+    "conjugate-witness/result.json": "6845f5c6601e0cb011d2ab4400b387682e94ef6f152a5b0a9ca87a06b36b2863"
   }
 }

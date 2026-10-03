@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "evidence": "real_ibm_hardware",
+  "experiment": "conjugate-witness",
+  "backend": "ibm_fez",
+  "qubits": 6,
+  "shots_per_basis": 128,
+  "counts_z": {
+    "100100": 9,
+    "000000": 11,
+    "001001": 11,
+    "101101": 9,
+    "111111": 9,
+    "011011": 18,
+    "010010": 17,
+    "011010": 2,
+    "110010": 1,
+    "011111": 1,
+    "010110": 3,
+    "110110": 13,
+    "000101": 2,
+    "110001": 1,
+    "011001": 2,
+    "011101": 1,
+    "000011": 1,
+    "111010": 1,
+    "010001": 1,
+    "000001": 2,
+    "110011": 1,
+    "001010": 1,
+    "101000": 1,
+    "110111": 1,
+    "101001": 1,
+    "111110": 1,
+    "100000": 1,
+    "011000": 1,
+    "101011": 1,
+    "100011": 1,
+    "101010": 1,
+    "110101": 1,
+    "111001": 1
+  },
+  "counts_x": {
+    "010010": 9,
+    "111111": 13,
+    "000000": 12,
+    "001101": 1,
+    "111100": 2,
+    "001001": 5,
+    "100011": 2,
+    "110010": 2,
+    "110110": 5,
+    "100100": 10,
+    "101101": 14,
+    "011011": 14,
+    "100110": 3,
+    "100101": 2,
+    "011111": 1,
+    "011000": 1,
+    "101001": 1,
+    "000100": 3,
+    "111011": 2,
+    "011010": 1,
+    "001110": 1,
+    "110100": 2,
+    "111000": 1,
+    "001011": 1,
+    "000011": 1,
+    "000001": 1,
+    "011101": 1,
+    "011100": 1,
+    "010001": 2,
+    "101010": 2,
+    "010011": 1,
+    "110001": 1,
+    "010110": 2,
+    "000010": 1,
+    "111101": 1,
+    "001111": 1,
+    "001000": 1,
+    "011110": 1,
+    "010000": 1,
+    "100000": 1,
+    "110011": 1
+  },
+  "bit_order": "Qiskit measurement string: highest-index qubit on the left",
+  "qubit_mapping": {
+    "reference_register_qubits": [
+      0,
+      1,
+      2
+    ],
+    "system_register_qubits": [
+      3,
+      4,
+      5
+    ],
+    "bipartite_pairs": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "basis_z": "Computational measurement (Z basis)",
+    "basis_x": "Conjugate measurement via Hadamard rotation H on all qubits before readout (X basis)"
+  },
+  "witness_statistics": [
+    {
+      "pair": [
+        0,
+        3
+      ],
+      "exp_zz": 0.703125,
+      "exp_xx": 0.65625,
+      "witness_sum": 1.359375,
+      "standard_error": 0.09164090806115704,
+      "certified_entangled": true
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "exp_zz": 0.796875,
+      "exp_xx": 0.609375,
+      "witness_sum": 1.40625,
+      "standard_error": 0.0881073716299997,
+      "certified_entangled": true
+    },
+    {
+      "pair": [
+        2,
+        5
+      ],
+      "exp_zz": 0.71875,
+      "exp_xx": 0.609375,
+      "witness_sum": 1.328125,
+      "standard_error": 0.09320929686710945,
+      "certified_entangled": true
+    }
+  ],
+  "uncertainty_calculation": {
+    "witness_formula": "S_i = <Z_i Z_{i+3}> + <X_i X_{i+3}>",
+    "separable_bound": "S <= 1.0 for all separable states",
+    "standard_error_formula": "sigma = sqrt((1 - <ZZ>^2)/N_Z + (1 - <XX>^2)/N_X)",
+    "shots_z": 128,
+    "shots_x": 128
+  },
+  "interpretation_and_limitations": [
+    "Certifies pairwise reference-system non-separability (entanglement) under trusted X/Z measurement assumptions.",
+    "Does not claim genuine six-qubit multipartite entanglement.",
+    "Tests step 1 connectome walk generator on hardware; multi-step noise dilation remains simulated.",
+    "Observed ~25% degradation from ideal simulation reflects physical gate/readout noise on ibm_fez, not a pre-run calibration forecast."
+  ],
+  "packages": {
+    "qiskit": "2.5.2",
+    "qiskit-ibm-runtime": "0.50.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  }
+}

@@ -36,7 +36,8 @@ class ChannelMixingProfile:
     choi_negativity: List[float]
     log_negativity: List[float]
     trace_distance_to_stationary: List[float]
-    entanglement_breaking_index: Optional[int]
+    entanglement_breaking_index: Optional[int]  # PPT onset step providing lower bound n_EB >= r_PPT
+    ppt_onset_step: Optional[int] = None
 
 
 class ConnectomeQuantumChannel:
@@ -308,6 +309,7 @@ def compare_classical_and_quantum_mixing(
         log_negativity=log_negs,
         trace_distance_to_stationary=trace_dists,
         entanglement_breaking_index=eb_index,
+        ppt_onset_step=eb_index,
     )
 
 
