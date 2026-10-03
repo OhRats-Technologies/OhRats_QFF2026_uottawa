@@ -87,17 +87,58 @@ Optimization of corrupted $d=4$ latent batches ($N=128$, 100 steps) across 5 pat
 
 ---
 
-### 4.2 Full LeJEPA 6-Way Ablation Study (Phase 2)
-Trained across 3 independent random seeds on multi-view representation learning:
+### 4.2 Full LeJEPA 7-Way Matched 10-Seed Ablation Study (Phase 2)
+To resolve prior confounds (unequal batch sizes, bundled moment penalties, saturated probes), we run a strict 10-seed matched protocol. All MMD and Moment variants use $B_q=8$ and update every 4th step.
 
-| Regularizer Variant | Downstream Probe Acc (%) | Effective Rank | Held-out RBF-MMD$^2$ | Energy Distance | Training Time | Circuit Evals |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **No Regularizer** (Collapse Ctrl) | $100.0 \pm 0.0\%$ | $2.55 \pm 0.41$ | $0.6237 \pm 0.0095$ | $1.1286 \pm 0.0164$ | $0.61\,	ext{s}$ | 0 |
-| **Covariance Penalty** | $99.8 \pm 0.2\%$ | $3.93 \pm 0.03$ | $0.0789 \pm 0.0061$ | $0.1166 \pm 0.0109$ | $0.66\,	ext{s}$ | 0 |
-| **Standard SIGReg** (Balestriero 2025)| $99.3 \pm 0.5\%$ | $3.93 \pm 0.03$ | $0.0057 \pm 0.0035$ | $0.0367 \pm 0.0124$ | $1.18\,	ext{s}$ | 0 |
-| **Classical RBF-MMD** | $100.0 \pm 0.0\%$ | $3.53 \pm 0.34$ | $0.0585 \pm 0.0133$ | $0.1319 \pm 0.0377$ | $0.66\,	ext{s}$ | 0 |
-| **Quantum MMD Only** | $100.0 \pm 0.0\%$ | $2.94 \pm 0.21$ | $0.0819 \pm 0.0084$ | $0.1984 \pm 0.0352$ | $2.21\,	ext{s}$ | 3,888 |
-| **Q-SIGReg (Q-MMD + Moments)**| $99.7 \pm 0.2\%$ | $3.80 \pm 0.04$ | $0.0537 \pm 0.0136$ | $0.1092 \pm 0.0241$ | $2.26\,	ext{s}$ | 3,888 |
+# Matched 10-Seed Ablation Protocol for Q-SIGReg
+
+## Paired Statistics (10 seeds)
+
+### Q+Moments_vs_RBF+Moments
+- **Mean Diff**: 0.001020 +/- 0.002006
+- **95% Bootstrap CI**: [-0.002876, 0.004849]
+- **Wins/Ties/Losses**: 5 / 0 / 5
+- **Wilcoxon p-value**: 5.5664e-01
+
+### Q_Pure_vs_RBF_Pure
+- **Mean Diff**: 0.008580 +/- 0.003791
+- **95% Bootstrap CI**: [0.000762, 0.015727]
+- **Wins/Ties/Losses**: 2 / 0 / 8
+- **Wilcoxon p-value**: 4.8828e-02
+
+### Q+Moments_vs_SIGReg
+- **Mean Diff**: 0.011185 +/- 0.001335
+- **95% Bootstrap CI**: [0.008667, 0.013910]
+- **Wins/Ties/Losses**: 0 / 0 / 10
+- **Wilcoxon p-value**: 1.9531e-03
+
+## Aggregated Metrics
+
+| Variant | Probe 1% | Probe 5% | Probe 100% | 5-NN | Eff Rank | Cov Frobenius | Energy Dist | MMD^2 (1.0 \sigma) | Q-MMD^2 |
+|---------|----------|----------|------------|------|----------|---------------|-------------|--------------------|---------|
+| Moments Only | 62.34% | 98.73% | 99.76% | 100.00% | 3.64 | 0.9792 | 0.1240 | 0.0141 | 0.0625 |
+| RBF Pure | 62.68% | 99.80% | 100.00% | 100.00% | 3.08 | 1.4197 | 0.1698 | 0.0236 | 0.0758 |
+| RBF+Moments | 62.59% | 99.07% | 99.71% | 100.00% | 3.69 | 0.9433 | 0.1056 | 0.0110 | 0.0547 |
+| Q Pure | 62.29% | 99.80% | 100.00% | 100.00% | 3.10 | 1.1968 | 0.2064 | 0.0322 | 0.0621 |
+| Q+Moments | 62.98% | 99.71% | 99.90% | 100.00% | 3.66 | 0.9292 | 0.1091 | 0.0121 | 0.0537 |
+| SIGReg | 57.27% | 99.02% | 99.71% | 100.00% | 3.93 | 0.4377 | 0.0274 | 0.0009 | 0.0046 |
+| Untrained | 11.32% | 8.88% | 8.29% | 100.00% | 2.63 | 1.9966 | 1.0054 | 0.0843 | 0.7614 |
+
+## Quantum Kernel Diagnostics
+
+| Variant | Grad Cos Sim | G Min Eig | G Max Eig | G Cond Num | G Eff Rank | G Mean Off-Diag |
+|---------|--------------|-----------|-----------|------------|------------|-----------------|
+| Moments Only | 0.0000 | 0.0000 | 21.7399 | 3.2850e+09 | 10.37 | 0.1749 |
+| RBF Pure | 0.0000 | 0.0000 | 21.4806 | 1.3548e+09 | 10.39 | 0.1814 |
+| RBF+Moments | 0.2595 | 0.0000 | 20.0431 | 5.7854e+10 | 10.78 | 0.1686 |
+| Q Pure | 0.0000 | 0.0000 | 20.6209 | 1.0403e+09 | 10.39 | 0.1713 |
+| Q+Moments | 0.1489 | 0.0000 | 19.9522 | 4.1462e+08 | 11.37 | 0.1638 |
+| SIGReg | 0.0000 | 0.0005 | 12.1525 | 7.7044e+04 | 29.34 | 0.1021 |
+| Untrained | 0.0000 | -0.0000 | 97.6955 | 9.7695e+13 | 1.14 | 0.9766 |
+
+
+**Discussion of Matched Results**: The rigorous 10-seed matched evaluation reveals that Q-SIGReg (Q+Moments) is statistically indistinguishable from Classical RBF+Moments on held-out MMD ($p = 0.556$). When moment penalties are completely removed, Pure Quantum MMD performs marginally worse than Pure Classical RBF ($p = 0.048$). The results confirm that while the quantum kernel acts as a valid projection-free distribution regularizer, it does not confer a statistical advantage over classical RBF in this strictly matched finite-sample regime. The high 5-NN accuracy across all variants (even Untrained) demonstrates that topological clustering is largely preserved by the random embedding geometry, while linear probe saturation curves reveal the structural alignment provided by training.
+
 
 ---
 
