@@ -1,0 +1,376 @@
+{
+  "origin": "CLASSICAL_NUMERICAL_FINITE_COUNT_CONVOLUTION",
+  "rows": [
+    {
+      "case": "Neel product",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 2.0921143215501757e-09,
+      "numerical_energy_coverage": 0.9999999979078857,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 1.3165311356912628e-09,
+      "numerical_energy_coverage": 0.9999999986834689,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 1.0830325099589637e-09,
+      "numerical_energy_coverage": 0.9999999989169676,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 7.801113205611177e-17,
+      "numerical_energy_coverage": 1.0,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 2.4528215551587443e-16,
+      "numerical_energy_coverage": 1.0,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 8.770589994411454e-16,
+      "numerical_energy_coverage": 0.9999999999999989,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 4.7937834060039645e-17,
+      "numerical_energy_coverage": 0.9999992800836596,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 1.1157854876618412e-16,
+      "numerical_energy_coverage": 0.9999994336467932,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 3.204254841315147e-16,
+      "numerical_energy_coverage": 0.9999994914984771,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 4.030458968568659e-17,
+      "numerical_energy_coverage": 0.9999999999981287,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 1.230853586386369e-16,
+      "numerical_energy_coverage": 0.9999999999999998,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 2.4833325401047027e-16,
+      "numerical_energy_coverage": 0.9999999999999989,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 0.9999972279655123,
+      "numerical_energy_coverage": 0.999999975433219,
+      "monte_carlo_detection_fraction": 1.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.0,
+      "shots_per_basis": 72,
+      "numerical_detection_probability": 0.9999998460071969,
+      "numerical_energy_coverage": 0.9999999705531031,
+      "monte_carlo_detection_fraction": null,
+      "is_sufficient_shot_plan": true
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 0.9999999999999991,
+      "numerical_energy_coverage": 0.9999999420131361,
+      "monte_carlo_detection_fraction": 1.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 0.9999999999999988,
+      "numerical_energy_coverage": 0.9999999225458479,
+      "monte_carlo_detection_fraction": 1.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 0.7909214300586127,
+      "numerical_energy_coverage": 1.0,
+      "monte_carlo_detection_fraction": 0.812,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.02,
+      "shots_per_basis": 195,
+      "numerical_detection_probability": 0.9999995820589189,
+      "numerical_energy_coverage": 1.0,
+      "monte_carlo_detection_fraction": null,
+      "is_sufficient_shot_plan": true
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 0.9999999999031376,
+      "numerical_energy_coverage": 1.0,
+      "monte_carlo_detection_fraction": 1.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 0.9999999999999978,
+      "numerical_energy_coverage": 1.0,
+      "monte_carlo_detection_fraction": 1.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 3.197081851604199e-05,
+      "numerical_energy_coverage": 0.9999986591145816,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 0.000371176115689826,
+      "numerical_energy_coverage": 0.9999986553096235,
+      "monte_carlo_detection_fraction": 0.002,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 0.01946158855497228,
+      "numerical_energy_coverage": 0.999998963515501,
+      "monte_carlo_detection_fraction": 0.018,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.0,
+      "shots_per_basis": 12937,
+      "numerical_detection_probability": 0.9999989318591467,
+      "numerical_energy_coverage": 0.9999989015820747,
+      "monte_carlo_detection_fraction": null,
+      "is_sufficient_shot_plan": true
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 5.41886369868731e-12,
+      "numerical_energy_coverage": 0.9999999999999667,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 2.563624275630172e-16,
+      "numerical_energy_coverage": 0.9999999999999998,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 4.617875541139194e-16,
+      "numerical_energy_coverage": 0.9999999999999998,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 4.292430471992594e-13,
+      "numerical_energy_coverage": 0.9999985338804294,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 1.985703380974717e-16,
+      "numerical_energy_coverage": 0.99999898427829,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 5.7726516296421535e-16,
+      "numerical_energy_coverage": 0.9999989693167797,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 6.291854302875831e-17,
+      "numerical_energy_coverage": 0.999999999999736,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 1.8101062952796118e-16,
+      "numerical_energy_coverage": 0.9999999999999997,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 4.596650830900517e-16,
+      "numerical_energy_coverage": 0.9999999999999993,
+      "monte_carlo_detection_fraction": 0.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 0.9952323566096388,
+      "numerical_energy_coverage": 0.9999981786731862,
+      "monte_carlo_detection_fraction": 0.996,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.0,
+      "shots_per_basis": 101,
+      "numerical_detection_probability": 0.9999891967558848,
+      "numerical_energy_coverage": 0.9999976101765587,
+      "monte_carlo_detection_fraction": null,
+      "is_sufficient_shot_plan": true
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 0.9999999999999993,
+      "numerical_energy_coverage": 0.9999973381410232,
+      "monte_carlo_detection_fraction": 1.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 0.999999999999998,
+      "numerical_energy_coverage": 0.9999955283433852,
+      "monte_carlo_detection_fraction": 1.0,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "numerical_detection_probability": 0.32757656757197307,
+      "numerical_energy_coverage": 0.9999999999999998,
+      "monte_carlo_detection_fraction": 0.324,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "numerical_detection_probability": 0.9990218185130424,
+      "numerical_energy_coverage": 0.9999999999999998,
+      "monte_carlo_detection_fraction": 0.998,
+      "is_sufficient_shot_plan": false
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.02,
+      "shots_per_basis": 333,
+      "numerical_detection_probability": 0.9999826788803506,
+      "numerical_energy_coverage": 0.9999999999999998,
+      "monte_carlo_detection_fraction": null,
+      "is_sufficient_shot_plan": true
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "numerical_detection_probability": 0.9999999999999972,
+      "numerical_energy_coverage": 0.9999999999999996,
+      "monte_carlo_detection_fraction": 1.0,
+      "is_sufficient_shot_plan": false
+    }
+  ],
+  "method": "Collapse each basis to outcomes -1,0,1, raise its probability polynomial to n, and convolve three independent bases. Small products use direct convolution; large products use FFT. Recomputed mean and variance are checked against independent one-shot moments.",
+  "limitations": "Numerical convolution is exact for the stated finite-count model up to floating-point roundoff, not a symbolic proof or hardware distribution. Only delta=0 or 1 integer-outcome cases are supported. Tiny tails may be below numerical resolution. Independent fixed counts and the declared symmetric-readout assumptions remain essential."
+}

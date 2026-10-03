@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local downloads and regenerated experiment outputs.
+/data/
+/results/
+
+# Generated browser build inputs.
+node_modules/
+/explorer/data.json

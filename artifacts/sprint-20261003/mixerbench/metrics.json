@@ -1,0 +1,331 @@
+{
+  "evidence": "ideal_four_qubit_matched_optimizer_followup",
+  "rows": [
+    {
+      "depth": 1,
+      "seed": 2026,
+      "preparation": "pair",
+      "evaluations": 816,
+      "objective": 1.1000000000000012,
+      "parameters": [
+        -1.3188578362743897e-07,
+        -5.497787013394711
+      ],
+      "cx": 36,
+      "circuit_depth": 51,
+      "feasible_probability": 0.9999999999999981,
+      "optimal_probability": 1.7921016403759838e-14,
+      "conditional_carbon_proxy": 1.1000000000000032,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 1,
+      "seed": 2026,
+      "preparation": "phase_pair",
+      "evaluations": 816,
+      "objective": 0.7505387249333997,
+      "parameters": [
+        -3.2531958115473074,
+        0.7826403856970763
+      ],
+      "cx": 36,
+      "circuit_depth": 51,
+      "feasible_probability": 0.999999999999999,
+      "optimal_probability": 0.9759473128911005,
+      "conditional_carbon_proxy": 0.7505387249334006,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 1,
+      "seed": 2026,
+      "preparation": "dicke",
+      "evaluations": 816,
+      "objective": 0.867025816622264,
+      "parameters": [
+        -3.2531956934181903,
+        0.7826403906577841
+      ],
+      "cx": 39,
+      "circuit_depth": 95,
+      "feasible_probability": 0.9999999999999959,
+      "optimal_probability": 0.6506315403973967,
+      "conditional_carbon_proxy": 0.8670258166222674,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 1,
+      "seed": 2027,
+      "preparation": "pair",
+      "evaluations": 816,
+      "objective": 1.0999999999999992,
+      "parameters": [
+        2.8555334630198104e-07,
+        -2.3561944817666913
+      ],
+      "cx": 36,
+      "circuit_depth": 51,
+      "feasible_probability": 0.9999999999999982,
+      "optimal_probability": 4.384495386788027e-15,
+      "conditional_carbon_proxy": 1.1000000000000012,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 1,
+      "seed": 2027,
+      "preparation": "phase_pair",
+      "evaluations": 816,
+      "objective": 0.7505387249334008,
+      "parameters": [
+        3.2531959356431397,
+        -0.7826404152983477
+      ],
+      "cx": 36,
+      "circuit_depth": 51,
+      "feasible_probability": 0.9999999999999997,
+      "optimal_probability": 0.9759473164223706,
+      "conditional_carbon_proxy": 0.750538724933401,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 1,
+      "seed": 2027,
+      "preparation": "dicke",
+      "evaluations": 816,
+      "objective": 0.8670258166222651,
+      "parameters": [
+        3.2531959356431397,
+        -0.7826404152983477
+      ],
+      "cx": 39,
+      "circuit_depth": 95,
+      "feasible_probability": 0.9999999999999973,
+      "optimal_probability": 0.6506315442815784,
+      "conditional_carbon_proxy": 0.8670258166222675,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 1,
+      "seed": 2028,
+      "preparation": "pair",
+      "evaluations": 816,
+      "objective": 1.0999999999999985,
+      "parameters": [
+        1.199597394752061e-07,
+        5.497787155316775
+      ],
+      "cx": 36,
+      "circuit_depth": 51,
+      "feasible_probability": 0.9999999999999984,
+      "optimal_probability": 8.94296790726292e-16,
+      "conditional_carbon_proxy": 1.1000000000000003,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 1,
+      "seed": 2028,
+      "preparation": "phase_pair",
+      "evaluations": 816,
+      "objective": 0.7505387249333996,
+      "parameters": [
+        3.2531958395549943,
+        2.3589522657283992
+      ],
+      "cx": 36,
+      "circuit_depth": 51,
+      "feasible_probability": 0.9999999999999991,
+      "optimal_probability": 0.9759473135427353,
+      "conditional_carbon_proxy": 0.7505387249334003,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 1,
+      "seed": 2028,
+      "preparation": "dicke",
+      "evaluations": 816,
+      "objective": 0.8670258166222642,
+      "parameters": [
+        3.2531958395549943,
+        2.3589522657283992
+      ],
+      "cx": 39,
+      "circuit_depth": 95,
+      "feasible_probability": 0.9999999999999967,
+      "optimal_probability": 0.6506315423618217,
+      "conditional_carbon_proxy": 0.8670258166222672,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 2,
+      "seed": 2026,
+      "preparation": "pair",
+      "evaluations": 1632,
+      "objective": 1.0578699665779996,
+      "parameters": [
+        1.0131459336851152,
+        -1.2188410334976048,
+        5.882789347658482,
+        0.6930665088962353
+      ],
+      "cx": 64,
+      "circuit_depth": 90,
+      "feasible_probability": 0.9999999999999991,
+      "optimal_probability": 0.2304505526475385,
+      "conditional_carbon_proxy": 1.0578699665780005,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 2,
+      "seed": 2026,
+      "preparation": "phase_pair",
+      "evaluations": 1632,
+      "objective": 0.7516763364213451,
+      "parameters": [
+        -3.280056513795086,
+        -3.9028324841041697,
+        -0.13133468432417494,
+        4.681318184056343
+      ],
+      "cx": 64,
+      "circuit_depth": 90,
+      "feasible_probability": 0.9999999999999993,
+      "optimal_probability": 0.9740661312410395,
+      "conditional_carbon_proxy": 0.7516763364213458,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 2,
+      "seed": 2026,
+      "preparation": "dicke",
+      "evaluations": 1632,
+      "objective": 0.7336393934619625,
+      "parameters": [
+        -5.9894893974921715,
+        5.220389521779944,
+        -2.938590277371086,
+        -2.2710271907478923
+      ],
+      "cx": 67,
+      "circuit_depth": 134,
+      "feasible_probability": 0.9999999999999979,
+      "optimal_probability": 0.9932416626218519,
+      "conditional_carbon_proxy": 0.733639393461964,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 2,
+      "seed": 2027,
+      "preparation": "pair",
+      "evaluations": 1632,
+      "objective": 1.0580957289503405,
+      "parameters": [
+        -0.940416403752899,
+        -0.392941390496784,
+        5.941204627242831,
+        -2.4401222379191565
+      ],
+      "cx": 64,
+      "circuit_depth": 90,
+      "feasible_probability": 1.0000000000000013,
+      "optimal_probability": 0.21298205610692666,
+      "conditional_carbon_proxy": 1.0580957289503392,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 2,
+      "seed": 2027,
+      "preparation": "phase_pair",
+      "evaluations": 1632,
+      "objective": 0.7513460524510066,
+      "parameters": [
+        3.2811397705344194,
+        2.3470038788226644,
+        1.635998710149877,
+        -3.173937661564494
+      ],
+      "cx": 64,
+      "circuit_depth": 90,
+      "feasible_probability": 1.0000000000000009,
+      "optimal_probability": 0.9741340195530798,
+      "conditional_carbon_proxy": 0.7513460524510059,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 2,
+      "seed": 2027,
+      "preparation": "dicke",
+      "evaluations": 1632,
+      "objective": 0.7337549902940826,
+      "parameters": [
+        5.986248552159669,
+        -2.090720177237731,
+        2.9378984854428984,
+        -0.8801506856144805
+      ],
+      "cx": 67,
+      "circuit_depth": 134,
+      "feasible_probability": 0.9999999999999971,
+      "optimal_probability": 0.9930251827449278,
+      "conditional_carbon_proxy": 0.7337549902940848,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 2,
+      "seed": 2028,
+      "preparation": "pair",
+      "evaluations": 1632,
+      "objective": 1.0642125162339076,
+      "parameters": [
+        -5.755684052028455,
+        -1.8618823098721229,
+        5.531376931144699,
+        -3.8289883389553285
+      ],
+      "cx": 64,
+      "circuit_depth": 90,
+      "feasible_probability": 0.9999999999999986,
+      "optimal_probability": 0.26737702853185946,
+      "conditional_carbon_proxy": 1.0642125162339091,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 2,
+      "seed": 2028,
+      "preparation": "phase_pair",
+      "evaluations": 1632,
+      "objective": 0.7373238839819214,
+      "parameters": [
+        -2.6825608743717044,
+        -4.694015693750064,
+        0.7391419116815525,
+        0.8104877329457909
+      ],
+      "cx": 64,
+      "circuit_depth": 90,
+      "feasible_probability": 0.9999999999999992,
+      "optimal_probability": 0.9915579047950637,
+      "conditional_carbon_proxy": 0.737323883981922,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "depth": 2,
+      "seed": 2028,
+      "preparation": "dicke",
+      "evaluations": 1632,
+      "objective": 0.744189387617133,
+      "parameters": [
+        3.2414195589598664,
+        -3.909669086250652,
+        4.366366515230234,
+        -0.48928791274970806
+      ],
+      "cx": 67,
+      "circuit_depth": 134,
+      "feasible_probability": 0.9999999999999977,
+      "optimal_probability": 0.9743103390379676,
+      "conditional_carbon_proxy": 0.7441893876171348,
+      "optimal_carbon_proxy": 0.73
+    }
+  ],
+  "optimizer": "Differential evolution, maxiter50 popsize8 tol0 atol0 polishFalse bounds[-6,6]",
+  "interpretation": "The original architecture search used different optimization methods and bounds for the two starts. This follow-up removes those confounders for this one toy instance; three seeds do not establish general superiority."
+}

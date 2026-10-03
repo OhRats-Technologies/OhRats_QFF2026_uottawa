@@ -1,0 +1,47 @@
+{
+  "dataset": "male-cns:v1.0",
+  "source_commit": "789cc6c105798ce2fd70ba85dab394f90899616b",
+  "evidence": "exact_small_graph_simulation",
+  "nodes": [
+    "Mi1_R",
+    "Pm2a_R",
+    "Pm1_R",
+    "Pm2b_R",
+    "Pm4_R",
+    "Tm3_R",
+    "Y3_R",
+    "T4a_R"
+  ],
+  "time_end": 8.0,
+  "time_steps": 41,
+  "lesions": 56,
+  "null_samples": 99,
+  "seed": 2026,
+  "observed_mean_tv": 0.33249348096448966,
+  "null_mean_tv": 0.283734944807693,
+  "null_sd": 0.02093730473680975,
+  "descriptive_null_percentile": 98.98989898989899,
+  "classical_sensitivity": {
+    "Mi1_R": 0.2731331882413261,
+    "Pm2a_R": 0.07133383072333202,
+    "Pm1_R": 0.07079920239451302,
+    "Pm2b_R": 0.06875571440444447,
+    "Pm4_R": 0.06764968973856973,
+    "Tm3_R": 0.0748024229806591,
+    "Y3_R": 0.05670153632111736,
+    "T4a_R": 0.0492759825386744
+  },
+  "quantum_sensitivity": {
+    "Mi1_R": 0.10964123241557268,
+    "Pm2a_R": 0.07229314942465123,
+    "Pm1_R": 0.07350181651042909,
+    "Pm2b_R": 0.0743276773092966,
+    "Pm4_R": 0.041456626245792806,
+    "Tm3_R": 0.04699808828581976,
+    "Y3_R": 0.03235117356980033,
+    "T4a_R": 0.029985605629730256
+  },
+  "null_preserves": "symmetric complete topology and edge-weight multiset",
+  "null_does_not_preserve": "node strengths, populations, spatial organization, or biological cell identity",
+  "interpretation": "Selected graph descriptive controls; not population inference or evidence of quantum benefit"
+}

@@ -1,0 +1,5 @@
+# Preserve exported CSV bytes: integrity manifests hash the exact CRLF representation.
+*.csv -text whitespace=cr-at-eol
+
+# PDF streams are binary artifacts, not source text.
+*.pdf binary

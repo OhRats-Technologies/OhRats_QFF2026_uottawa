@@ -1,0 +1,5 @@
+{
+  "generated_utc": "2026-10-03T09:35:39.661714+00:00",
+  "sha256": "85ada9e0cfde19a14cc20e602e48b5446d298c00511b9b6c5ee3d485fe9afe5c",
+  "evidence": "Offline snapshot; refresh with python -m tracklab.demo"
+}

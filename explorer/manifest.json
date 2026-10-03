@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "format": "self-contained HTML with gzip JSON",
+  "runtime": "Bun 1.4.2",
+  "html_sha256": "5ef59ed81e9d1d860ff4d403743859c72ce9d3cae2d95c9d431752c1ff5a6e5e",
+  "html_bytes": 10041740,
+  "data_sha256": "d77639f796675f7b41620e05bf0a2dd7761ddbb7b6c36463328273e0d97ccefd",
+  "data_bytes": 25652902,
+  "packed_bytes": 7090381,
+  "sources": {
+    "app.js": "add94f4f43973bece4f0846e46742be58553da3ccc837d8a8ea044d4aeb717e4",
+    "canvas-renderer.js": "eb9b56fb3e6085452de658ea5720c255d6b43aa4f69b8907e699ba68c2a3ef77",
+    "model.js": "d8824804f53c601a11c29c0efc1e89cbecf26900033032b86696e3b9ca3eaa4e",
+    "timeline.js": "05ffc3642daacb144fb08b50690f26a3ff894d392bd3a1ba5d55a3ec42d0d210",
+    "model.test.js": "dd41598522699fc82543f2dc06d451ed2de9efb6eed3f4d751d06340fa2ea29b",
+    "build.mjs": "b774665efbebc985e300bd31658f56d7515b939272508b79fa961bcfa72e1779",
+    "template.html": "4345ea5256da8c031a0bcdf4e79f1f3590fcc97d2803e60367a1aa23833ea5cb",
+    "styles.css": "bc6f1c0a3499c20231c247c14975e0c997a76a810fb9a6655dfbf325d2322a60",
+    "bun.lock": "ae8aed006098ad66a8441941dbb7246214618e8456252d968d98e34814784209",
+    "package.json": "12213291fbb9ee03a421915ec8dff3a83f9d527c1b97add4b495f6a5540557e9",
+    "serve.mjs": "61f557f7b7db6cbebe0458e701e8793216402e39858cce26c737504ef3b3f720",
+    "THIRD_PARTY_LICENSES.txt": "3458b56483263d5370a29103f54f7513d87083e3dd3e4e31d282cf56af303d34",
+    "../flybrain/explorer.py": "bd2396bd96a887bacefb6763f0c8e65cecdfe3d5c0794b709b91c4a53bfd7962",
+    "../flybrain/morphology.py": "0edbcd166702950adf9cfaeafbc5156179b3a86e927ed9cb75c11e37ee35c5a2",
+    "../datasets/fly/morphology/manifest.json": "3f2761512a3ccb1d3aaa9b6621b7b9611bacaaa68cb9bab0ad0d97ed4ff773ca"
+  }
+}

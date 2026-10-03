@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#101e1d" />
+    <title>Fly / Explorer</title>
+    <style>
+      __STYLE__
+    </style>
+  </head>
+  <body>
+    <div id="loading"><span>◈</span></div>
+    <div id="stage" aria-label="Interactive fly anatomy" tabindex="0"></div>
+    <div id="labels"></div>
+    <nav class="views" aria-label="Explorer views">
+      <button data-mode="atlas" aria-pressed="true">Atlas</button
+      ><button data-mode="circuit" aria-pressed="false">Connections</button
+      ><button data-mode="interference" aria-pressed="false">
+        Interference</button
+      ><button data-mode="hardware" aria-pressed="false">Compare</button>
+    </nav>
+    <div class="top-tools">
+      <button
+        id="immersive"
+        class="tool"
+        aria-label="Hide interface"
+        data-hint="Hide interface"
+        aria-pressed="false"
+      >
+        ⛶</button
+      ><button
+        id="methods-open"
+        class="tool"
+        aria-label="About this experiment"
+        data-hint="About this experiment"
+      >
+        ?
+      </button>
+    </div>
+    <div class="discovery">
+      <button
+        id="search-toggle"
+        class="tool"
+        aria-label="Find anatomy"
+        data-hint="Find a cell or region · /"
+      >
+        <svg viewBox="0 0 24 24">
+          <circle cx="10" cy="10" r="6" />
+          <path d="m15 15 5 5" />
+        </svg>
+      </button>
+      <div id="search-panel" hidden>
+        <input
+          id="search"
+          aria-label="Search anatomy"
+          placeholder="Type, body ID, region"
+          autocomplete="off"
+        />
+        <div id="search-results"></div>
+      </div>
+    </div>
+    <div id="population-dock" aria-label="Select a population"></div>
+    <div id="selection" hidden>
+      <div class="selection-heading">
+        <span id="selection-name"></span
+        ><button id="clear-selection" class="tool" aria-label="Clear selection">
+          ×
+        </button>
+      </div>
+      <select id="body-select" aria-label="Choose a neuron" hidden></select
+      ><button id="focus" class="quiet" hidden>Focus</button
+      ><button id="disconnect" class="quiet" hidden>Disconnect</button
+      ><button id="restore" class="quiet" hidden>Reconnect</button>
+      <p id="selected-probability" hidden></p>
+      <div id="neighbors" hidden></div>
+    </div>
+    <div class="scene-tools">
+      <button
+        id="rotate"
+        class="tool"
+        aria-label="Toggle slow orbit"
+        data-hint="Slow orbit"
+        aria-pressed="false"
+      >
+        ↻</button
+      ><button
+        id="reset"
+        class="tool"
+        aria-label="Reset view"
+        data-hint="Reset view"
+      >
+        ⌖</button
+      ><button
+        id="theme"
+        class="tool"
+        aria-label="Toggle light scene"
+        data-hint="Light / dark"
+      >
+        ◐</button
+      ><button
+        id="save"
+        class="tool"
+        aria-label="Save image"
+        data-hint="Save image"
+      >
+        ↓
+      </button>
+    </div>
+    <div id="atlas-controls" class="bottom-controls">
+      <button
+        id="context"
+        class="tool"
+        aria-label="Toggle context anatomy"
+        data-hint="Surrounding cells"
+        aria-pressed="true"
+      >
+        ⎇</button
+      ><button
+        id="regions"
+        class="tool"
+        aria-label="Toggle brain surfaces"
+        data-hint="Brain surfaces"
+        aria-pressed="true"
+      >
+        ◌</button
+      ><button
+        id="section"
+        class="tool"
+        aria-label="Toggle Z section"
+        data-hint="Cut through the brain"
+        aria-pressed="false"
+      >
+        ◒
+      </button>
+      <div id="section-control" hidden>
+        <input
+          id="section-depth"
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          aria-label="Z section depth"
+        />
+      </div>
+    </div>
+    <div id="walk-controls" class="bottom-controls" hidden>
+      <button id="play" class="tool" aria-label="Play evolution">
+        <span>▶</span>
+      </button>
+      <div
+        id="time"
+        role="slider"
+        tabindex="0"
+        aria-label="Evolution time"
+        aria-valuemin="0"
+        aria-valuemax="8"
+        aria-valuenow="0"
+      ></div>
+      <div class="walk-options">
+        <button
+          id="source-toggle"
+          class="tool"
+          aria-label="Choose starting population"
+          data-hint="Starting point"
+        >
+          ⊙</button
+        ><select id="source" aria-label="Starting population" hidden></select
+        ><button
+          id="phase"
+          class="quiet"
+          aria-pressed="false"
+          data-hint="Probability traces / complex amplitude"
+        >
+          Phase
+        </button>
+      </div>
+    </div>
+    <div id="compare-controls" class="bottom-controls" hidden></div>
+    <div id="view-key" class="view-key" tabindex="0">
+      <span id="key-primary"></span><span id="key-secondary"></span>
+      <p id="key-detail"></p>
+    </div>
+    <div id="scale" aria-label="Anatomy scale"><i></i><span>100 μm</span></div>
+    <dialog id="methods">
+      <button
+        id="methods-close"
+        class="tool"
+        aria-label="Close experiment details"
+      >
+        ×
+      </button>
+      <h2>Fly / Experiment</h2>
+      <div class="methods-grid">
+        <section>
+          <h3>Anatomy</h3>
+          <p>
+            216 selected, published MaleCNS neuron skeletons and 18 simplified
+            neuropil surfaces in one specimen’s coordinate frame. Display units
+            are micrometres. The brain view crops descending extensions; the
+            source snapshot retains all skeleton nodes and edges. Ten right-side
+            representatives per modeled population are accompanied by separately
+            measured left-side and context neurons.
+          </p>
+        </section>
+        <section>
+          <h3>Connections</h3>
+          <p>
+            Eight right-side cell-type populations, represented by a schematic
+            graph. Link thickness encodes symmetrized contacts. Nodes are
+            populations, not individual neurons. This layout is independent of
+            anatomical position.
+          </p>
+        </section>
+        <section>
+          <h3>Interference</h3>
+          <p>
+            Classical diffusion and a quantum walk share a scaled graph
+            Laplacian. Continuous time evolution is evaluated directly from its
+            eigensystem. Colored traces are quantum; pale traces are classical.
+            Trace height shows probability, with each row scaled to its own
+            maximum across the two models so low-probability populations remain
+            visible. Phase mode uses the same row scaling and shows complex
+            amplitude magnitude and relative phase around the time axis. Dim
+            sections show future evolution; bright sections show elapsed
+            evolution. Disconnections retain the intact time scale. Model time
+            is dimensionless.
+          </p>
+        </section>
+        <section>
+          <h3>Comparison</h3>
+          <p>
+            Saved results from four preselected circuits on ibm_quebec, 1024
+            shots each, compared with ideal probabilities. No device phases are
+            inferred. The initial-state control contains one off-source shot.
+            Device noise, sampling error and unknown systematics remain in these
+            frequencies.
+          </p>
+        </section>
+      </div>
+      <p class="limitations">
+        Structure and small quantum circuits—not neuronal firing, fly behavior,
+        biological quantum processing, or evidence of a speedup.
+      </p>
+      <p class="credits">
+        MaleCNS: FlyEM / HHMI Janelia, Cambridge, MRC LMB, Google Research · CC
+        BY 4.0.
+      </p>
+      <div class="methods-links">
+        <a
+          href="https://male-cns.janelia.org/download/"
+          target="_blank"
+          rel="noreferrer"
+          >Data ↗</a
+        ><a
+          href="https://github.com/OhRats-Technologies/OhRats_QFF2026_uottawa"
+          target="_blank"
+          rel="noreferrer"
+          >Code + provenance ↗</a
+        ><a
+          href="https://creativecommons.org/licenses/by/4.0/"
+          target="_blank"
+          rel="noreferrer"
+          >License ↗</a
+        >
+      </div>
+    </dialog>
+    <script id="payload" type="application/octet-stream">
+      __PAYLOAD__
+    </script>
+    <script>
+      __SCRIPT__;
+    </script>
+  </body>
+</html>

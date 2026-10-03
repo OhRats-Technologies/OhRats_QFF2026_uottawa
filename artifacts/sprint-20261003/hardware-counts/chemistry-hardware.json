@@ -1,0 +1,142 @@
+{
+  "backend": "ibm_quebec",
+  "cases": [
+    {
+      "actual_shots": 1024,
+      "basis": "z",
+      "counts": {
+        "00": 13,
+        "01": 994,
+        "10": 11,
+        "11": 6
+      },
+      "depth": 12,
+      "distance": 0.735,
+      "expected": [
+        0.0,
+        0.9875597338308746,
+        0.012440266169125436,
+        0.0
+      ],
+      "name": "h2_0.735_z",
+      "observed": [
+        0.0126953125,
+        0.970703125,
+        0.0107421875,
+        0.005859375
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 2,
+        "measure": 2,
+        "rz": 5,
+        "sx": 4,
+        "x": 1
+      },
+      "total_variation_from_ideal": 0.01855468750000001
+    },
+    {
+      "actual_shots": 1024,
+      "basis": "bell",
+      "counts": {
+        "00": 6,
+        "01": 3,
+        "10": 412,
+        "11": 603
+      },
+      "depth": 8,
+      "distance": 0.735,
+      "expected": [
+        0.0,
+        0.0,
+        0.38915999843573285,
+        0.610840001564267
+      ],
+      "name": "h2_0.735_bell",
+      "observed": [
+        0.005859375,
+        0.0029296875,
+        0.40234375,
+        0.5888671875
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 1,
+        "measure": 2,
+        "rz": 4,
+        "sx": 4,
+        "x": 1
+      },
+      "total_variation_from_ideal": 0.02197281406426707
+    },
+    {
+      "actual_shots": 1024,
+      "basis": "z",
+      "counts": {
+        "00": 7,
+        "01": 927,
+        "10": 81,
+        "11": 9
+      },
+      "depth": 12,
+      "distance": 1.4,
+      "expected": [
+        0.0,
+        0.9008537357502149,
+        0.09914626424978523,
+        0.0
+      ],
+      "name": "h2_1.4_z",
+      "observed": [
+        0.0068359375,
+        0.9052734375,
+        0.0791015625,
+        0.0087890625
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 2,
+        "measure": 2,
+        "rz": 5,
+        "sx": 4,
+        "x": 1
+      },
+      "total_variation_from_ideal": 0.020044701749785176
+    },
+    {
+      "actual_shots": 1024,
+      "basis": "bell",
+      "counts": {
+        "01": 3,
+        "10": 213,
+        "11": 808
+      },
+      "depth": 7,
+      "distance": 1.4,
+      "expected": [
+        0.0,
+        0.0,
+        0.20114170157899747,
+        0.7988582984210025
+      ],
+      "name": "h2_1.4_bell",
+      "observed": [
+        0.0,
+        0.0029296875,
+        0.2080078125,
+        0.7890625
+      ],
+      "operations": {
+        "barrier": 1,
+        "cz": 1,
+        "measure": 2,
+        "rz": 3,
+        "sx": 4
+      },
+      "total_variation_from_ideal": 0.009795798421002533
+    }
+  ],
+  "collected_utc": "2026-10-03T09:25:12.766814+00:00",
+  "interpretation": "Raw returned counts and ideal references; omitted private job and service identity. Physical model settings are in the matching public experiment snapshot. Unknown device systematics are not removed.",
+  "origin": "REAL_IBM_HARDWARE"
+}

@@ -1,0 +1,817 @@
+{
+  "origin": "EXACT_CLASSICAL_STATES_AND_INDEPENDENT_MULTINOMIAL_SAMPLING",
+  "alpha": 0.05,
+  "repeats": 500,
+  "seed": 2026,
+  "cases": [
+    {
+      "name": "Neel product",
+      "delta": 0.0,
+      "temperature": null,
+      "exact_energy": -1.0,
+      "known_fully_separable": true
+    },
+    {
+      "name": "Maximally mixed",
+      "delta": 0.0,
+      "temperature": null,
+      "exact_energy": 0.0,
+      "known_fully_separable": true
+    },
+    {
+      "name": "Ring ground",
+      "delta": 0.0,
+      "temperature": 0.0,
+      "exact_energy": -1.9999999999999984,
+      "known_fully_separable": false
+    },
+    {
+      "name": "Warm ring",
+      "delta": 0.0,
+      "temperature": 0.8,
+      "exact_energy": -1.0745493952870562,
+      "known_fully_separable": false
+    },
+    {
+      "name": "Hot ring",
+      "delta": 0.0,
+      "temperature": 1.2,
+      "exact_energy": -0.7168284378201456,
+      "known_fully_separable": false
+    },
+    {
+      "name": "Warm dimers",
+      "delta": 1.0,
+      "temperature": 1.0,
+      "exact_energy": -1.8449383769103749,
+      "known_fully_separable": false
+    }
+  ],
+  "first_repeat_controls": [
+    {
+      "case": "Neel product",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "energy": -0.984375,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -0.4544222656493915
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "energy": -1.0234375,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -0.7584611328246957
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "energy": -1.0361328125,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -0.9036446289123479
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "energy": -0.8125,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -0.0473472656493914
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "energy": -0.921875,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -0.42169863282469566
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "energy": -0.966796875,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -0.5991086914123478
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "energy": 0.03125,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": 0.5612027343506085
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "energy": -0.04296875,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": 0.22200761717530426
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "energy": -0.037109375,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": 0.09537880858765213
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "energy": 0.03125,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": 0.7964027343506086
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "energy": -0.04296875,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": 0.45720761717530434
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "energy": -0.0361328125,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": 0.3315553710876522
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "energy": -1.984375,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -1.4544222656493915
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "energy": -2.0390625,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -1.7740861328246957
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "energy": -1.9873046875,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -1.8548165039123479
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "energy": -1.765625,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -1.0004722656493914
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "energy": -1.76171875,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -1.2615423828246957
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "energy": -1.8388671875,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -1.4711790039123478
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "energy": -1.0625,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -0.5325472656493915
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "energy": -1.05078125,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -0.7858048828246957
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "energy": -1.00390625,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -0.8714180664123479
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "energy": -0.9375,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -0.1723472656493914
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "energy": -0.96484375,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -0.46466738282469566
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "energy": -0.98828125,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -0.6205930664123478
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "energy": -0.703125,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -0.17317226564939148
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "energy": -0.66015625,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -0.39517988282469574
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "energy": -0.748046875,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -0.6155586914123479
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "energy": -0.65625,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": 0.1089027343506086
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "energy": -0.62109375,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -0.12091738282469566
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "energy": -0.7001953125,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -0.3325071289123478
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "energy": -1.890625,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -1.3606722656493915
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "energy": -1.8125,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -1.5475236328246957
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "energy": -1.8486328125,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.0,
+      "upper_with_bias": -1.7161446289123479
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "energy": -1.671875,
+      "hoeffding_margin": 0.5299527343506085,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -0.9067222656493914
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "energy": -1.59765625,
+      "hoeffding_margin": 0.26497636717530426,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -1.0974798828246957
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "energy": -1.6962890625,
+      "hoeffding_margin": 0.13248818358765213,
+      "readout_bias_allowance": 0.23520000000000008,
+      "upper_with_bias": -1.3286008789123478
+    }
+  ],
+  "summaries": [
+    {
+      "case": "Neel product",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 0.028,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 0.024,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 0.03,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 0.004,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 0.002,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 1.0,
+      "hoeffding_with_bias": 1.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 1.0,
+      "hoeffding_with_bias": 1.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 1.0,
+      "hoeffding_with_bias": 1.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 1.0,
+      "hoeffding_with_bias": 0.812,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 1.0,
+      "hoeffding_with_bias": 1.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 1.0,
+      "hoeffding_with_bias": 1.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 0.106,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 0.286,
+      "hoeffding_sampling_only": 0.002,
+      "hoeffding_with_bias": 0.002,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 0.748,
+      "hoeffding_sampling_only": 0.018,
+      "hoeffding_with_bias": 0.018,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 0.02,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 0.028,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 0.008,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 0.0,
+      "hoeffding_sampling_only": 0.0,
+      "hoeffding_with_bias": 0.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.0,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 0.996,
+      "hoeffding_with_bias": 0.996,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.0,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 1.0,
+      "hoeffding_with_bias": 1.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.0,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 1.0,
+      "hoeffding_with_bias": 1.0,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.02,
+      "shots_per_basis": 64,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 0.908,
+      "hoeffding_with_bias": 0.324,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.02,
+      "shots_per_basis": 256,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 1.0,
+      "hoeffding_with_bias": 0.998,
+      "true_energy_covered": 1.0
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.02,
+      "shots_per_basis": 1024,
+      "normal95_sampling_only": 1.0,
+      "hoeffding_sampling_only": 1.0,
+      "hoeffding_with_bias": 1.0,
+      "true_energy_covered": 1.0
+    }
+  ],
+  "plans": [
+    {
+      "case": "Neel product",
+      "readout": 0.0,
+      "known_expected_measured_energy": -1.0,
+      "bias_allowance": 0.0,
+      "shots_per_basis_sufficient": null,
+      "total_shots_sufficient": null,
+      "target_power": 0.95
+    },
+    {
+      "case": "Neel product",
+      "readout": 0.02,
+      "known_expected_measured_energy": -0.9215999999999999,
+      "bias_allowance": 0.23520000000000008,
+      "shots_per_basis_sufficient": null,
+      "total_shots_sufficient": null,
+      "target_power": 0.95
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.0,
+      "known_expected_measured_energy": 0.0,
+      "bias_allowance": 0.0,
+      "shots_per_basis_sufficient": null,
+      "total_shots_sufficient": null,
+      "target_power": 0.95
+    },
+    {
+      "case": "Maximally mixed",
+      "readout": 0.02,
+      "known_expected_measured_energy": 0.0,
+      "bias_allowance": 0.23520000000000008,
+      "shots_per_basis_sufficient": null,
+      "total_shots_sufficient": null,
+      "target_power": 0.95
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.0,
+      "known_expected_measured_energy": -1.9999999999999978,
+      "bias_allowance": 0.0,
+      "shots_per_basis_sufficient": 72,
+      "total_shots_sufficient": 216,
+      "target_power": 0.95
+    },
+    {
+      "case": "Ring ground",
+      "readout": 0.02,
+      "known_expected_measured_energy": -1.8431999999999977,
+      "bias_allowance": 0.23520000000000008,
+      "shots_per_basis_sufficient": 195,
+      "total_shots_sufficient": 585,
+      "target_power": 0.95
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.0,
+      "known_expected_measured_energy": -1.0745493952870557,
+      "bias_allowance": 0.0,
+      "shots_per_basis_sufficient": 12937,
+      "total_shots_sufficient": 38811,
+      "target_power": 0.95
+    },
+    {
+      "case": "Warm ring",
+      "readout": 0.02,
+      "known_expected_measured_energy": -0.9903047226965505,
+      "bias_allowance": 0.23520000000000008,
+      "shots_per_basis_sufficient": null,
+      "total_shots_sufficient": null,
+      "target_power": 0.95
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.0,
+      "known_expected_measured_energy": -0.7168284378201452,
+      "bias_allowance": 0.0,
+      "shots_per_basis_sufficient": null,
+      "total_shots_sufficient": null,
+      "target_power": 0.95
+    },
+    {
+      "case": "Hot ring",
+      "readout": 0.02,
+      "known_expected_measured_energy": -0.6606290882950456,
+      "bias_allowance": 0.23520000000000008,
+      "shots_per_basis_sufficient": null,
+      "total_shots_sufficient": null,
+      "target_power": 0.95
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.0,
+      "known_expected_measured_energy": -1.844938376910374,
+      "bias_allowance": 0.0,
+      "shots_per_basis_sufficient": 101,
+      "total_shots_sufficient": 303,
+      "target_power": 0.95
+    },
+    {
+      "case": "Warm dimers",
+      "readout": 0.02,
+      "known_expected_measured_energy": -1.7002952081606004,
+      "bias_allowance": 0.23520000000000008,
+      "shots_per_basis_sufficient": 333,
+      "total_shots_sufficient": 999,
+      "target_power": 0.95
+    }
+  ],
+  "planning_assumption": "Expected measured energy comes from an independently known classical reference before the trial. Sufficient equal-shot budget fits the alpha confidence margin and beta=0.05 upper-fluctuation margin inside the expected threshold gap. This sufficient power condition gives no finite budget when the expected gap after bias allowance is nonpositive; this does not establish separability. This is not a data-adaptive hardware guarantee.",
+  "bound": "E_true <= E_hat + sqrt(log(1/alpha)/2 * sum_a range_a^2/n_a) + b, with probability >= 1-alpha, provided total absolute measurement bias <= b and independent fixed-count bounded samples.",
+  "readout_bias": "b=3*sum(J)/4 * [1-(1-2*r_max)^2], assuming independent symmetric per-qubit readout flips <= r_max, correct basis rotations and a common prepared state.",
+  "reference": "https://doi.org/10.1080/01621459.1963.10500830",
+  "limitations": "Established Hoeffding inequality, not a new certification method. Pointwise confidence for one preselected decision, not a guarantee after repeated peeking, adaptive stopping or searching many states. Readout allowance is assumed, not inferred from IBM calibration. Unknown coherent basis errors, drift and correlated readout are not covered. Thermal states are classical references, not hardware preparations. Failure to detect does not prove separability."
+}

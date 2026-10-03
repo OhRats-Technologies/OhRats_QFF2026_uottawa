@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-03T09:46:04.752715+00:00",
+  "report_path": "docs/OVERNIGHT_REPORT.pdf",
+  "report_sha256": "3c62d77ecf3e7c1ba6df772848fcc4e8243f1d965c36ca1c786cf23b3ccefdd3",
+  "report_pages": 16,
+  "demo_path": "demo/index.html",
+  "demo_sha256": "85ada9e0cfde19a14cc20e602e48b5446d298c00511b9b6c5ee3d485fe9afe5c",
+  "evidence_manifest_sha256": "13d836ad7c539f65dd7691b194456b34df80b14b9eb134f310e189b1455b5eda",
+  "scientific_tests_passed": 32,
+  "hardware_jobs_collected": 3,
+  "hardware_circuits": 14,
+  "hardware_shots": 14336,
+  "clean_locked_environment_verified": true,
+  "reportlab_version": "4.4.9",
+  "final_pdf_visual_review": "All 16 rendered pages inspected; no overflow, blank pages or replacement glyphs.",
+  "interpretation": "Hardware count origins, sampling assumptions, and unknown systematic-error limitations remain explicit."
+}

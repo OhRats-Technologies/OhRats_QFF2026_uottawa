@@ -1,0 +1,141 @@
+{
+  "origin": "LOCAL_SYNTHETIC_DENSITY_MATRIX_AND_MULTINOMIAL_SIMULATION",
+  "reference_casci_energy": -7.8621288334385895,
+  "preparation": "Three real RY angles and one CX, optimized classically against the tiny exact Hamiltonian",
+  "preparation_gap": -8.326672684688674e-17,
+  "compiled_basis_costs": [
+    {
+      "sx": 6,
+      "rz": 4,
+      "cx": 1
+    },
+    {
+      "sx": 6,
+      "rz": 5,
+      "cx": 1
+    },
+    {
+      "sx": 6,
+      "rz": 5,
+      "cx": 1
+    },
+    {
+      "rz": 6,
+      "sx": 6,
+      "cx": 1
+    }
+  ],
+  "repeats": 400,
+  "seed": 2026,
+  "references": [
+    {
+      "case": "ideal",
+      "gate_error": 0.0,
+      "readout_error": 0.0,
+      "exact_noisy_mean": -7.862128833438582,
+      "systematic_bias": 7.105427357601002e-15
+    },
+    {
+      "case": "readout",
+      "gate_error": 0.0,
+      "readout_error": 0.01,
+      "exact_noisy_mean": -7.859000989948038,
+      "systematic_bias": 0.0031278434905512853
+    },
+    {
+      "case": "combined",
+      "gate_error": 0.005,
+      "readout_error": 0.01,
+      "exact_noisy_mean": -7.8572912713068295,
+      "systematic_bias": 0.004837562131760009
+    }
+  ],
+  "summaries": [
+    {
+      "case": "ideal",
+      "budget": 2048,
+      "methods": {
+        "uniform": {
+          "error_ground": 0.002484153216656254,
+          "error_noisy_mean": 0.002484153216655685
+        },
+        "regularized_adaptive": {
+          "error_ground": 0.002745303954092527,
+          "error_noisy_mean": 0.00274530395409267
+        }
+      }
+    },
+    {
+      "case": "ideal",
+      "budget": 8192,
+      "methods": {
+        "uniform": {
+          "error_ground": 0.001371062509261832,
+          "error_noisy_mean": 0.0013710625092616495
+        },
+        "regularized_adaptive": {
+          "error_ground": 0.0012036168652588906,
+          "error_noisy_mean": 0.0012036168652597894
+        }
+      }
+    },
+    {
+      "case": "readout",
+      "budget": 2048,
+      "methods": {
+        "uniform": {
+          "error_ground": 0.004701396389755549,
+          "error_noisy_mean": 0.0035614609346719785
+        },
+        "regularized_adaptive": {
+          "error_ground": 0.005045599877526574,
+          "error_noisy_mean": 0.0036805818000797065
+        }
+      }
+    },
+    {
+      "case": "readout",
+      "budget": 8192,
+      "methods": {
+        "uniform": {
+          "error_ground": 0.0035914821274576647,
+          "error_noisy_mean": 0.0017304113438707887
+        },
+        "regularized_adaptive": {
+          "error_ground": 0.003466372094142485,
+          "error_noisy_mean": 0.0018048401091185237
+        }
+      }
+    },
+    {
+      "case": "combined",
+      "budget": 2048,
+      "methods": {
+        "uniform": {
+          "error_ground": 0.006019124328981191,
+          "error_noisy_mean": 0.0036485556462951783
+        },
+        "regularized_adaptive": {
+          "error_ground": 0.006428753065747049,
+          "error_noisy_mean": 0.004128596447235559
+        }
+      }
+    },
+    {
+      "case": "combined",
+      "budget": 8192,
+      "methods": {
+        "uniform": {
+          "error_ground": 0.005147950708464491,
+          "error_noisy_mean": 0.0018716793053292619
+        },
+        "regularized_adaptive": {
+          "error_ground": 0.005231266821418153,
+          "error_noisy_mean": 0.0018641394193284304
+        }
+      }
+    }
+  ],
+  "noise": "Synthetic CX depolarizing p; sx/x depolarizing p/10; ideal rz; independent symmetric readout flips r. No IBM calibration is claimed.",
+  "limitations": "Fixed ideal preparation, not noisy VQE training. No mitigation. Shot allocation targets variance; it cannot remove gate/readout bias. Sampling error around the noisy mean and total error against CASCI are reported separately. This follows earlier exploratory allocation findings."
+}

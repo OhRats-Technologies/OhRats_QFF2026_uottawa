@@ -1,0 +1,376 @@
+{
+  "evidence": "LOCAL_BACKEND_CALIBRATION_MODEL_NOT_HARDWARE",
+  "created_utc": "2026-10-03T06:58:23.933917+00:00",
+  "backend": "ibm_quebec",
+  "physical_initial_layout": [
+    22,
+    21,
+    36,
+    20
+  ],
+  "shots_per_circuit": 2048,
+  "repeats": 12,
+  "results": [
+    {
+      "preparation": "pair",
+      "repeat": 0,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.9755859375,
+      "optimal_probability": 0.0009765625,
+      "conditional_carbon_proxy": 1.1015565565565568,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 0,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.9443359375,
+      "optimal_probability": 0.91064453125,
+      "conditional_carbon_proxy": 0.7559979317476732,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 0,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.951171875,
+      "optimal_probability": 0.59521484375,
+      "conditional_carbon_proxy": 0.879476386036961,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "pair",
+      "repeat": 1,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.9677734375,
+      "optimal_probability": 0.00244140625,
+      "conditional_carbon_proxy": 1.099621594349142,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 1,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.95458984375,
+      "optimal_probability": 0.91845703125,
+      "conditional_carbon_proxy": 0.7552583120204603,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 1,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.94384765625,
+      "optimal_probability": 0.6015625,
+      "conditional_carbon_proxy": 0.8732850491464045,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "pair",
+      "repeat": 2,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.9677734375,
+      "optimal_probability": 0.00048828125,
+      "conditional_carbon_proxy": 1.1006458123107974,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 2,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.94482421875,
+      "optimal_probability": 0.912109375,
+      "conditional_carbon_proxy": 0.753328165374677,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 2,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.943359375,
+      "optimal_probability": 0.583984375,
+      "conditional_carbon_proxy": 0.8823395445134576,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "pair",
+      "repeat": 3,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.97314453125,
+      "optimal_probability": 0.00146484375,
+      "conditional_carbon_proxy": 1.100270948319117,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 3,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.9462890625,
+      "optimal_probability": 0.90478515625,
+      "conditional_carbon_proxy": 0.7601341589267286,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 3,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.9521484375,
+      "optimal_probability": 0.61279296875,
+      "conditional_carbon_proxy": 0.8714615384615384,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "pair",
+      "repeat": 4,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.96337890625,
+      "optimal_probability": 0.00146484375,
+      "conditional_carbon_proxy": 1.0994374049670554,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 4,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.9462890625,
+      "optimal_probability": 0.9130859375,
+      "conditional_carbon_proxy": 0.7566047471620226,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 4,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.95751953125,
+      "optimal_probability": 0.6240234375,
+      "conditional_carbon_proxy": 0.8700866904640489,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "pair",
+      "repeat": 5,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.97119140625,
+      "optimal_probability": 0.00146484375,
+      "conditional_carbon_proxy": 1.1002714932126698,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 5,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.943359375,
+      "optimal_probability": 0.90966796875,
+      "conditional_carbon_proxy": 0.7580175983436853,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 5,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.9482421875,
+      "optimal_probability": 0.59716796875,
+      "conditional_carbon_proxy": 0.8769001029866118,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "pair",
+      "repeat": 6,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.97021484375,
+      "optimal_probability": 0.001953125,
+      "conditional_carbon_proxy": 1.099255158530448,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 6,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.953125,
+      "optimal_probability": 0.92431640625,
+      "conditional_carbon_proxy": 0.7499180327868851,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 6,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.94384765625,
+      "optimal_probability": 0.625,
+      "conditional_carbon_proxy": 0.8623900672529746,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "pair",
+      "repeat": 7,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.96826171875,
+      "optimal_probability": 0.00048828125,
+      "conditional_carbon_proxy": 1.100090771558245,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 7,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.94921875,
+      "optimal_probability": 0.90966796875,
+      "conditional_carbon_proxy": 0.757582304526749,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 7,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.93798828125,
+      "optimal_probability": 0.591796875,
+      "conditional_carbon_proxy": 0.8788703800104112,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "pair",
+      "repeat": 8,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.9658203125,
+      "optimal_probability": 0.0,
+      "conditional_carbon_proxy": 1.100556117290192,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 8,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.9521484375,
+      "optimal_probability": 0.92138671875,
+      "conditional_carbon_proxy": 0.7549282051282051,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 8,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.94384765625,
+      "optimal_probability": 0.61328125,
+      "conditional_carbon_proxy": 0.8689756854630108,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "pair",
+      "repeat": 9,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.97216796875,
+      "optimal_probability": 0.0,
+      "conditional_carbon_proxy": 1.1002762430939228,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 9,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.9521484375,
+      "optimal_probability": 0.919921875,
+      "conditional_carbon_proxy": 0.7543692307692308,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 9,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.94140625,
+      "optimal_probability": 0.61865234375,
+      "conditional_carbon_proxy": 0.869688796680498,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "pair",
+      "repeat": 10,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.970703125,
+      "optimal_probability": 0.0,
+      "conditional_carbon_proxy": 1.1005533199195172,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 10,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.94921875,
+      "optimal_probability": 0.90869140625,
+      "conditional_carbon_proxy": 0.7605092592592593,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 10,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.94384765625,
+      "optimal_probability": 0.609375,
+      "conditional_carbon_proxy": 0.869368856699431,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "pair",
+      "repeat": 11,
+      "two_qubit_gates": 14,
+      "depth": 55,
+      "feasible_probability": 0.97021484375,
+      "optimal_probability": 0.001953125,
+      "conditional_carbon_proxy": 1.0995319577252138,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "phase_pair",
+      "repeat": 11,
+      "two_qubit_gates": 34,
+      "depth": 124,
+      "feasible_probability": 0.9521484375,
+      "optimal_probability": 0.91162109375,
+      "conditional_carbon_proxy": 0.7609794871794873,
+      "optimal_carbon_proxy": 0.73
+    },
+    {
+      "preparation": "dicke",
+      "repeat": 11,
+      "two_qubit_gates": 43,
+      "depth": 157,
+      "feasible_probability": 0.94091796875,
+      "optimal_probability": 0.6025390625,
+      "conditional_carbon_proxy": 0.873051375194603,
+      "optimal_carbon_proxy": 0.73
+    }
+  ],
+  "limitations": "Same initial physical layout and compilation policy, but routing may introduce different active qubits. Markovian calibration noise is only a forecast; no IBM counts collected for corrected phases."
+}

@@ -1,0 +1,209 @@
+{
+  "evidence": "ideal_statevector_probabilities_and_independent_multinomial_sampling",
+  "molecule": "H2 at 0.735 angstrom, STO-3G",
+  "repeats": 400,
+  "seed": 2026,
+  "theory": [
+    {
+      "theta_offset": 0.0,
+      "true_prepared_energy": -1.1373060357533997,
+      "variance_z": 0.031127382291171735,
+      "variance_bell": 0.031127380896887057,
+      "oracle_z_fraction": 0.5000000055991084
+    },
+    {
+      "theta_offset": 0.2,
+      "true_prepared_energy": -1.1210367368228735,
+      "variance_z": 0.10699088396418255,
+      "variance_bell": 0.027206620983149132,
+      "oracle_z_fraction": 0.6647738738651993
+    },
+    {
+      "theta_offset": 0.6,
+      "true_prepared_energy": -0.994748125813121,
+      "variance_z": 0.34084274976013024,
+      "variance_bell": 0.015120743045197855,
+      "oracle_z_fraction": 0.8260197442901596
+    },
+    {
+      "theta_offset": 1.2,
+      "true_prepared_energy": -0.6168739798134938,
+      "variance_z": 0.6197799402067298,
+      "variance_bell": 0.0007047758062009718,
+      "oracle_z_fraction": 0.9673785552436168
+    }
+  ],
+  "summaries": [
+    {
+      "offset": 0.0,
+      "budget": 2048,
+      "method": "uniform",
+      "rmse": 0.008027809859976266,
+      "bias": -0.00010213704095191844
+    },
+    {
+      "offset": 0.0,
+      "budget": 2048,
+      "method": "pilot_adaptive",
+      "rmse": 0.012796234286964846,
+      "bias": -0.0007858309738971136
+    },
+    {
+      "offset": 0.0,
+      "budget": 2048,
+      "method": "regularized_adaptive",
+      "rmse": 0.008833139915056276,
+      "bias": 0.0009638506768614507
+    },
+    {
+      "offset": 0.0,
+      "budget": 8192,
+      "method": "uniform",
+      "rmse": 0.003944830220018886,
+      "bias": -9.07809521658165e-05
+    },
+    {
+      "offset": 0.0,
+      "budget": 8192,
+      "method": "pilot_adaptive",
+      "rmse": 0.010872933914340032,
+      "bias": -0.00011145025950415444
+    },
+    {
+      "offset": 0.0,
+      "budget": 8192,
+      "method": "regularized_adaptive",
+      "rmse": 0.003828504540909225,
+      "bias": -3.8112692377856305e-05
+    },
+    {
+      "offset": 0.2,
+      "budget": 2048,
+      "method": "uniform",
+      "rmse": 0.011046890574450154,
+      "bias": -0.0006450815743754334
+    },
+    {
+      "offset": 0.2,
+      "budget": 2048,
+      "method": "pilot_adaptive",
+      "rmse": 0.013193482781483714,
+      "bias": 0.0014493683363023414
+    },
+    {
+      "offset": 0.2,
+      "budget": 2048,
+      "method": "regularized_adaptive",
+      "rmse": 0.01093952467895275,
+      "bias": -4.264859684199207e-05
+    },
+    {
+      "offset": 0.2,
+      "budget": 8192,
+      "method": "uniform",
+      "rmse": 0.005792093759985384,
+      "bias": 1.3516353173751438e-05
+    },
+    {
+      "offset": 0.2,
+      "budget": 8192,
+      "method": "pilot_adaptive",
+      "rmse": 0.010435379624937532,
+      "bias": -0.00038919331505015033
+    },
+    {
+      "offset": 0.2,
+      "budget": 8192,
+      "method": "regularized_adaptive",
+      "rmse": 0.005546073167866244,
+      "bias": -0.00023637949094677314
+    },
+    {
+      "offset": 0.6,
+      "budget": 2048,
+      "method": "uniform",
+      "rmse": 0.01747434431209044,
+      "bias": 0.00018288501485117293
+    },
+    {
+      "offset": 0.6,
+      "budget": 2048,
+      "method": "pilot_adaptive",
+      "rmse": 0.01671833837007006,
+      "bias": 0.0001598803699709847
+    },
+    {
+      "offset": 0.6,
+      "budget": 2048,
+      "method": "regularized_adaptive",
+      "rmse": 0.015936959885047227,
+      "bias": 0.0005243506166665942
+    },
+    {
+      "offset": 0.6,
+      "budget": 8192,
+      "method": "uniform",
+      "rmse": 0.009664210949170462,
+      "bias": -1.3307845699840059e-05
+    },
+    {
+      "offset": 0.6,
+      "budget": 8192,
+      "method": "pilot_adaptive",
+      "rmse": 0.007683341203198657,
+      "bias": 0.0003109959471298432
+    },
+    {
+      "offset": 0.6,
+      "budget": 8192,
+      "method": "regularized_adaptive",
+      "rmse": 0.008294031251256379,
+      "bias": -1.42216323630312e-05
+    },
+    {
+      "offset": 1.2,
+      "budget": 2048,
+      "method": "uniform",
+      "rmse": 0.024062428017291224,
+      "bias": -0.0010921150320857243
+    },
+    {
+      "offset": 1.2,
+      "budget": 2048,
+      "method": "pilot_adaptive",
+      "rmse": 0.018675561691813312,
+      "bias": -0.0006502904915382691
+    },
+    {
+      "offset": 1.2,
+      "budget": 2048,
+      "method": "regularized_adaptive",
+      "rmse": 0.018428263893244055,
+      "bias": 0.000577337909321085
+    },
+    {
+      "offset": 1.2,
+      "budget": 8192,
+      "method": "uniform",
+      "rmse": 0.012421654923749805,
+      "bias": -3.142307255815102e-05
+    },
+    {
+      "offset": 1.2,
+      "budget": 8192,
+      "method": "pilot_adaptive",
+      "rmse": 0.00936836388555467,
+      "bias": 2.9652615747094434e-06
+    },
+    {
+      "offset": 1.2,
+      "budget": 8192,
+      "method": "regularized_adaptive",
+      "rmse": 0.00926789206542909,
+      "bias": 0.0003708296875675665
+    }
+  ],
+  "equal_variance_proof": "For H=A+B+cI and H|psi>=E|psi>, (A-<A>)|psi>=-(B-<B>)|psi>. Squared norms give Var(A)=Var(B). Independent group samples therefore minimize Var(A)/n_A+Var(B)/n_B at n_A=n_B for a fixed total. This identity is elementary, not claimed as a new theorem.",
+  "interpretation": "A known allocation method has a state-dependent value. Offsets are controlled state-preparation perturbations, not a completed noisy VQE optimization trajectory.",
+  "limitations": "Ideal sampling only; statevector ground-state reference available because this molecule is tiny. Adaptive allocation can lose from finite pilots. An oracle allocation is diagnostic, not an implementable performance baseline."
+}

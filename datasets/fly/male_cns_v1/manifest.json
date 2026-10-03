@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "dataset": "male-cns:v1.0",
+  "source_commit": "789cc6c105798ce2fd70ba85dab394f90899616b",
+  "retrieved_at": "2026-10-03T05:36:18.938697+00:00",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "FlyEM / HHMI Janelia, Cambridge, MRC LMB, Google Research; Reiser Lab Cell Type Explorer",
+  "source_home": "https://male-cns.janelia.org/",
+  "seed": "Mi1_R",
+  "node_unit": "cell type and hemisphere, not individual neuron",
+  "selection": "Mi1_R plus its seven strongest downstream cell-type partners by total contacts; ties by ID",
+  "edge_unit": "total directed anatomical synaptic contacts between the selected cell-type groups",
+  "limitations": "Selected induced subgraph of published tables; outside connections omitted; one specimen",
+  "sources": [
+    {
+      "node": "Mi1_R",
+      "url": "https://raw.githubusercontent.com/reiserlab/celltype-explorer-drosophila-male-cns/789cc6c105798ce2fd70ba85dab394f90899616b/types/Mi1_R.html",
+      "sha256": "34f13e86fdb53aa309217859a00b2c570cf9ab8ba4d784f5d386aefea3cac6c6",
+      "bytes": 195387
+    },
+    {
+      "node": "Pm2a_R",
+      "url": "https://raw.githubusercontent.com/reiserlab/celltype-explorer-drosophila-male-cns/789cc6c105798ce2fd70ba85dab394f90899616b/types/Pm2a_R.html",
+      "sha256": "e2c798b8e0ba65f826cc9c0e671592a8a7ba7de148ed3599409fcd3f38ee81f4",
+      "bytes": 128703
+    },
+    {
+      "node": "Pm1_R",
+      "url": "https://raw.githubusercontent.com/reiserlab/celltype-explorer-drosophila-male-cns/789cc6c105798ce2fd70ba85dab394f90899616b/types/Pm1_R.html",
+      "sha256": "c06a6b6ea62b4708e25c5013cee8c5b49857d92b1ac97f0eac0d5fa2e33d04e7",
+      "bytes": 106409
+    },
+    {
+      "node": "Pm2b_R",
+      "url": "https://raw.githubusercontent.com/reiserlab/celltype-explorer-drosophila-male-cns/789cc6c105798ce2fd70ba85dab394f90899616b/types/Pm2b_R.html",
+      "sha256": "cd7bba585e81c60af18ce8d8f89ba3f5551c4ff1b93d4a801798809b55512200",
+      "bytes": 138468
+    },
+    {
+      "node": "Pm4_R",
+      "url": "https://raw.githubusercontent.com/reiserlab/celltype-explorer-drosophila-male-cns/789cc6c105798ce2fd70ba85dab394f90899616b/types/Pm4_R.html",
+      "sha256": "fd1ec3a44ac6b84bc451a87c3e1ffe60698fc726c9060a320047ef5ae02aacad",
+      "bytes": 162856
+    },
+    {
+      "node": "Tm3_R",
+      "url": "https://raw.githubusercontent.com/reiserlab/celltype-explorer-drosophila-male-cns/789cc6c105798ce2fd70ba85dab394f90899616b/types/Tm3_R.html",
+      "sha256": "dbc65aa5428db54d6bcd2e7184360f0fd44c176a8a0efb5a8c023a95134018cc",
+      "bytes": 275374
+    },
+    {
+      "node": "Y3_R",
+      "url": "https://raw.githubusercontent.com/reiserlab/celltype-explorer-drosophila-male-cns/789cc6c105798ce2fd70ba85dab394f90899616b/types/Y3_R.html",
+      "sha256": "2ed9990e40d1fd5838cf0b1505f9be7f17d6b6f4c8ae89a1d1d53694c781242f",
+      "bytes": 315591
+    },
+    {
+      "node": "T4a_R",
+      "url": "https://raw.githubusercontent.com/reiserlab/celltype-explorer-drosophila-male-cns/789cc6c105798ce2fd70ba85dab394f90899616b/types/T4a_R.html",
+      "sha256": "f81282770cc1596c9742ec9ef76e78ff3d25a6f90e8a1e7be24dd6b5b7d4533c",
+      "bytes": 146059
+    }
+  ],
+  "files": {
+    "nodes.csv": "f3af5f95988b84784e6a363361812156b1a268faee210a9b28523d0a1b0ce33f",
+    "edges.csv": "aeff785e6449ced319846918856418a98c3f6c805dc50537aada9b06d789b93d"
+  }
+}
