@@ -1,0 +1,10 @@
+{
+  "files_sha256": {
+    "results.json": "9625500b1ed36f56373cbe8a1d8bfb6ff7f74a1b7b04969c7bd0ce3fb26dba9a"
+  },
+  "source_sha256": {
+    "scripts/q_sigreg_matched_audit.py": "4016d2d299c9189efdaf9e9bd1994103f3a4980c5dc053a6c6ee53fa11dd1535",
+    "scripts/run_matched_ablation.py": "d6e89c55e04861a1716fba105143db3b533fa7191989bf14bb2823d2a83279cb",
+    "q_sigreg/train.py": "e8e0fc15944ff1868d767f754a4604f101e1a9949f2b245692612738b13e49f3"
+  }
+}
