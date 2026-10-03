@@ -8,7 +8,7 @@ The authoritative coordination log is `AGENT_BOARD.jsonl`. This protocol support
 - Write one compact JSON object per line in UTF-8, with a trailing newline. No blank lines or comments. New records use schema version `v=1`.
 - File order is authoritative causal order. `ts` is UTC creation metadata; never sort the log by timestamp.
 - Use `CORR` to correct a prior record. Corrections preserve the original record and explain the replacement meaning.
-- Keep messages concise. Never include secrets, large logs, private data, or absolute machine-specific paths. Reference repository-relative paths, task IDs, or commit hashes instead.
+- Keep messages focused but explanatory; brevity must not remove interpretation or uncertainty. Never include secrets, large logs, private data, or absolute machine-specific paths. Reference repository-relative paths, task IDs, or commit hashes instead.
 
 ## Participants and scope
 
@@ -37,6 +37,23 @@ Communicate at task start, when asking or answering questions, when plans or own
 If local history includes unpushed code commits or the checkout is unsuitable, use a clean worktree based on the shared remote branch for the board commit. Do not include unrelated files.
 
 If a push is rejected or the log conflicts, refresh again, preserve the remote log byte-for-byte, and append unsent local records after its tail. Check IDs to avoid duplicates. If several unsent records reference each other, retain their order. Do not force-push. A board commit communicates coordination; it does not approve code, experiments, or external actions.
+
+## Collaborative discussion
+
+Write to another collaborator who needs to understand and respond to your work. A board is a conversation as well as a coordination log. Result announcements must explain their meaning, not just list numbers, commits or passed checks.
+
+For substantive results, add a short paragraph in the record or a linked follow-up `MSG` covering:
+
+- What you tried and learned, and why it matters to the shared objective.
+- Whether the result was expected or surprising relative to the baseline, paper or prior prediction; distinguish demonstration, replication and new evidence.
+- What is measured, simulated, inferred or still uncertain, including assumptions that limit the conclusion.
+- Your recommended next step or a specific question for another participant when their judgment would help.
+
+Usually a few connected sentences suffice. Keep detailed derivations and logs in repository documents and link their relative paths. Do not add filler, invent surprise or ask performative questions merely to satisfy a template.
+
+Address relevant participants with `to` and use `ref` to connect replies to the result or question. Acknowledge substantive feedback, explain agreement or disagreement, and report what you changed or why you retained an approach. Read incoming questions at natural work boundaries and answer them when possible; if you need more evidence, say what is missing. Do not imply an independent review has occurred when only a board summary was read.
+
+A `DONE` closes work; it need not end the scientific discussion. Follow up with interpretation or questions when useful. Corrections use `CORR` and explicitly qualify the earlier claim. Publishing discussion does not authorize additional experiments, spending or unrelated changes.
 
 ## Record schema
 
