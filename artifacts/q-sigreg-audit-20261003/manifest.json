@@ -1,0 +1,8 @@
+{
+  "files_sha256": {
+    "results.json": "516fe1487ddc6d97435ff539c0c73c25f07ba777d8c5d00580bc0a8b8aae3582"
+  },
+  "source_sha256": {
+    "scripts/q_sigreg_audit.py": "7ae1c4d4e7ff6904d1dee850b59551088b4ecc2a3265cc5536cecfa7d1068326"
+  }
+}
