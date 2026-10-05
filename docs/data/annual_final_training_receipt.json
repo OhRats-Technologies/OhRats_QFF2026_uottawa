@@ -1,0 +1,24 @@
+{
+  "training_sha256": "678e930d0397e0d1853d716501fee8899bdf9f7240345b3d07d75b1e0aeebc78",
+  "code_sha256": {
+    "wildfire_lab/annual_data.py": "9d1fea55b4663e0e9c6c2ebd7d43cceddfed165c48fb7d7b0db4afec489b57f5",
+    "wildfire_lab/annual_classical.py": "d43735f826ac40e2660d13f7f9e95e12bf13281467da895f5acf62ed8d145182",
+    "wildfire_lab/annual_quantum.py": "b8bc74bcb73d5a2944b7b7c2a25dadd7367ebda7393c0441c6d6efe292a68b10",
+    "wildfire_lab/annual_matched.py": "93dc1cb40e70e58402d1cd09c354399da39f7a6aa79cd8c63e65332a569d7088",
+    "wildfire_lab/annual_selectors.py": "4a2289f19ec5ecd58393e8984a3f55c6e3e6fb9c1164b88d2ce89d02bd34034e",
+    "wildfire_lab/annual_model_state.py": "963c6d637bd588047840223a03de5eb331e8d15bb559caef88e70daefbe7eb23",
+    "wildfire_lab/annual_final_kernel.py": "5eb043eaf9d2bd1f6052624a22c19f4a9a4a451f44b0799741f9944d04def2f9",
+    "wildfire_lab/annual_final_train.py": "5919f1f619ef6c68c98086c27b3fb1048099f11351134b5611e440e08b013374",
+    "wildfire_lab/annual_final_evaluate.py": "9d4ffce0aaa072b63a94f0d3ef95d163be1b2085f955efbb4aa6ddd7e76c6b8b",
+    "wildfire_lab/annual_final_protocol.py": "03fc5c240cb88c424e1128b8e57303e6fb53e0527439d99c0d70de9d48345b85",
+    "wildfire_lab/nfdb.py": "2aa64aa77815f45d0b0e9f8c00bbb8636581de64f95824e599a747270e54600c",
+    "wildfire_lab/selection.py": "36544d742a333a75512c7358ba3912c6466e32e3ee0088ea2d2c1fddb349efb1",
+    "wildfire_lab/qaoa.py": "8b07efe49aeecd4bb2500ba715539409ea0fab88259d69ae2c286ffd5619dc0c",
+    "wildfire_lab/sqd_selection.py": "d80ad9026b0a72db0d4a58ec50f350a0fadebb6378ee7c180127c49547ffda57",
+    "wildfire_lab/library_kernel.py": "905a9e3048542adb9bf6ece8f886adcfc43275f92ccec61950d09ab59509443c",
+    "scripts/run_annual_final.py": "d26c203193b882ac637cda20b6d05d847653f330cd62d8cb05c8a4eaffc5ad8c",
+    "uv.lock": "279bcaf11186bf36bf4375da28308a14ab9789b99a783b7dcd6ebb7a40b1c15f",
+    "pyproject.toml": "387b6f8daa143e7e8be05a0fd612c33c3c0e5ca97bd72d8b4f7ef84ead6c00de"
+  },
+  "plan_sha256": "4df95f26e963d7db8038dfb19c3ff512464e8471bff0fc35ba3316f046c633f1"
+}
