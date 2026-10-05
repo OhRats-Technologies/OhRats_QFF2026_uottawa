@@ -1,0 +1,23 @@
+{
+  "status": "verified_clean_environment",
+  "code_commit": "921c33d8b3c516b9d1993687724e641b1d14697c",
+  "python": "3.12.13",
+  "uv_lock_sha256": "6cfe39145ae7930914b7025bf83621a48bd64c4f8dd7648a994c5f7043ee711e",
+  "dependency_groups": [
+    "data",
+    "analysis",
+    "quantum"
+  ],
+  "unittest_passed": 42,
+  "cli_help_entrypoints": 19,
+  "all_help_showed_usage": true,
+  "production_file_inventory_size_mtime_unchanged": true,
+  "shared_environment_preserved": true,
+  "temporary_environment_removed": true,
+  "corrections": [
+    "Full tests require analysis/quantum groups; commands use --no-sync after setup.",
+    "Adaptive reservations close after the final intent, independently of a stale plan flag.",
+    "Operational builder now parses --help before reading inputs."
+  ],
+  "limitations": "Smoke check uses disposable fixtures and help paths, not another source download/model evaluation. Initial help check exposed and removed only two owned unreferenced preparation caches; frozen source/experiment evidence was preserved."
+}

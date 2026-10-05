@@ -1,8 +1,0 @@
-{
-  "created_utc": "2026-10-03T23:56:09.299291+00:00",
-  "protocol_sha256": "1ab79410a1ba16914477ecb77ab4ae0acecb5a6b9319ed6115fc039e7de71897",
-  "sources": {
-    "/Users/fern/Projects/OhRats-Technologies/OhRats_QFF2026_uottawa/scripts/quantum_world_latent_linear_pilot.py": "92ac9369cf2da99636a6d95378a2aaeaf54619f7383a1149df5e201889879f71",
-    "quantum_world/latent_linear.py": "9c8158ef8323ca2b669107c16b3d2d477db42d5b50060d64fc5c4f0a6186ea43"
-  }
-}

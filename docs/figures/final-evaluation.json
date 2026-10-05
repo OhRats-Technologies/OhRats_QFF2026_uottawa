@@ -1,0 +1,7 @@
+{
+  "outcome_sha256": "e0d4fc03bc736e52cacddfab6e75f08cfb896b0e9713a9413aada9ca0645bbff",
+  "summary_sha256": "0ddc661ed2938bb90ea4ca57b361ceacb796661abce2f4337e2b9e2573be4824",
+  "plot_recipe_sha256": "0141f3e0390f066cbb5cd22ff352e91b2df992b4ab5f18c10e6bee2db6b29618",
+  "figure_sha256": "dedfc38d2ccd7cffd732006c968f0236af178c18a860294a090c164c773e8d6f",
+  "caption": "Frozen 2019\u20132024 test. Left/middle: 37,801 training and 3,820 test fires. Right: each selector/predictor shares 256 training labels and 512 test fires per seed (211/307/401); samples overlap. Full and capped models are different budgets. Year/seed differences are descriptive, not confidence intervals."
+}

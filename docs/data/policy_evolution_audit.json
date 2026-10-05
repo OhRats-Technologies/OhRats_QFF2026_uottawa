@@ -1,0 +1,37 @@
+{
+  "status": "saved_evidence_verified_without_fitting",
+  "audit_seconds": 0.635579124907963,
+  "preserved_data_cache_files": 1304,
+  "new_namespace_files": [
+    ".cache/wildfire/policy-evolution-confirmation/intent.json",
+    ".cache/wildfire/policy-evolution-confirmation/outcome.json",
+    ".cache/wildfire/policy-evolution-confirmation/partial.json",
+    ".cache/wildfire/policy-evolution-development/intent.json",
+    ".cache/wildfire/policy-evolution-development/outcome.json",
+    ".cache/wildfire/policy-evolution-development/partial.json"
+  ],
+  "model_fit_calls": 0,
+  "state_preparation_calls": 0,
+  "opening_commits": [
+    "4cadf962d210f2d673e9f766d350605866b2bc85",
+    "5906f4fe5b0c08517ca8d59fec18c09b7fbd007d"
+  ],
+  "sample_label_metric_tree_recipe_checks": true,
+  "all_fit_status_zero": true,
+  "private_outcome_hashes": {
+    "development": "46ecacc622104ffdf9a8fcc5d688ede80fceba143a96a4414eb311d7aae9c6cc",
+    "confirmation": "e787860db6105db14da609229a691d58741373c74b4cada4d98036cb61fdf114"
+  },
+  "public_evidence_sha256": "91d5213873c228402c1ab5d0f2929cd48a9528c391182015cb12a32a3565c2ea",
+  "old_replay_sha256": "43521f5b87d529a4b43269c2f500cdcfc403eecca7342aaa8dc699c79300ca72",
+  "final_outcome_sha256": "e0d4fc03bc736e52cacddfab6e75f08cfb896b0e9713a9413aada9ca0645bbff",
+  "hardware_jobs_submitted": 0,
+  "final_test_reopened": false,
+  "strengthened_collection_seconds": 0.4614637920167297,
+  "strengthened_collector_sha256": "310356e6dbf03a5b631b44f8f638a5aba96947633ef82c2a712c6d4b81e4eac0",
+  "shared_copy_and_confirmation_inheritance_rechecked": true,
+  "release_collection_seconds": 0.45570533303543925,
+  "release_collector_sha256": "9b5b8e346ddc84332cadfe558992ecf68904d41645e5fee8a8bf899155403b60",
+  "missing_outcomes_fail_closed": true,
+  "saved_evidence_byte_identical_after_release_guard": true
+}

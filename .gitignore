@@ -11,3 +11,6 @@ __pycache__/
 /results/
 
 node_modules/
+
+# Reproducible processing and experiment workspace.
+/.cache/

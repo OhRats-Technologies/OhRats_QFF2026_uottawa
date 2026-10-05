@@ -1,0 +1,6 @@
+{
+  "summary_sha256": "0a16a75bf4f4c1298003c7990c071307fdcdf571b7cf7ece07e7c62deedc7019",
+  "plot_recipe_sha256": "319c2380a963ccacb4a75f6c8fa9ec0f823164c9e19fe0cc83538c21d538c61b",
+  "figure_sha256": "87d23dfdf9ca0a80ae4f82ce56b2572514b9d6ee077e1f42a4ab4e93fd332c37",
+  "caption": "Fixed ridge=1; 256/256 train/validation fires per seed, common inputs and training-only normalization. Dense dots are means and bars are three-seed ranges, not confidence intervals. Open diamonds mark fixed 16-landmark mean AP. Fresh seeds reuse chronological years and have different prevalence; do not interpret between-panel AP as improvement over time. Exact local simulation, no new shots or hardware."
+}

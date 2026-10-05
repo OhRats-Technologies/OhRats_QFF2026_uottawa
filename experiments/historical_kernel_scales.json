@@ -1,0 +1,105 @@
+{
+  "id": "historical-kernel-scale-v1",
+  "status": "frozen_screen",
+  "hypothesis": "The default ZZ map is too rapidly varying; smoother scales may improve validation but must compete with an equal-size RBF scale grid.",
+  "research_model": "gpt-6.1-sol",
+  "target": "NFDB agency-reported size >=10 ha, conditional on eligible recorded fire",
+  "train_years": [
+    1988,
+    2018
+  ],
+  "final_test_years": [
+    2019,
+    2024
+  ],
+  "validation_folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "month_sin",
+    "month_cos",
+    "lag2_mean_temp_c",
+    "lag2_total_precip_mm",
+    "lag2_snowfall_cm",
+    "lag2_heating_degree_days",
+    "lag3_mean_temp_c",
+    "lag3_total_precip_mm",
+    "lag3_snowfall_cm",
+    "lag3_heating_degree_days"
+  ],
+  "feature_budget": 4,
+  "seeds": [
+    7,
+    19,
+    31
+  ],
+  "qaoa": {
+    "depth": 1,
+    "shots": 512,
+    "maxiter": 40
+  },
+  "kernel_screen": {
+    "features": [
+      "latitude",
+      "month_sin",
+      "lag2_mean_temp_c",
+      "lag2_total_precip_mm"
+    ],
+    "train_cap": 256,
+    "validation_cap": 512,
+    "C": 1.0,
+    "rbf_gamma_grid": [
+      0.025,
+      0.1,
+      0.25,
+      1.0
+    ],
+    "angle_scale_grid": [
+      0.05,
+      0.1,
+      0.25,
+      0.5
+    ]
+  },
+  "primary_metric": "average_precision",
+  "screen_max_proposals": 8,
+  "screen_wall_seconds_per_attempt": 1200,
+  "hardware_default": false,
+  "final_test_sealed": true,
+  "limitations": [
+    "NFDB reported-size proxy; ignition date and final area are not guaranteed.",
+    "Source completeness varies; approximately located incidents and identity collisions excluded.",
+    "Weather publication latency unknown; retrospective conditional classification.",
+    "Weather-only baseline; woodland integration is pending.",
+    "Exact simulated circuits with classical optimization; no hardware or speedup claim."
+  ],
+  "promotion_checks": [
+    "valid snapshot and frozen recipe",
+    "chronological validation",
+    "same subset objective and budget",
+    "same predictor inputs/samples",
+    "independent confirmation before final test"
+  ],
+  "parent_study": "historical-weather-v1",
+  "parent_evidence": "attempt-10905e11dde7",
+  "rejection_rule": "No promotion without a matched classical improvement and subsequent frozen confirmation."
+}

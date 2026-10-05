@@ -1,0 +1,152 @@
+{
+  "status": "complete",
+  "created_utc": "2026-10-05T13:20:59.058572+00:00",
+  "source_commit": "44bb1bd078d73a319d06d9e239d81a12ce8e03b3",
+  "input_index_sha256": "83bd967adaa97a3b70f98bcd08e116bdf65b4c272a25b85a4498526b184c4cb6",
+  "selection": "Four fixed weather boundaries, the NFDB ZIP, and headers only for the 1984 national forest archive; frozen in board claim repo-agent-20261005T131914Z-3bbfe154.",
+  "sources": [
+    {
+      "file": "data/raw/weather/ON-1987-01.csv",
+      "url": "https://climate.weather.gc.ca/prods_servs/cdn_climate_summary_report_e.html?intYear=1987&intMonth=1&prov=ON&dataFormat=csv",
+      "method": "GET",
+      "observed_utc": "2026-10-05T13:20:58.350029+00:00",
+      "body_cap_bytes": 2097152,
+      "http_status": 200,
+      "final_url": "https://climate.weather.gc.ca/prods_servs/cdn_climate_summary_report_e.html?intYear=1987&intMonth=1&prov=ON&dataFormat=csv",
+      "headers": {
+        "Content-Type": "text/csv; charset=utf-8",
+        "Date": "Mon, 05 Oct 2026 13:20:58 GMT"
+      },
+      "body_bytes_downloaded": 53601,
+      "sha256": "8e5b271fab880040c9baf17d996285e292c79f0a639c41cd8c48e46fd965a0b2",
+      "expected_sha256": "8e5b271fab880040c9baf17d996285e292c79f0a639c41cd8c48e46fd965a0b2",
+      "expected_bytes": 53601,
+      "byte_identity_verified": true,
+      "status": "matches_original",
+      "seconds": 0.20796945807524025
+    },
+    {
+      "file": "data/raw/weather/ON-1988-01.csv",
+      "url": "https://climate.weather.gc.ca/prods_servs/cdn_climate_summary_report_e.html?intYear=1988&intMonth=1&prov=ON&dataFormat=csv",
+      "method": "GET",
+      "observed_utc": "2026-10-05T13:20:58.350282+00:00",
+      "body_cap_bytes": 2097152,
+      "http_status": 200,
+      "final_url": "https://climate.weather.gc.ca/prods_servs/cdn_climate_summary_report_e.html?intYear=1988&intMonth=1&prov=ON&dataFormat=csv",
+      "headers": {
+        "Content-Type": "text/csv; charset=utf-8",
+        "Date": "Mon, 05 Oct 2026 13:20:58 GMT"
+      },
+      "body_bytes_downloaded": 51823,
+      "sha256": "312262e680573429f1ed1e3b4edcf58e9381af15578086b3d7fdccf06e48ef64",
+      "expected_sha256": "312262e680573429f1ed1e3b4edcf58e9381af15578086b3d7fdccf06e48ef64",
+      "expected_bytes": 51823,
+      "byte_identity_verified": true,
+      "status": "matches_original",
+      "seconds": 0.20198516605887562
+    },
+    {
+      "file": "data/raw/weather/ON-2018-12.csv",
+      "url": "https://climate.weather.gc.ca/prods_servs/cdn_climate_summary_report_e.html?intYear=2018&intMonth=12&prov=ON&dataFormat=csv",
+      "method": "GET",
+      "observed_utc": "2026-10-05T13:20:58.350358+00:00",
+      "body_cap_bytes": 2097152,
+      "http_status": 200,
+      "final_url": "https://climate.weather.gc.ca/prods_servs/cdn_climate_summary_report_e.html?intYear=2018&intMonth=12&prov=ON&dataFormat=csv",
+      "headers": {
+        "Content-Type": "text/csv; charset=utf-8",
+        "Date": "Mon, 05 Oct 2026 13:20:58 GMT"
+      },
+      "body_bytes_downloaded": 27975,
+      "sha256": "785d9af4dde1cbd89b64bafbb239f5081c3904e185f6118ad9f2a1c5c0493141",
+      "expected_sha256": "785d9af4dde1cbd89b64bafbb239f5081c3904e185f6118ad9f2a1c5c0493141",
+      "expected_bytes": 27975,
+      "byte_identity_verified": true,
+      "status": "matches_original",
+      "seconds": 0.1683664999436587
+    },
+    {
+      "file": "data/raw/weather/ON-2024-12.csv",
+      "url": "https://climate.weather.gc.ca/prods_servs/cdn_climate_summary_report_e.html?intYear=2024&intMonth=12&prov=ON&dataFormat=csv",
+      "method": "GET",
+      "observed_utc": "2026-10-05T13:20:58.350405+00:00",
+      "body_cap_bytes": 2097152,
+      "http_status": 200,
+      "final_url": "https://climate.weather.gc.ca/prods_servs/cdn_climate_summary_report_e.html?intYear=2024&intMonth=12&prov=ON&dataFormat=csv",
+      "headers": {
+        "Content-Type": "text/csv; charset=utf-8",
+        "Date": "Mon, 05 Oct 2026 13:20:58 GMT"
+      },
+      "body_bytes_downloaded": 24283,
+      "sha256": "16dedd226efe89f05bedadf02f2fd3599c239a7024d359119478ded6b7dc39f7",
+      "expected_sha256": "16dedd226efe89f05bedadf02f2fd3599c239a7024d359119478ded6b7dc39f7",
+      "expected_bytes": 24283,
+      "byte_identity_verified": true,
+      "status": "matches_original",
+      "seconds": 0.16247620899230242
+    },
+    {
+      "file": "data/raw/nfdb-audit/source.zip",
+      "url": "https://cwfis.cfs.nrcan.gc.ca/downloads/nfdb/fire_pnt/current_version/NFDB_point_txt.zip",
+      "method": "GET",
+      "observed_utc": "2026-10-05T13:20:58.350456+00:00",
+      "body_cap_bytes": 67108864,
+      "http_status": 200,
+      "final_url": "https://cwfis.cfs.nrcan.gc.ca/downloads/nfdb/fire_pnt/current_version/NFDB_point_txt.zip",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Content-Length": "25043218",
+        "Last-Modified": "Thu, 20 Aug 2026 21:35:23 GMT",
+        "ETag": "\"6a87731b-17e2112\"",
+        "Date": "Mon, 05 Oct 2026 13:20:58 GMT"
+      },
+      "body_bytes_downloaded": 25043218,
+      "sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+      "expected_sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+      "expected_bytes": 25043218,
+      "byte_identity_verified": true,
+      "status": "matches_original",
+      "valid_zip": true,
+      "seconds": 0.6628304170444608
+    },
+    {
+      "file": "data/raw/woodland/woodland-1984.tif",
+      "url": "https://opendata.nfis.org/downloads/forest_change/CA_forest_VLCE2_1984.zip",
+      "method": "HEAD",
+      "observed_utc": "2026-10-05T13:20:58.350494+00:00",
+      "body_cap_bytes": 0,
+      "http_status": 200,
+      "final_url": "https://opendata.nfis.org/downloads/forest_change/CA_forest_VLCE2_1984.zip",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Content-Length": "1520973970",
+        "Last-Modified": "Wed, 04 Mar 2026 18:51:20 GMT",
+        "ETag": "\"5aa83892-64c374e487277\"",
+        "Date": "Mon, 05 Oct 2026 12:23:57 GMT"
+      },
+      "status": "headers_only",
+      "archive_bytes_expected": 1520973970,
+      "archive_sha256_expected": "6da3aaa2181b3ab4c0a5ae6313776a298f1eea26a5a4f45f178984ae5cb17724",
+      "body_bytes_downloaded": 0,
+      "byte_identity_verified": false,
+      "seconds": 0.6281582498922944
+    }
+  ],
+  "total_body_bytes": 25200900,
+  "wall_seconds": 0.7230470000067726,
+  "limitations": [
+    "Only four of 456 weather files are checked; one current availability observation is not an archive guarantee.",
+    "Forest HEAD does not verify archive bytes or regional crop reconstruction.",
+    "This source check fits no model, changes no raw source and reopens no final test."
+  ],
+  "request_headers": {
+    "User-Agent": "Wildfire-reproduction-source-check/1.0",
+    "Cache-Control": "no-cache",
+    "Accept-Encoding": "identity"
+  },
+  "production_data_cache_files_unchanged": 1304,
+  "production_inventory_scope": [
+    "data/**",
+    ".cache/**"
+  ]
+}

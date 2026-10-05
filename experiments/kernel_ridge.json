@@ -1,0 +1,33 @@
+{
+  "id": "kernel-ridge-v1",
+  "status": "frozen_training_only_design_followup",
+  "parent_plan": "experiments/quantum_landmarks.json",
+  "parent_evidence": "docs/results/kernel-convergence.json",
+  "hypothesis": "A fixed smooth ridge objective yields numerically adequate kernel comparisons and clarifies whether landmark compression itself loses useful ranking information.",
+  "diagnostic_seeds": [811, 821, 823],
+  "sampling_check_seeds": [907, 911, 919],
+  "dense_kernels": ["linear", "product", "rbf", "ZZ"],
+  "landmark_counts": [8, 16, 32],
+  "kernel_ridge": 1.0,
+  "label_encoding": "-1/+1; training mean is the intercept; centered squared-error loss",
+  "kernel_normalization": "training-only center and unit average squared feature norm",
+  "numerical_checks": {
+    "relative_solve_residual_max": 1e-10,
+    "primal_dual_prediction_difference_max": 1e-9,
+    "primary_validation_score_std_min": 1e-5
+  },
+  "quality_gate": {
+    "ideal_16_mean_ap_delta_min": -0.02,
+    "ideal_16_seed_ap_delta_min": -0.03,
+    "ideal_16_seeds_within_min": 2,
+    "ZZ_mean_ap_gain_vs_each_classical_min": 0.02,
+    "ZZ_seeds_beating_rbf_min": 2
+  },
+  "max_wall_seconds": 120,
+  "max_simulated_state_preparations": 3072,
+  "new_pair_circuits": 0,
+  "hardware": false,
+  "final_test_access": false,
+  "post_final_exploratory": true,
+  "interpretation": "No ridge/angle/depth tuning. Both seed groups use the same frozen conditions and gates, reported separately. Fresh samples reuse chronological years and do not certify future performance. Numerical adequacy, approximation and classical comparison are separate. No previously failed outcome is rewritten."
+}

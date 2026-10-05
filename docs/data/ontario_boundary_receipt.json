@@ -1,0 +1,11 @@
+{
+  "url": "https://geo.statcan.gc.ca/geo_wa/rest/services/2021/Digital_boundary_files/MapServer/0/query?where=PRUID%3D%2735%27&outFields=PRUID%2CPRNAME%2CDGUID&returnGeometry=true&outSR=4326&f=geojson",
+  "retrieved_utc": "2026-10-05T18:34:52.218579+00:00",
+  "sha256": "d5af8d3e98aa9209f24bbab28e05b95f8685e1e36ae4df8f868108f5916fbfd3",
+  "properties": {
+    "PRUID": "35",
+    "PRNAME": "Ontario",
+    "DGUID": "2021A000235"
+  },
+  "purpose": "Fixed retrospective Ontario geometry; not a predictor source"
+}

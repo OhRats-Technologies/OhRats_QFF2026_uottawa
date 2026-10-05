@@ -1,0 +1,62 @@
+{
+  "id": "quantum-landmarks-v1",
+  "status": "frozen_training_only_followup",
+  "parent_evidence": "docs/results/library-followup.json",
+  "hypothesis": "16 common training landmarks reduce quantum pair queries by at least 10x while retaining useful approximation quality at 256 labels.",
+  "dataset": ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8",
+  "dataset_sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+  "fold": [
+    1988,
+    2014,
+    2015,
+    2018
+  ],
+  "seeds": [
+    811,
+    821,
+    823
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "cover_water",
+    "month_sin"
+  ],
+  "train_cap": 256,
+  "validation_cap": 256,
+  "landmark_counts": [
+    8,
+    16,
+    32
+  ],
+  "shot_landmarks": 16,
+  "shots": [
+    512,
+    4096
+  ],
+  "preprocessing": "robust_tanh",
+  "angle_scale": 0.05,
+  "reps": 2,
+  "C": 1.0,
+  "landmark_ridge": 0.001,
+  "eigenvalue_cutoff": 1e-10,
+  "landmark_sampling": "nested uniform training-only; same indices for RBF/ZZ",
+  "max_wall_seconds": 600,
+  "max_pair_circuits": 50000,
+  "hardware": false,
+  "final_test_access": false,
+  "post_final_exploratory": true,
+  "quality_gate": {
+    "ideal_16_mean_ap_delta_min": -0.02,
+    "ideal_16_seed_ap_delta_min": -0.03,
+    "ideal_16_seeds_within_min": 2,
+    "shot_4096_mean_ap_delta_min": -0.05,
+    "pair_fraction_max": 0.1
+  },
+  "limitations": [
+    "Selected after final opening; no new final performance claim.",
+    "Single training-period fold and sampled seeds measure stability, not independent temporal replication.",
+    "Nystr\u00f6m is established; these are query/accuracy comparisons, not new quantum algorithms.",
+    "Exact full kernels are inexpensive simulator references; no hardware runtime follows."
+  ]
+}

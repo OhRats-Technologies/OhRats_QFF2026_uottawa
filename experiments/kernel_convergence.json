@@ -1,0 +1,25 @@
+{
+  "id": "kernel-convergence-v1",
+  "status": "frozen_training_only_numerical_audit",
+  "parent_plan": "experiments/quantum_landmarks.json",
+  "parent_evidence": "docs/results/quantum-landmarks.json",
+  "hypothesis": "Default solver stopping tolerance contributes to ranking instability when kernel decision scores are nearly constant.",
+  "seeds": [811, 821, 823],
+  "tolerances": [0.001, 0.000001, 0.000000001],
+  "kernels": ["rbf/dense", "ZZ/dense", "ZZ/ideal/8", "ZZ/ideal/16", "ZZ/ideal/32"],
+  "representation_control": "ZZ/ideal/16",
+  "C": 1.0,
+  "max_solver_iterations": 100000,
+  "max_wall_seconds": 180,
+  "hardware": false,
+  "final_test_access": false,
+  "post_final_exploratory": true,
+  "decision_rules": {
+    "default_reproduction_atol": 0.0000001,
+    "rank_sensitivity_ap_delta": 0.02,
+    "tight_pair_ap_stability": 0.005,
+    "tight_representation_prediction_atol": 0.0000001,
+    "tight_duality_gap_max": 0.00001
+  },
+  "interpretation": "Inspect fixed convergence targets, not the tolerance with best validation AP. Preserve the failed landmark gate; no new shots or model hyperparameters. All epochs/labels/ridge/angles inherit the frozen parent."
+}

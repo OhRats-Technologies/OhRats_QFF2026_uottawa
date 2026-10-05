@@ -1,0 +1,6 @@
+{
+  "source_sha256": "3e1178f1560f38e51b53aa07baba7afd098648acd704fae3255bba55d19c0b63",
+  "plot_recipe_sha256": "863cb3878ca1d18dbd68ced65fefe32fb598a8a0149647c8ade17fa8220d167b",
+  "figure_sha256": "81fa681f5578f1edabc9e245033818acfa80bbc021c2f8a6fe3ec998489342e8",
+  "caption": "Six fixed 256/256 training-period sampling conditions. Bars average them; whiskers span conditions, not confidence intervals. Same objective and 40-call/512-draw caps. Generic feasible-state preparation contributes 247 CX gates in this compiler; not an optimal dedicated Dicke circuit or device runtime. Guaranteed ideal feasibility does not establish useful feature selection; see matched classical controls in the report."
+}

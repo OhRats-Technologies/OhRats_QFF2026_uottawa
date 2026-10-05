@@ -1,0 +1,66 @@
+{
+  "study": "annual-selectors",
+  "parent": "experiments/annual_qsvr.json",
+  "parent_sha256": "63c8700998901fa4126ad044056a3d6be71e93a7f467239335ed03e55b3f06b5",
+  "dataset_sha256": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+  "target": "mean_reported_size_ha",
+  "unit": "Ontario province-year",
+  "folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "selected_count": 4,
+  "seeds": [
+    7,
+    19,
+    31
+  ],
+  "selectors": [
+    "physical_four",
+    "all_ten",
+    "lasso_ranking",
+    "mutual_information",
+    "exact_same_qubo",
+    "qaoa_same_qubo",
+    "uniform_bitstring_budget",
+    "random_four"
+  ],
+  "objective": "Normalized training-only mutual_info_regression relevance minus mean absolute-Pearson redundancy plus cardinality penalty; use continuous log1p/yearly mean target, never a binary fire label",
+  "relevance_neighbors": 3,
+  "redundancy_weight": 0.5,
+  "cardinality_penalty": 2.0,
+  "lasso_alpha": 0.05,
+  "predictor": "fixed Ridge alpha=1 with train-only median/StandardScaler and log1p/training-standardized outcome",
+  "qaoa": {
+    "depth": 1,
+    "maxiter": 40,
+    "shots": 512
+  },
+  "sqd": "Apply addon sampled_subspace to the same sampled feasible bitstrings; verify projected minimum equals best sampled diagonal-QUBO energy; not a new predictor or quantum gain",
+  "fairness": "Selectors see the same outer-training years; predictor and four-feature count fixed. All-ten is an explicit different input budget. Seeds are sensitivity runs over the same years.",
+  "budget": {
+    "outer_seed_combinations": 9,
+    "maximum_predictor_fits": 72,
+    "maximum_qaoa_objective_calls": 360,
+    "synthetic_qaoa_draws": 4608,
+    "new_hardware_jobs": 0
+  },
+  "rejection": "No promotion from better surrogate energy alone; compare hectare errors, objective gap, subset overlap and elapsed cost. Failed feasible draws remain failed; no exact-solver fallback.",
+  "test_access": false
+}

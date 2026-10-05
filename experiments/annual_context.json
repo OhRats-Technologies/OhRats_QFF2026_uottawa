@@ -1,0 +1,35 @@
+{
+  "study": "annual-context",
+  "parent": "experiments/annual_qsvr.json",
+  "parent_sha256": "63c8700998901fa4126ad044056a3d6be71e93a7f467239335ed03e55b3f06b5",
+  "dataset_sha256": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+  "weather_sha256": "859c5153616f0b23b2af518d609590648ee56734582826bbf7545eb666dde8a4",
+  "unit": "Ontario province-year",
+  "target": "mean_reported_size_ha",
+  "conditions": [
+    "same_year_original",
+    "same_year_zero_missing_days",
+    "previous_year_original",
+    "same_year_training_roster"
+  ],
+  "roster_policy": "Eligible station in >=80% of outer-training years for all four physical predictors; roster chosen only from each outer-training window. No hyperparameter tuning in this diagnostic.",
+  "qc_policy": "Mask temperature and degree-day measurements unless missing_mean_temp_days equals zero; mask precipitation unless missing_precip_days equals zero; snowfall/max/min use respective missing-day fields. Unknown missing-day counts are excluded. This is a complete-day-count sensitivity, not comprehensive source quality certification.",
+  "lag_policy": "Features from calendar year t-1; use 1987 only as context for 1988; annual labels unchanged. Historical source products remain retrospective, not proof of as-of availability.",
+  "models": [
+    "fixed_ridge_alpha1",
+    "fixed_rbf_C1_epsilon0.2_gamma_multiplier1",
+    "fixed_qsvr_C1_epsilon0.2_reps1_amplitude_pi_over2"
+  ],
+  "features": "parent four_feature_subset",
+  "folds": "parent development_folds",
+  "budget": {
+    "conditions": 4,
+    "outer_folds": 3,
+    "classical_fits": 24,
+    "quantum_fits": 12,
+    "quantum_kernel_pairs": 12,
+    "hardware_jobs": 0
+  },
+  "test_access": false,
+  "interpretation": "Use as aggregation/information sensitivity; no best-condition promotion from outer scores. Same-year original serves the matched fixed-hyperparameter control."
+}

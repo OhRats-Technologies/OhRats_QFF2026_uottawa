@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "study": "annual-qsvr",
+  "deadline_local": "2026-10-05T17:00:00-04:00",
+  "deadline_utc": "2026-10-05T21:00:00Z",
+  "unit": "Ontario province-year",
+  "primary_target": "mean agency-reported SIZE_HA among eligible size-observed NFDB Ontario incidents in each year",
+  "secondary_descriptive_targets": [
+    "sum observed reported hectares",
+    "distinct incident count"
+  ],
+  "train_years": [
+    1988,
+    2018
+  ],
+  "reused_test_years": [
+    2019,
+    2024
+  ],
+  "development_folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "inner_validation": "three expanding chronological splits inside each outer training window",
+  "features": [
+    "annual_mean_temp_c",
+    "summer_mean_temp_c",
+    "annual_precip_mm",
+    "summer_precip_mm",
+    "spring_precip_mm",
+    "annual_snowfall_cm",
+    "annual_highest_max_temp_c",
+    "annual_lowest_min_temp_c",
+    "annual_heating_degree_days",
+    "annual_cooling_degree_days"
+  ],
+  "four_feature_subset": [
+    "annual_mean_temp_c",
+    "summer_mean_temp_c",
+    "annual_precip_mm",
+    "summer_precip_mm"
+  ],
+  "fire_policy": "SRC_AGENCY ON; valid YEAR; quarantine all duplicated or blank NFDBFIREID and nonblank PRESCRIBED or FIRE_TYPE PB; retain incidents without precise dates/coordinates; unknown/negative size excluded only from size denominator, never treated as zero",
+  "weather_policy": "equal eligible station weight; annual mean temperature requires at least nine measured months; annual totals and extremes require twelve; summer JJA and spring MAM require all three; preserve station counts and missing months; no incident weighting",
+  "primary_information_policy": "same-year climate, retrospective annual estimation; not advance forecast",
+  "target_transform": "log1p annual mean hectares, standardize using each training fold only; report inverse-transformed MAE/RMSE/bias in hectares",
+  "preprocessing": "training median imputation and StandardScaler within every inner/outer fold",
+  "models": [
+    "training-only constant",
+    "linear year trend",
+    "ridge",
+    "linear SVR",
+    "RBF SVR",
+    "quantum fidelity SVR"
+  ],
+  "svr_grid": {
+    "C": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "epsilon": [
+      0.05,
+      0.2,
+      0.5
+    ]
+  },
+  "ridge_alpha": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "rbf_gamma": "training median squared pair distance heuristic, fixed per fold",
+  "quantum": {
+    "library": "FidelityQuantumKernel with ComputeUncompute and QMLSampler(shots=None)",
+    "qubits": [
+      4,
+      10
+    ],
+    "reps": [
+      1,
+      2
+    ],
+    "entanglement": "linear",
+    "angle_amplitudes": [
+      0.7853981633974483,
+      1.5707963267948966
+    ],
+    "angles": "amplitude*tanh(standardized_feature/2)",
+    "max_circuits_per_job": 256,
+    "matrix_cache": "one matrix per fold/map; reuse across C/epsilon",
+    "hardware_jobs": 0
+  },
+  "baseline_gate": "measure annual classical outcomes before optional selectors, shot diagnostics or search policy changes",
+  "optional_followups": [
+    "four-feature selection with training-only classical relevance and bounded QUBO controls",
+    "lag-one climate sensitivity",
+    "fixed-shot local kernel sensitivity",
+    "station-coverage robustness",
+    "area-weighted woodland only with a valid Ontario mask"
+  ],
+  "selection_budget": "no more than four separately frozen follow-up plans; no test-guided revision; core classical/quantum regressors mandatory",
+  "test_rule": "freeze selected configurations and code before one annual reused-test evaluation; do not alter incident intent or evidence",
+  "limits": [
+    "31 annual training observations",
+    "six reused test years",
+    "station-network and reported-fire completeness vary",
+    "reported size does not certify final burned area",
+    "woodland bounding crop is not an Ontario polygon",
+    "same-year summaries are retrospective"
+  ]
+}

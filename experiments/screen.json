@@ -1,0 +1,72 @@
+{
+  "id": "feature-prediction-screen",
+  "status": "planned",
+  "hypothesis": "Quantum subset optimization or a quantum fidelity kernel may improve the quality/cost tradeoff relative to matched classical controls.",
+  "target": "pending label and region audit",
+  "research_model": "gpt-6.1-sol",
+  "train_years": [
+    1988,
+    2018
+  ],
+  "final_test_years": [
+    2019,
+    2024
+  ],
+  "validation_folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "selectors": [
+    "all_features",
+    "mutual_information",
+    "l1",
+    "classical_qubo",
+    "qaoa_same_qubo",
+    "random_subset"
+  ],
+  "predictors": [
+    "seasonal_baseline",
+    "regularized_classical",
+    "tree_model",
+    "rbf_kernel",
+    "quantum_fidelity_kernel"
+  ],
+  "feature_budgets": [
+    4,
+    8
+  ],
+  "seeds": [
+    7,
+    19,
+    31
+  ],
+  "primary_metric": "pending target choice",
+  "screen_max_proposals": 8,
+  "screen_wall_seconds_per_attempt": 1200,
+  "hardware_default": false,
+  "promotion_checks": [
+    "valid labels and provenance",
+    "no future leakage",
+    "matched feature counts/folds",
+    "classical solver on same quantum selection objective",
+    "matched classical kernel control",
+    "independent confirmation"
+  ],
+  "final_test_sealed": true
+}

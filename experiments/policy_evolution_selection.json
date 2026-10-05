@@ -1,0 +1,23 @@
+{
+  "status": "frozen_before_reserved_confirmation",
+  "selected_policy": "evolved_v1",
+  "policy_sha256": "ce6a2cf9ae833650d4dc3ea0dc0e168087d98492ed99ab0163715b1266d814ac",
+  "development_outcome_sha256": "46ecacc622104ffdf9a8fcc5d688ede80fceba143a96a4414eb311d7aae9c6cc",
+  "independent_review": {
+    "participant": "policy-agent",
+    "configured_model": "gpt-6.1-sol",
+    "confirmation_inspected": false,
+    "recommendation": "Retain unchanged; no v2 justified",
+    "reason": "Reward gains in all three development worlds; .000481585 mean AP loss is smaller than .006666667 utility savings from 1.333 fewer queries.",
+    "protocol_issue": "Committed evaluator drift could pass opening preflight; fixed-component hash equality now required."
+  },
+  "reward_delta": 0.0061850812680908,
+  "ap_delta": -0.0004815853985759,
+  "confirmation_seeds": [
+    202610061,
+    202610063,
+    202610067
+  ],
+  "promotion_scope": "Policy quality/cost demonstration only; no final-model selection",
+  "limitations": "Same era, overlapping resampled rows; three worlds do not certify independent temporal generalization. Query charge is declared utility, not measured wall time."
+}

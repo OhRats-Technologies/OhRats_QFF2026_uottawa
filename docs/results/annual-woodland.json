@@ -1,0 +1,2130 @@
+{
+  "study": "annual-woodland",
+  "status": "complete",
+  "plan_sha256": "230f9709fe7c894d790dbe90301b157f1f0a5bd4507423e2a055df75c92787a1",
+  "recipe_sha256": "93ebdbddfa32ba6649aa4017dd0f74435d6fd3a73f28612a01819c9ba4d99ae0",
+  "summaries": [
+    {
+      "map_year": 1987,
+      "year": 1988,
+      "source_sha256": "a0903f07c49f00e7a62760bde2b666ff1319880754188c74bad37850afe4f0ff",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6364571892434332,
+      "water_fraction": 0.1253317083927683,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117649,
+        "32": 7233,
+        "33": 7681,
+        "40": 3607,
+        "50": 10331,
+        "80": 162184,
+        "81": 109894,
+        "100": 32573,
+        "210": 236775,
+        "220": 37785,
+        "230": 212989
+      },
+      "wall_seconds": 9.721992874983698
+    },
+    {
+      "map_year": 1988,
+      "year": 1989,
+      "source_sha256": "fffd2ba0f7c68aaec0ff9825fe77a8902157df39a1c56f106e52d565e32eda5a",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6359234729695611,
+      "water_fraction": 0.12533064309082445,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117648,
+        "32": 7131,
+        "33": 7991,
+        "40": 3616,
+        "50": 10685,
+        "80": 161396,
+        "81": 110544,
+        "100": 33292,
+        "210": 235505,
+        "220": 37416,
+        "230": 213477
+      },
+      "wall_seconds": 9.700696625048295
+    },
+    {
+      "map_year": 1989,
+      "year": 1990,
+      "source_sha256": "9263145de2ddc3719ba6d809fda58082f8c16334ce9238e57e81619c8a19b7ca",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6347399225099366,
+      "water_fraction": 0.12533490429859986,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117652,
+        "32": 6882,
+        "33": 8235,
+        "40": 3619,
+        "50": 10650,
+        "80": 160758,
+        "81": 110925,
+        "100": 35074,
+        "210": 234414,
+        "220": 37054,
+        "230": 213438
+      },
+      "wall_seconds": 9.649174958933145
+    },
+    {
+      "map_year": 1990,
+      "year": 1991,
+      "source_sha256": "bcd35b5c30275e2e06a758e327aa13c3de0a115e999e1e546e4949cabf386cfa",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6348070365323996,
+      "water_fraction": 0.1253391655063753,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117656,
+        "32": 6613,
+        "33": 8608,
+        "40": 3617,
+        "50": 10314,
+        "80": 159944,
+        "81": 111710,
+        "100": 36055,
+        "210": 233902,
+        "220": 36643,
+        "230": 213639
+      },
+      "wall_seconds": 9.525877541978844
+    },
+    {
+      "map_year": 1991,
+      "year": 1992,
+      "source_sha256": "05591af0b3de7bfacba3d89d06ddf605bdd993ad30c7a5a0ca8e046161d77c0e",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6338930074645707,
+      "water_fraction": 0.1253391655063753,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117656,
+        "32": 6477,
+        "33": 9070,
+        "40": 3601,
+        "50": 10398,
+        "80": 159670,
+        "81": 111906,
+        "100": 36793,
+        "210": 233253,
+        "220": 35986,
+        "230": 213891
+      },
+      "wall_seconds": 9.483516625012271
+    },
+    {
+      "map_year": 1992,
+      "year": 1993,
+      "source_sha256": "a26f97ad00eb0c456d8f1d269437c1814a94d6725b7773b21ddb073cf43ecb9f",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6354515442084328,
+      "water_fraction": 0.12534768792192616,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117664,
+        "32": 6140,
+        "33": 9400,
+        "40": 3578,
+        "50": 9838,
+        "80": 158557,
+        "81": 113257,
+        "100": 37025,
+        "210": 232850,
+        "220": 36195,
+        "230": 214197
+      },
+      "wall_seconds": 9.45287020795513
+    },
+    {
+      "map_year": 1993,
+      "year": 1994,
+      "source_sha256": "7cfd7f6ad9b65ec4d4e0b76ac33caaa78ced471b55f68ad2ee5c8efc68238770",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6388924694870891,
+      "water_fraction": 0.12535301443164543,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117669,
+        "32": 5936,
+        "33": 8876,
+        "40": 3568,
+        "50": 9507,
+        "80": 156614,
+        "81": 115023,
+        "100": 36802,
+        "210": 231635,
+        "220": 37475,
+        "230": 215596
+      },
+      "wall_seconds": 9.432558874948882
+    },
+    {
+      "map_year": 1994,
+      "year": 1995,
+      "source_sha256": "b85d2c2d8ed9e94f4714b4ed2bfcd376b0efb3098369641362667b8e0ae7a1de",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6420340449195218,
+      "water_fraction": 0.12534981852581387,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117666,
+        "32": 5688,
+        "33": 8299,
+        "40": 3544,
+        "50": 9251,
+        "80": 154549,
+        "81": 116593,
+        "100": 37026,
+        "210": 230641,
+        "220": 38697,
+        "230": 216747
+      },
+      "wall_seconds": 9.484530957997777
+    },
+    {
+      "map_year": 1995,
+      "year": 1996,
+      "source_sha256": "470120b88194ba41fa9f9b10831e74f126533efd4b4eeb0f86dfde8383d34cc3",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.64320481175582,
+      "water_fraction": 0.12535514503553313,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117671,
+        "32": 5531,
+        "33": 7805,
+        "40": 3539,
+        "50": 9322,
+        "80": 151541,
+        "81": 118665,
+        "100": 39515,
+        "210": 227571,
+        "220": 39973,
+        "230": 217568
+      },
+      "wall_seconds": 9.471656707930379
+    },
+    {
+      "map_year": 1996,
+      "year": 1997,
+      "source_sha256": "a866495ff68cf26208c9f2dfc22e6e72a52df90e7ce070d193db41c47cda9c49",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6424857329437169,
+      "water_fraction": 0.12535514503553313,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117671,
+        "32": 5303,
+        "33": 7727,
+        "40": 3556,
+        "50": 9756,
+        "80": 148718,
+        "81": 120786,
+        "100": 42868,
+        "210": 221435,
+        "220": 41517,
+        "230": 219364
+      },
+      "wall_seconds": 9.47764554200694
+    },
+    {
+      "map_year": 1997,
+      "year": 1998,
+      "source_sha256": "b44a35d7a5d6d06e297f512431f6b3a735ef7602b8014efed056d036395a7e9d",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6440794246517262,
+      "water_fraction": 0.12535194912970157,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117668,
+        "32": 5228,
+        "33": 7523,
+        "40": 3537,
+        "50": 10332,
+        "80": 146397,
+        "81": 122552,
+        "100": 43418,
+        "210": 217530,
+        "220": 42669,
+        "230": 221847
+      },
+      "wall_seconds": 9.562078417045996
+    },
+    {
+      "map_year": 1998,
+      "year": 1999,
+      "source_sha256": "ec8b310b47bbd26fb768570f4eac8763466b3887b898c6ec0848a55164e669be",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6444906312020547,
+      "water_fraction": 0.12534875322387,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117665,
+        "32": 5195,
+        "33": 7269,
+        "40": 3532,
+        "50": 11117,
+        "80": 144950,
+        "81": 123475,
+        "100": 43989,
+        "210": 215086,
+        "220": 42492,
+        "230": 223931
+      },
+      "wall_seconds": 9.583152290899307
+    },
+    {
+      "map_year": 1999,
+      "year": 2000,
+      "source_sha256": "5567ae3910ffe8510f43606178665c55faccd70f34815448a3a7c9817bc293fd",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6470526823770295,
+      "water_fraction": 0.12534449201609457,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117661,
+        "32": 5059,
+        "33": 6852,
+        "40": 3467,
+        "50": 11250,
+        "80": 141757,
+        "81": 126043,
+        "100": 45266,
+        "210": 212331,
+        "220": 43557,
+        "230": 225458
+      },
+      "wall_seconds": 9.555503958952613
+    },
+    {
+      "map_year": 2000,
+      "year": 2001,
+      "source_sha256": "b70e41971978eae8889822a248ac7cdd4cec88927c71f25f7a1f0d6259ea47ff",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6504648445032017,
+      "water_fraction": 0.12534023080831916,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117657,
+        "32": 4978,
+        "33": 6681,
+        "40": 3386,
+        "50": 11537,
+        "80": 139041,
+        "81": 128609,
+        "100": 44829,
+        "210": 210343,
+        "220": 43531,
+        "230": 228109
+      },
+      "wall_seconds": 9.50662962498609
+    },
+    {
+      "map_year": 2001,
+      "year": 2002,
+      "source_sha256": "877d28b94780c0b22507a328d2458d6c60876181b3afac7924150d30d123c6c5",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6504232977273914,
+      "water_fraction": 0.12533810020443145,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117655,
+        "32": 4890,
+        "33": 6571,
+        "40": 3338,
+        "50": 12067,
+        "80": 139122,
+        "81": 128707,
+        "100": 44505,
+        "210": 208468,
+        "220": 43025,
+        "230": 230353
+      },
+      "wall_seconds": 9.830024083028547
+    },
+    {
+      "map_year": 2002,
+      "year": 2003,
+      "source_sha256": "bbfa19b96122a03d1cbb7638b57b7b615380d29822ce3708ff8b32b94cd6733d",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6493484080660402,
+      "water_fraction": 0.1253391655063753,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117656,
+        "32": 4810,
+        "33": 6571,
+        "40": 3272,
+        "50": 12412,
+        "80": 139311,
+        "81": 128832,
+        "100": 45125,
+        "210": 203193,
+        "220": 43917,
+        "230": 233602
+      },
+      "wall_seconds": 9.602606916916557
+    },
+    {
+      "map_year": 2003,
+      "year": 2004,
+      "source_sha256": "6a9f16bb8324f50df2e5bde37bcbb921664393387a534fb34c62380b81622a65",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6467256346802656,
+      "water_fraction": 0.12534236141220687,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117659,
+        "32": 4700,
+        "33": 6755,
+        "40": 3221,
+        "50": 13153,
+        "80": 140624,
+        "81": 127927,
+        "100": 45507,
+        "210": 199798,
+        "220": 43518,
+        "230": 235839
+      },
+      "wall_seconds": 9.579465458984487
+    },
+    {
+      "map_year": 2004,
+      "year": 2005,
+      "source_sha256": "02c4af3ca7983dfabcf7c12396a8d297e8eaef196e579249734bcdf12f9d42fc",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6479656461429145,
+      "water_fraction": 0.125341296110263,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117658,
+        "32": 4560,
+        "33": 6709,
+        "40": 3112,
+        "50": 13045,
+        "80": 140981,
+        "81": 128289,
+        "100": 44390,
+        "210": 197277,
+        "220": 44383,
+        "230": 238297
+      },
+      "wall_seconds": 9.60724870802369
+    },
+    {
+      "map_year": 2005,
+      "year": 2006,
+      "source_sha256": "997a4cbf4ccbc66ff5ededa545c9138ef999eaedd32772a77bf41700e90fd545",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6498522958854843,
+      "water_fraction": 0.12534023080831916,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117657,
+        "32": 4514,
+        "33": 6735,
+        "40": 3003,
+        "50": 13001,
+        "80": 140757,
+        "81": 129143,
+        "100": 43017,
+        "210": 195822,
+        "220": 44445,
+        "230": 240607
+      },
+      "wall_seconds": 9.719000709010288
+    },
+    {
+      "map_year": 2006,
+      "year": 2007,
+      "source_sha256": "545a47f324da4f1e1ec7b36ca6fee37395205c4b028401ace260b2f6f9d5060e",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6518209738777311,
+      "water_fraction": 0.1253370349024876,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117654,
+        "32": 4482,
+        "33": 6621,
+        "40": 2944,
+        "50": 13513,
+        "80": 140347,
+        "81": 130036,
+        "100": 41275,
+        "210": 195407,
+        "220": 43243,
+        "230": 243179
+      },
+      "wall_seconds": 9.784176375018433
+    },
+    {
+      "map_year": 2007,
+      "year": 2008,
+      "source_sha256": "610db0669adb862dc1a3eb408f2ce92dd4b9a886c6965359473964298c1741ab",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.65402508359957,
+      "water_fraction": 0.125333838996656,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117651,
+        "32": 4296,
+        "33": 6958,
+        "40": 2887,
+        "50": 14163,
+        "80": 140364,
+        "81": 130495,
+        "100": 38448,
+        "210": 194731,
+        "220": 43437,
+        "230": 245271
+      },
+      "wall_seconds": 9.641747249988839
+    },
+    {
+      "map_year": 2008,
+      "year": 2009,
+      "source_sha256": "723c1b03e565c37daecc7b93455ddb72628b80bc6e8c5b8ac9b087d7d63b0d9a",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6590458516609655,
+      "water_fraction": 0.12533596960054372,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117653,
+        "32": 4102,
+        "33": 6714,
+        "40": 2851,
+        "50": 13684,
+        "80": 140041,
+        "81": 131148,
+        "100": 35009,
+        "210": 194460,
+        "220": 45142,
+        "230": 247897
+      },
+      "wall_seconds": 9.582451916998252
+    },
+    {
+      "map_year": 2009,
+      "year": 2010,
+      "source_sha256": "6ed3e73e717e5d3080e6433cf97c5384d42fd3fad54e94466eac8ff8df47d599",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6610369009940332,
+      "water_fraction": 0.1253370349024876,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117654,
+        "32": 3969,
+        "33": 6514,
+        "40": 2783,
+        "50": 13305,
+        "80": 141001,
+        "81": 130266,
+        "100": 32959,
+        "210": 193714,
+        "220": 46813,
+        "230": 249723
+      },
+      "wall_seconds": 9.612471875036135
+    },
+    {
+      "map_year": 2010,
+      "year": 2011,
+      "source_sha256": "b7bc6dcef0834d87c462136096cf9a6939c273b161002bd8223d465b8faa0b24",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.660876040400511,
+      "water_fraction": 0.12533277369471216,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117650,
+        "32": 3921,
+        "33": 6319,
+        "40": 2765,
+        "50": 14071,
+        "80": 142177,
+        "81": 128748,
+        "100": 31433,
+        "210": 192296,
+        "220": 48143,
+        "230": 251178
+      },
+      "wall_seconds": 9.682059375103563
+    },
+    {
+      "map_year": 2011,
+      "year": 2012,
+      "source_sha256": "0ecd518255446ec9ad343506f4355e983430bafe29ca0e62252aa062923f68a0",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6611828473603416,
+      "water_fraction": 0.1253242512791613,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117642,
+        "32": 3797,
+        "33": 6213,
+        "40": 2755,
+        "50": 13659,
+        "80": 141747,
+        "81": 128548,
+        "100": 32235,
+        "210": 188180,
+        "220": 52364,
+        "230": 251561
+      },
+      "wall_seconds": 9.7604161669733
+    },
+    {
+      "map_year": 2012,
+      "year": 2013,
+      "source_sha256": "cf6c93ba8c601738ecad699e7eca23abb5744e414f1728e85997a87f9654e682",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6639845914726841,
+      "water_fraction": 0.1253221206752736,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117640,
+        "32": 3682,
+        "33": 5942,
+        "40": 2702,
+        "50": 13019,
+        "80": 139936,
+        "81": 129646,
+        "100": 32497,
+        "210": 184672,
+        "220": 56908,
+        "230": 252057
+      },
+      "wall_seconds": 9.904281415976584
+    },
+    {
+      "map_year": 2013,
+      "year": 2014,
+      "source_sha256": "4c145829391c99876f7fef0df4388544ce9f925f9d4edb483d3392d2ee034c94",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6667767478675318,
+      "water_fraction": 0.1253199900713859,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117638,
+        "32": 3519,
+        "33": 5628,
+        "40": 2680,
+        "50": 13184,
+        "80": 138858,
+        "81": 130267,
+        "100": 31290,
+        "210": 182437,
+        "220": 60206,
+        "230": 252994
+      },
+      "wall_seconds": 10.026416875072755
+    },
+    {
+      "map_year": 2014,
+      "year": 2015,
+      "source_sha256": "243e90c07c931965355b4869662ef40870a49bbf63460d8ea8eb2af9f4cf8a98",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6708174381405794,
+      "water_fraction": 0.1253167941655543,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117635,
+        "32": 3415,
+        "33": 5355,
+        "40": 2671,
+        "50": 13036,
+        "80": 136856,
+        "81": 132087,
+        "100": 30036,
+        "210": 181060,
+        "220": 62204,
+        "230": 254346
+      },
+      "wall_seconds": 9.928113584057428
+    },
+    {
+      "map_year": 2015,
+      "year": 2016,
+      "source_sha256": "2195f0c84c4db82a53b6da4f074fe17a65f5821dd7f4c7087f4847661030eb14",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6731866696637161,
+      "water_fraction": 0.12531359825972274,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117632,
+        "32": 3407,
+        "33": 5404,
+        "40": 2676,
+        "50": 12747,
+        "80": 135636,
+        "81": 133389,
+        "100": 29278,
+        "210": 179945,
+        "220": 62680,
+        "230": 255907
+      },
+      "wall_seconds": 9.695723915938288
+    },
+    {
+      "map_year": 2016,
+      "year": 2017,
+      "source_sha256": "62614e48e5f49fdb6bf2dd6e5130be6735405d17bc16c9daeec9116eec88ed9d",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6749774422313388,
+      "water_fraction": 0.1253125329577789,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117631,
+        "32": 3360,
+        "33": 5894,
+        "40": 2642,
+        "50": 12854,
+        "80": 134784,
+        "81": 134531,
+        "100": 27934,
+        "210": 178516,
+        "220": 63376,
+        "230": 257179
+      },
+      "wall_seconds": 9.644625667016953
+    },
+    {
+      "map_year": 2017,
+      "year": 2018,
+      "source_sha256": "603f9d2fbeb610aaa58eb82e2bb3c2e1c09aebbe6614c7ffdcfbb9c6d357ca51",
+      "resolution_m": 1000,
+      "province_cells": 1048919,
+      "classified_cells": 938701,
+      "approximate_province_area_km2": 1048919.0,
+      "treed_fraction": 0.6755569664887967,
+      "water_fraction": 0.1253199900713859,
+      "unclassified_fraction": 0.10507770380744366,
+      "uncovered_fraction": 0.0,
+      "class_counts": {
+        "0": 110218,
+        "20": 117638,
+        "32": 3279,
+        "33": 6082,
+        "40": 2661,
+        "50": 13503,
+        "80": 134369,
+        "81": 135061,
+        "100": 27023,
+        "210": 177859,
+        "220": 62041,
+        "230": 259185
+      },
+      "wall_seconds": 9.702722958987579
+    }
+  ],
+  "resolution_probe": {
+    "resolution_m": 500,
+    "province_cells": 4195200,
+    "classified_cells": 3754200,
+    "approximate_province_area_km2": 1048800.0,
+    "treed_fraction": 0.6363278461456502,
+    "water_fraction": 0.12562197006019923,
+    "unclassified_fraction": 0.10512013729977117,
+    "uncovered_fraction": 0.0,
+    "class_counts": {
+      "0": 441000,
+      "20": 471610,
+      "32": 28728,
+      "33": 30918,
+      "40": 13867,
+      "50": 41095,
+      "80": 647688,
+      "81": 442087,
+      "100": 131392,
+      "210": 945161,
+      "220": 150744,
+      "230": 850910
+    },
+    "wall_seconds": 9.268595458939672
+  },
+  "gate": {
+    "accepted": true,
+    "maximum_fraction_difference": 0.00029026166743092996,
+    "maximum_uncovered_fraction": 0.0
+  },
+  "results": [
+    {
+      "condition": "physical_four",
+      "model": "fixed_ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        41.413212411994245,
+        169.290436006697,
+        39.148148159972465,
+        85.01931802432502
+      ],
+      "mae_ha": 63.52231696702978,
+      "rmse_ha": 89.9563339473362,
+      "bias_ha": 56.29574337770333
+    },
+    {
+      "condition": "physical_four",
+      "model": "fixed_rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        115.32312709397046,
+        172.81094408921226,
+        49.655218553025605,
+        102.18313091637346
+      ],
+      "mae_ha": 84.54410828290148,
+      "rmse_ha": 102.7646130606435,
+      "bias_ha": 82.5710698901016
+    },
+    {
+      "condition": "physical_four",
+      "model": "fixed_qsvr",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        65.71214870957915,
+        74.20876041960909,
+        95.79107254751125,
+        83.401826741196
+      ],
+      "mae_ha": 52.35641683143002,
+      "rmse_ha": 55.0992543767297,
+      "bias_ha": 52.35641683143002
+    },
+    {
+      "condition": "physical_four",
+      "model": "fixed_ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        86.69305311919275,
+        43.17818369063474,
+        68.33487680235771,
+        53.44530839791416
+      ],
+      "mae_ha": 124.20046430341068,
+      "rmse_ha": 198.1926402597629,
+      "bias_ha": -106.50952151487218
+    },
+    {
+      "condition": "physical_four",
+      "model": "fixed_rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        160.89098967468232,
+        58.570454687826086,
+        90.76139797717227,
+        54.2243269334552
+      ],
+      "mae_ha": 97.80572898477769,
+      "rmse_ha": 160.4308210207127,
+      "bias_ha": -78.31058469911306
+    },
+    {
+      "condition": "physical_four",
+      "model": "fixed_qsvr",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        53.5466496865351,
+        44.625244683663794,
+        62.95629951530593,
+        49.06581622480269
+      ],
+      "mae_ha": 132.37507119180293,
+      "rmse_ha": 214.44501289596982,
+      "bias_ha": -116.87387448982015
+    },
+    {
+      "condition": "physical_four",
+      "model": "fixed_ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        25.326776324620667,
+        53.285906187311355,
+        43.43878281043541,
+        86.78864149466663
+      ],
+      "mae_ha": 81.6139330435837,
+      "rmse_ha": 87.23227470831972,
+      "bias_ha": -81.6139330435837
+    },
+    {
+      "condition": "physical_four",
+      "model": "fixed_rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        27.879575053590806,
+        65.9837771791003,
+        59.51993909939859,
+        89.01949878834529
+      ],
+      "mae_ha": 73.22326221773348,
+      "rmse_ha": 79.00605750966108,
+      "bias_ha": -73.22326221773348
+    },
+    {
+      "condition": "physical_four",
+      "model": "fixed_qsvr",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        38.71755009960468,
+        51.13400654115928,
+        59.990638472674135,
+        39.65022012840806
+      ],
+      "mae_ha": 86.45085593738068,
+      "rmse_ha": 99.93333284094479,
+      "bias_ha": -86.45085593738068
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "model": "fixed_ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        13.623222545940546,
+        54.03873070038936,
+        9.488590651926087,
+        26.33599890682719
+      ],
+      "mae_ha": 31.82400260421712,
+      "rmse_ha": 35.646870772002565,
+      "bias_ha": -1.5503995717730605
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "model": "fixed_rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        61.00544338993566,
+        87.11076981799788,
+        36.22317782515317,
+        76.59574232219694
+      ],
+      "mae_ha": 46.500806822513155,
+      "rmse_ha": 53.66635130746623,
+      "bias_ha": 37.81174806577705
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "model": "fixed_qsvr",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        81.40431967531133,
+        77.40475880297139,
+        78.40181273383337,
+        100.60804349599343
+      ],
+      "mae_ha": 57.032698403983524,
+      "rmse_ha": 61.69733984988027,
+      "bias_ha": 57.032698403983524
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "model": "fixed_ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        23.438746564901063,
+        15.518599614453752,
+        15.440304460732854,
+        10.845293908073016
+      ],
+      "mae_ha": 153.11164088035684,
+      "rmse_ha": 233.3651957329649,
+      "bias_ha": -153.11164088035684
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "model": "fixed_rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        45.62788363195047,
+        38.174945926108315,
+        37.629519760764865,
+        53.13907783357114
+      ],
+      "mae_ha": 143.3173477356653,
+      "rmse_ha": 219.98930477368185,
+      "bias_ha": -125.77952022929831
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "model": "fixed_qsvr",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        73.80132911166103,
+        51.52846906544641,
+        76.87126259618775,
+        49.210398714577
+      ],
+      "mae_ha": 122.14300009229892,
+      "rmse_ha": 203.74472841641312,
+      "bias_ha": -106.56951214542899
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "model": "fixed_ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        15.13938362615476,
+        28.33944025570931,
+        19.78560238972552,
+        38.232188537217084
+      ],
+      "mae_ha": 108.44980604564056,
+      "rmse_ha": 116.73286025126897,
+      "bias_ha": -108.44980604564056
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "model": "fixed_rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        27.276395174902447,
+        51.793127608795956,
+        52.143209696700055,
+        51.10727511040292
+      ],
+      "mae_ha": 88.24395785014188,
+      "rmse_ha": 97.81823041128881,
+      "bias_ha": -88.24395785014188
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "model": "fixed_qsvr",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        66.21133391569572,
+        63.93199702894625,
+        52.55200577056613,
+        57.387118968015045
+      ],
+      "mae_ha": 77.35284736921957,
+      "rmse_ha": 91.71241201121157,
+      "bias_ha": -73.80334582703644
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "model": "fixed_ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "treed_fraction"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        15.80714062111854,
+        53.143744549334535,
+        5.67131174520007,
+        16.381427102716174
+      ],
+      "mae_ha": 29.519953323312667,
+      "rmse_ha": 35.859044359864505,
+      "bias_ha": -4.6711292684515255
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "model": "fixed_rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "treed_fraction"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        78.26480127180992,
+        100.08162673495625,
+        55.42753779161012,
+        93.63751457210834
+      ],
+      "mae_ha": 54.4308348195773,
+      "rmse_ha": 65.30426509463497,
+      "bias_ha": 54.4308348195773
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "model": "fixed_qsvr",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "treed_fraction"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        86.95994023686521,
+        63.422665369758676,
+        81.08578251272218,
+        110.82054645382412
+      ],
+      "mae_ha": 58.15019837024869,
+      "rmse_ha": 62.99124423961604,
+      "bias_ha": 58.15019837024869
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "model": "fixed_ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "treed_fraction"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        21.33774716028384,
+        15.469588052430625,
+        13.185571023742044,
+        8.25313449038242
+      ],
+      "mae_ha": 154.8608668356873,
+      "rmse_ha": 234.59241053559708,
+      "bias_ha": -154.8608668356873
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "model": "fixed_rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "treed_fraction"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        44.665036576986495,
+        34.48321077311975,
+        42.27924640800525,
+        59.871332912255156
+      ],
+      "mae_ha": 145.00162539551437,
+      "rmse_ha": 220.74374888791908,
+      "bias_ha": -124.09767034980538
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "model": "fixed_qsvr",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "treed_fraction"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        76.8878301848124,
+        50.21308628351881,
+        65.34393590425077,
+        42.73226756816853
+      ],
+      "mae_ha": 122.96251940587508,
+      "rmse_ha": 202.3014130435974,
+      "bias_ha": -110.6280970322094
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "model": "fixed_ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "treed_fraction"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        13.546060881362168,
+        24.890092342723953,
+        16.74602396733248,
+        35.60497251368893
+      ],
+      "mae_ha": 111.12717232156534,
+      "rmse_ha": 119.36870164572039,
+      "bias_ha": -111.12717232156534
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "model": "fixed_rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "treed_fraction"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        31.508975695323528,
+        58.30128355728755,
+        54.306741521807574,
+        57.38623076486444
+      ],
+      "mae_ha": 83.44815186302145,
+      "rmse_ha": 93.28303039374983,
+      "bias_ha": -83.44815186302145
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "model": "fixed_qsvr",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "treed_fraction"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        63.85613969149207,
+        71.55214411913556,
+        55.77710598491072,
+        63.01819028246346
+      ],
+      "mae_ha": 72.6449691584231,
+      "rmse_ha": 87.31673096244887,
+      "bias_ha": -70.27306472834178
+    }
+  ],
+  "resources": [
+    {
+      "condition": "physical_four",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "kernel_seconds": 0.20296779193449765,
+      "pair_circuits": 247,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "a3bd7936035b2bad8c82eeb2de5161033d58d58b82ef7142058e86bfe07c4d93",
+      "raw_min_eigenvalue": 0.3805221111178752,
+      "train_rows": 19,
+      "validation_rows": 4,
+      "qubits": 4,
+      "reps": 1,
+      "amplitude": 1.5707963267948966
+    },
+    {
+      "condition": "physical_four",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "kernel_seconds": 0.2742863749153912,
+      "pair_circuits": 345,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "cf00a54628736e0d1e195d91fa87b38be06fa8c59303b76c83f0a28ee019c8be",
+      "raw_min_eigenvalue": 0.3264430952414066,
+      "train_rows": 23,
+      "validation_rows": 4,
+      "qubits": 4,
+      "reps": 1,
+      "amplitude": 1.5707963267948966
+    },
+    {
+      "condition": "physical_four",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "kernel_seconds": 0.3664845419116318,
+      "pair_circuits": 459,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "25cea712e378398dbcf8885b64951112dfa99ff3ef8631ed8a52cec222aeeddf",
+      "raw_min_eigenvalue": 0.31879860857298464,
+      "train_rows": 27,
+      "validation_rows": 4,
+      "qubits": 4,
+      "reps": 1,
+      "amplitude": 1.5707963267948966
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "kernel_seconds": 0.3257811249932274,
+      "pair_circuits": 247,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "90376dcfc7e4fdad1ec6dbb4520037a42637a217505b545b428c246ff7b75fef",
+      "raw_min_eigenvalue": 0.7013789582036628,
+      "train_rows": 19,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 1.5707963267948966
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "kernel_seconds": 0.41483829193748534,
+      "pair_circuits": 345,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "1f65bdf408a9fb11b88a72fce0d55e6e54bf38a7ecd31f594f20d39fffa0194d",
+      "raw_min_eigenvalue": 0.584954424878518,
+      "train_rows": 23,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 1.5707963267948966
+    },
+    {
+      "condition": "physical_four_plus_calendar_year",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "kernel_seconds": 0.5474076659884304,
+      "pair_circuits": 459,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "3aa52556016ef2b4141716056cd212c01e86c349fe08ff57bc48263f76946953",
+      "raw_min_eigenvalue": 0.5099887038608372,
+      "train_rows": 27,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 1.5707963267948966
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "kernel_seconds": 0.29548729106318206,
+      "pair_circuits": 247,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "e72f2b4e4216e23e60eaa8422dd575bd1f0ec8d2b870e40203ed56e14068856b",
+      "raw_min_eigenvalue": 0.6969244460134703,
+      "train_rows": 19,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 1.5707963267948966
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "kernel_seconds": 0.41279816604219377,
+      "pair_circuits": 345,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "25992664d0761c140c80baf78b9e4a956645cf109d3ec4875ad868f09b6c2b25",
+      "raw_min_eigenvalue": 0.5788944704352139,
+      "train_rows": 23,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 1.5707963267948966
+    },
+    {
+      "condition": "physical_four_plus_previous_map_treed_fraction",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "kernel_seconds": 0.5527033749967813,
+      "pair_circuits": 459,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "5a84ce89a3926a8c718490f8b19176d3f2b8ba2cdc8647e08f7798366e6b113a",
+      "raw_min_eigenvalue": 0.5799957363809256,
+      "train_rows": 27,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 1.5707963267948966
+    }
+  ],
+  "wall_seconds": 316.0176107500447,
+  "hardware_jobs_submitted": 0,
+  "final_test_accessed": false,
+  "information": "Map t-1 for label year t; historical map has retrospective temporal processing and is not as-of availability evidence",
+  "rejection_rule": "Reject predictive woodland ablation if raster coverage or 500/1000m fraction checks fail; preserve summaries and state why. Coarse sampling is not native 30m exhaustive class area."
+}

@@ -1,0 +1,9 @@
+{
+  "source": "docs/data/probability_report.json",
+  "source_sha256": "bcfb214538c02f31d504ef7bf0f375d630cc03d3157e08df118a62ac4d9cee19",
+  "plot_recipe_sha256": "ab366863a688d87b9b03fa4b82cbc5ff5e9ac4b2729cca618741ae79c70ae063",
+  "figure_sha256": "3e7d4d21290e8923865fdd8bbf4def601ae6f4756d85da61d19c810c741d6b63",
+  "model_fits": 0,
+  "probability_bins": 10,
+  "interpretation": "Descriptive pooled fixed-bin curves with counts, not independent confidence intervals or operational calibration."
+}

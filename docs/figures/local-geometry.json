@@ -1,0 +1,6 @@
+{
+  "source_sha256": "279258c5178468b47692cc3c57a35fdd9f47b72ab4b4c6df64a1608c7ff4e3a2",
+  "plot_recipe_sha256": "02617800cfceffeebdc232a3bb6f7b11bcda801b1ff921d29133258c88c44a6c",
+  "figure_sha256": "67cf5656f23f7ac16557c689b31da00e791d22da901f4df3eba6ac2ba634bee5",
+  "caption": "Three inherited 256/256 training-period sampling conditions; lines are means and bands are ranges, not confidence intervals. Left compares each kernel after its own exact training-variance normalization; right uses independent-shot RMS errors relative to the exact centered matrix. These are different matrix diagnostics, not predictive error. No new shots, model fits or hardware calls. The inherited .05 scale is not reselected."
+}

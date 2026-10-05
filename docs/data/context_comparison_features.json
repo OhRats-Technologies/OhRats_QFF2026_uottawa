@@ -1,0 +1,20 @@
+{
+  "fingerprint": "6efc81508b0827092cd1",
+  "data_sha256": "8e5ada6e779cfe7849cf881d9b5f839b69e5956e3ff76c947ce0d665c39af0e5",
+  "rows": 37801,
+  "parent_rows": {
+    "annual": 37801,
+    "static": 37801
+  },
+  "excluded_by_intersection": {
+    "annual": 0,
+    "static": 0
+  },
+  "positive_fraction": 0.07507737890531997,
+  "code_sha256": "4f198f7fb3556f4829abdd6a9e5e72d3e639e2705d34c17b7709395a8e2a6daa",
+  "limitations": "Identical-incident static versus previous-year mapped-cover context. Dates/sizes are agency-associated. Native classes are retrospective; map-year lag does not certify historical availability or freedom from temporal smoothing. No final-test performance opened.",
+  "parents": {
+    "annual": "231db6a4101cb2fb9ea2",
+    "static": "f8a46f515b5b90b753a8"
+  }
+}

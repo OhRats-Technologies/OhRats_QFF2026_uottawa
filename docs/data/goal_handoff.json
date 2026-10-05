@@ -1,0 +1,33 @@
+{
+  "status": "completed_goal_handoff",
+  "completed_utc": "2026-10-05T17:01:20.768038+00:00",
+  "deadline_utc": "2026-10-05T17:00:00+00:00",
+  "verified_source_commit": "8998e2acf4d2f5a15c5f7dc6d288072b3722950b",
+  "publication_parent_commit": "78ed70b216eaa16b631434a2c89e4db09ad6df2f",
+  "files_sha256": {
+    "GOAL.md": "f8dedf8a2e341503b1e60843677f2c2abc5ad1087c2dcf20bcc8231117e7d07d",
+    "docs/HANDOFF.md": "08c0a3f9bda90c43b956763b66a153bb80d6cca90ca9c99e2482f0fd8748b23f",
+    "docs/REPORT.md": "da58e0fd470277725cc6ee0adf6646195d65fcde6df13d9e26d462bf76ae0400",
+    "docs/GOAL_AUDIT.md": "825ffb30da9ebabaed530eaedda968e36c36b91b4af52f0fb26101a39b66bc1e",
+    "docs/DATA_SCHEMA.md": "bfb0adb8a973e974ae3321d9eb635dae38e9fd7e3e817c83813c264d1bd86c95",
+    "docs/PIPELINE.md": "3125cd135121699942222fe8d4e2052d3a8f1d0baf82629e7d67087140b9b95b",
+    "docs/REPRODUCIBILITY.md": "37a54e8c63cc91a1f41a73db3f137503a8bd7d859b12ab029df17e31f4137d23",
+    "docs/QUANTUM_METHODS.md": "f4cfabf35b2b531ccfed9cdfe86e8471cfc18a1eb28b3283ad9ca20d40e3f7ca",
+    "docs/results/final-evaluation.json": "0ddc661ed2938bb90ea4ca57b361ceacb796661abce2f4337e2b9e2573be4824",
+    "docs/results/policy-evolution.json": "91d5213873c228402c1ab5d0f2929cd48a9528c391182015cb12a32a3565c2ea",
+    "docs/data/workflow_repository_checks.json": "1eccabcdb3b49e85ef3d8de2c4e1bbed03b1e96aca6a7d3e1645097a0aafbe02",
+    "web/presentation/README.md": "b53cc450717b9eabdd1d539dcd17ea974d84a30e8468e4af8f7f56d44ae15351"
+  },
+  "requirement_audit": "docs/GOAL_AUDIT.md",
+  "fixed_recipe_reproduction_sha256": "e32c1e535fea8ba33f569084546c0199fa51c46d73d406fd939a882ede2a6416",
+  "scientific_evidence_unchanged": true,
+  "models_restarted_at_deadline": 0,
+  "new_hardware_jobs": 0,
+  "remaining_required_goal_work": [],
+  "limitations": [
+    "Full public-source network reacquisition is not execution-tested; original selected snapshots are hashed and the complete fixed recipe is reproduced.",
+    "Historical availability, coordinate accuracy and incident completeness limit forecasting claims.",
+    "The browser presentation is a 300-second evidence plan; a player is outside the prioritized goal.",
+    "No reliable quantum computational or predictive advantage is established."
+  ]
+}

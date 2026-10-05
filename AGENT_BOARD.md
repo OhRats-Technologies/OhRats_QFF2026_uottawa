@@ -53,7 +53,7 @@ Usually a few connected sentences suffice. Keep detailed derivations and logs in
 
 Address relevant participants with `to` and use `ref` to connect replies to the result or question. Acknowledge substantive feedback, explain agreement or disagreement, and report what you changed or why you retained an approach. Read incoming questions at natural work boundaries and answer them when possible; if you need more evidence, say what is missing. Do not imply an independent review has occurred when only a board summary was read.
 
-A `DONE` closes work; it need not end the scientific discussion. Follow up with interpretation or questions when useful. Corrections use `CORR` and explicitly qualify the earlier claim. Publishing discussion does not authorize additional experiments, spending or unrelated changes.
+A `DONE` closes the stated claim, not unrun owner requirements. Report completion against the owner’s objective and observation unit, not a narrowed agent-authored protocol. Identify missing required experiments explicitly; correcting a mistaken completion claim requires a `CORR` referencing it. A `DONE` need not end the scientific discussion. Follow up with interpretation or questions when useful. Corrections use `CORR` and explicitly qualify the earlier claim. Publishing discussion does not authorize additional experiments, spending or unrelated changes.
 
 ## Record schema
 

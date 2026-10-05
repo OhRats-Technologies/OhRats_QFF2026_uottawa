@@ -1,0 +1,6 @@
+{
+  "source_sha256": "a2037608a56c791b25fdfc71eda874487f0882f8edcf868531bbc1ef490b5c26",
+  "plot_recipe_sha256": "021f0825f88ae5aaf35cc0a5507907ec12fbbd5946ef92e72caaa38f3b3932bc",
+  "figure_sha256": "97e180362162fc10ae7399acb94f0109fdffd219bc936223beb2efdbbc33278e",
+  "caption": "Training 1988\u20132018 only. Left denominator: eligible NFDB incidents; right: weather-matched incidents. Markers show observed class-specific exclusion fractions by approximate reported latitude, with connecting lines as guides. Ratios with denominator <10 are omitted from this plot but all counts remain in evidence. No confidence intervals, station-cause inference, geographic accuracy or province-completeness claim; no model fitted."
+}

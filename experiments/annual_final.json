@@ -1,0 +1,84 @@
+{
+  "study": "annual-final",
+  "unit": "Ontario province-year",
+  "target": "mean_reported_size_ha",
+  "train_years": [
+    1988,
+    2018
+  ],
+  "reused_test_years": [
+    2019,
+    2024
+  ],
+  "parent": "experiments/annual_qsvr.json",
+  "parent_sha256": "63c8700998901fa4126ad044056a3d6be71e93a7f467239335ed03e55b3f06b5",
+  "matched_parent": "experiments/annual_matched.json",
+  "matched_parent_sha256": "bc791ce4e29f6e37efe53f08469ed7d74451aacafb4817a17b68f31de7b23c05",
+  "selectors_parent": "experiments/annual_selectors.json",
+  "selectors_parent_sha256": "45c05b54c02b60778c4a217fbf79199869a13313563fcda7484431563657e294",
+  "training_dataset": "docs/data/annual_training.csv",
+  "training_sha256": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+  "nfdb_sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+  "weather_path": ".cache/wildfire/processed/weather/52f047eb76b948cf66d5/weather_months.csv",
+  "weather_sha256": "859c5153616f0b23b2af518d609590648ee56734582826bbf7545eb666dde8a4",
+  "primary_information": "Originally frozen same-year climate and equal eligible station weighting; retrospective annual estimation. No promotion of best context/forest condition.",
+  "main_models": [
+    "training_mean",
+    "training_median",
+    "linear_year_trend",
+    "ridge_4",
+    "ridge_10",
+    "linear_svr_4",
+    "linear_svr_10",
+    "matched_rbf_svr_4",
+    "matched_rbf_svr_10",
+    "matched_fidelity_svr_4",
+    "matched_fidelity_svr_10"
+  ],
+  "main_tuning": "Three expanding TimeSeriesSplit folds on all 31 training years; same train-only preprocessing/log target. RBF and quantum families receive 36 candidates each per width, identical C/epsilon grid; choose lowest pooled inner MAE with deterministic grid-order tie break. Ridge has three alpha candidates; linear SVR has nine C/epsilon candidates. Outer-development scores and test scores do not select settings.",
+  "selector_crossover": {
+    "selectors": "All eight frozen continuous-target selectors",
+    "seeds": [
+      7,
+      19,
+      31
+    ],
+    "predictors": [
+      "fixed_ridge_alpha1",
+      "fixed_rbf_C1_epsilon0.2_gamma_multiplier1",
+      "fixed_qsvr_C1_epsilon0.2_reps1_amplitude_pi_over2"
+    ],
+    "input_budget": "Four selected inputs; all-ten is an explicitly different ten-input control",
+    "selection": "Use only full training years for relevance/redundancy/Lasso/QAOA, fixed weights and capped calls from annual_selectors. No tuning in crossover. Cache kernels across repeated selected subsets; no test-based subset choice.",
+    "interpretation": "Seeds reuse the same years and may select identical subsets. Crossover is a frozen comparison, not additional independent replication or a winning subset search.",
+    "encoding_order": "Canonical parent feature order for every selected subset; sort feature indices before all predictor/kernel fits. Ranking order is not an additional circuit choice."
+  },
+  "two_phase_execution": "Train selects parameters and saves learned model state, training scaling and kernel receipts without test data. Evaluate verifies frozen plan/code/model hashes, creates an exclusive evaluation intent, prepares six annual test rows from source and computes fixed predictions. No adaptive retry/reset or change follows from inspecting errors.",
+  "metrics": [
+    "MAE hectares per fire",
+    "RMSE hectares per fire",
+    "bias hectares per fire",
+    "each year actual/predicted/error",
+    "paired model errors"
+  ],
+  "budget": {
+    "main_final_models": 11,
+    "selector_final_records": 72,
+    "main_classical_inner_fits": 288,
+    "main_quantum_inner_fits": 216,
+    "selector_qaoa_optimizer_calls": 120,
+    "selector_synthetic_draws": 1536,
+    "maximum_training_quantum_matrices": 50,
+    "maximum_test_cross_matrices": 26,
+    "hardware_jobs": 0
+  },
+  "source_cutoff": "Woodland 2022 accepted; forest ablation remains training-only and does not supply final model inputs. Do not fabricate future maps.",
+  "limitations": [
+    "Six reused evaluation years overlap a previously inspected incident study; not a pristine holdout",
+    "31 training observations and historical station/reporting changes",
+    "Retrospective sources and missing availability prevent operational forecast claims",
+    "Exact local simulation; no device advantage",
+    "No confidence/significance claim from three seeds or six years"
+  ],
+  "test_rule": "One new annual evaluation intent in a new namespace; preserve old incident final intent and all evidence. If interrupted, collect available records rather than reset or blindly refit."
+}

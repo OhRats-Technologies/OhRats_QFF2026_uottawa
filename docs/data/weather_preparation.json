@@ -1,0 +1,41 @@
+{
+  "preparation_fingerprint": "52f047eb76b948cf66d5",
+  "output_sha256": "859c5153616f0b23b2af518d609590648ee56734582826bbf7545eb666dde8a4",
+  "manifest_sha256": "845d7a999a428293d72821b22d00a027f0aeb7dffe646ad4aa25f7fd95019131",
+  "config_sha256": "4de8d2ce25e9c25e83d0f21609e32d21d00952d9c638db751d09ab79fbcdb256",
+  "recipe_sha256": "1f13b2d34744ab3c427eaf235a61291e7bc9aa9c2d505d6a6431c433b8cc38d5",
+  "rows_by_split": {
+    "train": 90898,
+    "test": 12452,
+    "context": 4127
+  },
+  "flagged_rows": 0,
+  "training_missing_values": {
+    "mean_temp_c": {
+      "count": 10627,
+      "fraction": 0.11691126317410724
+    },
+    "total_precip_mm": {
+      "count": 4993,
+      "fraction": 0.054929701423573674
+    },
+    "snowfall_cm": {
+      "count": 20673,
+      "fraction": 0.22743074655107923
+    },
+    "heating_degree_days": {
+      "count": 10627,
+      "fraction": 0.11691126317410724
+    },
+    "cooling_degree_days": {
+      "count": 10627,
+      "fraction": 0.11691126317410724
+    }
+  },
+  "previous_snapshot": {
+    "fingerprint": "bbeb8b11c099a8ad1969",
+    "output_sha256": "b237f3167503676ce66f224d75e12b9fe10a7c60823c399892eb4f8b6a59a27c",
+    "scope": "Earlier operational-pilot preparation, preserved in its original cache"
+  },
+  "note": "Selected historical/final weather snapshot. 4,127 context rows are from 1987, separate from 1988\u20132018 training. Station-month missingness differs from incident-weighted join missingness. Zero syntax/day-count flags does not mean complete observations. No model refit or test-score selection."
+}

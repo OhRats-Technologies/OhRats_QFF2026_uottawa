@@ -1,7 +1,0 @@
-{
-  "schema_version": 1,
-  "files_sha256": {
-    "bell-pair/logical-circuit.qpy": "a9e47be61185fd9fc04dd5d0ef090fd14934f9f00ec46ef43880c9c0b1a5ce85",
-    "bell-pair/result.json": "a5c0642c15fafb9fe841fd1013bac56ebe7aa77012e4ea4c85bd00d51a2c22aa"
-  }
-}

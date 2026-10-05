@@ -1,0 +1,80 @@
+{
+  "id": "qiskit-library-followup-v1",
+  "status": "frozen_training_only_followup",
+  "owner_request": "FidelityQuantumKernel, SQD applicability and bounded Dream-RSI replay",
+  "dataset": ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8",
+  "dataset_sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+  "fold": [
+    1988,
+    2014,
+    2015,
+    2018
+  ],
+  "seeds": [
+    593,
+    601,
+    607
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "cover_water",
+    "month_sin"
+  ],
+  "selection_features": [
+    "latitude",
+    "longitude",
+    "month_sin",
+    "month_cos",
+    "cover_conifer",
+    "cover_broadleaf",
+    "cover_mixed",
+    "cover_water"
+  ],
+  "train_cap": 48,
+  "validation_cap": 96,
+  "preprocessing": "robust_tanh",
+  "angle_scale": 0.05,
+  "reps": 2,
+  "C": 1.0,
+  "shots": [
+    512,
+    4096
+  ],
+  "max_wall_seconds": 600,
+  "hardware": false,
+  "final_test_access": false,
+  "post_final_exploratory": true,
+  "sqd": {
+    "feature_count": 4,
+    "draw_budgets": [
+      16,
+      64,
+      512
+    ],
+    "qaoa": {
+      "depth": 1,
+      "shots": 512,
+      "maxiter": 40
+    }
+  },
+  "replay": {
+    "attempt": "attempt-01aee68c6ed6",
+    "root": "standard_logistic",
+    "budget": 3,
+    "policies": [
+      "classical_first",
+      "quantum_first",
+      "balanced",
+      "classical_gate"
+    ],
+    "score": "best observed AP; no fabricated outcomes",
+    "scope": "finite measured candidate panel, not original Dream-RSI tree simulator"
+  },
+  "limitations": [
+    "Requested after final opening: exploratory training-only evidence, no renewed final claim.",
+    "Small samples and one chronological fold do not establish predictive superiority.",
+    "SQD diagonal objective is mathematically sampled-minimum search.",
+    "Replay panels were inspected previously and cannot independently validate learned policy."
+  ]
+}

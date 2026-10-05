@@ -1,0 +1,77 @@
+{
+  "status": "verified_clean_environment",
+  "created_utc": "2026-10-05T08:04:18.461461+00:00",
+  "dependency_groups": [
+    "data",
+    "analysis",
+    "quantum"
+  ],
+  "code_commit": "37877252aa38077a48789971528ba6d66808b576",
+  "uv_lock_sha256": "2cbf69b526f693d117b53585c39beb1236aecb6d69f5bb311bd1c8db25d83d97",
+  "tracked_source_copy_only": true,
+  "python": "3.12.13",
+  "unittest_passed": 61,
+  "test_warnings": [
+    "COBYLA: Invalid MAXFUN; it should be at least num_vars + 2; it is set to 4"
+  ],
+  "cli_help_entrypoints": [
+    "scripts/add_woodland_features.py",
+    "scripts/audit_data_coverage.py",
+    "scripts/audit_experiment_evidence.py",
+    "scripts/audit_feature_quality.py",
+    "scripts/audit_final_evaluation.py",
+    "scripts/audit_nfdb.py",
+    "scripts/build_historical_features.py",
+    "scripts/build_operational_pilot.py",
+    "scripts/collect_convergence.py",
+    "scripts/collect_landmarks.py",
+    "scripts/collect_library_followup.py",
+    "scripts/collect_ridge.py",
+    "scripts/download_weather.py",
+    "scripts/download_wildfires.py",
+    "scripts/download_woodland.py",
+    "scripts/match_woodland_contexts.py",
+    "scripts/pipeline.py",
+    "scripts/plot_comparisons.py",
+    "scripts/plot_final_evaluation.py",
+    "scripts/plot_landmarks.py",
+    "scripts/plot_ridge.py",
+    "scripts/replay_encoding_history.py",
+    "scripts/run_convergence_screen.py",
+    "scripts/run_final_evaluation.py",
+    "scripts/run_landmark_screen.py",
+    "scripts/run_library_followup.py",
+    "scripts/run_pilot_screen.py",
+    "scripts/run_ridge_screen.py",
+    "scripts/summarize_pilot.py",
+    "scripts/summarize_results.py"
+  ],
+  "all_help_showed_usage": true,
+  "isolated_production_roots_absent": true,
+  "shared_environment_preserved": true,
+  "temporary_environment_removed": true,
+  "cli_help_entrypoint_count": 30,
+  "commands_sha256": "56c71a606a2dfaedca2be47b0c36b6a91e9a432528f38b4df476005f846b0dc0",
+  "test_output_sha256": "5e554c6a97559a34215e71441d90829c69c9a6f6b7deeb494a0d47fbcef0a1b7",
+  "production_inventory_before_count": 1689,
+  "production_inventory_after_count": 1691,
+  "preexisting_production_files_size_mtime_unchanged": true,
+  "permitted_new_preparation_files": [
+    ".cache/wildfire/processed/weather/c61488c9af37d429cea0/manifest.json",
+    ".cache/wildfire/processed/weather/c61488c9af37d429cea0/weather_months.csv"
+  ],
+  "weather_rebuild": {
+    "previous_fingerprint": "52f047eb76b948cf66d5",
+    "new_fingerprint": "c61488c9af37d429cea0",
+    "output_sha256": "859c5153616f0b23b2af518d609590648ee56734582826bbf7545eb666dde8a4",
+    "byte_identical": true,
+    "rows_by_split": {
+      "train": 90898,
+      "test": 12452,
+      "context": 4127
+    }
+  },
+  "limitations": "Fixture tests and CLI help smoke checks, not another predictive replication or source-validity certificate. Existing cache/private records unchanged; only one new byte-identical weather preparation namespace was added. Saved follow-up status does not verify a live process.",
+  "inherited_virtual_env_ignored_by_uv": true,
+  "verified_utc": "2026-10-05T08:08:05.962280+00:00"
+}

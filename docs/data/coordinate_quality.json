@@ -1,0 +1,902 @@
+{
+  "status": "audited_training_coordinate_geometry",
+  "created_utc": "2026-10-05T08:56:08.554213+00:00",
+  "dataset_sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+  "dataset_manifest_sha256": "0c9d2a346e9b8e54de2a785a52817dfebd36e08c8f5c0b1882bddb738831a57b",
+  "code_commit": "654e2dda2a8ffeadd7e1c093ebe0c7e4b5e966a2",
+  "audit_recipe_sha256": {
+    "scripts/audit_feature_quality.py": "bb0f17c38e4080487e195dd50c231bead577a1dd91c1db471d22a239e4beeca9",
+    "wildfire_lab/coordinate_quality.py": "24282e3ea23ccae86be323e2815c5fffe7d8ae0745b8b1e4def874519c24a5b6",
+    "wildfire_lab/spatial.py": "5e73d9eef04ba5ca54fd986dcf76e698995b45eb755a55086eba550b5fd44ed7",
+    "wildfire_lab/evaluation.py": "e634741036fc7e7f43ef1508ce14b8eb430475f2c6ab6b05a4f00b22614dd3e7"
+  },
+  "fold_plan_sha256": "7d3951d4bc1b340e53183746c5e54a842f588de4cd34ee0a2c017b49649bf07b",
+  "final_test_access": false,
+  "training_period_only": true,
+  "geometry": {
+    "summary": {
+      "rows": 37801,
+      "unique_coordinates": 36143,
+      "rows_on_repeated_coordinates": 2877,
+      "repeated_coordinate_row_fraction": 0.0761090976429195,
+      "additional_rows_beyond_unique_coordinates": 1658,
+      "maximum_records_at_one_coordinate": 27,
+      "both_coordinates_grid_aligned": {
+        "0.1": {
+          "rows": 0,
+          "fraction": 0.0
+        },
+        "0.01": {
+          "rows": 5,
+          "fraction": 0.00013227163302558133
+        },
+        "0.001": {
+          "rows": 419,
+          "fraction": 0.011084362847543716
+        }
+      }
+    },
+    "years": {
+      "1988": {
+        "rows": 3124,
+        "unique_coordinates": 3004,
+        "rows_on_repeated_coordinates": 224,
+        "repeated_coordinate_row_fraction": 0.07170294494238157,
+        "additional_rows_beyond_unique_coordinates": 120,
+        "maximum_records_at_one_coordinate": 4,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 2,
+            "fraction": 0.0006402048655569782
+          },
+          "0.001": {
+            "rows": 35,
+            "fraction": 0.01120358514724712
+          }
+        }
+      },
+      "1989": {
+        "rows": 2238,
+        "unique_coordinates": 2163,
+        "rows_on_repeated_coordinates": 139,
+        "repeated_coordinate_row_fraction": 0.06210902591599642,
+        "additional_rows_beyond_unique_coordinates": 75,
+        "maximum_records_at_one_coordinate": 6,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 1,
+            "fraction": 0.00044682752457551384
+          },
+          "0.001": {
+            "rows": 37,
+            "fraction": 0.01653261840929401
+          }
+        }
+      },
+      "1990": {
+        "rows": 1455,
+        "unique_coordinates": 1407,
+        "rows_on_repeated_coordinates": 87,
+        "repeated_coordinate_row_fraction": 0.05979381443298969,
+        "additional_rows_beyond_unique_coordinates": 48,
+        "maximum_records_at_one_coordinate": 4,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 17,
+            "fraction": 0.01168384879725086
+          }
+        }
+      },
+      "1991": {
+        "rows": 2342,
+        "unique_coordinates": 2272,
+        "rows_on_repeated_coordinates": 118,
+        "repeated_coordinate_row_fraction": 0.05038428693424424,
+        "additional_rows_beyond_unique_coordinates": 70,
+        "maximum_records_at_one_coordinate": 7,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 20,
+            "fraction": 0.008539709649871904
+          }
+        }
+      },
+      "1992": {
+        "rows": 875,
+        "unique_coordinates": 854,
+        "rows_on_repeated_coordinates": 39,
+        "repeated_coordinate_row_fraction": 0.044571428571428574,
+        "additional_rows_beyond_unique_coordinates": 21,
+        "maximum_records_at_one_coordinate": 4,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 1,
+            "fraction": 0.001142857142857143
+          },
+          "0.001": {
+            "rows": 7,
+            "fraction": 0.008
+          }
+        }
+      },
+      "1993": {
+        "rows": 682,
+        "unique_coordinates": 660,
+        "rows_on_repeated_coordinates": 43,
+        "repeated_coordinate_row_fraction": 0.06304985337243402,
+        "additional_rows_beyond_unique_coordinates": 22,
+        "maximum_records_at_one_coordinate": 3,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 10,
+            "fraction": 0.01466275659824047
+          }
+        }
+      },
+      "1994": {
+        "rows": 868,
+        "unique_coordinates": 858,
+        "rows_on_repeated_coordinates": 19,
+        "repeated_coordinate_row_fraction": 0.021889400921658985,
+        "additional_rows_beyond_unique_coordinates": 10,
+        "maximum_records_at_one_coordinate": 3,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 11,
+            "fraction": 0.012672811059907835
+          }
+        }
+      },
+      "1995": {
+        "rows": 1934,
+        "unique_coordinates": 1896,
+        "rows_on_repeated_coordinates": 74,
+        "repeated_coordinate_row_fraction": 0.038262668045501554,
+        "additional_rows_beyond_unique_coordinates": 38,
+        "maximum_records_at_one_coordinate": 4,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 20,
+            "fraction": 0.010341261633919338
+          }
+        }
+      },
+      "1996": {
+        "rows": 1100,
+        "unique_coordinates": 1080,
+        "rows_on_repeated_coordinates": 39,
+        "repeated_coordinate_row_fraction": 0.035454545454545454,
+        "additional_rows_beyond_unique_coordinates": 20,
+        "maximum_records_at_one_coordinate": 3,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 10,
+            "fraction": 0.00909090909090909
+          }
+        }
+      },
+      "1997": {
+        "rows": 1524,
+        "unique_coordinates": 1480,
+        "rows_on_repeated_coordinates": 73,
+        "repeated_coordinate_row_fraction": 0.047900262467191604,
+        "additional_rows_beyond_unique_coordinates": 44,
+        "maximum_records_at_one_coordinate": 9,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 21,
+            "fraction": 0.013779527559055118
+          }
+        }
+      },
+      "1998": {
+        "rows": 2159,
+        "unique_coordinates": 2108,
+        "rows_on_repeated_coordinates": 90,
+        "repeated_coordinate_row_fraction": 0.041685965724872626,
+        "additional_rows_beyond_unique_coordinates": 51,
+        "maximum_records_at_one_coordinate": 5,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 19,
+            "fraction": 0.008800370541917554
+          }
+        }
+      },
+      "1999": {
+        "rows": 956,
+        "unique_coordinates": 927,
+        "rows_on_repeated_coordinates": 53,
+        "repeated_coordinate_row_fraction": 0.05543933054393305,
+        "additional_rows_beyond_unique_coordinates": 29,
+        "maximum_records_at_one_coordinate": 4,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 12,
+            "fraction": 0.012552301255230125
+          }
+        }
+      },
+      "2000": {
+        "rows": 617,
+        "unique_coordinates": 608,
+        "rows_on_repeated_coordinates": 18,
+        "repeated_coordinate_row_fraction": 0.029173419773095625,
+        "additional_rows_beyond_unique_coordinates": 9,
+        "maximum_records_at_one_coordinate": 2,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 4,
+            "fraction": 0.006482982171799027
+          }
+        }
+      },
+      "2001": {
+        "rows": 1490,
+        "unique_coordinates": 1480,
+        "rows_on_repeated_coordinates": 20,
+        "repeated_coordinate_row_fraction": 0.013422818791946308,
+        "additional_rows_beyond_unique_coordinates": 10,
+        "maximum_records_at_one_coordinate": 2,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 7,
+            "fraction": 0.004697986577181208
+          }
+        }
+      },
+      "2002": {
+        "rows": 1054,
+        "unique_coordinates": 1047,
+        "rows_on_repeated_coordinates": 14,
+        "repeated_coordinate_row_fraction": 0.013282732447817837,
+        "additional_rows_beyond_unique_coordinates": 7,
+        "maximum_records_at_one_coordinate": 2,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 1,
+            "fraction": 0.0009487666034155598
+          },
+          "0.001": {
+            "rows": 11,
+            "fraction": 0.010436432637571158
+          }
+        }
+      },
+      "2003": {
+        "rows": 959,
+        "unique_coordinates": 945,
+        "rows_on_repeated_coordinates": 26,
+        "repeated_coordinate_row_fraction": 0.027111574556830033,
+        "additional_rows_beyond_unique_coordinates": 14,
+        "maximum_records_at_one_coordinate": 3,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 9,
+            "fraction": 0.009384775808133473
+          }
+        }
+      },
+      "2004": {
+        "rows": 411,
+        "unique_coordinates": 409,
+        "rows_on_repeated_coordinates": 4,
+        "repeated_coordinate_row_fraction": 0.009732360097323601,
+        "additional_rows_beyond_unique_coordinates": 2,
+        "maximum_records_at_one_coordinate": 2,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 6,
+            "fraction": 0.014598540145985401
+          }
+        }
+      },
+      "2005": {
+        "rows": 1929,
+        "unique_coordinates": 1917,
+        "rows_on_repeated_coordinates": 24,
+        "repeated_coordinate_row_fraction": 0.012441679626749611,
+        "additional_rows_beyond_unique_coordinates": 12,
+        "maximum_records_at_one_coordinate": 2,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 30,
+            "fraction": 0.015552099533437015
+          }
+        }
+      },
+      "2006": {
+        "rows": 2226,
+        "unique_coordinates": 2197,
+        "rows_on_repeated_coordinates": 47,
+        "repeated_coordinate_row_fraction": 0.021114106019766397,
+        "additional_rows_beyond_unique_coordinates": 29,
+        "maximum_records_at_one_coordinate": 9,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 19,
+            "fraction": 0.008535489667565139
+          }
+        }
+      },
+      "2007": {
+        "rows": 1104,
+        "unique_coordinates": 1089,
+        "rows_on_repeated_coordinates": 29,
+        "repeated_coordinate_row_fraction": 0.026268115942028984,
+        "additional_rows_beyond_unique_coordinates": 15,
+        "maximum_records_at_one_coordinate": 3,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 9,
+            "fraction": 0.008152173913043478
+          }
+        }
+      },
+      "2008": {
+        "rows": 335,
+        "unique_coordinates": 335,
+        "rows_on_repeated_coordinates": 0,
+        "repeated_coordinate_row_fraction": 0.0,
+        "additional_rows_beyond_unique_coordinates": 0,
+        "maximum_records_at_one_coordinate": 1,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 2,
+            "fraction": 0.005970149253731343
+          }
+        }
+      },
+      "2009": {
+        "rows": 375,
+        "unique_coordinates": 371,
+        "rows_on_repeated_coordinates": 7,
+        "repeated_coordinate_row_fraction": 0.018666666666666668,
+        "additional_rows_beyond_unique_coordinates": 4,
+        "maximum_records_at_one_coordinate": 3,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 3,
+            "fraction": 0.008
+          }
+        }
+      },
+      "2010": {
+        "rows": 906,
+        "unique_coordinates": 899,
+        "rows_on_repeated_coordinates": 12,
+        "repeated_coordinate_row_fraction": 0.013245033112582781,
+        "additional_rows_beyond_unique_coordinates": 7,
+        "maximum_records_at_one_coordinate": 4,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 8,
+            "fraction": 0.008830022075055188
+          }
+        }
+      },
+      "2011": {
+        "rows": 1313,
+        "unique_coordinates": 1307,
+        "rows_on_repeated_coordinates": 11,
+        "repeated_coordinate_row_fraction": 0.008377760853008377,
+        "additional_rows_beyond_unique_coordinates": 6,
+        "maximum_records_at_one_coordinate": 3,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 15,
+            "fraction": 0.011424219345011425
+          }
+        }
+      },
+      "2012": {
+        "rows": 1597,
+        "unique_coordinates": 1591,
+        "rows_on_repeated_coordinates": 12,
+        "repeated_coordinate_row_fraction": 0.007514088916718848,
+        "additional_rows_beyond_unique_coordinates": 6,
+        "maximum_records_at_one_coordinate": 2,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 16,
+            "fraction": 0.010018785222291797
+          }
+        }
+      },
+      "2013": {
+        "rows": 569,
+        "unique_coordinates": 566,
+        "rows_on_repeated_coordinates": 6,
+        "repeated_coordinate_row_fraction": 0.01054481546572935,
+        "additional_rows_beyond_unique_coordinates": 3,
+        "maximum_records_at_one_coordinate": 2,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 5,
+            "fraction": 0.008787346221441126
+          }
+        }
+      },
+      "2014": {
+        "rows": 292,
+        "unique_coordinates": 291,
+        "rows_on_repeated_coordinates": 2,
+        "repeated_coordinate_row_fraction": 0.00684931506849315,
+        "additional_rows_beyond_unique_coordinates": 1,
+        "maximum_records_at_one_coordinate": 2,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 1,
+            "fraction": 0.003424657534246575
+          }
+        }
+      },
+      "2015": {
+        "rows": 659,
+        "unique_coordinates": 658,
+        "rows_on_repeated_coordinates": 2,
+        "repeated_coordinate_row_fraction": 0.0030349013657056147,
+        "additional_rows_beyond_unique_coordinates": 1,
+        "maximum_records_at_one_coordinate": 2,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 16,
+            "fraction": 0.024279210925644917
+          }
+        }
+      },
+      "2016": {
+        "rows": 630,
+        "unique_coordinates": 630,
+        "rows_on_repeated_coordinates": 0,
+        "repeated_coordinate_row_fraction": 0.0,
+        "additional_rows_beyond_unique_coordinates": 0,
+        "maximum_records_at_one_coordinate": 1,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 11,
+            "fraction": 0.01746031746031746
+          }
+        }
+      },
+      "2017": {
+        "rows": 772,
+        "unique_coordinates": 770,
+        "rows_on_repeated_coordinates": 4,
+        "repeated_coordinate_row_fraction": 0.0051813471502590676,
+        "additional_rows_beyond_unique_coordinates": 2,
+        "maximum_records_at_one_coordinate": 2,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 12,
+            "fraction": 0.015544041450777202
+          }
+        }
+      },
+      "2018": {
+        "rows": 1306,
+        "unique_coordinates": 1305,
+        "rows_on_repeated_coordinates": 2,
+        "repeated_coordinate_row_fraction": 0.0015313935681470138,
+        "additional_rows_beyond_unique_coordinates": 1,
+        "maximum_records_at_one_coordinate": 2,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 16,
+            "fraction": 0.01225114854517611
+          }
+        }
+      }
+    },
+    "periods": {
+      "1988-2009": {
+        "rows": 29757,
+        "unique_coordinates": 28180,
+        "rows_on_repeated_coordinates": 2730,
+        "repeated_coordinate_row_fraction": 0.09174311926605505,
+        "additional_rows_beyond_unique_coordinates": 1577,
+        "maximum_records_at_one_coordinate": 27,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 5,
+            "fraction": 0.00016802769096347078
+          },
+          "0.001": {
+            "rows": 319,
+            "fraction": 0.010720166683469435
+          }
+        }
+      },
+      "2010-2018": {
+        "rows": 8044,
+        "unique_coordinates": 7987,
+        "rows_on_repeated_coordinates": 109,
+        "repeated_coordinate_row_fraction": 0.013550472401790154,
+        "additional_rows_beyond_unique_coordinates": 57,
+        "maximum_records_at_one_coordinate": 4,
+        "both_coordinates_grid_aligned": {
+          "0.1": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.01": {
+            "rows": 0,
+            "fraction": 0.0
+          },
+          "0.001": {
+            "rows": 100,
+            "fraction": 0.012431626056688214
+          }
+        }
+      }
+    },
+    "chronological_conditions": [
+      {
+        "fold": [
+          1988,
+          2006,
+          2007,
+          2010
+        ],
+        "training_rows": 27943,
+        "validation_rows": 2720,
+        "training_unique_coordinates": 26438,
+        "validation_unique_coordinates": 2673,
+        "validation_rows_at_exact_training_coordinate": 64,
+        "exact_seen_fraction": 0.023529411764705882,
+        "nearest_training_distance_km": {
+          "0": 0.0,
+          "0.5": 1.3004139737314797,
+          "0.9": 4.005566455658652,
+          "0.99": 37.52028945762655,
+          "1": 185.70948412442175
+        },
+        "fraction_with_training_point_within_km": {
+          "0.1": 0.05073529411764706,
+          "1": 0.41213235294117645,
+          "5": 0.93125,
+          "10": 0.9720588235294118,
+          "50": 0.9908088235294118
+        }
+      },
+      {
+        "fold": [
+          1988,
+          2010,
+          2011,
+          2014
+        ],
+        "training_rows": 30663,
+        "validation_rows": 3771,
+        "training_unique_coordinates": 29056,
+        "validation_unique_coordinates": 3744,
+        "validation_rows_at_exact_training_coordinate": 0,
+        "exact_seen_fraction": 0.0,
+        "nearest_training_distance_km": {
+          "0": 0.011072553291893519,
+          "0.5": 1.4652039425444898,
+          "0.9": 4.7177506000269185,
+          "0.99": 19.59070508008643,
+          "1": 47.40557713885375
+        },
+        "fraction_with_training_point_within_km": {
+          "0.1": 0.02916998143728454,
+          "1": 0.3635640413683373,
+          "5": 0.9085123309466985,
+          "10": 0.9710952002121453,
+          "50": 1.0
+        }
+      },
+      {
+        "fold": [
+          1988,
+          2014,
+          2015,
+          2018
+        ],
+        "training_rows": 34434,
+        "validation_rows": 3367,
+        "training_unique_coordinates": 32800,
+        "validation_unique_coordinates": 3358,
+        "validation_rows_at_exact_training_coordinate": 15,
+        "exact_seen_fraction": 0.004455004455004455,
+        "nearest_training_distance_km": {
+          "0": 0.0,
+          "0.5": 1.4480752074496817,
+          "0.9": 4.932929891506704,
+          "0.99": 18.277229252840083,
+          "1": 80.81039357901572
+        },
+        "fraction_with_training_point_within_km": {
+          "0.1": 0.03861003861003861,
+          "1": 0.376002376002376,
+          "5": 0.9043659043659044,
+          "10": 0.9744579744579744,
+          "50": 0.9976239976239977
+        }
+      }
+    ],
+    "method": {
+      "grid_steps_degrees": [
+        0.1,
+        0.01,
+        0.001
+      ],
+      "grid_alignment_absolute_tolerance_degrees": 1e-08,
+      "distance_crs": "EPSG:3978",
+      "train_window": [
+        1988,
+        2018
+      ],
+      "uses_labels": false,
+      "model_fits": 0
+    },
+    "limitations": "Grid alignment describes numeric patterns, not positional accuracy; non-alignment does not prove fine resolution. Repeated coordinates can be distinct fires. Projected nearest distances use approximate reported points and do not establish causality, ecological independence or external-region transfer."
+  },
+  "datum_sensitivity": {
+    "archive_sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+    "xml_sha256": "6b34e0c01eb660776263a5fd7f179bb300935a18304d0b12acd0658d0377d2a9",
+    "stored_geometry_reference_codes": [
+      "3978"
+    ],
+    "stored_geometry_geographic_system": "GCS_North_American_1983",
+    "field_definitions": {
+      "LATITUDE": {
+        "description": "Latitude",
+        "source": "Agency"
+      },
+      "LONGITUDE": {
+        "description": "Longitude",
+        "source": "Agency"
+      }
+    },
+    "pipeline_assumed_latlon_crs": "EPSG:4326",
+    "alternative_latlon_crs": "EPSG:4269",
+    "output_crs": "EPSG:3978",
+    "projected_difference_m": {
+      "0": 0.0,
+      "0.5": 0.0,
+      "0.99": 0.0,
+      "1": 0.0
+    },
+    "rasterio_version": "1.5.2",
+    "gdal_version": "3.12.2",
+    "limitations": "Stored-geometry metadata does not explicitly assign a datum to the agency LATITUDE/LONGITUDE attribute definitions. This comparison uses the installed transformation operations; equal outputs do not prove actual accuracy or a universal datum equivalence. No coordinate or feature was changed."
+  }
+}

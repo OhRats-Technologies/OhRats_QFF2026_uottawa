@@ -1,0 +1,76 @@
+{
+  "protocol": {
+    "source": "NRCan NFDB point snapshot 20260811",
+    "source_url": "https://cwfis.cfs.nrcan.gc.ca/downloads/nfdb/fire_pnt/current_version/NFDB_point_txt.zip",
+    "source_sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+    "years": [
+      1988,
+      2018
+    ],
+    "label": "agency-reported SIZE_HA >=10 ha, conditional on eligible recorded fire",
+    "weather_fingerprint": "52f047eb76b948cf66d5",
+    "weather_lags_months": [
+      1,
+      2,
+      3
+    ],
+    "max_station_distance_km": 150,
+    "woodland": "not yet joined; historical weather-only baseline",
+    "final_test_sealed": true
+  },
+  "fingerprint": "5b9e54931d2a9d1b1f83",
+  "recipe_sha256": {
+    "scripts/build_historical_features.py": "983782f28d5565a47bf94a07de8cb7dbc7b47b5b2d4c3444f4f44cd26a793a1e",
+    "scripts/pipeline.py": "1f13b2d34744ab3c427eaf235a61291e7bc9aa9c2d505d6a6431c433b8cc38d5",
+    "wildfire_lab/nfdb.py": "2aa64aa77815f45d0b0e9f8c00bbb8636581de64f95824e599a747270e54600c",
+    "wildfire_lab/weather.py": "e5a1ea388a93cf681fb6f07bafd116af6e3db2e26be2a84ac3620f44a5bde87a",
+    "uv.lock": "6cfe39145ae7930914b7025bf83621a48bd64c4f8dd7648a994c5f7043ee711e"
+  },
+  "recipe_commit": "4a38f4656e41663ce32ec76b68151293cf41c21a",
+  "created_utc": "2026-10-05T05:00:10.053828+00:00",
+  "rows": 38579,
+  "rows_by_year": {
+    "1988": 3202,
+    "1989": 2347,
+    "1990": 1533,
+    "1991": 2446,
+    "1992": 921,
+    "1993": 707,
+    "1994": 931,
+    "1995": 2015,
+    "1996": 1127,
+    "1997": 1599,
+    "1998": 2164,
+    "1999": 966,
+    "2000": 622,
+    "2001": 1499,
+    "2002": 1055,
+    "2003": 959,
+    "2004": 413,
+    "2005": 1935,
+    "2006": 2231,
+    "2007": 1110,
+    "2008": 338,
+    "2009": 377,
+    "2010": 913,
+    "2011": 1314,
+    "2012": 1606,
+    "2013": 571,
+    "2014": 293,
+    "2015": 664,
+    "2016": 638,
+    "2017": 772,
+    "2018": 1311
+  },
+  "positive_fraction": 0.07454832940200627,
+  "exclusions": {
+    "identity_collision_quarantined": 768,
+    "invalid_agency_date": 49,
+    "prescribed_or_unspecified_prescribed_code": 60
+  },
+  "join_drops": {
+    "weather_outside_150km_or_missing_month": 1030
+  },
+  "data_sha256": "ed40abc65bcd5f44d67db01eb704c1f6dee447d2f91b71beca12224399e0010d",
+  "limitations": "Agency-associated dates/sizes, not guaranteed ignition or final burned area. Approximate coordinates and variable source completeness. Unknown publication latency; retrospective classification. Prescribed flags excluded; blank flags are unspecified. Woodland joins pending."
+}

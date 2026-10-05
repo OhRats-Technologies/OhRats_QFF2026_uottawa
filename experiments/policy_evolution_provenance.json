@@ -1,0 +1,14 @@
+{
+  "status": "frozen_before_fresh_rollouts",
+  "parent": "experiments/qiskit_library_followup.json",
+  "historical_source_sha256": "fb703f88a0d5b91bbe574a0b134ece1561f2a5d081b55ac037927b53169e7e7c",
+  "developer": "policy-agent",
+  "configured_model": "gpt-6.1-sol",
+  "independent_subagent": true,
+  "code_commit": "19f748d",
+  "policy_sha256": "ce6a2cf9ae833650d4dc3ea0dc0e168087d98492ed99ab0163715b1266d814ac",
+  "proposal": "Stop after first robust RBF when improvement is <= query charge; otherwise inspect standard RBF and stop.",
+  "historical_mean_ap": 0.3302291551012997,
+  "historical_reward_gain": 0.005,
+  "limitation": "Previously inspected flat history; replay is not independent confirmation. No invented source ancestry."
+}

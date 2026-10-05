@@ -1,0 +1,263 @@
+{
+  "protocol": {
+    "source": "NRCan NFDB point snapshot 20260811",
+    "source_url": "https://cwfis.cfs.nrcan.gc.ca/downloads/nfdb/fire_pnt/current_version/NFDB_point_txt.zip",
+    "source_sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+    "years": [
+      1988,
+      2018
+    ],
+    "label": "agency-reported SIZE_HA >=10 ha, conditional on eligible recorded fire",
+    "weather_fingerprint": "52f047eb76b948cf66d5",
+    "weather_lags_months": [
+      1,
+      2,
+      3
+    ],
+    "max_station_distance_km": 150,
+    "woodland": {
+      "mode": "previous_year",
+      "sources": [
+        {
+          "year": 1987,
+          "crop_sha256": "a0903f07c49f00e7a62760bde2b666ff1319880754188c74bad37850afe4f0ff",
+          "archive_sha256": "33c16553d73e5c6f38c8404724ad48ef1b874107c413553223cd3a961bc85ee5",
+          "local_archive": false
+        },
+        {
+          "year": 1988,
+          "crop_sha256": "fffd2ba0f7c68aaec0ff9825fe77a8902157df39a1c56f106e52d565e32eda5a",
+          "archive_sha256": "e51475a4a368a7f014cbbea84eefbce449632529e512064415afb5f868c58889",
+          "local_archive": false
+        },
+        {
+          "year": 1989,
+          "crop_sha256": "9263145de2ddc3719ba6d809fda58082f8c16334ce9238e57e81619c8a19b7ca",
+          "archive_sha256": "399ca35d03c7b38462e1bd4599cc5ba6dc4bbcf7763ea51f485f938f24fc8d63",
+          "local_archive": false
+        },
+        {
+          "year": 1990,
+          "crop_sha256": "bcd35b5c30275e2e06a758e327aa13c3de0a115e999e1e546e4949cabf386cfa",
+          "archive_sha256": "a62046969e278bc09f5aa8dba81ed3f27b83ef4ee28b03a5b78b1fca99362bbd",
+          "local_archive": false
+        },
+        {
+          "year": 1991,
+          "crop_sha256": "05591af0b3de7bfacba3d89d06ddf605bdd993ad30c7a5a0ca8e046161d77c0e",
+          "archive_sha256": "a977d0887ba2b7b2fe6fe6a24e0ff863703eb01d3463d5519944664b9a3de58f",
+          "local_archive": false
+        },
+        {
+          "year": 1992,
+          "crop_sha256": "a26f97ad00eb0c456d8f1d269437c1814a94d6725b7773b21ddb073cf43ecb9f",
+          "archive_sha256": "266faa58e29bdcff906bf577f3bbc80bbd36e2b2da1994f7a5c22a4e2aac088d",
+          "local_archive": false
+        },
+        {
+          "year": 1993,
+          "crop_sha256": "7cfd7f6ad9b65ec4d4e0b76ac33caaa78ced471b55f68ad2ee5c8efc68238770",
+          "archive_sha256": "78e49dd3513b36d28a82efc23ebdf6d2c99cc7d412f0c61ab8bedbfe98aea9aa",
+          "local_archive": false
+        },
+        {
+          "year": 1994,
+          "crop_sha256": "b85d2c2d8ed9e94f4714b4ed2bfcd376b0efb3098369641362667b8e0ae7a1de",
+          "archive_sha256": "62eaba23ca60f4489873c7634ca9b91034986b0103e262adeac11f09236574ac",
+          "local_archive": false
+        },
+        {
+          "year": 1995,
+          "crop_sha256": "470120b88194ba41fa9f9b10831e74f126533efd4b4eeb0f86dfde8383d34cc3",
+          "archive_sha256": "24798848d49183d0a39dd282a89830039acb6e4374056d86a0c4d0425d6884e9",
+          "local_archive": false
+        },
+        {
+          "year": 1996,
+          "crop_sha256": "a866495ff68cf26208c9f2dfc22e6e72a52df90e7ce070d193db41c47cda9c49",
+          "archive_sha256": "6da70b4f070b22799445580d03bd55e2b1a7e438fc9b171c6608ae6f5b7ee464",
+          "local_archive": false
+        },
+        {
+          "year": 1997,
+          "crop_sha256": "b44a35d7a5d6d06e297f512431f6b3a735ef7602b8014efed056d036395a7e9d",
+          "archive_sha256": "2e63621c57c1104ac8fb4d0ffd165e0b831d1301aba73df6b00c89088df345a1",
+          "local_archive": false
+        },
+        {
+          "year": 1998,
+          "crop_sha256": "ec8b310b47bbd26fb768570f4eac8763466b3887b898c6ec0848a55164e669be",
+          "archive_sha256": "b48e47c197f1d87416a2528437c51e01a386c2b5f0206f11ecbd060e2ea19c9b",
+          "local_archive": false
+        },
+        {
+          "year": 1999,
+          "crop_sha256": "5567ae3910ffe8510f43606178665c55faccd70f34815448a3a7c9817bc293fd",
+          "archive_sha256": "0b5c53ba5effabc8c075871593cd410d24d67898054370d28c20b6a22fbdf2a2",
+          "local_archive": false
+        },
+        {
+          "year": 2000,
+          "crop_sha256": "b70e41971978eae8889822a248ac7cdd4cec88927c71f25f7a1f0d6259ea47ff",
+          "archive_sha256": "36bbe9f63fdcc13355e21abcdab98af8fdc0016a910e9be8513a329fb13a40cc",
+          "local_archive": false
+        },
+        {
+          "year": 2001,
+          "crop_sha256": "877d28b94780c0b22507a328d2458d6c60876181b3afac7924150d30d123c6c5",
+          "archive_sha256": "aabec291d296ea3588ff0fb1d195d11189eaed921978edf4e5348a675919930e",
+          "local_archive": false
+        },
+        {
+          "year": 2002,
+          "crop_sha256": "bbfa19b96122a03d1cbb7638b57b7b615380d29822ce3708ff8b32b94cd6733d",
+          "archive_sha256": "d15ef4086be6fe53a7811fc34a6c1c3b9096c46855a9b6620b2ea0232ffd38a9",
+          "local_archive": false
+        },
+        {
+          "year": 2003,
+          "crop_sha256": "6a9f16bb8324f50df2e5bde37bcbb921664393387a534fb34c62380b81622a65",
+          "archive_sha256": "7139f2e512508298bc00a16416a1177ca1ad0c771c3f852eba8a1f1d25ac1301",
+          "local_archive": false
+        },
+        {
+          "year": 2004,
+          "crop_sha256": "02c4af3ca7983dfabcf7c12396a8d297e8eaef196e579249734bcdf12f9d42fc",
+          "archive_sha256": "7b3927642c11a2ae80c71651407a0142ad127cd7ce420bf35416e996487bcab4",
+          "local_archive": false
+        },
+        {
+          "year": 2005,
+          "crop_sha256": "997a4cbf4ccbc66ff5ededa545c9138ef999eaedd32772a77bf41700e90fd545",
+          "archive_sha256": "802281cb3a4a7b0ff01370eba3e2e79f71b2cf96ccbf2e5967a8f41736a88ee4",
+          "local_archive": false
+        },
+        {
+          "year": 2006,
+          "crop_sha256": "545a47f324da4f1e1ec7b36ca6fee37395205c4b028401ace260b2f6f9d5060e",
+          "archive_sha256": "611e6d0339dbf8f9934457dc5edb2761927329f9e33f07814d7fa9a1b329dc4c",
+          "local_archive": false
+        },
+        {
+          "year": 2007,
+          "crop_sha256": "610db0669adb862dc1a3eb408f2ce92dd4b9a886c6965359473964298c1741ab",
+          "archive_sha256": "9a2292d5169884bb41199ce7717ad87ff49dabbfd08c9ac3410b1902f6ccc02e",
+          "local_archive": false
+        },
+        {
+          "year": 2008,
+          "crop_sha256": "723c1b03e565c37daecc7b93455ddb72628b80bc6e8c5b8ac9b087d7d63b0d9a",
+          "archive_sha256": "098264bbd04fbe246c9caa9e2fe183b596e62574eb0abd3761b83e1de8f8e76b",
+          "local_archive": false
+        },
+        {
+          "year": 2009,
+          "crop_sha256": "6ed3e73e717e5d3080e6433cf97c5384d42fd3fad54e94466eac8ff8df47d599",
+          "archive_sha256": "d6431ef5b72a136d6ec6ed17c87b402ef15671bf01fafa0866ff92dbdd2c77e7",
+          "local_archive": false
+        },
+        {
+          "year": 2010,
+          "crop_sha256": "b7bc6dcef0834d87c462136096cf9a6939c273b161002bd8223d465b8faa0b24",
+          "archive_sha256": "30ed54e0f37190009c342a65462505594647f408e2d064473a2fd3d9de2471da",
+          "local_archive": false
+        },
+        {
+          "year": 2011,
+          "crop_sha256": "0ecd518255446ec9ad343506f4355e983430bafe29ca0e62252aa062923f68a0",
+          "archive_sha256": "f8a386793fd9c4d588388b98490f03e60242303cf14360a238b3dcbaba5eff9b",
+          "local_archive": false
+        },
+        {
+          "year": 2012,
+          "crop_sha256": "cf6c93ba8c601738ecad699e7eca23abb5744e414f1728e85997a87f9654e682",
+          "archive_sha256": "2fe932f00881694f0fd36add97ad52614b32cb0944e4b23120cb5b88883ec6e7",
+          "local_archive": false
+        },
+        {
+          "year": 2013,
+          "crop_sha256": "4c145829391c99876f7fef0df4388544ce9f925f9d4edb483d3392d2ee034c94",
+          "archive_sha256": "37b2ef95a16c615e90dbfda9300e7f37436bb024482e616f867d8954924fb50d",
+          "local_archive": false
+        },
+        {
+          "year": 2014,
+          "crop_sha256": "243e90c07c931965355b4869662ef40870a49bbf63460d8ea8eb2af9f4cf8a98",
+          "archive_sha256": "56ea51e217ef5ebe393d826808e4558aa9b48c4b79c3eab7bb5322aa623fbc38",
+          "local_archive": false
+        },
+        {
+          "year": 2015,
+          "crop_sha256": "2195f0c84c4db82a53b6da4f074fe17a65f5821dd7f4c7087f4847661030eb14",
+          "archive_sha256": "abc3453125d3b76bab4d4cb54ad219a9c9d0c33c8bbb642e34886d4ecf66c8db",
+          "local_archive": false
+        },
+        {
+          "year": 2016,
+          "crop_sha256": "62614e48e5f49fdb6bf2dd6e5130be6735405d17bc16c9daeec9116eec88ed9d",
+          "archive_sha256": "2c6997eec4df23e36fdbc5b47b5756897614961f887be5114f883eeefd3125f3",
+          "local_archive": false
+        },
+        {
+          "year": 2017,
+          "crop_sha256": "603f9d2fbeb610aaa58eb82e2bb3c2e1c09aebbe6614c7ffdcfbb9c6d357ca51",
+          "archive_sha256": "b0cf041c1efa3e2ea5666aed05d6b9543ead180ec64ad6b0916ea8c4d17664fe",
+          "local_archive": false
+        }
+      ],
+      "radius_m": 1000,
+      "min_classified_fraction": 0.5
+    },
+    "final_test_sealed": true,
+    "parent_fingerprint": "5b9e54931d2a9d1b1f83"
+  },
+  "fingerprint": "231db6a4101cb2fb9ea2",
+  "data_sha256": "c61e3427cd8f3143e87de16b3ea6b4a6ff63690f5f6079fa96ce2e39e8843cce",
+  "rows": 37801,
+  "rows_by_year": {
+    "1988": 3124,
+    "1989": 2238,
+    "1990": 1455,
+    "1991": 2342,
+    "1992": 875,
+    "1993": 682,
+    "1994": 868,
+    "1995": 1934,
+    "1996": 1100,
+    "1997": 1524,
+    "1998": 2159,
+    "1999": 956,
+    "2000": 617,
+    "2001": 1490,
+    "2002": 1054,
+    "2003": 959,
+    "2004": 411,
+    "2005": 1929,
+    "2006": 2226,
+    "2007": 1104,
+    "2008": 335,
+    "2009": 375,
+    "2010": 906,
+    "2011": 1313,
+    "2012": 1597,
+    "2013": 569,
+    "2014": 292,
+    "2015": 659,
+    "2016": 630,
+    "2017": 772,
+    "2018": 1306
+  },
+  "positive_fraction": 0.07507737890531997,
+  "woodland_join_drops": {
+    "insufficient_woodland_coverage": 778
+  },
+  "center_water_rows": 4868,
+  "join_recipe_sha256": {
+    "scripts/add_woodland_features.py": "f05f6a3fead85a1e53a7d88ad7348cb9174c687a8e4f12aad785cde4db6ca45a",
+    "wildfire_lab/woodland.py": "a81c56879f0ea4602907d8c910fc2349fd0eaed9054d4d8ee7778a93038d91cb",
+    "uv.lock": "6cfe39145ae7930914b7025bf83621a48bd64c4f8dd7648a994c5f7043ee711e"
+  },
+  "join_recipe_commit": "133dd12ea3b0c9ae09af863d50c2aafad81defc3",
+  "seconds": 15.322656708071008,
+  "limitations": "Agency-associated dates/sizes, not guaranteed ignition or final burned area. Approximate coordinates and variable source completeness. Unknown publication latency; retrospective classification. Prescribed flags excluded; blank flags are unspecified. Woodland joins pending. Native cover context now joined. Categories are not tree density; point coordinates are approximate. Center-water flags do not prove a fire burned water. Previous/fixed mapped year does not certify historical publication availability."
+}

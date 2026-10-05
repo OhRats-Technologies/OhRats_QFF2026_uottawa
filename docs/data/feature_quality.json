@@ -1,0 +1,109 @@
+{
+  "dataset_sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+  "weather_sha256": "859c5153616f0b23b2af518d609590648ee56734582826bbf7545eb666dde8a4",
+  "audit_code_sha256": "8bdba803357d74fc16e67dff54563e9e1319b2850e45e32c1c96190d2423f6fe",
+  "rows": 37801,
+  "final_test_sealed": true,
+  "lags": {
+    "1": {
+      "missing_measurements": {
+        "lag1_mean_temp_c": 2467,
+        "lag1_total_precip_mm": 1867,
+        "lag1_snowfall_cm": 10342,
+        "lag1_heating_degree_days": 2467,
+        "lag1_cooling_degree_days": 2467
+      },
+      "distance_km": {
+        "0.5": 38.470862063041544,
+        "0.9": 84.30876642856134,
+        "0.99": 130.06886807073414
+      },
+      "rows_with_source_quality_flags": 0,
+      "rows_with_missing_days": {
+        "missing_mean_temp_days": 7228,
+        "missing_precip_days": 6037,
+        "missing_snowfall_days": 1410
+      },
+      "unknown_missing_day_counts": {
+        "missing_mean_temp_days": 2467,
+        "missing_precip_days": 1867,
+        "missing_snowfall_days": 10342
+      }
+    },
+    "2": {
+      "missing_measurements": {
+        "lag2_mean_temp_c": 2544,
+        "lag2_total_precip_mm": 2225,
+        "lag2_snowfall_cm": 10252,
+        "lag2_heating_degree_days": 2544,
+        "lag2_cooling_degree_days": 2544
+      },
+      "distance_km": {
+        "0.5": 38.39229132702293,
+        "0.9": 84.19695835872304,
+        "0.99": 130.22642182873562
+      },
+      "rows_with_source_quality_flags": 0,
+      "rows_with_missing_days": {
+        "missing_mean_temp_days": 7106,
+        "missing_precip_days": 5696,
+        "missing_snowfall_days": 1512
+      },
+      "unknown_missing_day_counts": {
+        "missing_mean_temp_days": 2544,
+        "missing_precip_days": 2225,
+        "missing_snowfall_days": 10252
+      }
+    },
+    "3": {
+      "missing_measurements": {
+        "lag3_mean_temp_c": 2599,
+        "lag3_total_precip_mm": 2498,
+        "lag3_snowfall_cm": 10189,
+        "lag3_heating_degree_days": 2599,
+        "lag3_cooling_degree_days": 2599
+      },
+      "distance_km": {
+        "0.5": 38.42795991737886,
+        "0.9": 84.20285934826913,
+        "0.99": 130.35460187661164
+      },
+      "rows_with_source_quality_flags": 0,
+      "rows_with_missing_days": {
+        "missing_mean_temp_days": 7662,
+        "missing_precip_days": 5986,
+        "missing_snowfall_days": 1899
+      },
+      "unknown_missing_day_counts": {
+        "missing_mean_temp_days": 2599,
+        "missing_precip_days": 2498,
+        "missing_snowfall_days": 10189
+      }
+    }
+  },
+  "limitations": "Training joins only. Missing-day flags describe source coverage; they do not certify measurement accuracy or availability. No quality-filtered model is evaluated here.",
+  "woodland": {
+    "center_class_counts": {
+      "230": 12476,
+      "210": 11940,
+      "20": 4872,
+      "220": 2684,
+      "100": 1950,
+      "33": 1315,
+      "32": 1238,
+      "80": 684,
+      "81": 479,
+      "50": 146,
+      "40": 12,
+      "0": 5
+    },
+    "unknown_centers": 5,
+    "valid_fraction_quantiles": {
+      "0": 0.5021398002853067,
+      "0.5": 1.0,
+      "0.9": 1.0
+    },
+    "mapped_water_centers": 4872,
+    "radius_m": 1000
+  }
+}

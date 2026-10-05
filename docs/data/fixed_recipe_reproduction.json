@@ -1,0 +1,106 @@
+{
+  "status": "completed_fixed_recipe_replica",
+  "preparation_commit": "4a38f46",
+  "evaluation_commit": "30b90f9",
+  "public_inputs_copied": 915,
+  "training_csv_sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+  "seconds": 53.11235441605095,
+  "commands": [
+    [
+      "uv",
+      "sync",
+      "--locked",
+      "--group",
+      "data",
+      "--group",
+      "analysis",
+      "--group",
+      "quantum"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "scripts/build_historical_features.py",
+      "--lags",
+      "1",
+      "2",
+      "3"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "scripts/add_woodland_features.py",
+      "--dataset",
+      ".cache/wildfire/features/historical-weather/5b9e54931d2a9d1b1f83",
+      "--fixed-year",
+      "1984"
+    ],
+    [
+      "git",
+      "switch",
+      "--quiet",
+      "--detach",
+      "30b90f9"
+    ],
+    [
+      "uv",
+      "sync",
+      "--locked",
+      "--group",
+      "data",
+      "--group",
+      "analysis",
+      "--group",
+      "quantum"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "scripts/run_final_evaluation.py"
+    ],
+    [
+      "uv",
+      "run",
+      "--no-sync",
+      "python",
+      "scripts/audit_final_evaluation.py"
+    ]
+  ],
+  "credentials_inherited": false,
+  "original_intents_copied": false,
+  "new_hardware_jobs": 0,
+  "preserved_namespace": ".cache/wildfire/fixed-recipe-reproduction",
+  "preserved_derived_files_sha256": {
+    "derived/final-test/intent.json": "d59b92e2ed715537245d830941c9580525a5797bb486c1ab21f7f9d81f07d17e",
+    "derived/final-test/outcome.json": "d446d871e1ea5e21a3c374bb21e4894ce089dd434f2b7ca09d353d4d0f66fa0f",
+    "derived/final-test/features.csv": "bd39f9bb82ddfa02aa3f630c922942c3cc09b878ead7136ca77f292fe982f5be",
+    "derived/processed/weather/52f047eb76b948cf66d5/weather_months.csv": "859c5153616f0b23b2af518d609590648ee56734582826bbf7545eb666dde8a4",
+    "derived/processed/weather/52f047eb76b948cf66d5/manifest.json": "78693370d0ae83292b200cdbf20679f8023253b10a9eccb24b8976122412f95d",
+    "derived/features/historical-woodland/f8a46f515b5b90b753a8/manifest.json": "8acc078cd451606839c96cfc96f8f213952dbe504b621cbfae2b05964e6ed2b5",
+    "derived/features/historical-woodland/f8a46f515b5b90b753a8/features.csv": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+    "derived/features/historical-weather/5b9e54931d2a9d1b1f83/manifest.json": "aa9a1dc3bbc6cd71503352e5a611e6f8f29fc41626ac50f4fe427a45686189f4",
+    "derived/features/historical-weather/5b9e54931d2a9d1b1f83/features.csv": "ed40abc65bcd5f44d67db01eb704c1f6dee447d2f91b71beca12224399e0010d"
+  },
+  "full_training_models_compared": 6,
+  "capped_models_compared": 27,
+  "all_reported_metrics_samples_and_selected_features_match": true,
+  "max_numeric_difference": 0,
+  "replica_final_timings": {
+    "preflight_seconds": 0.22055045899469405,
+    "feature_join_seconds": 2.6098233750090003,
+    "model_seconds": 2.174317416967824,
+    "total_seconds": 5.435875374940224
+  },
+  "replica_outcome_sha256": "d446d871e1ea5e21a3c374bb21e4894ce089dd434f2b7ca09d353d4d0f66fa0f",
+  "original_outcome_sha256": "e0d4fc03bc736e52cacddfab6e75f08cfb896b0e9713a9413aada9ca0645bbff",
+  "original_outcome_preserved": true,
+  "public_source_network_reacquisition": false,
+  "interpretation": "Fixed recipe reproduction using the same public-source snapshots and requested held-out years; not a new independent sample or adaptive confirmation.",
+  "disposable_clone_raw_copies_and_environment_removed": true
+}

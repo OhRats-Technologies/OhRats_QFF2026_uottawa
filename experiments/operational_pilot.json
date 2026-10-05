@@ -1,0 +1,90 @@
+{
+  "id": "operational-pilot-v1",
+  "status": "frozen_screen",
+  "hypothesis": "QAOA subset search or a fixed quantum fidelity kernel can be compared with exact/classical controls on recorded-fire size without asserting advantage.",
+  "research_model": "gpt-6.1-sol",
+  "target": "peak reported size >=10 ha, conditional on observed fire, 2010\u20132018 snapshot",
+  "train_years": [
+    2010,
+    2018
+  ],
+  "final_test_years": [
+    2019,
+    2024
+  ],
+  "validation_folds": [
+    [
+      2010,
+      2012,
+      2013,
+      2014
+    ],
+    [
+      2010,
+      2014,
+      2015,
+      2016
+    ],
+    [
+      2010,
+      2016,
+      2017,
+      2018
+    ]
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "month_sin",
+    "month_cos",
+    "lag2_mean_temp_c",
+    "lag2_total_precip_mm",
+    "lag2_snowfall_cm",
+    "lag3_mean_temp_c",
+    "lag3_total_precip_mm",
+    "cover_conifer",
+    "cover_broadleaf",
+    "cover_mixed"
+  ],
+  "feature_budget": 4,
+  "seeds": [
+    7,
+    19,
+    31
+  ],
+  "qaoa": {
+    "depth": 1,
+    "shots": 512,
+    "maxiter": 40
+  },
+  "kernel_screen": {
+    "features": [
+      "latitude",
+      "month_sin",
+      "lag2_mean_temp_c",
+      "lag2_total_precip_mm"
+    ],
+    "train_cap": 256,
+    "validation_cap": 512,
+    "C": 1.0
+  },
+  "primary_metric": "average_precision",
+  "screen_max_proposals": 8,
+  "screen_wall_seconds_per_attempt": 1200,
+  "hardware_default": false,
+  "final_test_sealed": true,
+  "limitations": [
+    "Exploratory operational-feed subset; does not replace the full 1988\u20132018 training task.",
+    "Peak reported size is not verified final burned area; updates are censored by snapshot/window.",
+    "Weather publication dates unknown; retrospective conditional classification, not deployable forecasting.",
+    "Sparse reporting years and approximate coordinates; no negative occurrence labels.",
+    "Exact simulated quantum results; costs include state construction and classical optimization."
+  ],
+  "promotion_checks": [
+    "valid snapshot and frozen recipe",
+    "chronological validation",
+    "same subset objective and budget",
+    "same predictor inputs/samples",
+    "independent confirmation before final test"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "landmark-shot-ridge-v1",
+  "status": "frozen_training_only_measurement_model",
+  "matrix_parent": {
+    "parent_cache": ".cache/wildfire/shot-feasibility",
+    "parent_outcome_sha256": "5e7612fde994de5009b131a4fd590204af91a29d752da90d38f27d179be09235",
+    "parent_intent_sha256": "4727320f3b5f0c43dcc6da6d91a79a4e8c5ca13bbf5f5baa2bfaba5803907ded"
+  },
+  "ridge_reference": "docs/results/kernel-ridge.json",
+  "ridge_reference_sha256": "0a16a75bf4f4c1298003c7990c071307fdcdf571b7cf7ece07e7c62deedc7019",
+  "seeds": [811, 821, 823],
+  "noise_seeds": [29, 43, 71],
+  "shots": [512, 4096],
+  "angle_scale": 0.05,
+  "landmarks": 16,
+  "landmark_ridge": 0.001,
+  "eigenvalue_cutoff": 1e-10,
+  "kernel_ridge": 1.0,
+  "measurement_model": "Independent aggregate Binomial(S,p) pair counts from saved exact fidelities; symmetric landmark block reused, unit diagonals known. No Qiskit sampler execution or individually executed shots.",
+  "normalization": "Shared landmark coordinates; training-only centering/unit mean feature norm; discard eigenvalues <= cutoff before inverse scaling with fixed ridge.",
+  "reference_metric_tolerance": 1e-9,
+  "relative_solve_residual_max": 1e-10,
+  "primal_dual_difference_max": 1e-9,
+  "score_std_min": 1e-5,
+  "quality_gate": {
+    "shots": 4096,
+    "mean_ap_loss_max": 0.05,
+    "cohort_mean_ap_loss_max": 0.05,
+    "cohorts_within_min": 2
+  },
+  "max_predictor_fits": 30,
+  "max_primal_reference_solves": 24,
+  "max_binomial_pair_estimates": 145008,
+  "max_modeled_shot_exposure": 334098432,
+  "max_wall_seconds": 60,
+  "new_quantum_states": 0,
+  "pair_circuits_executed": 0,
+  "hardware": false,
+  "final_test_access": false,
+  "interpretation": "Fixed applicability check on three dependent reused-year cohorts and three noise replicates each. Report every condition; no noise seed/repair/angle/model choice, hardware runtime or advantage claim. Preserve failed intent and stop on failure. A passing approximation gate is not superiority to RBF or device feasibility."
+}

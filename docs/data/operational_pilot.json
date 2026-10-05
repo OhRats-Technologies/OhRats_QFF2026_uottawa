@@ -1,0 +1,46 @@
+{
+  "protocol": {
+    "label": "peak reported size within 2010\u20132018 update snapshot >=10 ha, conditional on recorded fire",
+    "source": "operational feed pilot; earlier NFDB candidate not substituted",
+    "years": [
+      2010,
+      2018
+    ],
+    "source_hashes": [
+      "21c2b6e828ba2b770cad6771a140a663068b0880dd15c75f58bd03971f35c2ec",
+      "fffd2ba0f7c68aaec0ff9825fe77a8902157df39a1c56f106e52d565e32eda5a"
+    ],
+    "weather_fingerprint": "bbeb8b11c099a8ad1969",
+    "woodland_year": 1988,
+    "buffer_radius_m": 1000,
+    "weather_lags_months": [
+      2,
+      3
+    ],
+    "max_station_distance_km": 150
+  },
+  "fingerprint": "ea987f7446b394bea6d4",
+  "created_utc": "2026-10-05T03:12:03.232177+00:00",
+  "rows": 7444,
+  "rows_by_year": {
+    "2010": 881,
+    "2011": 1234,
+    "2012": 1591,
+    "2013": 221,
+    "2014": 224,
+    "2015": 573,
+    "2016": 626,
+    "2017": 780,
+    "2018": 1314
+  },
+  "positive_fraction": 0.1038420204191295,
+  "exclusions": {
+    "inconsistent_fire_year": 1
+  },
+  "join_drops": {
+    "weather_outside_150km_or_missing_month": 64,
+    "insufficient_woodland_coverage": 54
+  },
+  "data_sha256": "014211e56537da8e06c18c72af5ea54c3320b4648535656dd2d4d078cc6c22bf",
+  "limitations": "Retrospective classification of recorded-size proxy, not ignition forecasting. Approximate locations, reporting gaps, fixed historic cover and unknown publication latency."
+}

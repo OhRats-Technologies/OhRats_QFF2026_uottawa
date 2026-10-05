@@ -1,0 +1,6 @@
+{
+  "source_sha256": "3aa254c1ac6bcb193bc24b7d05b9c78a65dce87493756bf18e5608bfb540825a",
+  "plot_recipe_sha256": "9988d7b40201be75d757b561dc442a886cc6251a73c061ca6cbf390d71d127c1",
+  "figure_sha256": "5cc906ffa92f32a4f2573ac18440dd0c70b6913a92f47b9c37e94647ed666b51",
+  "caption": "Same 37,801 training-period recorded fires; no labels or models used. Left: measured threshold fractions on ordinary chronological folds; lines connect thresholds, not confidence intervals. Right: within-year exact-coordinate recurrence, affected by incident counts and spatial concentration. Repeated coordinates do not prove duplicate incidents or accuracy. Distances use approximate reported points in EPSG:3978."
+}

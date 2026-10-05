@@ -1,0 +1,25 @@
+{
+  "id": "proxy-alignment-v1",
+  "status": "frozen_training_only_descriptive_diagnostic",
+  "parent_plan": "experiments/constrained_selection.json",
+  "parent_cache": ".cache/wildfire/constrained-selection",
+  "parent_outcome_sha256": "b03dd9946e3bff88dc24985f371d8c82e3fcdf30705f452153cfebba86ee9fdc",
+  "seeds": [
+    811,
+    821,
+    823,
+    907,
+    911,
+    919
+  ],
+  "subsets": "all 70 cardinality-four masks in little-endian integer order",
+  "logistic": {
+    "C": 1.0,
+    "max_iter": 1000
+  },
+  "max_predictor_fits": 420,
+  "max_wall_seconds": 120,
+  "hardware": false,
+  "final_test_access": false,
+  "interpretation": "Measure per-cohort Spearman(-QUBO energy, held-out AP), optimum/L1 AP midrank percentiles and descriptive AP range. Reuse parent preprocessing/objective, verify exact/L1 predictions. All 70 validation scores are a reused-year descriptive envelope: no new selector, promotion, p-values, confidence intervals or objective tuning. Stop after this diagnostic; better optimization of a poorly aligned proxy needs modelling justification, not more circuit depth or shots."
+}

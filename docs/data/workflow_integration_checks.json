@@ -1,0 +1,68 @@
+{
+  "status": "integrated_preparation_and_collection_verified",
+  "source_commit": "df99ef66f3c88419082cf89b916d42c0c8a13b89",
+  "doctor_required_inputs": 915,
+  "doctor_original_inputs_ready": true,
+  "prepared_dataset": ".cache/wildfire/features/historical-woodland/2fd3898f9d72da066223",
+  "prepared_weather_dataset": ".cache/wildfire/features/historical-weather/d9bd89c8670621327324",
+  "training_rows": 37801,
+  "training_table_sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+  "committed_recipe_sha256": {
+    "scripts/pipeline.py": "8804265f35951ecd0a86cf8650c5e26ed7de45fb2bd26e92282b4fdc397c2b94",
+    "wildfire_lab/workflow.py": "e13779bf8c02980f161f9cc4717564aa01ad3f5b01c833ac49e759be53b44336",
+    "scripts/build_historical_features.py": "891bdd63cceb8d3f4cf0a440e8328bdb6430a4499ef27df0de100510997ceb89",
+    "scripts/add_woodland_features.py": "c0a3643f28992e7952d9239771fd246a4eb32a2160772a8c55bcf3985830f181",
+    "wildfire_lab/weather_preparation.py": "9ca08da9696fdf02875200a341a44bac0d54a2000335ace924c162b3cc02ffba",
+    "wildfire_lab/nfdb.py": "2aa64aa77815f45d0b0e9f8c00bbb8636581de64f95824e599a747270e54600c",
+    "wildfire_lab/weather.py": "e5a1ea388a93cf681fb6f07bafd116af6e3db2e26be2a84ac3620f44a5bde87a",
+    "wildfire_lab/feature_joins.py": "4678e28b8ce5dc8d0add1cbff143ab83164ffc21392d232e45c21bf1bddce7b6",
+    "wildfire_lab/woodland.py": "a81c56879f0ea4602907d8c910fc2349fd0eaed9054d4d8ee7778a93038d91cb",
+    "uv.lock": "279bcaf11186bf36bf4375da28308a14ab9789b99a783b7dcd6ebb7a40b1c15f",
+    "configs/wildfires/ontario.json": "4de8d2ce25e9c25e83d0f21609e32d21d00952d9c638db751d09ab79fbcdb256",
+    "docs/data/reproduction_inputs.json": "83bd967adaa97a3b70f98bcd08e116bdf65b4c272a25b85a4498526b184c4cb6"
+  },
+  "preparation_manifest_commits_match": true,
+  "pre_existing_data_cache_files_preserved": 1310,
+  "pre_existing_environment_files_preserved": 28417,
+  "new_derived_files": [
+    ".cache/wildfire/features/historical-weather/8d7dc23d81d66badfda3/features.csv",
+    ".cache/wildfire/features/historical-weather/8d7dc23d81d66badfda3/manifest.json",
+    ".cache/wildfire/features/historical-weather/d9bd89c8670621327324/features.csv",
+    ".cache/wildfire/features/historical-weather/d9bd89c8670621327324/manifest.json",
+    ".cache/wildfire/features/historical-woodland/2fd3898f9d72da066223/features.csv",
+    ".cache/wildfire/features/historical-woodland/2fd3898f9d72da066223/manifest.json",
+    ".cache/wildfire/features/historical-woodland/fc7b4eab42f413193f19/features.csv",
+    ".cache/wildfire/features/historical-woodland/fc7b4eab42f413193f19/manifest.json"
+  ],
+  "preliminary_prepublication_run": {
+    "commit_metadata_is_parent": true,
+    "weather_dataset": ".cache/wildfire/features/historical-weather/8d7dc23d81d66badfda3",
+    "dataset": ".cache/wildfire/features/historical-woodland/fc7b4eab42f413193f19",
+    "note": "Separate preliminary data-path check; not relabelled as the committed recipe run or a scientific replication."
+  },
+  "policy_collection_byte_identical": true,
+  "final_rows_and_outcome_hash_identical": true,
+  "legacy_status_reservation_AST_identical": true,
+  "policy_formatting_AST_identical": [
+    "wildfire_lab/evolution_study.py",
+    "wildfire_lab/evolution_history.py",
+    "wildfire_lab/evolution_policy.py",
+    "wildfire_lab/evolution_rollout.py",
+    "wildfire_lab/evolution_checks.py",
+    "wildfire_lab/evolution_evaluator.py",
+    "scripts/run_policy_evolution.py"
+  ],
+  "network_acquisition_executed": false,
+  "new_model_fits": 0,
+  "hardware_jobs_submitted": 0,
+  "final_test_reopened": false,
+  "summary_export_check": {
+    "outcome_sha256": "039a41a893beafb1bb014188a791602be4bbb48973e975aa87176714c5271cc3",
+    "selector_predictor_pairs": 9,
+    "saved_rows": 81,
+    "outcome_bytes_preserved": true,
+    "new_model_fits": 0
+  },
+  "summary_export_source_commit": "0b6d3e0",
+  "summary_qualification": "Historical combination rows already separated predictors via group. The new export supports both group and selector schemas; no published scientific comparison was mixed."
+}

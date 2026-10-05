@@ -1,0 +1,79 @@
+{
+  "id": "historical-woodland-selection-v1",
+  "status": "frozen_screen",
+  "hypothesis": "Four-feature selection over geography/season and static cover preserves useful transferable information; compare L1 against the same QUBO solved exactly and by shallow QAOA.",
+  "research_model": "gpt-6.1-sol",
+  "target": "NFDB agency-reported size >=10 ha, conditional on eligible recorded fire",
+  "train_years": [
+    1988,
+    2018
+  ],
+  "final_test_years": [
+    2019,
+    2024
+  ],
+  "validation_folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "month_sin",
+    "month_cos",
+    "cover_conifer",
+    "cover_broadleaf",
+    "cover_mixed",
+    "cover_water"
+  ],
+  "feature_budget": 4,
+  "seeds": [
+    42,
+    73,
+    101
+  ],
+  "qaoa": {
+    "depth": 1,
+    "shots": 512,
+    "maxiter": 40
+  },
+  "primary_metric": "average_precision",
+  "screen_max_proposals": 8,
+  "screen_wall_seconds_per_attempt": 300,
+  "hardware_default": false,
+  "final_test_sealed": true,
+  "limitations": [
+    "NFDB reported-size proxy; ignition date and final area are not guaranteed.",
+    "Source completeness varies; approximately located incidents and identity collisions excluded.",
+    "Weather publication latency unknown; retrospective conditional classification.",
+    "Exact simulated circuits with classical optimization; no hardware or speedup claim.",
+    "Static 1984 cover context, approximate fire coordinates and 1 km buffers.",
+    "Adaptive candidate list after group/spatial screens; these are reused validation years.",
+    "Eight-variable QUBO is classically enumerable; no quantum speedup claim."
+  ],
+  "promotion_checks": [
+    "valid snapshot and frozen recipe",
+    "chronological validation",
+    "same subset objective and budget",
+    "same predictor inputs/samples",
+    "independent confirmation before final test"
+  ],
+  "parent_study": "historical-woodland-spatial-v1",
+  "parent_evidence": "attempt-c46c4ae87766"
+}

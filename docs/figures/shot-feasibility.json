@@ -1,0 +1,6 @@
+{
+  "source_sha256": "43d6a853e8c485f6a8423fd6af3fdc5cc81f18876c5395d6fb4f3338c197377e",
+  "plot_recipe_sha256": "80d2658dba0f8ef522583c000182ab75cd6d4341cc1388d8d97e81da6d65d7a5",
+  "figure_sha256": "8a7a5ca14bd6d6214200f69cd87ddb8eacaedf5cdcc7e07fcfff3cdd9e37ba7b",
+  "caption": "Labels-free exact ZZ matrices; 256 training/256 validation fires per fixed sampling cohort. Lines average three conditions; bands span them, not confidence intervals. Dotted line marks the inherited .05 scale, not a newly selected optimum. Independent Bernoulli pair estimates, noisy training means and fixed exact normalization; no PSD repair or device noise. Dense matrix error is not predictive error or a landmark accuracy guarantee."
+}

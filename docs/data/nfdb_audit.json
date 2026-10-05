@@ -1,0 +1,245 @@
+{
+  "agency": "ON",
+  "requested_years": [
+    1988,
+    2024
+  ],
+  "total_agency_rows": 65881,
+  "annual": {
+    "1988": {
+      "rows": 3260,
+      "valid_date_location_size_nonprescribed": 3260
+    },
+    "1989": {
+      "rows": 2430,
+      "valid_date_location_size_nonprescribed": 2430
+    },
+    "1990": {
+      "rows": 1614,
+      "valid_date_location_size_nonprescribed": 1614
+    },
+    "1991": {
+      "rows": 2560,
+      "valid_date_location_size_nonprescribed": 2560
+    },
+    "1992": {
+      "rows": 960,
+      "valid_date_location_size_nonprescribed": 960
+    },
+    "1993": {
+      "rows": 743,
+      "valid_date_location_size_nonprescribed": 743
+    },
+    "1994": {
+      "rows": 1106,
+      "valid_date_location_size_nonprescribed": 1012,
+      "identity_collision_quarantined": 94,
+      "invalid_agency_date": 6,
+      "prescribed_or_unspecified_prescribed_code": 6
+    },
+    "1995": {
+      "rows": 2197,
+      "valid_date_location_size_nonprescribed": 2053,
+      "identity_collision_quarantined": 143,
+      "invalid_agency_date": 8,
+      "prescribed_or_unspecified_prescribed_code": 7
+    },
+    "1996": {
+      "rows": 1302,
+      "valid_date_location_size_nonprescribed": 1193,
+      "identity_collision_quarantined": 109,
+      "invalid_agency_date": 4,
+      "prescribed_or_unspecified_prescribed_code": 3
+    },
+    "1997": {
+      "rows": 1654,
+      "valid_date_location_size_nonprescribed": 1619,
+      "identity_collision_quarantined": 30,
+      "invalid_agency_date": 6,
+      "prescribed_or_unspecified_prescribed_code": 4
+    },
+    "1998": {
+      "rows": 2316,
+      "valid_date_location_size_nonprescribed": 2248,
+      "identity_collision_quarantined": 68
+    },
+    "1999": {
+      "rows": 1049,
+      "valid_date_location_size_nonprescribed": 992,
+      "identity_collision_quarantined": 56,
+      "invalid_agency_date": 2,
+      "prescribed_or_unspecified_prescribed_code": 2
+    },
+    "2000": {
+      "rows": 659,
+      "valid_date_location_size_nonprescribed": 635,
+      "identity_collision_quarantined": 18,
+      "invalid_agency_date": 7,
+      "prescribed_or_unspecified_prescribed_code": 4
+    },
+    "2001": {
+      "rows": 1602,
+      "valid_date_location_size_nonprescribed": 1533,
+      "identity_collision_quarantined": 68,
+      "invalid_agency_date": 4,
+      "prescribed_or_unspecified_prescribed_code": 4
+    },
+    "2002": {
+      "rows": 1162,
+      "valid_date_location_size_nonprescribed": 1102,
+      "identity_collision_quarantined": 60,
+      "prescribed_or_unspecified_prescribed_code": 3
+    },
+    "2003": {
+      "rows": 1040,
+      "valid_date_location_size_nonprescribed": 999,
+      "identity_collision_quarantined": 40,
+      "invalid_agency_date": 1,
+      "prescribed_or_unspecified_prescribed_code": 1
+    },
+    "2004": {
+      "rows": 436,
+      "valid_date_location_size_nonprescribed": 423,
+      "identity_collision_quarantined": 12,
+      "invalid_agency_date": 1,
+      "prescribed_or_unspecified_prescribed_code": 2
+    },
+    "2005": {
+      "rows": 1962,
+      "valid_date_location_size_nonprescribed": 1958,
+      "identity_collision_quarantined": 2,
+      "prescribed_or_unspecified_prescribed_code": 3,
+      "invalid_agency_date": 1
+    },
+    "2006": {
+      "rows": 2284,
+      "valid_date_location_size_nonprescribed": 2280,
+      "invalid_agency_date": 2,
+      "identity_collision_quarantined": 2,
+      "prescribed_or_unspecified_prescribed_code": 1
+    },
+    "2007": {
+      "rows": 1127,
+      "valid_date_location_size_nonprescribed": 1121,
+      "identity_collision_quarantined": 6,
+      "invalid_agency_date": 1,
+      "prescribed_or_unspecified_prescribed_code": 1
+    },
+    "2008": {
+      "rows": 340,
+      "valid_date_location_size_nonprescribed": 340
+    },
+    "2009": {
+      "rows": 388,
+      "valid_date_location_size_nonprescribed": 386,
+      "identity_collision_quarantined": 2,
+      "prescribed_or_unspecified_prescribed_code": 1
+    },
+    "2010": {
+      "rows": 934,
+      "valid_date_location_size_nonprescribed": 929,
+      "identity_collision_quarantined": 4,
+      "prescribed_or_unspecified_prescribed_code": 3
+    },
+    "2011": {
+      "rows": 1338,
+      "valid_date_location_size_nonprescribed": 1329,
+      "identity_collision_quarantined": 8,
+      "invalid_agency_date": 2,
+      "prescribed_or_unspecified_prescribed_code": 1
+    },
+    "2012": {
+      "rows": 1621,
+      "valid_date_location_size_nonprescribed": 1613,
+      "identity_collision_quarantined": 8,
+      "prescribed_or_unspecified_prescribed_code": 1
+    },
+    "2013": {
+      "rows": 581,
+      "valid_date_location_size_nonprescribed": 581
+    },
+    "2014": {
+      "rows": 308,
+      "valid_date_location_size_nonprescribed": 298,
+      "invalid_agency_date": 3,
+      "prescribed_or_unspecified_prescribed_code": 5,
+      "identity_collision_quarantined": 10
+    },
+    "2015": {
+      "rows": 671,
+      "valid_date_location_size_nonprescribed": 665,
+      "prescribed_or_unspecified_prescribed_code": 2,
+      "identity_collision_quarantined": 6,
+      "invalid_agency_date": 1
+    },
+    "2016": {
+      "rows": 648,
+      "valid_date_location_size_nonprescribed": 640,
+      "prescribed_or_unspecified_prescribed_code": 2,
+      "identity_collision_quarantined": 8
+    },
+    "2017": {
+      "rows": 779,
+      "valid_date_location_size_nonprescribed": 773,
+      "prescribed_or_unspecified_prescribed_code": 3,
+      "identity_collision_quarantined": 6
+    },
+    "2018": {
+      "rows": 1328,
+      "valid_date_location_size_nonprescribed": 1320,
+      "identity_collision_quarantined": 8,
+      "prescribed_or_unspecified_prescribed_code": 1
+    },
+    "2019": {
+      "rows": 538,
+      "valid_date_location_size_nonprescribed": 536,
+      "prescribed_or_unspecified_prescribed_code": 1,
+      "identity_collision_quarantined": 2
+    },
+    "2020": {
+      "rows": 609,
+      "valid_date_location_size_nonprescribed": 605,
+      "identity_collision_quarantined": 4
+    },
+    "2021": {
+      "rows": 1200,
+      "valid_date_location_size_nonprescribed": 1194,
+      "identity_collision_quarantined": 6,
+      "prescribed_or_unspecified_prescribed_code": 3
+    },
+    "2022": {
+      "rows": 276,
+      "valid_date_location_size_nonprescribed": 274,
+      "prescribed_or_unspecified_prescribed_code": 1,
+      "identity_collision_quarantined": 2
+    },
+    "2023": {
+      "rows": 748,
+      "valid_date_location_size_nonprescribed": 738,
+      "prescribed_or_unspecified_prescribed_code": 5,
+      "identity_collision_quarantined": 10
+    },
+    "2024": {
+      "rows": 491,
+      "valid_date_location_size_nonprescribed": 481,
+      "identity_collision_quarantined": 10,
+      "prescribed_or_unspecified_prescribed_code": 5
+    }
+  },
+  "issues": {
+    "identity_collision_quarantined": 802,
+    "prescribed_or_unspecified_prescribed_code": 75,
+    "invalid_agency_date": 49
+  },
+  "duplicate_identity_groups": 404,
+  "causes": {
+    "N": 23711,
+    "H": 19671,
+    "U": 879
+  },
+  "archive_sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+  "semantics": "Agency-associated fire date and reported size; ignition time and final size are not guaranteed.",
+  "limitations": "Approximate locations, variable agency/year completeness; audit candidate, not an automatically selected replacement.",
+  "source_url": "https://cwfis.cfs.nrcan.gc.ca/downloads/nfdb/fire_pnt/current_version/NFDB_point_txt.zip",
+  "audited_utc": "2026-10-05T03:05:57.020486+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "local-geometry-v1",
+  "status": "frozen_labels_free_training_diagnostic",
+  "parent_cache": ".cache/wildfire/shot-feasibility",
+  "parent_outcome_sha256": "5e7612fde994de5009b131a4fd590204af91a29d752da90d38f27d179be09235",
+  "parent_intent_sha256": "4727320f3b5f0c43dcc6da6d91a79a4e8c5ca13bbf5f5baa2bfaba5803907ded",
+  "anchor_angle": "pi/2 on each of four inputs",
+  "finite_difference_steps": [0.0001, 0.00001, 0.000001],
+  "reference_step": 0.00001,
+  "reference_to_finest_relative_tolerance": 0.00001,
+  "max_simulated_state_preparations": 27,
+  "max_wall_seconds": 60,
+  "labels_used": false,
+  "model_fits": 0,
+  "pair_circuits": 0,
+  "shots": 0,
+  "hardware": false,
+  "final_test_access": false,
+  "interpretation": "Known local fidelity/QGT expansion applied to the saved encoding. Compare every inherited seed/scale with a fixed rank-at-most-four tangent kernel; no new predictive comparison, angle choice or global reduction of quantum kernels. Reconstruct saved derivatives without new quantum states during collection."
+}

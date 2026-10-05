@@ -1,0 +1,310 @@
+{
+  "status": "audited_training_size_boundary",
+  "created_utc": "2026-10-05T10:18:00.223961+00:00",
+  "code_commit": "a3cd34ddc29b7f55a3ae7b951700f4f009825074",
+  "recipe_sha256": {
+    "scripts/audit_label_quality.py": "00d2b4a4abd3458327399d74fe543bfe6b4d9de9ff1f077e7e5ec17d39420dbd",
+    "wildfire_lab/label_quality.py": "54db7f8aabc33e60445a1831c71c6e8db1e08e49484814efc1fb52e3b576ca6c",
+    "wildfire_lab/nfdb.py": "2aa64aa77815f45d0b0e9f8c00bbb8636581de64f95824e599a747270e54600c"
+  },
+  "config_sha256": "f66e95ebe986d26a0854affc38badd06935eaa496dc6d61170c4fbbd397ad3ca",
+  "source_sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+  "plan": {
+    "agency": "ON",
+    "years": [1988, 2018],
+    "target_threshold_ha": "10",
+    "descriptive_thresholds_ha": ["1", "5", "10", "20", "100", "200"],
+    "boundary_half_widths_ha": ["0.1", "0.5", "1", "2"],
+    "numeric_steps_ha": ["0.01", "0.1", "1", "10"],
+    "top_recorded_sizes": 10,
+    "source_archive": "data/raw/nfdb-audit/source.zip",
+    "source_sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+    "cohorts": {
+      "weather_matched": {
+        "dataset": ".cache/wildfire/features/historical-weather/5b9e54931d2a9d1b1f83",
+        "sha256": "ed40abc65bcd5f44d67db01eb704c1f6dee447d2f91b71beca12224399e0010d"
+      },
+      "fixed_cover_matched": {
+        "dataset": ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8",
+        "sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8"
+      }
+    },
+    "model_fits": 0,
+    "final_test_access": false,
+    "interpretation": "Recording patterns and cohort selection only; no threshold selection, measurement-error estimate or model change."
+  },
+  "cohort_provenance": {
+    "weather_matched": {
+      "dataset": ".cache/wildfire/features/historical-weather/5b9e54931d2a9d1b1f83",
+      "data_sha256": "ed40abc65bcd5f44d67db01eb704c1f6dee447d2f91b71beca12224399e0010d",
+      "manifest_sha256": "f4a3815d4f4839034aff42d373561f2ce04cfa9b8ece60de29c3c403b9ca8622"
+    },
+    "fixed_cover_matched": {
+      "dataset": ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8",
+      "data_sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+      "manifest_sha256": "0c9d2a346e9b8e54de2a785a52817dfebd36e08c8f5c0b1882bddb738831a57b"
+    }
+  },
+  "exclusions": {
+    "identity_collision_quarantined": 768,
+    "invalid_agency_date": 49,
+    "prescribed_or_unspecified_prescribed_code": 60
+  },
+  "cohorts": {
+    "eligible_nfdb": {
+      "rows": 39609,
+      "positive_rows": 3358,
+      "positive_fraction": 0.0847787119089096,
+      "zero_size_rows": 5,
+      "exact_threshold_rows": 255,
+      "strictly_above_threshold_rows": 3103,
+      "median_size_ha": 0.20000000298,
+      "thresholds": [
+        {"threshold_ha": "1", "rows_ge": 10061},
+        {"threshold_ha": "5", "rows_ge": 4406},
+        {"threshold_ha": "10", "rows_ge": 3358},
+        {"threshold_ha": "20", "rows_ge": 2621},
+        {"threshold_ha": "100", "rows_ge": 1572},
+        {"threshold_ha": "200", "rows_ge": 1232}
+      ],
+      "boundary_bands": [
+        {"half_width_ha": "0.1", "lower_inclusive_ha": "9.9", "upper_exclusive_ha": "10.1", "rows": 255, "negative_rows": 0, "positive_rows": 255},
+        {"half_width_ha": "0.5", "lower_inclusive_ha": "9.5", "upper_exclusive_ha": "10.5", "rows": 275, "negative_rows": 12, "positive_rows": 263},
+        {"half_width_ha": "1", "lower_inclusive_ha": "9", "upper_exclusive_ha": "11", "rows": 339, "negative_rows": 68, "positive_rows": 271},
+        {"half_width_ha": "2", "lower_inclusive_ha": "8", "upper_exclusive_ha": "12", "rows": 560, "negative_rows": 243, "positive_rows": 317}
+      ],
+      "positive_size_rows": 39604,
+      "positive_size_numeric_multiples": [
+        {"step_ha": "0.01", "rows": 9756},
+        {"step_ha": "0.1", "rows": 9756},
+        {"step_ha": "1", "rows": 6564},
+        {"step_ha": "10", "rows": 1448}
+      ],
+      "most_common_recorded_sizes": [
+        {"size_ha": "0.100000001490000", "rows": 17971},
+        {"size_ha": "0.200000002980000", "rows": 4555},
+        {"size_ha": "0.300000011921000", "rows": 2295},
+        {"size_ha": "0.500000000000000", "rows": 1728},
+        {"size_ha": "1.000000000000000", "rows": 1436},
+        {"size_ha": "0.400000005960000", "rows": 1293},
+        {"size_ha": "2.000000000000000", "rows": 774},
+        {"size_ha": "1.500000000000000", "rows": 660},
+        {"size_ha": "0.600000023842000", "rows": 592},
+        {"size_ha": "0.800000011921000", "rows": 582}
+      ],
+      "annual": [
+        {"year": 1988, "rows": 3260, "positive_rows": 254, "positive_fraction": 0.07791411042944785, "zero_size_rows": 0, "exact_threshold_rows": 28},
+        {"year": 1989, "rows": 2430, "positive_rows": 300, "positive_fraction": 0.12345679012345678, "zero_size_rows": 0, "exact_threshold_rows": 21},
+        {"year": 1990, "rows": 1614, "positive_rows": 128, "positive_fraction": 0.07930607187112763, "zero_size_rows": 0, "exact_threshold_rows": 7},
+        {"year": 1991, "rows": 2560, "positive_rows": 159, "positive_fraction": 0.062109375, "zero_size_rows": 0, "exact_threshold_rows": 11},
+        {"year": 1992, "rows": 960, "positive_rows": 81, "positive_fraction": 0.084375, "zero_size_rows": 0, "exact_threshold_rows": 7},
+        {"year": 1993, "rows": 743, "positive_rows": 50, "positive_fraction": 0.06729475100942127, "zero_size_rows": 0, "exact_threshold_rows": 3},
+        {"year": 1994, "rows": 1012, "positive_rows": 100, "positive_fraction": 0.09881422924901186, "zero_size_rows": 0, "exact_threshold_rows": 14},
+        {"year": 1995, "rows": 2053, "positive_rows": 255, "positive_fraction": 0.12420847540185095, "zero_size_rows": 0, "exact_threshold_rows": 20},
+        {"year": 1996, "rows": 1193, "positive_rows": 226, "positive_fraction": 0.18943839061190276, "zero_size_rows": 4, "exact_threshold_rows": 13},
+        {"year": 1997, "rows": 1619, "positive_rows": 59, "positive_fraction": 0.03644224830142063, "zero_size_rows": 0, "exact_threshold_rows": 11},
+        {"year": 1998, "rows": 2248, "positive_rows": 171, "positive_fraction": 0.076067615658363, "zero_size_rows": 0, "exact_threshold_rows": 18},
+        {"year": 1999, "rows": 992, "positive_rows": 100, "positive_fraction": 0.10080645161290322, "zero_size_rows": 1, "exact_threshold_rows": 12},
+        {"year": 2000, "rows": 635, "positive_rows": 43, "positive_fraction": 0.06771653543307087, "zero_size_rows": 0, "exact_threshold_rows": 6},
+        {"year": 2001, "rows": 1533, "positive_rows": 83, "positive_fraction": 0.05414220482713633, "zero_size_rows": 0, "exact_threshold_rows": 16},
+        {"year": 2002, "rows": 1102, "positive_rows": 92, "positive_fraction": 0.08348457350272233, "zero_size_rows": 0, "exact_threshold_rows": 1},
+        {"year": 2003, "rows": 999, "positive_rows": 78, "positive_fraction": 0.07807807807807808, "zero_size_rows": 0, "exact_threshold_rows": 5},
+        {"year": 2004, "rows": 423, "positive_rows": 5, "positive_fraction": 0.01182033096926714, "zero_size_rows": 0, "exact_threshold_rows": 0},
+        {"year": 2005, "rows": 1958, "positive_rows": 64, "positive_fraction": 0.03268641470888662, "zero_size_rows": 0, "exact_threshold_rows": 5},
+        {"year": 2006, "rows": 2280, "positive_rows": 200, "positive_fraction": 0.08771929824561403, "zero_size_rows": 0, "exact_threshold_rows": 7},
+        {"year": 2007, "rows": 1121, "positive_rows": 58, "positive_fraction": 0.05173951828724353, "zero_size_rows": 0, "exact_threshold_rows": 4},
+        {"year": 2008, "rows": 340, "positive_rows": 11, "positive_fraction": 0.03235294117647059, "zero_size_rows": 0, "exact_threshold_rows": 1},
+        {"year": 2009, "rows": 386, "positive_rows": 44, "positive_fraction": 0.11398963730569948, "zero_size_rows": 0, "exact_threshold_rows": 1},
+        {"year": 2010, "rows": 929, "positive_rows": 55, "positive_fraction": 0.059203444564047365, "zero_size_rows": 0, "exact_threshold_rows": 5},
+        {"year": 2011, "rows": 1329, "positive_rows": 132, "positive_fraction": 0.09932279909706546, "zero_size_rows": 0, "exact_threshold_rows": 6},
+        {"year": 2012, "rows": 1613, "positive_rows": 123, "positive_fraction": 0.07625542467451953, "zero_size_rows": 0, "exact_threshold_rows": 7},
+        {"year": 2013, "rows": 581, "positive_rows": 72, "positive_fraction": 0.12392426850258176, "zero_size_rows": 0, "exact_threshold_rows": 7},
+        {"year": 2014, "rows": 298, "positive_rows": 20, "positive_fraction": 0.06711409395973154, "zero_size_rows": 0, "exact_threshold_rows": 3},
+        {"year": 2015, "rows": 665, "positive_rows": 72, "positive_fraction": 0.10827067669172932, "zero_size_rows": 0, "exact_threshold_rows": 4},
+        {"year": 2016, "rows": 640, "positive_rows": 35, "positive_fraction": 0.0546875, "zero_size_rows": 0, "exact_threshold_rows": 1},
+        {"year": 2017, "rows": 773, "positive_rows": 134, "positive_fraction": 0.17335058214747737, "zero_size_rows": 0, "exact_threshold_rows": 5},
+        {"year": 2018, "rows": 1320, "positive_rows": 154, "positive_fraction": 0.11666666666666667, "zero_size_rows": 0, "exact_threshold_rows": 6}
+      ]
+    },
+    "weather_matched": {
+      "rows": 38579,
+      "positive_rows": 2876,
+      "positive_fraction": 0.07454832940200627,
+      "zero_size_rows": 5,
+      "exact_threshold_rows": 226,
+      "strictly_above_threshold_rows": 2650,
+      "median_size_ha": 0.20000000298,
+      "thresholds": [
+        {"threshold_ha": "1", "rows_ge": 9394},
+        {"threshold_ha": "5", "rows_ge": 3863},
+        {"threshold_ha": "10", "rows_ge": 2876},
+        {"threshold_ha": "20", "rows_ge": 2204},
+        {"threshold_ha": "100", "rows_ge": 1278},
+        {"threshold_ha": "200", "rows_ge": 978}
+      ],
+      "boundary_bands": [
+        {"half_width_ha": "0.1", "lower_inclusive_ha": "9.9", "upper_exclusive_ha": "10.1", "rows": 226, "negative_rows": 0, "positive_rows": 226},
+        {"half_width_ha": "0.5", "lower_inclusive_ha": "9.5", "upper_exclusive_ha": "10.5", "rows": 246, "negative_rows": 12, "positive_rows": 234},
+        {"half_width_ha": "1", "lower_inclusive_ha": "9", "upper_exclusive_ha": "11", "rows": 305, "negative_rows": 65, "positive_rows": 240},
+        {"half_width_ha": "2", "lower_inclusive_ha": "8", "upper_exclusive_ha": "12", "rows": 515, "negative_rows": 232, "positive_rows": 283}
+      ],
+      "positive_size_rows": 38574,
+      "positive_size_numeric_multiples": [
+        {"step_ha": "0.01", "rows": 9077},
+        {"step_ha": "0.1", "rows": 9077},
+        {"step_ha": "1", "rows": 5977},
+        {"step_ha": "10", "rows": 1187}
+      ],
+      "most_common_recorded_sizes": [
+        {"size_ha": "0.100000001490000", "rows": 17752},
+        {"size_ha": "0.200000002980000", "rows": 4514},
+        {"size_ha": "0.300000011921000", "rows": 2275},
+        {"size_ha": "0.500000000000000", "rows": 1689},
+        {"size_ha": "1.000000000000000", "rows": 1404},
+        {"size_ha": "0.400000005960000", "rows": 1280},
+        {"size_ha": "2.000000000000000", "rows": 760},
+        {"size_ha": "1.500000000000000", "rows": 641},
+        {"size_ha": "0.600000023842000", "rows": 584},
+        {"size_ha": "0.800000011921000", "rows": 575}
+      ],
+      "annual": [
+        {"year": 1988, "rows": 3202, "positive_rows": 219, "positive_fraction": 0.0683947532792005, "zero_size_rows": 0, "exact_threshold_rows": 25},
+        {"year": 1989, "rows": 2347, "positive_rows": 233, "positive_fraction": 0.09927567106945036, "zero_size_rows": 0, "exact_threshold_rows": 20},
+        {"year": 1990, "rows": 1533, "positive_rows": 80, "positive_fraction": 0.05218525766470972, "zero_size_rows": 0, "exact_threshold_rows": 5},
+        {"year": 1991, "rows": 2446, "positive_rows": 120, "positive_fraction": 0.04905968928863451, "zero_size_rows": 0, "exact_threshold_rows": 11},
+        {"year": 1992, "rows": 921, "positive_rows": 66, "positive_fraction": 0.07166123778501629, "zero_size_rows": 0, "exact_threshold_rows": 7},
+        {"year": 1993, "rows": 707, "positive_rows": 41, "positive_fraction": 0.05799151343705799, "zero_size_rows": 0, "exact_threshold_rows": 2},
+        {"year": 1994, "rows": 931, "positive_rows": 68, "positive_fraction": 0.07303974221267455, "zero_size_rows": 0, "exact_threshold_rows": 12},
+        {"year": 1995, "rows": 2015, "positive_rows": 238, "positive_fraction": 0.11811414392059554, "zero_size_rows": 0, "exact_threshold_rows": 20},
+        {"year": 1996, "rows": 1127, "positive_rows": 192, "positive_fraction": 0.17036379769299023, "zero_size_rows": 4, "exact_threshold_rows": 11},
+        {"year": 1997, "rows": 1599, "positive_rows": 54, "positive_fraction": 0.03377110694183865, "zero_size_rows": 0, "exact_threshold_rows": 11},
+        {"year": 1998, "rows": 2164, "positive_rows": 135, "positive_fraction": 0.062384473197781884, "zero_size_rows": 0, "exact_threshold_rows": 12},
+        {"year": 1999, "rows": 966, "positive_rows": 85, "positive_fraction": 0.08799171842650104, "zero_size_rows": 1, "exact_threshold_rows": 10},
+        {"year": 2000, "rows": 622, "positive_rows": 40, "positive_fraction": 0.06430868167202572, "zero_size_rows": 0, "exact_threshold_rows": 5},
+        {"year": 2001, "rows": 1499, "positive_rows": 64, "positive_fraction": 0.04269513008672448, "zero_size_rows": 0, "exact_threshold_rows": 12},
+        {"year": 2002, "rows": 1055, "positive_rows": 62, "positive_fraction": 0.058767772511848344, "zero_size_rows": 0, "exact_threshold_rows": 0},
+        {"year": 2003, "rows": 959, "positive_rows": 60, "positive_fraction": 0.06256517205422316, "zero_size_rows": 0, "exact_threshold_rows": 4},
+        {"year": 2004, "rows": 413, "positive_rows": 5, "positive_fraction": 0.012106537530266344, "zero_size_rows": 0, "exact_threshold_rows": 0},
+        {"year": 2005, "rows": 1935, "positive_rows": 59, "positive_fraction": 0.03049095607235142, "zero_size_rows": 0, "exact_threshold_rows": 3},
+        {"year": 2006, "rows": 2231, "positive_rows": 176, "positive_fraction": 0.07888839085611833, "zero_size_rows": 0, "exact_threshold_rows": 7},
+        {"year": 2007, "rows": 1110, "positive_rows": 55, "positive_fraction": 0.04954954954954955, "zero_size_rows": 0, "exact_threshold_rows": 4},
+        {"year": 2008, "rows": 338, "positive_rows": 11, "positive_fraction": 0.03254437869822485, "zero_size_rows": 0, "exact_threshold_rows": 1},
+        {"year": 2009, "rows": 377, "positive_rows": 38, "positive_fraction": 0.10079575596816977, "zero_size_rows": 0, "exact_threshold_rows": 1},
+        {"year": 2010, "rows": 913, "positive_rows": 50, "positive_fraction": 0.054764512595837894, "zero_size_rows": 0, "exact_threshold_rows": 5},
+        {"year": 2011, "rows": 1314, "positive_rows": 129, "positive_fraction": 0.09817351598173515, "zero_size_rows": 0, "exact_threshold_rows": 6},
+        {"year": 2012, "rows": 1606, "positive_rows": 123, "positive_fraction": 0.07658779576587796, "zero_size_rows": 0, "exact_threshold_rows": 7},
+        {"year": 2013, "rows": 571, "positive_rows": 66, "positive_fraction": 0.11558669001751314, "zero_size_rows": 0, "exact_threshold_rows": 6},
+        {"year": 2014, "rows": 293, "positive_rows": 18, "positive_fraction": 0.06143344709897611, "zero_size_rows": 0, "exact_threshold_rows": 3},
+        {"year": 2015, "rows": 664, "positive_rows": 71, "positive_fraction": 0.10692771084337349, "zero_size_rows": 0, "exact_threshold_rows": 4},
+        {"year": 2016, "rows": 638, "positive_rows": 35, "positive_fraction": 0.054858934169279, "zero_size_rows": 0, "exact_threshold_rows": 1},
+        {"year": 2017, "rows": 772, "positive_rows": 133, "positive_fraction": 0.172279792746114, "zero_size_rows": 0, "exact_threshold_rows": 5},
+        {"year": 2018, "rows": 1311, "positive_rows": 150, "positive_fraction": 0.11441647597254005, "zero_size_rows": 0, "exact_threshold_rows": 6}
+      ]
+    },
+    "fixed_cover_matched": {
+      "rows": 37801,
+      "positive_rows": 2838,
+      "positive_fraction": 0.07507737890531997,
+      "zero_size_rows": 5,
+      "exact_threshold_rows": 220,
+      "strictly_above_threshold_rows": 2618,
+      "median_size_ha": 0.20000000298,
+      "thresholds": [
+        {"threshold_ha": "1", "rows_ge": 9207},
+        {"threshold_ha": "5", "rows_ge": 3794},
+        {"threshold_ha": "10", "rows_ge": 2838},
+        {"threshold_ha": "20", "rows_ge": 2186},
+        {"threshold_ha": "100", "rows_ge": 1275},
+        {"threshold_ha": "200", "rows_ge": 978}
+      ],
+      "boundary_bands": [
+        {"half_width_ha": "0.1", "lower_inclusive_ha": "9.9", "upper_exclusive_ha": "10.1", "rows": 220, "negative_rows": 0, "positive_rows": 220},
+        {"half_width_ha": "0.5", "lower_inclusive_ha": "9.5", "upper_exclusive_ha": "10.5", "rows": 238, "negative_rows": 12, "positive_rows": 226},
+        {"half_width_ha": "1", "lower_inclusive_ha": "9", "upper_exclusive_ha": "11", "rows": 296, "negative_rows": 64, "positive_rows": 232},
+        {"half_width_ha": "2", "lower_inclusive_ha": "8", "upper_exclusive_ha": "12", "rows": 499, "negative_rows": 224, "positive_rows": 275}
+      ],
+      "positive_size_rows": 37796,
+      "positive_size_numeric_multiples": [
+        {"step_ha": "0.01", "rows": 8921},
+        {"step_ha": "0.1", "rows": 8921},
+        {"step_ha": "1", "rows": 5858},
+        {"step_ha": "10", "rows": 1173}
+      ],
+      "most_common_recorded_sizes": [
+        {"size_ha": "0.100000001490000", "rows": 17373},
+        {"size_ha": "0.200000002980000", "rows": 4422},
+        {"size_ha": "0.300000011921000", "rows": 2247},
+        {"size_ha": "0.500000000000000", "rows": 1669},
+        {"size_ha": "1.000000000000000", "rows": 1379},
+        {"size_ha": "0.400000005960000", "rows": 1251},
+        {"size_ha": "2.000000000000000", "rows": 743},
+        {"size_ha": "1.500000000000000", "rows": 636},
+        {"size_ha": "0.600000023842000", "rows": 569},
+        {"size_ha": "0.800000011921000", "rows": 554}
+      ],
+      "annual": [
+        {"year": 1988, "rows": 3124, "positive_rows": 217, "positive_fraction": 0.06946222791293213, "zero_size_rows": 0, "exact_threshold_rows": 25},
+        {"year": 1989, "rows": 2238, "positive_rows": 228, "positive_fraction": 0.10187667560321716, "zero_size_rows": 0, "exact_threshold_rows": 20},
+        {"year": 1990, "rows": 1455, "positive_rows": 76, "positive_fraction": 0.05223367697594502, "zero_size_rows": 0, "exact_threshold_rows": 4},
+        {"year": 1991, "rows": 2342, "positive_rows": 119, "positive_fraction": 0.05081127241673783, "zero_size_rows": 0, "exact_threshold_rows": 11},
+        {"year": 1992, "rows": 875, "positive_rows": 65, "positive_fraction": 0.07428571428571429, "zero_size_rows": 0, "exact_threshold_rows": 6},
+        {"year": 1993, "rows": 682, "positive_rows": 39, "positive_fraction": 0.05718475073313783, "zero_size_rows": 0, "exact_threshold_rows": 2},
+        {"year": 1994, "rows": 868, "positive_rows": 65, "positive_fraction": 0.0748847926267281, "zero_size_rows": 0, "exact_threshold_rows": 11},
+        {"year": 1995, "rows": 1934, "positive_rows": 236, "positive_fraction": 0.12202688728024819, "zero_size_rows": 0, "exact_threshold_rows": 19},
+        {"year": 1996, "rows": 1100, "positive_rows": 191, "positive_fraction": 0.17363636363636364, "zero_size_rows": 4, "exact_threshold_rows": 11},
+        {"year": 1997, "rows": 1524, "positive_rows": 52, "positive_fraction": 0.03412073490813648, "zero_size_rows": 0, "exact_threshold_rows": 10},
+        {"year": 1998, "rows": 2159, "positive_rows": 134, "positive_fraction": 0.06206577119036591, "zero_size_rows": 0, "exact_threshold_rows": 12},
+        {"year": 1999, "rows": 956, "positive_rows": 82, "positive_fraction": 0.08577405857740586, "zero_size_rows": 1, "exact_threshold_rows": 10},
+        {"year": 2000, "rows": 617, "positive_rows": 39, "positive_fraction": 0.06320907617504051, "zero_size_rows": 0, "exact_threshold_rows": 5},
+        {"year": 2001, "rows": 1490, "positive_rows": 63, "positive_fraction": 0.042281879194630875, "zero_size_rows": 0, "exact_threshold_rows": 12},
+        {"year": 2002, "rows": 1054, "positive_rows": 62, "positive_fraction": 0.058823529411764705, "zero_size_rows": 0, "exact_threshold_rows": 0},
+        {"year": 2003, "rows": 959, "positive_rows": 60, "positive_fraction": 0.06256517205422316, "zero_size_rows": 0, "exact_threshold_rows": 4},
+        {"year": 2004, "rows": 411, "positive_rows": 5, "positive_fraction": 0.012165450121654502, "zero_size_rows": 0, "exact_threshold_rows": 0},
+        {"year": 2005, "rows": 1929, "positive_rows": 59, "positive_fraction": 0.030585795749092794, "zero_size_rows": 0, "exact_threshold_rows": 3},
+        {"year": 2006, "rows": 2226, "positive_rows": 174, "positive_fraction": 0.07816711590296496, "zero_size_rows": 0, "exact_threshold_rows": 6},
+        {"year": 2007, "rows": 1104, "positive_rows": 54, "positive_fraction": 0.04891304347826087, "zero_size_rows": 0, "exact_threshold_rows": 4},
+        {"year": 2008, "rows": 335, "positive_rows": 10, "positive_fraction": 0.029850746268656716, "zero_size_rows": 0, "exact_threshold_rows": 1},
+        {"year": 2009, "rows": 375, "positive_rows": 37, "positive_fraction": 0.09866666666666667, "zero_size_rows": 0, "exact_threshold_rows": 1},
+        {"year": 2010, "rows": 906, "positive_rows": 48, "positive_fraction": 0.052980132450331126, "zero_size_rows": 0, "exact_threshold_rows": 5},
+        {"year": 2011, "rows": 1313, "positive_rows": 129, "positive_fraction": 0.09824828636709824, "zero_size_rows": 0, "exact_threshold_rows": 6},
+        {"year": 2012, "rows": 1597, "positive_rows": 122, "positive_fraction": 0.07639323731997495, "zero_size_rows": 0, "exact_threshold_rows": 7},
+        {"year": 2013, "rows": 569, "positive_rows": 66, "positive_fraction": 0.11599297012302284, "zero_size_rows": 0, "exact_threshold_rows": 6},
+        {"year": 2014, "rows": 292, "positive_rows": 17, "positive_fraction": 0.05821917808219178, "zero_size_rows": 0, "exact_threshold_rows": 3},
+        {"year": 2015, "rows": 659, "positive_rows": 71, "positive_fraction": 0.10773899848254932, "zero_size_rows": 0, "exact_threshold_rows": 4},
+        {"year": 2016, "rows": 630, "positive_rows": 35, "positive_fraction": 0.05555555555555555, "zero_size_rows": 0, "exact_threshold_rows": 1},
+        {"year": 2017, "rows": 772, "positive_rows": 133, "positive_fraction": 0.172279792746114, "zero_size_rows": 0, "exact_threshold_rows": 5},
+        {"year": 2018, "rows": 1306, "positive_rows": 150, "positive_fraction": 0.11485451761102604, "zero_size_rows": 0, "exact_threshold_rows": 6}
+      ]
+    }
+  },
+  "retention": {
+    "weather": {
+      "0": {
+        "before_rows": 36251,
+        "retained_rows": 35703,
+        "excluded_rows": 548
+      },
+      "1": {
+        "before_rows": 3358,
+        "retained_rows": 2876,
+        "excluded_rows": 482
+      }
+    },
+    "woodland": {
+      "0": {
+        "before_rows": 35703,
+        "retained_rows": 34963,
+        "excluded_rows": 740
+      },
+      "1": {
+        "before_rows": 2876,
+        "retained_rows": 2838,
+        "excluded_rows": 38
+      }
+    }
+  },
+  "model_fits": 0,
+  "quantum_calls": 0,
+  "final_test_access": false,
+  "limitations": ["Numeric multiples are recording patterns, not measured precision or uncertainty.", "Boundary bands do not estimate label error; descriptive thresholds do not select a replacement target.", "Annual prevalence varies with recorded incidents and selection; no causal or completeness conclusion.", "Reported size is not guaranteed final area; zero is retained by the frozen nonnegative-size rule."]
+}

@@ -1,0 +1,24 @@
+{
+  "agency": "ON",
+  "years": [1988, 2018],
+  "target_threshold_ha": "10",
+  "descriptive_thresholds_ha": ["1", "5", "10", "20", "100", "200"],
+  "boundary_half_widths_ha": ["0.1", "0.5", "1", "2"],
+  "numeric_steps_ha": ["0.01", "0.1", "1", "10"],
+  "top_recorded_sizes": 10,
+  "source_archive": "data/raw/nfdb-audit/source.zip",
+  "source_sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+  "cohorts": {
+    "weather_matched": {
+      "dataset": ".cache/wildfire/features/historical-weather/5b9e54931d2a9d1b1f83",
+      "sha256": "ed40abc65bcd5f44d67db01eb704c1f6dee447d2f91b71beca12224399e0010d"
+    },
+    "fixed_cover_matched": {
+      "dataset": ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8",
+      "sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8"
+    }
+  },
+  "model_fits": 0,
+  "final_test_access": false,
+  "interpretation": "Recording patterns and cohort selection only; no threshold selection, measurement-error estimate or model change."
+}

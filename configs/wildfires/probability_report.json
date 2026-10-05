@@ -1,0 +1,15 @@
+{
+  "id": "saved-probability-report-v1",
+  "status": "frozen_post_final_descriptive_reporting",
+  "final_outcome_sha256": "e0d4fc03bc736e52cacddfab6e75f08cfb896b0e9713a9413aada9ca0645bbff",
+  "final_evidence_sha256": "0ddc661ed2938bb90ea4ca57b361ceacb796661abce2f4337e2b9e2573be4824",
+  "bins": 10,
+  "bin_policy": "[left,right), final bin includes 1",
+  "group_by_year": true,
+  "models": "all six saved full-training probability models; capped decision scores excluded",
+  "constant_reference": "training positive fraction, unchanged across test years",
+  "new_model_fits": 0,
+  "calibrator_fits": 0,
+  "quantum_calls": 0,
+  "interpretation": "Post-final descriptive reliability/count reporting only. Binned absolute gap depends on binning and sample size; no independence/CI or operational calibration certificate. Report every model/year, do not choose thresholds, calibrators or a replacement winner. Preserve original predictions, final evidence and intents."
+}

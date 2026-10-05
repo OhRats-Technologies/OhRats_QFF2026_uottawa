@@ -1,0 +1,101 @@
+{
+  "id": "historical-encoding-v1",
+  "status": "frozen_screen",
+  "hypothesis": "Train-only scaling and bounded encoding may explain kernel weakness; compare three transforms with identical rows and equal centered kernel variance.",
+  "research_model": "gpt-6.1-sol",
+  "target": "NFDB agency-reported size >=10 ha, conditional on eligible recorded fire",
+  "train_years": [
+    1988,
+    2018
+  ],
+  "final_test_years": [
+    2019,
+    2024
+  ],
+  "validation_folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "month_sin",
+    "month_cos",
+    "lag2_mean_temp_c",
+    "lag2_total_precip_mm",
+    "lag2_snowfall_cm",
+    "lag2_heating_degree_days",
+    "lag3_mean_temp_c",
+    "lag3_total_precip_mm",
+    "lag3_snowfall_cm",
+    "lag3_heating_degree_days"
+  ],
+  "feature_budget": 4,
+  "seeds": [
+    7,
+    19,
+    31
+  ],
+  "primary_metric": "average_precision",
+  "screen_max_proposals": 8,
+  "screen_wall_seconds_per_attempt": 300,
+  "hardware_default": false,
+  "final_test_sealed": true,
+  "limitations": [
+    "NFDB reported-size proxy; ignition date and final area are not guaranteed.",
+    "Source completeness varies; approximately located incidents and identity collisions excluded.",
+    "Weather publication latency unknown; retrospective conditional classification.",
+    "Weather-only baseline; woodland integration is pending.",
+    "Exact simulated circuits with classical optimization; no hardware or speedup claim.",
+    "Angle scale 0.05 was selected in prior validation; this is an adaptive diagnostic, not independent confirmation.",
+    "Kernel normalization differs from the previous raw-kernel screen.",
+    "Small capped training samples are a feasibility screen, not a full-data benchmark.",
+    "Simulation caches states; hardware pair evaluation costs are substantially larger."
+  ],
+  "promotion_checks": [
+    "valid snapshot and frozen recipe",
+    "chronological validation",
+    "same subset objective and budget",
+    "same predictor inputs/samples",
+    "independent confirmation before final test"
+  ],
+  "parent_study": "historical-kernel-scale-v1",
+  "parent_evidence": "attempt-ad8c85bd50dd",
+  "rejection_rule": "Retain the simplest transform unless paired fold evidence supports gain; no hardware or depth/width search.",
+  "encoding_screen": {
+    "features": [
+      "latitude",
+      "month_sin",
+      "lag2_mean_temp_c",
+      "lag2_total_precip_mm"
+    ],
+    "train_cap": 128,
+    "validation_cap": 256,
+    "C": 1.0,
+    "angle_scale": 0.05,
+    "reps": 2,
+    "preprocessing": [
+      "standard_tanh",
+      "standard_clip",
+      "robust_tanh"
+    ],
+    "normalization": "training-only kernel centering / mean centered diagonal",
+    "rbf_bandwidth": "inverse training median nonzero squared distance"
+  }
+}

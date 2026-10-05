@@ -1,0 +1,67 @@
+{
+  "protocol": {
+    "source": "NRCan NFDB point snapshot 20260811",
+    "source_url": "https://cwfis.cfs.nrcan.gc.ca/downloads/nfdb/fire_pnt/current_version/NFDB_point_txt.zip",
+    "source_sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+    "years": [
+      1988,
+      2018
+    ],
+    "label": "agency-reported SIZE_HA >=10 ha, conditional on eligible recorded fire",
+    "weather_fingerprint": "52f047eb76b948cf66d5",
+    "weather_lags_months": [
+      2,
+      3
+    ],
+    "max_station_distance_km": 150,
+    "woodland": "not yet joined; historical weather-only baseline",
+    "final_test_sealed": true
+  },
+  "fingerprint": "2b9971f8918a4edb870b",
+  "created_utc": "2026-10-05T03:28:46.400513+00:00",
+  "rows": 38581,
+  "rows_by_year": {
+    "1988": 3202,
+    "1989": 2347,
+    "1990": 1533,
+    "1991": 2446,
+    "1992": 921,
+    "1993": 707,
+    "1994": 932,
+    "1995": 2015,
+    "1996": 1127,
+    "1997": 1599,
+    "1998": 2165,
+    "1999": 966,
+    "2000": 622,
+    "2001": 1499,
+    "2002": 1055,
+    "2003": 959,
+    "2004": 413,
+    "2005": 1935,
+    "2006": 2231,
+    "2007": 1110,
+    "2008": 338,
+    "2009": 377,
+    "2010": 913,
+    "2011": 1314,
+    "2012": 1606,
+    "2013": 571,
+    "2014": 293,
+    "2015": 664,
+    "2016": 638,
+    "2017": 772,
+    "2018": 1311
+  },
+  "positive_fraction": 0.07457038438609678,
+  "exclusions": {
+    "identity_collision_quarantined": 768,
+    "invalid_agency_date": 49,
+    "prescribed_or_unspecified_prescribed_code": 60
+  },
+  "join_drops": {
+    "weather_outside_150km_or_missing_month": 1028
+  },
+  "data_sha256": "c241bc054c403de2faae9203d8b69c111045c2b669c938f8e04ce21ff5c6b507",
+  "limitations": "Agency-associated dates/sizes, not guaranteed ignition or final burned area. Approximate coordinates and variable source completeness. Unknown publication latency; retrospective classification. Prescribed flags excluded; blank flags are unspecified. Woodland joins pending."
+}

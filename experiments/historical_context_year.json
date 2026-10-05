@@ -1,0 +1,102 @@
+{
+  "id": "historical-context-year-v1",
+  "status": "frozen_screen",
+  "hypothesis": "Previous-year native forest context improves prediction over static 1984 context enough to justify annual data cost, on identical incidents.",
+  "research_model": "gpt-6.1-sol",
+  "target": "NFDB agency-reported size >=10 ha, conditional on eligible recorded fire",
+  "train_years": [
+    1988,
+    2018
+  ],
+  "final_test_years": [
+    2019,
+    2024
+  ],
+  "validation_folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "features": [
+    "latitude",
+    "longitude",
+    "month_sin",
+    "month_cos",
+    "cover_conifer",
+    "cover_broadleaf",
+    "cover_mixed",
+    "cover_water",
+    "static_cover_conifer",
+    "static_cover_broadleaf",
+    "static_cover_mixed",
+    "static_cover_water"
+  ],
+  "feature_budget": 4,
+  "seeds": [
+    211
+  ],
+  "primary_metric": "average_precision",
+  "screen_max_proposals": 8,
+  "screen_wall_seconds_per_attempt": 300,
+  "hardware_default": false,
+  "final_test_sealed": true,
+  "limitations": [
+    "Static versus prior-map-year context on common eligible incidents only.",
+    "Annual product is retrospective/temporally smoothed; earlier map labels do not guarantee contemporaneous availability or freedom from future information.",
+    "Agency-associated date and reported-size proxy; no daily forecast or causality claim.",
+    "Chronological discovery years reused; final-test performance sealed."
+  ],
+  "promotion_checks": [
+    "valid snapshot and frozen recipe",
+    "chronological validation",
+    "same subset objective and budget",
+    "same predictor inputs/samples",
+    "independent confirmation before final test"
+  ],
+  "feature_groups": {
+    "geography_season": [
+      "latitude",
+      "longitude",
+      "month_sin",
+      "month_cos"
+    ],
+    "geography_static": [
+      "latitude",
+      "longitude",
+      "month_sin",
+      "month_cos",
+      "static_cover_conifer",
+      "static_cover_broadleaf",
+      "static_cover_mixed",
+      "static_cover_water"
+    ],
+    "geography_annual": [
+      "latitude",
+      "longitude",
+      "month_sin",
+      "month_cos",
+      "cover_conifer",
+      "cover_broadleaf",
+      "cover_mixed",
+      "cover_water"
+    ]
+  },
+  "parent_study": "historical-cover-components-v1",
+  "parent_evidence": "attempt-7667724839f1",
+  "rejection_rule": "Retain static context unless annual tree AP gains at least 0.01 on average, wins at least two of three fold means and subsequently survives a frozen guarded spatial check."
+}

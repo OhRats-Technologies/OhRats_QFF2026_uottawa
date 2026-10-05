@@ -1,0 +1,26 @@
+{
+  "id": "seasonal-baseline-v1",
+  "status": "frozen_training_only_control_followup",
+  "target": "NFDB agency-reported size >=10 ha conditional on eligible recorded fire",
+  "dataset": ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8",
+  "dataset_sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+  "train_years": [1988, 2018],
+  "folds": [[1988, 2006, 2007, 2010], [1988, 2010, 2011, 2014], [1988, 2014, 2015, 2018]],
+  "feature_groups": {
+    "intercept": [],
+    "season": ["month_sin", "month_cos"],
+    "geography": ["latitude", "longitude"],
+    "geography_season": ["latitude", "longitude", "month_sin", "month_cos"]
+  },
+  "logistic": {"C": 1.0, "max_iter": 1000, "random_state": 7},
+  "reference_evidence": "docs/results/historical-woodland-groups.json",
+  "reference_model": "logistic / geography_season",
+  "reference_AP_atol": 1e-9,
+  "max_logistic_fits": 9,
+  "max_wall_seconds": 60,
+  "hardware": false,
+  "final_test_access": false,
+  "post_final_exploratory": true,
+  "hypothesis": "Pure seasonal and spatial controls clarify what the formerly named seasonal baseline actually measures.",
+  "interpretation": "One deterministic fit per fold, no seed replication or hyperparameter search. Same eligible fires and preprocessing; differing input counts are declared feature-group controls, not an equal-feature selection contest. Report all conditions; do not select a new final model or infer causality. Intercept uses training prevalence."
+}

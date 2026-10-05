@@ -1,0 +1,24 @@
+{
+  "id": "training-cohort-geography-v1",
+  "status": "frozen_training_only_source_audit",
+  "parent_config": "configs/wildfires/label_quality.json",
+  "parent_config_sha256": "f66e95ebe986d26a0854affc38badd06935eaa496dc6d61170c4fbbd397ad3ca",
+  "parent_evidence": "docs/data/label_quality.json",
+  "parent_evidence_sha256": "b5ec5882cdac0d44a54c4ca518597662e98f10b1c5c8e51b9d0f7881a5515eea",
+  "latitude_edges": [
+    -90,
+    41,
+    45,
+    48,
+    51,
+    54,
+    58,
+    90
+  ],
+  "minimum_plot_denominator": 10,
+  "max_training_year": 2018,
+  "model_fits": 0,
+  "quantum_calls": 0,
+  "final_test_access": false,
+  "interpretation": "Describe class-specific latitude-associated cohort exclusions, with final edge inclusive. Approximate reported coordinates; no cause, accuracy, completeness, feature or model change."
+}

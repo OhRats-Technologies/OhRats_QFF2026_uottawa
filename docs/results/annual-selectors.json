@@ -1,0 +1,5333 @@
+{
+  "study": "annual-selectors",
+  "plan_sha256": "45c05b54c02b60778c4a217fbf79199869a13313563fcda7484431563657e294",
+  "dataset_sha256": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+  "recipe_sha256": "4a2289f19ec5ecd58393e8984a3f55c6e3e6fb9c1164b88d2ce89d02bd34034e",
+  "results": [
+    {
+      "selector": "physical_four",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "objective": 0.23960045573318567,
+      "objective_gap": 0.4422017470215174,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        41.413212411994245,
+        169.290436006697,
+        39.148148159972465,
+        85.01931802432502
+      ],
+      "mae_ha": 63.52231696702978,
+      "rmse_ha": 89.9563339473362,
+      "bias_ha": 56.29574337770333
+    },
+    {
+      "selector": "all_ten",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 73.1619304301706,
+      "objective_gap": 73.36453172145893,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        11.417536326153757,
+        9.874096679289446,
+        48.60390984919667,
+        386.695624960835
+      ],
+      "mae_ha": 101.64534236807314,
+      "rmse_ha": 185.82664267761692,
+      "bias_ha": 86.72575668082486
+    },
+    {
+      "selector": "lasso_ranking",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        1,
+        0,
+        8
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "summer_mean_temp_c",
+        "annual_mean_temp_c",
+        "annual_heating_degree_days"
+      ],
+      "objective": -0.058699125901569005,
+      "objective_gap": 0.1439021653867627,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.213781031751342,
+        5.16595080364044,
+        90.05455561361514,
+        221.69138320979354
+      ],
+      "mae_ha": 63.88215298139141,
+      "rmse_ha": 104.64554135689193,
+      "bias_ha": 57.85938239165626
+    },
+    {
+      "selector": "mutual_information",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        8,
+        0,
+        1
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_heating_degree_days",
+        "annual_mean_temp_c",
+        "summer_mean_temp_c"
+      ],
+      "objective": -0.058699125901569005,
+      "objective_gap": 0.1439021653867627,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.213781031751342,
+        5.16595080364044,
+        90.05455561361514,
+        221.69138320979334
+      ],
+      "mae_ha": 63.88215298139136,
+      "rmse_ha": 104.64554135689184,
+      "bias_ha": 57.85938239165621
+    },
+    {
+      "selector": "exact_same_qubo",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        8
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_heating_degree_days"
+      ],
+      "objective": -0.2026012912883317,
+      "objective_gap": 0.0,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.90923976753618,
+        8.959298889022588,
+        101.38501540673104,
+        162.64798310106738
+      ],
+      "mae_ha": 52.72839023988817,
+      "rmse_ha": 77.38959868835448,
+      "bias_ha": 47.053349018045445
+    },
+    {
+      "selector": "qaoa_same_qubo",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        8
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_heating_degree_days"
+      ],
+      "objective": -0.2026012912883317,
+      "objective_gap": 0.0,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.90923976753618,
+        8.959298889022588,
+        101.38501540673104,
+        162.64798310106738
+      ],
+      "mae_ha": 52.72839023988817,
+      "rmse_ha": 77.38959868835448,
+      "bias_ha": 47.053349018045445
+    },
+    {
+      "selector": "uniform_bitstring_budget",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        8
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_heating_degree_days"
+      ],
+      "objective": -0.2026012912883317,
+      "objective_gap": 0.0,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.90923976753618,
+        8.959298889022588,
+        101.38501540673104,
+        162.64798310106738
+      ],
+      "mae_ha": 52.72839023988817,
+      "rmse_ha": 77.38959868835448,
+      "bias_ha": 47.053349018045445
+    },
+    {
+      "selector": "random_four",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.12832591249677705,
+      "objective_gap": 0.07427537879155466,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        17.932059253002564,
+        2.5462545126017164,
+        77.06768709243639,
+        166.95329113961793
+      ],
+      "mae_ha": 48.52917430527399,
+      "rmse_ha": 76.95546090162196,
+      "bias_ha": 38.702787726370794
+    },
+    {
+      "selector": "physical_four",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "objective": 0.23960045573318567,
+      "objective_gap": 0.4422017470215174,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        41.413212411994245,
+        169.290436006697,
+        39.148148159972465,
+        85.01931802432502
+      ],
+      "mae_ha": 63.52231696702978,
+      "rmse_ha": 89.9563339473362,
+      "bias_ha": 56.29574337770333
+    },
+    {
+      "selector": "all_ten",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 73.1619304301706,
+      "objective_gap": 73.36453172145893,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        11.417536326153757,
+        9.874096679289446,
+        48.60390984919667,
+        386.695624960835
+      ],
+      "mae_ha": 101.64534236807314,
+      "rmse_ha": 185.82664267761692,
+      "bias_ha": 86.72575668082486
+    },
+    {
+      "selector": "lasso_ranking",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        1,
+        0,
+        8
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "summer_mean_temp_c",
+        "annual_mean_temp_c",
+        "annual_heating_degree_days"
+      ],
+      "objective": -0.058699125901569005,
+      "objective_gap": 0.1439021653867627,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.213781031751342,
+        5.16595080364044,
+        90.05455561361514,
+        221.69138320979354
+      ],
+      "mae_ha": 63.88215298139141,
+      "rmse_ha": 104.64554135689193,
+      "bias_ha": 57.85938239165626
+    },
+    {
+      "selector": "mutual_information",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        8,
+        0,
+        1
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_heating_degree_days",
+        "annual_mean_temp_c",
+        "summer_mean_temp_c"
+      ],
+      "objective": -0.058699125901569005,
+      "objective_gap": 0.1439021653867627,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.213781031751342,
+        5.16595080364044,
+        90.05455561361514,
+        221.69138320979334
+      ],
+      "mae_ha": 63.88215298139136,
+      "rmse_ha": 104.64554135689184,
+      "bias_ha": 57.85938239165621
+    },
+    {
+      "selector": "exact_same_qubo",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        8
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_heating_degree_days"
+      ],
+      "objective": -0.2026012912883317,
+      "objective_gap": 0.0,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.90923976753618,
+        8.959298889022588,
+        101.38501540673104,
+        162.64798310106738
+      ],
+      "mae_ha": 52.72839023988817,
+      "rmse_ha": 77.38959868835448,
+      "bias_ha": 47.053349018045445
+    },
+    {
+      "selector": "qaoa_same_qubo",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        8
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_heating_degree_days"
+      ],
+      "objective": -0.2026012912883317,
+      "objective_gap": 0.0,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.90923976753618,
+        8.959298889022588,
+        101.38501540673104,
+        162.64798310106738
+      ],
+      "mae_ha": 52.72839023988817,
+      "rmse_ha": 77.38959868835448,
+      "bias_ha": 47.053349018045445
+    },
+    {
+      "selector": "uniform_bitstring_budget",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        4,
+        5,
+        8,
+        9
+      ],
+      "features": [
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.18481669239567822,
+      "objective_gap": 0.01778459889265349,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        22.98614838541819,
+        3.0647935574671594,
+        73.75534060254851,
+        171.04665118715297
+      ],
+      "mae_ha": 47.33127065036551,
+      "rmse_ha": 78.4796132419904,
+      "bias_ha": 40.29119816010285
+    },
+    {
+      "selector": "random_four",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 0.08861901583426146,
+      "objective_gap": 0.29122030712259317,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        63.76600710383966,
+        72.81736450201585,
+        47.083845627718084,
+        94.315689110449
+      ],
+      "mae_ha": 45.332416168415435,
+      "rmse_ha": 54.066785710891715,
+      "bias_ha": 42.07369131296179
+    },
+    {
+      "selector": "physical_four",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "objective": 0.23960045573318567,
+      "objective_gap": 0.4422017470215174,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        41.413212411994245,
+        169.290436006697,
+        39.148148159972465,
+        85.01931802432502
+      ],
+      "mae_ha": 63.52231696702978,
+      "rmse_ha": 89.9563339473362,
+      "bias_ha": 56.29574337770333
+    },
+    {
+      "selector": "all_ten",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 73.1619304301706,
+      "objective_gap": 73.36453172145893,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        11.417536326153757,
+        9.874096679289446,
+        48.60390984919667,
+        386.695624960835
+      ],
+      "mae_ha": 101.64534236807314,
+      "rmse_ha": 185.82664267761692,
+      "bias_ha": 86.72575668082486
+    },
+    {
+      "selector": "lasso_ranking",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        1,
+        0,
+        8
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "summer_mean_temp_c",
+        "annual_mean_temp_c",
+        "annual_heating_degree_days"
+      ],
+      "objective": -0.058699125901569005,
+      "objective_gap": 0.1439021653867627,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.213781031751342,
+        5.16595080364044,
+        90.05455561361514,
+        221.69138320979354
+      ],
+      "mae_ha": 63.88215298139141,
+      "rmse_ha": 104.64554135689193,
+      "bias_ha": 57.85938239165626
+    },
+    {
+      "selector": "mutual_information",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        8,
+        0,
+        1
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_heating_degree_days",
+        "annual_mean_temp_c",
+        "summer_mean_temp_c"
+      ],
+      "objective": -0.058699125901569005,
+      "objective_gap": 0.1439021653867627,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.213781031751342,
+        5.16595080364044,
+        90.05455561361514,
+        221.69138320979334
+      ],
+      "mae_ha": 63.88215298139136,
+      "rmse_ha": 104.64554135689184,
+      "bias_ha": 57.85938239165621
+    },
+    {
+      "selector": "exact_same_qubo",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        8
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_heating_degree_days"
+      ],
+      "objective": -0.2026012912883317,
+      "objective_gap": 0.0,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        24.90923976753618,
+        8.959298889022588,
+        101.38501540673104,
+        162.64798310106738
+      ],
+      "mae_ha": 52.72839023988817,
+      "rmse_ha": 77.38959868835448,
+      "bias_ha": 47.053349018045445
+    },
+    {
+      "selector": "qaoa_same_qubo",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        3,
+        4,
+        5,
+        8
+      ],
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_heating_degree_days"
+      ],
+      "objective": -0.20140146779159807,
+      "objective_gap": 0.001199823496733643,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        30.451067374683248,
+        5.882822554822759,
+        101.94910694677932,
+        151.85718111304595
+      ],
+      "mae_ha": 48.01713664255816,
+      "rmse_ha": 72.18810089569304,
+      "bias_ha": 45.113009224288966
+    },
+    {
+      "selector": "uniform_bitstring_budget",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        1,
+        4,
+        5,
+        8
+      ],
+      "features": [
+        "summer_mean_temp_c",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_heating_degree_days"
+      ],
+      "objective": -0.18079266723677279,
+      "objective_gap": 0.021808624051558922,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        21.537918060752872,
+        4.302352133746121,
+        64.3997283226758,
+        168.2949294335573
+      ],
+      "mae_ha": 44.572398789873546,
+      "rmse_ha": 76.71494997837341,
+      "bias_ha": 37.21169671463917
+    },
+    {
+      "selector": "random_four",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": 0.1405377873209659,
+      "objective_gap": 0.3431390786092976,
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        106.20874990864174,
+        100.09236382570472,
+        65.2255889437633,
+        91.37230158539491
+      ],
+      "mae_ha": 63.302715792832316,
+      "rmse_ha": 70.66488741223294,
+      "bias_ha": 63.302715792832316
+    },
+    {
+      "selector": "physical_four",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "objective": 0.23094289907944798,
+      "objective_gap": 0.4132645962370951,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        86.69305311919275,
+        43.17818369063474,
+        68.33487680235771,
+        53.44530839791416
+      ],
+      "mae_ha": 124.20046430341068,
+      "rmse_ha": 198.1926402597629,
+      "bias_ha": -106.50952151487218
+    },
+    {
+      "selector": "all_ten",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 73.26501127927227,
+      "objective_gap": 73.44733297642992,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        47.19925633290162,
+        38.35176957517238,
+        38.00180643120186,
+        85.74662857633808
+      ],
+      "mae_ha": 150.93911466624402,
+      "rmse_ha": 221.08786460520253,
+      "bias_ha": -117.09751178849356
+    },
+    {
+      "selector": "lasso_ranking",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        8,
+        5,
+        1,
+        2
+      ],
+      "features": [
+        "annual_heating_degree_days",
+        "annual_snowfall_cm",
+        "summer_mean_temp_c",
+        "annual_precip_mm"
+      ],
+      "objective": -0.0819093157013242,
+      "objective_gap": 0.10041238145632292,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        57.84287545262825,
+        33.91019027326259,
+        32.351912328122474,
+        71.08597339419224
+      ],
+      "mae_ha": 147.13591444202316,
+      "rmse_ha": 215.52740797312666,
+      "bias_ha": -120.62463915534563
+    },
+    {
+      "selector": "mutual_information",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        7,
+        6,
+        0
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_highest_max_temp_c",
+        "annual_mean_temp_c"
+      ],
+      "objective": -0.06826144617908625,
+      "objective_gap": 0.11406025097856087,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        89.64641981937635,
+        86.98889858192902,
+        74.98069430472009,
+        86.28462968820244
+      ],
+      "mae_ha": 119.0578198525227,
+      "rmse_ha": 197.15172090070897,
+      "bias_ha": -84.94721641884004
+    },
+    {
+      "selector": "exact_same_qubo",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.18232169715764712,
+      "objective_gap": 0.0,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        97.6197433012674,
+        101.71191054554441,
+        38.41932816886811,
+        63.00797485594348
+      ],
+      "mae_ha": 120.57608871299615,
+      "rmse_ha": 193.0097777044082,
+      "bias_ha": -94.23263779949119
+    },
+    {
+      "selector": "qaoa_same_qubo",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.165022557839535,
+      "objective_gap": 0.01729913931811211,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        76.59304112857812,
+        79.53398323991469,
+        46.96136413818459,
+        61.8764338611669
+      ],
+      "mae_ha": 125.08767694560082,
+      "rmse_ha": 202.92425683471794,
+      "bias_ha": -103.18117142543595
+    },
+    {
+      "selector": "uniform_bitstring_budget",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.18232169715764712,
+      "objective_gap": 0.0,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        97.6197433012674,
+        101.71191054554441,
+        38.41932816886811,
+        63.00797485594348
+      ],
+      "mae_ha": 120.57608871299615,
+      "rmse_ha": 193.0097777044082,
+      "bias_ha": -94.23263779949119
+    },
+    {
+      "selector": "random_four",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.061689530096856515,
+      "objective_gap": 0.12063216706079061,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        40.52790760773123,
+        37.513208618572975,
+        31.12100184084414,
+        89.41918404760249
+      ],
+      "mae_ha": 155.454932102092,
+      "rmse_ha": 225.08183256418275,
+      "bias_ha": -119.77705148870932
+    },
+    {
+      "selector": "physical_four",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "objective": 0.23094289907944798,
+      "objective_gap": 0.4132645962370951,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        86.69305311919275,
+        43.17818369063474,
+        68.33487680235771,
+        53.44530839791416
+      ],
+      "mae_ha": 124.20046430341068,
+      "rmse_ha": 198.1926402597629,
+      "bias_ha": -106.50952151487218
+    },
+    {
+      "selector": "all_ten",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 73.26501127927227,
+      "objective_gap": 73.44733297642992,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        47.19925633290162,
+        38.35176957517238,
+        38.00180643120186,
+        85.74662857633808
+      ],
+      "mae_ha": 150.93911466624402,
+      "rmse_ha": 221.08786460520253,
+      "bias_ha": -117.09751178849356
+    },
+    {
+      "selector": "lasso_ranking",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        8,
+        5,
+        1,
+        2
+      ],
+      "features": [
+        "annual_heating_degree_days",
+        "annual_snowfall_cm",
+        "summer_mean_temp_c",
+        "annual_precip_mm"
+      ],
+      "objective": -0.0819093157013242,
+      "objective_gap": 0.10041238145632292,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        57.84287545262825,
+        33.91019027326259,
+        32.351912328122474,
+        71.08597339419224
+      ],
+      "mae_ha": 147.13591444202316,
+      "rmse_ha": 215.52740797312666,
+      "bias_ha": -120.62463915534563
+    },
+    {
+      "selector": "mutual_information",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        7,
+        6,
+        0
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_highest_max_temp_c",
+        "annual_mean_temp_c"
+      ],
+      "objective": -0.06826144617908625,
+      "objective_gap": 0.11406025097856087,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        89.64641981937635,
+        86.98889858192902,
+        74.98069430472009,
+        86.28462968820244
+      ],
+      "mae_ha": 119.0578198525227,
+      "rmse_ha": 197.15172090070897,
+      "bias_ha": -84.94721641884004
+    },
+    {
+      "selector": "exact_same_qubo",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.18232169715764712,
+      "objective_gap": 0.0,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        97.6197433012674,
+        101.71191054554441,
+        38.41932816886811,
+        63.00797485594348
+      ],
+      "mae_ha": 120.57608871299615,
+      "rmse_ha": 193.0097777044082,
+      "bias_ha": -94.23263779949119
+    },
+    {
+      "selector": "qaoa_same_qubo",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.18232169715764712,
+      "objective_gap": 0.0,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        97.6197433012674,
+        101.71191054554441,
+        38.41932816886811,
+        63.00797485594348
+      ],
+      "mae_ha": 120.57608871299615,
+      "rmse_ha": 193.0097777044082,
+      "bias_ha": -94.23263779949119
+    },
+    {
+      "selector": "uniform_bitstring_budget",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.165022557839535,
+      "objective_gap": 0.01729913931811211,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        76.59304112857812,
+        79.53398323991469,
+        46.96136413818459,
+        61.8764338611669
+      ],
+      "mae_ha": 125.08767694560082,
+      "rmse_ha": 202.92425683471794,
+      "bias_ha": -103.18117142543595
+    },
+    {
+      "selector": "random_four",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 0.16417385021542685,
+      "objective_gap": 0.346495547373074,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        41.22385788858693,
+        35.30754996048125,
+        52.72793709471949,
+        67.67248072628769
+      ],
+      "mae_ha": 144.99394955260345,
+      "rmse_ha": 222.30296741143414,
+      "bias_ha": -120.18942059987819
+    },
+    {
+      "selector": "physical_four",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "objective": 0.23094289907944798,
+      "objective_gap": 0.4132645962370951,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        86.69305311919275,
+        43.17818369063474,
+        68.33487680235771,
+        53.44530839791416
+      ],
+      "mae_ha": 124.20046430341068,
+      "rmse_ha": 198.1926402597629,
+      "bias_ha": -106.50952151487218
+    },
+    {
+      "selector": "all_ten",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 73.26501127927227,
+      "objective_gap": 73.44733297642992,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        47.19925633290162,
+        38.35176957517238,
+        38.00180643120186,
+        85.74662857633808
+      ],
+      "mae_ha": 150.93911466624402,
+      "rmse_ha": 221.08786460520253,
+      "bias_ha": -117.09751178849356
+    },
+    {
+      "selector": "lasso_ranking",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        8,
+        5,
+        1,
+        2
+      ],
+      "features": [
+        "annual_heating_degree_days",
+        "annual_snowfall_cm",
+        "summer_mean_temp_c",
+        "annual_precip_mm"
+      ],
+      "objective": -0.0819093157013242,
+      "objective_gap": 0.10041238145632292,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        57.84287545262825,
+        33.91019027326259,
+        32.351912328122474,
+        71.08597339419224
+      ],
+      "mae_ha": 147.13591444202316,
+      "rmse_ha": 215.52740797312666,
+      "bias_ha": -120.62463915534563
+    },
+    {
+      "selector": "mutual_information",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        7,
+        6,
+        0
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_highest_max_temp_c",
+        "annual_mean_temp_c"
+      ],
+      "objective": -0.06826144617908625,
+      "objective_gap": 0.11406025097856087,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        89.64641981937635,
+        86.98889858192902,
+        74.98069430472009,
+        86.28462968820244
+      ],
+      "mae_ha": 119.0578198525227,
+      "rmse_ha": 197.15172090070897,
+      "bias_ha": -84.94721641884004
+    },
+    {
+      "selector": "exact_same_qubo",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        3,
+        4,
+        5,
+        7
+      ],
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.18232169715764712,
+      "objective_gap": 0.0,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        97.6197433012674,
+        101.71191054554441,
+        38.41932816886811,
+        63.00797485594348
+      ],
+      "mae_ha": 120.57608871299615,
+      "rmse_ha": 193.0097777044082,
+      "bias_ha": -94.23263779949119
+    },
+    {
+      "selector": "qaoa_same_qubo",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.165022557839535,
+      "objective_gap": 0.01729913931811211,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        76.59304112857812,
+        79.53398323991469,
+        46.96136413818459,
+        61.8764338611669
+      ],
+      "mae_ha": 125.08767694560082,
+      "rmse_ha": 202.92425683471794,
+      "bias_ha": -103.18117142543595
+    },
+    {
+      "selector": "uniform_bitstring_budget",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.165022557839535,
+      "objective_gap": 0.01729913931811211,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        76.59304112857812,
+        79.53398323991469,
+        46.96136413818459,
+        61.8764338611669
+      ],
+      "mae_ha": 125.08767694560082,
+      "rmse_ha": 202.92425683471794,
+      "bias_ha": -103.18117142543595
+    },
+    {
+      "selector": "random_four",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": 0.13391793282995224,
+      "objective_gap": 0.31623962998759936,
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        53.57482156082196,
+        60.90313284080045,
+        60.848326581754364,
+        77.96194272701709
+      ],
+      "mae_ha": 136.04958104288852,
+      "rmse_ha": 215.2427155977028,
+      "bias_ha": -106.10032108979857
+    },
+    {
+      "selector": "physical_four",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "objective": 0.11458352148514095,
+      "objective_gap": 0.42716166094157515,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        25.326776324620667,
+        53.285906187311355,
+        43.43878281043541,
+        86.78864149466663
+      ],
+      "mae_ha": 81.6139330435837,
+      "rmse_ha": 87.23227470831972,
+      "bias_ha": -81.6139330435837
+    },
+    {
+      "selector": "all_ten",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 73.14634140199416,
+      "objective_gap": 73.4589195414506,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        53.846349278711955,
+        22.464041222627838,
+        61.856587286919755,
+        218.77993604044227
+      ],
+      "mae_ha": 53.42439749056673,
+      "rmse_ha": 68.58926137201074,
+      "bias_ha": -44.587231290666764
+    },
+    {
+      "selector": "lasso_ranking",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        0,
+        2,
+        1
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "summer_mean_temp_c"
+      ],
+      "objective": -0.1741354098767971,
+      "objective_gap": 0.1384427295796371,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        73.51328635965284,
+        32.64816721753066,
+        59.249720887362024,
+        172.14558963750602
+      ],
+      "mae_ha": 56.635246486491035,
+      "rmse_ha": 66.8661617597421,
+      "bias_ha": -49.43476872232933
+    },
+    {
+      "selector": "mutual_information",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        7,
+        2,
+        9
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_precip_mm",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.3125781394564342,
+      "objective_gap": 0.0,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        76.76835228655253,
+        53.20487812546303,
+        74.17065907454163,
+        104.71595454497377
+      ],
+      "mae_ha": 65.43700946757103,
+      "rmse_ha": 71.6331464945827,
+      "bias_ha": -56.608998739959475
+    },
+    {
+      "selector": "exact_same_qubo",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        5,
+        7,
+        9
+      ],
+      "features": [
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.3125781394564342,
+      "objective_gap": 0.0,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        76.76835228655253,
+        53.20487812546306,
+        74.17065907454163,
+        104.71595454497387
+      ],
+      "mae_ha": 65.43700946757099,
+      "rmse_ha": 71.63314649458266,
+      "bias_ha": -56.608998739959446
+    },
+    {
+      "selector": "qaoa_same_qubo",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "features": [
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.3117290771619494,
+      "objective_gap": 0.0008490622944847814,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        67.62834504261623,
+        53.1551455660482,
+        66.88438687249187,
+        89.58339987956931
+      ],
+      "mae_ha": 68.76914751330422,
+      "rmse_ha": 78.31007935408782,
+      "bias_ha": -64.51114040766082
+    },
+    {
+      "selector": "uniform_bitstring_budget",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        5,
+        7,
+        9
+      ],
+      "features": [
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.3125781394564342,
+      "objective_gap": 0.0,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        76.76835228655253,
+        53.20487812546306,
+        74.17065907454163,
+        104.71595454497387
+      ],
+      "mae_ha": 65.43700946757099,
+      "rmse_ha": 71.63314649458266,
+      "bias_ha": -56.608998739959446
+    },
+    {
+      "selector": "random_four",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 7,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.0840873797974453,
+      "objective_gap": 0.2284907596589889,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        134.57875570898662,
+        34.44950306294821,
+        32.69756529448197,
+        143.66443879216905
+      ],
+      "mae_ha": 85.20960647202435,
+      "rmse_ha": 87.69603231209204,
+      "bias_ha": -47.47639403319577
+    },
+    {
+      "selector": "physical_four",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "objective": 0.11458352148514095,
+      "objective_gap": 0.42716166094157515,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        25.326776324620667,
+        53.285906187311355,
+        43.43878281043541,
+        86.78864149466663
+      ],
+      "mae_ha": 81.6139330435837,
+      "rmse_ha": 87.23227470831972,
+      "bias_ha": -81.6139330435837
+    },
+    {
+      "selector": "all_ten",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 73.14634140199416,
+      "objective_gap": 73.4589195414506,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        53.846349278711955,
+        22.464041222627838,
+        61.856587286919755,
+        218.77993604044227
+      ],
+      "mae_ha": 53.42439749056673,
+      "rmse_ha": 68.58926137201074,
+      "bias_ha": -44.587231290666764
+    },
+    {
+      "selector": "lasso_ranking",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        0,
+        2,
+        1
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "summer_mean_temp_c"
+      ],
+      "objective": -0.1741354098767971,
+      "objective_gap": 0.1384427295796371,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        73.51328635965284,
+        32.64816721753066,
+        59.249720887362024,
+        172.14558963750602
+      ],
+      "mae_ha": 56.635246486491035,
+      "rmse_ha": 66.8661617597421,
+      "bias_ha": -49.43476872232933
+    },
+    {
+      "selector": "mutual_information",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        7,
+        2,
+        9
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_precip_mm",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.3125781394564342,
+      "objective_gap": 0.0,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        76.76835228655253,
+        53.20487812546303,
+        74.17065907454163,
+        104.71595454497377
+      ],
+      "mae_ha": 65.43700946757103,
+      "rmse_ha": 71.6331464945827,
+      "bias_ha": -56.608998739959475
+    },
+    {
+      "selector": "exact_same_qubo",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        5,
+        7,
+        9
+      ],
+      "features": [
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.3125781394564342,
+      "objective_gap": 0.0,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        76.76835228655253,
+        53.20487812546306,
+        74.17065907454163,
+        104.71595454497387
+      ],
+      "mae_ha": 65.43700946757099,
+      "rmse_ha": 71.63314649458266,
+      "bias_ha": -56.608998739959446
+    },
+    {
+      "selector": "qaoa_same_qubo",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        5,
+        7,
+        9
+      ],
+      "features": [
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.3125781394564342,
+      "objective_gap": 0.0,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        76.76835228655253,
+        53.20487812546306,
+        74.17065907454163,
+        104.71595454497387
+      ],
+      "mae_ha": 65.43700946757099,
+      "rmse_ha": 71.63314649458266,
+      "bias_ha": -56.608998739959446
+    },
+    {
+      "selector": "uniform_bitstring_budget",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.2787840147180205,
+      "objective_gap": 0.0337941247384137,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        107.45057715460165,
+        46.46312780623868,
+        105.85969824782745,
+        66.16701138858066
+      ],
+      "mae_ha": 76.50797926016622,
+      "rmse_ha": 85.20509104414877,
+      "bias_ha": -52.33885609853011
+    },
+    {
+      "selector": "random_four",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 19,
+      "status": "complete",
+      "feature_indices": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 0.10715177172620827,
+      "objective_gap": 0.41972991118264247,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        41.55914220820376,
+        64.30994482697002,
+        49.68922746011539,
+        93.31446453071645
+      ],
+      "mae_ha": 71.60576499134082,
+      "rmse_ha": 79.61796089467691,
+      "bias_ha": -71.60576499134082
+    },
+    {
+      "selector": "physical_four",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "objective": 0.11458352148514095,
+      "objective_gap": 0.42716166094157515,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        25.326776324620667,
+        53.285906187311355,
+        43.43878281043541,
+        86.78864149466663
+      ],
+      "mae_ha": 81.6139330435837,
+      "rmse_ha": 87.23227470831972,
+      "bias_ha": -81.6139330435837
+    },
+    {
+      "selector": "all_ten",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "objective": 73.14634140199416,
+      "objective_gap": 73.4589195414506,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        53.846349278711955,
+        22.464041222627838,
+        61.856587286919755,
+        218.77993604044227
+      ],
+      "mae_ha": 53.42439749056673,
+      "rmse_ha": 68.58926137201074,
+      "bias_ha": -44.587231290666764
+    },
+    {
+      "selector": "lasso_ranking",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        0,
+        2,
+        1
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "summer_mean_temp_c"
+      ],
+      "objective": -0.1741354098767971,
+      "objective_gap": 0.1384427295796371,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        73.51328635965284,
+        32.64816721753066,
+        59.249720887362024,
+        172.14558963750602
+      ],
+      "mae_ha": 56.635246486491035,
+      "rmse_ha": 66.8661617597421,
+      "bias_ha": -49.43476872232933
+    },
+    {
+      "selector": "mutual_information",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        5,
+        7,
+        2,
+        9
+      ],
+      "features": [
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_precip_mm",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.3125781394564342,
+      "objective_gap": 0.0,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        76.76835228655253,
+        53.20487812546303,
+        74.17065907454163,
+        104.71595454497377
+      ],
+      "mae_ha": 65.43700946757103,
+      "rmse_ha": 71.6331464945827,
+      "bias_ha": -56.608998739959475
+    },
+    {
+      "selector": "exact_same_qubo",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        5,
+        7,
+        9
+      ],
+      "features": [
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.3125781394564342,
+      "objective_gap": 0.0,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        76.76835228655253,
+        53.20487812546306,
+        74.17065907454163,
+        104.71595454497387
+      ],
+      "mae_ha": 65.43700946757099,
+      "rmse_ha": 71.63314649458266,
+      "bias_ha": -56.608998739959446
+    },
+    {
+      "selector": "qaoa_same_qubo",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": -0.2787840147180205,
+      "objective_gap": 0.0337941247384137,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        107.45057715460165,
+        46.46312780623868,
+        105.85969824782745,
+        66.16701138858066
+      ],
+      "mae_ha": 76.50797926016622,
+      "rmse_ha": 85.20509104414877,
+      "bias_ha": -52.33885609853011
+    },
+    {
+      "selector": "uniform_bitstring_budget",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        2,
+        5,
+        7,
+        9
+      ],
+      "features": [
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c",
+        "annual_cooling_degree_days"
+      ],
+      "objective": -0.3125781394564342,
+      "objective_gap": 0.0,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        76.76835228655253,
+        53.20487812546306,
+        74.17065907454163,
+        104.71595454497387
+      ],
+      "mae_ha": 65.43700946757099,
+      "rmse_ha": 71.63314649458266,
+      "bias_ha": -56.608998739959446
+    },
+    {
+      "selector": "random_four",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 31,
+      "status": "complete",
+      "feature_indices": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_lowest_min_temp_c"
+      ],
+      "objective": 0.08229189770749201,
+      "objective_gap": 0.3948700371639262,
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        57.823534928197645,
+        76.7915387143271,
+        63.340572064971866,
+        77.42682575478248
+      ],
+      "mae_ha": 64.97834188227245,
+      "rmse_ha": 78.77897001647312,
+      "bias_ha": -64.97834188227245
+    }
+  ],
+  "selection_records": [
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 7,
+      "relevance": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.2722116924618311,
+        0.0
+      ],
+      "redundancy": [
+        [
+          0.0,
+          0.46328487952545055,
+          0.27246944675339557,
+          0.37787845768829775,
+          0.1498230886559881,
+          0.627880761353475,
+          0.37999634171424873,
+          0.7519407486474182,
+          0.9435218733712822,
+          0.5147720263836347
+        ],
+        [
+          0.46328487952545055,
+          0.0,
+          0.45798912105083794,
+          0.6955567457961286,
+          0.3560103868873734,
+          0.08526709606018054,
+          0.8536546542754163,
+          0.26272103257755247,
+          0.3220922565164183,
+          0.9380528022953984
+        ],
+        [
+          0.27246944675339557,
+          0.45798912105083794,
+          0.0,
+          0.6080268179840829,
+          0.16718269071898406,
+          0.07838015838104706,
+          0.4187649492926741,
+          0.08672658880573156,
+          0.25610340174516344,
+          0.5569708060301914
+        ],
+        [
+          0.37787845768829775,
+          0.6955567457961286,
+          0.6080268179840829,
+          0.0,
+          0.15034719035874755,
+          0.0985296894180129,
+          0.692910955565869,
+          0.2560187289835419,
+          0.26718725302926793,
+          0.6818310861744459
+        ],
+        [
+          0.1498230886559881,
+          0.3560103868873734,
+          0.16718269071898406,
+          0.15034719035874755,
+          0.0,
+          0.08721339721491382,
+          0.44350770325874217,
+          0.00044523351762859587,
+          0.12634123412554257,
+          0.30231710740409395
+        ],
+        [
+          0.627880761353475,
+          0.08526709606018054,
+          0.07838015838104706,
+          0.0985296894180129,
+          0.08721339721491382,
+          0.0,
+          0.12590838521632036,
+          0.4601444408637435,
+          0.6701986997398793,
+          0.06072493384841785
+        ],
+        [
+          0.37999634171424873,
+          0.8536546542754163,
+          0.4187649492926741,
+          0.692910955565869,
+          0.44350770325874217,
+          0.12590838521632036,
+          0.0,
+          0.23457723331179461,
+          0.2308839643037212,
+          0.8369687480113501
+        ],
+        [
+          0.7519407486474182,
+          0.26272103257755247,
+          0.08672658880573156,
+          0.2560187289835419,
+          0.00044523351762859587,
+          0.4601444408637435,
+          0.23457723331179461,
+          0.0,
+          0.7293744337720947,
+          0.32726329249996244
+        ],
+        [
+          0.9435218733712822,
+          0.3220922565164183,
+          0.25610340174516344,
+          0.26718725302926793,
+          0.12634123412554257,
+          0.6701986997398793,
+          0.2308839643037212,
+          0.7293744337720947,
+          0.0,
+          0.3520393963045676
+        ],
+        [
+          0.5147720263836347,
+          0.9380528022953984,
+          0.5569708060301914,
+          0.6818310861744459,
+          0.30231710740409395,
+          0.06072493384841785,
+          0.8369687480113501,
+          0.32726329249996244,
+          0.3520393963045676,
+          0.0
+        ]
+      ],
+      "exact_objective": -0.2026012912883317,
+      "qaoa": {
+        "status": "measured_simulation",
+        "objective": -0.2026012912883317,
+        "feasible_probability": 0.2401487850603573,
+        "feasible_shots": 117,
+        "shots": 512,
+        "circuit_evaluations": 41,
+        "depth": 1,
+        "parameters": [
+          0.026543197155510515,
+          2.458483864934117
+        ],
+        "optimizer_success": false,
+        "seconds": 0.06616483395919204,
+        "limitations": "Exact-state optimization plus synthetic sampling; not a hardware timing or quantum speedup."
+      },
+      "sqd": [
+        {
+          "source": "uniform",
+          "status": "complete",
+          "unique_feasible": 83,
+          "sqd_energy": -0.20260129128833024,
+          "sampled_minimum": -0.2026012912883317,
+          "gap_to_exact": 1.4710455076283324e-15,
+          "exact_subset": [
+            2,
+            4,
+            5,
+            8
+          ],
+          "selected_subset": [
+            2,
+            4,
+            5,
+            8
+          ],
+          "sqd_seconds": 0.4064125419827178,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 1.0658141036401503e-14
+        },
+        {
+          "source": "qaoa",
+          "status": "complete",
+          "unique_feasible": 89,
+          "sqd_energy": -0.2026012912883303,
+          "sampled_minimum": -0.2026012912883317,
+          "gap_to_exact": 1.4155343563970746e-15,
+          "exact_subset": [
+            2,
+            4,
+            5,
+            8
+          ],
+          "selected_subset": [
+            2,
+            4,
+            5,
+            8
+          ],
+          "sqd_seconds": 0.15716299996711314,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 9.325873406851315e-15
+        }
+      ],
+      "extra_sampling_state_evaluations": 1,
+      "lasso_iterations": 79,
+      "feasible_subsets": 210
+    },
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 19,
+      "relevance": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.2722116924618311,
+        0.0
+      ],
+      "redundancy": [
+        [
+          0.0,
+          0.46328487952545055,
+          0.27246944675339557,
+          0.37787845768829775,
+          0.1498230886559881,
+          0.627880761353475,
+          0.37999634171424873,
+          0.7519407486474182,
+          0.9435218733712822,
+          0.5147720263836347
+        ],
+        [
+          0.46328487952545055,
+          0.0,
+          0.45798912105083794,
+          0.6955567457961286,
+          0.3560103868873734,
+          0.08526709606018054,
+          0.8536546542754163,
+          0.26272103257755247,
+          0.3220922565164183,
+          0.9380528022953984
+        ],
+        [
+          0.27246944675339557,
+          0.45798912105083794,
+          0.0,
+          0.6080268179840829,
+          0.16718269071898406,
+          0.07838015838104706,
+          0.4187649492926741,
+          0.08672658880573156,
+          0.25610340174516344,
+          0.5569708060301914
+        ],
+        [
+          0.37787845768829775,
+          0.6955567457961286,
+          0.6080268179840829,
+          0.0,
+          0.15034719035874755,
+          0.0985296894180129,
+          0.692910955565869,
+          0.2560187289835419,
+          0.26718725302926793,
+          0.6818310861744459
+        ],
+        [
+          0.1498230886559881,
+          0.3560103868873734,
+          0.16718269071898406,
+          0.15034719035874755,
+          0.0,
+          0.08721339721491382,
+          0.44350770325874217,
+          0.00044523351762859587,
+          0.12634123412554257,
+          0.30231710740409395
+        ],
+        [
+          0.627880761353475,
+          0.08526709606018054,
+          0.07838015838104706,
+          0.0985296894180129,
+          0.08721339721491382,
+          0.0,
+          0.12590838521632036,
+          0.4601444408637435,
+          0.6701986997398793,
+          0.06072493384841785
+        ],
+        [
+          0.37999634171424873,
+          0.8536546542754163,
+          0.4187649492926741,
+          0.692910955565869,
+          0.44350770325874217,
+          0.12590838521632036,
+          0.0,
+          0.23457723331179461,
+          0.2308839643037212,
+          0.8369687480113501
+        ],
+        [
+          0.7519407486474182,
+          0.26272103257755247,
+          0.08672658880573156,
+          0.2560187289835419,
+          0.00044523351762859587,
+          0.4601444408637435,
+          0.23457723331179461,
+          0.0,
+          0.7293744337720947,
+          0.32726329249996244
+        ],
+        [
+          0.9435218733712822,
+          0.3220922565164183,
+          0.25610340174516344,
+          0.26718725302926793,
+          0.12634123412554257,
+          0.6701986997398793,
+          0.2308839643037212,
+          0.7293744337720947,
+          0.0,
+          0.3520393963045676
+        ],
+        [
+          0.5147720263836347,
+          0.9380528022953984,
+          0.5569708060301914,
+          0.6818310861744459,
+          0.30231710740409395,
+          0.06072493384841785,
+          0.8369687480113501,
+          0.32726329249996244,
+          0.3520393963045676,
+          0.0
+        ]
+      ],
+      "exact_objective": -0.2026012912883317,
+      "qaoa": {
+        "status": "measured_simulation",
+        "objective": -0.2026012912883317,
+        "feasible_probability": 0.2050766388460607,
+        "feasible_shots": 94,
+        "shots": 512,
+        "circuit_evaluations": 28,
+        "depth": 1,
+        "parameters": [
+          0.7228543650134759,
+          1.570796718987296
+        ],
+        "optimizer_success": true,
+        "seconds": 0.03740604198537767,
+        "limitations": "Exact-state optimization plus synthetic sampling; not a hardware timing or quantum speedup."
+      },
+      "sqd": [
+        {
+          "source": "uniform",
+          "status": "complete",
+          "unique_feasible": 86,
+          "sqd_energy": -0.18481669239567416,
+          "sampled_minimum": -0.18481669239567822,
+          "gap_to_exact": 0.017784598892657544,
+          "exact_subset": [
+            2,
+            4,
+            5,
+            8
+          ],
+          "selected_subset": [
+            4,
+            5,
+            8,
+            9
+          ],
+          "sqd_seconds": 0.1500638750148937,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 9.325873406851315e-15
+        },
+        {
+          "source": "qaoa",
+          "status": "complete",
+          "unique_feasible": 79,
+          "sqd_energy": -0.2026012912883307,
+          "sampled_minimum": -0.2026012912883317,
+          "gap_to_exact": 9.992007221626409e-16,
+          "exact_subset": [
+            2,
+            4,
+            5,
+            8
+          ],
+          "selected_subset": [
+            2,
+            4,
+            5,
+            8
+          ],
+          "sqd_seconds": 0.15465883305296302,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 1.0658141036401503e-14
+        }
+      ],
+      "extra_sampling_state_evaluations": 1,
+      "lasso_iterations": 79,
+      "feasible_subsets": 210
+    },
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 31,
+      "relevance": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.2722116924618311,
+        0.0
+      ],
+      "redundancy": [
+        [
+          0.0,
+          0.46328487952545055,
+          0.27246944675339557,
+          0.37787845768829775,
+          0.1498230886559881,
+          0.627880761353475,
+          0.37999634171424873,
+          0.7519407486474182,
+          0.9435218733712822,
+          0.5147720263836347
+        ],
+        [
+          0.46328487952545055,
+          0.0,
+          0.45798912105083794,
+          0.6955567457961286,
+          0.3560103868873734,
+          0.08526709606018054,
+          0.8536546542754163,
+          0.26272103257755247,
+          0.3220922565164183,
+          0.9380528022953984
+        ],
+        [
+          0.27246944675339557,
+          0.45798912105083794,
+          0.0,
+          0.6080268179840829,
+          0.16718269071898406,
+          0.07838015838104706,
+          0.4187649492926741,
+          0.08672658880573156,
+          0.25610340174516344,
+          0.5569708060301914
+        ],
+        [
+          0.37787845768829775,
+          0.6955567457961286,
+          0.6080268179840829,
+          0.0,
+          0.15034719035874755,
+          0.0985296894180129,
+          0.692910955565869,
+          0.2560187289835419,
+          0.26718725302926793,
+          0.6818310861744459
+        ],
+        [
+          0.1498230886559881,
+          0.3560103868873734,
+          0.16718269071898406,
+          0.15034719035874755,
+          0.0,
+          0.08721339721491382,
+          0.44350770325874217,
+          0.00044523351762859587,
+          0.12634123412554257,
+          0.30231710740409395
+        ],
+        [
+          0.627880761353475,
+          0.08526709606018054,
+          0.07838015838104706,
+          0.0985296894180129,
+          0.08721339721491382,
+          0.0,
+          0.12590838521632036,
+          0.4601444408637435,
+          0.6701986997398793,
+          0.06072493384841785
+        ],
+        [
+          0.37999634171424873,
+          0.8536546542754163,
+          0.4187649492926741,
+          0.692910955565869,
+          0.44350770325874217,
+          0.12590838521632036,
+          0.0,
+          0.23457723331179461,
+          0.2308839643037212,
+          0.8369687480113501
+        ],
+        [
+          0.7519407486474182,
+          0.26272103257755247,
+          0.08672658880573156,
+          0.2560187289835419,
+          0.00044523351762859587,
+          0.4601444408637435,
+          0.23457723331179461,
+          0.0,
+          0.7293744337720947,
+          0.32726329249996244
+        ],
+        [
+          0.9435218733712822,
+          0.3220922565164183,
+          0.25610340174516344,
+          0.26718725302926793,
+          0.12634123412554257,
+          0.6701986997398793,
+          0.2308839643037212,
+          0.7293744337720947,
+          0.0,
+          0.3520393963045676
+        ],
+        [
+          0.5147720263836347,
+          0.9380528022953984,
+          0.5569708060301914,
+          0.6818310861744459,
+          0.30231710740409395,
+          0.06072493384841785,
+          0.8369687480113501,
+          0.32726329249996244,
+          0.3520393963045676,
+          0.0
+        ]
+      ],
+      "exact_objective": -0.2026012912883317,
+      "qaoa": {
+        "status": "measured_simulation",
+        "objective": -0.20140146779159807,
+        "feasible_probability": 0.19945101938173057,
+        "feasible_shots": 90,
+        "shots": 512,
+        "circuit_evaluations": 41,
+        "depth": 1,
+        "parameters": [
+          0.4519884170080607,
+          0.0017437320812133319
+        ],
+        "optimizer_success": false,
+        "seconds": 0.05568029196001589,
+        "limitations": "Exact-state optimization plus synthetic sampling; not a hardware timing or quantum speedup."
+      },
+      "sqd": [
+        {
+          "source": "uniform",
+          "status": "complete",
+          "unique_feasible": 82,
+          "sqd_energy": -0.1807926672367639,
+          "sampled_minimum": -0.18079266723677279,
+          "gap_to_exact": 0.021808624051567804,
+          "exact_subset": [
+            2,
+            4,
+            5,
+            8
+          ],
+          "selected_subset": [
+            1,
+            4,
+            5,
+            8
+          ],
+          "sqd_seconds": 0.169376082951203,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 1.0658141036401503e-14
+        },
+        {
+          "source": "qaoa",
+          "status": "complete",
+          "unique_feasible": 74,
+          "sqd_energy": -0.20140146779159518,
+          "sampled_minimum": -0.20140146779159807,
+          "gap_to_exact": 0.0011998234967365295,
+          "exact_subset": [
+            2,
+            4,
+            5,
+            8
+          ],
+          "selected_subset": [
+            3,
+            4,
+            5,
+            8
+          ],
+          "sqd_seconds": 0.15633354196324944,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 9.769962616701378e-15
+        }
+      ],
+      "extra_sampling_state_evaluations": 1,
+      "lasso_iterations": 79,
+      "feasible_subsets": 210
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 7,
+      "relevance": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0338138357060829,
+        0.054939072005260825,
+        0.0,
+        0.0
+      ],
+      "redundancy": [
+        [
+          0.0,
+          0.5227154510887863,
+          0.30099248045377297,
+          0.3311736774195038,
+          0.26048923994228945,
+          0.5655868568310597,
+          0.420053957314049,
+          0.7462657600842014,
+          0.9170816293520428,
+          0.572175725872771
+        ],
+        [
+          0.5227154510887863,
+          0.0,
+          0.4144109610559978,
+          0.5985319043038674,
+          0.4378602844459274,
+          0.11393551816290812,
+          0.8425274911657807,
+          0.32728840944240145,
+          0.3580084613562364,
+          0.9387016531478309
+        ],
+        [
+          0.30099248045377297,
+          0.4144109610559978,
+          0.0,
+          0.6034903146314637,
+          0.2667154694427453,
+          0.2552234370766054,
+          0.4524646488309893,
+          0.07666870907674676,
+          0.3000113322149336,
+          0.5432270665955048
+        ],
+        [
+          0.3311736774195038,
+          0.5985319043038674,
+          0.6034903146314637,
+          0.0,
+          0.144862215673793,
+          0.06891896434114494,
+          0.6834161344157561,
+          0.17723676376388542,
+          0.1666213675719324,
+          0.6319289066471395
+        ],
+        [
+          0.26048923994228945,
+          0.4378602844459274,
+          0.2667154694427453,
+          0.144862215673793,
+          0.0,
+          0.1670056865779575,
+          0.4748936482191181,
+          0.11180475309152385,
+          0.2528820660978054,
+          0.39333014764419466
+        ],
+        [
+          0.5655868568310597,
+          0.11393551816290812,
+          0.2552234370766054,
+          0.06891896434114494,
+          0.1670056865779575,
+          0.0,
+          0.1578670649682296,
+          0.30712846667571125,
+          0.5754985017174497,
+          0.15622256297027778
+        ],
+        [
+          0.420053957314049,
+          0.8425274911657807,
+          0.4524646488309893,
+          0.6834161344157561,
+          0.4748936482191181,
+          0.1578670649682296,
+          0.0,
+          0.25021926311170845,
+          0.24712671202615277,
+          0.843990805323618
+        ],
+        [
+          0.7462657600842014,
+          0.32728840944240145,
+          0.07666870907674676,
+          0.17723676376388542,
+          0.11180475309152385,
+          0.30712846667571125,
+          0.25021926311170845,
+          0.0,
+          0.7269096666757787,
+          0.36246843862922273
+        ],
+        [
+          0.9170816293520428,
+          0.3580084613562364,
+          0.3000113322149336,
+          0.1666213675719324,
+          0.2528820660978054,
+          0.5754985017174497,
+          0.24712671202615277,
+          0.7269096666757787,
+          0.0,
+          0.380461498950249
+        ],
+        [
+          0.572175725872771,
+          0.9387016531478309,
+          0.5432270665955048,
+          0.6319289066471395,
+          0.39333014764419466,
+          0.15622256297027778,
+          0.843990805323618,
+          0.36246843862922273,
+          0.380461498950249,
+          0.0
+        ]
+      ],
+      "exact_objective": -0.18232169715764712,
+      "qaoa": {
+        "status": "measured_simulation",
+        "objective": -0.165022557839535,
+        "feasible_probability": 0.4864921753153445,
+        "feasible_shots": 242,
+        "shots": 512,
+        "circuit_evaluations": 41,
+        "depth": 1,
+        "parameters": [
+          0.09686351171394098,
+          2.909317936820201
+        ],
+        "optimizer_success": false,
+        "seconds": 0.05639058304950595,
+        "limitations": "Exact-state optimization plus synthetic sampling; not a hardware timing or quantum speedup."
+      },
+      "sqd": [
+        {
+          "source": "uniform",
+          "status": "complete",
+          "unique_feasible": 83,
+          "sqd_energy": -0.1823216971576436,
+          "sampled_minimum": -0.18232169715764712,
+          "gap_to_exact": 3.524958103184872e-15,
+          "exact_subset": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "selected_subset": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "sqd_seconds": 0.03503404196817428,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 1.865174681370263e-14
+        },
+        {
+          "source": "qaoa",
+          "status": "complete",
+          "unique_feasible": 142,
+          "sqd_energy": -0.16502255783952866,
+          "sampled_minimum": -0.165022557839535,
+          "gap_to_exact": 0.017299139318118467,
+          "exact_subset": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "selected_subset": [
+            2,
+            4,
+            5,
+            7
+          ],
+          "sqd_seconds": 0.15806716703809798,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 2.042810365310288e-14
+        }
+      ],
+      "extra_sampling_state_evaluations": 1,
+      "lasso_iterations": 28,
+      "feasible_subsets": 210
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 19,
+      "relevance": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0338138357060829,
+        0.054939072005260825,
+        0.0,
+        0.0
+      ],
+      "redundancy": [
+        [
+          0.0,
+          0.5227154510887863,
+          0.30099248045377297,
+          0.3311736774195038,
+          0.26048923994228945,
+          0.5655868568310597,
+          0.420053957314049,
+          0.7462657600842014,
+          0.9170816293520428,
+          0.572175725872771
+        ],
+        [
+          0.5227154510887863,
+          0.0,
+          0.4144109610559978,
+          0.5985319043038674,
+          0.4378602844459274,
+          0.11393551816290812,
+          0.8425274911657807,
+          0.32728840944240145,
+          0.3580084613562364,
+          0.9387016531478309
+        ],
+        [
+          0.30099248045377297,
+          0.4144109610559978,
+          0.0,
+          0.6034903146314637,
+          0.2667154694427453,
+          0.2552234370766054,
+          0.4524646488309893,
+          0.07666870907674676,
+          0.3000113322149336,
+          0.5432270665955048
+        ],
+        [
+          0.3311736774195038,
+          0.5985319043038674,
+          0.6034903146314637,
+          0.0,
+          0.144862215673793,
+          0.06891896434114494,
+          0.6834161344157561,
+          0.17723676376388542,
+          0.1666213675719324,
+          0.6319289066471395
+        ],
+        [
+          0.26048923994228945,
+          0.4378602844459274,
+          0.2667154694427453,
+          0.144862215673793,
+          0.0,
+          0.1670056865779575,
+          0.4748936482191181,
+          0.11180475309152385,
+          0.2528820660978054,
+          0.39333014764419466
+        ],
+        [
+          0.5655868568310597,
+          0.11393551816290812,
+          0.2552234370766054,
+          0.06891896434114494,
+          0.1670056865779575,
+          0.0,
+          0.1578670649682296,
+          0.30712846667571125,
+          0.5754985017174497,
+          0.15622256297027778
+        ],
+        [
+          0.420053957314049,
+          0.8425274911657807,
+          0.4524646488309893,
+          0.6834161344157561,
+          0.4748936482191181,
+          0.1578670649682296,
+          0.0,
+          0.25021926311170845,
+          0.24712671202615277,
+          0.843990805323618
+        ],
+        [
+          0.7462657600842014,
+          0.32728840944240145,
+          0.07666870907674676,
+          0.17723676376388542,
+          0.11180475309152385,
+          0.30712846667571125,
+          0.25021926311170845,
+          0.0,
+          0.7269096666757787,
+          0.36246843862922273
+        ],
+        [
+          0.9170816293520428,
+          0.3580084613562364,
+          0.3000113322149336,
+          0.1666213675719324,
+          0.2528820660978054,
+          0.5754985017174497,
+          0.24712671202615277,
+          0.7269096666757787,
+          0.0,
+          0.380461498950249
+        ],
+        [
+          0.572175725872771,
+          0.9387016531478309,
+          0.5432270665955048,
+          0.6319289066471395,
+          0.39333014764419466,
+          0.15622256297027778,
+          0.843990805323618,
+          0.36246843862922273,
+          0.380461498950249,
+          0.0
+        ]
+      ],
+      "exact_objective": -0.18232169715764712,
+      "qaoa": {
+        "status": "measured_simulation",
+        "objective": -0.18232169715764712,
+        "feasible_probability": 0.2050201619660915,
+        "feasible_shots": 94,
+        "shots": 512,
+        "circuit_evaluations": 30,
+        "depth": 1,
+        "parameters": [
+          0.7264325003129112,
+          1.5708114093085606
+        ],
+        "optimizer_success": true,
+        "seconds": 0.04028487496543676,
+        "limitations": "Exact-state optimization plus synthetic sampling; not a hardware timing or quantum speedup."
+      },
+      "sqd": [
+        {
+          "source": "uniform",
+          "status": "complete",
+          "unique_feasible": 86,
+          "sqd_energy": -0.16502255783952843,
+          "sampled_minimum": -0.165022557839535,
+          "gap_to_exact": 0.01729913931811869,
+          "exact_subset": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "selected_subset": [
+            2,
+            4,
+            5,
+            7
+          ],
+          "sqd_seconds": 0.03510775009635836,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 2.042810365310288e-14
+        },
+        {
+          "source": "qaoa",
+          "status": "complete",
+          "unique_feasible": 79,
+          "sqd_energy": -0.18232169715764254,
+          "sampled_minimum": -0.18232169715764712,
+          "gap_to_exact": 4.579669976578771e-15,
+          "exact_subset": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "selected_subset": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "sqd_seconds": 0.03470254200510681,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 2.042810365310288e-14
+        }
+      ],
+      "extra_sampling_state_evaluations": 1,
+      "lasso_iterations": 28,
+      "feasible_subsets": 210
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 31,
+      "relevance": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0338138357060829,
+        0.054939072005260825,
+        0.0,
+        0.0
+      ],
+      "redundancy": [
+        [
+          0.0,
+          0.5227154510887863,
+          0.30099248045377297,
+          0.3311736774195038,
+          0.26048923994228945,
+          0.5655868568310597,
+          0.420053957314049,
+          0.7462657600842014,
+          0.9170816293520428,
+          0.572175725872771
+        ],
+        [
+          0.5227154510887863,
+          0.0,
+          0.4144109610559978,
+          0.5985319043038674,
+          0.4378602844459274,
+          0.11393551816290812,
+          0.8425274911657807,
+          0.32728840944240145,
+          0.3580084613562364,
+          0.9387016531478309
+        ],
+        [
+          0.30099248045377297,
+          0.4144109610559978,
+          0.0,
+          0.6034903146314637,
+          0.2667154694427453,
+          0.2552234370766054,
+          0.4524646488309893,
+          0.07666870907674676,
+          0.3000113322149336,
+          0.5432270665955048
+        ],
+        [
+          0.3311736774195038,
+          0.5985319043038674,
+          0.6034903146314637,
+          0.0,
+          0.144862215673793,
+          0.06891896434114494,
+          0.6834161344157561,
+          0.17723676376388542,
+          0.1666213675719324,
+          0.6319289066471395
+        ],
+        [
+          0.26048923994228945,
+          0.4378602844459274,
+          0.2667154694427453,
+          0.144862215673793,
+          0.0,
+          0.1670056865779575,
+          0.4748936482191181,
+          0.11180475309152385,
+          0.2528820660978054,
+          0.39333014764419466
+        ],
+        [
+          0.5655868568310597,
+          0.11393551816290812,
+          0.2552234370766054,
+          0.06891896434114494,
+          0.1670056865779575,
+          0.0,
+          0.1578670649682296,
+          0.30712846667571125,
+          0.5754985017174497,
+          0.15622256297027778
+        ],
+        [
+          0.420053957314049,
+          0.8425274911657807,
+          0.4524646488309893,
+          0.6834161344157561,
+          0.4748936482191181,
+          0.1578670649682296,
+          0.0,
+          0.25021926311170845,
+          0.24712671202615277,
+          0.843990805323618
+        ],
+        [
+          0.7462657600842014,
+          0.32728840944240145,
+          0.07666870907674676,
+          0.17723676376388542,
+          0.11180475309152385,
+          0.30712846667571125,
+          0.25021926311170845,
+          0.0,
+          0.7269096666757787,
+          0.36246843862922273
+        ],
+        [
+          0.9170816293520428,
+          0.3580084613562364,
+          0.3000113322149336,
+          0.1666213675719324,
+          0.2528820660978054,
+          0.5754985017174497,
+          0.24712671202615277,
+          0.7269096666757787,
+          0.0,
+          0.380461498950249
+        ],
+        [
+          0.572175725872771,
+          0.9387016531478309,
+          0.5432270665955048,
+          0.6319289066471395,
+          0.39333014764419466,
+          0.15622256297027778,
+          0.843990805323618,
+          0.36246843862922273,
+          0.380461498950249,
+          0.0
+        ]
+      ],
+      "exact_objective": -0.18232169715764712,
+      "qaoa": {
+        "status": "measured_simulation",
+        "objective": -0.165022557839535,
+        "feasible_probability": 0.19839851342150056,
+        "feasible_shots": 90,
+        "shots": 512,
+        "circuit_evaluations": 41,
+        "depth": 1,
+        "parameters": [
+          0.45526983498569895,
+          0.0020610555634811775
+        ],
+        "optimizer_success": false,
+        "seconds": 0.05473283294122666,
+        "limitations": "Exact-state optimization plus synthetic sampling; not a hardware timing or quantum speedup."
+      },
+      "sqd": [
+        {
+          "source": "uniform",
+          "status": "complete",
+          "unique_feasible": 82,
+          "sqd_energy": -0.16502255783952902,
+          "sampled_minimum": -0.165022557839535,
+          "gap_to_exact": 0.017299139318118106,
+          "exact_subset": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "selected_subset": [
+            2,
+            4,
+            5,
+            7
+          ],
+          "sqd_seconds": 0.03471991699188948,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 1.8207657603852567e-14
+        },
+        {
+          "source": "qaoa",
+          "status": "complete",
+          "unique_feasible": 74,
+          "sqd_energy": -0.16502255783952832,
+          "sampled_minimum": -0.165022557839535,
+          "gap_to_exact": 0.0172991393181188,
+          "exact_subset": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "selected_subset": [
+            2,
+            4,
+            5,
+            7
+          ],
+          "sqd_seconds": 0.03416404197923839,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 1.8207657603852567e-14
+        }
+      ],
+      "extra_sampling_state_evaluations": 1,
+      "lasso_iterations": 28,
+      "feasible_subsets": 210
+    },
+    {
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 7,
+      "relevance": [
+        0.0,
+        0.21547605810713527,
+        0.30536630756410515,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.34560340097241127,
+        0.0,
+        0.27768033524782604
+      ],
+      "redundancy": [
+        [
+          0.0,
+          0.5875169067122581,
+          0.32243691689927906,
+          0.4043994224930728,
+          0.27047501462616524,
+          0.615613442128391,
+          0.5082064589534866,
+          0.7787988927545986,
+          0.9121024188786149,
+          0.6337276454164109
+        ],
+        [
+          0.5875169067122581,
+          0.0,
+          0.40730599128204553,
+          0.6328337616565395,
+          0.36754814663765306,
+          0.21186360470577642,
+          0.8544903499270305,
+          0.3933380847454445,
+          0.4603672114787766,
+          0.9420117654180827
+        ],
+        [
+          0.32243691689927906,
+          0.40730599128204553,
+          0.0,
+          0.5830363557921926,
+          0.35012359026419027,
+          0.328165316764372,
+          0.39749700037560437,
+          0.141943953915427,
+          0.3382314566807912,
+          0.5089029164849916
+        ],
+        [
+          0.4043994224930728,
+          0.6328337616565395,
+          0.5830363557921926,
+          0.0,
+          0.12241480030198718,
+          0.15979053218262784,
+          0.6954622832495667,
+          0.2340666542013633,
+          0.27354528241160253,
+          0.6549436647912106
+        ],
+        [
+          0.27047501462616524,
+          0.36754814663765306,
+          0.35012359026419027,
+          0.12241480030198718,
+          0.0,
+          0.1971384744448503,
+          0.3672787760224606,
+          0.21415819102995637,
+          0.24233102589411598,
+          0.35157554607402425
+        ],
+        [
+          0.615613442128391,
+          0.21186360470577642,
+          0.328165316764372,
+          0.15979053218262784,
+          0.1971384744448503,
+          0.0,
+          0.23615548648190499,
+          0.37597142257445,
+          0.6319987950602278,
+          0.2400981280203328
+        ],
+        [
+          0.5082064589534866,
+          0.8544903499270305,
+          0.39749700037560437,
+          0.6954622832495667,
+          0.3672787760224606,
+          0.23615548648190499,
+          0.0,
+          0.3379045377324358,
+          0.38418376194664505,
+          0.8575043296799835
+        ],
+        [
+          0.7787988927545986,
+          0.3933380847454445,
+          0.141943953915427,
+          0.2340666542013633,
+          0.21415819102995637,
+          0.37597142257445,
+          0.3379045377324358,
+          0.0,
+          0.7470341454110425,
+          0.4399307201162213
+        ],
+        [
+          0.9121024188786149,
+          0.4603672114787765,
+          0.3382314566807912,
+          0.27354528241160253,
+          0.24233102589411598,
+          0.6319987950602277,
+          0.38418376194664505,
+          0.7470341454110425,
+          0.0,
+          0.47405194698503683
+        ],
+        [
+          0.6337276454164109,
+          0.9420117654180827,
+          0.5089029164849916,
+          0.6549436647912106,
+          0.35157554607402425,
+          0.2400981280203328,
+          0.8575043296799835,
+          0.4399307201162213,
+          0.47405194698503683,
+          0.0
+        ]
+      ],
+      "exact_objective": -0.3125781394564342,
+      "qaoa": {
+        "status": "measured_simulation",
+        "objective": -0.3117290771619494,
+        "feasible_probability": 0.2386477544979752,
+        "feasible_shots": 117,
+        "shots": 512,
+        "circuit_evaluations": 41,
+        "depth": 1,
+        "parameters": [
+          0.024601480326080796,
+          2.4528958397656004
+        ],
+        "optimizer_success": false,
+        "seconds": 0.05691250006202608,
+        "limitations": "Exact-state optimization plus synthetic sampling; not a hardware timing or quantum speedup."
+      },
+      "sqd": [
+        {
+          "source": "uniform",
+          "status": "complete",
+          "unique_feasible": 83,
+          "sqd_energy": -0.3125781394564366,
+          "sampled_minimum": -0.3125781394564342,
+          "gap_to_exact": -2.3869795029440866e-15,
+          "exact_subset": [
+            2,
+            5,
+            7,
+            9
+          ],
+          "selected_subset": [
+            2,
+            5,
+            7,
+            9
+          ],
+          "sqd_seconds": 0.03482520894613117,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 2.0650148258027912e-14
+        },
+        {
+          "source": "qaoa",
+          "status": "complete",
+          "unique_feasible": 92,
+          "sqd_energy": -0.31172907716195797,
+          "sampled_minimum": -0.3117290771619494,
+          "gap_to_exact": 0.0008490622944762327,
+          "exact_subset": [
+            2,
+            5,
+            7,
+            9
+          ],
+          "selected_subset": [
+            1,
+            2,
+            5,
+            7
+          ],
+          "sqd_seconds": 0.14967191696632653,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 2.0650148258027912e-14
+        }
+      ],
+      "extra_sampling_state_evaluations": 1,
+      "lasso_iterations": 94,
+      "feasible_subsets": 210
+    },
+    {
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 19,
+      "relevance": [
+        0.0,
+        0.21547605810713527,
+        0.30536630756410515,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.34560340097241127,
+        0.0,
+        0.27768033524782604
+      ],
+      "redundancy": [
+        [
+          0.0,
+          0.5875169067122581,
+          0.32243691689927906,
+          0.4043994224930728,
+          0.27047501462616524,
+          0.615613442128391,
+          0.5082064589534866,
+          0.7787988927545986,
+          0.9121024188786149,
+          0.6337276454164109
+        ],
+        [
+          0.5875169067122581,
+          0.0,
+          0.40730599128204553,
+          0.6328337616565395,
+          0.36754814663765306,
+          0.21186360470577642,
+          0.8544903499270305,
+          0.3933380847454445,
+          0.4603672114787766,
+          0.9420117654180827
+        ],
+        [
+          0.32243691689927906,
+          0.40730599128204553,
+          0.0,
+          0.5830363557921926,
+          0.35012359026419027,
+          0.328165316764372,
+          0.39749700037560437,
+          0.141943953915427,
+          0.3382314566807912,
+          0.5089029164849916
+        ],
+        [
+          0.4043994224930728,
+          0.6328337616565395,
+          0.5830363557921926,
+          0.0,
+          0.12241480030198718,
+          0.15979053218262784,
+          0.6954622832495667,
+          0.2340666542013633,
+          0.27354528241160253,
+          0.6549436647912106
+        ],
+        [
+          0.27047501462616524,
+          0.36754814663765306,
+          0.35012359026419027,
+          0.12241480030198718,
+          0.0,
+          0.1971384744448503,
+          0.3672787760224606,
+          0.21415819102995637,
+          0.24233102589411598,
+          0.35157554607402425
+        ],
+        [
+          0.615613442128391,
+          0.21186360470577642,
+          0.328165316764372,
+          0.15979053218262784,
+          0.1971384744448503,
+          0.0,
+          0.23615548648190499,
+          0.37597142257445,
+          0.6319987950602278,
+          0.2400981280203328
+        ],
+        [
+          0.5082064589534866,
+          0.8544903499270305,
+          0.39749700037560437,
+          0.6954622832495667,
+          0.3672787760224606,
+          0.23615548648190499,
+          0.0,
+          0.3379045377324358,
+          0.38418376194664505,
+          0.8575043296799835
+        ],
+        [
+          0.7787988927545986,
+          0.3933380847454445,
+          0.141943953915427,
+          0.2340666542013633,
+          0.21415819102995637,
+          0.37597142257445,
+          0.3379045377324358,
+          0.0,
+          0.7470341454110425,
+          0.4399307201162213
+        ],
+        [
+          0.9121024188786149,
+          0.4603672114787765,
+          0.3382314566807912,
+          0.27354528241160253,
+          0.24233102589411598,
+          0.6319987950602277,
+          0.38418376194664505,
+          0.7470341454110425,
+          0.0,
+          0.47405194698503683
+        ],
+        [
+          0.6337276454164109,
+          0.9420117654180827,
+          0.5089029164849916,
+          0.6549436647912106,
+          0.35157554607402425,
+          0.2400981280203328,
+          0.8575043296799835,
+          0.4399307201162213,
+          0.47405194698503683,
+          0.0
+        ]
+      ],
+      "exact_objective": -0.3125781394564342,
+      "qaoa": {
+        "status": "measured_simulation",
+        "objective": -0.3125781394564342,
+        "feasible_probability": 0.20517300562193658,
+        "feasible_shots": 94,
+        "shots": 512,
+        "circuit_evaluations": 29,
+        "depth": 1,
+        "parameters": [
+          0.7221767791344307,
+          1.5707712641564286
+        ],
+        "optimizer_success": true,
+        "seconds": 0.03854933299589902,
+        "limitations": "Exact-state optimization plus synthetic sampling; not a hardware timing or quantum speedup."
+      },
+      "sqd": [
+        {
+          "source": "uniform",
+          "status": "complete",
+          "unique_feasible": 86,
+          "sqd_energy": -0.2787840147180282,
+          "sampled_minimum": -0.2787840147180205,
+          "gap_to_exact": 0.033794124738405984,
+          "exact_subset": [
+            2,
+            5,
+            7,
+            9
+          ],
+          "selected_subset": [
+            2,
+            4,
+            5,
+            7
+          ],
+          "sqd_seconds": 0.03514487505890429,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 2.0650148258027912e-14
+        },
+        {
+          "source": "qaoa",
+          "status": "complete",
+          "unique_feasible": 79,
+          "sqd_energy": -0.31257813945643775,
+          "sampled_minimum": -0.3125781394564342,
+          "gap_to_exact": -3.552713678800501e-15,
+          "exact_subset": [
+            2,
+            5,
+            7,
+            9
+          ],
+          "selected_subset": [
+            2,
+            5,
+            7,
+            9
+          ],
+          "sqd_seconds": 0.03400658303871751,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 2.0650148258027912e-14
+        }
+      ],
+      "extra_sampling_state_evaluations": 1,
+      "lasso_iterations": 94,
+      "feasible_subsets": 210
+    },
+    {
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "seed": 31,
+      "relevance": [
+        0.0,
+        0.21547605810713527,
+        0.30536630756410515,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.34560340097241127,
+        0.0,
+        0.27768033524782604
+      ],
+      "redundancy": [
+        [
+          0.0,
+          0.5875169067122581,
+          0.32243691689927906,
+          0.4043994224930728,
+          0.27047501462616524,
+          0.615613442128391,
+          0.5082064589534866,
+          0.7787988927545986,
+          0.9121024188786149,
+          0.6337276454164109
+        ],
+        [
+          0.5875169067122581,
+          0.0,
+          0.40730599128204553,
+          0.6328337616565395,
+          0.36754814663765306,
+          0.21186360470577642,
+          0.8544903499270305,
+          0.3933380847454445,
+          0.4603672114787766,
+          0.9420117654180827
+        ],
+        [
+          0.32243691689927906,
+          0.40730599128204553,
+          0.0,
+          0.5830363557921926,
+          0.35012359026419027,
+          0.328165316764372,
+          0.39749700037560437,
+          0.141943953915427,
+          0.3382314566807912,
+          0.5089029164849916
+        ],
+        [
+          0.4043994224930728,
+          0.6328337616565395,
+          0.5830363557921926,
+          0.0,
+          0.12241480030198718,
+          0.15979053218262784,
+          0.6954622832495667,
+          0.2340666542013633,
+          0.27354528241160253,
+          0.6549436647912106
+        ],
+        [
+          0.27047501462616524,
+          0.36754814663765306,
+          0.35012359026419027,
+          0.12241480030198718,
+          0.0,
+          0.1971384744448503,
+          0.3672787760224606,
+          0.21415819102995637,
+          0.24233102589411598,
+          0.35157554607402425
+        ],
+        [
+          0.615613442128391,
+          0.21186360470577642,
+          0.328165316764372,
+          0.15979053218262784,
+          0.1971384744448503,
+          0.0,
+          0.23615548648190499,
+          0.37597142257445,
+          0.6319987950602278,
+          0.2400981280203328
+        ],
+        [
+          0.5082064589534866,
+          0.8544903499270305,
+          0.39749700037560437,
+          0.6954622832495667,
+          0.3672787760224606,
+          0.23615548648190499,
+          0.0,
+          0.3379045377324358,
+          0.38418376194664505,
+          0.8575043296799835
+        ],
+        [
+          0.7787988927545986,
+          0.3933380847454445,
+          0.141943953915427,
+          0.2340666542013633,
+          0.21415819102995637,
+          0.37597142257445,
+          0.3379045377324358,
+          0.0,
+          0.7470341454110425,
+          0.4399307201162213
+        ],
+        [
+          0.9121024188786149,
+          0.4603672114787765,
+          0.3382314566807912,
+          0.27354528241160253,
+          0.24233102589411598,
+          0.6319987950602277,
+          0.38418376194664505,
+          0.7470341454110425,
+          0.0,
+          0.47405194698503683
+        ],
+        [
+          0.6337276454164109,
+          0.9420117654180827,
+          0.5089029164849916,
+          0.6549436647912106,
+          0.35157554607402425,
+          0.2400981280203328,
+          0.8575043296799835,
+          0.4399307201162213,
+          0.47405194698503683,
+          0.0
+        ]
+      ],
+      "exact_objective": -0.3125781394564342,
+      "qaoa": {
+        "status": "measured_simulation",
+        "objective": -0.2787840147180205,
+        "feasible_probability": 0.19955084612241325,
+        "feasible_shots": 90,
+        "shots": 512,
+        "circuit_evaluations": 41,
+        "depth": 1,
+        "parameters": [
+          0.45095729004519214,
+          0.0017143623907737847
+        ],
+        "optimizer_success": false,
+        "seconds": 0.054764959029853344,
+        "limitations": "Exact-state optimization plus synthetic sampling; not a hardware timing or quantum speedup."
+      },
+      "sqd": [
+        {
+          "source": "uniform",
+          "status": "complete",
+          "unique_feasible": 82,
+          "sqd_energy": -0.3125781394564371,
+          "sampled_minimum": -0.3125781394564342,
+          "gap_to_exact": -2.886579864025407e-15,
+          "exact_subset": [
+            2,
+            5,
+            7,
+            9
+          ],
+          "selected_subset": [
+            2,
+            5,
+            7,
+            9
+          ],
+          "sqd_seconds": 0.03515429201070219,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 1.887379141862766e-14
+        },
+        {
+          "source": "qaoa",
+          "status": "complete",
+          "unique_feasible": 74,
+          "sqd_energy": -0.27878401471802816,
+          "sampled_minimum": -0.2787840147180205,
+          "gap_to_exact": 0.03379412473840604,
+          "exact_subset": [
+            2,
+            5,
+            7,
+            9
+          ],
+          "selected_subset": [
+            2,
+            4,
+            5,
+            7
+          ],
+          "sqd_seconds": 0.03494316595606506,
+          "eigensolver": "addon solve_qubit",
+          "projected_off_diagonal_max": 1.887379141862766e-14
+        }
+      ],
+      "extra_sampling_state_evaluations": 1,
+      "lasso_iterations": 94,
+      "feasible_subsets": 210
+    }
+  ],
+  "wall_seconds": 2.405201042070985,
+  "hardware_jobs_submitted": 0,
+  "final_test_accessed": false,
+  "interpretation": "Selectors see the same outer-training years; predictor and four-feature count fixed. All-ten is an explicit different input budget. Seeds are sensitivity runs over the same years."
+}

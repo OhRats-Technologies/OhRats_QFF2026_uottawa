@@ -1,7 +1,0 @@
-{
-  "stage": "fresh paired diagnostic of limitation",
-  "screen_gate_passed": false,
-  "reason": "Fourth normalized screen seed failed; fresh run queued while last output was arriving. This is not selected positive confirmation.",
-  "setting": "equal teacher/rollout mixture, fixed total prediction weight; no tuning on confirmation",
-  "recorded_utc": "2026-10-04T01:07:29.604132+00:00"
-}

@@ -1,0 +1,6 @@
+{
+  "source_sha256": "9e8fb3f8c178b1c984e2cc3f7cdd43ac989b67c6504fe3f88abaa4a508c222f7",
+  "plot_recipe_sha256": "c5d31dcb43fd639f43ae44b25ca4eeab726ad86a4e8b33d8e1172197b6f65f83",
+  "figure_sha256": "09c82fbf8f189b9c55dc8215dfd4b60bc1faf978928a2c7e25fd310f7a72031e",
+  "caption": "Three dependent training-period samples, each with three fixed independent Binomial noise replicates at each shot count. All points shown; bars are ranges, not confidence intervals. Exact RBF shares labels, inputs and landmark indices. Reference threshold is descriptive per-cohort ideal minus .05; the declared gate averages noise replicates. No Qiskit sampler/device execution, model tuning or final access."
+}

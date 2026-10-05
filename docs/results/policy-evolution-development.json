@@ -1,0 +1,634 @@
+{
+  "status": "audited_policy_evolution",
+  "plan": {
+    "id": "wildfire-policy-code-evolution-v1",
+    "status": "frozen_training_only_policy_evolution",
+    "owner_request": "Actual policy-code revision from logs, independent Codex proposal/review, new online rollouts",
+    "paper": "https://arxiv.org/html/2609.14858v1",
+    "dataset": ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8",
+    "dataset_sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+    "history_attempt": "attempt-01aee68c6ed6",
+    "history_sha256": "fb703f88a0d5b91bbe574a0b134ece1561f2a5d081b55ac037927b53169e7e7c",
+    "historical_development_cutoff": 2014,
+    "historical_topology": "Six flat measured panels; no invented tree ancestry",
+    "policy_developer": {
+      "participant": "policy-agent",
+      "configured_model": "gpt-6.1-sol",
+      "independent_subagent": true
+    },
+    "baseline_policy": "classical_gate",
+    "initial_revision": "evolved_v1",
+    "max_policy_revisions": 2,
+    "query_budget": 3,
+    "query_penalty": 0.005,
+    "reward": "best revealed average precision minus .005 per non-root candidate request",
+    "common_root_charged_separately": true,
+    "candidate_generator": "Fixed configurations: standard_logistic, robust_tanh/rbf, standard_tanh/rbf, robust_tanh/qiskit_ZZ",
+    "online_execution_order": "Selected evolved policy first, baseline second, share identical evaluator results after requests",
+    "fold": [
+      1988,
+      2014,
+      2015,
+      2018
+    ],
+    "development_seeds": [
+      202610051,
+      202610053,
+      202610057
+    ],
+    "confirmation_seeds": [
+      202610061,
+      202610063,
+      202610067
+    ],
+    "features": [
+      "latitude",
+      "longitude",
+      "cover_water",
+      "month_sin"
+    ],
+    "train_cap": 256,
+    "validation_cap": 512,
+    "C": 1.0,
+    "angle_scale": 0.05,
+    "reps": 2,
+    "max_phase_seconds": 240,
+    "max_predictor_fits_per_phase": 12,
+    "max_simulated_state_preparations_per_phase": 2304,
+    "confirmation_policy_freeze": "Commit policy_evolution_selection.json before any reserved confirmation score is collected",
+    "promotion_scope": "Search-policy applicability only; no final model or angle selection",
+    "hardware": false,
+    "final_test_access": false,
+    "limitations": [
+      "Controlled configuration generation, not full LLM program or architecture discovery.",
+      "Old history was inspected; offline scores assess code revision but are not independent validation.",
+      "Fresh row seeds reuse the same chronological eras and can overlap; no independent temporal replication.",
+      "Fixed query charge is a declared utility, not measured wall-time or hardware cost.",
+      "No final-test reopen, new source, circuit expansion or hardware submission."
+    ]
+  },
+  "stages": [
+    {
+      "stage": "development",
+      "status": "complete",
+      "outcome_sha256": "46ecacc622104ffdf9a8fcc5d688ede80fceba143a96a4414eb311d7aae9c6cc",
+      "opening_commit": "4cadf962d210f2d673e9f766d350605866b2bc85",
+      "recipe_sha256": {
+        "wildfire_lab/evolution_policy.py": "ce6a2cf9ae833650d4dc3ea0dc0e168087d98492ed99ab0163715b1266d814ac",
+        "wildfire_lab/evolution_evaluator.py": "94db1bc53fef0c6006bd68fee808aea2fe26c5b9f17b46deb9a9cd8e69231197",
+        "wildfire_lab/evolution_rollout.py": "c065c56f1220658ef3e4c11598d1e0bf3e24d490d50aacbd4fcd92a49de5abd7",
+        "wildfire_lab/evolution_history.py": "636fe7a9c665f52e11e8cbc5fd9aa0857abf6169f16286f1a736abb8700b35df",
+        "wildfire_lab/evolution_study.py": "6f9f4a71d57e9cecf56d8f8aaf89f3489c3a3a5f06192b10eeb23a4d75bf7326",
+        "wildfire_lab/evolution_checks.py": "aa323aeaaa1f40472cf5ee63367f48e3d8048677bcb7cfc3559429fad071a5d5",
+        "scripts/run_policy_evolution.py": "1e3b82bf0d764f414785fdb0b32eb04ba276f0f47f5b68fdfcbf5ef59aabaf03",
+        "wildfire_lab/encoding_screen.py": "77621e12054f59d146ede615207e2d93310db41ccf2827e09196f29762044771",
+        "wildfire_lab/kernel.py": "91cdd0756e52914115c5609c1cca476f5abac73793c6f476174cd9dab9aed56b",
+        "wildfire_lab/evaluation.py": "e634741036fc7e7f43ef1508ce14b8eb430475f2c6ab6b05a4f00b22614dd3e7",
+        "pyproject.toml": "387b6f8daa143e7e8be05a0fd612c33c3c0e5ca97bd72d8b4f7ef84ead6c00de",
+        "uv.lock": "279bcaf11186bf36bf4375da28308a14ab9789b99a783b7dcd6ebb7a40b1c15f",
+        "experiments/policy_evolution.json": "59256bfeaaedda96ae79677b192c83746da89083b80f35ef190daaddede7adcf",
+        "docs/results/policy-evolution-offline.json": "0101a42ac0cf4ca712cc644dee5fa13ea3c21e0a83fe03f2df7200e998c52148"
+      },
+      "runner_seconds": 0.7437291250098497,
+      "means": {
+        "classical_gate": {
+          "requests": 2.6666666666666665,
+          "best_ap": 0.47868247012140036,
+          "reward": 0.46534913678806705
+        },
+        "evolved_v1": {
+          "requests": 1.3333333333333333,
+          "best_ap": 0.4782008847228245,
+          "reward": 0.47153421805615786
+        }
+      },
+      "seeds": [
+        {
+          "seed": 202610051,
+          "train_rows": 256,
+          "validation_rows": 512,
+          "train_positive": 17,
+          "validation_positive": 55,
+          "train_indices_sha256": "07cb1fcb0e092f198f5ea63f13ee0859fb57a7ba3745d1284e017755cf4ca966",
+          "validation_indices_sha256": "578251f9783a21a5256b5af8478b6f78f4b49ca15c4b6c9bc56acff1baf4ff8d",
+          "trees": [
+            {
+              "policy": "evolved_v1",
+              "requests": 1,
+              "best_ap": 0.44130138582145756,
+              "reward": 0.43630138582145755,
+              "nodes": [
+                {
+                  "candidate": "standard_logistic",
+                  "ap": 0.44130138582145756,
+                  "metric": {
+                    "average_precision": 0.44130138582145756,
+                    "roc_auc": 0.8531927591008553,
+                    "prevalence": 0.107421875,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 10,
+                    "fit_status": 0
+                  },
+                  "seconds": 0.028117749956436455,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": false,
+                  "id": "root",
+                  "parent": null
+                },
+                {
+                  "candidate": "robust_tanh/rbf",
+                  "ap": 0.43788460523089623,
+                  "metric": {
+                    "average_precision": 0.43788460523089623,
+                    "roc_auc": 0.813129102844639,
+                    "prevalence": 0.107421875,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 332,
+                    "fit_status": 0,
+                    "centered_variance": 0.5930860542386842
+                  },
+                  "seconds": 0.008630875032395124,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": false,
+                  "id": "node-1",
+                  "parent": "root"
+                }
+              ]
+            },
+            {
+              "policy": "classical_gate",
+              "requests": 3,
+              "best_ap": 0.4427461420171851,
+              "reward": 0.4277461420171851,
+              "nodes": [
+                {
+                  "candidate": "standard_logistic",
+                  "ap": 0.44130138582145756,
+                  "metric": {
+                    "average_precision": 0.44130138582145756,
+                    "roc_auc": 0.8531927591008553,
+                    "prevalence": 0.107421875,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 10,
+                    "fit_status": 0
+                  },
+                  "seconds": 0.028117749956436455,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": true,
+                  "id": "root",
+                  "parent": null
+                },
+                {
+                  "candidate": "robust_tanh/rbf",
+                  "ap": 0.43788460523089623,
+                  "metric": {
+                    "average_precision": 0.43788460523089623,
+                    "roc_auc": 0.813129102844639,
+                    "prevalence": 0.107421875,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 332,
+                    "fit_status": 0,
+                    "centered_variance": 0.5930860542386842
+                  },
+                  "seconds": 0.008630875032395124,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": true,
+                  "id": "node-1",
+                  "parent": "root"
+                },
+                {
+                  "candidate": "standard_tanh/rbf",
+                  "ap": 0.4427461420171851,
+                  "metric": {
+                    "average_precision": 0.4427461420171851,
+                    "roc_auc": 0.8137656654068033,
+                    "prevalence": 0.107421875,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 247,
+                    "fit_status": 0,
+                    "centered_variance": 0.5840271662320209
+                  },
+                  "seconds": 0.004740375094115734,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": false,
+                  "id": "node-2",
+                  "parent": "node-1"
+                },
+                {
+                  "candidate": "robust_tanh/qiskit_ZZ",
+                  "ap": 0.43361059422432124,
+                  "metric": {
+                    "average_precision": 0.43361059422432124,
+                    "roc_auc": 0.832027053908892,
+                    "prevalence": 0.107421875,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 1214,
+                    "fit_status": 0,
+                    "centered_variance": 0.08094037617904717
+                  },
+                  "seconds": 0.21902191708795726,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 768,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": false,
+                  "id": "node-3",
+                  "parent": "node-2"
+                }
+              ]
+            }
+          ],
+          "predictor_fits": 4,
+          "simulated_state_preparations": 768,
+          "measured_candidate_seconds": 0.2605109171709046
+        },
+        {
+          "seed": 202610053,
+          "train_rows": 256,
+          "validation_rows": 512,
+          "train_positive": 17,
+          "validation_positive": 58,
+          "train_indices_sha256": "888bea894ecaf2fc4b1f9bc8de8b4c0aa4fdf13945cd84c4def529e7abcf407c",
+          "validation_indices_sha256": "72ff6c13bca02af04b716b73a1f8c2766cc8f310187dde7d89f1fa8a09d5e5c3",
+          "trees": [
+            {
+              "policy": "evolved_v1",
+              "requests": 2,
+              "best_ap": 0.5275285205346409,
+              "reward": 0.5175285205346409,
+              "nodes": [
+                {
+                  "candidate": "standard_logistic",
+                  "ap": 0.48251146354326246,
+                  "metric": {
+                    "average_precision": 0.48251146354326246,
+                    "roc_auc": 0.8565243809813154,
+                    "prevalence": 0.11328125,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 8,
+                    "fit_status": 0
+                  },
+                  "seconds": 0.0031382919987663627,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": false,
+                  "id": "root",
+                  "parent": null
+                },
+                {
+                  "candidate": "robust_tanh/rbf",
+                  "ap": 0.5275285205346409,
+                  "metric": {
+                    "average_precision": 0.5275285205346409,
+                    "roc_auc": 0.8438022178338143,
+                    "prevalence": 0.11328125,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 484,
+                    "fit_status": 0,
+                    "centered_variance": 0.5862456926060244
+                  },
+                  "seconds": 0.004861792083829641,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": false,
+                  "id": "node-1",
+                  "parent": "root"
+                },
+                {
+                  "candidate": "standard_tanh/rbf",
+                  "ap": 0.4995865890153439,
+                  "metric": {
+                    "average_precision": 0.4995865890153439,
+                    "roc_auc": 0.8492708491569194,
+                    "prevalence": 0.11328125,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 388,
+                    "fit_status": 0,
+                    "centered_variance": 0.5812689381056811
+                  },
+                  "seconds": 0.0045359579380601645,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": false,
+                  "id": "node-2",
+                  "parent": "node-1"
+                }
+              ]
+            },
+            {
+              "policy": "classical_gate",
+              "requests": 3,
+              "best_ap": 0.5275285205346409,
+              "reward": 0.5125285205346409,
+              "nodes": [
+                {
+                  "candidate": "standard_logistic",
+                  "ap": 0.48251146354326246,
+                  "metric": {
+                    "average_precision": 0.48251146354326246,
+                    "roc_auc": 0.8565243809813154,
+                    "prevalence": 0.11328125,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 8,
+                    "fit_status": 0
+                  },
+                  "seconds": 0.0031382919987663627,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": true,
+                  "id": "root",
+                  "parent": null
+                },
+                {
+                  "candidate": "robust_tanh/rbf",
+                  "ap": 0.5275285205346409,
+                  "metric": {
+                    "average_precision": 0.5275285205346409,
+                    "roc_auc": 0.8438022178338143,
+                    "prevalence": 0.11328125,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 484,
+                    "fit_status": 0,
+                    "centered_variance": 0.5862456926060244
+                  },
+                  "seconds": 0.004861792083829641,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": true,
+                  "id": "node-1",
+                  "parent": "root"
+                },
+                {
+                  "candidate": "standard_tanh/rbf",
+                  "ap": 0.4995865890153439,
+                  "metric": {
+                    "average_precision": 0.4995865890153439,
+                    "roc_auc": 0.8492708491569194,
+                    "prevalence": 0.11328125,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 388,
+                    "fit_status": 0,
+                    "centered_variance": 0.5812689381056811
+                  },
+                  "seconds": 0.0045359579380601645,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": true,
+                  "id": "node-2",
+                  "parent": "node-1"
+                },
+                {
+                  "candidate": "robust_tanh/qiskit_ZZ",
+                  "ap": 0.3394255093364201,
+                  "metric": {
+                    "average_precision": 0.3394255093364201,
+                    "roc_auc": 0.7491265380525596,
+                    "prevalence": 0.11328125,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 1890,
+                    "fit_status": 0,
+                    "centered_variance": 0.10438032323254062
+                  },
+                  "seconds": 0.19698858296032995,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 768,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": false,
+                  "id": "node-3",
+                  "parent": "node-2"
+                }
+              ]
+            }
+          ],
+          "predictor_fits": 4,
+          "simulated_state_preparations": 768,
+          "measured_candidate_seconds": 0.20952462498098612
+        },
+        {
+          "seed": 202610057,
+          "train_rows": 256,
+          "validation_rows": 512,
+          "train_positive": 13,
+          "validation_positive": 56,
+          "train_indices_sha256": "a2c7423efb8497dea328458f8b99a21707ec4969946acf5e00ce721ca6fd4494",
+          "validation_indices_sha256": "0a55c613b18a0c493787aac769050eb9d7ce4ba673850ac20c0063fb018c008f",
+          "trees": [
+            {
+              "policy": "evolved_v1",
+              "requests": 1,
+              "best_ap": 0.4657727478123751,
+              "reward": 0.4607727478123751,
+              "nodes": [
+                {
+                  "candidate": "standard_logistic",
+                  "ap": 0.4657727478123751,
+                  "metric": {
+                    "average_precision": 0.4657727478123751,
+                    "roc_auc": 0.7992246240601504,
+                    "prevalence": 0.109375,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 10,
+                    "fit_status": 0
+                  },
+                  "seconds": 0.0030527919298037887,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": false,
+                  "id": "root",
+                  "parent": null
+                },
+                {
+                  "candidate": "robust_tanh/rbf",
+                  "ap": 0.4539221551807094,
+                  "metric": {
+                    "average_precision": 0.4539221551807094,
+                    "roc_auc": 0.7991463032581453,
+                    "prevalence": 0.109375,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 85,
+                    "fit_status": 0,
+                    "centered_variance": 0.5898055216174491
+                  },
+                  "seconds": 0.004599791020154953,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": false,
+                  "id": "node-1",
+                  "parent": "root"
+                }
+              ]
+            },
+            {
+              "policy": "classical_gate",
+              "requests": 2,
+              "best_ap": 0.4657727478123751,
+              "reward": 0.4557727478123751,
+              "nodes": [
+                {
+                  "candidate": "standard_logistic",
+                  "ap": 0.4657727478123751,
+                  "metric": {
+                    "average_precision": 0.4657727478123751,
+                    "roc_auc": 0.7992246240601504,
+                    "prevalence": 0.109375,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 10,
+                    "fit_status": 0
+                  },
+                  "seconds": 0.0030527919298037887,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": true,
+                  "id": "root",
+                  "parent": null
+                },
+                {
+                  "candidate": "robust_tanh/rbf",
+                  "ap": 0.4539221551807094,
+                  "metric": {
+                    "average_precision": 0.4539221551807094,
+                    "roc_auc": 0.7991463032581453,
+                    "prevalence": 0.109375,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 85,
+                    "fit_status": 0,
+                    "centered_variance": 0.5898055216174491
+                  },
+                  "seconds": 0.004599791020154953,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": true,
+                  "id": "node-1",
+                  "parent": "root"
+                },
+                {
+                  "candidate": "standard_tanh/rbf",
+                  "ap": 0.4471776948077092,
+                  "metric": {
+                    "average_precision": 0.4471776948077092,
+                    "roc_auc": 0.7962484335839599,
+                    "prevalence": 0.109375,
+                    "rows": 512
+                  },
+                  "numerical": {
+                    "iterations": 139,
+                    "fit_status": 0,
+                    "centered_variance": 0.5845401417854759
+                  },
+                  "seconds": 0.004493542015552521,
+                  "predictor_fits": 1,
+                  "simulated_state_preparations": 0,
+                  "pair_circuits": 0,
+                  "shots": 0,
+                  "hardware_jobs": 0,
+                  "shared_execution": false,
+                  "id": "node-2",
+                  "parent": "node-1"
+                }
+              ]
+            }
+          ],
+          "predictor_fits": 3,
+          "simulated_state_preparations": 0,
+          "measured_candidate_seconds": 0.012146124965511262
+        }
+      ],
+      "predictor_fits": 11,
+      "simulated_state_preparations": 1536
+    }
+  ],
+  "audit_predictor_fits": 0,
+  "audit_state_preparations": 0,
+  "pair_circuits": 0,
+  "shots": 0,
+  "hardware_jobs_submitted": 0,
+  "final_test_access": false,
+  "limitations": "Independent Codex policy-code revision and fresh configuration rollouts. Fixed generator, not full LLM program discovery. Shared evaluator results avoid duplicate fits while query costs charge each policy. Fresh row seeds reuse the same years; no independent temporal validation or final-model change."
+}

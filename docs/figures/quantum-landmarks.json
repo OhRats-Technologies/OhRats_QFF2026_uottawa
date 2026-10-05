@@ -1,0 +1,6 @@
+{
+  "summary_sha256": "5caa3ccf775c97e565f28081625f736c3237bcaf3d865183a27e446a0a2a6078",
+  "plot_recipe_sha256": "523cf4120926f93e9da9a95f156c71c878184a4e764c8cb223465d58c0d26d69",
+  "figure_sha256": "e9911edf139ab3d26e1238e928b3ca332a0b82b5d2ac481871601cf48d870cd3",
+  "caption": "Training-only, post-final exploratory screen: 256 train / 256 validation fires, common inputs and landmarks. Bars show the range across three sampling seeds, not confidence intervals. 16 landmarks use 8,056 pair circuits per shot condition (12.19x fewer than dense). All sampling is local; no IBM jobs."
+}

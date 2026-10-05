@@ -1,0 +1,88 @@
+{
+  "study": "annual-woodland",
+  "parent": "experiments/annual_qsvr.json",
+  "parent_sha256": "63c8700998901fa4126ad044056a3d6be71e93a7f467239335ed03e55b3f06b5",
+  "dataset_sha256": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+  "boundary": {
+    "source": "https://geo.statcan.gc.ca/geo_wa/rest/services/2021/Digital_boundary_files/MapServer/0/query?where=PRUID%3D%2735%27&outFields=PRUID%2CPRNAME%2CDGUID&returnGeometry=true&outSR=4326&f=geojson",
+    "path": "data/raw/boundaries/ontario-2021.geojson",
+    "sha256": "d5af8d3e98aa9209f24bbab28e05b95f8685e1e36ae4df8f868108f5916fbfd3",
+    "province": "35",
+    "vintage": 2021,
+    "purpose": "Fixed retrospective province geometry, not a predictor source"
+  },
+  "source_years": [
+    1987,
+    2017
+  ],
+  "raster_sha256": {
+    "1987": "a0903f07c49f00e7a62760bde2b666ff1319880754188c74bad37850afe4f0ff",
+    "1988": "fffd2ba0f7c68aaec0ff9825fe77a8902157df39a1c56f106e52d565e32eda5a",
+    "1989": "9263145de2ddc3719ba6d809fda58082f8c16334ce9238e57e81619c8a19b7ca",
+    "1990": "bcd35b5c30275e2e06a758e327aa13c3de0a115e999e1e546e4949cabf386cfa",
+    "1991": "05591af0b3de7bfacba3d89d06ddf605bdd993ad30c7a5a0ca8e046161d77c0e",
+    "1992": "a26f97ad00eb0c456d8f1d269437c1814a94d6725b7773b21ddb073cf43ecb9f",
+    "1993": "7cfd7f6ad9b65ec4d4e0b76ac33caaa78ced471b55f68ad2ee5c8efc68238770",
+    "1994": "b85d2c2d8ed9e94f4714b4ed2bfcd376b0efb3098369641362667b8e0ae7a1de",
+    "1995": "470120b88194ba41fa9f9b10831e74f126533efd4b4eeb0f86dfde8383d34cc3",
+    "1996": "a866495ff68cf26208c9f2dfc22e6e72a52df90e7ce070d193db41c47cda9c49",
+    "1997": "b44a35d7a5d6d06e297f512431f6b3a735ef7602b8014efed056d036395a7e9d",
+    "1998": "ec8b310b47bbd26fb768570f4eac8763466b3887b898c6ec0848a55164e669be",
+    "1999": "5567ae3910ffe8510f43606178665c55faccd70f34815448a3a7c9817bc293fd",
+    "2000": "b70e41971978eae8889822a248ac7cdd4cec88927c71f25f7a1f0d6259ea47ff",
+    "2001": "877d28b94780c0b22507a328d2458d6c60876181b3afac7924150d30d123c6c5",
+    "2002": "bbfa19b96122a03d1cbb7638b57b7b615380d29822ce3708ff8b32b94cd6733d",
+    "2003": "6a9f16bb8324f50df2e5bde37bcbb921664393387a534fb34c62380b81622a65",
+    "2004": "02c4af3ca7983dfabcf7c12396a8d297e8eaef196e579249734bcdf12f9d42fc",
+    "2005": "997a4cbf4ccbc66ff5ededa545c9138ef999eaedd32772a77bf41700e90fd545",
+    "2006": "545a47f324da4f1e1ec7b36ca6fee37395205c4b028401ace260b2f6f9d5060e",
+    "2007": "610db0669adb862dc1a3eb408f2ce92dd4b9a886c6965359473964298c1741ab",
+    "2008": "723c1b03e565c37daecc7b93455ddb72628b80bc6e8c5b8ac9b087d7d63b0d9a",
+    "2009": "6ed3e73e717e5d3080e6433cf97c5384d42fd3fad54e94466eac8ff8df47d599",
+    "2010": "b7bc6dcef0834d87c462136096cf9a6939c273b161002bd8223d465b8faa0b24",
+    "2011": "0ecd518255446ec9ad343506f4355e983430bafe29ca0e62252aa062923f68a0",
+    "2012": "cf6c93ba8c601738ecad699e7eca23abb5744e414f1728e85997a87f9654e682",
+    "2013": "4c145829391c99876f7fef0df4388544ce9f925f9d4edb483d3392d2ee034c94",
+    "2014": "243e90c07c931965355b4869662ef40870a49bbf63460d8ea8eb2af9f4cf8a98",
+    "2015": "2195f0c84c4db82a53b6da4f074fe17a65f5821dd7f4c7087f4847661030eb14",
+    "2016": "62614e48e5f49fdb6bf2dd6e5130be6735405d17bc16c9daeec9116eec88ed9d",
+    "2017": "603f9d2fbeb610aaa58eb82e2bb3c2e1c09aebbe6614c7ffdcfbb9c6d357ca51"
+  },
+  "aggregation": {
+    "crs": "EPSG:6933",
+    "resolution_m": 1000,
+    "resampling": "nearest",
+    "pixel_inclusion": "center",
+    "denominator": "province-mask classified cells, excluding 0 and 255; include water and other classes",
+    "treed_codes": [
+      81,
+      210,
+      220,
+      230
+    ],
+    "water_code": 20,
+    "probe_year": 1987,
+    "probe_resolution_m": 500,
+    "max_probe_fraction_difference": 0.01,
+    "max_uncovered_fraction": 0.005
+  },
+  "information": "Map t-1 for label year t; historical map has retrospective temporal processing and is not as-of availability evidence",
+  "conditions": [
+    "physical_four",
+    "physical_four_plus_calendar_year",
+    "physical_four_plus_previous_map_treed_fraction"
+  ],
+  "models": "Fixed ridge alpha1, RBF C1 epsilon0.2 median-distance gamma, QSVR C1 epsilon0.2 reps1 amplitude pi/2; no tuning or outer-score promotion",
+  "budget": {
+    "raster_years": 31,
+    "additional_resolution_probes": 1,
+    "outer_folds": 3,
+    "conditions": 3,
+    "classical_fits": 18,
+    "quantum_fits": 9,
+    "hardware_jobs": 0
+  },
+  "test_access": false,
+  "rejection": "Reject predictive woodland ablation if raster coverage or 500/1000m fraction checks fail; preserve summaries and state why. Coarse sampling is not native 30m exhaustive class area.",
+  "time_gate": "If aggregation is not complete by 3:30 PM Toronto, retain completed summaries and prune model ablation before final evaluation preparation."
+}

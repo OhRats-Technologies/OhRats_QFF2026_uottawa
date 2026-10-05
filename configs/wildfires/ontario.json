@@ -1,0 +1,29 @@
+{
+  "start_year": 1988,
+  "end_year": 2024,
+  "province": "ON",
+  "woodland_bbox_wgs84": [
+    -95.2,
+    41.6,
+    -74.3,
+    56.9
+  ],
+  "bbox_note": "Ontario bounding rectangle; includes neighbouring provinces, US land and water. Not an Ontario polygon mask.",
+  "vegetation_year_min": 1984,
+  "vegetation_year_max": 2022,
+  "fire_history_year_min": 2010,
+  "max_archive_gib": 2.5,
+  "train": {
+    "start_year": 1988,
+    "end_year": 2018
+  },
+  "test": {
+    "start_year": 2019,
+    "end_year": 2024
+  },
+  "woodland_test_policy": "Accept matching-year cover unavailable after 2022; do not fabricate later maps.",
+  "fire_history_year_min_note": "Individual operational updates only; earlier YTD aggregate history exists.",
+  "context_start_year": 1987,
+  "historical_fire_source": "NRCan NFDB points (audited and selected)",
+  "historical_incident_year_min": 1988
+}

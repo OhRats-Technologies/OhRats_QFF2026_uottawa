@@ -1,8 +1,0 @@
-{
-  "created_utc": "2026-10-04T00:36:52.149044+00:00",
-  "protocol_sha256": "506a381fbe28e66f822a3191c033087d616ec3b90c4508d3e4682ae2a9bfede1",
-  "sources": {
-    "/Users/fern/Projects/OhRats-Technologies/OhRats_QFF2026_uottawa/scripts/quantum_world_measurement_pilot.py": "d1039fd8f260165a598585ffd31f1b3ee1db98d9ff28ca035b7e77185561e14e",
-    "quantum_world/measurements.py": "9757aeff73fb130f7e0fcf4bba8a2a64b3d2c80bb7d1b4e9c353c41036693541"
-  }
-}

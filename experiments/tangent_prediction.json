@@ -1,0 +1,35 @@
+{
+  "id": "tangent-prediction-v1",
+  "status": "frozen_training_only_matched_control",
+  "parent_geometry_cache": ".cache/wildfire/local-geometry",
+  "parent_geometry_outcome_sha256": "fc94af62cdfb254c50c8f171186f397471a413dabc4ad493b51bdb97462e2acf",
+  "ridge_reference": "docs/results/kernel-ridge.json",
+  "ridge_reference_sha256": "0a16a75bf4f4c1298003c7990c071307fdcdf571b7cf7ece07e7c62deedc7019",
+  "seeds": [811, 821, 823],
+  "angle_scales": [0.01, 0.05, 0.1, 0.5],
+  "classical_controls": ["linear", "rbf", "tangent"],
+  "kernel_ridge": 1.0,
+  "label_encoding": "-1/+1; training mean intercept; sum squared loss",
+  "normalization": "training-only centering and unit mean diagonal; no n scaling",
+  "numerical_checks": {
+    "relative_solve_residual_max": 1e-10,
+    "primal_dual_prediction_difference_max": 1e-9,
+    "validation_score_std_min": 1e-5,
+    "reference_metric_tolerance": 1e-9
+  },
+  "narrow_closeness_gate": {
+    "angle_scale": 0.01,
+    "mean_absolute_ap_difference_max": 0.02,
+    "seed_absolute_ap_difference_max": 0.03,
+    "prediction_spearman_min": 0.99
+  },
+  "max_predictor_fits": 21,
+  "max_primal_reference_solves": 6,
+  "max_wall_seconds": 60,
+  "new_state_preparations": 0,
+  "pair_circuits": 0,
+  "shots": 0,
+  "hardware": false,
+  "final_test_access": false,
+  "interpretation": "A practical local approximation check on three dependent reused-year samples, not statistical equivalence, fresh temporal validation, an angle choice or quantum advantage. Report all scales and controls, reconstructed coefficients, prior-result reproduction and deterministic prediction bounds. Stop on failure; do not tune."
+}

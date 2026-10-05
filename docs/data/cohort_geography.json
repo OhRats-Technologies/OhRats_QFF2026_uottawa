@@ -1,0 +1,137 @@
+{
+  "status": "audited_training_cohort_geography",
+  "created_utc": "2026-10-05T13:54:11.531451+00:00",
+  "code_commit": "4559194f3134832bd692c17d5ef758825ca7431e",
+  "recipe_sha256": {
+    "scripts/audit_cohort_geography.py": "41369b9b692b21eb6fd089e6630c330687cec07f92f9a4e90691f7ef88f6c1ec",
+    "wildfire_lab/label_quality.py": "e00d2173269d2c791848d3eced57a05a31a377572fd4ba9680c6c66acf0c51c8",
+    "wildfire_lab/nfdb.py": "2aa64aa77815f45d0b0e9f8c00bbb8636581de64f95824e599a747270e54600c"
+  },
+  "config_sha256": "eb8aee6d8a444fd863b5a1885d2f8897fe473450d93e6ca37e7d713d28261e86",
+  "plan": {
+    "id": "training-cohort-geography-v1",
+    "status": "frozen_training_only_source_audit",
+    "parent_config": "configs/wildfires/label_quality.json",
+    "parent_config_sha256": "f66e95ebe986d26a0854affc38badd06935eaa496dc6d61170c4fbbd397ad3ca",
+    "parent_evidence": "docs/data/label_quality.json",
+    "parent_evidence_sha256": "b5ec5882cdac0d44a54c4ca518597662e98f10b1c5c8e51b9d0f7881a5515eea",
+    "latitude_edges": [-90, 41, 45, 48, 51, 54, 58, 90],
+    "minimum_plot_denominator": 10,
+    "max_training_year": 2018,
+    "model_fits": 0,
+    "quantum_calls": 0,
+    "final_test_access": false,
+    "interpretation": "Describe class-specific latitude-associated cohort exclusions, with final edge inclusive. Approximate reported coordinates; no cause, accuracy, completeness, feature or model change."
+  },
+  "parent_source_sha256": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+  "years": [1988, 2018],
+  "cohort_provenance": {
+    "weather_matched": {
+      "data_sha256": "ed40abc65bcd5f44d67db01eb704c1f6dee447d2f91b71beca12224399e0010d",
+      "manifest_sha256": "f4a3815d4f4839034aff42d373561f2ce04cfa9b8ece60de29c3c403b9ca8622"
+    },
+    "fixed_cover_matched": {
+      "data_sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+      "manifest_sha256": "0c9d2a346e9b8e54de2a785a52817dfebd36e08c8f5c0b1882bddb738831a57b"
+    }
+  },
+  "stages": {
+    "weather": {
+      "before": {
+        "rows": 39609,
+        "positive_rows": 3358,
+        "median_latitude": 48.7884,
+        "minimum_latitude": 42.2528,
+        "maximum_latitude": 56.5455
+      },
+      "retained": {
+        "rows": 38579,
+        "positive_rows": 2876,
+        "median_latitude": 48.71,
+        "minimum_latitude": 42.2528,
+        "maximum_latitude": 56.5455
+      },
+      "excluded": {
+        "rows": 1030,
+        "positive_rows": 482,
+        "median_latitude": 52.75755,
+        "minimum_latitude": 49.667,
+        "maximum_latitude": 56.049
+      },
+      "by_target": {
+        "0": {
+          "before_rows": 36251,
+          "retained_rows": 35703,
+          "excluded_rows": 548,
+          "excluded_fraction": 0.015116824363465835
+        },
+        "1": {
+          "before_rows": 3358,
+          "retained_rows": 2876,
+          "excluded_rows": 482,
+          "excluded_fraction": 0.14353782013103036
+        }
+      },
+      "latitude_bins": [
+        {"lower_inclusive": -90, "upper": 41, "upper_inclusive": false, "by_target": {"0": {"before_rows": 0, "retained_rows": 0, "excluded_rows": 0, "excluded_fraction": null}, "1": {"before_rows": 0, "retained_rows": 0, "excluded_rows": 0, "excluded_fraction": null}}},
+        {"lower_inclusive": 41, "upper": 45, "upper_inclusive": false, "by_target": {"0": {"before_rows": 1777, "retained_rows": 1777, "excluded_rows": 0, "excluded_fraction": 0.0}, "1": {"before_rows": 102, "retained_rows": 102, "excluded_rows": 0, "excluded_fraction": 0.0}}},
+        {"lower_inclusive": 45, "upper": 48, "upper_inclusive": false, "by_target": {"0": {"before_rows": 13093, "retained_rows": 13093, "excluded_rows": 0, "excluded_fraction": 0.0}, "1": {"before_rows": 360, "retained_rows": 360, "excluded_rows": 0, "excluded_fraction": 0.0}}},
+        {"lower_inclusive": 48, "upper": 51, "upper_inclusive": false, "by_target": {"0": {"before_rows": 17249, "retained_rows": 17239, "excluded_rows": 10, "excluded_fraction": 0.0005797437532610586}, "1": {"before_rows": 1083, "retained_rows": 1081, "excluded_rows": 2, "excluded_fraction": 0.0018467220683287165}}},
+        {"lower_inclusive": 51, "upper": 54, "upper_inclusive": false, "by_target": {"0": {"before_rows": 4085, "retained_rows": 3558, "excluded_rows": 527, "excluded_fraction": 0.12900856793145654}, "1": {"before_rows": 1732, "retained_rows": 1262, "excluded_rows": 470, "excluded_fraction": 0.27136258660508084}}},
+        {"lower_inclusive": 54, "upper": 58, "upper_inclusive": false, "by_target": {"0": {"before_rows": 47, "retained_rows": 36, "excluded_rows": 11, "excluded_fraction": 0.23404255319148937}, "1": {"before_rows": 81, "retained_rows": 71, "excluded_rows": 10, "excluded_fraction": 0.12345679012345678}}},
+        {"lower_inclusive": 58, "upper": 90, "upper_inclusive": true, "by_target": {"0": {"before_rows": 0, "retained_rows": 0, "excluded_rows": 0, "excluded_fraction": null}, "1": {"before_rows": 0, "retained_rows": 0, "excluded_rows": 0, "excluded_fraction": null}}}
+      ]
+    },
+    "woodland": {
+      "before": {
+        "rows": 38579,
+        "positive_rows": 2876,
+        "median_latitude": 48.71,
+        "minimum_latitude": 42.2528,
+        "maximum_latitude": 56.5455
+      },
+      "retained": {
+        "rows": 37801,
+        "positive_rows": 2838,
+        "median_latitude": 48.7685,
+        "minimum_latitude": 44.4738,
+        "maximum_latitude": 56.5455
+      },
+      "excluded": {
+        "rows": 778,
+        "positive_rows": 38,
+        "median_latitude": 44.7505,
+        "minimum_latitude": 42.2528,
+        "maximum_latitude": 48.593
+      },
+      "by_target": {
+        "0": {
+          "before_rows": 35703,
+          "retained_rows": 34963,
+          "excluded_rows": 740,
+          "excluded_fraction": 0.020726549589670337
+        },
+        "1": {
+          "before_rows": 2876,
+          "retained_rows": 2838,
+          "excluded_rows": 38,
+          "excluded_fraction": 0.01321279554937413
+        }
+      },
+      "latitude_bins": [
+        {"lower_inclusive": -90, "upper": 41, "upper_inclusive": false, "by_target": {"0": {"before_rows": 0, "retained_rows": 0, "excluded_rows": 0, "excluded_fraction": null}, "1": {"before_rows": 0, "retained_rows": 0, "excluded_rows": 0, "excluded_fraction": null}}},
+        {"lower_inclusive": 41, "upper": 45, "upper_inclusive": false, "by_target": {"0": {"before_rows": 1777, "retained_rows": 1358, "excluded_rows": 419, "excluded_fraction": 0.23579065841305571}, "1": {"before_rows": 102, "retained_rows": 78, "excluded_rows": 24, "excluded_fraction": 0.23529411764705882}}},
+        {"lower_inclusive": 45, "upper": 48, "upper_inclusive": false, "by_target": {"0": {"before_rows": 13093, "retained_rows": 12787, "excluded_rows": 306, "excluded_fraction": 0.023371267089284352}, "1": {"before_rows": 360, "retained_rows": 346, "excluded_rows": 14, "excluded_fraction": 0.03888888888888889}}},
+        {"lower_inclusive": 48, "upper": 51, "upper_inclusive": false, "by_target": {"0": {"before_rows": 17239, "retained_rows": 17224, "excluded_rows": 15, "excluded_fraction": 0.0008701200765705668}, "1": {"before_rows": 1081, "retained_rows": 1081, "excluded_rows": 0, "excluded_fraction": 0.0}}},
+        {"lower_inclusive": 51, "upper": 54, "upper_inclusive": false, "by_target": {"0": {"before_rows": 3558, "retained_rows": 3558, "excluded_rows": 0, "excluded_fraction": 0.0}, "1": {"before_rows": 1262, "retained_rows": 1262, "excluded_rows": 0, "excluded_fraction": 0.0}}},
+        {"lower_inclusive": 54, "upper": 58, "upper_inclusive": false, "by_target": {"0": {"before_rows": 36, "retained_rows": 36, "excluded_rows": 0, "excluded_fraction": 0.0}, "1": {"before_rows": 71, "retained_rows": 71, "excluded_rows": 0, "excluded_fraction": 0.0}}},
+        {"lower_inclusive": 58, "upper": 90, "upper_inclusive": true, "by_target": {"0": {"before_rows": 0, "retained_rows": 0, "excluded_rows": 0, "excluded_fraction": null}, "1": {"before_rows": 0, "retained_rows": 0, "excluded_rows": 0, "excluded_fraction": null}}}
+      ]
+    }
+  },
+  "seconds": 1.9877552919788286,
+  "model_fits": 0,
+  "quantum_calls": 0,
+  "final_test_access": false,
+  "limitations": ["Approximate agency-associated coordinates do not certify location accuracy or province membership.", "Latitude-associated exclusions do not establish station availability, missing-month causes or random sampling.", "Coarse latitude bands aggregate different years and locations; rates are descriptive, not independent probabilities.", "Only training years are described; no source, target, feature or final model changes."]
+}

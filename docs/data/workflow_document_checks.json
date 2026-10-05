@@ -1,0 +1,28 @@
+{
+  "source_commit": "8998e2acf4d2f5a15c5f7dc6d288072b3722950b",
+  "tracked_markdown_files": 32,
+  "relative_file_links_checked": 354,
+  "broken_links": [],
+  "source_hashes_match_qa": true,
+  "protected_scientific_hashes": {
+    ".cache/wildfire/final-test/outcome.json": "e0d4fc03bc736e52cacddfab6e75f08cfb896b0e9713a9413aada9ca0645bbff",
+    ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8/features.csv": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+    "docs/results/policy-evolution.json": "91d5213873c228402c1ab5d0f2929cd48a9528c391182015cb12a32a3565c2ea"
+  },
+  "protected_original_data_cache_files_preserved": 1318,
+  "protected_environment_files_preserved": 28417,
+  "main_figures_visually_reviewed": {
+    "docs/figures/final-evaluation.png": "dedfc38d2ccd7cffd732006c968f0236af178c18a860294a090c164c773e8d6f",
+    "docs/figures/local-geometry.png": "67cf5656f23f7ac16557c689b31da00e791d22da901f4df3eba6ac2ba634bee5",
+    "docs/figures/cohort-geography.png": "97e180362162fc10ae7399acb94f0109fdffd219bc936223beb2efdbbc33278e"
+  },
+  "github_markdown_verified": {
+    "report_tables": 3,
+    "quantum_display_math": true,
+    "mermaid_block": true,
+    "handoff_headings": true
+  },
+  "fixed_reproduction_artifact_sha256": "e32c1e535fea8ba33f569084546c0199fa51c46d73d406fd939a882ede2a6416",
+  "final_handoff_manifest_verified": true,
+  "final_handoff_manifest_sha256": "46d456319454294c312dc9a57ce2e117fe81fa3088c1bacacaa8fa1911bc0cc8"
+}

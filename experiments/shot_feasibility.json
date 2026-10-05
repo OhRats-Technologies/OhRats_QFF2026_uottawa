@@ -1,0 +1,18 @@
+{
+  "id": "shot-feasibility-v1",
+  "status": "frozen_labels_free_training_diagnostic",
+  "parent_plan": "experiments/quantum_landmarks.json",
+  "seeds": [811, 821, 823],
+  "angle_scales": [0.01, 0.05, 0.1, 0.5],
+  "reps": 2,
+  "shots": [512, 4096],
+  "relative_frobenius_targets": [0.1, 0.25, 0.5],
+  "max_simulated_state_preparations": 6144,
+  "max_wall_seconds": 60,
+  "hardware": false,
+  "final_test_access": false,
+  "labels_used": false,
+  "model_fits": 0,
+  "pair_circuits": 0,
+  "interpretation": "Exact matrix signal versus analytic independent Bernoulli-shot noise; no accuracy or hardware runtime guarantee. Fixed exact variance normalization, known unit train diagonals and one shared measurement per symmetric pair. Includes noisy training means in cross centering. Excludes random renormalization, PSD repair, pair correlations and device errors. All scales are diagnostic; no predictor or final model is selected."
+}

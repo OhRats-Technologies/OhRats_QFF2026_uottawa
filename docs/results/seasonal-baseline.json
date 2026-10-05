@@ -1,0 +1,434 @@
+{
+  "status": "audited_training_only_controls",
+  "plan": {
+    "id": "seasonal-baseline-v1",
+    "status": "frozen_training_only_control_followup",
+    "target": "NFDB agency-reported size >=10 ha conditional on eligible recorded fire",
+    "dataset": ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8",
+    "dataset_sha256": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+    "train_years": [
+      1988,
+      2018
+    ],
+    "folds": [
+      [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      [
+        1988,
+        2014,
+        2015,
+        2018
+      ]
+    ],
+    "feature_groups": {
+      "intercept": [],
+      "season": [
+        "month_sin",
+        "month_cos"
+      ],
+      "geography": [
+        "latitude",
+        "longitude"
+      ],
+      "geography_season": [
+        "latitude",
+        "longitude",
+        "month_sin",
+        "month_cos"
+      ]
+    },
+    "logistic": {
+      "C": 1.0,
+      "max_iter": 1000,
+      "random_state": 7
+    },
+    "reference_evidence": "docs/results/historical-woodland-groups.json",
+    "reference_model": "logistic / geography_season",
+    "reference_AP_atol": 1e-09,
+    "max_logistic_fits": 9,
+    "max_wall_seconds": 60,
+    "hardware": false,
+    "final_test_access": false,
+    "post_final_exploratory": true,
+    "hypothesis": "Pure seasonal and spatial controls clarify what the formerly named seasonal baseline actually measures.",
+    "interpretation": "One deterministic fit per fold, no seed replication or hyperparameter search. Same eligible fires and preprocessing; differing input counts are declared feature-group controls, not an equal-feature selection contest. Report all conditions; do not select a new final model or infer causality. Intercept uses training prevalence."
+  },
+  "recipe_commit": "7f5edae713ae8e65c700f061a55e70855c1310e2",
+  "recipe_hashes": {
+    "scripts/run_seasonal_baseline.py": "7ec6e2ac9199915fafd3332fabb3d199f46fb7c96b91f3e8f1bb91cb2f11f966",
+    "wildfire_lab/seasonal_baseline.py": "5bc2d5493ebc358324f2948c6a481af99789361b6bcc2b1804f167ac7ae12049",
+    "wildfire_lab/evaluation.py": "e634741036fc7e7f43ef1508ce14b8eb430475f2c6ab6b05a4f00b22614dd3e7",
+    "experiments/seasonal_baseline.json": "7d3951d4bc1b340e53183746c5e54a842f588de4cd34ee0a2c017b49649bf07b",
+    "pyproject.toml": "aaafc4e2b7985893dafada192c92e6196c428c7a08d1c1d56495522e87eb8994",
+    "uv.lock": "2cbf69b526f693d117b53585c39beb1236aecb6d69f5bb311bd1c8db25d83d97"
+  },
+  "outcome_sha256": "8db751f80521d4c41109e8b199b286079be1ce4cce689b2cf18574052cdd0913",
+  "intent_sha256": "54f4f75109affb8eb0236ca91b1ef93965eaf7fa07b45d280dfcf722922fd597",
+  "collector_recipe_sha256": {
+    "scripts/collect_seasonal_baseline.py": "c581ec44422aeffacc230635a2546f100c7672db694437051334e0aaf3d8ed46",
+    "wildfire_lab/seasonal_baseline.py": "5bc2d5493ebc358324f2948c6a481af99789361b6bcc2b1804f167ac7ae12049"
+  },
+  "runner_seconds": 1.0850061250384897,
+  "checks": {
+    "conditions": 12,
+    "train_only_transform": true,
+    "stored_parameters_reconstruct_predictions": true,
+    "metrics_recomputed": true,
+    "no_model_refit": true
+  },
+  "reference_evidence_sha256": "ab469f546fd0a7b19e6c7c8ffc554ab5e1547fd0d3ae684e1ec291b18bbb575b",
+  "combined_reference_ap_deltas": {
+    "[1988, 2006, 2007, 2010]": 0.0,
+    "[1988, 2010, 2011, 2014]": 0.0,
+    "[1988, 2014, 2015, 2018]": 0.0
+  },
+  "combined_reference_matches": true,
+  "means": {
+    "intercept": {
+      "average_precision": 0.08629439940246482,
+      "roc_auc": 0.5,
+      "brier": 0.07909625933954582,
+      "prevalence": 0.08629439940246482
+    },
+    "season": {
+      "average_precision": 0.09334314930267612,
+      "roc_auc": 0.5500556999397741,
+      "brier": 0.07897513606941525,
+      "prevalence": 0.08629439940246482
+    },
+    "geography": {
+      "average_precision": 0.3710153325115549,
+      "roc_auc": 0.8077236389508872,
+      "brier": 0.0647286503379617,
+      "prevalence": 0.08629439940246482
+    },
+    "geography_season": {
+      "average_precision": 0.3426007622578026,
+      "roc_auc": 0.8244358718100436,
+      "brier": 0.06719839792630347,
+      "prevalence": 0.08629439940246482
+    }
+  },
+  "rows": [
+    {
+      "group": "intercept",
+      "features": [],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "train_rows": 27943,
+      "validation_rows": 2720,
+      "train_id_sha256": "f4ba6d48265b9c76358f413478d9f6f4c6203999af1911d13ee5b172b007cb13",
+      "validation_id_sha256": "53b0fdc06ffb68b20c7f175570fca57e4f230f542b8bdde7c5ef5b1762b65efe",
+      "train_prevalence": 0.07035751350964463,
+      "metric": {
+        "average_precision": 0.05477941176470588,
+        "roc_auc": 0.5,
+        "prevalence": 0.05477941176470588,
+        "rows": 2720,
+        "brier": 0.05202130506539435
+      },
+      "seconds": 0.014129457995295525
+    },
+    {
+      "group": "season",
+      "features": [
+        "month_sin",
+        "month_cos"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "train_rows": 27943,
+      "validation_rows": 2720,
+      "train_id_sha256": "f4ba6d48265b9c76358f413478d9f6f4c6203999af1911d13ee5b172b007cb13",
+      "validation_id_sha256": "53b0fdc06ffb68b20c7f175570fca57e4f230f542b8bdde7c5ef5b1762b65efe",
+      "train_prevalence": 0.07035751350964463,
+      "metric": {
+        "average_precision": 0.0629648198534727,
+        "roc_auc": 0.5752690698263282,
+        "prevalence": 0.05477941176470588,
+        "rows": 2720,
+        "brier": 0.05186708880158157
+      },
+      "seconds": 0.0157334579853341
+    },
+    {
+      "group": "geography",
+      "features": [
+        "latitude",
+        "longitude"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "train_rows": 27943,
+      "validation_rows": 2720,
+      "train_id_sha256": "f4ba6d48265b9c76358f413478d9f6f4c6203999af1911d13ee5b172b007cb13",
+      "validation_id_sha256": "53b0fdc06ffb68b20c7f175570fca57e4f230f542b8bdde7c5ef5b1762b65efe",
+      "train_prevalence": 0.07035751350964463,
+      "metric": {
+        "average_precision": 0.30294048022889314,
+        "roc_auc": 0.7725638836897872,
+        "prevalence": 0.05477941176470588,
+        "rows": 2720,
+        "brier": 0.04555533771484398
+      },
+      "seconds": 0.010683250031434
+    },
+    {
+      "group": "geography_season",
+      "features": [
+        "latitude",
+        "longitude",
+        "month_sin",
+        "month_cos"
+      ],
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "train_rows": 27943,
+      "validation_rows": 2720,
+      "train_id_sha256": "f4ba6d48265b9c76358f413478d9f6f4c6203999af1911d13ee5b172b007cb13",
+      "validation_id_sha256": "53b0fdc06ffb68b20c7f175570fca57e4f230f542b8bdde7c5ef5b1762b65efe",
+      "train_prevalence": 0.07035751350964463,
+      "metric": {
+        "average_precision": 0.2708650732458083,
+        "roc_auc": 0.8121862592311245,
+        "prevalence": 0.05477941176470588,
+        "rows": 2720,
+        "brier": 0.049151028950731264
+      },
+      "seconds": 0.011975124944001436
+    },
+    {
+      "group": "intercept",
+      "features": [],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "train_rows": 30663,
+      "validation_rows": 3771,
+      "train_id_sha256": "7b339a0df043a5c2d2a54a885bb1978d25ed8ec78b276cf8940337a589e7524c",
+      "validation_id_sha256": "240d488c983231036172f06711bf6f3a97584c03cd6ab90772e3aefd8002c30f",
+      "train_prevalence": 0.06897563839154681,
+      "metric": {
+        "average_precision": 0.08857067090957306,
+        "roc_auc": 0.5,
+        "prevalence": 0.08857067090957306,
+        "rows": 3771,
+        "brier": 0.08110987246358368
+      },
+      "seconds": 0.0028871670365333557
+    },
+    {
+      "group": "season",
+      "features": [
+        "month_sin",
+        "month_cos"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "train_rows": 30663,
+      "validation_rows": 3771,
+      "train_id_sha256": "7b339a0df043a5c2d2a54a885bb1978d25ed8ec78b276cf8940337a589e7524c",
+      "validation_id_sha256": "240d488c983231036172f06711bf6f3a97584c03cd6ab90772e3aefd8002c30f",
+      "train_prevalence": 0.06897563839154681,
+      "metric": {
+        "average_precision": 0.09782326117560469,
+        "roc_auc": 0.5522723827875236,
+        "prevalence": 0.08857067090957306,
+        "rows": 3771,
+        "brier": 0.08099148362883771
+      },
+      "seconds": 0.008289541001431644
+    },
+    {
+      "group": "geography",
+      "features": [
+        "latitude",
+        "longitude"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "train_rows": 30663,
+      "validation_rows": 3771,
+      "train_id_sha256": "7b339a0df043a5c2d2a54a885bb1978d25ed8ec78b276cf8940337a589e7524c",
+      "validation_id_sha256": "240d488c983231036172f06711bf6f3a97584c03cd6ab90772e3aefd8002c30f",
+      "train_prevalence": 0.06897563839154681,
+      "metric": {
+        "average_precision": 0.36688184985138345,
+        "roc_auc": 0.8347970918796681,
+        "prevalence": 0.08857067090957306,
+        "rows": 3771,
+        "brier": 0.06708993061292837
+      },
+      "seconds": 0.011574167059734464
+    },
+    {
+      "group": "geography_season",
+      "features": [
+        "latitude",
+        "longitude",
+        "month_sin",
+        "month_cos"
+      ],
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "train_rows": 30663,
+      "validation_rows": 3771,
+      "train_id_sha256": "7b339a0df043a5c2d2a54a885bb1978d25ed8ec78b276cf8940337a589e7524c",
+      "validation_id_sha256": "240d488c983231036172f06711bf6f3a97584c03cd6ab90772e3aefd8002c30f",
+      "train_prevalence": 0.06897563839154681,
+      "metric": {
+        "average_precision": 0.329357022322703,
+        "roc_auc": 0.8424977220420956,
+        "prevalence": 0.08857067090957306,
+        "rows": 3771,
+        "brier": 0.0693885182267437
+      },
+      "seconds": 0.012851584004238248
+    },
+    {
+      "group": "intercept",
+      "features": [],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "train_rows": 34434,
+      "validation_rows": 3367,
+      "train_id_sha256": "f5b21d6fc5b7147aafef233d1a58a25114aa15eaadbd7b4d934a1752685beaeb",
+      "validation_id_sha256": "c9337777332a6d0426d3cd7c214ba61045461860e4fcfc72ad1cf6e89bffb954",
+      "train_prevalence": 0.07112156589417436,
+      "metric": {
+        "average_precision": 0.11553311553311553,
+        "roc_auc": 0.5,
+        "prevalence": 0.11553311553311553,
+        "rows": 3367,
+        "brier": 0.10415760048965944
+      },
+      "seconds": 0.002865583053790033
+    },
+    {
+      "group": "season",
+      "features": [
+        "month_sin",
+        "month_cos"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "train_rows": 34434,
+      "validation_rows": 3367,
+      "train_id_sha256": "f5b21d6fc5b7147aafef233d1a58a25114aa15eaadbd7b4d934a1752685beaeb",
+      "validation_id_sha256": "c9337777332a6d0426d3cd7c214ba61045461860e4fcfc72ad1cf6e89bffb954",
+      "train_prevalence": 0.07112156589417436,
+      "metric": {
+        "average_precision": 0.11924136687895098,
+        "roc_auc": 0.5226256472054708,
+        "prevalence": 0.11553311553311553,
+        "rows": 3367,
+        "brier": 0.10406683577782648
+      },
+      "seconds": 0.008703542058356106
+    },
+    {
+      "group": "geography",
+      "features": [
+        "latitude",
+        "longitude"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "train_rows": 34434,
+      "validation_rows": 3367,
+      "train_id_sha256": "f5b21d6fc5b7147aafef233d1a58a25114aa15eaadbd7b4d934a1752685beaeb",
+      "validation_id_sha256": "c9337777332a6d0426d3cd7c214ba61045461860e4fcfc72ad1cf6e89bffb954",
+      "train_prevalence": 0.07112156589417436,
+      "metric": {
+        "average_precision": 0.443223667454388,
+        "roc_auc": 0.8158099412832062,
+        "prevalence": 0.11553311553311553,
+        "rows": 3367,
+        "brier": 0.08154068268611274
+      },
+      "seconds": 0.012449124944396317
+    },
+    {
+      "group": "geography_season",
+      "features": [
+        "latitude",
+        "longitude",
+        "month_sin",
+        "month_cos"
+      ],
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "train_rows": 34434,
+      "validation_rows": 3367,
+      "train_id_sha256": "f5b21d6fc5b7147aafef233d1a58a25114aa15eaadbd7b4d934a1752685beaeb",
+      "validation_id_sha256": "c9337777332a6d0426d3cd7c214ba61045461860e4fcfc72ad1cf6e89bffb954",
+      "train_prevalence": 0.07112156589417436,
+      "metric": {
+        "average_precision": 0.4275801912048966,
+        "roc_auc": 0.8186236341569108,
+        "prevalence": 0.11553311553311553,
+        "rows": 3367,
+        "brier": 0.08305564660143544
+      },
+      "seconds": 0.013486375100910664
+    }
+  ],
+  "limitations": "Same recorded-fire cohort/years, deterministic folds, no seed replications or final-year reads. Different feature counts are declared groups. Read-only parameter reconstruction is not proof of historical source availability or causality."
+}

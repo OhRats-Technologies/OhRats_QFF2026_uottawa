@@ -1,0 +1,44 @@
+{
+  "study": "annual-matched",
+  "parent_plan_sha256": "63c8700998901fa4126ad044056a3d6be71e93a7f467239335ed03e55b3f06b5",
+  "objective": "Compare equal-budget kernel configuration selection within chronological inner folds",
+  "observation_unit": "Ontario province-year",
+  "target": "mean_reported_size_ha",
+  "dataset_sha256": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+  "quantum_parent_receipts": [
+    "docs/results/annual-quantum-4.json",
+    "docs/results/annual-quantum-10.json"
+  ],
+  "quantum_parent_sha256": [
+    "3abf0e88856d8cf10ad1052f0ecfcfa58115ea2c34a3fae2e32c788b75062bcf",
+    "d9600241e8a295d15700bad1a0d98a3aa4a61d4cce4f8941760b3d5b04100808"
+  ],
+  "rbf_gamma_multipliers": [
+    0.25,
+    1.0,
+    4.0,
+    16.0
+  ],
+  "quantum_configurations": "reps 1/2 crossed with amplitudes pi/4 and pi/2; reuse all original exact kernels/results",
+  "candidates_per_family_per_outer_fold": 36,
+  "selection": "minimum pooled inner-validation MAE in hectares; deterministic existing grid order breaks ties; outer scores never choose configuration",
+  "grids": "same nine C/epsilon choices and log1p/training-standardized target for both families",
+  "folds": "same three outer chronological blocks and three inner TimeSeriesSplit folds",
+  "outputs": [
+    "selected per-fold forecasts/errors",
+    "all classical inner candidates",
+    "quantum parent provenance",
+    "paired outer-fold differences",
+    "pooled absolute errors for twelve reused development years"
+  ],
+  "limitations": [
+    "Adaptive protocol refinement after inspecting initial development outcomes; not independent replication",
+    "31 training years and reused development blocks",
+    "exact local simulation; no new circuit/hardware work from cached quantum selection"
+  ],
+  "budget": {
+    "new_classical_svr_fits": 654,
+    "new_quantum_kernels": 0,
+    "new_hardware_jobs": 0
+  }
+}

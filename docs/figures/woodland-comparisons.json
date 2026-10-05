@@ -1,0 +1,12 @@
+{
+  "matrix_attempt": "attempt-9d1b11ea3d82",
+  "confirmation_attempt": "attempt-e2aafbddf183",
+  "cover_attempt": "attempt-7667724839f1",
+  "summary_sha256": {
+    "docs/results/historical-woodland-combinations.json": "f494d9f40c5ce07fb75e5dab8991e36978ed8294241f0edfa52b754ffc490beb",
+    "docs/results/historical-woodland-combinations-confirm.json": "9eee4ffcc3450f1c317b413c425528bd7ace17a6449129f6487e25ac2dbe2cdd",
+    "docs/results/historical-cover-components.json": "39df33a94b04f589bf82c2568f2505b89f7c35f4188479253aa4aa26fdc07a6f"
+  },
+  "plot_code_sha256": "b088beb16d42b28398c4cae696b0d5f35c02e36dc7d48571ea28b42d90c3a7da",
+  "caption": "Matrices: reused chronological years; screen seeds 42/73/101, fresh seeds 211/307/401; 256 training/512 validation caps. Right: six dependent fold/direction conditions, 200 km blocks and 50 km guard. Points/ranges describe conditions, not confidence intervals. Final-test performance sealed."
+}

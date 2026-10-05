@@ -1,0 +1,225 @@
+{
+  "status": "offline_code_revision_evaluated",
+  "source_sha256": "fb703f88a0d5b91bbe574a0b134ece1561f2a5d081b55ac037927b53169e7e7c",
+  "rows": [
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 42,
+      "policy": "classical_gate",
+      "trace": [
+        "robust_tanh/rbf",
+        "standard_tanh/rbf",
+        "robust_tanh/qiskit_ZZ"
+      ],
+      "requests": 3,
+      "best_ap": 0.3839590174370323,
+      "reward": 0.3689590174370323
+    },
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 42,
+      "policy": "evolved_v1",
+      "trace": [
+        "robust_tanh/rbf",
+        "standard_tanh/rbf"
+      ],
+      "requests": 2,
+      "best_ap": 0.3839590174370323,
+      "reward": 0.3739590174370323
+    },
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 73,
+      "policy": "classical_gate",
+      "trace": [
+        "robust_tanh/rbf",
+        "standard_tanh/rbf"
+      ],
+      "requests": 2,
+      "best_ap": 0.17777608307853693,
+      "reward": 0.16777608307853692
+    },
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 73,
+      "policy": "evolved_v1",
+      "trace": [
+        "robust_tanh/rbf"
+      ],
+      "requests": 1,
+      "best_ap": 0.17777608307853693,
+      "reward": 0.17277608307853692
+    },
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 101,
+      "policy": "classical_gate",
+      "trace": [
+        "robust_tanh/rbf",
+        "standard_tanh/rbf",
+        "robust_tanh/qiskit_ZZ"
+      ],
+      "requests": 3,
+      "best_ap": 0.25415255824744176,
+      "reward": 0.23915255824744175
+    },
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "seed": 101,
+      "policy": "evolved_v1",
+      "trace": [
+        "robust_tanh/rbf",
+        "standard_tanh/rbf"
+      ],
+      "requests": 2,
+      "best_ap": 0.25415255824744176,
+      "reward": 0.24415255824744175
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 42,
+      "policy": "classical_gate",
+      "trace": [
+        "robust_tanh/rbf",
+        "standard_tanh/rbf"
+      ],
+      "requests": 2,
+      "best_ap": 0.3992174045511364,
+      "reward": 0.3892174045511364
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 42,
+      "policy": "evolved_v1",
+      "trace": [
+        "robust_tanh/rbf"
+      ],
+      "requests": 1,
+      "best_ap": 0.3992174045511364,
+      "reward": 0.3942174045511364
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 73,
+      "policy": "classical_gate",
+      "trace": [
+        "robust_tanh/rbf",
+        "standard_tanh/rbf",
+        "robust_tanh/qiskit_ZZ"
+      ],
+      "requests": 3,
+      "best_ap": 0.3397848494566054,
+      "reward": 0.3247848494566054
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 73,
+      "policy": "evolved_v1",
+      "trace": [
+        "robust_tanh/rbf",
+        "standard_tanh/rbf"
+      ],
+      "requests": 2,
+      "best_ap": 0.3397848494566054,
+      "reward": 0.3297848494566054
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 101,
+      "policy": "classical_gate",
+      "trace": [
+        "robust_tanh/rbf",
+        "standard_tanh/rbf"
+      ],
+      "requests": 2,
+      "best_ap": 0.4264850178370454,
+      "reward": 0.4164850178370454
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "seed": 101,
+      "policy": "evolved_v1",
+      "trace": [
+        "robust_tanh/rbf"
+      ],
+      "requests": 1,
+      "best_ap": 0.4264850178370454,
+      "reward": 0.4214850178370454
+    }
+  ],
+  "means": {
+    "classical_gate": {
+      "best_ap": 0.3302291551012997,
+      "requests": 2.5,
+      "reward": 0.3177291551012997
+    },
+    "evolved_v1": {
+      "best_ap": 0.3302291551012997,
+      "requests": 1.5,
+      "reward": 0.3227291551012997
+    }
+  },
+  "selected_policy": "evolved_v1",
+  "historical_topology": "Flat panels; decision traces do not create historical ancestry.",
+  "online_model_evaluations": 0
+}
