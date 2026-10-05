@@ -1,0 +1,10 @@
+{
+  "episodes": 32,
+  "task_seed": 119001,
+  "planner_seed": 120001,
+  "steps": 250,
+  "restarts": 4,
+  "selection": "latent goal distance only; exact outcomes evaluated afterward; all twenty frozen checkpoints retained",
+  "classical_baseline": "periodic affine regression, same frozen encoder and both saved observed training transitions",
+  "scope": "fresh task evaluation conditional on fixed dataset/settings; no additional independent training runs"
+}

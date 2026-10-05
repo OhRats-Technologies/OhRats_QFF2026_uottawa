@@ -1,0 +1,1326 @@
+{
+  "measurement_comparisons": 7200,
+  "readout_comparisons": 3600,
+  "independent_replicates_per_measurement_budget_design": 400,
+  "independent_replicates_per_readout_scenario_budget": 200,
+  "cross_budget": "shared seeds; budgets and equivalence controls must not be pooled as independent observations",
+  "measurements": [
+    {
+      "budget": 4096,
+      "kind": "focused_bell",
+      "coverage": {
+        "estimate": 0.95,
+        "successes": 380,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9240363649362804,
+          0.9674025701628528
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.1375,
+        "successes": 55,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.10718448673484568,
+          0.1747119266575193
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0025,
+        "successes": 1,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0004414477868016353,
+          0.014023285075823391
+        ]
+      },
+      "rate_rmse": 0.031182997543754445
+    },
+    {
+      "budget": 4096,
+      "kind": "focused_z",
+      "coverage": {
+        "estimate": 0.95,
+        "successes": 380,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9240363649362804,
+          0.9674025701628528
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.1375,
+        "successes": 55,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.10718448673484568,
+          0.1747119266575193
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0025,
+        "successes": 1,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0004414477868016353,
+          0.014023285075823391
+        ]
+      },
+      "rate_rmse": 0.031182997543754445
+    },
+    {
+      "budget": 4096,
+      "kind": "grouped_fixed_time",
+      "coverage": {
+        "estimate": 0.945,
+        "successes": 378,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9181325521920268,
+          0.9634015058504494
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.075,
+        "successes": 30,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.053037743922847665,
+          0.10504770626130439
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0125,
+        "successes": 5,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.005350750779971611,
+          0.028923736195967484
+        ]
+      },
+      "rate_rmse": 0.06425613350561943
+    },
+    {
+      "budget": 4096,
+      "kind": "grouped_pauli",
+      "coverage": {
+        "estimate": 0.95,
+        "successes": 380,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9240363649362804,
+          0.9674025701628528
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.0525,
+        "successes": 21,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.03459152835792041,
+          0.07892197507127498
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "rate_rmse": 0.07774446548997206
+    },
+    {
+      "budget": 4096,
+      "kind": "random_pauli",
+      "coverage": {
+        "estimate": 0.95,
+        "successes": 380,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9240363649362804,
+          0.9674025701628528
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "rate_rmse": 0.13735860256313612
+    },
+    {
+      "budget": 4096,
+      "kind": "targeted_single_pauli",
+      "coverage": {
+        "estimate": 0.9475,
+        "successes": 379,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.921078024928725,
+          0.9654084716420795
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.0975,
+        "successes": 39,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.07214511778538758,
+          0.1305122791537211
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.005,
+        "successes": 2,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0013722529547103863,
+          0.01804491843624316
+        ]
+      },
+      "rate_rmse": 0.04464186405733746
+    },
+    {
+      "budget": 16384,
+      "kind": "focused_bell",
+      "coverage": {
+        "estimate": 0.9425,
+        "successes": 377,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9151991622718807,
+          0.9613824572422669
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.415,
+        "successes": 166,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.36774607523110986,
+          0.4638710148057205
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "rate_rmse": 0.015693391559466727
+    },
+    {
+      "budget": 16384,
+      "kind": "focused_z",
+      "coverage": {
+        "estimate": 0.9425,
+        "successes": 377,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9151991622718807,
+          0.9613824572422669
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.415,
+        "successes": 166,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.36774607523110986,
+          0.4638710148057205
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "rate_rmse": 0.015693391559466727
+    },
+    {
+      "budget": 16384,
+      "kind": "grouped_fixed_time",
+      "coverage": {
+        "estimate": 0.9425,
+        "successes": 377,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9151991622718807,
+          0.9613824572422669
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.15,
+        "successes": 60,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.11834499530337544,
+          0.18831361073063213
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "rate_rmse": 0.0310394649951752
+    },
+    {
+      "budget": 16384,
+      "kind": "grouped_pauli",
+      "coverage": {
+        "estimate": 0.975,
+        "successes": 390,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9545984121283544,
+          0.986364908254064
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.1025,
+        "successes": 41,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0764588529821934,
+          0.13610342101357234
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.005,
+        "successes": 2,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0013722529547103863,
+          0.01804491843624316
+        ]
+      },
+      "rate_rmse": 0.037281660769186695
+    },
+    {
+      "budget": 16384,
+      "kind": "random_pauli",
+      "coverage": {
+        "estimate": 0.9375,
+        "successes": 375,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.909365883869693,
+          0.9573108585877976
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.0775,
+        "successes": 31,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.055132934676844526,
+          0.10790495403563605
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.01,
+        "successes": 4,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0038954837949909896,
+          0.02542656465261959
+        ]
+      },
+      "rate_rmse": 0.06700111646237131
+    },
+    {
+      "budget": 16384,
+      "kind": "targeted_single_pauli",
+      "coverage": {
+        "estimate": 0.9425,
+        "successes": 377,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9151991622718807,
+          0.9613824572422669
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.2375,
+        "successes": 95,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.19841751180740802,
+          0.2815764427180977
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "rate_rmse": 0.022665602498041962
+    },
+    {
+      "budget": 65536,
+      "kind": "focused_bell",
+      "coverage": {
+        "estimate": 0.9425,
+        "successes": 377,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9151991622718807,
+          0.9613824572422669
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.9375,
+        "successes": 375,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.909365883869693,
+          0.9573108585877976
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "rate_rmse": 0.007828618608999279
+    },
+    {
+      "budget": 65536,
+      "kind": "focused_z",
+      "coverage": {
+        "estimate": 0.9425,
+        "successes": 377,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9151991622718807,
+          0.9613824572422669
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.9375,
+        "successes": 375,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.909365883869693,
+          0.9573108585877976
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "rate_rmse": 0.007828618608999279
+    },
+    {
+      "budget": 65536,
+      "kind": "grouped_fixed_time",
+      "coverage": {
+        "estimate": 0.9675,
+        "successes": 387,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9451958471762332,
+          0.9809101576211996
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.4175,
+        "successes": 167,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.37018126768159904,
+          0.46638826088355984
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "rate_rmse": 0.01512958031832509
+    },
+    {
+      "budget": 65536,
+      "kind": "grouped_pauli",
+      "coverage": {
+        "estimate": 0.9475,
+        "successes": 379,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.921078024928725,
+          0.9654084716420795
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.275,
+        "successes": 110,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.23353872471100914,
+          0.3207418077394244
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "rate_rmse": 0.018986477703525018
+    },
+    {
+      "budget": 65536,
+      "kind": "random_pauli",
+      "coverage": {
+        "estimate": 0.95,
+        "successes": 380,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9240363649362804,
+          0.9674025701628528
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.1525,
+        "successes": 61,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.12058718801590879,
+          0.19102385654642728
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0025,
+        "successes": 1,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0004414477868016353,
+          0.014023285075823391
+        ]
+      },
+      "rate_rmse": 0.032339970540190506
+    },
+    {
+      "budget": 65536,
+      "kind": "targeted_single_pauli",
+      "coverage": {
+        "estimate": 0.945,
+        "successes": 378,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.9181325521920268,
+          0.9634015058504494
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.6925,
+        "successes": 277,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.6456251644125997,
+          0.7357126022686962
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 400,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.009512294334296508
+        ]
+      },
+      "rate_rmse": 0.01111759895327767
+    }
+  ],
+  "readout": [
+    {
+      "scenario": "ideal",
+      "budget": 16384,
+      "kind": "blind",
+      "coverage": {
+        "estimate": 0.945,
+        "successes": 189,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.9042130012276915,
+          0.9690146582965412
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.445,
+        "successes": 89,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.3778060100295335,
+          0.5142669758719658
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "scenario": "ideal",
+      "budget": 16384,
+      "kind": "guarded",
+      "coverage": {
+        "estimate": 0.945,
+        "successes": 189,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.9042130012276915,
+          0.9690146582965412
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.425,
+        "successes": 85,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.3585361254351385,
+          0.49429067352145145
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.035,
+        "successes": 7,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0170555420085672,
+          0.07047061152229074
+        ]
+      }
+    },
+    {
+      "scenario": "ideal",
+      "budget": 16384,
+      "kind": "calibrated",
+      "coverage": {
+        "estimate": 0.97,
+        "successes": 194,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.9361057075454807,
+          0.9861796856598887
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.19,
+        "successes": 38,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.14167171527790673,
+          0.25001238707599854
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "scenario": "ideal",
+      "budget": 65536,
+      "kind": "blind",
+      "coverage": {
+        "estimate": 0.94,
+        "successes": 188,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.8980683070423372,
+          0.9653478057456681
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.935,
+        "successes": 187,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.891980920700931,
+          0.9616236453508471
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "scenario": "ideal",
+      "budget": 65536,
+      "kind": "guarded",
+      "coverage": {
+        "estimate": 0.94,
+        "successes": 188,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.8980683070423372,
+          0.9653478057456681
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.905,
+        "successes": 181,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.8563983883518006,
+          0.9383368972826135
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.03,
+        "successes": 6,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.013820314340111339,
+          0.06389429245451923
+        ]
+      }
+    },
+    {
+      "scenario": "ideal",
+      "budget": 65536,
+      "kind": "calibrated",
+      "coverage": {
+        "estimate": 0.965,
+        "successes": 193,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.9295293884777092,
+          0.9829444579914328
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.775,
+        "successes": 155,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.7122587676433947,
+          0.8273763028491088
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "scenario": "ideal",
+      "budget": 262144,
+      "kind": "blind",
+      "coverage": {
+        "estimate": 0.94,
+        "successes": 188,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.8980683070423372,
+          0.9653478057456681
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 1.0,
+        "successes": 200,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "scenario": "ideal",
+      "budget": 262144,
+      "kind": "guarded",
+      "coverage": {
+        "estimate": 0.94,
+        "successes": 188,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.8980683070423372,
+          0.9653478057456681
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.97,
+        "successes": 194,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.9361057075454807,
+          0.9861796856598887
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.03,
+        "successes": 6,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.013820314340111339,
+          0.06389429245451923
+        ]
+      }
+    },
+    {
+      "scenario": "ideal",
+      "budget": 262144,
+      "kind": "calibrated",
+      "coverage": {
+        "estimate": 0.965,
+        "successes": 193,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.9295293884777092,
+          0.9829444579914328
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 1.0,
+        "successes": 200,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "scenario": "misspecified",
+      "budget": 16384,
+      "kind": "blind",
+      "coverage": {
+        "estimate": 0.395,
+        "successes": 79,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.32984101013207967,
+          0.46411650840714636
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.01,
+        "successes": 2,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.002746658133544435,
+          0.0357217617161768
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.065,
+        "successes": 13,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.03837635464915297,
+          0.10801907929906894
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "scenario": "misspecified",
+      "budget": 16384,
+      "kind": "guarded",
+      "coverage": {
+        "estimate": 0.395,
+        "successes": 79,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.32984101013207967,
+          0.46411650840714636
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.01,
+        "successes": 2,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.002746658133544435,
+          0.0357217617161768
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.055,
+        "successes": 11,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.030985341703458832,
+          0.09578699877230841
+        ]
+      },
+      "withheld": {
+        "estimate": 0.195,
+        "successes": 39,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.14605520534400512,
+          0.2554404437461275
+        ]
+      }
+    },
+    {
+      "scenario": "misspecified",
+      "budget": 16384,
+      "kind": "calibrated",
+      "coverage": {
+        "estimate": 0.995,
+        "successes": 199,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.972226295602107,
+          0.999116831284399
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.07,
+        "successes": 14,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.04215217182834281,
+          0.11405480885610646
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "scenario": "misspecified",
+      "budget": 65536,
+      "kind": "blind",
+      "coverage": {
+        "estimate": 0.005,
+        "successes": 1,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0008831687156009762,
+          0.02777370439789293
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.28,
+        "successes": 56,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.22236889773949026,
+          0.3459230458665071
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "scenario": "misspecified",
+      "budget": 65536,
+      "kind": "guarded",
+      "coverage": {
+        "estimate": 0.005,
+        "successes": 1,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0008831687156009762,
+          0.02777370439789293
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.13,
+        "successes": 26,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0902820227966932,
+          0.18366351872248407
+        ]
+      },
+      "withheld": {
+        "estimate": 0.56,
+        "successes": 112,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.4907167533465867,
+          0.6270218074881414
+        ]
+      }
+    },
+    {
+      "scenario": "misspecified",
+      "budget": 65536,
+      "kind": "calibrated",
+      "coverage": {
+        "estimate": 0.995,
+        "successes": 199,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.972226295602107,
+          0.999116831284399
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.455,
+        "successes": 91,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.387482193098835,
+          0.524213886275119
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "scenario": "misspecified",
+      "budget": 262144,
+      "kind": "blind",
+      "coverage": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.815,
+        "successes": 163,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.7554293723884825,
+          0.8626980719938396
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    },
+    {
+      "scenario": "misspecified",
+      "budget": 262144,
+      "kind": "guarded",
+      "coverage": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.01,
+        "successes": 2,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.002746658133544435,
+          0.0357217617161768
+        ]
+      },
+      "withheld": {
+        "estimate": 0.99,
+        "successes": 198,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.9642782382838232,
+          0.9972533418664556
+        ]
+      }
+    },
+    {
+      "scenario": "misspecified",
+      "budget": 262144,
+      "kind": "calibrated",
+      "coverage": {
+        "estimate": 0.995,
+        "successes": 199,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.972226295602107,
+          0.999116831284399
+        ]
+      },
+      "resolved_correct": {
+        "estimate": 0.99,
+        "successes": 198,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.9642782382838232,
+          0.9972533418664556
+        ]
+      },
+      "resolved_wrong": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      },
+      "withheld": {
+        "estimate": 0.0,
+        "successes": 0,
+        "trials": 200,
+        "pointwise_mc_wilson_95": [
+          0.0,
+          0.018845326377266575
+        ]
+      }
+    }
+  ],
+  "guard_note": "guard coverage refers to underlying interval, not conditional coverage after selective withholding"
+}

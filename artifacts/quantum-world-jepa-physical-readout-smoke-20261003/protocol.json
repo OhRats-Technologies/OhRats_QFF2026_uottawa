@@ -1,0 +1,24 @@
+{
+  "output": "artifacts/quantum-world-jepa-physical-readout-smoke-20261003",
+  "seeds": [
+    7501
+  ],
+  "steps": 4000,
+  "n_eval": 64,
+  "physical_readout": true,
+  "anchor": 20,
+  "lr": 0.003,
+  "target_grad": "stop",
+  "invariance": [
+    0.0,
+    1.0
+  ],
+  "models": [
+    "direct",
+    "latent_generator"
+  ],
+  "train_seed": 99101,
+  "probe_seed": 99201,
+  "evaluation_seed_offset": 2000000,
+  "probe_steps": 1800
+}

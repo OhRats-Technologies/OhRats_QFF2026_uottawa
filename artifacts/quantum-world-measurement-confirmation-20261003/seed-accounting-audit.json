@@ -1,0 +1,8 @@
+{
+  "comparisons": 7200,
+  "draw_calls": 4800,
+  "independent_noise_seed_families": 1600,
+  "independent_replicates_per_budget_and_design": 400,
+  "correction": "Completion label independent_measurement_draws counts draw calls; shared seeds correlate budgets, so budgets must not be pooled as independent observations",
+  "shared_controls": "Bell and Z are duplicates; single Pauli is a marginal of the same full-basis draw"
+}

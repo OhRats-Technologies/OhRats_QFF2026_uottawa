@@ -1,0 +1,15 @@
+{
+  "reproduced_seeds": 10,
+  "max_reproduction_discrepancy": 0,
+  "fresh_control_comparisons": 23,
+  "rate_fits": 6,
+  "parametric_bootstrap_fits": 1200,
+  "index_intervals_spanning_3_and_4": 4,
+  "summary": {
+    "direct": 0.3351547235971243,
+    "exact_reference": 0.9999999999995379,
+    "generator": 0.8528673650263556,
+    "transferred_direct_encoder": 0.9686459197134036,
+    "transferred_generator_encoder": 0.9012869206621424
+  }
+}

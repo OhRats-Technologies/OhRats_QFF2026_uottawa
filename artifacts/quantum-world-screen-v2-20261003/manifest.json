@@ -1,0 +1,41 @@
+{
+  "config": {
+    "output": "artifacts/quantum-world-screen-v2-20261003",
+    "steps": 1600,
+    "seeds": [
+      4101,
+      4102,
+      4103
+    ],
+    "models": [
+      "direct",
+      "chord",
+      "source_chord",
+      "generator",
+      "hamiltonian"
+    ],
+    "lr": 0.003,
+    "n_train": 2048,
+    "n_eval": 128,
+    "length": 32,
+    "data_seed": 90101,
+    "eval_seed": 90201,
+    "freeze_encoder": false
+  },
+  "created_utc": "2026-10-03T22:53:10.150434+00:00",
+  "stage": "validation screening",
+  "training_data_sha256": "fe0472ee9dc2cf9e5e9f134e8c324fc7e5056e653804cdb5c5bbac32faf1e26f",
+  "sources": {
+    "/Users/fern/Projects/OhRats-Technologies/OhRats_QFF2026_uottawa/scripts/quantum_world_pilot.py": "8bcdff199cf4c9d8de143f3e3729ab02447beb59ff7d447e4a19cb3fa917967f",
+    "quantum_world/__init__.py": "fee867df4e5784ccc84c3e8d127fb7785f67fb4c4105c36277e2363f2dd83ea4",
+    "quantum_world/data.py": "5dbf8677f4438fe749ad7a19e63f38e144c8a2780fb18eef1f41112b2ef0917f",
+    "quantum_world/models.py": "d96875657c1a04afaa65c7f3b81eb0d9b44f827267e4d9d501abe0c81a34e696",
+    "quantum_world/physics.py": "1ffa463e8fed8d9a3b0ab71f6a054f4ce1fe236d76e11e842d1cf819e21b804e"
+  },
+  "versions": {
+    "torch": "2.14.1",
+    "numpy": "2.5.3"
+  },
+  "device": "cpu",
+  "threads": 1
+}

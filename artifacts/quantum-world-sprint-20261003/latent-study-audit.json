@@ -1,0 +1,85 @@
+{
+  "audit": {
+    "jepa-confirmation": {
+      "runs": 60,
+      "protocol_sha256": "14f2c848e16f17b214f24e8c3b711fac20dbafee0c4ab86acc614ab15d0d6f92",
+      "snapshots_verified": true
+    },
+    "jepa-physical-readout-smoke": {
+      "runs": 4,
+      "protocol_sha256": "338ae787eb7dfc1a83994832071f3fde5606952f39175da72086a8b5d90cc0ec",
+      "snapshots_verified": true
+    },
+    "control-smoke": {
+      "runs": 3,
+      "protocol_sha256": "7525cda6eea83b670697247f01f651c4a9977065efb642bfb6b1b21114922faf",
+      "snapshots_verified": true
+    },
+    "transferred-linear": {
+      "runs": 10,
+      "protocol_sha256": "1ab79410a1ba16914477ecb77ab4ae0acecb5a6b9319ed6115fc039e7de71897",
+      "snapshots_verified": true
+    },
+    "algebra-exploration": {
+      "runs": 8,
+      "protocol_sha256": "e8b994fb01ca58314a2a519ccbe10a935f4a99d73f70c7a62b9650efa44cb01b",
+      "snapshots_verified": true
+    }
+  },
+  "summary": [
+    {
+      "kind": "direct",
+      "invariance": 0.0,
+      "mean_roll64": 0.25847253190501623,
+      "min_roll64": 0.2449568199592718,
+      "max_roll64": 0.2929058024532639,
+      "mean_angle": 0.7361484955787108,
+      "successes": 0
+    },
+    {
+      "kind": "direct",
+      "invariance": 1.0,
+      "mean_roll64": 0.27410053965248016,
+      "min_roll64": 0.23637018701984167,
+      "max_roll64": 0.30506140516448566,
+      "mean_angle": 0.7806715055463777,
+      "successes": 0
+    },
+    {
+      "kind": "gaussian",
+      "invariance": 0.0,
+      "mean_roll64": 0.25349553523202467,
+      "min_roll64": 0.23782573432476684,
+      "max_roll64": 0.28862293878118817,
+      "mean_angle": 0.6398056945527062,
+      "successes": 0
+    },
+    {
+      "kind": "gaussian",
+      "invariance": 1.0,
+      "mean_roll64": 0.2542907247760347,
+      "min_roll64": 0.23012981014897263,
+      "max_roll64": 0.26990680650396565,
+      "mean_angle": 0.6971038656706066,
+      "successes": 0
+    },
+    {
+      "kind": "latent_generator",
+      "invariance": 0.0,
+      "mean_roll64": 0.5957260626392515,
+      "min_roll64": 0.31363080437107727,
+      "max_roll64": 0.9896387899317828,
+      "mean_angle": 0.9588207431944225,
+      "successes": 4
+    },
+    {
+      "kind": "latent_generator",
+      "invariance": 1.0,
+      "mean_roll64": 0.8468685568085533,
+      "min_roll64": 0.2523844177736334,
+      "max_roll64": 0.9898504355443065,
+      "mean_angle": 0.9765778756690624,
+      "successes": 8
+    }
+  ]
+}

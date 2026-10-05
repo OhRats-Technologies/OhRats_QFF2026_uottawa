@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-04T00:19:30.479432+00:00",
+  "protocol_sha256": "46dade06c015d989534b4a3f46d55c1877de94b8136f2dff08ff256ff3462e3e",
+  "input_sha256": "407cda56d8fed096a964c1c3b9f1f3e63a3b3c348e72e57f4b1e148f6403eea2",
+  "sources": {
+    "/Users/fern/Projects/OhRats-Technologies/OhRats_QFF2026_uottawa/scripts/quantum_world_rate_audit.py": "7354e41b8784cfcd9b3f2afcc1db4832ede89634b3aea5c5e6ed1539d3114155",
+    "quantum_world/channels.py": "6f4443cee4c8629ed21da253c0dcb487fe640af93f1734d522f61a39dba366c6"
+  }
+}

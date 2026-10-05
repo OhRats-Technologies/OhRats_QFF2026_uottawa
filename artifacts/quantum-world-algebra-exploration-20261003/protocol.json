@@ -1,0 +1,24 @@
+{
+  "output": "artifacts/quantum-world-algebra-exploration-20261003",
+  "seeds": [
+    7611,
+    7612,
+    7613,
+    7614
+  ],
+  "weights": [
+    0.0,
+    10.0
+  ],
+  "steps": 4000,
+  "train_seed": 99701,
+  "probe_seed": 99801,
+  "invariance": 1.0,
+  "anchor": 20.0,
+  "lr": 0.003,
+  "probe_steps": 1800,
+  "n_eval": 128,
+  "selection": "all seeds reported; no best-outcome checkpoint selection",
+  "prior": "H0,H1,CX01,CX10 have order two; the two RZ generators commute",
+  "scope": "new exploratory intervention, motivated by previously frozen holdout failures"
+}

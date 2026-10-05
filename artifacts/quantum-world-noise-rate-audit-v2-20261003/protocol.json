@@ -1,0 +1,12 @@
+{
+  "bootstrap": 200,
+  "shots": 128,
+  "scope": "posthoc classical optimizer/uncertainty audit, no additional independent datasets",
+  "interval": "pointwise percentile parametric bootstrap conditional on known channel family, prepared inputs, binomial measurement model",
+  "selection": "all six noisy physical fits; no omitted seeds",
+  "bounds": [
+    1e-05,
+    4.0
+  ],
+  "limitations": "approximate intervals, no simultaneous coverage or hardware model-misspecification guarantee"
+}

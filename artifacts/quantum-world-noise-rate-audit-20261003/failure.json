@@ -1,0 +1,6 @@
+{
+  "status": "failed_before_results",
+  "error": "NumPy bootstrap arrays were not JSON serializable",
+  "correction": "Convert bootstrap samples to nested numeric lists; rerun unchanged calculations in fresh v2 output",
+  "scientific_results_emitted": false
+}

@@ -1,0 +1,87 @@
+{
+  "status": "all goal requirements verified",
+  "verified_utc": "2026-10-04T01:24:17.339408+00:00",
+  "deadline_utc": "2026-10-04T02:00:00+00:00",
+  "science_report_commit": "744939a",
+  "published_board_head": "083c63a4051d3612a6911adabb79a4d1434996c8",
+  "report_manifest_sha256": "2b6cdd22f1c4dcf3cab6affde64cbce44419f925e0d41890978e56dac2ec85e6",
+  "report_source_sha256": "c9317a7745b759c53ea7ede3fc77959bcea933e964744fee2865e2d30c38be34",
+  "pdf_sha256": "d4d754bc08aeabedd37ff99a0498c6e88c14c56f5ba8d36bed9e24b6459ac636",
+  "claims_closed": [
+    "fly-agent-20261003T224602Z-2c017e1f",
+    "fly-agent-20261004T002733Z-68864fa8",
+    "fly-agent-20261004T003836Z-66d772e4",
+    "fly-agent-20261004T004738Z-b3b0435f",
+    "fly-agent-20261004T011256Z-b24965ff"
+  ],
+  "requirements": [
+    {
+      "requirement": "two-qubit learned latent dynamics",
+      "evidence": "quantum_world/jepa.py and sequence_jepa.py; complete Pauli inputs plus nuisance; no reconstruction",
+      "passed": true
+    },
+    {
+      "requirement": "direct, flow matching and continuous-generator comparison",
+      "evidence": "120 frozen endpoint evaluations and 60 fresh nonlinear JEPA comparisons",
+      "passed": true
+    },
+    {
+      "requirement": "strong physical/classical baselines",
+      "evidence": "Hamiltonian/periodic endpoint fits, frozen-encoder transfers and exact control references",
+      "passed": true
+    },
+    {
+      "requirement": "held-out angles, compositions and long rollouts",
+      "evidence": "independent unseen-angle/64-step evaluation, gate-algebra/Bell metrics and fresh 32-task control sets",
+      "passed": true
+    },
+    {
+      "requirement": "exploration and exploitation",
+      "evidence": "append-only QW-01 through QW-17 ledger; screens, frozen confirmations, failed interventions, readout stress and final controls",
+      "passed": true
+    },
+    {
+      "requirement": "uncertainty and physical validity",
+      "evidence": "raw validity/Choi audits, matched shot budgets, 1200 rate bootstrap fits, exact conditional calibration intervals",
+      "passed": true
+    },
+    {
+      "requirement": "preserve negatives and independent evaluations",
+      "evidence": "all seeds retained; separate data hashes, source snapshots, failed advancement chronology; dependency caveats explicit",
+      "passed": true
+    },
+    {
+      "requirement": "polished report",
+      "evidence": "final Markdown and 13-page rendered/visually inspected PDF; key extracted metrics agree",
+      "passed": true
+    },
+    {
+      "requirement": "verification",
+      "evidence": "149 tests passed with one CPU thread, FlyWalk smoke passed, 18 completed-study manifest hashes validated",
+      "passed": true
+    },
+    {
+      "requirement": "collaboration/publication",
+      "evidence": "all five current-session claims closed, board causal references and exact remote equality checked, report/science commit 744939a published",
+      "passed": true
+    },
+    {
+      "requirement": "deadline/local simulation",
+      "evidence": "completed before 02:00 UTC; no credential access or new hardware jobs during goal",
+      "passed": true
+    }
+  ],
+  "historical_board_note": {
+    "pre_goal_nonclaim_completion_references_preserved": [
+      "antigravity-20261003T201000Z-abc123"
+    ],
+    "current_goal_records_valid": true
+  },
+  "limits": [
+    "local complete-state synthetic benchmark",
+    "conditional on fixed datasets and known channel/readout models",
+    "no quantum advantage or established novelty",
+    "successful generator uses endpoint loss, not flow-matching velocity regression",
+    "no independent collaborator review claimed"
+  ]
+}

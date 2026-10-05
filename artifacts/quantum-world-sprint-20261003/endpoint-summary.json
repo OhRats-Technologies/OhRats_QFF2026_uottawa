@@ -1,0 +1,703 @@
+{
+  "summaries": [
+    {
+      "n": 48,
+      "shots": 0,
+      "kind": "direct",
+      "extrapolation": 0.3204118405656824,
+      "rollout": 0.2467076100673669,
+      "validity": 0.0015625
+    },
+    {
+      "n": 48,
+      "shots": 0,
+      "kind": "generator",
+      "extrapolation": 0.556334264232692,
+      "rollout": 0.23956247008892664,
+      "validity": 0.0
+    },
+    {
+      "n": 48,
+      "shots": 0,
+      "kind": "hamiltonian",
+      "extrapolation": 0.9583184965869757,
+      "rollout": 0.8245030391096921,
+      "validity": 1.0
+    },
+    {
+      "n": 48,
+      "shots": 0,
+      "kind": "linear",
+      "extrapolation": 0.2852433894455415,
+      "rollout": 0.24999999999999703,
+      "validity": 1.0
+    },
+    {
+      "n": 48,
+      "shots": 128,
+      "kind": "direct",
+      "extrapolation": 0.3186592610498501,
+      "rollout": 0.2419605109807287,
+      "validity": 0.003125
+    },
+    {
+      "n": 48,
+      "shots": 128,
+      "kind": "generator",
+      "extrapolation": 0.482510515117457,
+      "rollout": 0.25074684556244603,
+      "validity": 0.0
+    },
+    {
+      "n": 48,
+      "shots": 128,
+      "kind": "hamiltonian",
+      "extrapolation": 0.8804339498783126,
+      "rollout": 0.5070994965542359,
+      "validity": 1.0
+    },
+    {
+      "n": 48,
+      "shots": 128,
+      "kind": "linear",
+      "extrapolation": 0.2853313423764726,
+      "rollout": 0.25427367872005024,
+      "validity": 0.9234375
+    },
+    {
+      "n": 192,
+      "shots": 0,
+      "kind": "direct",
+      "extrapolation": 0.3473084853216142,
+      "rollout": 0.24995344641726072,
+      "validity": 0.021875
+    },
+    {
+      "n": 192,
+      "shots": 0,
+      "kind": "generator",
+      "extrapolation": 0.999998799443173,
+      "rollout": 0.9999946479052909,
+      "validity": 0.0546875
+    },
+    {
+      "n": 192,
+      "shots": 0,
+      "kind": "hamiltonian",
+      "extrapolation": 0.999999999999947,
+      "rollout": 0.9999999999974338,
+      "validity": 1.0
+    },
+    {
+      "n": 192,
+      "shots": 0,
+      "kind": "linear",
+      "extrapolation": 0.5493173928214202,
+      "rollout": 0.25174880355414364,
+      "validity": 1.0
+    },
+    {
+      "n": 192,
+      "shots": 128,
+      "kind": "direct",
+      "extrapolation": 0.36028431513011394,
+      "rollout": 0.2529740757787776,
+      "validity": 0.0140625
+    },
+    {
+      "n": 192,
+      "shots": 128,
+      "kind": "generator",
+      "extrapolation": 0.8829807154213893,
+      "rollout": 0.29442842958037935,
+      "validity": 0.0
+    },
+    {
+      "n": 192,
+      "shots": 128,
+      "kind": "hamiltonian",
+      "extrapolation": 0.993746502265415,
+      "rollout": 0.7873104816075263,
+      "validity": 1.0
+    },
+    {
+      "n": 192,
+      "shots": 128,
+      "kind": "linear",
+      "extrapolation": 0.4673659121028349,
+      "rollout": 0.25049051279798845,
+      "validity": 0.678125
+    },
+    {
+      "n": 768,
+      "shots": 0,
+      "kind": "direct",
+      "extrapolation": 0.49625364634729496,
+      "rollout": 0.24838878359354322,
+      "validity": 0.0125
+    },
+    {
+      "n": 768,
+      "shots": 0,
+      "kind": "generator",
+      "extrapolation": 0.9999999195054796,
+      "rollout": 0.9999995337508188,
+      "validity": 0.6265625
+    },
+    {
+      "n": 768,
+      "shots": 0,
+      "kind": "hamiltonian",
+      "extrapolation": 0.9999999999999553,
+      "rollout": 0.9999999999969884,
+      "validity": 1.0
+    },
+    {
+      "n": 768,
+      "shots": 0,
+      "kind": "linear",
+      "extrapolation": 0.9999977250970783,
+      "rollout": 0.999975402261823,
+      "validity": 1.0
+    },
+    {
+      "n": 768,
+      "shots": 128,
+      "kind": "direct",
+      "extrapolation": 0.4863594636933781,
+      "rollout": 0.2488852200501396,
+      "validity": 0.009375
+    },
+    {
+      "n": 768,
+      "shots": 128,
+      "kind": "generator",
+      "extrapolation": 0.9632843217768736,
+      "rollout": 0.8077435601770432,
+      "validity": 0.0
+    },
+    {
+      "n": 768,
+      "shots": 128,
+      "kind": "hamiltonian",
+      "extrapolation": 0.9987132797411435,
+      "rollout": 0.9113979460438394,
+      "validity": 1.0
+    },
+    {
+      "n": 768,
+      "shots": 128,
+      "kind": "linear",
+      "extrapolation": 0.8260456223130687,
+      "rollout": 0.3323890199065079,
+      "validity": 0.0
+    }
+  ],
+  "comparisons": [
+    {
+      "n": 48,
+      "shots": 0,
+      "competitor": "generator",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        0.5414420675403451,
+        0.40173045053773837,
+        0.4450658203291643,
+        0.26215829893510945,
+        0.35952452442906013
+      ],
+      "mean_difference": 0.4019842323542835,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.3182130483127105,
+        0.4855574207393024
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 48,
+      "shots": 0,
+      "competitor": "generator",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        0.7571311065130263,
+        0.7704323939487742,
+        0.6126019036731121,
+        0.7559258312353642,
+        0.028611609733550175
+      ],
+      "mean_difference": 0.5849405690207654,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.29377382536450736,
+        0.762210566431793
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 48,
+      "shots": 0,
+      "competitor": "linear",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        0.7217045523531425,
+        0.7120988716788231,
+        0.7102574574188634,
+        0.6914531907205155,
+        0.5298614635358262
+      ],
+      "mean_difference": 0.6730751071414341,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.6005484267362273,
+        0.7155728610965589
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 48,
+      "shots": 0,
+      "competitor": "linear",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        0.7499999999966982,
+        0.7499999999946977,
+        0.6071018836537464,
+        0.7499999999980935,
+        0.015413311905239258
+      ],
+      "mean_difference": 0.5745030391096949,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.2806683638735116,
+        0.7499999999968562
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 48,
+      "shots": 128,
+      "competitor": "generator",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        0.5258118683709567,
+        0.4046033344022315,
+        0.43769134317127456,
+        0.41265975177273195,
+        0.20885087608708286
+      ],
+      "mean_difference": 0.3979234347608555,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.2937694611669509,
+        0.48055102173166675
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 48,
+      "shots": 128,
+      "competitor": "generator",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        0.2348650503432349,
+        0.44007030329140223,
+        0.09340245376729112,
+        0.502145029321998,
+        0.011280418235023126
+      ],
+      "mean_difference": 0.25635265099178983,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.08884615886957267,
+        0.4238591431140071
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 48,
+      "shots": 128,
+      "competitor": "linear",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        0.6394995000159913,
+        0.6812817169610246,
+        0.6814582985579902,
+        0.6722786563024832,
+        0.30099486567171047
+      ],
+      "mean_difference": 0.59510260750184,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.4447875962098377,
+        0.6795517374681024
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 48,
+      "shots": 128,
+      "competitor": "linear",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        0.22043891483917466,
+        0.4315251876446508,
+        0.12090058298752598,
+        0.5054875208335896,
+        -0.01422311713401303
+      ],
+      "mean_difference": 0.2528258178341856,
+      "wins": 4,
+      "pointwise_bootstrap_95": [
+        0.08675876930924012,
+        0.41889286635913114
+      ],
+      "exact_two_sided_sign_flip_p": 0.125
+    },
+    {
+      "n": 192,
+      "shots": 0,
+      "competitor": "generator",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        1.2516186753686043e-07,
+        1.1764130714020382e-07,
+        4.4715576145160085e-06,
+        9.929822253340603e-08,
+        1.1891248581363811e-06
+      ],
+      "mean_difference": 1.200556773972572e-06,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        1.1180818537681603e-07,
+        2.9406191848435626e-06
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 192,
+      "shots": 0,
+      "competitor": "generator",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        9.656395386636873e-07,
+        9.21684555454938e-07,
+        1.904019594822781e-05,
+        7.307666342049046e-07,
+        5.102174038595919e-06
+      ],
+      "mean_difference": 5.352092143029452e-06,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        8.541083835966745e-07,
+        1.2590705703496851e-05
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 192,
+      "shots": 0,
+      "competitor": "linear",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        0.5261020349204935,
+        0.28058958872159134,
+        0.45215838767342686,
+        0.4399696860775697,
+        0.554593338499553
+      ],
+      "mean_difference": 0.4506826071785269,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.36156809743256746,
+        0.5259703472993444
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 192,
+      "shots": 0,
+      "competitor": "linear",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        0.7505590031071461,
+        0.7437874074046443,
+        0.7489903049894756,
+        0.7477045099885794,
+        0.7502147567266056
+      ],
+      "mean_difference": 0.7482511964432902,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.7458685664385769,
+        0.7501075649313957
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 192,
+      "shots": 128,
+      "competitor": "generator",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        0.10371013960733466,
+        0.08259354753396198,
+        0.11613169420600111,
+        0.0971236440675719,
+        0.15426990880525804
+      ],
+      "mean_difference": 0.11076578684402553,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.0922071961750918,
+        0.1340460011260887
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 192,
+      "shots": 128,
+      "competitor": "generator",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        0.5045629324281239,
+        0.4941206241280044,
+        0.36441720130631716,
+        0.5452020775277183,
+        0.5561074247455707
+      ],
+      "mean_difference": 0.49288205202714686,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.42651486111493486,
+        0.541528995178487
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 192,
+      "shots": 128,
+      "competitor": "linear",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        0.5346387977711409,
+        0.48759132718192977,
+        0.5434538712546325,
+        0.5003500854955701,
+        0.5658688691096271
+      ],
+      "mean_difference": 0.52638059016258,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.5013155876591984,
+        0.5506568556999321
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 192,
+      "shots": 128,
+      "competitor": "linear",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        0.5170364711240767,
+        0.5377047677090474,
+        0.4909144960864748,
+        0.5675431261734685,
+        0.5709009829546214
+      ],
+      "mean_difference": 0.5368199688095379,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.51072134042603,
+        0.5629185971930454
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 768,
+      "shots": 0,
+      "competitor": "generator",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        7.889726061360847e-08,
+        8.609654844615733e-08,
+        8.272653784224815e-08,
+        8.457510092263476e-08,
+        7.017693071098563e-08
+      ],
+      "mean_difference": 8.049447570712687e-08,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        7.510492023854454e-08,
+        8.481396731596647e-08
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 768,
+      "shots": 0,
+      "competitor": "generator",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        4.503277764023039e-07,
+        4.743952071173396e-07,
+        4.500769554827144e-07,
+        5.002222024375058e-07,
+        4.5620870681162273e-07
+      ],
+      "mean_difference": 4.662461696502973e-07,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        4.514036341163319e-07,
+        4.850277539825143e-07
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 768,
+      "shots": 0,
+      "competitor": "linear",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        2.1651710215842e-06,
+        2.288748596646073e-06,
+        2.308905686088103e-06,
+        1.6476180297875231e-06,
+        2.964071050381989e-06
+      ],
+      "mean_difference": 2.274902876897578e-06,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        1.9040702565309431e-06,
+        2.673257971763654e-06
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 768,
+      "shots": 0,
+      "competitor": "linear",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        2.3137270302564517e-05,
+        2.5780731653712863e-05,
+        2.3053522947957816e-05,
+        1.8912416828165135e-05,
+        3.2104734094984266e-05
+      ],
+      "mean_difference": 2.4597735165476918e-05,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        2.1131050488154556e-05,
+        2.8517748578016365e-05
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 768,
+      "shots": 128,
+      "competitor": "generator",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        0.03650074107067269,
+        0.0330364523283494,
+        0.03386250084598785,
+        0.03548906691684506,
+        0.038256028659494734
+      ],
+      "mean_difference": 0.035428957964269946,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.03385739465310391,
+        0.03702626557902895
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 768,
+      "shots": 128,
+      "competitor": "generator",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        0.11486010906711264,
+        0.10763624887154144,
+        0.1108633291245118,
+        0.0522428161377162,
+        0.13266942613309884
+      ],
+      "mean_difference": 0.10365438586679618,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.07584496127036053,
+        0.12394698732966403
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 768,
+      "shots": 128,
+      "competitor": "linear",
+      "metric": "unseen_angles",
+      "paired_seeds": 5,
+      "differences": [
+        0.17680265724007982,
+        0.1733859151908027,
+        0.15981943133556364,
+        0.17000936558071578,
+        0.18332091779321213
+      ],
+      "mean_difference": 0.17266765742807483,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.1652540633654973,
+        0.1793549552400864
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    },
+    {
+      "n": 768,
+      "shots": 128,
+      "competitor": "linear",
+      "metric": "rollout",
+      "paired_seeds": 5,
+      "differences": [
+        0.564467500624742,
+        0.5907807448237388,
+        0.5799417049947674,
+        0.5307435325629322,
+        0.6291111476804767
+      ],
+      "mean_difference": 0.5790089261373315,
+      "wins": 5,
+      "pointwise_bootstrap_95": [
+        0.5504228015356663,
+        0.6085163376979822
+      ],
+      "exact_two_sided_sign_flip_p": 0.0625
+    }
+  ],
+  "caveat": "Five independent paired seeds; pointwise bootstrap intervals, no multiplicity adjustment. All five wins alone have two-sided exact p=.0625."
+}

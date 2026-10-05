@@ -1,0 +1,2474 @@
+[
+  {
+    "seed": 7711,
+    "kind": "latent_generator",
+    "consistency": 0.0,
+    "data_sha256": "b3a03532c0007d92f521147aa24684ced7247ee5aedeafbd35b30479472415a7",
+    "training": {
+      "seconds": 18.813614165992476,
+      "steps": 4000,
+      "batch": 64,
+      "lr": 0.003,
+      "consistency": 0.0,
+      "reconstruction_loss": false,
+      "normalize_prediction": true,
+      "targets": "stop-gradient intermediate/final encoder, same observed triplets",
+      "extra_compute": "one additional free-running transition when consistency is enabled",
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.3825289011001587,
+          "teacher": 0.002020370215177536,
+          "rollout": 0.0,
+          "anchor": 0.06894273310899734,
+          "agreement": 0.0016538741765543818
+        },
+        {
+          "step": 200,
+          "loss": 1.2373015880584717,
+          "teacher": 0.18724092841148376,
+          "rollout": 0.0,
+          "anchor": 0.052240777760744095,
+          "agreement": 0.005245140288025141
+        },
+        {
+          "step": 400,
+          "loss": 1.0141600370407104,
+          "teacher": 0.12665009498596191,
+          "rollout": 0.0,
+          "anchor": 0.04413241147994995,
+          "agreement": 0.004861682653427124
+        },
+        {
+          "step": 600,
+          "loss": 0.8858259320259094,
+          "teacher": 0.15704385936260223,
+          "rollout": 0.0,
+          "anchor": 0.03618324175477028,
+          "agreement": 0.005117237567901611
+        },
+        {
+          "step": 800,
+          "loss": 0.7034893035888672,
+          "teacher": 0.0931498259305954,
+          "rollout": 0.0,
+          "anchor": 0.030283736065030098,
+          "agreement": 0.004664703272283077
+        },
+        {
+          "step": 1000,
+          "loss": 0.6731091737747192,
+          "teacher": 0.08905129879713058,
+          "rollout": 0.0,
+          "anchor": 0.028992174193263054,
+          "agreement": 0.00421443535014987
+        },
+        {
+          "step": 1200,
+          "loss": 0.6086390018463135,
+          "teacher": 0.03621254116296768,
+          "rollout": 0.0,
+          "anchor": 0.02843453735113144,
+          "agreement": 0.0037356398534029722
+        },
+        {
+          "step": 1400,
+          "loss": 0.5420761108398438,
+          "teacher": 0.022667638957500458,
+          "rollout": 0.0,
+          "anchor": 0.0257528368383646,
+          "agreement": 0.004351726733148098
+        },
+        {
+          "step": 1600,
+          "loss": 0.43373602628707886,
+          "teacher": 0.018054546788334846,
+          "rollout": 0.0,
+          "anchor": 0.02061201073229313,
+          "agreement": 0.0034412662498652935
+        },
+        {
+          "step": 1800,
+          "loss": 0.49921712279319763,
+          "teacher": 0.018169037997722626,
+          "rollout": 0.0,
+          "anchor": 0.02391001395881176,
+          "agreement": 0.0028478028252720833
+        },
+        {
+          "step": 2000,
+          "loss": 0.5474822521209717,
+          "teacher": 0.017027607187628746,
+          "rollout": 0.0,
+          "anchor": 0.02638186514377594,
+          "agreement": 0.0028173511382192373
+        },
+        {
+          "step": 2200,
+          "loss": 0.496133953332901,
+          "teacher": 0.01683570258319378,
+          "rollout": 0.0,
+          "anchor": 0.023826859891414642,
+          "agreement": 0.0027610582765191793
+        },
+        {
+          "step": 2400,
+          "loss": 0.5808088183403015,
+          "teacher": 0.0133998803794384,
+          "rollout": 0.0,
+          "anchor": 0.028225356712937355,
+          "agreement": 0.002901810221374035
+        },
+        {
+          "step": 2600,
+          "loss": 0.5820394158363342,
+          "teacher": 0.015115192160010338,
+          "rollout": 0.0,
+          "anchor": 0.02821696363389492,
+          "agreement": 0.002584927249699831
+        },
+        {
+          "step": 2800,
+          "loss": 0.5960845947265625,
+          "teacher": 0.013309914618730545,
+          "rollout": 0.0,
+          "anchor": 0.028966153040528297,
+          "agreement": 0.003451633034273982
+        },
+        {
+          "step": 3000,
+          "loss": 0.6961786150932312,
+          "teacher": 0.01679937355220318,
+          "rollout": 0.0,
+          "anchor": 0.03384556993842125,
+          "agreement": 0.0024678113404661417
+        },
+        {
+          "step": 3200,
+          "loss": 0.5235360860824585,
+          "teacher": 0.015384366735816002,
+          "rollout": 0.0,
+          "anchor": 0.025285400450229645,
+          "agreement": 0.0024437408428639174
+        },
+        {
+          "step": 3400,
+          "loss": 0.4113166332244873,
+          "teacher": 0.013085123151540756,
+          "rollout": 0.0,
+          "anchor": 0.019784478470683098,
+          "agreement": 0.0025419287849217653
+        },
+        {
+          "step": 3600,
+          "loss": 0.43556520342826843,
+          "teacher": 0.014050904661417007,
+          "rollout": 0.0,
+          "anchor": 0.020935969427227974,
+          "agreement": 0.002794932806864381
+        },
+        {
+          "step": 3800,
+          "loss": 0.35576674342155457,
+          "teacher": 0.015024879947304726,
+          "rollout": 0.0,
+          "anchor": 0.01690693013370037,
+          "agreement": 0.0026032691821455956
+        },
+        {
+          "step": 3999,
+          "loss": 0.6964671611785889,
+          "teacher": 0.01318342424929142,
+          "rollout": 0.0,
+          "anchor": 0.03400104492902756,
+          "agreement": 0.003262836253270507
+        }
+      ]
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 1.742666497444893e-05,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.000160143618238586,
+        "mean_projected_fidelity": 0.9990246557390473,
+        "raw_overlap_mean": 0.9990246557390472,
+        "projection_frobenius_mean": 5.139291157265698e-16
+      },
+      "one_step": {
+        "pauli_mse": 0.00200815147780393,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00015148871874152582,
+        "mean_projected_fidelity": 0.9952182133535279,
+        "raw_overlap_mean": 0.9952182133535281,
+        "projection_frobenius_mean": 5.581616517481247e-16
+      },
+      "unseen_angles": {
+        "pauli_mse": 0.0031112840312920334,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00013956033583966055,
+        "mean_projected_fidelity": 0.9931059004312284,
+        "raw_overlap_mean": 0.9931059004312283,
+        "projection_frobenius_mean": 5.685600048252814e-16
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.0021576634677659503,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013990524908736262,
+          "mean_projected_fidelity": 0.9949900672994477,
+          "raw_overlap_mean": 0.9949900672994478,
+          "projection_frobenius_mean": 5.181504788141121e-16
+        },
+        "4": {
+          "pauli_mse": 0.003164134813342885,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00015733487058399465,
+          "mean_projected_fidelity": 0.9929728514428092,
+          "raw_overlap_mean": 0.9929728514428091,
+          "projection_frobenius_mean": 5.711412388494088e-16
+        },
+        "16": {
+          "pauli_mse": 0.004208885455888603,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00015365163227900247,
+          "mean_projected_fidelity": 0.990989366689899,
+          "raw_overlap_mean": 0.990989366689899,
+          "projection_frobenius_mean": 5.778985180227814e-16
+        },
+        "32": {
+          "pauli_mse": 0.004814797011592395,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00014042902792000438,
+          "mean_projected_fidelity": 0.9897567724788916,
+          "raw_overlap_mean": 0.9897567724788916,
+          "projection_frobenius_mean": 5.639683854867165e-16
+        },
+        "64": {
+          "pauli_mse": 0.0077021537841462945,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013327778100562408,
+          "mean_projected_fidelity": 0.9840920387631115,
+          "raw_overlap_mean": 0.9840920387631116,
+          "projection_frobenius_mean": 5.804300665397435e-16
+        }
+      },
+      "algebra": {
+        "h_involution_latent_mse": 0.0009775351916387338,
+        "cx_involution_latent_mse": 0.000778936395238116,
+        "rz_inverse_latent_mse": 4.004641256457698e-31,
+        "rz_composition_latent_mse": 2.290297231023065e-30,
+        "independent_commutation_latent_mse": 0.00036466539093067164,
+        "noncommuting_ab": {
+          "pauli_mse": 0.0027810863467555512,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00014596191262589904,
+          "mean_projected_fidelity": 0.9937630335933056,
+          "raw_overlap_mean": 0.9937630335933058,
+          "projection_frobenius_mean": 5.608596742998925e-16
+        },
+        "noncommuting_ba": {
+          "pauli_mse": 0.0029552768101435752,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00015639681569750043,
+          "mean_projected_fidelity": 0.9933943203113365,
+          "raw_overlap_mean": 0.9933943203113365,
+          "projection_frobenius_mean": 5.698025711565557e-16
+        }
+      },
+      "bell": {
+        "pauli_mse": 0.0013465054654704328,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 4.164369839878022e-05,
+        "mean_projected_fidelity": 0.9971966779389579,
+        "raw_overlap_mean": 0.9971966779389588,
+        "projection_frobenius_mean": 9.38853726887068e-16,
+        "negativity": 0.4974476389983474,
+        "true_negativity": 0.5
+      }
+    },
+    "linearization": {
+      "relative_linear_fit_error": 0.003679705878783259,
+      "intercept_norm": 0.10025221188355059,
+      "coordinate_condition": 1.4399816853940166,
+      "generator_relative_errors": [
+        1.1656063195328166,
+        1.265182899365235,
+        1.292246797975363,
+        1.3683521612426564,
+        0.13994076839250036,
+        0.16893999571575047
+      ],
+      "unit_duration_map_relative_errors": [
+        0.14252175940370682,
+        0.13427954883056578,
+        0.10521314408758932,
+        0.12674216613450026,
+        0.09347115760917254,
+        0.11080630311863678
+      ]
+    }
+  },
+  {
+    "seed": 7711,
+    "kind": "latent_generator",
+    "consistency": 1.0,
+    "data_sha256": "b3a03532c0007d92f521147aa24684ced7247ee5aedeafbd35b30479472415a7",
+    "training": {
+      "seconds": 26.826599166030064,
+      "steps": 4000,
+      "batch": 64,
+      "lr": 0.003,
+      "consistency": 1.0,
+      "reconstruction_loss": false,
+      "normalize_prediction": true,
+      "targets": "stop-gradient intermediate/final encoder, same observed triplets",
+      "extra_compute": "one additional free-running transition when consistency is enabled",
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.3826552629470825,
+          "teacher": 0.002020370215177536,
+          "rollout": 0.002273130463436246,
+          "anchor": 0.06894273310899734,
+          "agreement": 0.0016538741765543818
+        },
+        {
+          "step": 200,
+          "loss": 1.2959051132202148,
+          "teacher": 0.20257048308849335,
+          "rollout": 0.2871609330177307,
+          "anchor": 0.05230621621012688,
+          "agreement": 0.004914996214210987
+        },
+        {
+          "step": 400,
+          "loss": 1.2344169616699219,
+          "teacher": 0.2376636266708374,
+          "rollout": 0.3544277846813202,
+          "anchor": 0.04666055366396904,
+          "agreement": 0.005160106346011162
+        },
+        {
+          "step": 600,
+          "loss": 0.9439949989318848,
+          "teacher": 0.19156232476234436,
+          "rollout": 0.2626677453517914,
+          "anchor": 0.03555366024374962,
+          "agreement": 0.005806716624647379
+        },
+        {
+          "step": 800,
+          "loss": 0.8383357524871826,
+          "teacher": 0.13257181644439697,
+          "rollout": 0.20839755237102509,
+          "anchor": 0.03316738083958626,
+          "agreement": 0.004503459669649601
+        },
+        {
+          "step": 1000,
+          "loss": 0.7605525255203247,
+          "teacher": 0.1362926959991455,
+          "rollout": 0.18334582448005676,
+          "anchor": 0.02980300597846508,
+          "agreement": 0.004673155024647713
+        },
+        {
+          "step": 1200,
+          "loss": 0.7837534546852112,
+          "teacher": 0.17232325673103333,
+          "rollout": 0.23312650620937347,
+          "anchor": 0.028833119198679924,
+          "agreement": 0.00436620507389307
+        },
+        {
+          "step": 1400,
+          "loss": 0.6814243793487549,
+          "teacher": 0.14073267579078674,
+          "rollout": 0.18133483827114105,
+          "anchor": 0.02581685781478882,
+          "agreement": 0.004053470212966204
+        },
+        {
+          "step": 1600,
+          "loss": 0.44999098777770996,
+          "teacher": 0.03234865143895149,
+          "rollout": 0.048942770808935165,
+          "anchor": 0.020276593044400215,
+          "agreement": 0.003813425311818719
+        },
+        {
+          "step": 1800,
+          "loss": 0.5035222768783569,
+          "teacher": 0.021489344537258148,
+          "rollout": 0.02587682008743286,
+          "anchor": 0.02385459840297699,
+          "agreement": 0.0027472081128507853
+        },
+        {
+          "step": 2000,
+          "loss": 0.547468364238739,
+          "teacher": 0.017974581569433212,
+          "rollout": 0.023532990366220474,
+          "anchor": 0.026183629408478737,
+          "agreement": 0.0030419689137488604
+        },
+        {
+          "step": 2200,
+          "loss": 0.49804943799972534,
+          "teacher": 0.017671002075076103,
+          "rollout": 0.017869992181658745,
+          "anchor": 0.023877760395407677,
+          "agreement": 0.0027237364556640387
+        },
+        {
+          "step": 2400,
+          "loss": 0.5786412358283997,
+          "teacher": 0.013904659077525139,
+          "rollout": 0.017764829099178314,
+          "anchor": 0.02799314446747303,
+          "agreement": 0.002943557919934392
+        },
+        {
+          "step": 2600,
+          "loss": 0.583888053894043,
+          "teacher": 0.014521700330078602,
+          "rollout": 0.01636183261871338,
+          "anchor": 0.02828402630984783,
+          "agreement": 0.00276574888266623
+        },
+        {
+          "step": 2800,
+          "loss": 0.6072174906730652,
+          "teacher": 0.013636518269777298,
+          "rollout": 0.014060307294130325,
+          "anchor": 0.029491618275642395,
+          "agreement": 0.0035367051605135202
+        },
+        {
+          "step": 3000,
+          "loss": 0.7049174904823303,
+          "teacher": 0.017102980986237526,
+          "rollout": 0.018552634865045547,
+          "anchor": 0.03423076495528221,
+          "agreement": 0.0024743424728512764
+        },
+        {
+          "step": 3200,
+          "loss": 0.523989200592041,
+          "teacher": 0.014713119715452194,
+          "rollout": 0.017899563536047935,
+          "anchor": 0.02526412159204483,
+          "agreement": 0.002400433411821723
+        },
+        {
+          "step": 3400,
+          "loss": 0.4138635993003845,
+          "teacher": 0.013216466642916203,
+          "rollout": 0.014383065514266491,
+          "anchor": 0.019863540306687355,
+          "agreement": 0.0027930450160056353
+        },
+        {
+          "step": 3600,
+          "loss": 0.4432991147041321,
+          "teacher": 0.013592490926384926,
+          "rollout": 0.017118211835622787,
+          "anchor": 0.021257778629660606,
+          "agreement": 0.002788182580843568
+        },
+        {
+          "step": 3800,
+          "loss": 0.3586023449897766,
+          "teacher": 0.015339103527367115,
+          "rollout": 0.016756026074290276,
+          "anchor": 0.017000406980514526,
+          "agreement": 0.0025466433726251125
+        },
+        {
+          "step": 3999,
+          "loss": 0.6927844285964966,
+          "teacher": 0.013503342866897583,
+          "rollout": 0.015502676367759705,
+          "anchor": 0.03375307098031044,
+          "agreement": 0.003220044309273362
+        }
+      ]
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 1.8418603425472508e-05,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.0001305995757657205,
+        "mean_projected_fidelity": 0.9990319670359749,
+        "raw_overlap_mean": 0.9990319670359749,
+        "projection_frobenius_mean": 5.812050121219887e-16
+      },
+      "one_step": {
+        "pauli_mse": 0.0020598770252955455,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00012398531929829862,
+        "mean_projected_fidelity": 0.9951410978817231,
+        "raw_overlap_mean": 0.995141097881723,
+        "projection_frobenius_mean": 5.477985348147653e-16
+      },
+      "unseen_angles": {
+        "pauli_mse": 0.0033198102562962983,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00011475273429567234,
+        "mean_projected_fidelity": 0.9927761333942449,
+        "raw_overlap_mean": 0.992776133394245,
+        "projection_frobenius_mean": 5.222866534818466e-16
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.0022231891614833475,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00011766868101350321,
+          "mean_projected_fidelity": 0.994904351237333,
+          "raw_overlap_mean": 0.9949043512373328,
+          "projection_frobenius_mean": 5.687681756837175e-16
+        },
+        "4": {
+          "pauli_mse": 0.003005196745253271,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.000133428871905818,
+          "mean_projected_fidelity": 0.9932935419648713,
+          "raw_overlap_mean": 0.9932935419648714,
+          "projection_frobenius_mean": 5.482602253968495e-16
+        },
+        "16": {
+          "pauli_mse": 0.004007488834653797,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00012665837111078406,
+          "mean_projected_fidelity": 0.9914411192267465,
+          "raw_overlap_mean": 0.9914411192267464,
+          "projection_frobenius_mean": 5.821419211839052e-16
+        },
+        "32": {
+          "pauli_mse": 0.004444364425348152,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00011581619573929057,
+          "mean_projected_fidelity": 0.9905199441926309,
+          "raw_overlap_mean": 0.990519944192631,
+          "projection_frobenius_mean": 5.474683920214025e-16
+        },
+        "64": {
+          "pauli_mse": 0.006748288346277341,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00012413987909836875,
+          "mean_projected_fidelity": 0.9860155641761503,
+          "raw_overlap_mean": 0.9860155641761504,
+          "projection_frobenius_mean": 5.235206547542107e-16
+        }
+      },
+      "algebra": {
+        "h_involution_latent_mse": 0.00048454697567103217,
+        "cx_involution_latent_mse": 0.0005758925453449719,
+        "rz_inverse_latent_mse": 3.577703794986411e-31,
+        "rz_composition_latent_mse": 2.369112665305722e-30,
+        "independent_commutation_latent_mse": 0.0004252645164687154,
+        "noncommuting_ab": {
+          "pauli_mse": 0.002812661242182828,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00011720693448169118,
+          "mean_projected_fidelity": 0.9937334055277172,
+          "raw_overlap_mean": 0.9937334055277172,
+          "projection_frobenius_mean": 5.589939957946365e-16
+        },
+        "noncommuting_ba": {
+          "pauli_mse": 0.0030380908068133494,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.0001209417479806802,
+          "mean_projected_fidelity": 0.9932704809239974,
+          "raw_overlap_mean": 0.9932704809239974,
+          "projection_frobenius_mean": 5.912587257162509e-16
+        }
+      },
+      "bell": {
+        "pauli_mse": 0.001481747755400103,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 6.590171344928417e-05,
+        "mean_projected_fidelity": 0.9967240339296501,
+        "raw_overlap_mean": 0.9967240339296501,
+        "projection_frobenius_mean": 2.199776223319558e-16,
+        "negativity": 0.4975039165738524,
+        "true_negativity": 0.5
+      }
+    },
+    "linearization": {
+      "relative_linear_fit_error": 0.0034759589807571685,
+      "intercept_norm": 0.10106571174082639,
+      "coordinate_condition": 1.4427430381957704,
+      "generator_relative_errors": [
+        1.3988797984364585,
+        1.4054448387213732,
+        1.1920350030623503,
+        1.5434446399140482,
+        0.13959179660416982,
+        0.16951165102476193
+      ],
+      "unit_duration_map_relative_errors": [
+        0.14532955544757045,
+        0.1350271242189771,
+        0.10637854687391776,
+        0.1287234688615671,
+        0.09312179009735459,
+        0.11123959311241113
+      ]
+    }
+  },
+  {
+    "seed": 7712,
+    "kind": "latent_generator",
+    "consistency": 0.0,
+    "data_sha256": "b3a03532c0007d92f521147aa24684ced7247ee5aedeafbd35b30479472415a7",
+    "training": {
+      "seconds": 18.875809791963547,
+      "steps": 4000,
+      "batch": 64,
+      "lr": 0.003,
+      "consistency": 0.0,
+      "reconstruction_loss": false,
+      "normalize_prediction": true,
+      "targets": "stop-gradient intermediate/final encoder, same observed triplets",
+      "extra_compute": "one additional free-running transition when consistency is enabled",
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.3997080326080322,
+          "teacher": 0.002382962265983224,
+          "rollout": 0.0,
+          "anchor": 0.06977269053459167,
+          "agreement": 0.0018712558085098863
+        },
+        {
+          "step": 200,
+          "loss": 1.0205646753311157,
+          "teacher": 0.20071467757225037,
+          "rollout": 0.0,
+          "anchor": 0.040679510682821274,
+          "agreement": 0.006259852554649115
+        },
+        {
+          "step": 400,
+          "loss": 0.8693824410438538,
+          "teacher": 0.1537962257862091,
+          "rollout": 0.0,
+          "anchor": 0.03550582006573677,
+          "agreement": 0.005469856783747673
+        },
+        {
+          "step": 600,
+          "loss": 0.7920631766319275,
+          "teacher": 0.10425925254821777,
+          "rollout": 0.0,
+          "anchor": 0.03413298353552818,
+          "agreement": 0.005144229158759117
+        },
+        {
+          "step": 800,
+          "loss": 0.7631223201751709,
+          "teacher": 0.16129323840141296,
+          "rollout": 0.0,
+          "anchor": 0.029890676960349083,
+          "agreement": 0.004015590995550156
+        },
+        {
+          "step": 1000,
+          "loss": 0.6778350472450256,
+          "teacher": 0.08318044245243073,
+          "rollout": 0.0,
+          "anchor": 0.029528329148888588,
+          "agreement": 0.004088019486516714
+        },
+        {
+          "step": 1200,
+          "loss": 0.6069011092185974,
+          "teacher": 0.07967633008956909,
+          "rollout": 0.0,
+          "anchor": 0.026189079508185387,
+          "agreement": 0.003443205961957574
+        },
+        {
+          "step": 1400,
+          "loss": 0.5528085827827454,
+          "teacher": 0.029298651963472366,
+          "rollout": 0.0,
+          "anchor": 0.02600451000034809,
+          "agreement": 0.0034197226632386446
+        },
+        {
+          "step": 1600,
+          "loss": 0.6405885815620422,
+          "teacher": 0.02354162186384201,
+          "rollout": 0.0,
+          "anchor": 0.030660124495625496,
+          "agreement": 0.0038444295059889555
+        },
+        {
+          "step": 1800,
+          "loss": 0.49359259009361267,
+          "teacher": 0.023429665714502335,
+          "rollout": 0.0,
+          "anchor": 0.02333991974592209,
+          "agreement": 0.003364532021805644
+        },
+        {
+          "step": 2000,
+          "loss": 0.4430907070636749,
+          "teacher": 0.017172442749142647,
+          "rollout": 0.0,
+          "anchor": 0.021139519289135933,
+          "agreement": 0.0031278743408620358
+        },
+        {
+          "step": 2200,
+          "loss": 0.44869688153266907,
+          "teacher": 0.01734817773103714,
+          "rollout": 0.0,
+          "anchor": 0.021400989964604378,
+          "agreement": 0.0033289066050201654
+        },
+        {
+          "step": 2400,
+          "loss": 0.47972312569618225,
+          "teacher": 0.015353156253695488,
+          "rollout": 0.0,
+          "anchor": 0.02308790385723114,
+          "agreement": 0.0026119123212993145
+        },
+        {
+          "step": 2600,
+          "loss": 0.4651920795440674,
+          "teacher": 0.015114102512598038,
+          "rollout": 0.0,
+          "anchor": 0.022382793948054314,
+          "agreement": 0.0024220815394073725
+        },
+        {
+          "step": 2800,
+          "loss": 0.6606758832931519,
+          "teacher": 0.017131533473730087,
+          "rollout": 0.0,
+          "anchor": 0.0320345014333725,
+          "agreement": 0.0028543327935039997
+        },
+        {
+          "step": 3000,
+          "loss": 0.5430381894111633,
+          "teacher": 0.01747729629278183,
+          "rollout": 0.0,
+          "anchor": 0.02611972577869892,
+          "agreement": 0.0031663933768868446
+        },
+        {
+          "step": 3200,
+          "loss": 0.5805720686912537,
+          "teacher": 0.013287283480167389,
+          "rollout": 0.0,
+          "anchor": 0.02824653685092926,
+          "agreement": 0.00235400116071105
+        },
+        {
+          "step": 3400,
+          "loss": 0.6646314263343811,
+          "teacher": 0.013686836697161198,
+          "rollout": 0.0,
+          "anchor": 0.032383520156145096,
+          "agreement": 0.0032742044422775507
+        },
+        {
+          "step": 3600,
+          "loss": 0.5303205847740173,
+          "teacher": 0.01652800291776657,
+          "rollout": 0.0,
+          "anchor": 0.025526737794280052,
+          "agreement": 0.0032578001264482737
+        },
+        {
+          "step": 3800,
+          "loss": 0.5114414095878601,
+          "teacher": 0.012726572342216969,
+          "rollout": 0.0,
+          "anchor": 0.024826526641845703,
+          "agreement": 0.0021843372378498316
+        },
+        {
+          "step": 3999,
+          "loss": 0.5268897414207458,
+          "teacher": 0.01387404277920723,
+          "rollout": 0.0,
+          "anchor": 0.025474725291132927,
+          "agreement": 0.003521193517372012
+        }
+      ]
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 1.4878090449375786e-05,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00015137303144384295,
+        "mean_projected_fidelity": 0.9989966886222561,
+        "raw_overlap_mean": 0.9989966886222561,
+        "projection_frobenius_mean": 5.559483613648453e-16
+      },
+      "one_step": {
+        "pauli_mse": 0.0016541949484300481,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00013605372701477268,
+        "mean_projected_fidelity": 0.995965462061049,
+        "raw_overlap_mean": 0.995965462061049,
+        "projection_frobenius_mean": 5.652605081776041e-16
+      },
+      "unseen_angles": {
+        "pauli_mse": 0.002519128326847677,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00014420314785835016,
+        "mean_projected_fidelity": 0.9942470227580193,
+        "raw_overlap_mean": 0.9942470227580193,
+        "projection_frobenius_mean": 5.620940457906283e-16
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.0018284941354038081,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013374878911036483,
+          "mean_projected_fidelity": 0.9956629763308986,
+          "raw_overlap_mean": 0.9956629763308986,
+          "projection_frobenius_mean": 5.189322371669872e-16
+        },
+        "4": {
+          "pauli_mse": 0.002437814968123273,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00014194974748319334,
+          "mean_projected_fidelity": 0.9944786660181413,
+          "raw_overlap_mean": 0.9944786660181414,
+          "projection_frobenius_mean": 5.16089216670208e-16
+        },
+        "16": {
+          "pauli_mse": 0.0038155674421687575,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.0001304489266942184,
+          "mean_projected_fidelity": 0.9918494888895878,
+          "raw_overlap_mean": 0.9918494888895877,
+          "projection_frobenius_mean": 5.379211494496496e-16
+        },
+        "32": {
+          "pauli_mse": 0.005267744474822687,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013916793082868338,
+          "mean_projected_fidelity": 0.9889801124222682,
+          "raw_overlap_mean": 0.988980112422268,
+          "projection_frobenius_mean": 5.4843087830925075e-16
+        },
+        "64": {
+          "pauli_mse": 0.0077438281906331485,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00012687985563398542,
+          "mean_projected_fidelity": 0.9842879004689484,
+          "raw_overlap_mean": 0.9842879004689484,
+          "projection_frobenius_mean": 5.671039613974582e-16
+        }
+      },
+      "algebra": {
+        "h_involution_latent_mse": 0.00041117578778699407,
+        "cx_involution_latent_mse": 0.00044836567400511316,
+        "rz_inverse_latent_mse": 5.489208790916116e-31,
+        "rz_composition_latent_mse": 3.578626594389582e-30,
+        "independent_commutation_latent_mse": 0.000501672424916543,
+        "noncommuting_ab": {
+          "pauli_mse": 0.0020369241812285195,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00014040320322323424,
+          "mean_projected_fidelity": 0.9952288426354825,
+          "raw_overlap_mean": 0.9952288426354825,
+          "projection_frobenius_mean": 5.629370794413356e-16
+        },
+        "noncommuting_ba": {
+          "pauli_mse": 0.0019911847152807535,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.0001523909844612925,
+          "mean_projected_fidelity": 0.9952616458776655,
+          "raw_overlap_mean": 0.9952616458776656,
+          "projection_frobenius_mean": 5.833456205204232e-16
+        }
+      },
+      "bell": {
+        "pauli_mse": 0.0029318667340321983,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00011434221778885077,
+        "mean_projected_fidelity": 0.9931881304807492,
+        "raw_overlap_mean": 0.9931881304807484,
+        "projection_frobenius_mean": 8.050641023678752e-16,
+        "negativity": 0.4960853445514311,
+        "true_negativity": 0.5
+      }
+    },
+    "linearization": {
+      "relative_linear_fit_error": 0.004512490442309604,
+      "intercept_norm": 0.13288889404220297,
+      "coordinate_condition": 1.3177620375102708,
+      "generator_relative_errors": [
+        1.3718802702801998,
+        1.3812545255697781,
+        1.6013437661568057,
+        1.266492612585537,
+        0.10866418099573406,
+        0.11282785280017696
+      ],
+      "unit_duration_map_relative_errors": [
+        0.09986466733793099,
+        0.11055248243546714,
+        0.0963052912536007,
+        0.10824956252385456,
+        0.07232221900547403,
+        0.07607254958876801
+      ]
+    }
+  },
+  {
+    "seed": 7712,
+    "kind": "latent_generator",
+    "consistency": 1.0,
+    "data_sha256": "b3a03532c0007d92f521147aa24684ced7247ee5aedeafbd35b30479472415a7",
+    "training": {
+      "seconds": 26.97441812499892,
+      "steps": 4000,
+      "batch": 64,
+      "lr": 0.003,
+      "consistency": 1.0,
+      "reconstruction_loss": false,
+      "normalize_prediction": true,
+      "targets": "stop-gradient intermediate/final encoder, same observed triplets",
+      "extra_compute": "one additional free-running transition when consistency is enabled",
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.3997160196304321,
+          "teacher": 0.002382962265983224,
+          "rollout": 0.002398919081315398,
+          "anchor": 0.06977269053459167,
+          "agreement": 0.0018712558085098863
+        },
+        {
+          "step": 200,
+          "loss": 1.113194465637207,
+          "teacher": 0.23088020086288452,
+          "rollout": 0.3341446816921234,
+          "anchor": 0.041232749819755554,
+          "agreement": 0.006027003284543753
+        },
+        {
+          "step": 400,
+          "loss": 1.049614667892456,
+          "teacher": 0.20918592810630798,
+          "rollout": 0.3223115801811218,
+          "anchor": 0.03891034051775932,
+          "agreement": 0.00565915834158659
+        },
+        {
+          "step": 600,
+          "loss": 0.9094679951667786,
+          "teacher": 0.14620935916900635,
+          "rollout": 0.20862515270709991,
+          "anchor": 0.03627646341919899,
+          "agreement": 0.006521514151245356
+        },
+        {
+          "step": 800,
+          "loss": 0.8351525664329529,
+          "teacher": 0.15249541401863098,
+          "rollout": 0.24040040373802185,
+          "anchor": 0.031769003719091415,
+          "agreement": 0.0033245503436774015
+        },
+        {
+          "step": 1000,
+          "loss": 0.7648454308509827,
+          "teacher": 0.16918084025382996,
+          "rollout": 0.2017981857061386,
+          "anchor": 0.028741752728819847,
+          "agreement": 0.004520823247730732
+        },
+        {
+          "step": 1200,
+          "loss": 0.6789512634277344,
+          "teacher": 0.11796842515468597,
+          "rollout": 0.1710720658302307,
+          "anchor": 0.02655329555273056,
+          "agreement": 0.003365014912560582
+        },
+        {
+          "step": 1400,
+          "loss": 0.6798573732376099,
+          "teacher": 0.11217896640300751,
+          "rollout": 0.1597433090209961,
+          "anchor": 0.02703138254582882,
+          "agreement": 0.0032685906626284122
+        },
+        {
+          "step": 1600,
+          "loss": 0.8432838320732117,
+          "teacher": 0.1422673463821411,
+          "rollout": 0.22275012731552124,
+          "anchor": 0.03285515308380127,
+          "agreement": 0.003672051941975951
+        },
+        {
+          "step": 1800,
+          "loss": 0.4839792549610138,
+          "teacher": 0.0269255843013525,
+          "rollout": 0.026989217847585678,
+          "anchor": 0.022664031013846397,
+          "agreement": 0.0037412464153021574
+        },
+        {
+          "step": 2000,
+          "loss": 0.4377763867378235,
+          "teacher": 0.017645306885242462,
+          "rollout": 0.020533841103315353,
+          "anchor": 0.020749442279338837,
+          "agreement": 0.0036979676224291325
+        },
+        {
+          "step": 2200,
+          "loss": 0.4494139552116394,
+          "teacher": 0.01876450702548027,
+          "rollout": 0.021233312785625458,
+          "anchor": 0.021304721012711525,
+          "agreement": 0.00332062691450119
+        },
+        {
+          "step": 2400,
+          "loss": 0.47656744718551636,
+          "teacher": 0.015900831669569016,
+          "rollout": 0.017518948763608932,
+          "anchor": 0.022857390344142914,
+          "agreement": 0.0027097442653030157
+        },
+        {
+          "step": 2600,
+          "loss": 0.47630518674850464,
+          "teacher": 0.016209732741117477,
+          "rollout": 0.018843401223421097,
+          "anchor": 0.022819332778453827,
+          "agreement": 0.0023919744417071342
+        },
+        {
+          "step": 2800,
+          "loss": 0.6707683801651001,
+          "teacher": 0.017677396535873413,
+          "rollout": 0.018390433862805367,
+          "anchor": 0.03248532488942146,
+          "agreement": 0.0030279825441539288
+        },
+        {
+          "step": 3000,
+          "loss": 0.5361583232879639,
+          "teacher": 0.01594558358192444,
+          "rollout": 0.01834452524781227,
+          "anchor": 0.025784850120544434,
+          "agreement": 0.003316293004900217
+        },
+        {
+          "step": 3200,
+          "loss": 0.579439640045166,
+          "teacher": 0.013294544070959091,
+          "rollout": 0.0155071672052145,
+          "anchor": 0.02812320552766323,
+          "agreement": 0.0025746694300323725
+        },
+        {
+          "step": 3400,
+          "loss": 0.6759599447250366,
+          "teacher": 0.013400563970208168,
+          "rollout": 0.017265895381569862,
+          "anchor": 0.0328754223883152,
+          "agreement": 0.003118282649666071
+        },
+        {
+          "step": 3600,
+          "loss": 0.5495421290397644,
+          "teacher": 0.0165359228849411,
+          "rollout": 0.01802203245460987,
+          "anchor": 0.026453331112861633,
+          "agreement": 0.0031965405214577913
+        },
+        {
+          "step": 3800,
+          "loss": 0.5167774558067322,
+          "teacher": 0.012860836461186409,
+          "rollout": 0.014735807664692402,
+          "anchor": 0.025039300322532654,
+          "agreement": 0.0021931326482445
+        },
+        {
+          "step": 3999,
+          "loss": 0.5251122117042542,
+          "teacher": 0.013433033600449562,
+          "rollout": 0.015889575704932213,
+          "anchor": 0.02534775622189045,
+          "agreement": 0.003495736513286829
+        }
+      ]
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 1.544018909777384e-05,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00014276253674195627,
+        "mean_projected_fidelity": 0.9990108691214199,
+        "raw_overlap_mean": 0.9990108691214199,
+        "projection_frobenius_mean": 5.610564089595299e-16
+      },
+      "one_step": {
+        "pauli_mse": 0.0016722090262807831,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00014158683108054436,
+        "mean_projected_fidelity": 0.9959179420992796,
+        "raw_overlap_mean": 0.9959179420992796,
+        "projection_frobenius_mean": 5.714883920093852e-16
+      },
+      "unseen_angles": {
+        "pauli_mse": 0.0024858140581182214,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00015082242222680875,
+        "mean_projected_fidelity": 0.9942705534380043,
+        "raw_overlap_mean": 0.9942705534380043,
+        "projection_frobenius_mean": 5.752910301883594e-16
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.001602263185824762,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00014864935175643574,
+          "mean_projected_fidelity": 0.9960148387128447,
+          "raw_overlap_mean": 0.9960148387128447,
+          "projection_frobenius_mean": 5.761832890500496e-16
+        },
+        "4": {
+          "pauli_mse": 0.0022036192762862356,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013740950069868356,
+          "mean_projected_fidelity": 0.9949214255173148,
+          "raw_overlap_mean": 0.9949214255173147,
+          "projection_frobenius_mean": 5.61485020660931e-16
+        },
+        "16": {
+          "pauli_mse": 0.0033243785159342565,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00012727385896278557,
+          "mean_projected_fidelity": 0.9927684333165276,
+          "raw_overlap_mean": 0.9927684333165274,
+          "projection_frobenius_mean": 5.623277634608e-16
+        },
+        "32": {
+          "pauli_mse": 0.00487566085879627,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.0001294364567681863,
+          "mean_projected_fidelity": 0.9897801877901079,
+          "raw_overlap_mean": 0.9897801877901079,
+          "projection_frobenius_mean": 5.559796590212986e-16
+        },
+        "64": {
+          "pauli_mse": 0.006509604784691128,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00012511444283485433,
+          "mean_projected_fidelity": 0.9866623873154677,
+          "raw_overlap_mean": 0.9866623873154677,
+          "projection_frobenius_mean": 5.381990953440193e-16
+        }
+      },
+      "algebra": {
+        "h_involution_latent_mse": 0.0004998293307197824,
+        "cx_involution_latent_mse": 0.0005774748964926466,
+        "rz_inverse_latent_mse": 3.7335376339923972e-31,
+        "rz_composition_latent_mse": 2.924723913733008e-30,
+        "independent_commutation_latent_mse": 0.0005212378831423389,
+        "noncommuting_ab": {
+          "pauli_mse": 0.0019096930538127041,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00012806027967115553,
+          "mean_projected_fidelity": 0.995498208156194,
+          "raw_overlap_mean": 0.995498208156194,
+          "projection_frobenius_mean": 5.733260271543407e-16
+        },
+        "noncommuting_ba": {
+          "pauli_mse": 0.0019319778220408467,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00014128624325781045,
+          "mean_projected_fidelity": 0.9953852033223165,
+          "raw_overlap_mean": 0.9953852033223165,
+          "projection_frobenius_mean": 5.469839371829039e-16
+        }
+      },
+      "bell": {
+        "pauli_mse": 0.001599307820199171,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00015227962269417951,
+        "mean_projected_fidelity": 0.9959265938743553,
+        "raw_overlap_mean": 0.9959265938743551,
+        "projection_frobenius_mean": 7.434707084169196e-16,
+        "negativity": 0.49737952186870554,
+        "true_negativity": 0.5
+      }
+    },
+    "linearization": {
+      "relative_linear_fit_error": 0.004028362290416615,
+      "intercept_norm": 0.13002891989904078,
+      "coordinate_condition": 1.3107334738749168,
+      "generator_relative_errors": [
+        1.3519461229105676,
+        1.5132193683669863,
+        1.3673415116010057,
+        1.3796650989166728,
+        0.11118028121637143,
+        0.11199409943726339
+      ],
+      "unit_duration_map_relative_errors": [
+        0.09792761431341933,
+        0.10580529458117766,
+        0.09431823055469488,
+        0.10389480518350211,
+        0.07403380293383058,
+        0.07538450390393113
+      ]
+    }
+  },
+  {
+    "seed": 7713,
+    "kind": "latent_generator",
+    "consistency": 0.0,
+    "data_sha256": "b3a03532c0007d92f521147aa24684ced7247ee5aedeafbd35b30479472415a7",
+    "training": {
+      "seconds": 18.891544457990676,
+      "steps": 4000,
+      "batch": 64,
+      "lr": 0.003,
+      "consistency": 0.0,
+      "reconstruction_loss": false,
+      "normalize_prediction": true,
+      "targets": "stop-gradient intermediate/final encoder, same observed triplets",
+      "extra_compute": "one additional free-running transition when consistency is enabled",
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.3800791501998901,
+          "teacher": 0.002390987705439329,
+          "rollout": 0.0,
+          "anchor": 0.06877851486206055,
+          "agreement": 0.0021178298629820347
+        },
+        {
+          "step": 200,
+          "loss": 1.0308300256729126,
+          "teacher": 0.1886112093925476,
+          "rollout": 0.0,
+          "anchor": 0.041803937405347824,
+          "agreement": 0.0061401063576340675
+        },
+        {
+          "step": 400,
+          "loss": 0.933724045753479,
+          "teacher": 0.18262451887130737,
+          "rollout": 0.0,
+          "anchor": 0.03719719126820564,
+          "agreement": 0.0071557131595909595
+        },
+        {
+          "step": 600,
+          "loss": 0.7932549715042114,
+          "teacher": 0.1200152263045311,
+          "rollout": 0.0,
+          "anchor": 0.033452145755290985,
+          "agreement": 0.004196849651634693
+        },
+        {
+          "step": 800,
+          "loss": 0.8618810772895813,
+          "teacher": 0.12484964728355408,
+          "rollout": 0.0,
+          "anchor": 0.03662729263305664,
+          "agreement": 0.004485552664846182
+        },
+        {
+          "step": 1000,
+          "loss": 0.6792505383491516,
+          "teacher": 0.0970800593495369,
+          "rollout": 0.0,
+          "anchor": 0.028863176703453064,
+          "agreement": 0.004906926769763231
+        },
+        {
+          "step": 1200,
+          "loss": 0.5298868417739868,
+          "teacher": 0.03734483942389488,
+          "rollout": 0.0,
+          "anchor": 0.024457072839140892,
+          "agreement": 0.0034005376510322094
+        },
+        {
+          "step": 1400,
+          "loss": 0.6253750324249268,
+          "teacher": 0.01972850225865841,
+          "rollout": 0.0,
+          "anchor": 0.030114831402897835,
+          "agreement": 0.0033499235287308693
+        },
+        {
+          "step": 1600,
+          "loss": 0.4570021331310272,
+          "teacher": 0.018357601016759872,
+          "rollout": 0.0,
+          "anchor": 0.021754145622253418,
+          "agreement": 0.0035616217646747828
+        },
+        {
+          "step": 1800,
+          "loss": 0.4684502184391022,
+          "teacher": 0.015917673707008362,
+          "rollout": 0.0,
+          "anchor": 0.02243589051067829,
+          "agreement": 0.0038147135637700558
+        },
+        {
+          "step": 2000,
+          "loss": 0.5331137776374817,
+          "teacher": 0.019485384225845337,
+          "rollout": 0.0,
+          "anchor": 0.02550307847559452,
+          "agreement": 0.003566795727238059
+        },
+        {
+          "step": 2200,
+          "loss": 0.6150962710380554,
+          "teacher": 0.014366633258759975,
+          "rollout": 0.0,
+          "anchor": 0.029885699972510338,
+          "agreement": 0.0030156492721289396
+        },
+        {
+          "step": 2400,
+          "loss": 0.5226666927337646,
+          "teacher": 0.014998295344412327,
+          "rollout": 0.0,
+          "anchor": 0.025204891338944435,
+          "agreement": 0.0035705650225281715
+        },
+        {
+          "step": 2600,
+          "loss": 0.6931226253509521,
+          "teacher": 0.013998763635754585,
+          "rollout": 0.0,
+          "anchor": 0.03381985425949097,
+          "agreement": 0.0027267709374427795
+        },
+        {
+          "step": 2800,
+          "loss": 0.4615842401981354,
+          "teacher": 0.019715487957000732,
+          "rollout": 0.0,
+          "anchor": 0.021935617551207542,
+          "agreement": 0.003156401915475726
+        },
+        {
+          "step": 3000,
+          "loss": 0.49858352541923523,
+          "teacher": 0.014650358818471432,
+          "rollout": 0.0,
+          "anchor": 0.024060649797320366,
+          "agreement": 0.002720188582316041
+        },
+        {
+          "step": 3200,
+          "loss": 0.5400217771530151,
+          "teacher": 0.015373392030596733,
+          "rollout": 0.0,
+          "anchor": 0.026087144389748573,
+          "agreement": 0.0029054998885840178
+        },
+        {
+          "step": 3400,
+          "loss": 0.5328272581100464,
+          "teacher": 0.01597937010228634,
+          "rollout": 0.0,
+          "anchor": 0.025702208280563354,
+          "agreement": 0.0028037158772349358
+        },
+        {
+          "step": 3600,
+          "loss": 0.49978330731391907,
+          "teacher": 0.017614178359508514,
+          "rollout": 0.0,
+          "anchor": 0.023949069902300835,
+          "agreement": 0.003187707159668207
+        },
+        {
+          "step": 3800,
+          "loss": 0.5264313817024231,
+          "teacher": 0.015203593298792839,
+          "rollout": 0.0,
+          "anchor": 0.02542394958436489,
+          "agreement": 0.0027487785555422306
+        },
+        {
+          "step": 3999,
+          "loss": 0.6349747776985168,
+          "teacher": 0.016000203788280487,
+          "rollout": 0.0,
+          "anchor": 0.030794411897659302,
+          "agreement": 0.0030863231513649225
+        }
+      ]
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 1.819824162395982e-05,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00016402055499102855,
+        "mean_projected_fidelity": 0.9989734190314996,
+        "raw_overlap_mean": 0.9989734190314996,
+        "projection_frobenius_mean": 5.170727728781937e-16
+      },
+      "one_step": {
+        "pauli_mse": 0.0018869953387351571,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00015388536289562244,
+        "mean_projected_fidelity": 0.9954424377826789,
+        "raw_overlap_mean": 0.9954424377826789,
+        "projection_frobenius_mean": 5.137274454880413e-16
+      },
+      "unseen_angles": {
+        "pauli_mse": 0.003716361915975697,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.000141369778695343,
+        "mean_projected_fidelity": 0.9920036864483948,
+        "raw_overlap_mean": 0.9920036864483948,
+        "projection_frobenius_mean": 5.489175126045661e-16
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.002582753728030379,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.0001367168348814872,
+          "mean_projected_fidelity": 0.9942090855571624,
+          "raw_overlap_mean": 0.9942090855571625,
+          "projection_frobenius_mean": 5.685815423130285e-16
+        },
+        "4": {
+          "pauli_mse": 0.00334532861005917,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013666238746044325,
+          "mean_projected_fidelity": 0.9927306549069135,
+          "raw_overlap_mean": 0.9927306549069135,
+          "projection_frobenius_mean": 5.466716259072306e-16
+        },
+        "16": {
+          "pauli_mse": 0.004718410566780686,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00016883704353516535,
+          "mean_projected_fidelity": 0.9899335970307502,
+          "raw_overlap_mean": 0.9899335970307501,
+          "projection_frobenius_mean": 5.236575958016351e-16
+        },
+        "32": {
+          "pauli_mse": 0.006396224998690765,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00012538375455259176,
+          "mean_projected_fidelity": 0.9869333968216092,
+          "raw_overlap_mean": 0.9869333968216093,
+          "projection_frobenius_mean": 5.859797784507876e-16
+        },
+        "64": {
+          "pauli_mse": 0.009939655685444027,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013668243499981644,
+          "mean_projected_fidelity": 0.9799955608785272,
+          "raw_overlap_mean": 0.9799955608785273,
+          "projection_frobenius_mean": 5.49663383909754e-16
+        }
+      },
+      "algebra": {
+        "h_involution_latent_mse": 0.0004849493466739406,
+        "cx_involution_latent_mse": 0.0006175433136862668,
+        "rz_inverse_latent_mse": 5.504717942384238e-31,
+        "rz_composition_latent_mse": 4.065946371985094e-30,
+        "independent_commutation_latent_mse": 0.0006214078816780158,
+        "noncommuting_ab": {
+          "pauli_mse": 0.0030218496423639893,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00014135359717009537,
+          "mean_projected_fidelity": 0.9933078456736512,
+          "raw_overlap_mean": 0.9933078456736512,
+          "projection_frobenius_mean": 6.089102204890413e-16
+        },
+        "noncommuting_ba": {
+          "pauli_mse": 0.0031802469396320153,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.000150427325061614,
+          "mean_projected_fidelity": 0.9929621109596029,
+          "raw_overlap_mean": 0.9929621109596027,
+          "projection_frobenius_mean": 5.719222494608047e-16
+        }
+      },
+      "bell": {
+        "pauli_mse": 0.003813660467111497,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.0004222053970096443,
+        "mean_projected_fidelity": 0.9905124259297198,
+        "raw_overlap_mean": 0.99051242592972,
+        "projection_frobenius_mean": 3.2495168921569607e-16,
+        "negativity": 0.4966656579757014,
+        "true_negativity": 0.5
+      }
+    },
+    "linearization": {
+      "relative_linear_fit_error": 0.004278555709476171,
+      "intercept_norm": 0.11641359000223599,
+      "coordinate_condition": 1.412890202550885,
+      "generator_relative_errors": [
+        1.0159098006089553,
+        1.4465910880103456,
+        1.2533423173957565,
+        0.8810996593781161,
+        0.13894802350645785,
+        0.14624972047646975
+      ],
+      "unit_duration_map_relative_errors": [
+        0.14287382316532787,
+        0.12913287195709533,
+        0.12609162926495696,
+        0.1324702822482674,
+        0.09222146282124365,
+        0.09876092524432414
+      ]
+    }
+  },
+  {
+    "seed": 7713,
+    "kind": "latent_generator",
+    "consistency": 1.0,
+    "data_sha256": "b3a03532c0007d92f521147aa24684ced7247ee5aedeafbd35b30479472415a7",
+    "training": {
+      "seconds": 26.96387991704978,
+      "steps": 4000,
+      "batch": 64,
+      "lr": 0.003,
+      "consistency": 1.0,
+      "reconstruction_loss": false,
+      "normalize_prediction": true,
+      "targets": "stop-gradient intermediate/final encoder, same observed triplets",
+      "extra_compute": "one additional free-running transition when consistency is enabled",
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.380077838897705,
+          "teacher": 0.002390987705439329,
+          "rollout": 0.0023882624227553606,
+          "anchor": 0.06877851486206055,
+          "agreement": 0.0021178298629820347
+        },
+        {
+          "step": 200,
+          "loss": 1.1184941530227661,
+          "teacher": 0.24106958508491516,
+          "rollout": 0.3604879379272461,
+          "anchor": 0.04052889719605446,
+          "agreement": 0.0071374219842255116
+        },
+        {
+          "step": 400,
+          "loss": 1.0463367700576782,
+          "teacher": 0.1816263198852539,
+          "rollout": 0.28998973965644836,
+          "anchor": 0.04024745151400566,
+          "agreement": 0.005579724907875061
+        },
+        {
+          "step": 600,
+          "loss": 0.9250421524047852,
+          "teacher": 0.19493946433067322,
+          "rollout": 0.260957270860672,
+          "anchor": 0.03458349034190178,
+          "agreement": 0.005423941183835268
+        },
+        {
+          "step": 800,
+          "loss": 0.9528435468673706,
+          "teacher": 0.14387215673923492,
+          "rollout": 0.1975269615650177,
+          "anchor": 0.03888065740466118,
+          "agreement": 0.004530768375843763
+        },
+        {
+          "step": 1000,
+          "loss": 0.7452567219734192,
+          "teacher": 0.13456875085830688,
+          "rollout": 0.18200485408306122,
+          "anchor": 0.029100051149725914,
+          "agreement": 0.004968855995684862
+        },
+        {
+          "step": 1200,
+          "loss": 0.6502835750579834,
+          "teacher": 0.10464909672737122,
+          "rollout": 0.15210890769958496,
+          "anchor": 0.0259401798248291,
+          "agreement": 0.0031010061502456665
+        },
+        {
+          "step": 1400,
+          "loss": 0.7639530301094055,
+          "teacher": 0.12516728043556213,
+          "rollout": 0.14850732684135437,
+          "anchor": 0.031183898448944092,
+          "agreement": 0.0034377616830170155
+        },
+        {
+          "step": 1600,
+          "loss": 0.46778997778892517,
+          "teacher": 0.022700674831867218,
+          "rollout": 0.02645733952522278,
+          "anchor": 0.021965689957141876,
+          "agreement": 0.0038971712347120047
+        },
+        {
+          "step": 1800,
+          "loss": 0.4696418046951294,
+          "teacher": 0.016547400504350662,
+          "rollout": 0.018911151215434074,
+          "anchor": 0.022410882636904716,
+          "agreement": 0.0036948726046830416
+        },
+        {
+          "step": 2000,
+          "loss": 0.5387282967567444,
+          "teacher": 0.02059873379766941,
+          "rollout": 0.023364435881376266,
+          "anchor": 0.0256428811699152,
+          "agreement": 0.0038890603464096785
+        },
+        {
+          "step": 2200,
+          "loss": 0.6172000169754028,
+          "teacher": 0.014311028644442558,
+          "rollout": 0.016091234982013702,
+          "anchor": 0.029943248257040977,
+          "agreement": 0.0031338806729763746
+        },
+        {
+          "step": 2400,
+          "loss": 0.5281496644020081,
+          "teacher": 0.015121526084840298,
+          "rollout": 0.016747260466217995,
+          "anchor": 0.025427235290408134,
+          "agreement": 0.003670572070404887
+        },
+        {
+          "step": 2600,
+          "loss": 0.6844257116317749,
+          "teacher": 0.014152348041534424,
+          "rollout": 0.017500007525086403,
+          "anchor": 0.033295538276433945,
+          "agreement": 0.0026887624990195036
+        },
+        {
+          "step": 2800,
+          "loss": 0.4607539176940918,
+          "teacher": 0.019915640354156494,
+          "rollout": 0.02051522396504879,
+          "anchor": 0.021868795156478882,
+          "agreement": 0.0031626014970242977
+        },
+        {
+          "step": 3000,
+          "loss": 0.5036436319351196,
+          "teacher": 0.014340047724545002,
+          "rollout": 0.019107604399323463,
+          "anchor": 0.024209661409258842,
+          "agreement": 0.002726526465266943
+        },
+        {
+          "step": 3200,
+          "loss": 0.5406869649887085,
+          "teacher": 0.015248022973537445,
+          "rollout": 0.016666607931256294,
+          "anchor": 0.026092572137713432,
+          "agreement": 0.0028782517183572054
+        },
+        {
+          "step": 3400,
+          "loss": 0.5294561386108398,
+          "teacher": 0.015443414449691772,
+          "rollout": 0.016240546479821205,
+          "anchor": 0.025538094341754913,
+          "agreement": 0.0028523127548396587
+        },
+        {
+          "step": 3600,
+          "loss": 0.5012385249137878,
+          "teacher": 0.017262810841202736,
+          "rollout": 0.018637550994753838,
+          "anchor": 0.02399727888405323,
+          "agreement": 0.0033427714370191097
+        },
+        {
+          "step": 3800,
+          "loss": 0.5272698998451233,
+          "teacher": 0.015166740864515305,
+          "rollout": 0.015643874183297157,
+          "anchor": 0.025454601272940636,
+          "agreement": 0.00277256709523499
+        },
+        {
+          "step": 3999,
+          "loss": 0.63020259141922,
+          "teacher": 0.015662800520658493,
+          "rollout": 0.02019765041768551,
+          "anchor": 0.030468732118606567,
+          "agreement": 0.002897711703553796
+        }
+      ]
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 1.750825316230159e-05,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00015815353059732553,
+        "mean_projected_fidelity": 0.9989930882047494,
+        "raw_overlap_mean": 0.9989930882047494,
+        "projection_frobenius_mean": 5.17892405457096e-16
+      },
+      "one_step": {
+        "pauli_mse": 0.0017546791469899134,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00013743838310661442,
+        "mean_projected_fidelity": 0.9957546935336179,
+        "raw_overlap_mean": 0.9957546935336181,
+        "projection_frobenius_mean": 5.233771824330325e-16
+      },
+      "unseen_angles": {
+        "pauli_mse": 0.0034491363927897775,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.0001271749902284451,
+        "mean_projected_fidelity": 0.9925828506692261,
+        "raw_overlap_mean": 0.9925828506692261,
+        "projection_frobenius_mean": 5.563364653380415e-16
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.002447330234696546,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00012894611884533517,
+          "mean_projected_fidelity": 0.9944763720059242,
+          "raw_overlap_mean": 0.9944763720059241,
+          "projection_frobenius_mean": 5.438054238961572e-16
+        },
+        "4": {
+          "pauli_mse": 0.003228151997315087,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013438478215066165,
+          "mean_projected_fidelity": 0.9929841187226671,
+          "raw_overlap_mean": 0.9929841187226672,
+          "projection_frobenius_mean": 5.859447999884191e-16
+        },
+        "16": {
+          "pauli_mse": 0.004334769275729986,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00014971512086152372,
+          "mean_projected_fidelity": 0.9906966545147181,
+          "raw_overlap_mean": 0.9906966545147182,
+          "projection_frobenius_mean": 5.874118927487088e-16
+        },
+        "32": {
+          "pauli_mse": 0.0058214088325875555,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00012711845820927067,
+          "mean_projected_fidelity": 0.9879646635665104,
+          "raw_overlap_mean": 0.9879646635665105,
+          "projection_frobenius_mean": 5.285439838555884e-16
+        },
+        "64": {
+          "pauli_mse": 0.009222233347793351,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.0001395675840369494,
+          "mean_projected_fidelity": 0.9813487090288457,
+          "raw_overlap_mean": 0.9813487090288457,
+          "projection_frobenius_mean": 5.342274594419167e-16
+        }
+      },
+      "algebra": {
+        "h_involution_latent_mse": 0.0002751488373940791,
+        "cx_involution_latent_mse": 0.0005514154627382088,
+        "rz_inverse_latent_mse": 2.2593988394952788e-31,
+        "rz_composition_latent_mse": 2.7609962361582732e-30,
+        "independent_commutation_latent_mse": 0.0007210190110818891,
+        "noncommuting_ab": {
+          "pauli_mse": 0.0027387786708829185,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00012958043623783518,
+          "mean_projected_fidelity": 0.9938935037031255,
+          "raw_overlap_mean": 0.9938935037031255,
+          "projection_frobenius_mean": 5.898403959521222e-16
+        },
+        "noncommuting_ba": {
+          "pauli_mse": 0.002965056199231179,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.0001416864740342028,
+          "mean_projected_fidelity": 0.993426750140104,
+          "raw_overlap_mean": 0.993426750140104,
+          "projection_frobenius_mean": 5.655985276216116e-16
+        }
+      },
+      "bell": {
+        "pauli_mse": 0.0031672104790991754,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00045685471631994723,
+        "mean_projected_fidelity": 0.9915809792995665,
+        "raw_overlap_mean": 0.9915809792995659,
+        "projection_frobenius_mean": 5.792751482366565e-16,
+        "negativity": 0.4946295889937065,
+        "true_negativity": 0.5
+      }
+    },
+    "linearization": {
+      "relative_linear_fit_error": 0.003673696554630516,
+      "intercept_norm": 0.11839267564898452,
+      "coordinate_condition": 1.4013526918339139,
+      "generator_relative_errors": [
+        1.3899747918005834,
+        1.5799469436537674,
+        0.8999864691062576,
+        1.1767677616124979,
+        0.14004085137102357,
+        0.14124368207210014
+      ],
+      "unit_duration_map_relative_errors": [
+        0.13936751092923386,
+        0.1275076228813008,
+        0.12401330540192675,
+        0.13364160821089888,
+        0.09287319267651667,
+        0.09573656070431587
+      ]
+    }
+  },
+  {
+    "seed": 7714,
+    "kind": "latent_generator",
+    "consistency": 0.0,
+    "data_sha256": "b3a03532c0007d92f521147aa24684ced7247ee5aedeafbd35b30479472415a7",
+    "training": {
+      "seconds": 18.945062957936898,
+      "steps": 4000,
+      "batch": 64,
+      "lr": 0.003,
+      "consistency": 0.0,
+      "reconstruction_loss": false,
+      "normalize_prediction": true,
+      "targets": "stop-gradient intermediate/final encoder, same observed triplets",
+      "extra_compute": "one additional free-running transition when consistency is enabled",
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.4094116687774658,
+          "teacher": 0.002320153173059225,
+          "rollout": 0.0,
+          "anchor": 0.07025664299726486,
+          "agreement": 0.001958583714440465
+        },
+        {
+          "step": 200,
+          "loss": 1.0737388134002686,
+          "teacher": 0.25857385993003845,
+          "rollout": 0.0,
+          "anchor": 0.040472984313964844,
+          "agreement": 0.005705221556127071
+        },
+        {
+          "step": 400,
+          "loss": 0.8872645497322083,
+          "teacher": 0.18216565251350403,
+          "rollout": 0.0,
+          "anchor": 0.034913867712020874,
+          "agreement": 0.006821601651608944
+        },
+        {
+          "step": 600,
+          "loss": 0.7275806069374084,
+          "teacher": 0.12797118723392487,
+          "rollout": 0.0,
+          "anchor": 0.029746444895863533,
+          "agreement": 0.004680486395955086
+        },
+        {
+          "step": 800,
+          "loss": 0.7274275422096252,
+          "teacher": 0.09080792963504791,
+          "rollout": 0.0,
+          "anchor": 0.031559091061353683,
+          "agreement": 0.005437785759568214
+        },
+        {
+          "step": 1000,
+          "loss": 0.6920018196105957,
+          "teacher": 0.12490203976631165,
+          "rollout": 0.0,
+          "anchor": 0.02810748666524887,
+          "agreement": 0.0049500432796776295
+        },
+        {
+          "step": 1200,
+          "loss": 0.45836111903190613,
+          "teacher": 0.02780708484351635,
+          "rollout": 0.0,
+          "anchor": 0.021337971091270447,
+          "agreement": 0.0037946216762065887
+        },
+        {
+          "step": 1400,
+          "loss": 0.5154364109039307,
+          "teacher": 0.016627518460154533,
+          "rollout": 0.0,
+          "anchor": 0.024745047092437744,
+          "agreement": 0.003907977137714624
+        },
+        {
+          "step": 1600,
+          "loss": 0.5570752620697021,
+          "teacher": 0.015840230509638786,
+          "rollout": 0.0,
+          "anchor": 0.026918722316622734,
+          "agreement": 0.002860615262761712
+        },
+        {
+          "step": 1800,
+          "loss": 0.42923322319984436,
+          "teacher": 0.016019083559513092,
+          "rollout": 0.0,
+          "anchor": 0.02050883322954178,
+          "agreement": 0.0030374869238585234
+        },
+        {
+          "step": 2000,
+          "loss": 0.6224579215049744,
+          "teacher": 0.018228136003017426,
+          "rollout": 0.0,
+          "anchor": 0.02996833808720112,
+          "agreement": 0.004863015841692686
+        },
+        {
+          "step": 2200,
+          "loss": 0.5952802300453186,
+          "teacher": 0.013217361643910408,
+          "rollout": 0.0,
+          "anchor": 0.028955591842532158,
+          "agreement": 0.0029510208405554295
+        },
+        {
+          "step": 2400,
+          "loss": 0.4488872289657593,
+          "teacher": 0.01607927307486534,
+          "rollout": 0.0,
+          "anchor": 0.021461931988596916,
+          "agreement": 0.0035693119280040264
+        },
+        {
+          "step": 2600,
+          "loss": 0.623063862323761,
+          "teacher": 0.013854943215847015,
+          "rollout": 0.0,
+          "anchor": 0.030274147167801857,
+          "agreement": 0.0037260346580296755
+        },
+        {
+          "step": 2800,
+          "loss": 0.6215595006942749,
+          "teacher": 0.013402474112808704,
+          "rollout": 0.0,
+          "anchor": 0.03027317486703396,
+          "agreement": 0.0026935115456581116
+        },
+        {
+          "step": 3000,
+          "loss": 0.5297924280166626,
+          "teacher": 0.014193888753652573,
+          "rollout": 0.0,
+          "anchor": 0.02564403973519802,
+          "agreement": 0.002717733383178711
+        },
+        {
+          "step": 3200,
+          "loss": 0.6051812171936035,
+          "teacher": 0.018188927322626114,
+          "rollout": 0.0,
+          "anchor": 0.029212916269898415,
+          "agreement": 0.0027339754160493612
+        },
+        {
+          "step": 3400,
+          "loss": 0.6293359398841858,
+          "teacher": 0.01488761231303215,
+          "rollout": 0.0,
+          "anchor": 0.030593017116189003,
+          "agreement": 0.0025879552122205496
+        },
+        {
+          "step": 3600,
+          "loss": 0.42988383769989014,
+          "teacher": 0.0161190927028656,
+          "rollout": 0.0,
+          "anchor": 0.020539691671729088,
+          "agreement": 0.0029708941001445055
+        },
+        {
+          "step": 3800,
+          "loss": 0.5639113187789917,
+          "teacher": 0.012373552657663822,
+          "rollout": 0.0,
+          "anchor": 0.02744411490857601,
+          "agreement": 0.0026554204523563385
+        },
+        {
+          "step": 3999,
+          "loss": 0.5090811252593994,
+          "teacher": 0.014305246993899345,
+          "rollout": 0.0,
+          "anchor": 0.0246052835136652,
+          "agreement": 0.0026702077593654394
+        }
+      ]
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 2.0822198854030676e-05,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00013529455234292015,
+        "mean_projected_fidelity": 0.9991060927224609,
+        "raw_overlap_mean": 0.9991060927224609,
+        "projection_frobenius_mean": 5.648415405100858e-16
+      },
+      "one_step": {
+        "pauli_mse": 0.0015883935284828744,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.0001423460405060007,
+        "mean_projected_fidelity": 0.9960884167782424,
+        "raw_overlap_mean": 0.9960884167782424,
+        "projection_frobenius_mean": 5.695177596480878e-16
+      },
+      "unseen_angles": {
+        "pauli_mse": 0.0027404123521882207,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 0.00013270532601696196,
+        "mean_projected_fidelity": 0.9939717220195057,
+        "raw_overlap_mean": 0.9939717220195058,
+        "projection_frobenius_mean": 5.430520650316174e-16
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.0019208759582682315,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013446017423775984,
+          "mean_projected_fidelity": 0.9954771668128601,
+          "raw_overlap_mean": 0.9954771668128601,
+          "projection_frobenius_mean": 5.275677416662959e-16
+        },
+        "4": {
+          "pauli_mse": 0.0028686296492510814,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013137320217344295,
+          "mean_projected_fidelity": 0.9936921925755207,
+          "raw_overlap_mean": 0.9936921925755208,
+          "projection_frobenius_mean": 5.200793828761059e-16
+        },
+        "16": {
+          "pauli_mse": 0.004020215213359389,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013212371956518372,
+          "mean_projected_fidelity": 0.9914686016580732,
+          "raw_overlap_mean": 0.9914686016580732,
+          "projection_frobenius_mean": 5.992263044859458e-16
+        },
+        "32": {
+          "pauli_mse": 0.00530002204900075,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00011332088903029893,
+          "mean_projected_fidelity": 0.9890616846066984,
+          "raw_overlap_mean": 0.9890616846066985,
+          "projection_frobenius_mean": 5.648590048232611e-16
+        },
+        "64": {
+          "pauli_mse": 0.00914217033596495,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00011610591713058534,
+          "mean_projected_fidelity": 0.9817111980065258,
+          "raw_overlap_mean": 0.9817111980065258,
+          "projection_frobenius_mean": 5.202845933682667e-16
+        }
+      },
+      "algebra": {
+        "h_involution_latent_mse": 0.0004969498038321092,
+        "cx_involution_latent_mse": 0.0008850911550734771,
+        "rz_inverse_latent_mse": 4.170790782300755e-31,
+        "rz_composition_latent_mse": 2.721699446150012e-30,
+        "independent_commutation_latent_mse": 0.0005198319556098745,
+        "noncommuting_ab": {
+          "pauli_mse": 0.001761086222967751,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.0001314424950010437,
+          "mean_projected_fidelity": 0.9958119972199246,
+          "raw_overlap_mean": 0.9958119972199246,
+          "projection_frobenius_mean": 5.418948946217518e-16
+        },
+        "noncommuting_ba": {
+          "pauli_mse": 0.0022992110935478897,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 0.00013166941070017531,
+          "mean_projected_fidelity": 0.9947901095778636,
+          "raw_overlap_mean": 0.9947901095778636,
+          "projection_frobenius_mean": 5.447108080530493e-16
+        }
+      },
+      "bell": {
+        "pauli_mse": 0.0008853930081365788,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 7.155817308826885e-05,
+        "mean_projected_fidelity": 0.9979579540385074,
+        "raw_overlap_mean": 0.997957954038507,
+        "projection_frobenius_mean": 4.943053863266504e-16,
+        "negativity": 0.49910605666936236,
+        "true_negativity": 0.5
+      }
+    },
+    "linearization": {
+      "relative_linear_fit_error": 0.00393725337187043,
+      "intercept_norm": 0.10945988383548755,
+      "coordinate_condition": 1.4255555687120383,
+      "generator_relative_errors": [
+        0.9939580477344361,
+        0.9968020652813387,
+        1.3340417829830555,
+        1.2474046352690509,
+        0.1389180300841236,
+        0.11558999039502833
+      ],
+      "unit_duration_map_relative_errors": [
+        0.10793906066096291,
+        0.11071993645186143,
+        0.10445555152042518,
+        0.1048141530806401,
+        0.09185131658121466,
+        0.07666707778720827
+      ]
+    }
+  },
+  {
+    "seed": 7714,
+    "kind": "latent_generator",
+    "consistency": 1.0,
+    "data_sha256": "b3a03532c0007d92f521147aa24684ced7247ee5aedeafbd35b30479472415a7",
+    "training": {
+      "seconds": 26.887622124981135,
+      "steps": 4000,
+      "batch": 64,
+      "lr": 0.003,
+      "consistency": 1.0,
+      "reconstruction_loss": false,
+      "normalize_prediction": true,
+      "targets": "stop-gradient intermediate/final encoder, same observed triplets",
+      "extra_compute": "one additional free-running transition when consistency is enabled",
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.4095734357833862,
+          "teacher": 0.002320153173059225,
+          "rollout": 0.002643670653924346,
+          "anchor": 0.07025664299726486,
+          "agreement": 0.001958583714440465
+        },
+        {
+          "step": 200,
+          "loss": 1.1598199605941772,
+          "teacher": 0.2867853045463562,
+          "rollout": 0.3867013156414032,
+          "anchor": 0.04081854596734047,
+          "agreement": 0.00670577073469758
+        },
+        {
+          "step": 400,
+          "loss": 1.0157759189605713,
+          "teacher": 0.22213086485862732,
+          "rollout": 0.3010924458503723,
+          "anchor": 0.03740488737821579,
+          "agreement": 0.006066607311367989
+        },
+        {
+          "step": 600,
+          "loss": 0.9201562404632568,
+          "teacher": 0.1887160837650299,
+          "rollout": 0.32254770398139954,
+          "anchor": 0.032916050404310226,
+          "agreement": 0.0062032947316765785
+        },
+        {
+          "step": 800,
+          "loss": 0.9060047268867493,
+          "teacher": 0.18244624137878418,
+          "rollout": 0.24234938621520996,
+          "anchor": 0.0344109870493412,
+          "agreement": 0.0053871674463152885
+        },
+        {
+          "step": 1000,
+          "loss": 0.8901345133781433,
+          "teacher": 0.2370779812335968,
+          "rollout": 0.33532583713531494,
+          "anchor": 0.029967987909913063,
+          "agreement": 0.004572873469442129
+        },
+        {
+          "step": 1200,
+          "loss": 0.6428988575935364,
+          "teacher": 0.13366693258285522,
+          "rollout": 0.1841796487569809,
+          "anchor": 0.02398187480866909,
+          "agreement": 0.004338111262768507
+        },
+        {
+          "step": 1400,
+          "loss": 0.6394156217575073,
+          "teacher": 0.10977838188409805,
+          "rollout": 0.13957850635051727,
+          "anchor": 0.025555094704031944,
+          "agreement": 0.0036352977622300386
+        },
+        {
+          "step": 1600,
+          "loss": 0.6344783306121826,
+          "teacher": 0.10520456731319427,
+          "rollout": 0.13740228116512299,
+          "anchor": 0.02550000138580799,
+          "agreement": 0.003174868645146489
+        },
+        {
+          "step": 1800,
+          "loss": 0.5713875889778137,
+          "teacher": 0.1026776134967804,
+          "rollout": 0.146595761179924,
+          "anchor": 0.02216326631605625,
+          "agreement": 0.0034855494741350412
+        },
+        {
+          "step": 2000,
+          "loss": 0.7018868923187256,
+          "teacher": 0.08302493393421173,
+          "rollout": 0.12762995064258575,
+          "anchor": 0.029605278745293617,
+          "agreement": 0.004453918430954218
+        },
+        {
+          "step": 2200,
+          "loss": 0.6881954073905945,
+          "teacher": 0.06834892928600311,
+          "rollout": 0.11578944325447083,
+          "anchor": 0.029640669003129005,
+          "agreement": 0.003312841523438692
+        },
+        {
+          "step": 2400,
+          "loss": 0.5617678165435791,
+          "teacher": 0.06052195280790329,
+          "rollout": 0.09943822026252747,
+          "anchor": 0.023901833221316338,
+          "agreement": 0.0037510432302951813
+        },
+        {
+          "step": 2600,
+          "loss": 0.696792483329773,
+          "teacher": 0.06855559349060059,
+          "rollout": 0.10935690253973007,
+          "anchor": 0.03021104447543621,
+          "agreement": 0.0036153572145849466
+        },
+        {
+          "step": 2800,
+          "loss": 0.7499643564224243,
+          "teacher": 0.07409573346376419,
+          "rollout": 0.12467297166585922,
+          "anchor": 0.03236714377999306,
+          "agreement": 0.003237142227590084
+        },
+        {
+          "step": 3000,
+          "loss": 0.6799488663673401,
+          "teacher": 0.0658877044916153,
+          "rollout": 0.09462977200746536,
+          "anchor": 0.02980588562786579,
+          "agreement": 0.0035723834298551083
+        },
+        {
+          "step": 3200,
+          "loss": 0.6781760454177856,
+          "teacher": 0.09472368657588959,
+          "rollout": 0.13729602098464966,
+          "anchor": 0.027956051751971245,
+          "agreement": 0.003045207355171442
+        },
+        {
+          "step": 3400,
+          "loss": 0.7254418134689331,
+          "teacher": 0.07684845477342606,
+          "rollout": 0.09288123995065689,
+          "anchor": 0.0318387933075428,
+          "agreement": 0.003801097394898534
+        },
+        {
+          "step": 3600,
+          "loss": 0.5694065093994141,
+          "teacher": 0.0696074366569519,
+          "rollout": 0.12883831560611725,
+          "anchor": 0.02331370860338211,
+          "agreement": 0.0039094556123018265
+        },
+        {
+          "step": 3800,
+          "loss": 0.7371375560760498,
+          "teacher": 0.06705814599990845,
+          "rollout": 0.10346032679080963,
+          "anchor": 0.0324568897485733,
+          "agreement": 0.002740476978942752
+        },
+        {
+          "step": 3999,
+          "loss": 0.592451274394989,
+          "teacher": 0.07687966525554657,
+          "rollout": 0.1317649632692337,
+          "anchor": 0.024248644709587097,
+          "agreement": 0.003156091319397092
+        }
+      ]
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 0.0002946598940132653,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 1.627355077295493e-11,
+        "mean_projected_fidelity": 0.998916108420461,
+        "raw_overlap_mean": 0.998916108420461,
+        "projection_frobenius_mean": 5.291814461077997e-16
+      },
+      "one_step": {
+        "pauli_mse": 0.02071540643193588,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 2.517026959383047e-09,
+        "mean_projected_fidelity": 0.9604596680446351,
+        "raw_overlap_mean": 0.960459668044635,
+        "projection_frobenius_mean": 5.490844050496126e-16
+      },
+      "unseen_angles": {
+        "pauli_mse": 0.03997223334980395,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 2.049712310921449e-10,
+        "mean_projected_fidelity": 0.9243376924490234,
+        "raw_overlap_mean": 0.9243376924490233,
+        "projection_frobenius_mean": 4.852226735743722e-16
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.02543776429870018,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 1.1495758115100175e-10,
+          "mean_projected_fidelity": 0.9500334727836175,
+          "raw_overlap_mean": 0.9500334727836177,
+          "projection_frobenius_mean": 5.4445331210529295e-16
+        },
+        "4": {
+          "pauli_mse": 0.06853081560255321,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 1.4794691359756955e-10,
+          "mean_projected_fidelity": 0.8691452253336833,
+          "raw_overlap_mean": 0.8691452253336833,
+          "projection_frobenius_mean": 5.549251497529882e-16
+        },
+        "16": {
+          "pauli_mse": 0.1885981425921204,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 7.305557315328941e-10,
+          "mean_projected_fidelity": 0.6399873847075683,
+          "raw_overlap_mean": 0.6399873847075683,
+          "projection_frobenius_mean": 5.32780586265712e-16
+        },
+        "32": {
+          "pauli_mse": 0.2643729953245414,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 3.2812044996350206e-09,
+          "mean_projected_fidelity": 0.49657273766948873,
+          "raw_overlap_mean": 0.4965727376694887,
+          "projection_frobenius_mean": 5.602920968086268e-16
+        },
+        "64": {
+          "pauli_mse": 0.3665812186215999,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 3.0120686187060145e-09,
+          "mean_projected_fidelity": 0.3074127831339156,
+          "raw_overlap_mean": 0.3074127831339156,
+          "projection_frobenius_mean": 5.120564667633578e-16
+        }
+      },
+      "algebra": {
+        "h_involution_latent_mse": 0.002407326379878532,
+        "cx_involution_latent_mse": 0.00881481224423676,
+        "rz_inverse_latent_mse": 2.5185639525404172e-31,
+        "rz_composition_latent_mse": 4.749458638084283e-30,
+        "independent_commutation_latent_mse": 0.009158493316716103,
+        "noncommuting_ab": {
+          "pauli_mse": 0.009863708144419205,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 2.929931253571862e-11,
+          "mean_projected_fidelity": 0.9809264820654539,
+          "raw_overlap_mean": 0.9809264820654537,
+          "projection_frobenius_mean": 5.405440542971213e-16
+        },
+        "noncommuting_ba": {
+          "pauli_mse": 0.011019673462697683,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": 2.8831776503869525e-11,
+          "mean_projected_fidelity": 0.9787519166950349,
+          "raw_overlap_mean": 0.9787519166950346,
+          "projection_frobenius_mean": 5.263503036545779e-16
+        }
+      },
+      "bell": {
+        "pauli_mse": 0.06059463700614928,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": -6.704689386182213e-17,
+        "mean_projected_fidelity": 0.8862215798585517,
+        "raw_overlap_mean": 0.8862215798585515,
+        "projection_frobenius_mean": 3.449614419595708e-16,
+        "negativity": 0.47974983749325006,
+        "true_negativity": 0.5
+      }
+    },
+    "linearization": {
+      "relative_linear_fit_error": 0.12162898727353037,
+      "intercept_norm": 0.12754194077289935,
+      "coordinate_condition": 19.018057049365165,
+      "generator_relative_errors": [
+        1.2375546054884092,
+        1.203163297521493,
+        1.0207184790721846,
+        1.0203560467726236,
+        0.969688382454005,
+        0.9765630293802207
+      ],
+      "unit_duration_map_relative_errors": [
+        0.9024354158838309,
+        0.9053912701361083,
+        0.9872050499449994,
+        0.9913427444412702,
+        0.9328080275296852,
+        0.9399280848879628
+      ]
+    }
+  }
+]

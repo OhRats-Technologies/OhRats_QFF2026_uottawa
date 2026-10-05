@@ -1,0 +1,26 @@
+[
+  {
+    "contraction": 0.9,
+    "optimal_current_covariance": 1.0929291709437836,
+    "optimal_future_covariance": 0.8852726284644648,
+    "minimum_paired_anchor": 0.01089910029587585
+  },
+  {
+    "contraction": 0.7,
+    "optimal_current_covariance": 1.2015160067736472,
+    "optimal_future_covariance": 0.5887428433190871,
+    "minimum_paired_anchor": 0.10487057495363279
+  },
+  {
+    "contraction": 0.5,
+    "optimal_current_covariance": 1.1764705882352942,
+    "optimal_future_covariance": 0.29411764705882354,
+    "minimum_paired_anchor": 0.2647058823529411
+  },
+  {
+    "contraction": 0.3,
+    "optimal_current_covariance": 1.0812419402837021,
+    "optimal_future_covariance": 0.09731177462553318,
+    "minimum_paired_anchor": 0.4107231425453824
+  }
+]

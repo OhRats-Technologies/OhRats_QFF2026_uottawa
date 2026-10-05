@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-03T23:51:06.190808+00:00",
+  "protocol_sha256": "7525cda6eea83b670697247f01f651c4a9977065efb642bfb6b1b21114922faf",
+  "inputs": {
+    "artifacts/quantum-world-jepa-physical-readout-smoke-20261003/direct-inv1.0-7501.npz": "2d3547d6cfaefaded7db1e20588544dd4f64164072d3244bfeec02759dcb70e5",
+    "artifacts/quantum-world-jepa-physical-readout-smoke-20261003/latent_generator-inv1.0-7501.npz": "d85c68820a17a06dd1315715c13b77a596fe8b298379881417c7b7b422289ca9",
+    "artifacts/quantum-world-jepa-physical-readout-smoke-20261003/direct-inv1.0-probe-7501.npz": "6d551d8960244d431f212e55728f023b294631ee1057738eaaea6366e95265c9",
+    "artifacts/quantum-world-jepa-physical-readout-smoke-20261003/latent_generator-inv1.0-probe-7501.npz": "b9b1ee04749891130776e6f4ca20d584d3941cee165ff345afa2f9b1be9e341b"
+  },
+  "sources": {
+    "/Users/fern/Projects/OhRats-Technologies/OhRats_QFF2026_uottawa/scripts/quantum_world_control_pilot.py": "a3d0fd559d2ba82c5fd54f5f6951b4bc40752660916c62f3e2bf8c5dced90b10",
+    "quantum_world/control.py": "37844e7edbd5967d6f690c261c08c24203f50be1224bcc62f577365fe5660dc7"
+  }
+}

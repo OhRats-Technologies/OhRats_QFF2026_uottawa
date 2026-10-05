@@ -1,30 +1,23 @@
-# Connectome Mixing & Quantum Channels
+# Qiskit Fall Fest · Open challenge
 
-Spectral mixing on MaleCNS population graphs and quantum-channel forgetting, informed by [Kopel’s connectome study](https://arxiv.org/abs/2609.33054). The eight-population model is a coarse-grained experiment, not a full-CNS replication.
-
-## Run
+Ontario wildfire modelling using [Agency Reported Wildfires in Canada](https://cwfis.cfs.nrcan.gc.ca/en/catalogue/results/937eb7be-83fd-4b94-a122-9cc0385f3bf7). Target: **1985–2025**, with ECCC monthly weather and NRCan annual woodland context. See [the project goal](GOAL.md), [data schema](docs/DATA_SCHEMA.md) and [dataset notes](datasets/wildfires/README.md).
 
 ```sh
 uv sync --locked
-uv run python -m flybrain.channel_cli
-uv run python -m flybrain run
+uv run python scripts/download_wildfires.py --output data/wildfires/ontario
 ```
 
-Classical analysis compares spectral contraction, mixing bounds and pruning. The quantum model compares channel composition and Choi entanglement. Negative partial transpose rules out entanglement breaking; zero negativity alone does not prove it.
+Downloads are ignored by Git. The feed contains fire updates, not one independent fire per row or a complete daily observation grid.
 
-## Explore
+Reusable resources:
+
+- [Qiskit/SQD learning path](docs/sqd/LEARNING_PATH.md) and [solved masterclass](notebooks/Rishabh_tutorial_sqd_masterclass_solved.ipynb).
+- `sqd_lab/`: local chemistry experiments and classical controls.
+- `quantum_world/`: independent quantum dynamics and measurement code; [completed report](quantum_world/REPORT.md).
 
 ```sh
-bun install --cwd explorer --frozen-lockfile
-bun run --cwd explorer start
+uv run python -m unittest discover -s tests -v
 ```
 
-[Local explorer](http://127.0.0.1:8765/) · [Controls and sources](docs/FLY_EXPLORER.md) · [MaleCNS provenance](datasets/fly/README.md)
-
-## Evidence
-
-[IBM measurements](artifacts/ibm-20261003/README.md) include raw counts and circuits. The conjugate-basis witness tests pairwise reference–system entanglement under trusted measurements; it does not demonstrate biological quantum computation, quantum advantage or hardware multi-step noisy-channel mixing.
-
-Local runs require no credentials. Keep tokens in ignored `.env`; use [.env.example](.env.example) for configuration. The explorer submits no jobs.
-
-[Agent instructions](AGENTS.md) · [Coordination protocol](AGENT_BOARD.md)
+Keep credentials in ignored `.env`; placeholders are in [.env.example](.env.example).
+[Agent instructions](AGENTS.md) · [Board protocol](AGENT_BOARD.md).

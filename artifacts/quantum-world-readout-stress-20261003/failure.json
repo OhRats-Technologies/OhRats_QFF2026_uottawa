@@ -1,0 +1,6 @@
+{
+  "status": "failed_before_data",
+  "error": "Local duration variable shadowed the time module",
+  "correction": "Rename it probe_time; added CLI regression test; rerun fixed settings into v2 output",
+  "scientific_results_emitted": false
+}

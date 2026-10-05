@@ -1,0 +1,19 @@
+{
+  "cases": [
+    {
+      "name": "smoke",
+      "path": "artifacts/quantum-world-jepa-physical-readout-smoke-20261003",
+      "seed": 7501
+    },
+    {
+      "name": "confirmation",
+      "path": "artifacts/quantum-world-jepa-confirmation-20261003",
+      "seed": 7511
+    }
+  ],
+  "ridge": 1e-06,
+  "selection": "first predefined checkpoint seeds, all available architecture/invariance conditions",
+  "scope": "transferred representation comparator; encoder previously trained jointly with original dynamics",
+  "evaluation_seed": 399901,
+  "n_eval": 128
+}

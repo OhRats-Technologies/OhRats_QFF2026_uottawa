@@ -1,0 +1,3418 @@
+{
+  "midpoint_collision": {
+    "midpoint_rank": 7,
+    "lost_dimensions": 8,
+    "midpoint_collision_error": 0.0,
+    "velocity_separation": 3.9999999999999996,
+    "physical_path_halfway_separation": 1.9999999999999996
+  },
+  "runs": [
+    {
+      "seed": 4101,
+      "kind": "direct",
+      "training": {
+        "seconds": 1.3846149579621851,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.20661486685276031,
+            "gradient_norm": 0.05058502405881882
+          },
+          {
+            "step": 100,
+            "loss": 0.1379288136959076,
+            "gradient_norm": 0.0394342839717865
+          },
+          {
+            "step": 200,
+            "loss": 0.03938886895775795,
+            "gradient_norm": 0.05890756845474243
+          },
+          {
+            "step": 300,
+            "loss": 0.01636486127972603,
+            "gradient_norm": 0.04701228067278862
+          },
+          {
+            "step": 400,
+            "loss": 0.013532863929867744,
+            "gradient_norm": 0.0449720099568367
+          },
+          {
+            "step": 500,
+            "loss": 0.009036064147949219,
+            "gradient_norm": 0.05007113143801689
+          },
+          {
+            "step": 600,
+            "loss": 0.009100166149437428,
+            "gradient_norm": 0.04495059698820114
+          },
+          {
+            "step": 700,
+            "loss": 0.008642726577818394,
+            "gradient_norm": 0.04181617870926857
+          },
+          {
+            "step": 800,
+            "loss": 0.00996914692223072,
+            "gradient_norm": 0.0506373792886734
+          },
+          {
+            "step": 900,
+            "loss": 0.007612071465700865,
+            "gradient_norm": 0.040210846811532974
+          },
+          {
+            "step": 1000,
+            "loss": 0.00763927074149251,
+            "gradient_norm": 0.04803754389286041
+          },
+          {
+            "step": 1100,
+            "loss": 0.006674876902252436,
+            "gradient_norm": 0.0346447117626667
+          },
+          {
+            "step": 1200,
+            "loss": 0.005081704817712307,
+            "gradient_norm": 0.03220260888338089
+          },
+          {
+            "step": 1300,
+            "loss": 0.00486413249745965,
+            "gradient_norm": 0.04049301519989967
+          },
+          {
+            "step": 1400,
+            "loss": 0.0053380802273750305,
+            "gradient_norm": 0.037967316806316376
+          },
+          {
+            "step": 1500,
+            "loss": 0.0031060052569955587,
+            "gradient_norm": 0.03296134993433952
+          },
+          {
+            "step": 1599,
+            "loss": 0.0030931001529097557,
+            "gradient_norm": 0.03034459799528122
+          }
+        ],
+        "parameters": 13296,
+        "supervision": "endpoints only",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 0.0038671573506886296,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.04204887379243103,
+          "mean_projected_fidelity": 0.9640649167266362,
+          "raw_overlap_mean": 0.9841900025045741,
+          "projection_frobenius_mean": 0.05231364098968511
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 0.0014630675687508049,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.03494284320638324,
+            "mean_projected_fidelity": 0.981636342350755,
+            "raw_overlap_mean": 0.9989716484659715,
+            "projection_frobenius_mean": 0.043561611323953975
+          },
+          "1": {
+            "pauli_mse": 0.0013393248017341598,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.03188289327848149,
+            "mean_projected_fidelity": 0.9775141456356143,
+            "raw_overlap_mean": 0.9925664731656181,
+            "projection_frobenius_mean": 0.03956824227094081
+          },
+          "2": {
+            "pauli_mse": 0.0018420247755844938,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.03739836858394362,
+            "mean_projected_fidelity": 0.9729669384679817,
+            "raw_overlap_mean": 0.9914530998537913,
+            "projection_frobenius_mean": 0.04680322820099014
+          },
+          "3": {
+            "pauli_mse": 0.0018061067008470417,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.03862686630194157,
+            "mean_projected_fidelity": 0.9738840453720247,
+            "raw_overlap_mean": 0.9929378923419642,
+            "projection_frobenius_mean": 0.04814911994089636
+          },
+          "4": {
+            "pauli_mse": 0.00880843018746758,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.06323938622047323,
+            "mean_projected_fidelity": 0.938873341180248,
+            "raw_overlap_mean": 0.9713731850056508,
+            "projection_frobenius_mean": 0.08068894898346561
+          },
+          "5": {
+            "pauli_mse": 0.010946288982484429,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.051435191680383165,
+            "mean_projected_fidelity": 0.9242533900219214,
+            "raw_overlap_mean": 0.9431575314541686,
+            "projection_frobenius_mean": 0.06031937391418698
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 0.18758120113119914,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.14301319183365602,
+          "mean_projected_fidelity": 0.48566129122261736,
+          "raw_overlap_mean": 0.515040206734434,
+          "projection_frobenius_mean": 0.16884947284351293
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 0.04261406744917222,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.06379969539652439,
+            "mean_projected_fidelity": 0.863166909876305,
+            "raw_overlap_mean": 0.8851226092990856,
+            "projection_frobenius_mean": 0.07758700260071873
+          },
+          "4": {
+            "pauli_mse": 0.11778385571996175,
+            "raw_valid_fraction": 0.0078125,
+            "mean_min_eigenvalue": -0.11797728348401153,
+            "mean_projected_fidelity": 0.6600361741088486,
+            "raw_overlap_mean": 0.6910395727404066,
+            "projection_frobenius_mean": 0.14178872835204756
+          },
+          "16": {
+            "pauli_mse": 0.26009538891046774,
+            "raw_valid_fraction": 0.03125,
+            "mean_min_eigenvalue": -0.1458401745797015,
+            "mean_projected_fidelity": 0.35100648294371367,
+            "raw_overlap_mean": 0.3664007459757896,
+            "projection_frobenius_mean": 0.1738197593813626
+          },
+          "32": {
+            "pauli_mse": 0.29520254850940264,
+            "raw_valid_fraction": 0.0078125,
+            "mean_min_eigenvalue": -0.1586181246999166,
+            "mean_projected_fidelity": 0.2822272315374734,
+            "raw_overlap_mean": 0.2870785661360268,
+            "projection_frobenius_mean": 0.18595299486980055
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 0.0030229937889234234,
+          "cx_involution_mse": 0.0032316045690862073,
+          "rz_composition_mse": 0.03501557772663495,
+          "rz_inverse_mse": 0.010493221775692488,
+          "independent_commutation_mse": 0.006434014975416731,
+          "noncommutation_gap_error": 0.01242792824762025,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 0.0027952112769148805,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.07698563678577115,
+          "mean_projected_fidelity": 0.9835984731676856,
+          "raw_overlap_mean": 1.0201380448690474,
+          "projection_frobenius_mean": 0.09282834455243819,
+          "negativity": 0.48419816783025255,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.05187108390964568
+      }
+    },
+    {
+      "seed": 4101,
+      "kind": "chord",
+      "training": {
+        "seconds": 1.331091667059809,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.29302579164505005,
+            "gradient_norm": 0.06597965210676193
+          },
+          {
+            "step": 100,
+            "loss": 0.2532861828804016,
+            "gradient_norm": 0.04691305384039879
+          },
+          {
+            "step": 200,
+            "loss": 0.2724572420120239,
+            "gradient_norm": 0.051096756011247635
+          },
+          {
+            "step": 300,
+            "loss": 0.24586215615272522,
+            "gradient_norm": 0.07194725424051285
+          },
+          {
+            "step": 400,
+            "loss": 0.20452089607715607,
+            "gradient_norm": 0.07559120655059814
+          },
+          {
+            "step": 500,
+            "loss": 0.16812065243721008,
+            "gradient_norm": 0.08054368942975998
+          },
+          {
+            "step": 600,
+            "loss": 0.18177419900894165,
+            "gradient_norm": 0.09012992680072784
+          },
+          {
+            "step": 700,
+            "loss": 0.13253489136695862,
+            "gradient_norm": 0.07746308296918869
+          },
+          {
+            "step": 800,
+            "loss": 0.12952491641044617,
+            "gradient_norm": 0.10645395517349243
+          },
+          {
+            "step": 900,
+            "loss": 0.12199946492910385,
+            "gradient_norm": 0.12339457869529724
+          },
+          {
+            "step": 1000,
+            "loss": 0.1212967187166214,
+            "gradient_norm": 0.1492605358362198
+          },
+          {
+            "step": 1100,
+            "loss": 0.12566480040550232,
+            "gradient_norm": 0.16811366379261017
+          },
+          {
+            "step": 1200,
+            "loss": 0.09546540677547455,
+            "gradient_norm": 0.18763847649097443
+          },
+          {
+            "step": 1300,
+            "loss": 0.08361618965864182,
+            "gradient_norm": 0.18441951274871826
+          },
+          {
+            "step": 1400,
+            "loss": 0.07994583249092102,
+            "gradient_norm": 0.15994074940681458
+          },
+          {
+            "step": 1500,
+            "loss": 0.07747867703437805,
+            "gradient_norm": 0.21082329750061035
+          },
+          {
+            "step": 1599,
+            "loss": 0.05430469661951065,
+            "gradient_norm": 0.30140215158462524
+          }
+        ],
+        "parameters": 13392,
+        "supervision": "endpoints only",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 0.27453407729702745,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.1071928082410418,
+          "mean_projected_fidelity": 0.49729003113107784,
+          "raw_overlap_mean": 0.5149465243201913,
+          "projection_frobenius_mean": 0.13895165891805122
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 0.3789224322110882,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.10130022981235805,
+            "mean_projected_fidelity": 0.2832262151386552,
+            "raw_overlap_mean": 0.2891238117050542,
+            "projection_frobenius_mean": 0.1284359357128416
+          },
+          "1": {
+            "pauli_mse": 0.40861500292442676,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.10039663068405896,
+            "mean_projected_fidelity": 0.2288780236501981,
+            "raw_overlap_mean": 0.23418356472534071,
+            "projection_frobenius_mean": 0.12616911211463977
+          },
+          "2": {
+            "pauli_mse": 0.35482706891465915,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.08872944006152705,
+            "mean_projected_fidelity": 0.37233647033007483,
+            "raw_overlap_mean": 0.37120908927971014,
+            "projection_frobenius_mean": 0.12244973456333956
+          },
+          "3": {
+            "pauli_mse": 0.33622331688973606,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.18284752010173425,
+            "mean_projected_fidelity": 0.43743296832935225,
+            "raw_overlap_mean": 0.4607274772827931,
+            "projection_frobenius_mean": 0.2368280448129214
+          },
+          "4": {
+            "pauli_mse": 0.026538795822245595,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.07875531590351975,
+            "mean_projected_fidelity": 0.9350471708354017,
+            "raw_overlap_mean": 0.9795980173763804,
+            "projection_frobenius_mean": 0.10320258482521795
+          },
+          "5": {
+            "pauli_mse": 0.029538013953821704,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.07333135244883805,
+            "mean_projected_fidelity": 0.9179195743449091,
+            "raw_overlap_mean": 0.9535304184405717,
+            "projection_frobenius_mean": 0.09294709158277285
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 0.6655524547925256,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.3905270744223018,
+          "mean_projected_fidelity": 0.365436931708388,
+          "raw_overlap_mean": 0.34012852027874596,
+          "projection_frobenius_mean": 0.5796120230833588
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 0.38254129885542887,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.17812657724794984,
+            "mean_projected_fidelity": 0.4282070291712471,
+            "raw_overlap_mean": 0.4391680470399818,
+            "projection_frobenius_mean": 0.2425886408045275
+          },
+          "4": {
+            "pauli_mse": 15773.393137433048,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -21.73916994477089,
+            "mean_projected_fidelity": 0.32090962140885493,
+            "raw_overlap_mean": 0.16190279484610998,
+            "projection_frobenius_mean": 33.41422324753339
+          },
+          "16": {
+            "pauli_mse": 2.3078503212339915e+39,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -7.822844767722419e+18,
+            "mean_projected_fidelity": 0.23253677933098932,
+            "raw_overlap_mean": -1.189103972897744e+18,
+            "projection_frobenius_mean": 1.2031998425362516e+19
+          },
+          "32": {
+            "pauli_mse": 1.3764550741590735e+86,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -1.9104774708283412e+42,
+            "mean_projected_fidelity": 0.2636771785480357,
+            "raw_overlap_mean": -3.2539383546969395e+41,
+            "projection_frobenius_mean": 2.938427453023066e+42
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 0.09224850225628999,
+          "cx_involution_mse": 0.06338697093716296,
+          "rz_composition_mse": 0.06876529464641763,
+          "rz_inverse_mse": 0.016246054012416005,
+          "independent_commutation_mse": 0.003582157034157692,
+          "noncommutation_gap_error": 0.09978765225712312,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 0.3262348691131662,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.15635010693651152,
+          "mean_projected_fidelity": 0.3962020845056337,
+          "raw_overlap_mean": 0.4505613134787399,
+          "projection_frobenius_mean": 0.20536699520825796,
+          "negativity": 0.1602681769391355,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.7543984999647364
+      }
+    },
+    {
+      "seed": 4101,
+      "kind": "source_chord",
+      "training": {
+        "seconds": 1.2972441249294207,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.2911345064640045,
+            "gradient_norm": 0.06081085652112961
+          },
+          {
+            "step": 100,
+            "loss": 0.052831362932920456,
+            "gradient_norm": 0.06836654990911484
+          },
+          {
+            "step": 200,
+            "loss": 0.03661777824163437,
+            "gradient_norm": 0.07100298255681992
+          },
+          {
+            "step": 300,
+            "loss": 0.02489238977432251,
+            "gradient_norm": 0.05773260071873665
+          },
+          {
+            "step": 400,
+            "loss": 0.01656842604279518,
+            "gradient_norm": 0.040356338024139404
+          },
+          {
+            "step": 500,
+            "loss": 0.013482305221259594,
+            "gradient_norm": 0.04616665095090866
+          },
+          {
+            "step": 600,
+            "loss": 0.009107126854360104,
+            "gradient_norm": 0.03379926085472107
+          },
+          {
+            "step": 700,
+            "loss": 0.007448176387697458,
+            "gradient_norm": 0.034712016582489014
+          },
+          {
+            "step": 800,
+            "loss": 0.006025375798344612,
+            "gradient_norm": 0.024861542508006096
+          },
+          {
+            "step": 900,
+            "loss": 0.005023698788136244,
+            "gradient_norm": 0.026633184403181076
+          },
+          {
+            "step": 1000,
+            "loss": 0.004546944983303547,
+            "gradient_norm": 0.028117666020989418
+          },
+          {
+            "step": 1100,
+            "loss": 0.0043205758556723595,
+            "gradient_norm": 0.025689760223031044
+          },
+          {
+            "step": 1200,
+            "loss": 0.004098547622561455,
+            "gradient_norm": 0.024879759177565575
+          },
+          {
+            "step": 1300,
+            "loss": 0.004742706660181284,
+            "gradient_norm": 0.02878117375075817
+          },
+          {
+            "step": 1400,
+            "loss": 0.003392287530004978,
+            "gradient_norm": 0.01980123110115528
+          },
+          {
+            "step": 1500,
+            "loss": 0.0033894642256200314,
+            "gradient_norm": 0.02276976779103279
+          },
+          {
+            "step": 1599,
+            "loss": 0.003224504878744483,
+            "gradient_norm": 0.02218027599155903
+          }
+        ],
+        "parameters": 14832,
+        "supervision": "endpoints only",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 0.01295848801225004,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.0558650394801498,
+          "mean_projected_fidelity": 0.9242493729949641,
+          "raw_overlap_mean": 0.9494573745861371,
+          "projection_frobenius_mean": 0.06890926613017354
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 0.00417169448945828,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.048743445705812405,
+            "mean_projected_fidelity": 0.9472901167692216,
+            "raw_overlap_mean": 0.9665814322508138,
+            "projection_frobenius_mean": 0.057749909439033575
+          },
+          "1": {
+            "pauli_mse": 0.004681399559806652,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.05205520151415332,
+            "mean_projected_fidelity": 0.9502577947736165,
+            "raw_overlap_mean": 0.975477537787326,
+            "projection_frobenius_mean": 0.0655065112263537
+          },
+          "2": {
+            "pauli_mse": 0.0042955908174421775,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.0544632180498581,
+            "mean_projected_fidelity": 0.9495137822412513,
+            "raw_overlap_mean": 0.9754833104170827,
+            "projection_frobenius_mean": 0.06741378432079462
+          },
+          "3": {
+            "pauli_mse": 0.0034404637616437324,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.04700695503358023,
+            "mean_projected_fidelity": 0.9648259107295999,
+            "raw_overlap_mean": 0.9877023531448504,
+            "projection_frobenius_mean": 0.05861229156805881
+          },
+          "4": {
+            "pauli_mse": 0.03619690869166817,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.07572722654858177,
+            "mean_projected_fidelity": 0.8446157525285503,
+            "raw_overlap_mean": 0.877412588287769,
+            "projection_frobenius_mean": 0.09405560772207745
+          },
+          "5": {
+            "pauli_mse": 0.034176932586068576,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.05817208273101918,
+            "mean_projected_fidelity": 0.8581154587089798,
+            "raw_overlap_mean": 0.8808816341271307,
+            "projection_frobenius_mean": 0.06930452008400181
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 0.2022363817665798,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.23430643747880953,
+          "mean_projected_fidelity": 0.5009297373548705,
+          "raw_overlap_mean": 0.5605058898333045,
+          "projection_frobenius_mean": 0.2791069873020915
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 0.05940248835007509,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.09308076232656899,
+            "mean_projected_fidelity": 0.8206574151569097,
+            "raw_overlap_mean": 0.8518023580940884,
+            "projection_frobenius_mean": 0.1114318775866534
+          },
+          "4": {
+            "pauli_mse": 0.15046937529476603,
+            "raw_valid_fraction": 0.0546875,
+            "mean_min_eigenvalue": -0.14234809218795327,
+            "mean_projected_fidelity": 0.5757586163123298,
+            "raw_overlap_mean": 0.6084776993205905,
+            "projection_frobenius_mean": 0.16925007731708602
+          },
+          "16": {
+            "pauli_mse": 837607699320.5577,
+            "raw_valid_fraction": 0.203125,
+            "mean_min_eigenvalue": -110247.86903625687,
+            "mean_projected_fidelity": 0.29756659883097974,
+            "raw_overlap_mean": 84936.30092047733,
+            "projection_frobenius_mean": 196999.65540973094
+          },
+          "32": {
+            "pauli_mse": 7.847429752367712e+42,
+            "raw_valid_fraction": 0.2265625,
+            "mean_min_eigenvalue": -3.5625027856624e+20,
+            "mean_projected_fidelity": 0.25554328329650006,
+            "raw_overlap_mean": 1.9028594794478457e+19,
+            "projection_frobenius_mean": 5.888960531895528e+20
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 0.010530577327925636,
+          "cx_involution_mse": 0.00844947577360227,
+          "rz_composition_mse": 0.048943233906720014,
+          "rz_inverse_mse": 0.038198202201199516,
+          "independent_commutation_mse": 0.0024538550114954964,
+          "noncommutation_gap_error": 0.0819822984963804,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 0.015944024101237873,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.038563207564291345,
+          "mean_projected_fidelity": 0.8695752025187866,
+          "raw_overlap_mean": 0.8823631402365575,
+          "projection_frobenius_mean": 0.044528956536118165,
+          "negativity": 0.3787785817777078,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.7288832919439301
+      }
+    },
+    {
+      "seed": 4101,
+      "kind": "generator",
+      "training": {
+        "seconds": 0.8818572500022128,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.6926062703132629,
+            "gradient_norm": 0.09570286422967911
+          },
+          {
+            "step": 100,
+            "loss": 0.30634602904319763,
+            "gradient_norm": 0.06847386062145233
+          },
+          {
+            "step": 200,
+            "loss": 0.10765308886766434,
+            "gradient_norm": 0.054676804691553116
+          },
+          {
+            "step": 300,
+            "loss": 0.034980472177267075,
+            "gradient_norm": 0.03712660074234009
+          },
+          {
+            "step": 400,
+            "loss": 0.013663440011441708,
+            "gradient_norm": 0.022664416581392288
+          },
+          {
+            "step": 500,
+            "loss": 0.0032302462495863438,
+            "gradient_norm": 0.012531477957963943
+          },
+          {
+            "step": 600,
+            "loss": 0.0009536519646644592,
+            "gradient_norm": 0.006739520467817783
+          },
+          {
+            "step": 700,
+            "loss": 0.00019809902005363256,
+            "gradient_norm": 0.0031348627526313066
+          },
+          {
+            "step": 800,
+            "loss": 5.700543260900304e-05,
+            "gradient_norm": 0.0022240851540118456
+          },
+          {
+            "step": 900,
+            "loss": 1.066923596226843e-05,
+            "gradient_norm": 0.0008054120116867125
+          },
+          {
+            "step": 1000,
+            "loss": 1.672884991421597e-06,
+            "gradient_norm": 0.00031365183531306684
+          },
+          {
+            "step": 1100,
+            "loss": 5.051165885561204e-07,
+            "gradient_norm": 0.00018462506704963744
+          },
+          {
+            "step": 1200,
+            "loss": 6.013117115344357e-08,
+            "gradient_norm": 6.180844502523541e-05
+          },
+          {
+            "step": 1300,
+            "loss": 9.69590807642362e-09,
+            "gradient_norm": 2.91047526843613e-05
+          },
+          {
+            "step": 1400,
+            "loss": 7.162866411114521e-10,
+            "gradient_norm": 7.137392003642162e-06
+          },
+          {
+            "step": 1500,
+            "loss": 1.5646171858119118e-10,
+            "gradient_norm": 4.061906565766549e-06
+          },
+          {
+            "step": 1599,
+            "loss": 1.1668408426979138e-11,
+            "gradient_norm": 1.1094786032117554e-06
+          }
+        ],
+        "parameters": 1575,
+        "supervision": "chosen quantum path and exact derivative",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 6.09149047766501e-12,
+          "raw_valid_fraction": 0.4375,
+          "mean_min_eigenvalue": -1.6275628587449871e-06,
+          "mean_projected_fidelity": 0.9999991783621444,
+          "raw_overlap_mean": 0.9999999999885785,
+          "projection_frobenius_mean": 2.0327753195943505e-06
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 3.265834297642506e-11,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -4.63193075540801e-06,
+            "mean_projected_fidelity": 0.9999975406168595,
+            "raw_overlap_mean": 0.9999999999387654,
+            "projection_frobenius_mean": 5.868804999272508e-06
+          },
+          "1": {
+            "pauli_mse": 5.59481090880963e-12,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -2.33344302036562e-06,
+            "mean_projected_fidelity": 0.9999988814965157,
+            "raw_overlap_mean": 0.9999999999895092,
+            "projection_frobenius_mean": 2.8605973907497887e-06
+          },
+          "2": {
+            "pauli_mse": 1.1688468968302306e-12,
+            "raw_valid_fraction": 0.6521739130434783,
+            "mean_min_eigenvalue": -9.782880047396888e-07,
+            "mean_projected_fidelity": 0.9999994778863055,
+            "raw_overlap_mean": 0.9999999999978086,
+            "projection_frobenius_mean": 1.241637039173988e-06
+          },
+          "3": {
+            "pauli_mse": 2.6234056487475903e-12,
+            "raw_valid_fraction": 0.20833333333333334,
+            "mean_min_eigenvalue": -1.3677696366999516e-06,
+            "mean_projected_fidelity": 0.999999343417536,
+            "raw_overlap_mean": 0.9999999999950814,
+            "projection_frobenius_mean": 1.6950043111859933e-06
+          },
+          "4": {
+            "pauli_mse": 1.6476916121754316e-13,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -3.1805266189181133e-07,
+            "mean_projected_fidelity": 0.9999998330021083,
+            "raw_overlap_mean": 0.999999999999691,
+            "projection_frobenius_mean": 4.0683766994803254e-07
+          },
+          "5": {
+            "pauli_mse": 1.041172442155489e-13,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -3.016465921996925e-07,
+            "mean_projected_fidelity": 0.9999998612595341,
+            "raw_overlap_mean": 0.9999999999998047,
+            "projection_frobenius_mean": 3.677751771178958e-07
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 9.587703244126987e-13,
+          "raw_valid_fraction": 0.578125,
+          "mean_min_eigenvalue": -9.357027441347677e-07,
+          "mean_projected_fidelity": 0.9999995293664896,
+          "raw_overlap_mean": 0.9999999999982025,
+          "projection_frobenius_mean": 1.1736389812521023e-06
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 6.879939758769387e-12,
+            "raw_valid_fraction": 0.453125,
+            "mean_min_eigenvalue": -1.8179944251144816e-06,
+            "mean_projected_fidelity": 0.999999109520661,
+            "raw_overlap_mean": 0.9999999999871001,
+            "projection_frobenius_mean": 2.255974123987014e-06
+          },
+          "4": {
+            "pauli_mse": 3.6652126022808074e-11,
+            "raw_valid_fraction": 0.046875,
+            "mean_min_eigenvalue": -4.7495928662260845e-06,
+            "mean_projected_fidelity": 0.9999975843244856,
+            "raw_overlap_mean": 0.9999999999312771,
+            "projection_frobenius_mean": 5.96751869178773e-06
+          },
+          "16": {
+            "pauli_mse": 1.7919419707285674e-10,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -1.046097523003123e-05,
+            "mean_projected_fidelity": 0.9999946949366885,
+            "raw_overlap_mean": 0.9999999996640097,
+            "projection_frobenius_mean": 1.313504011211552e-05
+          },
+          "32": {
+            "pauli_mse": 3.6179097718619943e-10,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -1.4934205423724944e-05,
+            "mean_projected_fidelity": 0.999992471967353,
+            "raw_overlap_mean": 0.9999999993216394,
+            "projection_frobenius_mean": 1.8694035498813518e-05
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 8.570383904768038e-11,
+          "cx_involution_mse": 1.5511369736259351e-12,
+          "rz_composition_mse": 5.6717559355868495e-31,
+          "rz_inverse_mse": 2.727493256306657e-31,
+          "independent_commutation_mse": 1.5063968681166186e-13,
+          "noncommutation_gap_error": 8.802938242744921e-12,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 3.303041342580585e-11,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -5.357722629028255e-06,
+          "mean_projected_fidelity": 0.9999973097530928,
+          "raw_overlap_mean": 0.9999999999380685,
+          "projection_frobenius_mean": 6.57114107884881e-06,
+          "negativity": 0.4999973097819598,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.16551554203033447
+      }
+    },
+    {
+      "seed": 4101,
+      "kind": "hamiltonian",
+      "training": {
+        "seconds": 1.177942999987863,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.6926062703132629,
+            "gradient_norm": 0.4900498390197754
+          },
+          {
+            "step": 100,
+            "loss": 0.3141055405139923,
+            "gradient_norm": 0.30860620737075806
+          },
+          {
+            "step": 200,
+            "loss": 0.1352311074733734,
+            "gradient_norm": 0.21488410234451294
+          },
+          {
+            "step": 300,
+            "loss": 0.05733173340559006,
+            "gradient_norm": 0.13049811124801636
+          },
+          {
+            "step": 400,
+            "loss": 0.026837337762117386,
+            "gradient_norm": 0.09821445494890213
+          },
+          {
+            "step": 500,
+            "loss": 0.0076804617419838905,
+            "gradient_norm": 0.048542365431785583
+          },
+          {
+            "step": 600,
+            "loss": 0.002539739478379488,
+            "gradient_norm": 0.029479654505848885
+          },
+          {
+            "step": 700,
+            "loss": 0.0006554576102644205,
+            "gradient_norm": 0.014319928362965584
+          },
+          {
+            "step": 800,
+            "loss": 0.00015800086839590222,
+            "gradient_norm": 0.006833158433437347
+          },
+          {
+            "step": 900,
+            "loss": 2.435410897305701e-05,
+            "gradient_norm": 0.002328514354303479
+          },
+          {
+            "step": 1000,
+            "loss": 5.053143013356021e-06,
+            "gradient_norm": 0.0011477983789518476
+          },
+          {
+            "step": 1100,
+            "loss": 1.019252977130236e-06,
+            "gradient_norm": 0.0005765992682427168
+          },
+          {
+            "step": 1200,
+            "loss": 1.0559002561194575e-07,
+            "gradient_norm": 0.00016707133909221739
+          },
+          {
+            "step": 1300,
+            "loss": 1.5346559578688357e-08,
+            "gradient_norm": 7.111518789315596e-05
+          },
+          {
+            "step": 1400,
+            "loss": 9.95558857574963e-10,
+            "gradient_norm": 1.606426121725235e-05
+          },
+          {
+            "step": 1500,
+            "loss": 1.0970895719664142e-10,
+            "gradient_norm": 6.469084837590344e-06
+          },
+          {
+            "step": 1599,
+            "loss": 7.918996187961103e-12,
+            "gradient_norm": 1.7520371784485178e-06
+          }
+        ],
+        "parameters": 315,
+        "supervision": "chosen quantum path and exact derivative",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 5.840869194269569e-12,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": -6.324468036840886e-16,
+          "mean_projected_fidelity": 0.9999999999890481,
+          "raw_overlap_mean": 0.9999999999890483,
+          "projection_frobenius_mean": 9.940055391008608e-16
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 1.9504291126818668e-11,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -5.373957300364365e-16,
+            "mean_projected_fidelity": 0.9999999999634286,
+            "raw_overlap_mean": 0.9999999999634289,
+            "projection_frobenius_mean": 8.280118331788645e-16
+          },
+          "1": {
+            "pauli_mse": 1.1959386170325305e-11,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -5.136189368571349e-16,
+            "mean_projected_fidelity": 0.9999999999775755,
+            "raw_overlap_mean": 0.9999999999775757,
+            "projection_frobenius_mean": 7.718728805898734e-16
+          },
+          "2": {
+            "pauli_mse": 1.8761351978284455e-12,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -8.500705718434717e-16,
+            "mean_projected_fidelity": 0.999999999996482,
+            "raw_overlap_mean": 0.9999999999964825,
+            "projection_frobenius_mean": 1.2281002550878743e-15
+          },
+          "3": {
+            "pauli_mse": 1.871901446514652e-12,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.1677949131790656e-15,
+            "mean_projected_fidelity": 0.9999999999964903,
+            "raw_overlap_mean": 0.9999999999964909,
+            "projection_frobenius_mean": 1.7269550087005332e-15
+          },
+          "4": {
+            "pauli_mse": 1.9746993819755374e-14,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -2.7973683055647275e-16,
+            "mean_projected_fidelity": 0.999999999999963,
+            "raw_overlap_mean": 0.9999999999999631,
+            "projection_frobenius_mean": 6.288038598493658e-16
+          },
+          "5": {
+            "pauli_mse": 1.6372983395132924e-14,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -2.6621419151311654e-16,
+            "mean_projected_fidelity": 0.9999999999999695,
+            "raw_overlap_mean": 0.9999999999999692,
+            "projection_frobenius_mean": 5.766639388872899e-16
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 2.361906299375409e-13,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": -6.786983961053052e-16,
+          "mean_projected_fidelity": 0.9999999999995568,
+          "raw_overlap_mean": 0.9999999999995572,
+          "projection_frobenius_mean": 1.0266998296235977e-15
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 6.296310214367495e-12,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -6.196513186642533e-16,
+            "mean_projected_fidelity": 0.999999999988194,
+            "raw_overlap_mean": 0.9999999999881943,
+            "projection_frobenius_mean": 9.452430345059845e-16
+          },
+          "4": {
+            "pauli_mse": 4.2223433729041935e-11,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.4313861090169441e-15,
+            "mean_projected_fidelity": 0.9999999999208299,
+            "raw_overlap_mean": 0.9999999999208307,
+            "projection_frobenius_mean": 1.9460991327487826e-15
+          },
+          "16": {
+            "pauli_mse": 2.979538789298461e-10,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -3.3428491014239086e-15,
+            "mean_projected_fidelity": 0.9999999994413329,
+            "raw_overlap_mean": 0.9999999994413351,
+            "projection_frobenius_mean": 4.570830608965859e-15
+          },
+          "32": {
+            "pauli_mse": 7.108986673309035e-10,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -5.143141718944131e-15,
+            "mean_projected_fidelity": 0.9999999986670589,
+            "raw_overlap_mean": 0.9999999986670625,
+            "projection_frobenius_mean": 7.0571668205721956e-15
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 8.339766207650737e-11,
+          "cx_involution_mse": 6.9983024646152264e-12,
+          "rz_composition_mse": 7.853048807740967e-31,
+          "rz_inverse_mse": 1.610795600596112e-31,
+          "independent_commutation_mse": 1.0246031663624002e-15,
+          "noncommutation_gap_error": 4.8424723711016095e-12,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 2.2835019510507494e-11,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": -1.089485154418031e-15,
+          "mean_projected_fidelity": 0.9999999999571827,
+          "raw_overlap_mean": 0.9999999999571835,
+          "projection_frobenius_mean": 1.5360087682866597e-15,
+          "negativity": 0.4999999999974372,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.1811635420890525
+      }
+    },
+    {
+      "seed": 4102,
+      "kind": "direct",
+      "training": {
+        "seconds": 1.246579417027533,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.2041291743516922,
+            "gradient_norm": 0.046885695308446884
+          },
+          {
+            "step": 100,
+            "loss": 0.1293235570192337,
+            "gradient_norm": 0.041640449315309525
+          },
+          {
+            "step": 200,
+            "loss": 0.045677781105041504,
+            "gradient_norm": 0.07530087977647781
+          },
+          {
+            "step": 300,
+            "loss": 0.014699357561767101,
+            "gradient_norm": 0.04609116539359093
+          },
+          {
+            "step": 400,
+            "loss": 0.014190220274031162,
+            "gradient_norm": 0.054928433150053024
+          },
+          {
+            "step": 500,
+            "loss": 0.00854634027928114,
+            "gradient_norm": 0.0522516705095768
+          },
+          {
+            "step": 600,
+            "loss": 0.009924681857228279,
+            "gradient_norm": 0.052109409123659134
+          },
+          {
+            "step": 700,
+            "loss": 0.008634486235678196,
+            "gradient_norm": 0.04325820505619049
+          },
+          {
+            "step": 800,
+            "loss": 0.006522118579596281,
+            "gradient_norm": 0.037460196763277054
+          },
+          {
+            "step": 900,
+            "loss": 0.006948568392544985,
+            "gradient_norm": 0.04528089985251427
+          },
+          {
+            "step": 1000,
+            "loss": 0.010162537917494774,
+            "gradient_norm": 0.04263367876410484
+          },
+          {
+            "step": 1100,
+            "loss": 0.007205021567642689,
+            "gradient_norm": 0.04300438240170479
+          },
+          {
+            "step": 1200,
+            "loss": 0.006503449287265539,
+            "gradient_norm": 0.033288512378931046
+          },
+          {
+            "step": 1300,
+            "loss": 0.005774160381406546,
+            "gradient_norm": 0.04321318492293358
+          },
+          {
+            "step": 1400,
+            "loss": 0.003914489410817623,
+            "gradient_norm": 0.033515892922878265
+          },
+          {
+            "step": 1500,
+            "loss": 0.0038810197729617357,
+            "gradient_norm": 0.031914688646793365
+          },
+          {
+            "step": 1599,
+            "loss": 0.0032213092781603336,
+            "gradient_norm": 0.0334436409175396
+          }
+        ],
+        "parameters": 13296,
+        "supervision": "endpoints only",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 0.004103109789231863,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.0446566030329318,
+          "mean_projected_fidelity": 0.9620433459346064,
+          "raw_overlap_mean": 0.9832194045503283,
+          "projection_frobenius_mean": 0.05505537472766476
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 0.0014492900398650403,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.03127178880508563,
+            "mean_projected_fidelity": 0.9727181504202579,
+            "raw_overlap_mean": 0.9871457176085154,
+            "projection_frobenius_mean": 0.03830446998640875
+          },
+          "1": {
+            "pauli_mse": 0.001451795060673204,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.03579722642908584,
+            "mean_projected_fidelity": 0.9789409275069287,
+            "raw_overlap_mean": 0.9965497259132133,
+            "projection_frobenius_mean": 0.04438776513598298
+          },
+          "2": {
+            "pauli_mse": 0.0017790250506425453,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.04186732089710722,
+            "mean_projected_fidelity": 0.9791952334818756,
+            "raw_overlap_mean": 1.0007890149517205,
+            "projection_frobenius_mean": 0.05334420542167535
+          },
+          "3": {
+            "pauli_mse": 0.0020485031669147903,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.042947719383847595,
+            "mean_projected_fidelity": 0.9708881107186427,
+            "raw_overlap_mean": 0.990673270109895,
+            "projection_frobenius_mean": 0.05241536147062142
+          },
+          "4": {
+            "pauli_mse": 0.010245443166121072,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.06285742774944432,
+            "mean_projected_fidelity": 0.9291304883697248,
+            "raw_overlap_mean": 0.9574237873128563,
+            "projection_frobenius_mean": 0.07631891815349214
+          },
+          "5": {
+            "pauli_mse": 0.010316139557065548,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.057215710325487716,
+            "mean_projected_fidelity": 0.9232210859814319,
+            "raw_overlap_mean": 0.9500129358437638,
+            "projection_frobenius_mean": 0.07021926121748345
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 0.21265936285778372,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.17090705427776082,
+          "mean_projected_fidelity": 0.46768198389663806,
+          "raw_overlap_mean": 0.49244332655439826,
+          "projection_frobenius_mean": 0.20077394885480096
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 0.04486008731906051,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.06764273964670467,
+            "mean_projected_fidelity": 0.8612360759299252,
+            "raw_overlap_mean": 0.8846883952019342,
+            "projection_frobenius_mean": 0.08200583026944272
+          },
+          "4": {
+            "pauli_mse": 0.1277151228977558,
+            "raw_valid_fraction": 0.0078125,
+            "mean_min_eigenvalue": -0.12685664821464526,
+            "mean_projected_fidelity": 0.6501873291073191,
+            "raw_overlap_mean": 0.6791036097836352,
+            "projection_frobenius_mean": 0.15101981948625842
+          },
+          "16": {
+            "pauli_mse": 0.27302821703400526,
+            "raw_valid_fraction": 0.0078125,
+            "mean_min_eigenvalue": -0.19295945789349755,
+            "mean_projected_fidelity": 0.35644376758727647,
+            "raw_overlap_mean": 0.3761076347867156,
+            "projection_frobenius_mean": 0.22839842619670925
+          },
+          "32": {
+            "pauli_mse": 0.32970648338017067,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.22204764198661575,
+            "mean_projected_fidelity": 0.2780528058229837,
+            "raw_overlap_mean": 0.2851755168287907,
+            "projection_frobenius_mean": 0.26512587855020686
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 0.003200689408226123,
+          "cx_involution_mse": 0.0032137240015086316,
+          "rz_composition_mse": 0.05395851012906765,
+          "rz_inverse_mse": 0.01333388835227182,
+          "independent_commutation_mse": 0.007881064536317369,
+          "noncommutation_gap_error": 0.014515670808320504,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 0.0015121335013613573,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.025002650178902398,
+          "mean_projected_fidelity": 0.9683019201612437,
+          "raw_overlap_mean": 0.9820504246734285,
+          "projection_frobenius_mean": 0.03180290887243904,
+          "negativity": 0.46957894955555507,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.04399041598662734
+      }
+    },
+    {
+      "seed": 4102,
+      "kind": "chord",
+      "training": {
+        "seconds": 1.127517499960959,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.2653999924659729,
+            "gradient_norm": 0.05667715519666672
+          },
+          {
+            "step": 100,
+            "loss": 0.24566854536533356,
+            "gradient_norm": 0.05017616227269173
+          },
+          {
+            "step": 200,
+            "loss": 0.24721911549568176,
+            "gradient_norm": 0.0440845713019371
+          },
+          {
+            "step": 300,
+            "loss": 0.23497727513313293,
+            "gradient_norm": 0.06465674936771393
+          },
+          {
+            "step": 400,
+            "loss": 0.20191358029842377,
+            "gradient_norm": 0.08590371906757355
+          },
+          {
+            "step": 500,
+            "loss": 0.17535901069641113,
+            "gradient_norm": 0.08449383080005646
+          },
+          {
+            "step": 600,
+            "loss": 0.1604425609111786,
+            "gradient_norm": 0.07769987732172012
+          },
+          {
+            "step": 700,
+            "loss": 0.15817861258983612,
+            "gradient_norm": 0.07396185398101807
+          },
+          {
+            "step": 800,
+            "loss": 0.13842293620109558,
+            "gradient_norm": 0.12822845578193665
+          },
+          {
+            "step": 900,
+            "loss": 0.11966700106859207,
+            "gradient_norm": 0.10287191718816757
+          },
+          {
+            "step": 1000,
+            "loss": 0.1133517473936081,
+            "gradient_norm": 0.17912337183952332
+          },
+          {
+            "step": 1100,
+            "loss": 0.08727243542671204,
+            "gradient_norm": 0.1338355392217636
+          },
+          {
+            "step": 1200,
+            "loss": 0.10174605995416641,
+            "gradient_norm": 0.21103130280971527
+          },
+          {
+            "step": 1300,
+            "loss": 0.08874198794364929,
+            "gradient_norm": 0.22951237857341766
+          },
+          {
+            "step": 1400,
+            "loss": 0.07398413121700287,
+            "gradient_norm": 0.3320566713809967
+          },
+          {
+            "step": 1500,
+            "loss": 0.07771521061658859,
+            "gradient_norm": 0.3020382523536682
+          },
+          {
+            "step": 1599,
+            "loss": 0.07110647112131119,
+            "gradient_norm": 0.24886924028396606
+          }
+        ],
+        "parameters": 13392,
+        "supervision": "endpoints only",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 0.2858466075549425,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.10823862225895886,
+          "mean_projected_fidelity": 0.4918783936793796,
+          "raw_overlap_mean": 0.4975220146427605,
+          "projection_frobenius_mean": 0.13946103152018896
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 0.4131597313619871,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.10801202911986624,
+            "mean_projected_fidelity": 0.2617430129359065,
+            "raw_overlap_mean": 0.24748046386932113,
+            "projection_frobenius_mean": 0.1387819339894057
+          },
+          "1": {
+            "pauli_mse": 0.44913859578061377,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.12316103822619975,
+            "mean_projected_fidelity": 0.21674481324783876,
+            "raw_overlap_mean": 0.20271537085060745,
+            "projection_frobenius_mean": 0.16832965999405425
+          },
+          "2": {
+            "pauli_mse": 0.36820804024216275,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.1032198028924154,
+            "mean_projected_fidelity": 0.3633513020266362,
+            "raw_overlap_mean": 0.3529914988476062,
+            "projection_frobenius_mean": 0.1306896541914052
+          },
+          "3": {
+            "pauli_mse": 0.31509052577894175,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.1483166111531735,
+            "mean_projected_fidelity": 0.4469616396005822,
+            "raw_overlap_mean": 0.4650449300944078,
+            "projection_frobenius_mean": 0.18890589954640824
+          },
+          "4": {
+            "pauli_mse": 0.02374126685429632,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.0783867482021894,
+            "mean_projected_fidelity": 0.9338999331381307,
+            "raw_overlap_mean": 0.9691277245625092,
+            "projection_frobenius_mean": 0.09584193634976085
+          },
+          "5": {
+            "pauli_mse": 0.02853752661029871,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.06403703428708532,
+            "mean_projected_fidelity": 0.9183563409809485,
+            "raw_overlap_mean": 0.9459779972543327,
+            "projection_frobenius_mean": 0.0786296225510906
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 0.8059697725987782,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.5238264382554794,
+          "mean_projected_fidelity": 0.37056155663288504,
+          "raw_overlap_mean": 0.33917434643384675,
+          "projection_frobenius_mean": 0.7798450019093315
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 0.41584084953646133,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.20189715093589,
+            "mean_projected_fidelity": 0.42871203214700526,
+            "raw_overlap_mean": 0.4273551903661815,
+            "projection_frobenius_mean": 0.2795679683833491
+          },
+          "4": {
+            "pauli_mse": 27.504847397868907,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -1.7695349802128484,
+            "mean_projected_fidelity": 0.3239506226980565,
+            "raw_overlap_mean": 0.7526234180380391,
+            "projection_frobenius_mean": 2.675762713162228
+          },
+          "16": {
+            "pauli_mse": 2.162872560836782e+19,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -740808533.2929564,
+            "mean_projected_fidelity": 0.26969337617064004,
+            "raw_overlap_mean": 200131105.34554633,
+            "projection_frobenius_mean": 1071202326.9794656
+          },
+          "32": {
+            "pauli_mse": 1.8270422425564602e+43,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -6.471675821728232e+20,
+            "mean_projected_fidelity": 0.24839791121765853,
+            "raw_overlap_mean": 1.6503714921810434e+19,
+            "projection_frobenius_mean": 9.392216447758307e+20
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 0.0816135359404246,
+          "cx_involution_mse": 0.06242991116707623,
+          "rz_composition_mse": 0.059597115666198,
+          "rz_inverse_mse": 0.013766454458913672,
+          "independent_commutation_mse": 0.004851832828930927,
+          "noncommutation_gap_error": 0.09988760622087302,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 0.34250858931066636,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.17465129457453618,
+          "mean_projected_fidelity": 0.40999148023668036,
+          "raw_overlap_mean": 0.43896868711129233,
+          "projection_frobenius_mean": 0.2570150948131463,
+          "negativity": 0.10891160022098659,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.5447771660983562
+      }
+    },
+    {
+      "seed": 4102,
+      "kind": "source_chord",
+      "training": {
+        "seconds": 0.9712509590899572,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.26667511463165283,
+            "gradient_norm": 0.06341882050037384
+          },
+          {
+            "step": 100,
+            "loss": 0.05773921683430672,
+            "gradient_norm": 0.0592367947101593
+          },
+          {
+            "step": 200,
+            "loss": 0.040091078728437424,
+            "gradient_norm": 0.06184844300150871
+          },
+          {
+            "step": 300,
+            "loss": 0.022158831357955933,
+            "gradient_norm": 0.039421744644641876
+          },
+          {
+            "step": 400,
+            "loss": 0.014971434138715267,
+            "gradient_norm": 0.04143132269382477
+          },
+          {
+            "step": 500,
+            "loss": 0.014312097802758217,
+            "gradient_norm": 0.039784785360097885
+          },
+          {
+            "step": 600,
+            "loss": 0.009089008904993534,
+            "gradient_norm": 0.034641776233911514
+          },
+          {
+            "step": 700,
+            "loss": 0.007309672422707081,
+            "gradient_norm": 0.02545875310897827
+          },
+          {
+            "step": 800,
+            "loss": 0.006590722594410181,
+            "gradient_norm": 0.029476778581738472
+          },
+          {
+            "step": 900,
+            "loss": 0.0055396053940057755,
+            "gradient_norm": 0.026893503963947296
+          },
+          {
+            "step": 1000,
+            "loss": 0.006215647328644991,
+            "gradient_norm": 0.030588576570153236
+          },
+          {
+            "step": 1100,
+            "loss": 0.005259068217128515,
+            "gradient_norm": 0.024196259677410126
+          },
+          {
+            "step": 1200,
+            "loss": 0.004757894203066826,
+            "gradient_norm": 0.02612723782658577
+          },
+          {
+            "step": 1300,
+            "loss": 0.004850576166063547,
+            "gradient_norm": 0.026245033368468285
+          },
+          {
+            "step": 1400,
+            "loss": 0.0035940876696258783,
+            "gradient_norm": 0.02365514263510704
+          },
+          {
+            "step": 1500,
+            "loss": 0.0041567254811525345,
+            "gradient_norm": 0.026745887473225594
+          },
+          {
+            "step": 1599,
+            "loss": 0.003294731257483363,
+            "gradient_norm": 0.02267010323703289
+          }
+        ],
+        "parameters": 14832,
+        "supervision": "endpoints only",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 0.012554454640912031,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.05790351045511324,
+          "mean_projected_fidelity": 0.9288073435967867,
+          "raw_overlap_mean": 0.9563771828761303,
+          "projection_frobenius_mean": 0.07172563978297086
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 0.004891515201069206,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.05882541264866561,
+            "mean_projected_fidelity": 0.9501439390119177,
+            "raw_overlap_mean": 0.9798010164148416,
+            "projection_frobenius_mean": 0.07443157047470492
+          },
+          "1": {
+            "pauli_mse": 0.004862409331054494,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.052341320799960206,
+            "mean_projected_fidelity": 0.9454284053939992,
+            "raw_overlap_mean": 0.9698102590551531,
+            "projection_frobenius_mean": 0.06431484029623105
+          },
+          "2": {
+            "pauli_mse": 0.0034909390221467703,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.05064074172211658,
+            "mean_projected_fidelity": 0.9594459621305533,
+            "raw_overlap_mean": 0.9847295089900355,
+            "projection_frobenius_mean": 0.06294572854085777
+          },
+          "3": {
+            "pauli_mse": 0.0038365656081512382,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.04910521507186092,
+            "mean_projected_fidelity": 0.964363470621295,
+            "raw_overlap_mean": 0.9921165446614001,
+            "projection_frobenius_mean": 0.06372777039314033
+          },
+          "4": {
+            "pauli_mse": 0.03418047561476287,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.0729520521432599,
+            "mean_projected_fidelity": 0.8585857968045779,
+            "raw_overlap_mean": 0.8889314471103642,
+            "projection_frobenius_mean": 0.08777880062391864
+          },
+          "5": {
+            "pauli_mse": 0.03309688889923313,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.07173836172799557,
+            "mean_projected_fidelity": 0.8690532318683946,
+            "raw_overlap_mean": 0.8999212869882378,
+            "projection_frobenius_mean": 0.08689246688807047
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 0.245291176388188,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.2753733341242931,
+          "mean_projected_fidelity": 0.44636120278155567,
+          "raw_overlap_mean": 0.5028885830219626,
+          "projection_frobenius_mean": 0.32657713726831505
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 0.06131334888642147,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.09597062819411391,
+            "mean_projected_fidelity": 0.8177493461931007,
+            "raw_overlap_mean": 0.8485861059054594,
+            "projection_frobenius_mean": 0.11565868093126301
+          },
+          "4": {
+            "pauli_mse": 0.1759098193492736,
+            "raw_valid_fraction": 0.0078125,
+            "mean_min_eigenvalue": -0.18283931232345196,
+            "mean_projected_fidelity": 0.5655002766708849,
+            "raw_overlap_mean": 0.6017374642319131,
+            "projection_frobenius_mean": 0.21830875175831882
+          },
+          "16": {
+            "pauli_mse": 278261257.7831041,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -2041.6510580596898,
+            "mean_projected_fidelity": 0.3037499589073044,
+            "raw_overlap_mean": 1000.3281383053136,
+            "projection_frobenius_mean": 3157.2536068088825
+          },
+          "32": {
+            "pauli_mse": 5.4686869135087535e+28,
+            "raw_valid_fraction": 0.015625,
+            "mean_min_eigenvalue": -42015064652945.9,
+            "mean_projected_fidelity": 0.25614210606079324,
+            "raw_overlap_mean": 520104901110.22656,
+            "projection_frobenius_mean": 61659717973289.586
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 0.007815569135495677,
+          "cx_involution_mse": 0.006685398282011191,
+          "rz_composition_mse": 0.047767078731758825,
+          "rz_inverse_mse": 0.02865529495434893,
+          "independent_commutation_mse": 0.002504828846350442,
+          "noncommutation_gap_error": 0.07520490217769607,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 0.009651703273051034,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.013756134530167831,
+          "mean_projected_fidelity": 0.8710093026345272,
+          "raw_overlap_mean": 0.8755907734927094,
+          "projection_frobenius_mean": 0.015884215948002257,
+          "negativity": 0.37355964694059035,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.5430290829390287
+      }
+    },
+    {
+      "seed": 4102,
+      "kind": "generator",
+      "training": {
+        "seconds": 0.9225703340489417,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.6281817555427551,
+            "gradient_norm": 0.08520316332578659
+          },
+          {
+            "step": 100,
+            "loss": 0.29121506214141846,
+            "gradient_norm": 0.06967465579509735
+          },
+          {
+            "step": 200,
+            "loss": 0.10278654098510742,
+            "gradient_norm": 0.04956148564815521
+          },
+          {
+            "step": 300,
+            "loss": 0.03657259792089462,
+            "gradient_norm": 0.03767310082912445
+          },
+          {
+            "step": 400,
+            "loss": 0.009451686404645443,
+            "gradient_norm": 0.020901579409837723
+          },
+          {
+            "step": 500,
+            "loss": 0.002678921911865473,
+            "gradient_norm": 0.012875894084572792
+          },
+          {
+            "step": 600,
+            "loss": 0.0005524842417798936,
+            "gradient_norm": 0.0059719448909163475
+          },
+          {
+            "step": 700,
+            "loss": 0.00012492918176576495,
+            "gradient_norm": 0.0024465995375066996
+          },
+          {
+            "step": 800,
+            "loss": 3.087885124841705e-05,
+            "gradient_norm": 0.0012371871853247285
+          },
+          {
+            "step": 900,
+            "loss": 4.476847607293166e-06,
+            "gradient_norm": 0.0005178607534617186
+          },
+          {
+            "step": 1000,
+            "loss": 8.287583455057757e-07,
+            "gradient_norm": 0.00019308186892885715
+          },
+          {
+            "step": 1100,
+            "loss": 1.536593003947928e-07,
+            "gradient_norm": 8.65927868289873e-05
+          },
+          {
+            "step": 1200,
+            "loss": 2.4253763442061427e-08,
+            "gradient_norm": 4.0228616853710264e-05
+          },
+          {
+            "step": 1300,
+            "loss": 3.7516372231038986e-09,
+            "gradient_norm": 1.386462008667877e-05
+          },
+          {
+            "step": 1400,
+            "loss": 3.431389061780976e-10,
+            "gradient_norm": 4.85923237647512e-06
+          },
+          {
+            "step": 1500,
+            "loss": 3.370022663706784e-11,
+            "gradient_norm": 1.6731571577111026e-06
+          },
+          {
+            "step": 1599,
+            "loss": 4.56744191079661e-12,
+            "gradient_norm": 5.635367301692895e-07
+          }
+        ],
+        "parameters": 1575,
+        "supervision": "chosen quantum path and exact derivative",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 3.1581012344850785e-12,
+          "raw_valid_fraction": 0.390625,
+          "mean_min_eigenvalue": -1.40292328994304e-06,
+          "mean_projected_fidelity": 0.9999992995278304,
+          "raw_overlap_mean": 0.9999999999940787,
+          "projection_frobenius_mean": 1.7571215908975215e-06
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 4.769748611419079e-12,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -2.147526641847874e-06,
+            "mean_projected_fidelity": 0.9999989023114976,
+            "raw_overlap_mean": 0.9999999999910578,
+            "projection_frobenius_mean": 2.7098971125649784e-06
+          },
+          "1": {
+            "pauli_mse": 5.553011520599721e-12,
+            "raw_valid_fraction": 0.034482758620689655,
+            "mean_min_eigenvalue": -2.224776607816889e-06,
+            "mean_projected_fidelity": 0.9999988610664887,
+            "raw_overlap_mean": 0.9999999999895886,
+            "projection_frobenius_mean": 2.8015520093989532e-06
+          },
+          "2": {
+            "pauli_mse": 9.843947993041775e-13,
+            "raw_valid_fraction": 0.5217391304347826,
+            "mean_min_eigenvalue": -1.003421163538983e-06,
+            "mean_projected_fidelity": 0.9999995114553775,
+            "raw_overlap_mean": 0.9999999999981543,
+            "projection_frobenius_mean": 1.2403657482602346e-06
+          },
+          "3": {
+            "pauli_mse": 5.9353448584620104e-12,
+            "raw_valid_fraction": 0.041666666666666664,
+            "mean_min_eigenvalue": -2.133322275162348e-06,
+            "mean_projected_fidelity": 0.9999989753841714,
+            "raw_overlap_mean": 0.9999999999888715,
+            "projection_frobenius_mean": 2.6534770335128447e-06
+          },
+          "4": {
+            "pauli_mse": 4.850342264888872e-14,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.6608577700891688e-07,
+            "mean_projected_fidelity": 0.9999999105011717,
+            "raw_overlap_mean": 0.999999999999909,
+            "projection_frobenius_mean": 2.1565873345744517e-07
+          },
+          "5": {
+            "pauli_mse": 5.1943846330926215e-14,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.973517683545875e-07,
+            "mean_projected_fidelity": 0.9999999091378979,
+            "raw_overlap_mean": 0.9999999999999029,
+            "projection_frobenius_mean": 2.3941774363685615e-07
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 3.1043365300413587e-13,
+          "raw_valid_fraction": 0.9921875,
+          "mean_min_eigenvalue": -5.186036441537181e-07,
+          "mean_projected_fidelity": 0.9999997315452087,
+          "raw_overlap_mean": 0.9999999999994181,
+          "projection_frobenius_mean": 6.576660513002919e-07
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 2.73123311282349e-12,
+            "raw_valid_fraction": 0.5,
+            "mean_min_eigenvalue": -1.284570227519318e-06,
+            "mean_projected_fidelity": 0.9999993392488462,
+            "raw_overlap_mean": 0.9999999999948792,
+            "projection_frobenius_mean": 1.6220779602699068e-06
+          },
+          "4": {
+            "pauli_mse": 1.3290008555188573e-11,
+            "raw_valid_fraction": 0.03125,
+            "mean_min_eigenvalue": -3.290033592818914e-06,
+            "mean_projected_fidelity": 0.9999983332840656,
+            "raw_overlap_mean": 0.9999999999750823,
+            "projection_frobenius_mean": 4.127243676829099e-06
+          },
+          "16": {
+            "pauli_mse": 5.868113758484894e-11,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -6.996398229680196e-06,
+            "mean_projected_fidelity": 0.9999964431086723,
+            "raw_overlap_mean": 0.9999999998899765,
+            "projection_frobenius_mean": 8.789114725474773e-06
+          },
+          "32": {
+            "pauli_mse": 1.1143827535306112e-10,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -9.580663212675887e-06,
+            "mean_projected_fidelity": 0.9999950967733615,
+            "raw_overlap_mean": 0.9999999997910602,
+            "projection_frobenius_mean": 1.2060931399268166e-05
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 1.2451009884296942e-11,
+          "cx_involution_mse": 1.699676114742503e-12,
+          "rz_composition_mse": 7.610893633419655e-31,
+          "rz_inverse_mse": 1.9204151642098107e-31,
+          "independent_commutation_mse": 5.5409286435760974e-14,
+          "noncommutation_gap_error": 1.571662233678849e-12,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 8.744373428995811e-12,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -3.3980074315784463e-06,
+          "mean_projected_fidelity": 0.9999982599500059,
+          "raw_overlap_mean": 0.9999999999836059,
+          "projection_frobenius_mean": 4.196262881306544e-06,
+          "negativity": 0.4999982599542925,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.1520555829629302
+      }
+    },
+    {
+      "seed": 4102,
+      "kind": "hamiltonian",
+      "training": {
+        "seconds": 1.0911547080613673,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.6281817555427551,
+            "gradient_norm": 0.4358254075050354
+          },
+          {
+            "step": 100,
+            "loss": 0.2955746650695801,
+            "gradient_norm": 0.29337015748023987
+          },
+          {
+            "step": 200,
+            "loss": 0.13505811989307404,
+            "gradient_norm": 0.1995166689157486
+          },
+          {
+            "step": 300,
+            "loss": 0.0651509240269661,
+            "gradient_norm": 0.1520158052444458
+          },
+          {
+            "step": 400,
+            "loss": 0.020589308813214302,
+            "gradient_norm": 0.07648538053035736
+          },
+          {
+            "step": 500,
+            "loss": 0.008505195379257202,
+            "gradient_norm": 0.05432937294244766
+          },
+          {
+            "step": 600,
+            "loss": 0.002020302228629589,
+            "gradient_norm": 0.024442143738269806
+          },
+          {
+            "step": 700,
+            "loss": 0.00045879901153966784,
+            "gradient_norm": 0.010458377189934254
+          },
+          {
+            "step": 800,
+            "loss": 0.0001252322836080566,
+            "gradient_norm": 0.005737582687288523
+          },
+          {
+            "step": 900,
+            "loss": 2.665526517375838e-05,
+            "gradient_norm": 0.0027796735521405935
+          },
+          {
+            "step": 1000,
+            "loss": 5.3629269132215995e-06,
+            "gradient_norm": 0.0012759377714246511
+          },
+          {
+            "step": 1100,
+            "loss": 8.133019377964956e-07,
+            "gradient_norm": 0.0005049689789302647
+          },
+          {
+            "step": 1200,
+            "loss": 1.0230421310097881e-07,
+            "gradient_norm": 0.00016994282486848533
+          },
+          {
+            "step": 1300,
+            "loss": 1.2630495760390659e-08,
+            "gradient_norm": 6.39931095065549e-05
+          },
+          {
+            "step": 1400,
+            "loss": 1.1280635314747656e-09,
+            "gradient_norm": 1.8639499103301205e-05
+          },
+          {
+            "step": 1500,
+            "loss": 9.547937440679277e-11,
+            "gradient_norm": 5.5322716434602626e-06
+          },
+          {
+            "step": 1599,
+            "loss": 4.838321583655603e-12,
+            "gradient_norm": 1.2173459253972396e-06
+          }
+        ],
+        "parameters": 315,
+        "supervision": "chosen quantum path and exact derivative",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 4.783912611748618e-12,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": -6.867392248879062e-16,
+          "mean_projected_fidelity": 0.9999999999910297,
+          "raw_overlap_mean": 0.9999999999910302,
+          "projection_frobenius_mean": 1.031715896886084e-15
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 1.333299013354144e-11,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -7.497361105018875e-16,
+            "mean_projected_fidelity": 0.9999999999750002,
+            "raw_overlap_mean": 0.9999999999750007,
+            "projection_frobenius_mean": 1.1337810206898195e-15
+          },
+          "1": {
+            "pauli_mse": 1.0780461979088636e-11,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.009112869174907e-15,
+            "mean_projected_fidelity": 0.9999999999797861,
+            "raw_overlap_mean": 0.9999999999797865,
+            "projection_frobenius_mean": 1.4101918423566506e-15
+          },
+          "2": {
+            "pauli_mse": 1.913354266084699e-12,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -6.819454151300853e-16,
+            "mean_projected_fidelity": 0.9999999999964122,
+            "raw_overlap_mean": 0.9999999999964126,
+            "projection_frobenius_mean": 1.0252402809393206e-15
+          },
+          "3": {
+            "pauli_mse": 1.7427333817436478e-12,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -7.148101325940021e-16,
+            "mean_projected_fidelity": 0.9999999999967318,
+            "raw_overlap_mean": 0.9999999999967323,
+            "projection_frobenius_mean": 1.040780777648079e-15
+          },
+          "4": {
+            "pauli_mse": 1.6184175899811588e-14,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -3.8307835342405427e-16,
+            "mean_projected_fidelity": 0.9999999999999694,
+            "raw_overlap_mean": 0.9999999999999697,
+            "projection_frobenius_mean": 7.16580795077387e-16
+          },
+          "5": {
+            "pauli_mse": 1.3626687285584376e-14,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -3.8390416471230586e-16,
+            "mean_projected_fidelity": 0.9999999999999745,
+            "raw_overlap_mean": 0.9999999999999745,
+            "projection_frobenius_mean": 6.21395173227e-16
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 1.973856657698477e-13,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": -7.705263739273208e-16,
+          "mean_projected_fidelity": 0.9999999999996296,
+          "raw_overlap_mean": 0.9999999999996301,
+          "projection_frobenius_mean": 1.1647744828166803e-15
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 4.9366331009494e-12,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -6.8449421746243e-16,
+            "mean_projected_fidelity": 0.9999999999907434,
+            "raw_overlap_mean": 0.9999999999907438,
+            "projection_frobenius_mean": 1.0489471677898823e-15
+          },
+          "4": {
+            "pauli_mse": 3.2390343236478105e-11,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.711111706224406e-15,
+            "mean_projected_fidelity": 0.9999999999392672,
+            "raw_overlap_mean": 0.9999999999392684,
+            "projection_frobenius_mean": 2.4035785761084318e-15
+          },
+          "16": {
+            "pauli_mse": 2.2985773019833337e-10,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -4.193805373369834e-15,
+            "mean_projected_fidelity": 0.9999999995690141,
+            "raw_overlap_mean": 0.9999999995690179,
+            "projection_frobenius_mean": 6.245931849686637e-15
+          },
+          "32": {
+            "pauli_mse": 5.504968066316008e-10,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -6.694784664040887e-15,
+            "mean_projected_fidelity": 0.9999999989678137,
+            "raw_overlap_mean": 0.9999999989678205,
+            "projection_frobenius_mean": 1.04266865472535e-14
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 5.703580646470389e-11,
+          "cx_involution_mse": 7.187616677623637e-12,
+          "rz_composition_mse": 1.1978280324806633e-30,
+          "rz_inverse_mse": 4.0589129587740745e-31,
+          "independent_commutation_mse": 1.3551160695547357e-15,
+          "noncommutation_gap_error": 3.2506536195892724e-12,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 1.820549666830066e-11,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": -4.985385483174194e-16,
+          "mean_projected_fidelity": 0.9999999999658646,
+          "raw_overlap_mean": 0.9999999999658655,
+          "projection_frobenius_mean": 1.2035497123129708e-15,
+          "negativity": 0.4999999999985668,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.15441170800477266
+      }
+    },
+    {
+      "seed": 4103,
+      "kind": "direct",
+      "training": {
+        "seconds": 0.9428653330542147,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.20228873193264008,
+            "gradient_norm": 0.04092803969979286
+          },
+          {
+            "step": 100,
+            "loss": 0.1265486627817154,
+            "gradient_norm": 0.04001205787062645
+          },
+          {
+            "step": 200,
+            "loss": 0.03771967068314552,
+            "gradient_norm": 0.0661846175789833
+          },
+          {
+            "step": 300,
+            "loss": 0.016673289239406586,
+            "gradient_norm": 0.050545770674943924
+          },
+          {
+            "step": 400,
+            "loss": 0.012848888523876667,
+            "gradient_norm": 0.04558552801609039
+          },
+          {
+            "step": 500,
+            "loss": 0.008186389692127705,
+            "gradient_norm": 0.03701653704047203
+          },
+          {
+            "step": 600,
+            "loss": 0.009775432758033276,
+            "gradient_norm": 0.04591284319758415
+          },
+          {
+            "step": 700,
+            "loss": 0.009565447457134724,
+            "gradient_norm": 0.06313169002532959
+          },
+          {
+            "step": 800,
+            "loss": 0.008271868340671062,
+            "gradient_norm": 0.05262299254536629
+          },
+          {
+            "step": 900,
+            "loss": 0.009063703007996082,
+            "gradient_norm": 0.04891631379723549
+          },
+          {
+            "step": 1000,
+            "loss": 0.005123600363731384,
+            "gradient_norm": 0.03669281676411629
+          },
+          {
+            "step": 1100,
+            "loss": 0.005283464211970568,
+            "gradient_norm": 0.03428410366177559
+          },
+          {
+            "step": 1200,
+            "loss": 0.006715150084346533,
+            "gradient_norm": 0.034830961376428604
+          },
+          {
+            "step": 1300,
+            "loss": 0.004508639220148325,
+            "gradient_norm": 0.031864676624536514
+          },
+          {
+            "step": 1400,
+            "loss": 0.004303857684135437,
+            "gradient_norm": 0.03497330844402313
+          },
+          {
+            "step": 1500,
+            "loss": 0.003162459237501025,
+            "gradient_norm": 0.03510179743170738
+          },
+          {
+            "step": 1599,
+            "loss": 0.0026200562715530396,
+            "gradient_norm": 0.027622895315289497
+          }
+        ],
+        "parameters": 13296,
+        "supervision": "endpoints only",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 0.004168868559974083,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.043126243082004675,
+          "mean_projected_fidelity": 0.9641276293931267,
+          "raw_overlap_mean": 0.9857069890080989,
+          "projection_frobenius_mean": 0.054343790863450855
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 0.0013232209360046043,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.03411769320935791,
+            "mean_projected_fidelity": 0.9782204486419908,
+            "raw_overlap_mean": 0.9958484593482398,
+            "projection_frobenius_mean": 0.0437668525123037
+          },
+          "1": {
+            "pauli_mse": 0.0015903683606275259,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.03681028510266216,
+            "mean_projected_fidelity": 0.9802303005683416,
+            "raw_overlap_mean": 0.9989722096831212,
+            "projection_frobenius_mean": 0.04625824379395701
+          },
+          "2": {
+            "pauli_mse": 0.0018436147674399511,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.03421468946641252,
+            "mean_projected_fidelity": 0.9704979810532102,
+            "raw_overlap_mean": 0.9869105776882847,
+            "projection_frobenius_mean": 0.0426339856640372
+          },
+          "3": {
+            "pauli_mse": 0.0014051428629798875,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.03258977446214622,
+            "mean_projected_fidelity": 0.9795478433688171,
+            "raw_overlap_mean": 0.9968016916157395,
+            "projection_frobenius_mean": 0.04105073161258259
+          },
+          "4": {
+            "pauli_mse": 0.0092072635712049,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.06375153318620563,
+            "mean_projected_fidelity": 0.9428594225605071,
+            "raw_overlap_mean": 0.9738264199477412,
+            "projection_frobenius_mean": 0.08035337094546358
+          },
+          "5": {
+            "pauli_mse": 0.013402613665233336,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.06679654144672485,
+            "mean_projected_fidelity": 0.9111872547257047,
+            "raw_overlap_mean": 0.9443114312996951,
+            "projection_frobenius_mean": 0.08433379503750431
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 0.1644453552721746,
+          "raw_valid_fraction": 0.0390625,
+          "mean_min_eigenvalue": -0.09488831047394619,
+          "mean_projected_fidelity": 0.5086362161984642,
+          "raw_overlap_mean": 0.5276424979563188,
+          "projection_frobenius_mean": 0.11077112753995497
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 0.03938726369886929,
+            "raw_valid_fraction": 0.0078125,
+            "mean_min_eigenvalue": -0.05466196824188298,
+            "mean_projected_fidelity": 0.8640753317661936,
+            "raw_overlap_mean": 0.8858558037377929,
+            "projection_frobenius_mean": 0.06674269892963945
+          },
+          "4": {
+            "pauli_mse": 0.10672016540733521,
+            "raw_valid_fraction": 0.015625,
+            "mean_min_eigenvalue": -0.08448074841438788,
+            "mean_projected_fidelity": 0.6639852104581092,
+            "raw_overlap_mean": 0.6902728489671024,
+            "projection_frobenius_mean": 0.1014688550853933
+          },
+          "16": {
+            "pauli_mse": 0.22185123390381947,
+            "raw_valid_fraction": 0.109375,
+            "mean_min_eigenvalue": -0.09258241268408524,
+            "mean_projected_fidelity": 0.37032438967901,
+            "raw_overlap_mean": 0.3805041517601906,
+            "projection_frobenius_mean": 0.11127908541142177
+          },
+          "32": {
+            "pauli_mse": 0.25351796415774547,
+            "raw_valid_fraction": 0.0625,
+            "mean_min_eigenvalue": -0.09063614006987479,
+            "mean_projected_fidelity": 0.2898800901582886,
+            "raw_overlap_mean": 0.2959700750155741,
+            "projection_frobenius_mean": 0.10600729453804511
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 0.0029370174452171788,
+          "cx_involution_mse": 0.003458089276339809,
+          "rz_composition_mse": 0.031260598249054763,
+          "rz_inverse_mse": 0.009752412207103264,
+          "independent_commutation_mse": 0.008561446663921782,
+          "noncommutation_gap_error": 0.013465395748953026,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 0.002980950440260635,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.03722193205858292,
+          "mean_projected_fidelity": 0.9423594596473892,
+          "raw_overlap_mean": 0.969501167340158,
+          "projection_frobenius_mean": 0.05618576084305608,
+          "negativity": 0.44303863706303226,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.044883541064336896
+      }
+    },
+    {
+      "seed": 4103,
+      "kind": "chord",
+      "training": {
+        "seconds": 0.9850895829731598,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.2742898762226105,
+            "gradient_norm": 0.06451311707496643
+          },
+          {
+            "step": 100,
+            "loss": 0.2512716054916382,
+            "gradient_norm": 0.04833969473838806
+          },
+          {
+            "step": 200,
+            "loss": 0.2525233328342438,
+            "gradient_norm": 0.04438233748078346
+          },
+          {
+            "step": 300,
+            "loss": 0.25337010622024536,
+            "gradient_norm": 0.06395335495471954
+          },
+          {
+            "step": 400,
+            "loss": 0.1918531209230423,
+            "gradient_norm": 0.06995757669210434
+          },
+          {
+            "step": 500,
+            "loss": 0.1897546797990799,
+            "gradient_norm": 0.09075361490249634
+          },
+          {
+            "step": 600,
+            "loss": 0.17763927578926086,
+            "gradient_norm": 0.10310378670692444
+          },
+          {
+            "step": 700,
+            "loss": 0.16555938124656677,
+            "gradient_norm": 0.08481355011463165
+          },
+          {
+            "step": 800,
+            "loss": 0.14463774859905243,
+            "gradient_norm": 0.09886946529150009
+          },
+          {
+            "step": 900,
+            "loss": 0.12963137030601501,
+            "gradient_norm": 0.1334843784570694
+          },
+          {
+            "step": 1000,
+            "loss": 0.11748118698596954,
+            "gradient_norm": 0.1729404479265213
+          },
+          {
+            "step": 1100,
+            "loss": 0.08394314348697662,
+            "gradient_norm": 0.16315272450447083
+          },
+          {
+            "step": 1200,
+            "loss": 0.10051380097866058,
+            "gradient_norm": 0.27949726581573486
+          },
+          {
+            "step": 1300,
+            "loss": 0.09134329110383987,
+            "gradient_norm": 0.2206096053123474
+          },
+          {
+            "step": 1400,
+            "loss": 0.07751823216676712,
+            "gradient_norm": 0.29449307918548584
+          },
+          {
+            "step": 1500,
+            "loss": 0.07269421964883804,
+            "gradient_norm": 0.2559983730316162
+          },
+          {
+            "step": 1599,
+            "loss": 0.08046498149633408,
+            "gradient_norm": 0.16946905851364136
+          }
+        ],
+        "parameters": 13392,
+        "supervision": "endpoints only",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 0.3032142268742556,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.14973442643919757,
+          "mean_projected_fidelity": 0.4917646617146656,
+          "raw_overlap_mean": 0.49709985648534816,
+          "projection_frobenius_mean": 0.19238177755797506
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 0.399011211827791,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.1404020754785561,
+            "mean_projected_fidelity": 0.2773466337928232,
+            "raw_overlap_mean": 0.2718867249492596,
+            "projection_frobenius_mean": 0.1877143407332696
+          },
+          "1": {
+            "pauli_mse": 0.44817657320158066,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.1444215885630047,
+            "mean_projected_fidelity": 0.22150869820214125,
+            "raw_overlap_mean": 0.20609137788176699,
+            "projection_frobenius_mean": 0.19215552366977418
+          },
+          "2": {
+            "pauli_mse": 0.3589296307775492,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.14720857844722524,
+            "mean_projected_fidelity": 0.3821706587336917,
+            "raw_overlap_mean": 0.3828195258783407,
+            "projection_frobenius_mean": 0.18751854509014426
+          },
+          "3": {
+            "pauli_mse": 0.41619628270518993,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.27263358216558436,
+            "mean_projected_fidelity": 0.41878734886867736,
+            "raw_overlap_mean": 0.41107643694727686,
+            "projection_frobenius_mean": 0.34237593070609496
+          },
+          "4": {
+            "pauli_mse": 0.032026516144228405,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.0795359989641375,
+            "mean_projected_fidelity": 0.9255532545780358,
+            "raw_overlap_mean": 0.9640518226032403,
+            "projection_frobenius_mean": 0.10030454754372778
+          },
+          "5": {
+            "pauli_mse": 0.03438895570235736,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.0751822896258588,
+            "mean_projected_fidelity": 0.9201132276064268,
+            "raw_overlap_mean": 0.9587228852255291,
+            "projection_frobenius_mean": 0.09373421209167375
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 0.553251377240585,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.31209958860862763,
+          "mean_projected_fidelity": 0.36310503022733154,
+          "raw_overlap_mean": 0.3456466901284738,
+          "projection_frobenius_mean": 0.44852346791972475
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 0.3710389818775681,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.1819769192113997,
+            "mean_projected_fidelity": 0.42365280123057125,
+            "raw_overlap_mean": 0.42932620344868166,
+            "projection_frobenius_mean": 0.23990456133933555
+          },
+          "4": {
+            "pauli_mse": 125.41981636641134,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -4.994635100000824,
+            "mean_projected_fidelity": 0.30465817778370696,
+            "raw_overlap_mean": 0.6725547194908208,
+            "projection_frobenius_mean": 6.631021112709084
+          },
+          "16": {
+            "pauli_mse": 7.555143180172838e+24,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -1055729543392.1321,
+            "mean_projected_fidelity": 0.25928567901161315,
+            "raw_overlap_mean": 21962369659.093506,
+            "projection_frobenius_mean": 1360364984084.239
+          },
+          "32": {
+            "pauli_mse": 9.520881540911239e+55,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -3.651913436542115e+27,
+            "mean_projected_fidelity": 0.24561923061710342,
+            "raw_overlap_mean": 1.2205895797153705e+26,
+            "projection_frobenius_mean": 4.779050425768595e+27
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 0.13126687994336173,
+          "cx_involution_mse": 0.09727866704957767,
+          "rz_composition_mse": 0.033918909341849,
+          "rz_inverse_mse": 0.014482210399122,
+          "independent_commutation_mse": 0.0020146962919578176,
+          "noncommutation_gap_error": 0.10562520611395293,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 0.3238212657322901,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.11147101882729195,
+          "mean_projected_fidelity": 0.4444340080640682,
+          "raw_overlap_mean": 0.4414950726657778,
+          "projection_frobenius_mean": 0.1423100736650011,
+          "negativity": 0.158769444998217,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.5421314160339534
+      }
+    },
+    {
+      "seed": 4103,
+      "kind": "source_chord",
+      "training": {
+        "seconds": 1.1669052919605747,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.27247947454452515,
+            "gradient_norm": 0.06270049512386322
+          },
+          {
+            "step": 100,
+            "loss": 0.05566783621907234,
+            "gradient_norm": 0.05569552630186081
+          },
+          {
+            "step": 200,
+            "loss": 0.03391464799642563,
+            "gradient_norm": 0.057220183312892914
+          },
+          {
+            "step": 300,
+            "loss": 0.021636346355080605,
+            "gradient_norm": 0.04641188308596611
+          },
+          {
+            "step": 400,
+            "loss": 0.01424229983240366,
+            "gradient_norm": 0.04169560968875885
+          },
+          {
+            "step": 500,
+            "loss": 0.011790024116635323,
+            "gradient_norm": 0.037154048681259155
+          },
+          {
+            "step": 600,
+            "loss": 0.009598841890692711,
+            "gradient_norm": 0.02892761491239071
+          },
+          {
+            "step": 700,
+            "loss": 0.008972113952040672,
+            "gradient_norm": 0.040346477180719376
+          },
+          {
+            "step": 800,
+            "loss": 0.005551459267735481,
+            "gradient_norm": 0.02765418402850628
+          },
+          {
+            "step": 900,
+            "loss": 0.0060858353972435,
+            "gradient_norm": 0.024902354925870895
+          },
+          {
+            "step": 1000,
+            "loss": 0.005319780670106411,
+            "gradient_norm": 0.030732421204447746
+          },
+          {
+            "step": 1100,
+            "loss": 0.006321594584733248,
+            "gradient_norm": 0.03353780508041382
+          },
+          {
+            "step": 1200,
+            "loss": 0.004902883432805538,
+            "gradient_norm": 0.0262963455170393
+          },
+          {
+            "step": 1300,
+            "loss": 0.004227141849696636,
+            "gradient_norm": 0.024422738701105118
+          },
+          {
+            "step": 1400,
+            "loss": 0.004154121968895197,
+            "gradient_norm": 0.022478854283690453
+          },
+          {
+            "step": 1500,
+            "loss": 0.0036719462368637323,
+            "gradient_norm": 0.021710697561502457
+          },
+          {
+            "step": 1599,
+            "loss": 0.0032435476314276457,
+            "gradient_norm": 0.02146618440747261
+          }
+        ],
+        "parameters": 14832,
+        "supervision": "endpoints only",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 0.012780234398427792,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.05809729718396635,
+          "mean_projected_fidelity": 0.9294334588451496,
+          "raw_overlap_mean": 0.9577068076440949,
+          "projection_frobenius_mean": 0.07240897144830821
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 0.0036707483217649226,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.052673772586586086,
+            "mean_projected_fidelity": 0.9543778283943869,
+            "raw_overlap_mean": 0.9779395708426689,
+            "projection_frobenius_mean": 0.06405730475392661
+          },
+          "1": {
+            "pauli_mse": 0.00429138086817515,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.05374135340692059,
+            "mean_projected_fidelity": 0.9558650035903249,
+            "raw_overlap_mean": 0.9843027192509765,
+            "projection_frobenius_mean": 0.0677644540071366
+          },
+          "2": {
+            "pauli_mse": 0.0035296456572251377,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.04518341584496548,
+            "mean_projected_fidelity": 0.964664141045786,
+            "raw_overlap_mean": 0.9885189830648042,
+            "projection_frobenius_mean": 0.05675695621455711
+          },
+          "3": {
+            "pauli_mse": 0.004517041546925356,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.05660051700148272,
+            "mean_projected_fidelity": 0.9506309295467634,
+            "raw_overlap_mean": 0.9789959189189723,
+            "projection_frobenius_mean": 0.07004389741455898
+          },
+          "4": {
+            "pauli_mse": 0.031379475018068356,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.0668932129537152,
+            "mean_projected_fidelity": 0.8645478680163147,
+            "raw_overlap_mean": 0.893011062314421,
+            "projection_frobenius_mean": 0.08163896141208475
+          },
+          "5": {
+            "pauli_mse": 0.040910620502396355,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.08327805513643524,
+            "mean_projected_fidelity": 0.8539201231582287,
+            "raw_overlap_mean": 0.894041239372859,
+            "projection_frobenius_mean": 0.1068386872259693
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 0.19872384077201888,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.20073285872060886,
+          "mean_projected_fidelity": 0.4835511926041609,
+          "raw_overlap_mean": 0.5375452581078841,
+          "projection_frobenius_mean": 0.238481560145233
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 0.054699868918404775,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -0.09155423274406585,
+            "mean_projected_fidelity": 0.8239527466606598,
+            "raw_overlap_mean": 0.8572572806164224,
+            "projection_frobenius_mean": 0.11028777543691468
+          },
+          "4": {
+            "pauli_mse": 0.14249370999540378,
+            "raw_valid_fraction": 0.046875,
+            "mean_min_eigenvalue": -0.12465524226911258,
+            "mean_projected_fidelity": 0.5782640960798356,
+            "raw_overlap_mean": 0.6130587920281588,
+            "projection_frobenius_mean": 0.1500345980478519
+          },
+          "16": {
+            "pauli_mse": 12877.917897197474,
+            "raw_valid_fraction": 0.1875,
+            "mean_min_eigenvalue": -15.654100129403979,
+            "mean_projected_fidelity": 0.302263178035394,
+            "raw_overlap_mean": 4.806846626741306,
+            "projection_frobenius_mean": 21.73151856531681
+          },
+          "32": {
+            "pauli_mse": 1.0735100456729853e+26,
+            "raw_valid_fraction": 0.296875,
+            "mean_min_eigenvalue": -1175603437504.942,
+            "mean_projected_fidelity": 0.2411521189285246,
+            "raw_overlap_mean": -457194452890.96405,
+            "projection_frobenius_mean": 1945578937102.5554
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 0.008503936459346318,
+          "cx_involution_mse": 0.005715710612189986,
+          "rz_composition_mse": 0.033073171337241476,
+          "rz_inverse_mse": 0.0359046520959477,
+          "independent_commutation_mse": 0.003118982740649757,
+          "noncommutation_gap_error": 0.06730114917479373,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 0.011254050110125464,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.053274349781782,
+          "mean_projected_fidelity": 0.8675695375005021,
+          "raw_overlap_mean": 0.8852973392074165,
+          "projection_frobenius_mean": 0.06151592037482822,
+          "negativity": 0.37166721330906316,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.561997166951187
+      }
+    },
+    {
+      "seed": 4103,
+      "kind": "generator",
+      "training": {
+        "seconds": 0.8170526250032708,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.6396667957305908,
+            "gradient_norm": 0.08719104528427124
+          },
+          {
+            "step": 100,
+            "loss": 0.3163326680660248,
+            "gradient_norm": 0.0728287622332573
+          },
+          {
+            "step": 200,
+            "loss": 0.10920732468366623,
+            "gradient_norm": 0.05495995283126831
+          },
+          {
+            "step": 300,
+            "loss": 0.03629287704825401,
+            "gradient_norm": 0.044676732271909714
+          },
+          {
+            "step": 400,
+            "loss": 0.010007334873080254,
+            "gradient_norm": 0.020177176222205162
+          },
+          {
+            "step": 500,
+            "loss": 0.002849918557330966,
+            "gradient_norm": 0.011969668790698051
+          },
+          {
+            "step": 600,
+            "loss": 0.000752648338675499,
+            "gradient_norm": 0.0067815580405294895
+          },
+          {
+            "step": 700,
+            "loss": 0.00015252680168487132,
+            "gradient_norm": 0.002736396621912718
+          },
+          {
+            "step": 800,
+            "loss": 3.570031185518019e-05,
+            "gradient_norm": 0.0016896037850528955
+          },
+          {
+            "step": 900,
+            "loss": 7.1016879701346625e-06,
+            "gradient_norm": 0.0007285748142749071
+          },
+          {
+            "step": 1000,
+            "loss": 1.6596635532550863e-06,
+            "gradient_norm": 0.0003907086211256683
+          },
+          {
+            "step": 1100,
+            "loss": 2.1918800996445498e-07,
+            "gradient_norm": 0.00013497316103894264
+          },
+          {
+            "step": 1200,
+            "loss": 3.4349973532243894e-08,
+            "gradient_norm": 4.929434726363979e-05
+          },
+          {
+            "step": 1300,
+            "loss": 4.289185451256117e-09,
+            "gradient_norm": 1.6000467439880595e-05
+          },
+          {
+            "step": 1400,
+            "loss": 4.2309056258460487e-10,
+            "gradient_norm": 6.114431471360149e-06
+          },
+          {
+            "step": 1500,
+            "loss": 4.541621939635476e-11,
+            "gradient_norm": 1.7399080434188363e-06
+          },
+          {
+            "step": 1599,
+            "loss": 4.772089841342808e-12,
+            "gradient_norm": 5.600780355052848e-07
+          }
+        ],
+        "parameters": 1575,
+        "supervision": "chosen quantum path and exact derivative",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 3.068208203313115e-12,
+          "raw_valid_fraction": 0.4375,
+          "mean_min_eigenvalue": -1.3390736768717068e-06,
+          "mean_projected_fidelity": 0.9999993418583991,
+          "raw_overlap_mean": 0.9999999999942475,
+          "projection_frobenius_mean": 1.6648248534042632e-06
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 1.3129206510933807e-11,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -3.399994223649663e-06,
+            "mean_projected_fidelity": 0.9999983267079443,
+            "raw_overlap_mean": 0.9999999999753828,
+            "projection_frobenius_mean": 4.1990609978636696e-06
+          },
+          "1": {
+            "pauli_mse": 4.107502400800158e-12,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -1.98079842668486e-06,
+            "mean_projected_fidelity": 0.999999059491502,
+            "raw_overlap_mean": 0.9999999999922996,
+            "projection_frobenius_mean": 2.459411678898092e-06
+          },
+          "2": {
+            "pauli_mse": 1.2088232445860027e-12,
+            "raw_valid_fraction": 0.43478260869565216,
+            "mean_min_eigenvalue": -1.0526977961958407e-06,
+            "mean_projected_fidelity": 0.9999994730093351,
+            "raw_overlap_mean": 0.9999999999977335,
+            "projection_frobenius_mean": 1.315686682768052e-06
+          },
+          "3": {
+            "pauli_mse": 1.4042416939613655e-12,
+            "raw_valid_fraction": 0.4166666666666667,
+            "mean_min_eigenvalue": -1.1517187502153024e-06,
+            "mean_projected_fidelity": 0.9999994048500328,
+            "raw_overlap_mean": 0.9999999999973671,
+            "projection_frobenius_mean": 1.4498368848258802e-06
+          },
+          "4": {
+            "pauli_mse": 7.154731039043787e-14,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -2.551878392591424e-07,
+            "mean_projected_fidelity": 0.9999998738628179,
+            "raw_overlap_mean": 0.9999999999998657,
+            "projection_frobenius_mean": 3.159229332608472e-07
+          },
+          "5": {
+            "pauli_mse": 3.3357151199481205e-14,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.4935263613929952e-07,
+            "mean_projected_fidelity": 0.9999999274783523,
+            "raw_overlap_mean": 0.9999999999999376,
+            "projection_frobenius_mean": 1.8446307933266695e-07
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 4.3039097370636016e-13,
+          "raw_valid_fraction": 0.96875,
+          "mean_min_eigenvalue": -5.879695095278587e-07,
+          "mean_projected_fidelity": 0.9999997090348491,
+          "raw_overlap_mean": 0.9999999999991931,
+          "projection_frobenius_mean": 7.374493613012938e-07
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 3.1585710005308978e-12,
+            "raw_valid_fraction": 0.4921875,
+            "mean_min_eigenvalue": -1.356796879337873e-06,
+            "mean_projected_fidelity": 0.9999993305773835,
+            "raw_overlap_mean": 0.9999999999940778,
+            "projection_frobenius_mean": 1.6892596148815147e-06
+          },
+          "4": {
+            "pauli_mse": 1.6719415724901355e-11,
+            "raw_valid_fraction": 0.0390625,
+            "mean_min_eigenvalue": -3.5851203357132385e-06,
+            "mean_projected_fidelity": 0.9999981937335648,
+            "raw_overlap_mean": 0.9999999999686517,
+            "projection_frobenius_mean": 4.506242757922642e-06
+          },
+          "16": {
+            "pauli_mse": 7.37282619831062e-11,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -7.890675336007833e-06,
+            "mean_projected_fidelity": 0.9999961516521738,
+            "raw_overlap_mean": 0.9999999998617622,
+            "projection_frobenius_mean": 9.800155125284489e-06
+          },
+          "32": {
+            "pauli_mse": 1.4784251234132254e-10,
+            "raw_valid_fraction": 0.0,
+            "mean_min_eigenvalue": -1.1504577428235313e-05,
+            "mean_projected_fidelity": 0.9999943351727706,
+            "raw_overlap_mean": 0.9999999997228011,
+            "projection_frobenius_mean": 1.4229676912679669e-05
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 3.6937387693358656e-11,
+          "cx_involution_mse": 2.3973969282479547e-12,
+          "rz_composition_mse": 6.369850621514823e-31,
+          "rz_inverse_mse": 1.9822954382541175e-31,
+          "independent_commutation_mse": 4.840350234636441e-14,
+          "noncommutation_gap_error": 3.452909241557195e-12,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 1.1677390149923477e-11,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -2.524184952778007e-06,
+          "mean_projected_fidelity": 0.9999989902080724,
+          "raw_overlap_mean": 0.9999999999781044,
+          "projection_frobenius_mean": 2.943713160902158e-06,
+          "negativity": 0.49999899021681116,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.14982333302032202
+      }
+    },
+    {
+      "seed": 4103,
+      "kind": "hamiltonian",
+      "training": {
+        "seconds": 1.2067977910628542,
+        "history": [
+          {
+            "step": 0,
+            "loss": 0.6396667957305908,
+            "gradient_norm": 0.44667482376098633
+          },
+          {
+            "step": 100,
+            "loss": 0.3252117931842804,
+            "gradient_norm": 0.3202705681324005
+          },
+          {
+            "step": 200,
+            "loss": 0.14753074944019318,
+            "gradient_norm": 0.22674766182899475
+          },
+          {
+            "step": 300,
+            "loss": 0.05956529825925827,
+            "gradient_norm": 0.1388293355703354
+          },
+          {
+            "step": 400,
+            "loss": 0.021486768499016762,
+            "gradient_norm": 0.08418557792901993
+          },
+          {
+            "step": 500,
+            "loss": 0.008184789679944515,
+            "gradient_norm": 0.05304286628961563
+          },
+          {
+            "step": 600,
+            "loss": 0.0024971971288323402,
+            "gradient_norm": 0.029109492897987366
+          },
+          {
+            "step": 700,
+            "loss": 0.0005768363480456173,
+            "gradient_norm": 0.012721351347863674
+          },
+          {
+            "step": 800,
+            "loss": 0.000120704629807733,
+            "gradient_norm": 0.005477244965732098
+          },
+          {
+            "step": 900,
+            "loss": 2.8120648494223133e-05,
+            "gradient_norm": 0.0028279353864490986
+          },
+          {
+            "step": 1000,
+            "loss": 7.249396276165498e-06,
+            "gradient_norm": 0.00161982630379498
+          },
+          {
+            "step": 1100,
+            "loss": 8.429986451119476e-07,
+            "gradient_norm": 0.000478881411254406
+          },
+          {
+            "step": 1200,
+            "loss": 1.3556534383951657e-07,
+            "gradient_norm": 0.00021922754240222275
+          },
+          {
+            "step": 1300,
+            "loss": 1.486685086149464e-08,
+            "gradient_norm": 7.239707338158041e-05
+          },
+          {
+            "step": 1400,
+            "loss": 1.263765980752396e-09,
+            "gradient_norm": 2.0315890651545487e-05
+          },
+          {
+            "step": 1500,
+            "loss": 1.0926967664026677e-10,
+            "gradient_norm": 6.064940862415824e-06
+          },
+          {
+            "step": 1599,
+            "loss": 5.85395620866791e-12,
+            "gradient_norm": 1.3303455261848285e-06
+          }
+        ],
+        "parameters": 315,
+        "supervision": "chosen quantum path and exact derivative",
+        "encoder": "learned orthogonal Cayley basis"
+      },
+      "metrics": {
+        "one_step": {
+          "pauli_mse": 6.371446986887144e-12,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": -9.777891356405768e-16,
+          "mean_projected_fidelity": 0.9999999999880531,
+          "raw_overlap_mean": 0.999999999988054,
+          "projection_frobenius_mean": 1.537353445392003e-15
+        },
+        "per_gate": {
+          "0": {
+            "pauli_mse": 9.809529505752624e-12,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.6224919750950624e-15,
+            "mean_projected_fidelity": 0.999999999981606,
+            "raw_overlap_mean": 0.9999999999816073,
+            "projection_frobenius_mean": 2.310030482746349e-15
+          },
+          "1": {
+            "pauli_mse": 1.9781816277022025e-11,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.5219555547279021e-15,
+            "mean_projected_fidelity": 0.9999999999629088,
+            "raw_overlap_mean": 0.9999999999629101,
+            "projection_frobenius_mean": 2.3220901629794703e-15
+          },
+          "2": {
+            "pauli_mse": 1.7585429282624003e-12,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -5.805999132440744e-16,
+            "mean_projected_fidelity": 0.9999999999967024,
+            "raw_overlap_mean": 0.999999999996703,
+            "projection_frobenius_mean": 9.135476720387213e-16
+          },
+          "3": {
+            "pauli_mse": 1.8254300129580293e-12,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.3129031400240081e-15,
+            "mean_projected_fidelity": 0.9999999999965771,
+            "raw_overlap_mean": 0.9999999999965784,
+            "projection_frobenius_mean": 2.010170909492677e-15
+          },
+          "4": {
+            "pauli_mse": 1.9037088892779102e-14,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -2.834723672830818e-16,
+            "mean_projected_fidelity": 0.9999999999999644,
+            "raw_overlap_mean": 0.9999999999999641,
+            "projection_frobenius_mean": 7.113903534718536e-16
+          },
+          "5": {
+            "pauli_mse": 1.7460469943184328e-14,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -2.828972305675681e-16,
+            "mean_projected_fidelity": 0.9999999999999671,
+            "raw_overlap_mean": 0.9999999999999671,
+            "projection_frobenius_mean": 5.4098946419532405e-16
+          }
+        },
+        "unseen_angles": {
+          "pauli_mse": 2.4310889600737744e-13,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": -7.151898924053137e-16,
+          "mean_projected_fidelity": 0.9999999999995439,
+          "raw_overlap_mean": 0.9999999999995444,
+          "projection_frobenius_mean": 1.0752920551362124e-15
+        },
+        "rollout": {
+          "1": {
+            "pauli_mse": 6.390201281569441e-12,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.0356536513501093e-15,
+            "mean_projected_fidelity": 0.9999999999880179,
+            "raw_overlap_mean": 0.9999999999880187,
+            "projection_frobenius_mean": 1.4886970885313883e-15
+          },
+          "4": {
+            "pauli_mse": 3.768515301062574e-11,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -2.3602715190210817e-15,
+            "mean_projected_fidelity": 0.9999999999293392,
+            "raw_overlap_mean": 0.9999999999293412,
+            "projection_frobenius_mean": 3.39738791926886e-15
+          },
+          "16": {
+            "pauli_mse": 2.618514125137423e-10,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -6.065237350561069e-15,
+            "mean_projected_fidelity": 0.9999999995090258,
+            "raw_overlap_mean": 0.9999999995090325,
+            "projection_frobenius_mean": 9.66577392790706e-15
+          },
+          "32": {
+            "pauli_mse": 6.335812249730429e-10,
+            "raw_valid_fraction": 1.0,
+            "mean_min_eigenvalue": -1.0125560292504497e-14,
+            "mean_projected_fidelity": 0.9999999988120303,
+            "raw_overlap_mean": 0.9999999988120433,
+            "projection_frobenius_mean": 1.7452358687468855e-14
+          }
+        },
+        "algebra": {
+          "h_involution_mse": 4.1306349272003064e-11,
+          "cx_involution_mse": 6.50816374552177e-12,
+          "rz_composition_mse": 5.4211463204850085e-31,
+          "rz_inverse_mse": 1.4059166008304431e-31,
+          "independent_commutation_mse": 2.783337493984717e-15,
+          "noncommutation_gap_error": 2.322666743071827e-12,
+          "true_noncommutation_gap_mse": 0.09760993570677555
+        },
+        "bell": {
+          "pauli_mse": 1.1711175557260587e-11,
+          "raw_valid_fraction": 1.0,
+          "mean_min_eigenvalue": -1.2806523144061465e-15,
+          "mean_projected_fidelity": 0.9999999999780405,
+          "raw_overlap_mean": 0.999999999978042,
+          "projection_frobenius_mean": 2.5945862196856584e-15,
+          "negativity": 0.49999999999844785,
+          "true_negativity": 0.5
+        },
+        "evaluation_seconds": 0.15676574991084635
+      }
+    }
+  ],
+  "classical_linear": {
+    "one_step": {
+      "pauli_mse": 5.0484285261338525e-20,
+      "raw_valid_fraction": 1.0,
+      "mean_min_eigenvalue": -3.700542283906392e-11,
+      "mean_projected_fidelity": 0.9999999998357731,
+      "raw_overlap_mean": 0.9999999998649991,
+      "projection_frobenius_mean": 7.335213415580118e-11
+    },
+    "per_gate": {
+      "0": {
+        "pauli_mse": 4.9812514844957186e-21,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 2.864561370405669e-11,
+        "mean_projected_fidelity": 0.9999999998838642,
+        "raw_overlap_mean": 0.9999999998838643,
+        "projection_frobenius_mean": 4.039823574482096e-16
+      },
+      "1": {
+        "pauli_mse": 4.659949519471935e-21,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 2.5773663257714644e-11,
+        "mean_projected_fidelity": 0.9999999998883251,
+        "raw_overlap_mean": 0.9999999998883249,
+        "projection_frobenius_mean": 5.290701513839115e-16
+      },
+      "2": {
+        "pauli_mse": 5.160007771059793e-21,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 2.6580558821459937e-11,
+        "mean_projected_fidelity": 0.9999999998822022,
+        "raw_overlap_mean": 0.9999999998822023,
+        "projection_frobenius_mean": 5.305379115452167e-16
+      },
+      "3": {
+        "pauli_mse": 5.270173029874668e-21,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 2.6453083226534215e-11,
+        "mean_projected_fidelity": 0.9999999998813519,
+        "raw_overlap_mean": 0.9999999998813521,
+        "projection_frobenius_mean": 5.134647291193484e-16
+      },
+      "4": {
+        "pauli_mse": 1.6836383736465694e-19,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": -2.082118834249399e-10,
+        "mean_projected_fidelity": 0.9999999997145789,
+        "raw_overlap_mean": 0.9999999998239477,
+        "projection_frobenius_mean": 2.7275817321883306e-10
+      },
+      "5": {
+        "pauli_mse": 1.6414151429720668e-19,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": -1.86287542294324e-10,
+        "mean_projected_fidelity": 0.999999999707991,
+        "raw_overlap_mean": 0.9999999998033345,
+        "projection_frobenius_mean": 2.420247877750463e-10
+      }
+    },
+    "unseen_angles": {
+      "pauli_mse": 8.873270322309577e-18,
+      "raw_valid_fraction": 1.0,
+      "mean_min_eigenvalue": 5.182985176510722e-10,
+      "mean_projected_fidelity": 0.9999999959963435,
+      "raw_overlap_mean": 0.9999999960031983,
+      "projection_frobenius_mean": 2.374606370707273e-11
+    },
+    "rollout": {
+      "1": {
+        "pauli_mse": 1.7358584426633195e-18,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 4.1316631374368225e-11,
+        "mean_projected_fidelity": 0.9999999990913853,
+        "raw_overlap_mean": 0.9999999991186286,
+        "projection_frobenius_mean": 8.413045498621162e-11
+      },
+      "4": {
+        "pauli_mse": 8.297377686876538e-18,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 3.7414405863321494e-10,
+        "mean_projected_fidelity": 0.9999999969357205,
+        "raw_overlap_mean": 0.999999996960883,
+        "projection_frobenius_mean": 8.517798114028641e-11
+      },
+      "16": {
+        "pauli_mse": 7.424959654755066e-17,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 2.5403831049064963e-09,
+        "mean_projected_fidelity": 0.9999999879253163,
+        "raw_overlap_mean": 0.9999999879263393,
+        "projection_frobenius_mean": 3.544339659378178e-12
+      },
+      "32": {
+        "pauli_mse": 2.5257463775020684e-16,
+        "raw_valid_fraction": 1.0,
+        "mean_min_eigenvalue": 5.825346108105806e-09,
+        "mean_projected_fidelity": 0.9999999758656842,
+        "raw_overlap_mean": 0.9999999758656843,
+        "projection_frobenius_mean": 5.465143919135698e-16
+      }
+    },
+    "algebra": {
+      "h_involution_mse": 2.035910728040397e-20,
+      "cx_involution_mse": 1.9343223062103122e-20,
+      "rz_composition_mse": 1.898480687810846e-18,
+      "rz_inverse_mse": 5.475298782326195e-20,
+      "independent_commutation_mse": 7.794073241352516e-20,
+      "noncommutation_gap_error": 9.544877536384308e-20,
+      "true_noncommutation_gap_mse": 0.09760993570677555
+    },
+    "bell": {
+      "pauli_mse": 1.9285300998963406e-20,
+      "raw_valid_fraction": 1.0,
+      "mean_min_eigenvalue": 5.6951225121513676e-11,
+      "mean_projected_fidelity": 0.9999999997684937,
+      "raw_overlap_mean": 0.9999999997684933,
+      "projection_frobenius_mean": 5.338792045287695e-16,
+      "negativity": 0.4999999997684937,
+      "true_negativity": 0.5
+    },
+    "evaluation_seconds": 0.03881824994459748
+  }
+}

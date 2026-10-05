@@ -1,0 +1,2243 @@
+[
+  {
+    "seed": 7401,
+    "kind": "direct",
+    "training": {
+      "seconds": 3.6774444160982966,
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.3966641426086426,
+          "prediction": 0.008020888082683086,
+          "anchor": 0.0693502426147461,
+          "invariance": 0.0016384321497753263
+        },
+        {
+          "step": 200,
+          "loss": 0.8587194681167603,
+          "prediction": 0.23769895732402802,
+          "anchor": 0.030238881707191467,
+          "invariance": 0.01624283939599991
+        },
+        {
+          "step": 400,
+          "loss": 0.5415891408920288,
+          "prediction": 0.10746502131223679,
+          "anchor": 0.021431120112538338,
+          "invariance": 0.005501721985638142
+        },
+        {
+          "step": 600,
+          "loss": 0.45169875025749207,
+          "prediction": 0.08251537382602692,
+          "anchor": 0.018245281651616096,
+          "invariance": 0.004277738276869059
+        },
+        {
+          "step": 800,
+          "loss": 0.44950515031814575,
+          "prediction": 0.05360114574432373,
+          "anchor": 0.019620424136519432,
+          "invariance": 0.003495521377772093
+        },
+        {
+          "step": 1000,
+          "loss": 0.34221822023391724,
+          "prediction": 0.042778629809617996,
+          "anchor": 0.014833629131317139,
+          "invariance": 0.0027670026756823063
+        },
+        {
+          "step": 1200,
+          "loss": 0.36419326066970825,
+          "prediction": 0.03132081776857376,
+          "anchor": 0.016528839245438576,
+          "invariance": 0.002295670099556446
+        },
+        {
+          "step": 1400,
+          "loss": 0.2929626405239105,
+          "prediction": 0.023203687742352486,
+          "anchor": 0.013362076133489609,
+          "invariance": 0.0025174126494675875
+        },
+        {
+          "step": 1600,
+          "loss": 0.27385762333869934,
+          "prediction": 0.02371928282082081,
+          "anchor": 0.012371554970741272,
+          "invariance": 0.0027072494849562645
+        },
+        {
+          "step": 1800,
+          "loss": 0.3119816184043884,
+          "prediction": 0.020119385793805122,
+          "anchor": 0.014470316469669342,
+          "invariance": 0.0024558950681239367
+        },
+        {
+          "step": 2000,
+          "loss": 0.39261266589164734,
+          "prediction": 0.01954747922718525,
+          "anchor": 0.018519090488553047,
+          "invariance": 0.002683382946997881
+        },
+        {
+          "step": 2200,
+          "loss": 0.274008184671402,
+          "prediction": 0.015428690239787102,
+          "anchor": 0.012857628054916859,
+          "invariance": 0.0014269326347857714
+        },
+        {
+          "step": 2400,
+          "loss": 0.30864498019218445,
+          "prediction": 0.020043788477778435,
+          "anchor": 0.014306274242699146,
+          "invariance": 0.002475698245689273
+        },
+        {
+          "step": 2600,
+          "loss": 0.3248719274997711,
+          "prediction": 0.015581673011183739,
+          "anchor": 0.015382125973701477,
+          "invariance": 0.0016477376921102405
+        },
+        {
+          "step": 2800,
+          "loss": 0.3030366003513336,
+          "prediction": 0.015224942937493324,
+          "anchor": 0.014270348474383354,
+          "invariance": 0.002404693281278014
+        },
+        {
+          "step": 3000,
+          "loss": 0.25433918833732605,
+          "prediction": 0.0158107690513134,
+          "anchor": 0.011832003481686115,
+          "invariance": 0.0018883695593103766
+        },
+        {
+          "step": 3200,
+          "loss": 0.3315596878528595,
+          "prediction": 0.015956128016114235,
+          "anchor": 0.015625543892383575,
+          "invariance": 0.0030926878098398447
+        },
+        {
+          "step": 3400,
+          "loss": 0.3453618586063385,
+          "prediction": 0.012691888958215714,
+          "anchor": 0.01653127744793892,
+          "invariance": 0.0020444518886506557
+        },
+        {
+          "step": 3600,
+          "loss": 0.2740962505340576,
+          "prediction": 0.015275993384420872,
+          "anchor": 0.012826933525502682,
+          "invariance": 0.002281620167195797
+        },
+        {
+          "step": 3800,
+          "loss": 0.24846352636814117,
+          "prediction": 0.016206542029976845,
+          "anchor": 0.011512070894241333,
+          "invariance": 0.0020155555102974176
+        },
+        {
+          "step": 3999,
+          "loss": 0.23673579096794128,
+          "prediction": 0.014928878284990788,
+          "anchor": 0.010995597578585148,
+          "invariance": 0.0018949618097394705
+        }
+      ],
+      "steps": 4000,
+      "reconstruction_loss": false,
+      "target": "stop",
+      "invariance_weight": 1.0,
+      "parameters": 43038
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 6.871684444322881e-05,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.006957724154328392,
+        "mean_projected_fidelity": 0.9955832027034968,
+        "raw_overlap_mean": 0.9993687458799194,
+        "projection_frobenius_mean": 0.008919943619170664
+      },
+      "noisy_readout": {
+        "pauli_mse": 0.0002487825709196569,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.011572973947143999,
+        "mean_projected_fidelity": 0.9918759139527972,
+        "raw_overlap_mean": 0.9981105264966084,
+        "projection_frobenius_mean": 0.014707843735819355
+      },
+      "one_step": {
+        "pauli_mse": 0.003598831250023857,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.04694412807642914,
+        "mean_projected_fidelity": 0.9707894211672288,
+        "raw_overlap_mean": 0.9977395531687399,
+        "projection_frobenius_mean": 0.061248562147896694
+      },
+      "noisy_one_step": {
+        "pauli_mse": 0.0037492244770139216,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.0475285873655627,
+        "mean_projected_fidelity": 0.969488441499816,
+        "raw_overlap_mean": 0.9966690829514449,
+        "projection_frobenius_mean": 0.06175551197970655
+      },
+      "stochastic_one_step": null,
+      "unseen_angles": {
+        "pauli_mse": 0.09791628911679386,
+        "raw_valid_fraction": 0.015625,
+        "mean_min_eigenvalue": -0.10291069444023852,
+        "mean_projected_fidelity": 0.6691024357645452,
+        "raw_overlap_mean": 0.7006179624934137,
+        "projection_frobenius_mean": 0.1221354726750355
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.017975992479383463,
+          "raw_valid_fraction": 0.015625,
+          "mean_min_eigenvalue": -0.05175596306603915,
+          "mean_projected_fidelity": 0.9181248899614799,
+          "raw_overlap_mean": 0.9438733898060663,
+          "projection_frobenius_mean": 0.06514309658189978
+        },
+        "4": {
+          "pauli_mse": 0.056200459989804157,
+          "raw_valid_fraction": 0.015625,
+          "mean_min_eigenvalue": -0.06613710029189165,
+          "mean_projected_fidelity": 0.7983156322126492,
+          "raw_overlap_mean": 0.8243349690212188,
+          "projection_frobenius_mean": 0.08106977229881372
+        },
+        "16": {
+          "pauli_mse": 0.17655684416334758,
+          "raw_valid_fraction": 0.0234375,
+          "mean_min_eigenvalue": -0.06722441211699082,
+          "mean_projected_fidelity": 0.529428420265105,
+          "raw_overlap_mean": 0.5442871087561689,
+          "projection_frobenius_mean": 0.08042321981878447
+        },
+        "32": {
+          "pauli_mse": 0.26982383300984625,
+          "raw_valid_fraction": 0.0234375,
+          "mean_min_eigenvalue": -0.06715360808088507,
+          "mean_projected_fidelity": 0.35957634999050314,
+          "raw_overlap_mean": 0.36364467959981495,
+          "projection_frobenius_mean": 0.08020153451925467
+        }
+      },
+      "rollout_readout_ceiling": {
+        "1": {
+          "pauli_mse": 6.990376126380285e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.00704395783986159,
+          "mean_projected_fidelity": 0.9954623959687958,
+          "raw_overlap_mean": 0.9989959276738587,
+          "projection_frobenius_mean": 0.00881004407819876
+        },
+        "4": {
+          "pauli_mse": 7.029997089625989e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.007193062567750097,
+          "mean_projected_fidelity": 0.995645899353005,
+          "raw_overlap_mean": 0.999440555811671,
+          "projection_frobenius_mean": 0.009165325610983197
+        },
+        "16": {
+          "pauli_mse": 6.724648105336046e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006637353892321472,
+          "mean_projected_fidelity": 0.9952460582286562,
+          "raw_overlap_mean": 0.9987048372779858,
+          "projection_frobenius_mean": 0.008393131590610232
+        },
+        "32": {
+          "pauli_mse": 6.567681176006497e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006954875550073927,
+          "mean_projected_fidelity": 0.9952677974360469,
+          "raw_overlap_mean": 0.9988054486988569,
+          "projection_frobenius_mean": 0.008711351340418956
+        }
+      },
+      "representation": {
+        "effective_rank": 14.174508094787598,
+        "min_covariance_eigenvalue": 0.4067178964614868,
+        "nuisance_latent_mse": 0.0008730898262001574,
+        "variance": 0.8579119443893433
+      }
+    }
+  },
+  {
+    "seed": 7401,
+    "kind": "source_chord",
+    "training": {
+      "seconds": 3.676257958984934,
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.3944785594940186,
+          "prediction": 0.005835333373397589,
+          "anchor": 0.0693502426147461,
+          "invariance": 0.0016384321497753263
+        },
+        {
+          "step": 200,
+          "loss": 0.8211934566497803,
+          "prediction": 0.06115766614675522,
+          "anchor": 0.037620361894369125,
+          "invariance": 0.0076285372488200665
+        },
+        {
+          "step": 400,
+          "loss": 0.6511256098747253,
+          "prediction": 0.059312604367733,
+          "anchor": 0.029341943562030792,
+          "invariance": 0.00497420271858573
+        },
+        {
+          "step": 600,
+          "loss": 0.5671647787094116,
+          "prediction": 0.04057878628373146,
+          "anchor": 0.026097819209098816,
+          "invariance": 0.0046296073123812675
+        },
+        {
+          "step": 800,
+          "loss": 0.4937233328819275,
+          "prediction": 0.039496149867773056,
+          "anchor": 0.022466400638222694,
+          "invariance": 0.004899179097265005
+        },
+        {
+          "step": 1000,
+          "loss": 0.3224169611930847,
+          "prediction": 0.03779527172446251,
+          "anchor": 0.014016342349350452,
+          "invariance": 0.004294856917113066
+        },
+        {
+          "step": 1200,
+          "loss": 0.35437360405921936,
+          "prediction": 0.022755542770028114,
+          "anchor": 0.016407597810029984,
+          "invariance": 0.003466114867478609
+        },
+        {
+          "step": 1400,
+          "loss": 0.2932169735431671,
+          "prediction": 0.021131062880158424,
+          "anchor": 0.013452930375933647,
+          "invariance": 0.0030272998847067356
+        },
+        {
+          "step": 1600,
+          "loss": 0.275974303483963,
+          "prediction": 0.019454102963209152,
+          "anchor": 0.012634629383683205,
+          "invariance": 0.00382763659581542
+        },
+        {
+          "step": 1800,
+          "loss": 0.31224313378334045,
+          "prediction": 0.015857644379138947,
+          "anchor": 0.014640239998698235,
+          "invariance": 0.003580698976293206
+        },
+        {
+          "step": 2000,
+          "loss": 0.3855850398540497,
+          "prediction": 0.014817728661000729,
+          "anchor": 0.018347185105085373,
+          "invariance": 0.0038236165419220924
+        },
+        {
+          "step": 2200,
+          "loss": 0.2832944393157959,
+          "prediction": 0.015635263174772263,
+          "anchor": 0.013281162828207016,
+          "invariance": 0.0020359193440526724
+        },
+        {
+          "step": 2400,
+          "loss": 0.31811273097991943,
+          "prediction": 0.01856279745697975,
+          "anchor": 0.014827350154519081,
+          "invariance": 0.0030029492918401957
+        },
+        {
+          "step": 2600,
+          "loss": 0.3292718827724457,
+          "prediction": 0.015768248587846756,
+          "anchor": 0.015546854585409164,
+          "invariance": 0.0025665080174803734
+        },
+        {
+          "step": 2800,
+          "loss": 0.2941388189792633,
+          "prediction": 0.010911672376096249,
+          "anchor": 0.014000139199197292,
+          "invariance": 0.003224362386390567
+        },
+        {
+          "step": 3000,
+          "loss": 0.2514754831790924,
+          "prediction": 0.010524173267185688,
+          "anchor": 0.011944571509957314,
+          "invariance": 0.002059881342574954
+        },
+        {
+          "step": 3200,
+          "loss": 0.32702794671058655,
+          "prediction": 0.012014655396342278,
+          "anchor": 0.015533722005784512,
+          "invariance": 0.00433887355029583
+        },
+        {
+          "step": 3400,
+          "loss": 0.3456949293613434,
+          "prediction": 0.013489436358213425,
+          "anchor": 0.01646769605576992,
+          "invariance": 0.0028515802696347237
+        },
+        {
+          "step": 3600,
+          "loss": 0.2701137363910675,
+          "prediction": 0.010601921938359737,
+          "anchor": 0.012820318341255188,
+          "invariance": 0.0031054664868861437
+        },
+        {
+          "step": 3800,
+          "loss": 0.2455843985080719,
+          "prediction": 0.009962117299437523,
+          "anchor": 0.011644581332802773,
+          "invariance": 0.002730671549215913
+        },
+        {
+          "step": 3999,
+          "loss": 0.2354377657175064,
+          "prediction": 0.009739122353494167,
+          "anchor": 0.01115402951836586,
+          "invariance": 0.0026180569548159838
+        }
+      ],
+      "steps": 4000,
+      "reconstruction_loss": false,
+      "target": "stop",
+      "invariance_weight": 1.0,
+      "parameters": 45086
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 8.527082678333964e-05,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.008331171613788465,
+        "mean_projected_fidelity": 0.9956499804318,
+        "raw_overlap_mean": 0.999844149204325,
+        "projection_frobenius_mean": 0.010346197677383375
+      },
+      "noisy_readout": {
+        "pauli_mse": 0.0003362619608023979,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.01295652221166503,
+        "mean_projected_fidelity": 0.9916055364832318,
+        "raw_overlap_mean": 0.9988258776720482,
+        "projection_frobenius_mean": 0.016622876524659866
+      },
+      "one_step": {
+        "pauli_mse": 0.016811003155301072,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.07662289382725063,
+        "mean_projected_fidelity": 0.9329801858874794,
+        "raw_overlap_mean": 0.9745604587911033,
+        "projection_frobenius_mean": 0.0983937797732506
+      },
+      "noisy_one_step": {
+        "pauli_mse": 0.017028347451809235,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.07665162013837863,
+        "mean_projected_fidelity": 0.9317808749944392,
+        "raw_overlap_mean": 0.9732226403230231,
+        "projection_frobenius_mean": 0.09843487163446407
+      },
+      "stochastic_one_step": null,
+      "unseen_angles": {
+        "pauli_mse": 9.218310030097468,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -2.105522605698261,
+        "mean_projected_fidelity": 0.510881247869234,
+        "raw_overlap_mean": 1.3700709832966727,
+        "projection_frobenius_mean": 3.339094871104513
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.6372767699499675,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.30784064547244694,
+          "mean_projected_fidelity": 0.8544544841864284,
+          "raw_overlap_mean": 0.9653836317934358,
+          "projection_frobenius_mean": 0.4822253110168949
+        },
+        "4": {
+          "pauli_mse": 4127405.5262970463,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -604.6923160478414,
+          "mean_projected_fidelity": 0.625100947747415,
+          "raw_overlap_mean": 49.910609751664126,
+          "projection_frobenius_mean": 981.5007258952578
+        },
+        "16": {
+          "pauli_mse": 1.5381047588003217e+36,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -3.211033368648002e+17,
+          "mean_projected_fidelity": 0.25151034380417797,
+          "raw_overlap_mean": 5.430337331279551e+16,
+          "projection_frobenius_mean": 5.2356719650616474e+17
+        },
+        "32": {
+          "status": "nonfinite rollout",
+          "mean_projected_fidelity": null,
+          "raw_valid_fraction": 0.0
+        }
+      },
+      "rollout_readout_ceiling": {
+        "1": {
+          "pauli_mse": 9.791755935824868e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.008671959163698765,
+          "mean_projected_fidelity": 0.994531458107923,
+          "raw_overlap_mean": 0.9986817055630735,
+          "projection_frobenius_mean": 0.01069432188426785
+        },
+        "4": {
+          "pauli_mse": 9.318448788366003e-05,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.008692485503611283,
+          "mean_projected_fidelity": 0.9953818136283343,
+          "raw_overlap_mean": 0.99985091193001,
+          "projection_frobenius_mean": 0.01086634845415192
+        },
+        "16": {
+          "pauli_mse": 9.024588945134385e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.007860269271315001,
+          "mean_projected_fidelity": 0.9946953896441477,
+          "raw_overlap_mean": 0.9985765366033775,
+          "projection_frobenius_mean": 0.00982634956157362
+        },
+        "32": {
+          "pauli_mse": 8.872878552668583e-05,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.008659378085747809,
+          "mean_projected_fidelity": 0.9955402825368773,
+          "raw_overlap_mean": 0.9999674023784257,
+          "projection_frobenius_mean": 0.010769400969924948
+        }
+      },
+      "representation": {
+        "effective_rank": 14.175180435180664,
+        "min_covariance_eigenvalue": 0.4160568416118622,
+        "nuisance_latent_mse": 0.0012145113432779908,
+        "variance": 0.8531001210212708
+      }
+    }
+  },
+  {
+    "seed": 7401,
+    "kind": "gaussian",
+    "training": {
+      "seconds": 3.645836625015363,
+      "history": [
+        {
+          "step": 0,
+          "loss": 2.4373250007629395,
+          "prediction": 1.0486817359924316,
+          "anchor": 0.0693502426147461,
+          "invariance": 0.0016384321497753263
+        },
+        {
+          "step": 200,
+          "loss": 1.7112177610397339,
+          "prediction": 1.0992000102996826,
+          "anchor": 0.029695522040128708,
+          "invariance": 0.018107328563928604
+        },
+        {
+          "step": 400,
+          "loss": 1.1764591932296753,
+          "prediction": 0.742175281047821,
+          "anchor": 0.021442841738462448,
+          "invariance": 0.005427020136266947
+        },
+        {
+          "step": 600,
+          "loss": 0.934455931186676,
+          "prediction": 0.5660511255264282,
+          "anchor": 0.018230566754937172,
+          "invariance": 0.00379349198192358
+        },
+        {
+          "step": 800,
+          "loss": 0.9522143602371216,
+          "prediction": 0.5608539581298828,
+          "anchor": 0.01943672075867653,
+          "invariance": 0.0026259904261678457
+        },
+        {
+          "step": 1000,
+          "loss": 0.7600754499435425,
+          "prediction": 0.4838109314441681,
+          "anchor": 0.013668367639183998,
+          "invariance": 0.002897158730775118
+        },
+        {
+          "step": 1200,
+          "loss": 0.7544019818305969,
+          "prediction": 0.43865641951560974,
+          "anchor": 0.01570252515375614,
+          "invariance": 0.0016950982389971614
+        },
+        {
+          "step": 1400,
+          "loss": 0.6625633239746094,
+          "prediction": 0.4108600318431854,
+          "anchor": 0.012498809024691582,
+          "invariance": 0.0017271219985559583
+        },
+        {
+          "step": 1600,
+          "loss": 0.6073447465896606,
+          "prediction": 0.34761330485343933,
+          "anchor": 0.01289423182606697,
+          "invariance": 0.0018467976478859782
+        },
+        {
+          "step": 1800,
+          "loss": 0.7041617035865784,
+          "prediction": 0.4117256999015808,
+          "anchor": 0.014522497542202473,
+          "invariance": 0.0019860612228512764
+        },
+        {
+          "step": 2000,
+          "loss": 0.6956020593643188,
+          "prediction": 0.3493993878364563,
+          "anchor": 0.017192896455526352,
+          "invariance": 0.0023447221610695124
+        },
+        {
+          "step": 2200,
+          "loss": 0.572071373462677,
+          "prediction": 0.3037544786930084,
+          "anchor": 0.013352924957871437,
+          "invariance": 0.0012584507931023836
+        },
+        {
+          "step": 2400,
+          "loss": 0.5788385272026062,
+          "prediction": 0.29482734203338623,
+          "anchor": 0.014121102169156075,
+          "invariance": 0.0015890910290181637
+        },
+        {
+          "step": 2600,
+          "loss": 0.6319370865821838,
+          "prediction": 0.31979307532310486,
+          "anchor": 0.01553032360970974,
+          "invariance": 0.0015374863287433982
+        },
+        {
+          "step": 2800,
+          "loss": 0.586828351020813,
+          "prediction": 0.3201330304145813,
+          "anchor": 0.013257570564746857,
+          "invariance": 0.00154390768148005
+        },
+        {
+          "step": 3000,
+          "loss": 0.5850462317466736,
+          "prediction": 0.3625991642475128,
+          "anchor": 0.011037025600671768,
+          "invariance": 0.0017065401189029217
+        },
+        {
+          "step": 3200,
+          "loss": 0.5586425065994263,
+          "prediction": 0.24243059754371643,
+          "anchor": 0.01571844145655632,
+          "invariance": 0.001843119622208178
+        },
+        {
+          "step": 3400,
+          "loss": 0.6150155663490295,
+          "prediction": 0.28235504031181335,
+          "anchor": 0.016544219106435776,
+          "invariance": 0.001776171033270657
+        },
+        {
+          "step": 3600,
+          "loss": 0.5514973402023315,
+          "prediction": 0.2921614348888397,
+          "anchor": 0.012902973219752312,
+          "invariance": 0.0012764113489538431
+        },
+        {
+          "step": 3800,
+          "loss": 0.5231693387031555,
+          "prediction": 0.2880343198776245,
+          "anchor": 0.011693604290485382,
+          "invariance": 0.001262981677427888
+        },
+        {
+          "step": 3999,
+          "loss": 0.5343916416168213,
+          "prediction": 0.31037789583206177,
+          "anchor": 0.011137058027088642,
+          "invariance": 0.001272539491765201
+        }
+      ],
+      "steps": 4000,
+      "reconstruction_loss": false,
+      "target": "stop",
+      "invariance_weight": 1.0,
+      "parameters": 45086
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 5.7118885256987016e-05,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.006515774098742833,
+        "mean_projected_fidelity": 0.9961271759025774,
+        "raw_overlap_mean": 0.9996161747266855,
+        "projection_frobenius_mean": 0.008271783832693527
+      },
+      "noisy_readout": {
+        "pauli_mse": 0.00022040891963315973,
+        "raw_valid_fraction": 0.015625,
+        "mean_min_eigenvalue": -0.01081877069277281,
+        "mean_projected_fidelity": 0.9938955626283303,
+        "raw_overlap_mean": 1.0005791351383664,
+        "projection_frobenius_mean": 0.014257614742044558
+      },
+      "one_step": {
+        "pauli_mse": 0.00497607596017147,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.05091936051073139,
+        "mean_projected_fidelity": 0.9647611413336469,
+        "raw_overlap_mean": 0.9927996687508334,
+        "projection_frobenius_mean": 0.06557171571353884
+      },
+      "noisy_one_step": {
+        "pauli_mse": 0.00513968665901795,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.05228494302115364,
+        "mean_projected_fidelity": 0.9642873072866974,
+        "raw_overlap_mean": 0.9937352497014095,
+        "projection_frobenius_mean": 0.06750200360560393
+      },
+      "stochastic_one_step": {
+        "mean_sample_fidelity": 0.9393669219288853,
+        "mean_prediction": {
+          "pauli_mse": 0.006822022026952573,
+          "raw_valid_fraction": 0.015625,
+          "mean_min_eigenvalue": -0.05989825307353812,
+          "mean_projected_fidelity": 0.955013584779669,
+          "raw_overlap_mean": 0.9863802470083378,
+          "projection_frobenius_mean": 0.07573774169205857
+        }
+      },
+      "unseen_angles": {
+        "pauli_mse": 0.12725568585237024,
+        "raw_valid_fraction": 0.0234375,
+        "mean_min_eigenvalue": -0.12116377568331499,
+        "mean_projected_fidelity": 0.6352987402441437,
+        "raw_overlap_mean": 0.6724571434975896,
+        "projection_frobenius_mean": 0.14590877222076046
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.02180089512790721,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.06549982423975488,
+          "mean_projected_fidelity": 0.9158750871658549,
+          "raw_overlap_mean": 0.9468602804514864,
+          "projection_frobenius_mean": 0.08237188554055644
+        },
+        "4": {
+          "pauli_mse": 0.07304726393170369,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.085565320347924,
+          "mean_projected_fidelity": 0.7705663700483958,
+          "raw_overlap_mean": 0.801471180804008,
+          "projection_frobenius_mean": 0.1037997495091185
+        },
+        "16": {
+          "pauli_mse": 0.18948151000907962,
+          "raw_valid_fraction": 0.1640625,
+          "mean_min_eigenvalue": -0.0503812974879489,
+          "mean_projected_fidelity": 0.4548682784617592,
+          "raw_overlap_mean": 0.4662675406208041,
+          "projection_frobenius_mean": 0.06403530458157772
+        },
+        "32": {
+          "pauli_mse": 0.24969947176117163,
+          "raw_valid_fraction": 0.3125,
+          "mean_min_eigenvalue": -0.02548851640932657,
+          "mean_projected_fidelity": 0.2987778756160808,
+          "raw_overlap_mean": 0.3011681039867289,
+          "projection_frobenius_mean": 0.04549847191260614
+        }
+      },
+      "rollout_readout_ceiling": {
+        "1": {
+          "pauli_mse": 5.542443238402579e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006772858569638274,
+          "mean_projected_fidelity": 0.9961089944625202,
+          "raw_overlap_mean": 0.9997117856424589,
+          "projection_frobenius_mean": 0.00860720237927095
+        },
+        "4": {
+          "pauli_mse": 5.917662931409491e-05,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.006822787446299928,
+          "mean_projected_fidelity": 0.9959500648703109,
+          "raw_overlap_mean": 0.9996134713671636,
+          "projection_frobenius_mean": 0.008672021333678767
+        },
+        "16": {
+          "pauli_mse": 5.511616542144806e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006476560325898015,
+          "mean_projected_fidelity": 0.9958703847546524,
+          "raw_overlap_mean": 0.9991617607707337,
+          "projection_frobenius_mean": 0.008120888359145553
+        },
+        "32": {
+          "pauli_mse": 5.4772435126899705e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006407980015827514,
+          "mean_projected_fidelity": 0.996391724371545,
+          "raw_overlap_mean": 0.9998646849223691,
+          "projection_frobenius_mean": 0.00819946771805602
+        }
+      },
+      "representation": {
+        "effective_rank": 14.14488410949707,
+        "min_covariance_eigenvalue": 0.40535470843315125,
+        "nuisance_latent_mse": 0.000694102665875107,
+        "variance": 0.8486254811286926
+      }
+    }
+  },
+  {
+    "seed": 7401,
+    "kind": "latent_generator",
+    "training": {
+      "seconds": 18.329851749935187,
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.3909555673599243,
+          "prediction": 0.0023123056162148714,
+          "anchor": 0.0693502426147461,
+          "invariance": 0.0016384321497753263
+        },
+        {
+          "step": 200,
+          "loss": 0.994550883769989,
+          "prediction": 0.20397573709487915,
+          "anchor": 0.039253730326890945,
+          "invariance": 0.005500568076968193
+        },
+        {
+          "step": 400,
+          "loss": 0.7365597486495972,
+          "prediction": 0.23956069350242615,
+          "anchor": 0.024586621671915054,
+          "invariance": 0.00526668643578887
+        },
+        {
+          "step": 600,
+          "loss": 0.6064241528511047,
+          "prediction": 0.08926011621952057,
+          "anchor": 0.025641661137342453,
+          "invariance": 0.004330791998654604
+        },
+        {
+          "step": 800,
+          "loss": 0.5811073184013367,
+          "prediction": 0.09072840958833694,
+          "anchor": 0.024381134659051895,
+          "invariance": 0.0027562177274376154
+        },
+        {
+          "step": 1000,
+          "loss": 0.48582085967063904,
+          "prediction": 0.1631043404340744,
+          "anchor": 0.01595861092209816,
+          "invariance": 0.0035442884545773268
+        },
+        {
+          "step": 1200,
+          "loss": 0.33673372864723206,
+          "prediction": 0.027881767600774765,
+          "anchor": 0.015308793634176254,
+          "invariance": 0.002676071133464575
+        },
+        {
+          "step": 1400,
+          "loss": 0.290082186460495,
+          "prediction": 0.015519311651587486,
+          "anchor": 0.013612565584480762,
+          "invariance": 0.0023115486837923527
+        },
+        {
+          "step": 1600,
+          "loss": 0.27892160415649414,
+          "prediction": 0.018228473141789436,
+          "anchor": 0.012912341393530369,
+          "invariance": 0.002446291269734502
+        },
+        {
+          "step": 1800,
+          "loss": 0.30294784903526306,
+          "prediction": 0.01544377114623785,
+          "anchor": 0.014244798570871353,
+          "invariance": 0.002608128357678652
+        },
+        {
+          "step": 2000,
+          "loss": 0.3737635314464569,
+          "prediction": 0.014545557089149952,
+          "anchor": 0.017819449305534363,
+          "invariance": 0.002828976372256875
+        },
+        {
+          "step": 2200,
+          "loss": 0.27294212579727173,
+          "prediction": 0.012654447928071022,
+          "anchor": 0.012942250818014145,
+          "invariance": 0.0014426546404138207
+        },
+        {
+          "step": 2400,
+          "loss": 0.29738882184028625,
+          "prediction": 0.012280759401619434,
+          "anchor": 0.014148877002298832,
+          "invariance": 0.0021304995752871037
+        },
+        {
+          "step": 2600,
+          "loss": 0.33473852276802063,
+          "prediction": 0.01222784724086523,
+          "anchor": 0.01604141853749752,
+          "invariance": 0.0016823129262775183
+        },
+        {
+          "step": 2800,
+          "loss": 0.2856583893299103,
+          "prediction": 0.011129158549010754,
+          "anchor": 0.013605890795588493,
+          "invariance": 0.0024113806430250406
+        },
+        {
+          "step": 3000,
+          "loss": 0.24072854220867157,
+          "prediction": 0.009929100051522255,
+          "anchor": 0.011443695053458214,
+          "invariance": 0.001925530144944787
+        },
+        {
+          "step": 3200,
+          "loss": 0.32065752148628235,
+          "prediction": 0.014290254563093185,
+          "anchor": 0.015148770064115524,
+          "invariance": 0.0033918588887900114
+        },
+        {
+          "step": 3400,
+          "loss": 0.34470152854919434,
+          "prediction": 0.00956107396632433,
+          "anchor": 0.01666160300374031,
+          "invariance": 0.0019084090599790215
+        },
+        {
+          "step": 3600,
+          "loss": 0.2683309316635132,
+          "prediction": 0.01176315639168024,
+          "anchor": 0.012730652466416359,
+          "invariance": 0.001954747596755624
+        },
+        {
+          "step": 3800,
+          "loss": 0.24170149862766266,
+          "prediction": 0.010618924163281918,
+          "anchor": 0.011463241651654243,
+          "invariance": 0.0018177549354732037
+        },
+        {
+          "step": 3999,
+          "loss": 0.23409868776798248,
+          "prediction": 0.010995489545166492,
+          "anchor": 0.011069346219301224,
+          "invariance": 0.001716268016025424
+        }
+      ],
+      "steps": 4000,
+      "reconstruction_loss": false,
+      "target": "stop",
+      "invariance_weight": 1.0,
+      "parameters": 22869
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 5.179175568237914e-05,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.006232161202724717,
+        "mean_projected_fidelity": 0.9967162603330799,
+        "raw_overlap_mean": 1.0003276341040186,
+        "projection_frobenius_mean": 0.008102394023379565
+      },
+      "noisy_readout": {
+        "pauli_mse": 0.00023754958014698477,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.01081880596130891,
+        "mean_projected_fidelity": 0.9925307782038584,
+        "raw_overlap_mean": 0.9989707199556829,
+        "projection_frobenius_mean": 0.014221437531800463
+      },
+      "one_step": {
+        "pauli_mse": 0.0021712852768465962,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.03487206404887923,
+        "mean_projected_fidelity": 0.9840759021141494,
+        "raw_overlap_mean": 1.0084341069545573,
+        "projection_frobenius_mean": 0.04788358167844696
+      },
+      "noisy_one_step": {
+        "pauli_mse": 0.0023669206685829553,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.03649500373679504,
+        "mean_projected_fidelity": 0.9819838380800111,
+        "raw_overlap_mean": 1.007156289331052,
+        "projection_frobenius_mean": 0.04954738243500531
+      },
+      "stochastic_one_step": null,
+      "unseen_angles": {
+        "pauli_mse": 0.0035502495075518735,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.04648763569758588,
+        "mean_projected_fidelity": 0.977881649454323,
+        "raw_overlap_mean": 1.008221402706336,
+        "projection_frobenius_mean": 0.06249989668695494
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.0025193460095934614,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.038167525143278855,
+          "mean_projected_fidelity": 0.9818305630398145,
+          "raw_overlap_mean": 1.009158576809388,
+          "projection_frobenius_mean": 0.05264554598905591
+        },
+        "4": {
+          "pauli_mse": 0.003480009104877385,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.04456362910882458,
+          "mean_projected_fidelity": 0.9755962748846859,
+          "raw_overlap_mean": 1.0041016659099724,
+          "projection_frobenius_mean": 0.05966022512349342
+        },
+        "16": {
+          "pauli_mse": 0.004791696885873348,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.05398041400730165,
+          "mean_projected_fidelity": 0.972793464087198,
+          "raw_overlap_mean": 1.005872519815635,
+          "projection_frobenius_mean": 0.07127245977093329
+        },
+        "32": {
+          "pauli_mse": 0.007303977132954687,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.06439082784912863,
+          "mean_projected_fidelity": 0.9620954796357784,
+          "raw_overlap_mean": 0.9986588115453686,
+          "projection_frobenius_mean": 0.0833747108399466
+        }
+      },
+      "rollout_readout_ceiling": {
+        "1": {
+          "pauli_mse": 5.03297425511292e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006086762861532558,
+          "mean_projected_fidelity": 0.9966115237596909,
+          "raw_overlap_mean": 1.000155620942233,
+          "projection_frobenius_mean": 0.007958094852238634
+        },
+        "4": {
+          "pauli_mse": 5.079145794079704e-05,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.006013063693380297,
+          "mean_projected_fidelity": 0.9961950877770248,
+          "raw_overlap_mean": 0.9995278083342052,
+          "projection_frobenius_mean": 0.007737791956746329
+        },
+        "16": {
+          "pauli_mse": 5.028845416383621e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006214413071373011,
+          "mean_projected_fidelity": 0.9964196223720858,
+          "raw_overlap_mean": 0.999978690906282,
+          "projection_frobenius_mean": 0.0080070576034287
+        },
+        "32": {
+          "pauli_mse": 5.1313073818104056e-05,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.00651669113596896,
+          "mean_projected_fidelity": 0.9963452029210303,
+          "raw_overlap_mean": 0.9999136505912558,
+          "projection_frobenius_mean": 0.008301260530410321
+        }
+      },
+      "representation": {
+        "effective_rank": 14.189311027526855,
+        "min_covariance_eigenvalue": 0.4171972870826721,
+        "nuisance_latent_mse": 0.0008365876856260002,
+        "variance": 0.8524001836776733
+      }
+    }
+  },
+  {
+    "seed": 7402,
+    "kind": "direct",
+    "training": {
+      "seconds": 3.630595957976766,
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.4001314640045166,
+          "prediction": 0.011276881210505962,
+          "anchor": 0.06933683156967163,
+          "invariance": 0.002117995172739029
+        },
+        {
+          "step": 200,
+          "loss": 0.9276633262634277,
+          "prediction": 0.22472558915615082,
+          "anchor": 0.03452788293361664,
+          "invariance": 0.012380075640976429
+        },
+        {
+          "step": 400,
+          "loss": 0.456781268119812,
+          "prediction": 0.0990765392780304,
+          "anchor": 0.017607158049941063,
+          "invariance": 0.005561554338783026
+        },
+        {
+          "step": 600,
+          "loss": 0.31675514578819275,
+          "prediction": 0.06171455234289169,
+          "anchor": 0.012551918625831604,
+          "invariance": 0.004002199973911047
+        },
+        {
+          "step": 800,
+          "loss": 0.35150817036628723,
+          "prediction": 0.04976808279752731,
+          "anchor": 0.01494458969682455,
+          "invariance": 0.002848306205123663
+        },
+        {
+          "step": 1000,
+          "loss": 0.37596583366394043,
+          "prediction": 0.03681682422757149,
+          "anchor": 0.016821110621094704,
+          "invariance": 0.0027267937548458576
+        },
+        {
+          "step": 1200,
+          "loss": 0.4291086494922638,
+          "prediction": 0.024127596989274025,
+          "anchor": 0.02010801061987877,
+          "invariance": 0.0028208105359226465
+        },
+        {
+          "step": 1400,
+          "loss": 0.32452669739723206,
+          "prediction": 0.019186917692422867,
+          "anchor": 0.015141589567065239,
+          "invariance": 0.0025079778861254454
+        },
+        {
+          "step": 1600,
+          "loss": 0.30551764369010925,
+          "prediction": 0.020553674548864365,
+          "anchor": 0.014158359728753567,
+          "invariance": 0.0017967933090403676
+        },
+        {
+          "step": 1800,
+          "loss": 0.26201438903808594,
+          "prediction": 0.019975023344159126,
+          "anchor": 0.011972875334322453,
+          "invariance": 0.002581864595413208
+        },
+        {
+          "step": 2000,
+          "loss": 0.2505436837673187,
+          "prediction": 0.017235029488801956,
+          "anchor": 0.011555027216672897,
+          "invariance": 0.002208099700510502
+        },
+        {
+          "step": 2200,
+          "loss": 0.34115004539489746,
+          "prediction": 0.01896747760474682,
+          "anchor": 0.01598072610795498,
+          "invariance": 0.0025680242106318474
+        },
+        {
+          "step": 2400,
+          "loss": 0.36602526903152466,
+          "prediction": 0.015619990415871143,
+          "anchor": 0.017416372895240784,
+          "invariance": 0.0020778293255716562
+        },
+        {
+          "step": 2600,
+          "loss": 0.2738395631313324,
+          "prediction": 0.017267070710659027,
+          "anchor": 0.012726439163088799,
+          "invariance": 0.0020436879713088274
+        },
+        {
+          "step": 2800,
+          "loss": 0.29616373777389526,
+          "prediction": 0.016656920313835144,
+          "anchor": 0.01385318674147129,
+          "invariance": 0.0024430810008198023
+        },
+        {
+          "step": 3000,
+          "loss": 0.4062344431877136,
+          "prediction": 0.018250374123454094,
+          "anchor": 0.01926037296652794,
+          "invariance": 0.002776607871055603
+        },
+        {
+          "step": 3200,
+          "loss": 0.3146958351135254,
+          "prediction": 0.015874814242124557,
+          "anchor": 0.014842893928289413,
+          "invariance": 0.001963128335773945
+        },
+        {
+          "step": 3400,
+          "loss": 0.3561027944087982,
+          "prediction": 0.015865666791796684,
+          "anchor": 0.016906220465898514,
+          "invariance": 0.002112744143232703
+        },
+        {
+          "step": 3600,
+          "loss": 0.33329910039901733,
+          "prediction": 0.016022557392716408,
+          "anchor": 0.015715930610895157,
+          "invariance": 0.0029579538386315107
+        },
+        {
+          "step": 3800,
+          "loss": 0.31302380561828613,
+          "prediction": 0.015349369496107101,
+          "anchor": 0.014798318967223167,
+          "invariance": 0.0017080719117075205
+        },
+        {
+          "step": 3999,
+          "loss": 0.30453914403915405,
+          "prediction": 0.01446935348212719,
+          "anchor": 0.014404166489839554,
+          "invariance": 0.0019864754285663366
+        }
+      ],
+      "steps": 4000,
+      "reconstruction_loss": false,
+      "target": "stop",
+      "invariance_weight": 1.0,
+      "parameters": 43038
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 6.221405126636752e-05,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.0072481338294072585,
+        "mean_projected_fidelity": 0.996233433537097,
+        "raw_overlap_mean": 0.9999262455249726,
+        "projection_frobenius_mean": 0.009092007040404058
+      },
+      "noisy_readout": {
+        "pauli_mse": 0.0003112606871530893,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.012916983091873668,
+        "mean_projected_fidelity": 0.9912156221013919,
+        "raw_overlap_mean": 0.9979880226793162,
+        "projection_frobenius_mean": 0.016323925797537598
+      },
+      "one_step": {
+        "pauli_mse": 0.0035377223005526055,
+        "raw_valid_fraction": 0.0078125,
+        "mean_min_eigenvalue": -0.0475769612364031,
+        "mean_projected_fidelity": 0.9696551070571868,
+        "raw_overlap_mean": 0.994666871675718,
+        "projection_frobenius_mean": 0.060112203907348116
+      },
+      "noisy_one_step": {
+        "pauli_mse": 0.003756745726027791,
+        "raw_valid_fraction": 0.0078125,
+        "mean_min_eigenvalue": -0.048417841719830365,
+        "mean_projected_fidelity": 0.967669489632491,
+        "raw_overlap_mean": 0.9929530814596769,
+        "projection_frobenius_mean": 0.06097341390770281
+      },
+      "stochastic_one_step": null,
+      "unseen_angles": {
+        "pauli_mse": 0.10836220008982332,
+        "raw_valid_fraction": 0.03125,
+        "mean_min_eigenvalue": -0.09675825533699337,
+        "mean_projected_fidelity": 0.6507458963309396,
+        "raw_overlap_mean": 0.6818333754773048,
+        "projection_frobenius_mean": 0.11630901113737466
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.019623051741381712,
+          "raw_valid_fraction": 0.015625,
+          "mean_min_eigenvalue": -0.055174594027430246,
+          "mean_projected_fidelity": 0.9217332784803987,
+          "raw_overlap_mean": 0.9507475581857923,
+          "projection_frobenius_mean": 0.07074229925676159
+        },
+        "4": {
+          "pauli_mse": 0.06398331153463191,
+          "raw_valid_fraction": 0.0234375,
+          "mean_min_eigenvalue": -0.06861875858011061,
+          "mean_projected_fidelity": 0.7868045863410149,
+          "raw_overlap_mean": 0.815925058948326,
+          "projection_frobenius_mean": 0.0864882516784988
+        },
+        "16": {
+          "pauli_mse": 0.18170850147303494,
+          "raw_valid_fraction": 0.0703125,
+          "mean_min_eigenvalue": -0.05779230126824968,
+          "mean_projected_fidelity": 0.5171824046636824,
+          "raw_overlap_mean": 0.5302628363731043,
+          "projection_frobenius_mean": 0.07182591763290821
+        },
+        "32": {
+          "pauli_mse": 0.25470888697243654,
+          "raw_valid_fraction": 0.0546875,
+          "mean_min_eigenvalue": -0.06250766692673447,
+          "mean_projected_fidelity": 0.3802805757041378,
+          "raw_overlap_mean": 0.38924208905481705,
+          "projection_frobenius_mean": 0.07769602942896076
+        }
+      },
+      "rollout_readout_ceiling": {
+        "1": {
+          "pauli_mse": 6.374278479535537e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.0071828243441363635,
+          "mean_projected_fidelity": 0.9959654323900365,
+          "raw_overlap_mean": 0.9997551983855861,
+          "projection_frobenius_mean": 0.009107835735362911
+        },
+        "4": {
+          "pauli_mse": 6.99903557550256e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.007490102687222074,
+          "mean_projected_fidelity": 0.9958954083505454,
+          "raw_overlap_mean": 0.9998102640725646,
+          "projection_frobenius_mean": 0.009483321828610617
+        },
+        "16": {
+          "pauli_mse": 6.658652611684459e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.007142227808889427,
+          "mean_projected_fidelity": 0.9953150880432562,
+          "raw_overlap_mean": 0.9989203439644566,
+          "projection_frobenius_mean": 0.00893737206492089
+        },
+        "32": {
+          "pauli_mse": 6.832344765395303e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006960313893989041,
+          "mean_projected_fidelity": 0.9954558154655428,
+          "raw_overlap_mean": 0.9990309387264268,
+          "projection_frobenius_mean": 0.008733509076826651
+        }
+      },
+      "representation": {
+        "effective_rank": 14.132119178771973,
+        "min_covariance_eigenvalue": 0.4093737304210663,
+        "nuisance_latent_mse": 0.0010780754964798689,
+        "variance": 0.8205021023750305
+      }
+    }
+  },
+  {
+    "seed": 7402,
+    "kind": "source_chord",
+    "training": {
+      "seconds": 3.757838417077437,
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.394078254699707,
+          "prediction": 0.0052236467599868774,
+          "anchor": 0.06933683156967163,
+          "invariance": 0.002117995172739029
+        },
+        {
+          "step": 200,
+          "loss": 0.9175633192062378,
+          "prediction": 0.05008671432733536,
+          "anchor": 0.04297364503145218,
+          "invariance": 0.008003692142665386
+        },
+        {
+          "step": 400,
+          "loss": 0.5313176512718201,
+          "prediction": 0.06160750240087509,
+          "anchor": 0.02322525903582573,
+          "invariance": 0.005204969551414251
+        },
+        {
+          "step": 600,
+          "loss": 0.41363367438316345,
+          "prediction": 0.03550282493233681,
+          "anchor": 0.018653303384780884,
+          "invariance": 0.005064796190708876
+        },
+        {
+          "step": 800,
+          "loss": 0.38824158906936646,
+          "prediction": 0.04100264608860016,
+          "anchor": 0.017143098637461662,
+          "invariance": 0.004376945551484823
+        },
+        {
+          "step": 1000,
+          "loss": 0.3737582564353943,
+          "prediction": 0.026075836271047592,
+          "anchor": 0.017193900421261787,
+          "invariance": 0.003804422914981842
+        },
+        {
+          "step": 1200,
+          "loss": 0.43663254380226135,
+          "prediction": 0.02005286142230034,
+          "anchor": 0.02064657025039196,
+          "invariance": 0.0036482701543718576
+        },
+        {
+          "step": 1400,
+          "loss": 0.31226131319999695,
+          "prediction": 0.016367388889193535,
+          "anchor": 0.01465042307972908,
+          "invariance": 0.0028854894917458296
+        },
+        {
+          "step": 1600,
+          "loss": 0.30611270666122437,
+          "prediction": 0.018180007115006447,
+          "anchor": 0.014269950799643993,
+          "invariance": 0.002533660037443042
+        },
+        {
+          "step": 1800,
+          "loss": 0.2576981782913208,
+          "prediction": 0.016933003440499306,
+          "anchor": 0.011873660609126091,
+          "invariance": 0.003291974077001214
+        },
+        {
+          "step": 2000,
+          "loss": 0.25277042388916016,
+          "prediction": 0.017640220001339912,
+          "anchor": 0.011605599895119667,
+          "invariance": 0.0030182180926203728
+        },
+        {
+          "step": 2200,
+          "loss": 0.3327382504940033,
+          "prediction": 0.012519481591880322,
+          "anchor": 0.015840960666537285,
+          "invariance": 0.0033995399717241526
+        },
+        {
+          "step": 2400,
+          "loss": 0.35969674587249756,
+          "prediction": 0.011978507973253727,
+          "anchor": 0.017240680754184723,
+          "invariance": 0.002904623281210661
+        },
+        {
+          "step": 2600,
+          "loss": 0.27222731709480286,
+          "prediction": 0.012315090745687485,
+          "anchor": 0.012863291427493095,
+          "invariance": 0.002646376146003604
+        },
+        {
+          "step": 2800,
+          "loss": 0.2960076332092285,
+          "prediction": 0.00859902799129486,
+          "anchor": 0.014212768524885178,
+          "invariance": 0.003153214929625392
+        },
+        {
+          "step": 3000,
+          "loss": 0.3997746706008911,
+          "prediction": 0.011591511778533459,
+          "anchor": 0.019237205386161804,
+          "invariance": 0.003439024556428194
+        },
+        {
+          "step": 3200,
+          "loss": 0.3180946111679077,
+          "prediction": 0.010337687097489834,
+          "anchor": 0.01526646502315998,
+          "invariance": 0.0024276268668472767
+        },
+        {
+          "step": 3400,
+          "loss": 0.34294408559799194,
+          "prediction": 0.009453780017793179,
+          "anchor": 0.016543149948120117,
+          "invariance": 0.002627313369885087
+        },
+        {
+          "step": 3600,
+          "loss": 0.32822054624557495,
+          "prediction": 0.011301849037408829,
+          "anchor": 0.0156505536288023,
+          "invariance": 0.003907625563442707
+        },
+        {
+          "step": 3800,
+          "loss": 0.3011234700679779,
+          "prediction": 0.009077111259102821,
+          "anchor": 0.014492683112621307,
+          "invariance": 0.0021927193738520145
+        },
+        {
+          "step": 3999,
+          "loss": 0.3037301003932953,
+          "prediction": 0.011419498361647129,
+          "anchor": 0.014489694498479366,
+          "invariance": 0.002516724867746234
+        }
+      ],
+      "steps": 4000,
+      "reconstruction_loss": false,
+      "target": "stop",
+      "invariance_weight": 1.0,
+      "parameters": 45086
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 7.789430283824138e-05,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.007790467262687851,
+        "mean_projected_fidelity": 0.9956910157074647,
+        "raw_overlap_mean": 0.9997023136133013,
+        "projection_frobenius_mean": 0.009745251597046832
+      },
+      "noisy_readout": {
+        "pauli_mse": 0.00039692081031601875,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.014000059765006333,
+        "mean_projected_fidelity": 0.9900224681160641,
+        "raw_overlap_mean": 0.9972497488232084,
+        "projection_frobenius_mean": 0.01763574060132537
+      },
+      "one_step": {
+        "pauli_mse": 0.015869372237911357,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.0723131568497834,
+        "mean_projected_fidelity": 0.9266830186583948,
+        "raw_overlap_mean": 0.9643286434608557,
+        "projection_frobenius_mean": 0.0916654698888363
+      },
+      "noisy_one_step": {
+        "pauli_mse": 0.016079845279776055,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.07220154243908494,
+        "mean_projected_fidelity": 0.9242688116545066,
+        "raw_overlap_mean": 0.9615773939676825,
+        "projection_frobenius_mean": 0.0912824626166151
+      },
+      "stochastic_one_step": null,
+      "unseen_angles": {
+        "pauli_mse": 0.9680826176947358,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.8791789527785157,
+        "mean_projected_fidelity": 0.5758937059972413,
+        "raw_overlap_mean": 0.9682846936459195,
+        "projection_frobenius_mean": 1.2003676908301952
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.16235288538799122,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.17985204690542472,
+          "mean_projected_fidelity": 0.8522147509788403,
+          "raw_overlap_mean": 0.9394251821922388,
+          "projection_frobenius_mean": 0.2427599987350953
+        },
+        "4": {
+          "pauli_mse": 54350.5696820399,
+          "raw_valid_fraction": 0.015625,
+          "mean_min_eigenvalue": -42.67174387537666,
+          "mean_projected_fidelity": 0.6056272784698423,
+          "raw_overlap_mean": -3.8950797907545818,
+          "projection_frobenius_mean": 67.5506357878416
+        },
+        "16": {
+          "pauli_mse": 4.839092996829721e+31,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -1410757018367257.0,
+          "mean_projected_fidelity": 0.25959676111159163,
+          "raw_overlap_mean": -84645629459902.0,
+          "projection_frobenius_mean": 2083539173197091.0
+        },
+        "32": {
+          "pauli_mse": 7.067168916517681e+66,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -5.2366184698774564e+32,
+          "mean_projected_fidelity": 0.2694657548292911,
+          "raw_overlap_mean": 4.556295708729505e+31,
+          "projection_frobenius_mean": 7.800830638058559e+32
+        }
+      },
+      "rollout_readout_ceiling": {
+        "1": {
+          "pauli_mse": 8.085631450965684e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.008103711738917507,
+          "mean_projected_fidelity": 0.9961203699403841,
+          "raw_overlap_mean": 1.0006753116383185,
+          "projection_frobenius_mean": 0.010403123138860462
+        },
+        "4": {
+          "pauli_mse": 8.134288339025412e-05,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.008270546510283782,
+          "mean_projected_fidelity": 0.9960450269489665,
+          "raw_overlap_mean": 1.0005394545288548,
+          "projection_frobenius_mean": 0.010522247140209101
+        },
+        "16": {
+          "pauli_mse": 7.537770915207468e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.007894754734354779,
+          "mean_projected_fidelity": 0.9959778407150599,
+          "raw_overlap_mean": 1.0002000229974173,
+          "projection_frobenius_mean": 0.010085559588066758
+        },
+        "32": {
+          "pauli_mse": 8.450385289722229e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.007949734205914414,
+          "mean_projected_fidelity": 0.9950326751995774,
+          "raw_overlap_mean": 0.9990615615094668,
+          "projection_frobenius_mean": 0.009922025752628006
+        }
+      },
+      "representation": {
+        "effective_rank": 14.100018501281738,
+        "min_covariance_eigenvalue": 0.39347511529922485,
+        "nuisance_latent_mse": 0.001346950768493116,
+        "variance": 0.8095596432685852
+      }
+    }
+  },
+  {
+    "seed": 7402,
+    "kind": "gaussian",
+    "training": {
+      "seconds": 3.7268552500754595,
+      "history": [
+        {
+          "step": 0,
+          "loss": 2.415219783782959,
+          "prediction": 1.0263651609420776,
+          "anchor": 0.06933683156967163,
+          "invariance": 0.002117995172739029
+        },
+        {
+          "step": 200,
+          "loss": 1.886452555656433,
+          "prediction": 1.1773792505264282,
+          "anchor": 0.034860190004110336,
+          "invariance": 0.011869552545249462
+        },
+        {
+          "step": 400,
+          "loss": 1.1592693328857422,
+          "prediction": 0.7993573546409607,
+          "anchor": 0.017724663019180298,
+          "invariance": 0.005418770480901003
+        },
+        {
+          "step": 600,
+          "loss": 0.8756294250488281,
+          "prediction": 0.5662264227867126,
+          "anchor": 0.01528975274413824,
+          "invariance": 0.0036079634446650743
+        },
+        {
+          "step": 800,
+          "loss": 0.7913810610771179,
+          "prediction": 0.48590126633644104,
+          "anchor": 0.015127336606383324,
+          "invariance": 0.002933082403615117
+        },
+        {
+          "step": 1000,
+          "loss": 0.7868645191192627,
+          "prediction": 0.446362167596817,
+          "anchor": 0.016896957531571388,
+          "invariance": 0.002563213463872671
+        },
+        {
+          "step": 1200,
+          "loss": 0.8066193461418152,
+          "prediction": 0.41610848903656006,
+          "anchor": 0.01941073313355446,
+          "invariance": 0.0022962375078350306
+        },
+        {
+          "step": 1400,
+          "loss": 0.6556801795959473,
+          "prediction": 0.35979601740837097,
+          "anchor": 0.014693763107061386,
+          "invariance": 0.002008903305977583
+        },
+        {
+          "step": 1600,
+          "loss": 0.652701199054718,
+          "prediction": 0.3709280788898468,
+          "anchor": 0.014001231640577316,
+          "invariance": 0.0017485114512965083
+        },
+        {
+          "step": 1800,
+          "loss": 0.6633866429328918,
+          "prediction": 0.4176461398601532,
+          "anchor": 0.012202742509543896,
+          "invariance": 0.0016856964211910963
+        },
+        {
+          "step": 2000,
+          "loss": 0.648073136806488,
+          "prediction": 0.40552130341529846,
+          "anchor": 0.0120394267141819,
+          "invariance": 0.001763264532200992
+        },
+        {
+          "step": 2200,
+          "loss": 0.7363731265068054,
+          "prediction": 0.41575029492378235,
+          "anchor": 0.01595861092209816,
+          "invariance": 0.0014505819417536259
+        },
+        {
+          "step": 2400,
+          "loss": 0.642710268497467,
+          "prediction": 0.31082549691200256,
+          "anchor": 0.016509998589754105,
+          "invariance": 0.001684863935224712
+        },
+        {
+          "step": 2600,
+          "loss": 0.5855197906494141,
+          "prediction": 0.31497907638549805,
+          "anchor": 0.013438735157251358,
+          "invariance": 0.0017660495359450579
+        },
+        {
+          "step": 2800,
+          "loss": 0.5950676798820496,
+          "prediction": 0.3161865472793579,
+          "anchor": 0.013875470496714115,
+          "invariance": 0.001371688675135374
+        },
+        {
+          "step": 3000,
+          "loss": 0.6979687213897705,
+          "prediction": 0.329060435295105,
+          "anchor": 0.01836060732603073,
+          "invariance": 0.0016960916109383106
+        },
+        {
+          "step": 3200,
+          "loss": 0.5407927632331848,
+          "prediction": 0.25914815068244934,
+          "anchor": 0.01401546411216259,
+          "invariance": 0.0013353513786569238
+        },
+        {
+          "step": 3400,
+          "loss": 0.6436575651168823,
+          "prediction": 0.33947116136550903,
+          "anchor": 0.015131618827581406,
+          "invariance": 0.001554012531414628
+        },
+        {
+          "step": 3600,
+          "loss": 0.6086956858634949,
+          "prediction": 0.31114858388900757,
+          "anchor": 0.01479436457157135,
+          "invariance": 0.0016598047222942114
+        },
+        {
+          "step": 3800,
+          "loss": 0.573392391204834,
+          "prediction": 0.29716917872428894,
+          "anchor": 0.013735141605138779,
+          "invariance": 0.0015203971415758133
+        },
+        {
+          "step": 3999,
+          "loss": 0.5651535987854004,
+          "prediction": 0.2869376838207245,
+          "anchor": 0.013841436244547367,
+          "invariance": 0.0013871786650270224
+        }
+      ],
+      "steps": 4000,
+      "reconstruction_loss": false,
+      "target": "stop",
+      "invariance_weight": 1.0,
+      "parameters": 45086
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 5.4842556295547544e-05,
+        "raw_valid_fraction": 0.0078125,
+        "mean_min_eigenvalue": -0.006301274101650773,
+        "mean_projected_fidelity": 0.9955855827704422,
+        "raw_overlap_mean": 0.9987758125716699,
+        "projection_frobenius_mean": 0.007872173345625047
+      },
+      "noisy_readout": {
+        "pauli_mse": 0.000220535304546575,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.010871440696177502,
+        "mean_projected_fidelity": 0.9924178973460978,
+        "raw_overlap_mean": 0.9982453481556194,
+        "projection_frobenius_mean": 0.013857009796107878
+      },
+      "one_step": {
+        "pauli_mse": 0.004368619758094446,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.049419201647547054,
+        "mean_projected_fidelity": 0.9603507310458163,
+        "raw_overlap_mean": 0.9843017401519979,
+        "projection_frobenius_mean": 0.06132353254683423
+      },
+      "noisy_one_step": {
+        "pauli_mse": 0.004534985324662042,
+        "raw_valid_fraction": 0.0078125,
+        "mean_min_eigenvalue": -0.050038831410709,
+        "mean_projected_fidelity": 0.9592194119834043,
+        "raw_overlap_mean": 0.9834361852481335,
+        "projection_frobenius_mean": 0.06205848945678071
+      },
+      "stochastic_one_step": {
+        "mean_sample_fidelity": 0.932831844455818,
+        "mean_prediction": {
+          "pauli_mse": 0.006581894441908114,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.05684833316379925,
+          "mean_projected_fidelity": 0.9486421896541763,
+          "raw_overlap_mean": 0.9756601870599761,
+          "projection_frobenius_mean": 0.07004698903241789
+        }
+      },
+      "unseen_angles": {
+        "pauli_mse": 0.11987370639230738,
+        "raw_valid_fraction": 0.015625,
+        "mean_min_eigenvalue": -0.10695992439264465,
+        "mean_projected_fidelity": 0.6285785345442745,
+        "raw_overlap_mean": 0.6607420085363231,
+        "projection_frobenius_mean": 0.12727433546145284
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.02099606582019642,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.05210266083095075,
+          "mean_projected_fidelity": 0.9068675053315939,
+          "raw_overlap_mean": 0.9316690087719468,
+          "projection_frobenius_mean": 0.06489478497324078
+        },
+        "4": {
+          "pauli_mse": 0.07324554502959198,
+          "raw_valid_fraction": 0.0390625,
+          "mean_min_eigenvalue": -0.06656225284589368,
+          "mean_projected_fidelity": 0.7441941775247876,
+          "raw_overlap_mean": 0.769754958346012,
+          "projection_frobenius_mean": 0.08185408687042281
+        },
+        "16": {
+          "pauli_mse": 0.18227443730809856,
+          "raw_valid_fraction": 0.34375,
+          "mean_min_eigenvalue": -0.026454272303056015,
+          "mean_projected_fidelity": 0.4303180090984098,
+          "raw_overlap_mean": 0.4377338785566173,
+          "projection_frobenius_mean": 0.043981331426368724
+        },
+        "32": {
+          "pauli_mse": 0.22953811701518267,
+          "raw_valid_fraction": 0.6015625,
+          "mean_min_eigenvalue": 0.007434119637976179,
+          "mean_projected_fidelity": 0.2920041162689625,
+          "raw_overlap_mean": 0.2921427204663758,
+          "projection_frobenius_mean": 0.019221444419806433
+        }
+      },
+      "rollout_readout_ceiling": {
+        "1": {
+          "pauli_mse": 5.628125265265346e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006645834790165006,
+          "mean_projected_fidelity": 0.995791256285421,
+          "raw_overlap_mean": 0.9993064831673791,
+          "projection_frobenius_mean": 0.008480660730047693
+        },
+        "4": {
+          "pauli_mse": 6.134150075743615e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006932764631946362,
+          "mean_projected_fidelity": 0.9957764089313914,
+          "raw_overlap_mean": 0.9993587393687573,
+          "projection_frobenius_mean": 0.008744632993863913
+        },
+        "16": {
+          "pauli_mse": 5.901097477520726e-05,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.006488421229379633,
+          "mean_projected_fidelity": 0.9955974477790497,
+          "raw_overlap_mean": 0.998976475329231,
+          "projection_frobenius_mean": 0.008190684464822223
+        },
+        "32": {
+          "pauli_mse": 6.153625306944162e-05,
+          "raw_valid_fraction": 0.015625,
+          "mean_min_eigenvalue": -0.006488835328414915,
+          "mean_projected_fidelity": 0.9955332262260912,
+          "raw_overlap_mean": 0.9990331078655157,
+          "projection_frobenius_mean": 0.00817825297744491
+        }
+      },
+      "representation": {
+        "effective_rank": 14.182644844055176,
+        "min_covariance_eigenvalue": 0.4144876301288605,
+        "nuisance_latent_mse": 0.0007615552749484777,
+        "variance": 0.8219966888427734
+      }
+    }
+  },
+  {
+    "seed": 7402,
+    "kind": "latent_generator",
+    "training": {
+      "seconds": 18.763476124964654,
+      "history": [
+        {
+          "step": 0,
+          "loss": 1.3914777040481567,
+          "prediction": 0.0026230812072753906,
+          "anchor": 0.06933683156967163,
+          "invariance": 0.002117995172739029
+        },
+        {
+          "step": 200,
+          "loss": 1.0424554347991943,
+          "prediction": 0.21350403130054474,
+          "anchor": 0.041139885783195496,
+          "invariance": 0.006153708323836327
+        },
+        {
+          "step": 400,
+          "loss": 0.7850856184959412,
+          "prediction": 0.26946812868118286,
+          "anchor": 0.025558628141880035,
+          "invariance": 0.004444936756044626
+        },
+        {
+          "step": 600,
+          "loss": 0.5269575119018555,
+          "prediction": 0.13559727370738983,
+          "anchor": 0.01936485804617405,
+          "invariance": 0.004063067026436329
+        },
+        {
+          "step": 800,
+          "loss": 0.4767836332321167,
+          "prediction": 0.09087634086608887,
+          "anchor": 0.019112031906843185,
+          "invariance": 0.003666643751785159
+        },
+        {
+          "step": 1000,
+          "loss": 0.46304571628570557,
+          "prediction": 0.09345927089452744,
+          "anchor": 0.018307900056242943,
+          "invariance": 0.0034284258726984262
+        },
+        {
+          "step": 1200,
+          "loss": 0.38657912611961365,
+          "prediction": 0.03110804222524166,
+          "anchor": 0.017603207379579544,
+          "invariance": 0.0034069293178617954
+        },
+        {
+          "step": 1400,
+          "loss": 0.3194648325443268,
+          "prediction": 0.01889398694038391,
+          "anchor": 0.014891854487359524,
+          "invariance": 0.0027337721548974514
+        },
+        {
+          "step": 1600,
+          "loss": 0.29924440383911133,
+          "prediction": 0.014595774933695793,
+          "anchor": 0.014137404039502144,
+          "invariance": 0.0019005576614290476
+        },
+        {
+          "step": 1800,
+          "loss": 0.2554643452167511,
+          "prediction": 0.01474723406136036,
+          "anchor": 0.011900362558662891,
+          "invariance": 0.0027098741848021746
+        },
+        {
+          "step": 2000,
+          "loss": 0.23992745578289032,
+          "prediction": 0.01238536462187767,
+          "anchor": 0.011253238655626774,
+          "invariance": 0.0024773171171545982
+        },
+        {
+          "step": 2200,
+          "loss": 0.33051493763923645,
+          "prediction": 0.011267779394984245,
+          "anchor": 0.015848733484745026,
+          "invariance": 0.0022724915761500597
+        },
+        {
+          "step": 2400,
+          "loss": 0.3423658013343811,
+          "prediction": 0.010580257512629032,
+          "anchor": 0.01648300141096115,
+          "invariance": 0.002125496743246913
+        },
+        {
+          "step": 2600,
+          "loss": 0.2800963819026947,
+          "prediction": 0.012089643627405167,
+          "anchor": 0.0133010633289814,
+          "invariance": 0.0019855026621371508
+        },
+        {
+          "step": 2800,
+          "loss": 0.2918587625026703,
+          "prediction": 0.011349729262292385,
+          "anchor": 0.013907513581216335,
+          "invariance": 0.002358752768486738
+        },
+        {
+          "step": 3000,
+          "loss": 0.40100064873695374,
+          "prediction": 0.013781363144516945,
+          "anchor": 0.0192175954580307,
+          "invariance": 0.0028673792257905006
+        },
+        {
+          "step": 3200,
+          "loss": 0.31853988766670227,
+          "prediction": 0.01231368351727724,
+          "anchor": 0.015213839709758759,
+          "invariance": 0.0019494104199111462
+        },
+        {
+          "step": 3400,
+          "loss": 0.3309054672718048,
+          "prediction": 0.012406408786773682,
+          "anchor": 0.01581975258886814,
+          "invariance": 0.0021040053106844425
+        },
+        {
+          "step": 3600,
+          "loss": 0.3194499611854553,
+          "prediction": 0.011855884455144405,
+          "anchor": 0.015237309038639069,
+          "invariance": 0.0028479238972067833
+        },
+        {
+          "step": 3800,
+          "loss": 0.29536938667297363,
+          "prediction": 0.01071154698729515,
+          "anchor": 0.014150729402899742,
+          "invariance": 0.0016432447591796517
+        },
+        {
+          "step": 3999,
+          "loss": 0.30223914980888367,
+          "prediction": 0.009634716436266899,
+          "anchor": 0.014541951939463615,
+          "invariance": 0.0017653984250500798
+        }
+      ],
+      "steps": 4000,
+      "reconstruction_loss": false,
+      "target": "stop",
+      "invariance_weight": 1.0,
+      "parameters": 22869
+    },
+    "metrics": {
+      "readout_ceiling": {
+        "pauli_mse": 4.922243010552503e-05,
+        "raw_valid_fraction": 0.0078125,
+        "mean_min_eigenvalue": -0.006321961336624926,
+        "mean_projected_fidelity": 0.9968575876975116,
+        "raw_overlap_mean": 1.0005367818090316,
+        "projection_frobenius_mean": 0.008211429824580428
+      },
+      "noisy_readout": {
+        "pauli_mse": 0.000262439149755745,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.011664142153934597,
+        "mean_projected_fidelity": 0.9926491238425823,
+        "raw_overlap_mean": 0.9989784941483366,
+        "projection_frobenius_mean": 0.014855801999378594
+      },
+      "one_step": {
+        "pauli_mse": 0.0018997321027760352,
+        "raw_valid_fraction": 0.03125,
+        "mean_min_eigenvalue": -0.03060814188480706,
+        "mean_projected_fidelity": 0.9793316941546839,
+        "raw_overlap_mean": 0.9986334639547677,
+        "projection_frobenius_mean": 0.040504578665597445
+      },
+      "noisy_one_step": {
+        "pauli_mse": 0.002105898266091309,
+        "raw_valid_fraction": 0.015625,
+        "mean_min_eigenvalue": -0.03175951873528156,
+        "mean_projected_fidelity": 0.9774064686340993,
+        "raw_overlap_mean": 0.9970586520689724,
+        "projection_frobenius_mean": 0.04203408032379625
+      },
+      "stochastic_one_step": null,
+      "unseen_angles": {
+        "pauli_mse": 0.0033139382654965477,
+        "raw_valid_fraction": 0.0,
+        "mean_min_eigenvalue": -0.044425028120596274,
+        "mean_projected_fidelity": 0.9753782075984834,
+        "raw_overlap_mean": 1.003275055573622,
+        "projection_frobenius_mean": 0.05903413677152129
+      },
+      "rollout": {
+        "1": {
+          "pauli_mse": 0.002279358259836005,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.03458247705727571,
+          "mean_projected_fidelity": 0.9795186021827353,
+          "raw_overlap_mean": 1.002256830989083,
+          "projection_frobenius_mean": 0.04629187909979059
+        },
+        "4": {
+          "pauli_mse": 0.0033888016808495533,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.04539524043274343,
+          "mean_projected_fidelity": 0.9759879544537893,
+          "raw_overlap_mean": 1.004777857676746,
+          "projection_frobenius_mean": 0.05991393580036938
+        },
+        "16": {
+          "pauli_mse": 0.005017150529404859,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.05768943262211798,
+          "mean_projected_fidelity": 0.9674586687576787,
+          "raw_overlap_mean": 0.9992809961182414,
+          "projection_frobenius_mean": 0.07353477068878578
+        },
+        "32": {
+          "pauli_mse": 0.006940915858866633,
+          "raw_valid_fraction": 0.0078125,
+          "mean_min_eigenvalue": -0.06697103340831215,
+          "mean_projected_fidelity": 0.9599649387435472,
+          "raw_overlap_mean": 0.9980931202526914,
+          "projection_frobenius_mean": 0.0867753332300091
+        }
+      },
+      "rollout_readout_ceiling": {
+        "1": {
+          "pauli_mse": 4.70038546668335e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006180910696885586,
+          "mean_projected_fidelity": 0.9968724667877544,
+          "raw_overlap_mean": 1.0002789004968053,
+          "projection_frobenius_mean": 0.007872332912850173
+        },
+        "4": {
+          "pauli_mse": 4.908602708225857e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006722936888399093,
+          "mean_projected_fidelity": 0.9973262714902211,
+          "raw_overlap_mean": 1.001446850581108,
+          "projection_frobenius_mean": 0.008867259321852724
+        },
+        "16": {
+          "pauli_mse": 4.84879330976707e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.005992793507694223,
+          "mean_projected_fidelity": 0.9965996815522549,
+          "raw_overlap_mean": 0.9998769967492579,
+          "projection_frobenius_mean": 0.00773197304301185
+        },
+        "32": {
+          "pauli_mse": 4.888580705447133e-05,
+          "raw_valid_fraction": 0.0,
+          "mean_min_eigenvalue": -0.006161116641005361,
+          "mean_projected_fidelity": 0.996515720685083,
+          "raw_overlap_mean": 0.9999586838594,
+          "projection_frobenius_mean": 0.007889544392198616
+        }
+      },
+      "representation": {
+        "effective_rank": 14.181741714477539,
+        "min_covariance_eigenvalue": 0.4101514518260956,
+        "nuisance_latent_mse": 0.000958387681748718,
+        "variance": 0.8273914456367493
+      }
+    }
+  }
+]

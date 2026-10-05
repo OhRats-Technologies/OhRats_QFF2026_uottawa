@@ -1,0 +1,35 @@
+{
+  "output": "artifacts/quantum-world-jepa-confirmation-20261003",
+  "seeds": [
+    7511,
+    7512,
+    7513,
+    7514,
+    7515,
+    7516,
+    7517,
+    7518,
+    7519,
+    7520
+  ],
+  "steps": 4000,
+  "n_eval": 128,
+  "physical_readout": true,
+  "train_seed": 99301,
+  "probe_seed": 99401,
+  "models": [
+    "direct",
+    "gaussian",
+    "latent_generator"
+  ],
+  "anchor": 20,
+  "lr": 0.003,
+  "target_grad": "stop",
+  "invariance": [
+    0.0,
+    1.0
+  ],
+  "evaluation_seed_offset": 2000000,
+  "probe_steps": 1800,
+  "gaussian_inference": "fresh independent Gaussian source at every prediction, shared noise seeds across invariance conditions"
+}

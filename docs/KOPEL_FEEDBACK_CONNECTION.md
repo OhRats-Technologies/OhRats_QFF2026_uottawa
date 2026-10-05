@@ -1,9 +1,0 @@
-# Two Kopel papers, different models
-
-[The connectome paper](https://arxiv.org/abs/2609.33054) motivates our classical spectral/mixing analysis. [The feedback paper](https://arxiv.org/pdf/2608.13764) studies a qubit channel with stable, coherent, informative and non-entanglement-breaking behavior in certified parameter regions. Its coherent-output example can nevertheless be EB; coherent output alone is not an entanglement witness. The protocol is externally causal, not evidence of laboratory retrocausality.
-
-Our connection is methodological: distinguish channel contraction from entanglement preservation, use Choi evidence, and certify parameter neighborhoods rather than trusting a sampled grid. The feedback paper uses a different dilation and parameterization; it does not predict our fly channel's step-7 threshold. Its qubit Choi PPT test is sufficient for separability, whereas our larger model required an explicit decomposition. Its angular neighborhood widths cannot be compared directly with our dimensionless γ/count boxes.
-
-For our own E = γ Id + (1 − γ)D_P model, every off-diagonal entry of a fixed state obeys ρᵢⱼ = γρᵢⱼ. For 0 ≤ γ < 1, it must vanish. Thus our stationary state is diagonal in the population basis: this model does **not** realize the feedback paper's coherent stationary message. It can preserve input entanglement for finitely many steps before losing it.
-
-[Our EB certificate](CHANNEL_CERTIFICATES.md), [isospectral controls](ISOSPECTRAL_CONTROLS.md), [count robustness](CHANNEL_ROBUSTNESS.md) and [joint parameter boxes](CHANNEL_PARAMETER_BOXES.md) support that distinct investigation. We have read the feedback paper's construction and certification sections, but have not independently reproduced its reference-point numerical values or verified its ball-arithmetic certificate.

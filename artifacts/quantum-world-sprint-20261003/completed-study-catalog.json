@@ -1,0 +1,184 @@
+[
+  {
+    "artifact": "artifacts/quantum-world-algebra-exploration-20261003",
+    "completion": {
+      "runs": 8,
+      "finished_utc": "2026-10-03T23:56:13.529478+00:00"
+    },
+    "manifest_sha256": "ad909af359e5034e85e1ffebcf4a6dc5c23140c0eb7668aacd1f17903d36a73d",
+    "completion_sha256": "fb5fcd34cbb0729c838556157a399e08f72c522a61d196aab3ea8800b17d3185"
+  },
+  {
+    "artifact": "artifacts/quantum-world-control-confirmation-20261003",
+    "completion": {
+      "runs": 23,
+      "reproduced_seeds": 10,
+      "finished_utc": "2026-10-04T00:19:20.567133+00:00"
+    },
+    "manifest_sha256": "790ecf7f8692ca224c3813305d0f5289950feb490476b44c0a2a24af2e7867a0",
+    "completion_sha256": "c4bcd72d0661543103aadcbc934a0b075e062105eee2f2cf2fea4657cf6e8da8"
+  },
+  {
+    "artifact": "artifacts/quantum-world-control-smoke-20261003",
+    "completion": {
+      "runs": 3,
+      "finished_utc": "2026-10-03T23:51:09.598017+00:00"
+    },
+    "manifest_sha256": "53d6785b5323f2c4150bd5c199f57c1c0432aff5122a8ba4e8833238f472cdcc",
+    "completion_sha256": "73ba93184c4daf6fb2b116a52e97fa24dc37c9d2bdf37c7e5761f916e738f6b3"
+  },
+  {
+    "artifact": "artifacts/quantum-world-endpoint-confirmation-20261003",
+    "completion": {
+      "selection_sha256": "503e48f8a00f124dc5d2f2d74f028ada957167c51ab033d6193b58cc92882c99",
+      "validation_runs": 144,
+      "final_runs": 120,
+      "finished_utc": "2026-10-03T23:13:57.685025+00:00"
+    },
+    "manifest_sha256": "a44cebfad5d952844a361aca57e9b742138a2f3c0cdcc05558e24f58f9ae9acb",
+    "completion_sha256": "c7ddb77f66a1f07caface206414c53ecb73fdfa747378d5bc65cc5ff5bed84dd"
+  },
+  {
+    "artifact": "artifacts/quantum-world-endpoint-smoke-20261003",
+    "completion": {
+      "selection_sha256": "f22f82192a2c8370e83f69792b633204d8984d71443c5a0dd0b24075898658a8",
+      "validation_runs": 12,
+      "final_runs": 16,
+      "finished_utc": "2026-10-03T22:58:31.394046+00:00"
+    },
+    "manifest_sha256": "44afad1891ab0f7e90a6a03f5d12fc2a4869d480dbe8def375d464bf7ce032b9",
+    "completion_sha256": "bf9da8b08a70b897b3088356eeb4bb982e9b38e45583398ab9b98428279f2e17"
+  },
+  {
+    "artifact": "artifacts/quantum-world-jepa-confirmation-20261003",
+    "completion": {
+      "protocol_sha256": "14f2c848e16f17b214f24e8c3b711fac20dbafee0c4ab86acc614ab15d0d6f92",
+      "runs": 60,
+      "finished_utc": "2026-10-03T23:52:05.147296+00:00"
+    },
+    "manifest_sha256": "ffcc0c01732afed0653247dbea0b71b950639810c2de4424b345c529a6e85cfc",
+    "completion_sha256": "4be95d5d3a83b8a095fe4a08813faf0a85f5bdf7dde72c83d978c1f38f24a99e"
+  },
+  {
+    "artifact": "artifacts/quantum-world-jepa-physical-readout-smoke-20261003",
+    "completion": {
+      "protocol_sha256": "338ae787eb7dfc1a83994832071f3fde5606952f39175da72086a8b5d90cc0ec",
+      "runs": 4,
+      "finished_utc": "2026-10-03T23:36:38.051834+00:00"
+    },
+    "manifest_sha256": "9ab61a26626d17c952c57578238c02bbdb7e147cb64c1edc4fc1f1d125b24cc5",
+    "completion_sha256": "ba9d181164af1b441cc035e8c48df0b7700fa620009e54444f0dbfb2324dabea"
+  },
+  {
+    "artifact": "artifacts/quantum-world-measurement-confirmation-20261003",
+    "completion": {
+      "comparisons": 7200,
+      "independent_measurement_draws": 4800,
+      "seconds": 9.126762665924616,
+      "finished_utc": "2026-10-04T00:37:01.275889+00:00"
+    },
+    "manifest_sha256": "ea46484e3308de4ad4c3b5a0a469daebd651bd2a093ba616ca5fef88c96cfeda",
+    "completion_sha256": "49dfba6ec0039548820a45dad3518c99d4ec8fbcd8cad4fb363a0bc082af9783"
+  },
+  {
+    "artifact": "artifacts/quantum-world-measurement-screen-20261003",
+    "completion": {
+      "comparisons": 360,
+      "independent_measurement_draws": 240,
+      "seconds": 0.34791383298579603,
+      "finished_utc": "2026-10-04T00:30:44.078898+00:00"
+    },
+    "manifest_sha256": "d55d2e9603576eb92c523cfcee6b5e3786d82c2064d28fe259f32ea0ca64ba4d",
+    "completion_sha256": "d5eaa77c1403af31fa574599e863403831fe19be23c2189c9be5329299427232"
+  },
+  {
+    "artifact": "artifacts/quantum-world-measurement-screen-v2-20261003",
+    "completion": {
+      "comparisons": 600,
+      "independent_measurement_draws": 360,
+      "seconds": 0.7450223750201985,
+      "finished_utc": "2026-10-04T00:34:17.020851+00:00"
+    },
+    "manifest_sha256": "ac90167d25fecb38a254285ee171be871a928cd41ff6b43f722887d419282d29",
+    "completion_sha256": "c99667ac0a2907a3c27fd6ac1b9b935ca88895fb954a82476843635abe8a3452"
+  },
+  {
+    "artifact": "artifacts/quantum-world-noise-channels-20261003",
+    "completion": {
+      "runs": 36,
+      "finished_utc": "2026-10-04T00:09:56.552830+00:00"
+    },
+    "manifest_sha256": "e3574b66283e7149119d74080217950cd5ba834eb44aa1f2169364ee3288ef3e",
+    "completion_sha256": "96b75191f6f193fd4049812a17b9879a7d9920d33e98d860a51f54abf8ff9eac"
+  },
+  {
+    "artifact": "artifacts/quantum-world-noise-rate-audit-v2-20261003",
+    "completion": {
+      "runs": 6,
+      "bootstrap_fits": 1200,
+      "finished_utc": "2026-10-04T00:19:45.539069+00:00"
+    },
+    "manifest_sha256": "5330aea3fdcabca7e70abf4d56ba857aac9ef4663b0364426ec02f71cb4eb3e1",
+    "completion_sha256": "30b45bda8970f456b5d991798c27d8eeaa8f6285037ac71073b01b583a45a5f8"
+  },
+  {
+    "artifact": "artifacts/quantum-world-readout-stress-v2-20261003",
+    "completion": {
+      "comparisons": 3600,
+      "measurement_draws": 3600,
+      "independent_noise_seed_families": 1200,
+      "seconds": 6.7040201659547165,
+      "finished_utc": "2026-10-04T00:43:38.384023+00:00"
+    },
+    "manifest_sha256": "de0e5d7acc717251a131167addd65697ce6c6fff031fc682dfc2a05d2b1d0f5d",
+    "completion_sha256": "3a5cda7175b9656fe60e3b3dbc01a03303dbe9a817c763b5622e50a5a2be1f0d"
+  },
+  {
+    "artifact": "artifacts/quantum-world-sequence-confirmation-20261003",
+    "completion": {
+      "runs": 20,
+      "data_sha256": "1c07983659b79f1db52785a3acbdb023f66cd305a2491fc3610dc046bc37119b",
+      "finished_utc": "2026-10-04T01:13:13.104241+00:00"
+    },
+    "manifest_sha256": "dd86547f35cb2b8fc0ae403200217e52c703ee01af3bc127f38dc67bddcc8859",
+    "completion_sha256": "6d791c6b09ff6f27c7c0f68d978f2a3cb73adce83ba42a460164e83a3ecffc93"
+  },
+  {
+    "artifact": "artifacts/quantum-world-sequence-control-20261003",
+    "completion": {
+      "runs": 41,
+      "finished_utc": "2026-10-04T01:14:04.828347+00:00"
+    },
+    "manifest_sha256": "d685d6889e7a628917ea5bf4ab083e6ab01acd82b6ffaed47e5befb90e079f6e",
+    "completion_sha256": "3c34b5029eb84eafbd0ef0bd5809f4e1d72f0ce614fed22a0f9b37f30d85f96c"
+  },
+  {
+    "artifact": "artifacts/quantum-world-sequence-normalized-20261003",
+    "completion": {
+      "runs": 8,
+      "data_sha256": "b3a03532c0007d92f521147aa24684ced7247ee5aedeafbd35b30479472415a7",
+      "finished_utc": "2026-10-04T01:04:37.827398+00:00"
+    },
+    "manifest_sha256": "0f64b488968cc009db2d4b4bcddbce4daa2692c897e187973b7a53ddcc927559",
+    "completion_sha256": "6b7af58696194c064e35d740d3bb056e88e1d840f126823b7459e36ef2c1348c"
+  },
+  {
+    "artifact": "artifacts/quantum-world-sequence-screen-20261003",
+    "completion": {
+      "runs": 16,
+      "data_sha256": "b3a03532c0007d92f521147aa24684ced7247ee5aedeafbd35b30479472415a7",
+      "finished_utc": "2026-10-04T00:53:42.576094+00:00"
+    },
+    "manifest_sha256": "1bee640be0687dca04ff50da49b09899b873b3fa3d4ec01c5ce28ee948772a82",
+    "completion_sha256": "81448ea8f9247f0541270ea51b704bc09974f8ecbb1e6f92577a9946460a973b"
+  },
+  {
+    "artifact": "artifacts/quantum-world-transferred-linear-20261003",
+    "completion": {
+      "runs": 10,
+      "finished_utc": "2026-10-03T23:56:12.902775+00:00"
+    },
+    "manifest_sha256": "4593c9b848c8c500aaddb8bd90fb0a0b7eb59ac259d5d1c621d432e2e150f254",
+    "completion_sha256": "36868050bf2fd76019d052048debf768be3ca590a6aaa1968e9d4cba69c868fe"
+  }
+]

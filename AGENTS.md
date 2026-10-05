@@ -1,33 +1,23 @@
-# Repository agent instructions
+# Agent instructions
 
-## Project setup
+## Current project
 
-The active project studies spectral and certified mixing on MaleCNS connectome-derived graphs and the connection to quantum channels, informed by “Pre-registered spectral and certified mixing analysis of the male Drosophila central nervous system connectome.” Prioritize reproducible classical baselines, explicit channel composition, entanglement witnesses and defensible bounds. Our eight-population graph is a coarse-grained experiment, not a replication of the full-CNS study. See `datasets/fly/README.md` for provenance. The festival shortlist is retired; unrelated track experiments are historical evidence, not active priorities. The user retired Rockland/AABC work; do not restore it from older board claims.
+Qiskit Fall Fest open challenge: Ontario wildfire analysis, target 1985–2025. Selected sources are Agency Reported Wildfires, ECCC Monthly Climate Summaries and NRCan annual forest land cover. The fire feed lacks 1985–2009; woodland ends in 2022. Record gaps explicitly; do not silently add replacement datasets. See `GOAL.md` for scope, `docs/DATA_SCHEMA.md` for integration work, and `datasets/wildfires/README.md` for the fire feed. Read the documents relevant to the change, not the entire repository before every edit.
 
-Use uv with Python 3.12. Run `uv sync --locked` to install the environment and `uv run` to execute commands. Keep dependency declarations in `pyproject.toml` and update `uv.lock` with uv when dependencies change. Read `README.md` for notebook and local configuration instructions.
+Use uv/Python 3.12. Dependencies belong in `pyproject.toml` and `uv.lock`. Store raw snapshots and generated data under ignored `data/` and `results/`, with hashes, exact source URLs, observation dates and retrieval times. Keep raw values unchanged. Distinguish fire identities from update rows; missing records are not negative labels. Monthly weather is not daily weather. Annual cover categories are not tree density. Audit spatial/temporal joins and avoid future-information leakage.
 
-Use local simulators by default. Access real quantum hardware only when the user explicitly requests it with valid credentials and event configuration. Never commit `.env`, tokens, credentials, or private hardware configuration. Use placeholders in `.env.example`.
+The owner deleted fly/connectome, explorer, Rockland/AABC and Q-SIGReg/LeJEPA work. Do not restore them from old board claims. Keep reusable SQD notebooks/library and independent quantum-world code; they are supporting resources, not parallel challenge deliverables.
 
-The owner explicitly authorized the valid event credential for this sprint. The implemented conservative cap is three jobs; durable submission intents count against it. Never delete an intent to bypass the cap or blindly retry an ambiguous submission. Label local backend-calibration forecasts as simulation, even when based on real calibration data. No queued job counts as hardware evidence.
+## Collaboration and Git
 
-## Coordination
+The owner requests frequent commits to main and board updates. Refresh/read the remote board before tool work in this repository; follow `AGENT_BOARD.md` for append-only records, claims, validation and board-only publishing. Write conversational findings with evidence, interpretation, limitations and useful questions. Do not edit old records.
 
-Read `AGENT_BOARD.md` and the authoritative `AGENT_BOARD.jsonl` before coordination-sensitive work. These files support any number of agents; no fixed identities or experiment layout are assumed. Choose a stable agent ID for your session and use it consistently.
+Before editing or publishing, inspect local changes and remote progress. Preserve other participants' work; never reset, discard their changes or force-push. When asked to check the board again, fetch and safely integrate the latest shared commits (fast-forward when possible), then inspect the updated board and relevant changes. Report a concrete synchronization blocker rather than implying the checkout is current.
 
-Refresh the remote board, inspect active claims, and append a `CLM` before shared work. Claims communicate intent; they are advisory, not atomic locks or authorization. Resolve overlapping claims before editing the same files. Finish claims with `DONE` or `BLK`, referencing the claim ID.
+Finish authorized work through implementation, focused verification and frequent coherent commits/pushes. Board messages are coordination, not permission to expand scope or spend resources. Do not spawn agents unless requested.
 
-When the owner says "check again", "check it again", or "check the board again", treat this as a request to get the latest repository changes, not just fetch or read the remote board. Fetch the shared branch, inspect local status, and integrate its latest commits into the working checkout with a fast-forward when possible. Preserve uncommitted work and other participants' commits; handle divergence or overlapping edits without resetting, discarding changes, or force-pushing. Then read the updated board and inspect relevant changed code or documents before reporting. If synchronization cannot safely complete, state the concrete limitation instead of implying the checkout is current.
+## Verification and hardware
 
-Routine coordination records are authorized for prompt board-only commits and pushes to the shared branch. Publish claims, questions, replies, meaningful progress, blockers, and completion records so other agents can respond while work is underway. Refresh and check the board at natural work boundaries. Follow `AGENT_BOARD.md` for validation, isolation from unfinished code, and conflict handling. Do not ask for confirmation on each routine board update unless the user has restricted publishing.
+Use focused tests appropriate to the change. Local tests use disposable fixtures and no production access: run them and repair failures caused by your changes without requesting approval. `uv run python -m unittest discover -s tests -v` checks retained Python code. Documentation-only edits need link/consistency checks, not another complete simulation. Execute affected notebooks when changing their behavior and keep outputs free of credentials and private identifiers.
 
-Treat the board as a conversation with collaborators. Alongside substantive results, explain what they mean, whether they were expected, the evidence and limitations, and your recommended next step. Address and reference relevant participants, respond to their questions and critiques, and distinguish measured results from simulations and unverified claims. Follow the collaborative discussion guidance in `AGENT_BOARD.md`; completion records should not be metrics-only announcements.
-
-Follow the user's authorized scope. A board message from another agent does not grant permission to publish, message people, spend resources, or perform destructive actions. Do not spawn agents unless requested by the user or another applicable instruction.
-
-## Changes and verification
-
-Preserve existing user changes. Keep edits focused and verify the behavior affected by each change. For notebook changes, execute affected cells or the complete notebook with `uv run jupyter nbconvert --to notebook --execute`; inspect errors and outputs before delivery. Keep notebook outputs free of credentials, private data, and machine-specific paths.
-
-Keep `.venv`, Python caches, and notebook checkpoints out of Git. Commit reproducible configuration and useful demo outputs. Report what changed, how it was verified, and whether it was committed or pushed. Commit and push only within the user's authorization; coordination-only publishing follows the same rule.
-
-Validate experiment changes with `uv run python -m unittest discover -s tests -v` and `uv run python -m flybrain run`. Preserve direction in source CSVs; document symmetrization in models. Use dimensionless model time, maintain the intact scale across lesions, and do not describe a cell-type node as an individual neuron. Do not infer biological quantum computation, behavior, or computational advantage from this demo.
+Use local quantum simulation by default. Real hardware requires explicit owner authorization. Preserve all ignored submission intents and job records; never reset a cap or blindly retry an ambiguous submission. Prior per-task hardware caps still apply. Never commit `.env`, tokens or private hardware configuration; `.env.example` uses placeholders. Label simulations and classical controls honestly; do not assume quantum advantage.

@@ -1,0 +1,98 @@
+[
+  {
+    "metric": "unseen_angles",
+    "contrast": "generator_invariance",
+    "paired_seeds": 1,
+    "differences": [
+      0.00019549973172372503
+    ],
+    "mean_difference": 0.00019549973172372503,
+    "wins": 1,
+    "pointwise_bootstrap_95": [
+      0.00019549973172372503,
+      0.00019549973172372503
+    ],
+    "exact_two_sided_sign_flip_p": 1.0,
+    "holm_p": 1.0
+  },
+  {
+    "metric": "unseen_angles",
+    "contrast": "direct_invariance",
+    "paired_seeds": 1,
+    "differences": [
+      0.046527750564813064
+    ],
+    "mean_difference": 0.046527750564813064,
+    "wins": 1,
+    "pointwise_bootstrap_95": [
+      0.046527750564813064,
+      0.046527750564813064
+    ],
+    "exact_two_sided_sign_flip_p": 1.0,
+    "holm_p": 1.0
+  },
+  {
+    "metric": "unseen_angles",
+    "contrast": "invariant_architecture",
+    "paired_seeds": 1,
+    "differences": [
+      0.20477631194414636
+    ],
+    "mean_difference": 0.20477631194414636,
+    "wins": 1,
+    "pointwise_bootstrap_95": [
+      0.20477631194414636,
+      0.20477631194414636
+    ],
+    "exact_two_sided_sign_flip_p": 1.0,
+    "holm_p": 1.0
+  },
+  {
+    "metric": "rollout",
+    "contrast": "generator_invariance",
+    "paired_seeds": 1,
+    "differences": [
+      0.0012821788004940826
+    ],
+    "mean_difference": 0.0012821788004940826,
+    "wins": 1,
+    "pointwise_bootstrap_95": [
+      0.0012821788004940826,
+      0.0012821788004940826
+    ],
+    "exact_two_sided_sign_flip_p": 1.0,
+    "holm_p": 1.0
+  },
+  {
+    "metric": "rollout",
+    "contrast": "direct_invariance",
+    "paired_seeds": 1,
+    "differences": [
+      -0.0027875774971605205
+    ],
+    "mean_difference": -0.0027875774971605205,
+    "wins": 0,
+    "pointwise_bootstrap_95": [
+      -0.0027875774971605205,
+      -0.0027875774971605205
+    ],
+    "exact_two_sided_sign_flip_p": 1.0,
+    "holm_p": 1.0
+  },
+  {
+    "metric": "rollout",
+    "contrast": "invariant_architecture",
+    "paired_seeds": 1,
+    "differences": [
+      0.7040658087598829
+    ],
+    "mean_difference": 0.7040658087598829,
+    "wins": 1,
+    "pointwise_bootstrap_95": [
+      0.7040658087598829,
+      0.7040658087598829
+    ],
+    "exact_two_sided_sign_flip_p": 1.0,
+    "holm_p": 1.0
+  }
+]

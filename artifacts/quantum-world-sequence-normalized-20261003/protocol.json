@@ -1,0 +1,29 @@
+{
+  "output": "artifacts/quantum-world-sequence-normalized-20261003",
+  "seeds": [
+    7711,
+    7712,
+    7713,
+    7714
+  ],
+  "steps": 4000,
+  "models": [
+    "latent_generator"
+  ],
+  "train_seed": 114001,
+  "probe_seed": 115001,
+  "stage": "exploration",
+  "normalize_prediction": true,
+  "triplets": 4096,
+  "consistency_weights": [
+    0.0,
+    1.0
+  ],
+  "batch": 64,
+  "anchor": 20.0,
+  "agreement": 1.0,
+  "lr": 0.003,
+  "probe_steps": 1800,
+  "n_eval": 128,
+  "scope": "same observed state/action triplets; short rollout adds compute, not labels; no novelty or tuned global architecture claim"
+}

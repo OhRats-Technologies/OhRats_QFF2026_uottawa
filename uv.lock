@@ -391,6 +391,27 @@ wheels = [
 ]
 
 [[package]]
+name = "ffsim"
+version = "0.0.83"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jax" },
+    { name = "numpy" },
+    { name = "opt-einsum" },
+    { name = "orjson" },
+    { name = "pyscf" },
+    { name = "qiskit" },
+    { name = "scipy" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9d/d9/363443b96df5fc835a9c2a583ad4b66ec1853c96832cb81b1f54e203db1d/ffsim-0.0.83.tar.gz", hash = "sha256:4cf90a91acecd38ebd0c090d5fa60b43116e8261a081692b1c7f05661d5babd2", size = 1826587, upload-time = "2026-07-18T15:47:02.296Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c2/6a/e188940e4f514c915c85a9e208762d3fd72efbca4c59db62ec9f6f60a442/ffsim-0.0.83-cp311-abi3-macosx_11_0_arm64.whl", hash = "sha256:dec0c81374cfb0ea1cefbf9cf170351488b663d6deef338aff16ee125e2333c9", size = 678246, upload-time = "2026-07-18T15:46:56.58Z" },
+    { url = "https://files.pythonhosted.org/packages/59/d7/6487de8173e1d1212f28a97ea8929291deee260f470609100c5d1f2f74e8/ffsim-0.0.83-cp311-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:0e44a3b87097fa00b82cc5509b55a1fd70b59e4c12e7472282984d1bd250a0a4", size = 736007, upload-time = "2026-07-18T15:46:58.534Z" },
+    { url = "https://files.pythonhosted.org/packages/85/14/6b9291d44e37590b626f8f5ce40d9fa0ffa20bbf573d6bd304bfa2bed677/ffsim-0.0.83-cp311-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:3758e6ad17288a0cb9dd70e6bf50b3ee9f100fb24c15450448e836a48a5e98d1", size = 742792, upload-time = "2026-07-18T15:47:00.428Z" },
+]
+
+[[package]]
 name = "filelock"
 version = "4.0.9"
 source = { registry = "https://pypi.org/simple" }
@@ -609,6 +630,38 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/7c/1a/3c8edc664e06e6bd06cce40c6b22da5f1429aa4224d0c590f3be21c91ead/isoduration-20.11.0.tar.gz", hash = "sha256:ac2f9015137935279eac671f94f89eb00584f940f5dc49462a0c4ee692ba1bd9", size = 11649, upload-time = "2020-11-01T11:00:00.312Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7b/55/e5326141505c5d5e34c5e0935d2908a74e4561eca44108fbfb9c13d2911a/isoduration-20.11.0-py3-none-any.whl", hash = "sha256:b2904c2a4228c3d44f409c8ae8e2370eb21a26f7ac2ec5446df141dde3452042", size = 11321, upload-time = "2020-11-01T10:59:58.02Z" },
+]
+
+[[package]]
+name = "jax"
+version = "0.11.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jaxlib" },
+    { name = "ml-dtypes" },
+    { name = "numpy" },
+    { name = "opt-einsum" },
+    { name = "scipy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/96/c3/cbb70e5e0846891b45c9b02b0755235618043cd2a8edd1f5bfe24b077cf4/jax-0.11.2.tar.gz", hash = "sha256:540dc0bed96bd5a0d8acca15cf16198fea98ef2fc151d40bdf1ace49eb76efd9", size = 2904036, upload-time = "2026-09-17T23:43:35.896Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ca/87/0c0ca8433e1135f6d1acd355cff21f31c3d433d937d6547aa545c8b060b8/jax-0.11.2-py3-none-any.whl", hash = "sha256:59e7ed9bd9ace049f4856752fe580c890e0164e1c023f40fadac386408daad66", size = 3345045, upload-time = "2026-09-17T23:41:14.517Z" },
+]
+
+[[package]]
+name = "jaxlib"
+version = "0.11.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "ml-dtypes" },
+    { name = "numpy" },
+    { name = "scipy" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3f/af/56ca13ef7a98137b087ef0c24dd5ace3163895f0164670babaa7dfcb69e6/jaxlib-0.11.2-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:eca80e745b7623369a76b5f685676ec233a33a55d69f60fa7e57cbefcfd47adc", size = 64867740, upload-time = "2026-09-17T23:42:19.368Z" },
+    { url = "https://files.pythonhosted.org/packages/69/72/318270378f5ff554ee921944bd97f59c0d6b35a8397cd35771dfdce1f445/jaxlib-0.11.2-cp312-cp312-manylinux_2_27_aarch64.whl", hash = "sha256:d497004e80daa91b98258d645b374e8dff480bf017d2c5f3e30b1371ac8f54b1", size = 84659774, upload-time = "2026-09-17T23:42:22.846Z" },
+    { url = "https://files.pythonhosted.org/packages/51/d2/07c3ea737d65b328b00377462e0e5dc8993a8a88d2a8a89e1c42038a4e53/jaxlib-0.11.2-cp312-cp312-manylinux_2_27_x86_64.whl", hash = "sha256:6338a1f0956f60d02529404ac33a8070015a52635cdb6bbb15d0d199757077bb", size = 89896206, upload-time = "2026-09-17T23:42:26.851Z" },
+    { url = "https://files.pythonhosted.org/packages/74/f7/8f6f7c55b80ca45e2225c78f4f44dbda8e5f420f933a5896e21045c3fb41/jaxlib-0.11.2-cp312-cp312-win_amd64.whl", hash = "sha256:53217a47d14eedd8fb5101f16aab1dfd58067835b4fb11910b50306218c7e620", size = 73563902, upload-time = "2026-09-17T23:42:30.216Z" },
 ]
 
 [[package]]
@@ -978,6 +1031,22 @@ wheels = [
 ]
 
 [[package]]
+name = "ml-dtypes"
+version = "0.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/12/72/307d7c4bd0600601c7133fba5cb78af7db968152951c1cd473abb1cda782/ml_dtypes-0.6.0.tar.gz", hash = "sha256:5e60251d32ced5598972e4d5e06a2f044341f9291402551a3f6f0ec44f9299b0", size = 3032327, upload-time = "2026-08-13T14:14:40.215Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/84/6a/441eb053b078954f7fea284dfb288701884d0a1404d39babb858e1649023/ml_dtypes-0.6.0-cp312-cp312-macosx_10_13_universal2.whl", hash = "sha256:5359c588cc62de6f78d7430f06b65853d884955494d86d6ad90b6dd64a3f3a08", size = 565447, upload-time = "2026-08-13T14:14:01.737Z" },
+    { url = "https://files.pythonhosted.org/packages/ed/cf/87e8a6c57eed63a91782a0d229856ddf73e138ce004dd71e2799a9dcdb33/ml_dtypes-0.6.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:37da32aa97749251025666d62372775019594577b9c9e9cfda83bed48d778fdb", size = 360227, upload-time = "2026-08-13T14:14:02.938Z" },
+    { url = "https://files.pythonhosted.org/packages/c7/f9/7d76c1eae866f5d4636401b31b6d6dd90e4b4ced1fa7cfdfcca9c60e4bd3/ml_dtypes-0.6.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:3b4a480aa8fd54a1805b8ac10f3f91763926a74f73c0c364c10f9231854f4170", size = 409890, upload-time = "2026-08-13T14:14:04.248Z" },
+    { url = "https://files.pythonhosted.org/packages/ba/db/9c61ec2760b5cbfb1c6558d5c991a6d8fd3271053c32db20506a9a90272b/ml_dtypes-0.6.0-cp312-cp312-win_amd64.whl", hash = "sha256:2a3e9d53925597fbffafd2a37048dadeddd0bdaba58058f6ae0869ed709a184d", size = 439333, upload-time = "2026-08-13T14:14:05.501Z" },
+    { url = "https://files.pythonhosted.org/packages/6a/57/780ca3e5ab135b9fbdd8e5441abf5f801b30398371b691291e05ab9834c0/ml_dtypes-0.6.0-cp312-cp312-win_arm64.whl", hash = "sha256:6eaed129a4afe90694b8685e2f9b6294849f5eda4af9a15be83a4326eeebd775", size = 552268, upload-time = "2026-08-13T14:14:06.866Z" },
+]
+
+[[package]]
 name = "mpmath"
 version = "1.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1104,6 +1173,7 @@ name = "ohrats-qff2026-uottawa"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "ffsim" },
     { name = "ipykernel" },
     { name = "jupyterlab" },
     { name = "matplotlib" },
@@ -1112,9 +1182,9 @@ dependencies = [
     { name = "pyscf" },
     { name = "python-dotenv" },
     { name = "qiskit", extra = ["visualization"] },
+    { name = "qiskit-addon-sqd" },
     { name = "qiskit-aer" },
     { name = "qiskit-ibm-runtime" },
-    { name = "qiskit-machine-learning" },
     { name = "qiskit-nature" },
     { name = "scikit-learn" },
     { name = "scipy" },
@@ -1124,6 +1194,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "ffsim", specifier = "==0.0.83" },
     { name = "ipykernel" },
     { name = "jupyterlab" },
     { name = "matplotlib", specifier = "==3.11.2" },
@@ -1132,9 +1203,9 @@ requires-dist = [
     { name = "pyscf", specifier = ">=2.11,<3" },
     { name = "python-dotenv", specifier = ">=1.2.4" },
     { name = "qiskit", extras = ["visualization"], specifier = "==2.5.2" },
+    { name = "qiskit-addon-sqd", specifier = "==0.13.1" },
     { name = "qiskit-aer", specifier = "==0.17.2" },
     { name = "qiskit-ibm-runtime", specifier = "==0.50.0" },
-    { name = "qiskit-machine-learning", specifier = "==0.9.1" },
     { name = "qiskit-nature", specifier = ">=0.8,<0.9" },
     { name = "scikit-learn", specifier = "==1.9.1" },
     { name = "scipy", specifier = "==1.18.1" },
@@ -1153,6 +1224,15 @@ wheels = [
 [package.optional-dependencies]
 parser = [
     { name = "antlr4-python3-runtime" },
+]
+
+[[package]]
+name = "opt-einsum"
+version = "3.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/8c/b9/2ac072041e899a52f20cf9510850ff58295003aa75525e58343591b0cbfb/opt_einsum-3.4.0.tar.gz", hash = "sha256:96ca72f1b886d148241348783498194c577fa30a8faac108586b14f1ba4473ac", size = 63004, upload-time = "2024-09-26T14:33:24.483Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/23/cd/066e86230ae37ed0be70aae89aabf03ca8d9f39c8aea0dec8029455b5540/opt_einsum-3.4.0-py3-none-any.whl", hash = "sha256:69bb92469f86a1565195ece4ac0323943e83477171b91d24c35afe028a90d7cd", size = 71932, upload-time = "2024-09-26T14:33:23.039Z" },
 ]
 
 [[package]]
@@ -1228,7 +1308,7 @@ name = "pexpect"
 version = "4.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "ptyprocess" },
+    { name = "ptyprocess", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/42/92/cc564bf6381ff43ce1f4d06852fc19a2f11d180f23dc32d9588bee2f149d/pexpect-4.9.0.tar.gz", hash = "sha256:ee7d41123f3c9911050ea2c2dac107568dc43b2d3b0c7557a33212c398ead30f", size = 166450, upload-time = "2023-11-25T09:07:26.339Z" }
 wheels = [
@@ -1596,6 +1676,23 @@ visualization = [
 ]
 
 [[package]]
+name = "qiskit-addon-sqd"
+version = "0.13.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jax" },
+    { name = "jaxlib" },
+    { name = "numpy" },
+    { name = "pyscf", marker = "sys_platform != 'win32'" },
+    { name = "qiskit" },
+    { name = "scipy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8b/f1/231d99b4ea3627ecc1e6f8a797847072df041b7dcabc8f91b1e677bd6285/qiskit_addon_sqd-0.13.1.tar.gz", hash = "sha256:6b275b0d1d3fd72c1b5496872c8217f2597898c34268d1f764e38be0a31eca77", size = 468372, upload-time = "2026-08-12T18:03:47.334Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/de/89/45481ff89e8df362cd86956958b6f06d1ae11eabe34ec2d525148f17bb01/qiskit_addon_sqd-0.13.1-py3-none-any.whl", hash = "sha256:67ba6d23f7688e223c5d3bfc31d3f9f6ccd6e997ec71055a6b5aeb2cc0c28276", size = 36826, upload-time = "2026-08-12T18:03:45.545Z" },
+]
+
+[[package]]
 name = "qiskit-aer"
 version = "0.17.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1654,23 +1751,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/fd/06/bc058998ce6da8734bf53c1b9a0f008388f2826c99f93b293a13ed7614a7/qiskit_ibm_runtime-0.50.0.tar.gz", hash = "sha256:50725dcc5a556ecd2e824a678e2aa66efca9f609836e458c51dc66c5728b2aa6", size = 3752709, upload-time = "2026-09-24T18:24:37.866Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7a/73/a30759b3b57d71fa25eb62364de40fa56c53f3f958f9a027b107842916cc/qiskit_ibm_runtime-0.50.0-py3-none-any.whl", hash = "sha256:d49e0ede6d0500587b9afce25c83195c9ba4b588c337a690650e133198d8f42d", size = 1979761, upload-time = "2026-09-24T18:24:35.891Z" },
-]
-
-[[package]]
-name = "qiskit-machine-learning"
-version = "0.9.1"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "dill" },
-    { name = "numpy" },
-    { name = "qiskit" },
-    { name = "scikit-learn" },
-    { name = "scipy" },
-    { name = "setuptools" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/86/4f/a3907509fdbaf2d6089238dbba2167757b0213f950e4f98df33ad8558c3f/qiskit_machine_learning-0.9.1.tar.gz", hash = "sha256:42d74f1a324457994fbb52d7de15f50e35cf04e0e77e1e21958f6b75a4cda360", size = 259270, upload-time = "2026-08-19T20:14:19.998Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/85/a9/fea244c0b368640066280d23e7f17549a843f2e0ea5f72b796901f69d2e2/qiskit_machine_learning-0.9.1-py3-none-any.whl", hash = "sha256:f2c92544d2c40b82825292819c58ae97c4a577c5778f8b2af59415b975e13c23", size = 282269, upload-time = "2026-08-19T20:14:18.693Z" },
 ]
 
 [[package]]
@@ -2038,13 +2118,13 @@ resolution-markers = [
     "sys_platform == 'darwin'",
 ]
 dependencies = [
-    { name = "filelock" },
-    { name = "fsspec" },
-    { name = "jinja2" },
-    { name = "networkx" },
-    { name = "setuptools" },
-    { name = "sympy" },
-    { name = "typing-extensions" },
+    { name = "filelock", marker = "sys_platform == 'darwin'" },
+    { name = "fsspec", marker = "sys_platform == 'darwin'" },
+    { name = "jinja2", marker = "sys_platform == 'darwin'" },
+    { name = "networkx", marker = "sys_platform == 'darwin'" },
+    { name = "setuptools", marker = "sys_platform == 'darwin'" },
+    { name = "sympy", marker = "sys_platform == 'darwin'" },
+    { name = "typing-extensions", marker = "sys_platform == 'darwin'" },
 ]
 wheels = [
     { url = "https://download-r2.pytorch.org/whl/cpu/torch-2.14.1-cp312-cp312-macosx_14_0_arm64.whl", hash = "sha256:9cf3082d25560efb1eef921871595227c0cf305abb7761ca45b6b988ef6cdd45", upload-time = "2026-09-30T19:50:32Z" },
@@ -2060,13 +2140,13 @@ resolution-markers = [
     "sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
 dependencies = [
-    { name = "filelock" },
-    { name = "fsspec" },
-    { name = "jinja2" },
-    { name = "networkx" },
-    { name = "setuptools" },
-    { name = "sympy" },
-    { name = "typing-extensions" },
+    { name = "filelock", marker = "sys_platform != 'darwin'" },
+    { name = "fsspec", marker = "sys_platform != 'darwin'" },
+    { name = "jinja2", marker = "sys_platform != 'darwin'" },
+    { name = "networkx", marker = "sys_platform != 'darwin'" },
+    { name = "setuptools", marker = "sys_platform != 'darwin'" },
+    { name = "sympy", marker = "sys_platform != 'darwin'" },
+    { name = "typing-extensions", marker = "sys_platform != 'darwin'" },
 ]
 wheels = [
     { url = "https://download-r2.pytorch.org/whl/cpu/torch-2.14.1%2Bcpu-cp312-cp312-linux_s390x.whl", hash = "sha256:6b06a7f6275c5fdecaf1dbf5546f0820b024a97785575bb99e3d9930d83cd86b", upload-time = "2026-09-30T19:47:30Z" },

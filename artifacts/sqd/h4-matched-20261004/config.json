@@ -1,0 +1,21 @@
+{
+  "atoms": 4,
+  "distance_angstrom": 1.5,
+  "theta": 0.2,
+  "readout_error": 0.08,
+  "shots": [
+    16,
+    64,
+    256
+  ],
+  "seeds": [
+    1301,
+    1302,
+    1303,
+    1304,
+    1305
+  ],
+  "samples_per_batch": 32,
+  "recovery_iterations": 4,
+  "max_spin_strings": 4
+}

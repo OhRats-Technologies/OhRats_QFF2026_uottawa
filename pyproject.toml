@@ -1,13 +1,12 @@
 [project]
 name = "ohrats-qff2026-uottawa"
 version = "0.1.0"
-description = "FlyWalk: classical and quantum walks on a male fruit-fly connectome"
+description = "Ontario wildfire open challenge with reusable Qiskit and SQD resources"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "qiskit[visualization]==2.5.2",
     "qiskit-aer==0.17.2",
-    "qiskit-machine-learning==0.9.1",
     "qiskit-ibm-runtime==0.50.0",
     "scipy==1.18.1",
     "scikit-learn==1.9.1",
@@ -20,6 +19,8 @@ dependencies = [
     "pyscf>=2.11,<3",
     "python-dotenv>=1.2.4",
     "torch>=2.14.1",
+    "qiskit-addon-sqd==0.13.1",
+    "ffsim==0.0.83",
 ]
 
 [tool.uv]

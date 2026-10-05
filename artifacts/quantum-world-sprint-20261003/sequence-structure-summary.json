@@ -1,0 +1,20 @@
+{
+  "0.0": {
+    "h_involution_latent_mse": 0.0004328026201696524,
+    "cx_involution_latent_mse": 0.00041338003802351265,
+    "rz_inverse_latent_mse": 3.6371647529712366e-31,
+    "rz_composition_latent_mse": 1.894412781295187e-30,
+    "independent_commutation_latent_mse": 0.0004773126904899002,
+    "bell_fidelity": 0.9919739564268075,
+    "bell_negativity": 0.49475464071363656
+  },
+  "1.0": {
+    "h_involution_latent_mse": 0.0006337453754061105,
+    "cx_involution_latent_mse": 0.0011858708797651426,
+    "rz_inverse_latent_mse": 4.451879300780419e-31,
+    "rz_composition_latent_mse": 2.368136664458296e-30,
+    "independent_commutation_latent_mse": 0.0032250735697584147,
+    "bell_fidelity": 0.9713230799892706,
+    "bell_negativity": 0.48730317789262356
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-04T00:15:21.958028+00:00",
+  "protocol_sha256": "d387fd20cc2623423392148bff71f8abb4bf8e6038835917a7b333350330bc65",
+  "prior_results_sha256": "fe46fc8286a929ef0cd9c117af9e94041c05b87e0521bc831168e05210952036",
+  "sources": {
+    "/Users/fern/Projects/OhRats-Technologies/OhRats_QFF2026_uottawa/scripts/quantum_world_control_confirm.py": "5bd80a9211650a802b2cd506f4cde2269f2981e6d4b86d6ee01a32f47d782caf",
+    "quantum_world/jepa.py": "8f03139bc9ed1fcff0c534fa285cbd7d393cc7b27d957c3b80f577c9750f8461",
+    "quantum_world/control.py": "37844e7edbd5967d6f690c261c08c24203f50be1224bcc62f577365fe5660dc7",
+    "quantum_world/latent_linear.py": "9c8158ef8323ca2b669107c16b3d2d477db42d5b50060d64fc5c4f0a6186ea43",
+    "quantum_world/readout.py": "c0bff5d8e74777a067e38f437e8e639f8426d1990caaf8d583982666a7daf488"
+  }
+}

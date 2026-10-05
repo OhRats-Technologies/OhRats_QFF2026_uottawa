@@ -1,0 +1,28 @@
+{
+  "replicates": 200,
+  "budgets": [
+    16384,
+    65536,
+    262144
+  ],
+  "probe_time": 0.8,
+  "step": 0.5,
+  "scenarios": [
+    {
+      "name": "ideal",
+      "rate": 1.1,
+      "readout_error": 0.0
+    },
+    {
+      "name": "misspecified",
+      "rate": 1.05,
+      "readout_error": 0.01
+    }
+  ],
+  "noise_seed": 211101,
+  "calibration_fraction": 0.25,
+  "inference": "blind exact binomial; blind plus Pearson nonreturn guard; propagated exact calibrated interval",
+  "resource": "same total shots; calibrated policy reserves one quarter for independent |00> reference readout",
+  "scope": "fixed model-assumption stress scenarios, not empirical hardware noise or arbitrary-channel certification",
+  "cross_budget": "common seed streams; independently sampled replicates within each scenario/budget, no pooled independent sample claim"
+}

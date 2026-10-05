@@ -1,0 +1,853 @@
+[
+  {
+    "seed": 1201,
+    "shots": 8,
+    "method": "postselected_qsci",
+    "accepted_shots": 7,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1201,
+    "shots": 8,
+    "method": "uniform_sector",
+    "accepted_shots": 8,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1201,
+    "shots": 8,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 1,
+    "energy": -0.34368435558011623,
+    "dimension": 1,
+    "indices": [
+      9
+    ],
+    "error_hartree": 0.7936216801732842
+  },
+  {
+    "seed": 1201,
+    "shots": 8,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1201,
+    "shots": 32,
+    "method": "postselected_qsci",
+    "accepted_shots": 23,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1201,
+    "shots": 32,
+    "method": "uniform_sector",
+    "accepted_shots": 32,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1201,
+    "shots": 32,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 3,
+    "energy": -1.1169989967540048,
+    "dimension": 3,
+    "indices": [
+      5,
+      6,
+      9
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1201,
+    "shots": 32,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1201,
+    "shots": 128,
+    "method": "postselected_qsci",
+    "accepted_shots": 95,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1201,
+    "shots": 128,
+    "method": "uniform_sector",
+    "accepted_shots": 128,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1201,
+    "shots": 128,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 3,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      6,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1201,
+    "shots": 128,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1201,
+    "shots": 128,
+    "method": "self_consistent_sqd",
+    "energy": -1.1373060357534004,
+    "dimension": 4,
+    "error_hartree": 0.0,
+    "accepted_shots": 95
+  },
+  {
+    "seed": 1202,
+    "shots": 8,
+    "method": "postselected_qsci",
+    "accepted_shots": 6,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1202,
+    "shots": 8,
+    "method": "uniform_sector",
+    "accepted_shots": 8,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      6,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1202,
+    "shots": 8,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1202,
+    "shots": 8,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1202,
+    "shots": 32,
+    "method": "postselected_qsci",
+    "accepted_shots": 26,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1202,
+    "shots": 32,
+    "method": "uniform_sector",
+    "accepted_shots": 32,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1202,
+    "shots": 32,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 3,
+    "energy": -0.5246155553643485,
+    "dimension": 3,
+    "indices": [
+      6,
+      9,
+      10
+    ],
+    "error_hartree": 0.6126904803890519
+  },
+  {
+    "seed": 1202,
+    "shots": 32,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1202,
+    "shots": 128,
+    "method": "postselected_qsci",
+    "accepted_shots": 95,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1202,
+    "shots": 128,
+    "method": "uniform_sector",
+    "accepted_shots": 128,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1202,
+    "shots": 128,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 3,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1202,
+    "shots": 128,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1202,
+    "shots": 128,
+    "method": "self_consistent_sqd",
+    "energy": -1.1373060357534004,
+    "dimension": 4,
+    "error_hartree": 0.0,
+    "accepted_shots": 95
+  },
+  {
+    "seed": 1203,
+    "shots": 8,
+    "method": "postselected_qsci",
+    "accepted_shots": 8,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1203,
+    "shots": 8,
+    "method": "uniform_sector",
+    "accepted_shots": 8,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1203,
+    "shots": 8,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 1,
+    "energy": -0.3436843555801167,
+    "dimension": 1,
+    "indices": [
+      6
+    ],
+    "error_hartree": 0.7936216801732837
+  },
+  {
+    "seed": 1203,
+    "shots": 8,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1203,
+    "shots": 32,
+    "method": "postselected_qsci",
+    "accepted_shots": 30,
+    "energy": -1.1373060357534008,
+    "dimension": 2,
+    "indices": [
+      5,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1203,
+    "shots": 32,
+    "method": "uniform_sector",
+    "accepted_shots": 32,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1203,
+    "shots": 32,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 2,
+    "energy": -1.1169989967540048,
+    "dimension": 2,
+    "indices": [
+      5,
+      9
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1203,
+    "shots": 32,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1203,
+    "shots": 128,
+    "method": "postselected_qsci",
+    "accepted_shots": 100,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      6,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1203,
+    "shots": 128,
+    "method": "uniform_sector",
+    "accepted_shots": 128,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1203,
+    "shots": 128,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 3,
+    "energy": -1.1169989967540048,
+    "dimension": 3,
+    "indices": [
+      5,
+      6,
+      9
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1203,
+    "shots": 128,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1203,
+    "shots": 128,
+    "method": "self_consistent_sqd",
+    "energy": -1.1373060357534004,
+    "dimension": 4,
+    "error_hartree": 0.0,
+    "accepted_shots": 100
+  },
+  {
+    "seed": 1204,
+    "shots": 8,
+    "method": "postselected_qsci",
+    "accepted_shots": 4,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1204,
+    "shots": 8,
+    "method": "uniform_sector",
+    "accepted_shots": 8,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1204,
+    "shots": 8,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 1,
+    "energy": -0.34368435558011623,
+    "dimension": 1,
+    "indices": [
+      9
+    ],
+    "error_hartree": 0.7936216801732842
+  },
+  {
+    "seed": 1204,
+    "shots": 8,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1204,
+    "shots": 32,
+    "method": "postselected_qsci",
+    "accepted_shots": 20,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1204,
+    "shots": 32,
+    "method": "uniform_sector",
+    "accepted_shots": 32,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1204,
+    "shots": 32,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 3,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1204,
+    "shots": 32,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1204,
+    "shots": 128,
+    "method": "postselected_qsci",
+    "accepted_shots": 91,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1204,
+    "shots": 128,
+    "method": "uniform_sector",
+    "accepted_shots": 128,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1204,
+    "shots": 128,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 4,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1204,
+    "shots": 128,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1204,
+    "shots": 128,
+    "method": "self_consistent_sqd",
+    "energy": -1.1373060357534004,
+    "dimension": 4,
+    "error_hartree": 0.0,
+    "accepted_shots": 91
+  },
+  {
+    "seed": 1205,
+    "shots": 8,
+    "method": "postselected_qsci",
+    "accepted_shots": 6,
+    "energy": -1.1169989967540048,
+    "dimension": 2,
+    "indices": [
+      5,
+      9
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1205,
+    "shots": 8,
+    "method": "uniform_sector",
+    "accepted_shots": 8,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1205,
+    "shots": 8,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 2,
+    "energy": -1.1373060357534008,
+    "dimension": 2,
+    "indices": [
+      5,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1205,
+    "shots": 8,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1205,
+    "shots": 32,
+    "method": "postselected_qsci",
+    "accepted_shots": 26,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1205,
+    "shots": 32,
+    "method": "uniform_sector",
+    "accepted_shots": 32,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1205,
+    "shots": 32,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 3,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      6,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1205,
+    "shots": 32,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1205,
+    "shots": 128,
+    "method": "postselected_qsci",
+    "accepted_shots": 96,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1205,
+    "shots": 128,
+    "method": "uniform_sector",
+    "accepted_shots": 128,
+    "energy": -1.1373060357534008,
+    "dimension": 4,
+    "indices": [
+      5,
+      6,
+      9,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1205,
+    "shots": 128,
+    "method": "uniform_dimension_matched",
+    "accepted_shots": 3,
+    "energy": -1.1373060357534008,
+    "dimension": 3,
+    "indices": [
+      5,
+      6,
+      10
+    ],
+    "error_hartree": -4.440892098500626e-16
+  },
+  {
+    "seed": 1205,
+    "shots": 128,
+    "method": "hartree_fock",
+    "accepted_shots": 1,
+    "energy": -1.1169989967540048,
+    "dimension": 1,
+    "indices": [
+      5
+    ],
+    "error_hartree": 0.020307038999395566
+  },
+  {
+    "seed": 1205,
+    "shots": 128,
+    "method": "self_consistent_sqd",
+    "energy": -1.1373060357534004,
+    "dimension": 4,
+    "error_hartree": 0.0,
+    "accepted_shots": 96
+  }
+]
