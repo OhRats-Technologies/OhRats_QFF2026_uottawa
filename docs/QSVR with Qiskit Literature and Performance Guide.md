@@ -232,6 +232,8 @@ For a new regression problem, begin with standardized inputs, standardized targe
 
 The strongest current evidence supports QSVR as a useful experimental kernel-learning framework for small, structured datasets—not as a default replacement for classical SVR. The models perform best when the quantum feature map supplies a task-specific inductive bias that cannot be obtained simply by making the circuit more expressive.[^2][^11]
 
+For a detailed analysis of hardware noise channels, Sampler error suppression (DD, twirling), classical Gram matrix repair (PSD, low-rank, Higham), and why QSVR is not a real-time QEC decoder, see [Deep Technical Study: QSVR, Quantum-Device Errors, and Qiskit/IBM Quantum](QSVR_QEC_ERROR_STUDY.md).
+
 ---
 
 ## References
