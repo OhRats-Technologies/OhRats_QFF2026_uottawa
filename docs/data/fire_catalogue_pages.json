@@ -1,0 +1,744 @@
+{
+  "query": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire",
+  "observed_utc": "2026-10-06T04:17:28.622957+00:00",
+  "method": "Read all result cards in browser pages 1\u201346; GUID prefixes uniquely reconciled to official search export. Structured details acquired separately from CKAN package_show.",
+  "export_sha256": "9316489cde395b7f1d23fae5163e5f4f0f114599af42a041e4ff334a3710339d",
+  "record_count": 455,
+  "page_count": 46,
+  "unique_ids": 455,
+  "missing_ids": [],
+  "extra_ids": [],
+  "pages": [
+    {
+      "page": 1,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=1",
+      "ids": [
+        "ac108ef2-0095-d5fb-5ce0-e45b214d61c0",
+        "15eea1c7-fd7a-1369-fed0-9aeda1ddfcab",
+        "c69e78c6-e454-4bd9-9778-e4b0eaf8105b",
+        "56b92582-1317-4648-ba82-2cd564768998",
+        "347a2de5-1006-4c1f-ba09-b66947654d0a",
+        "b5531add-22f6-08e8-259f-1ab76ee56e40",
+        "01c1866d-ce44-4f4f-a954-947c79e65811",
+        "cb4de65e-138b-4936-9d5c-2d9a0bc9b4ce",
+        "1728e7f9-472a-474e-9e04-f96bf59479f9",
+        "49af1f40-6a69-494f-8fa3-b84b532a7dd6"
+      ]
+    },
+    {
+      "page": 2,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=2",
+      "ids": [
+        "adfa340a-1781-48b1-ab17-2e1ca1b915df",
+        "baad3bb6-5879-4e34-a4a6-a43212706cb7",
+        "584de76b-13b9-47ea-af12-0c37b8eb5de5",
+        "31a13f95-e506-43ff-9e4b-219d900409ae",
+        "f3e2f105-c464-4d95-89a8-6f851a5c4f7f",
+        "9d8f219c-4df0-4481-926f-8a2a532ca003",
+        "d7860bf2-d5b6-42b8-9136-0ffe75563ed0",
+        "799f52a3-d742-4afc-8f7a-c0c967e27833",
+        "298356e7-cf86-475a-8dcd-f7ef6ec8d291",
+        "3424abc1-8da0-41ee-a14d-d8e82ad9e94f"
+      ]
+    },
+    {
+      "page": 3,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=3",
+      "ids": [
+        "6bfba3bc-be92-4c36-bdb6-85e154fd677d",
+        "be7f3f25-4347-444e-8183-c6dbd91889d9",
+        "3343aeab-b68f-4f68-a8ae-1d683bc835f4",
+        "5258bfdb-ba9e-4fef-81a0-4cb9b6b693ba",
+        "cc11cd31-ef84-42dc-9c76-7602fab86424",
+        "877fa140-7197-405d-8356-ca58389ed3dd",
+        "6eccef9f-a816-4154-9197-d9f6f0170b16",
+        "a8194449-fc02-4073-a8d7-64266e42f23c",
+        "50c3bafa-0277-472e-a45d-ebdbdc6f72ce",
+        "7e24a14e-b565-494b-88c4-1355c4360f83"
+      ]
+    },
+    {
+      "page": 4,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=4",
+      "ids": [
+        "36a3912f-76f8-41b1-9a01-c5785edc31bf",
+        "175fc87a-acce-4f98-a03a-32846481efc8",
+        "ac415f65-662b-41f1-876c-1ef49327fa1a",
+        "166b5b4c-f936-451f-be8c-c217c2644d5e",
+        "d223ea14-7147-4be7-9edb-ef8700f4e528",
+        "b3a3f599-e3fa-4555-8f99-f81db92f6759",
+        "9338bea3-702e-467b-9689-0bd97107dddb",
+        "5eafb4ea-d881-4661-9e29-0c949d8f0442",
+        "32e942d5-19c0-4ffe-b163-f2819248e54b",
+        "8fbd7b5e-0fbc-49c2-a4c9-8be758ae43b4"
+      ]
+    },
+    {
+      "page": 5,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=5",
+      "ids": [
+        "15686fe4-885c-413f-8647-b8e9e8ff28ce",
+        "c5bdc8b2-af01-4854-a2df-71b675943202",
+        "31452032-d0bf-4a7e-8fc5-bdb58e0a94aa",
+        "58de9570-88f4-4f98-944b-861f496be919",
+        "89073037-d2fc-4a6d-9ce9-f0b1bcb48745",
+        "6f8aa250-a1a6-4e16-b973-aaafaccd404c",
+        "02e85d01-ee78-4c4b-9d8f-56b61b8142ce",
+        "78dc45c6-a4ad-4914-b51a-b4fc1e0b296d",
+        "0200c4ee-1644-4cbc-9dcf-ef2b6f5ac1e1",
+        "62df0bd8-5cfe-4202-8763-a4a44284455b"
+      ]
+    },
+    {
+      "page": 6,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=6",
+      "ids": [
+        "84c62ecd-7d69-59e3-276d-cf50737fe3f9",
+        "3967f197-67dd-4be8-b7e2-218c0bb24d31",
+        "63ef1708-14fd-4977-8ca3-bb55f0ecafc4",
+        "3b52c0eb-f464-4fd9-ba67-f00e03e1dfb6",
+        "f916d15c-dbea-48d2-b8c0-b664154237b9",
+        "f8622ace-7ab5-4cb4-bb84-4c05988f3b21",
+        "f2ab97fd-961a-44f7-99d2-7ce4156c290c",
+        "f0d8b4ba-0616-4ad2-baa3-6a3e9b7cd711",
+        "ef3cf102-2ae3-4c32-9c48-baa667989a69",
+        "eae708d2-a700-485b-b987-20d377f7715b"
+      ]
+    },
+    {
+      "page": 7,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=7",
+      "ids": [
+        "e47f800b-7763-4d5e-b08a-c1334e932057",
+        "e08d6186-9c29-44e3-8050-e3dcdefe263d",
+        "de826726-2ef5-4a9e-a01a-848db7e66f0b",
+        "dadf79c5-4a6c-4633-b74d-163fce006985",
+        "c5949193-3157-430b-a57a-0c4167dcc178",
+        "b8707484-a396-41a1-beb8-a294ce61f35b",
+        "b3b7516b-1faf-4fd0-90c5-b7e1d647d05b",
+        "9bd05d57-d011-4370-8d6f-aa14084177ff",
+        "6648d111-d4ec-4866-8e6f-50b5d52ac741",
+        "6023ee28-eb70-4cfe-a480-35919a0c5140"
+      ]
+    },
+    {
+      "page": 8,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=8",
+      "ids": [
+        "5686c613-a606-4e49-ac58-b6eccb7f53b3",
+        "545e8c86-7c41-43f9-822a-c4b76798b604",
+        "5003f904-bc6c-487f-8b90-14a4562dda81",
+        "4c72a234-c7a7-4cef-b49b-f2737ed48076",
+        "48db5cb9-c4bd-4b72-96b5-ebcc312f5f9f",
+        "47b82ad5-e533-46d5-b4dd-d138741b5e97",
+        "42d3f3fa-04c4-49f3-a8fe-2e1a0f6d8df1",
+        "33bb50e9-85d0-4ef6-b27e-7c3141fe4461",
+        "2b44eab2-476d-43b3-be8c-1b24d4ad9630",
+        "23402bc0-d679-4e16-a889-a1fc8250411b"
+      ]
+    },
+    {
+      "page": 9,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=9",
+      "ids": [
+        "216a1a1b-2e6c-4573-9730-1aec05073da8",
+        "1fe01580-4d80-4381-9b3a-3f16a69a3e48",
+        "1f09a925-63ec-487e-8ad5-9afa9d640127",
+        "1ce697fe-8984-4476-b3ba-0a580f493375",
+        "1c3bd405-4e15-4b2d-9054-4e23c7eacaa4",
+        "1b5a44d7-7a3d-4de6-9b01-5c5d6b2371d8",
+        "1a59dfdc-0c4f-4efd-a833-9220837f4dec",
+        "0c6da47a-41db-4c3d-a925-397f4fc456c3",
+        "adade235-fbf9-4d51-9e87-4d3b7ad30f31",
+        "d1be3c0e-fcce-4db2-bf15-3ac4961f393d"
+      ]
+    },
+    {
+      "page": 10,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=10",
+      "ids": [
+        "15dd2a2d-5d98-4658-8951-c75e67ecfdde",
+        "e0a36ea8-de0d-4f75-92fd-0f075577008a",
+        "40c5080e-da2f-4dd1-ab60-28dc2ff39e79",
+        "e9701604-b867-4a01-9546-e2457bc90289",
+        "6813f7dd-8f31-4581-afb5-f5faef10b9b2",
+        "32f75a4d-552f-4ca3-ae03-e1512c0420d7",
+        "851e6a27-a250-41e6-9cd0-d7ff96455dd6",
+        "a8209aa6-9b59-4a90-a8aa-b058d9059b38",
+        "61044e1a-cd80-4ed6-9f95-907262b9910f",
+        "58557559-90c9-87f3-182d-538a90e9051d"
+      ]
+    },
+    {
+      "page": 11,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=11",
+      "ids": [
+        "c28999fd-7c30-717e-44f4-7da1327ea824",
+        "21e1dfd5-f1ae-43cc-8354-8f7c79b6a812",
+        "42979ae9-de32-4511-9e89-388b30134304",
+        "032df664-5b95-49d5-bb0e-ab6ee4c5642f",
+        "83d09a07-542a-4d52-97b2-2e475c808806",
+        "85c7681c-8163-48a8-91f3-f40d3a34ba57",
+        "1c6c420c-d8e2-4e1b-8a3a-b8b5868661d0",
+        "07653869-f303-46c2-a04e-9ab479b73cbf",
+        "80a9b8e6-6426-44df-bffa-4f02065b81e3",
+        "583b35e2-e513-429b-82c3-d268e66b859d"
+      ]
+    },
+    {
+      "page": 12,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=12",
+      "ids": [
+        "c6085f69-652f-4f33-9b0a-89b24d90ccff",
+        "9efd70e6-157a-43c8-861e-b6faecf6a33f",
+        "e7e90f77-6a1b-4b9e-bc3f-650f8fd30ab8",
+        "c5dc2e13-78c5-4eff-9361-a52b003bd69e",
+        "1fdb895a-d8ea-4b5f-af2f-e060e48af530",
+        "daa10606-5fdd-4c9b-b5ef-235081690b6e",
+        "2fc8a2b9-1556-410e-a118-c46e97e9f19e",
+        "1122db0f-97f1-4ed1-9d17-ba7a1895e593",
+        "33fdc525-5092-4483-9f0b-b91482cbfce9",
+        "a315e8f8-2e8e-47d3-990d-49f09ecb32d0"
+      ]
+    },
+    {
+      "page": 13,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=13",
+      "ids": [
+        "eb04d8ab-0cff-4ae7-b63b-4ed6c6133be0",
+        "98ffb80c-422f-433f-ba97-8ad4edce0faf",
+        "527944ae-893d-41ac-8255-340fb1c2c83b",
+        "cc3fbf3d-f93c-479d-a807-9ae042721aba",
+        "20cdab87-a574-4db0-bda8-3e5fac1983ce",
+        "05ae679d-3fd5-4e00-ad11-19697e1e80ac",
+        "877eec7c-5298-4537-a357-4870c8691a36",
+        "961a461e-9c1a-4a44-adef-e327a46abcf2",
+        "43e8edd8-6306-4453-8774-835d071299f1",
+        "f4d593bd-546d-4d1c-9851-0f052844b0a6"
+      ]
+    },
+    {
+      "page": 14,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=14",
+      "ids": [
+        "9179b74a-bad3-436a-aa33-ffc5018cc519",
+        "58fa6bbf-eda4-4750-8871-5b8cf13611ff",
+        "99c9c84a-0f0c-47e4-b87a-08b7a80684c6",
+        "b7ec4dcd-4f54-4602-9231-33964e6a2d2d",
+        "42c54491-ed1b-4689-8c36-7f7d624cbeee",
+        "902801fd-4d9d-4df4-9e95-319e429545cc",
+        "d2330b1b-8c22-4ce4-8aa2-c0372bf94a94",
+        "e420a470-78d8-4db5-9afa-74dac605be37",
+        "1810fdca-8762-4d6a-8886-4e8cefbdb640",
+        "18e6a919-53fd-41ce-b4e2-44a9707c52dc"
+      ]
+    },
+    {
+      "page": 15,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=15",
+      "ids": [
+        "2af751e7-79f9-4da8-9b45-14688818dca3",
+        "1989de32-bc5d-c696-879c-54d422438e64",
+        "e2dadc60-292f-4d98-b42b-56ca9e4fe694",
+        "22c7cb44-1463-48f7-8e47-88857f207702",
+        "8d49698f-40f9-40da-b097-a3f4c90adf5a",
+        "3f0a6405-0a1a-420b-ae99-068a4aeb3b95",
+        "b1f61b7e-4ba6-4244-bc79-c1174f2f92cd",
+        "660b7c6a-cdec-4c02-90c7-d63e91825c42",
+        "db9a0fc0-bee8-4268-9a8c-aa58209ec58e",
+        "aacb3112-d891-c475-6f45-6cfd32eeb71a"
+      ]
+    },
+    {
+      "page": 16,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=16",
+      "ids": [
+        "54e26c02-890c-c816-a049-92e9da0ee30d",
+        "0b1a9d6e-cdb9-f14a-c520-49c3fe32dba3",
+        "6ad8e956-e6f7-410c-9403-27bd6fcb7ead",
+        "3e257d50-746d-402c-8462-0e4be5c949d6",
+        "fd0e2449-dd85-46c1-94b7-ad84eb1c5554",
+        "297da341-6ba5-4b0f-b37a-3876c96774be",
+        "3ddd1967-a5a1-47b2-b3b9-554495581ea2",
+        "c32dfe71-bb89-4301-a8a3-4f97d1629c00",
+        "ef3d9059-abfb-4524-ae5a-2877c6767d99",
+        "b34048d1-33e5-48bf-b857-d19e645e3614"
+      ]
+    },
+    {
+      "page": 17,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=17",
+      "ids": [
+        "1f8c45b5-443b-415c-9cc1-6fab98455e98",
+        "31d17951-df1b-403b-a5da-35459771a1a7",
+        "e2e699b3-35bc-4efc-9c64-0f9fb749d342",
+        "62155d6f-9167-4972-b77c-b90734b628dc",
+        "21b821cf-0f1c-40ee-8925-eab12d357668",
+        "73111c78-298b-4be9-97f1-7aaa73cab477",
+        "43f22640-8445-4e5a-93b9-fcd9ec34e315",
+        "3d465a65-b8db-4d58-8db6-2d7082b788d3",
+        "0673c58e-f787-4ef3-90e3-eb5f991b3a72",
+        "a6b81e8b-d429-4629-9121-5a56786fcb83"
+      ]
+    },
+    {
+      "page": 18,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=18",
+      "ids": [
+        "0c42afdf-187b-4e68-8450-9e598b7cdc02",
+        "104934e9-9102-480f-b355-6d50403bc4e1",
+        "38e80c59-015c-4cdb-b863-a9fd101261da",
+        "b57574f6-5c98-48d5-b82a-954311df092d",
+        "eec0dcb3-20c8-40d0-9dcc-212f389a3a49",
+        "9d1ddfcd-70a5-455d-8467-52787d69b94d",
+        "075276d6-ee8e-4341-bef0-1fbfedb70361",
+        "b0cdae29-96c2-4595-94cb-11c04f27326d",
+        "1a4ca6ba-cd06-46e4-9ec9-980f98818b09",
+        "13ca21ec-830e-47e0-b3f5-72fc80f38b31"
+      ]
+    },
+    {
+      "page": 19,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=19",
+      "ids": [
+        "58970c3a-fbc5-434d-8166-3efe5b7b7b06",
+        "cb2aad60-d9ee-455b-86f9-c3e54d889b90",
+        "94a69733-26c2-4d3f-b4f4-a41f57e677a4",
+        "5ae154bc-41bf-4378-8c08-dac782869089",
+        "331ec281-8e73-4e8c-9b5f-3493c72ef607",
+        "0ee361c4-eeab-4245-ae2f-5804688e2287",
+        "aaf04ac5-8e0a-4625-b9a6-54eaff5e41de",
+        "34a63f26-4faa-4ac0-88d7-4946a5a812e8",
+        "5278c6d3-f024-4e6b-87d9-60e4f1848a0b",
+        "817c8196-51d6-45dd-bb88-01c4b4a89807"
+      ]
+    },
+    {
+      "page": 20,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=20",
+      "ids": [
+        "3956094c-0443-46aa-a676-e9398d8fcf0b",
+        "73d49815-8e7b-4c48-9294-c267b0d72cfb",
+        "363a17e1-1d10-4497-af73-b402511dbfb9",
+        "417c9417-a4d7-4817-9823-cbe9f5fbb96d",
+        "d6a749a0-0705-422a-b2a9-013af53c6ce1",
+        "91c0d291-cafa-4e80-a2e5-7b3112c9ae52",
+        "905c9b91-a769-4e64-abff-2e6d20c7c83f",
+        "cb34e02f-e0f6-49be-b5ad-96326a701b57",
+        "301bf91d-6db7-4004-8cc9-40ac7e7b42f7",
+        "d18f0f6f-15c7-4d36-aa14-32ef63781f3c"
+      ]
+    },
+    {
+      "page": 21,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=21",
+      "ids": [
+        "fce97390-8ab5-41f9-91e9-0d8226577ff3",
+        "79dcbe44-4a86-4ac0-8eec-135f80a9b843",
+        "a221e7a0-4f46-4be7-9c5a-e29de9a3447e",
+        "7de62132-ed6c-424d-8dbe-437396456031",
+        "4e96d243-fef8-4f7c-ac87-c3b295f553f5",
+        "f1060ac1-75d0-45e1-ab3e-0e514a97b6bf",
+        "1c3d15f9-9cfa-4010-8462-0d67e493d9b9",
+        "80383951-4b60-412c-9180-4d536b3703a8",
+        "ec8fafd4-3284-4a9e-9ee1-d5539f0827aa",
+        "04c5ad28-d8eb-4c49-90c5-48b9b98fdfe9"
+      ]
+    },
+    {
+      "page": 22,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=22",
+      "ids": [
+        "2790e3f7-6395-4230-8545-04efb5a18800",
+        "cdfc2d7b-c046-4bf0-90ac-4897232619e1",
+        "86d1bafc-8df4-44f6-8353-5f4c19119438",
+        "247c54ab-84de-4ccd-a6bd-467d712dbb00",
+        "652c49eb-7295-4ae2-8f26-39103f23b50d",
+        "5306f34a-9a55-4c7e-8f3d-dc94e9e6c282",
+        "426704e8-5a25-49fc-8a77-d80481a08460",
+        "ded921e7-83cd-c897-4eef-bd32192ad271",
+        "d78d46b4-ff3f-4156-b07c-2efd5d5e1607",
+        "25a5de7a-8b9e-42f2-b7bb-5b1b434ae9a5"
+      ]
+    },
+    {
+      "page": 23,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=23",
+      "ids": [
+        "bde9b113-ab40-4d7f-a501-5cbb0b55805c",
+        "4564cbf5-9de5-4521-b007-a20d73ad6f89",
+        "199e4ab6-832b-4434-ac39-e4887d7cc4e5",
+        "5d3ab93e-324a-41db-8d29-0f0813d0e9cd",
+        "88d70716-2600-4995-8d5f-86f96e383abf",
+        "2d28c98a-5003-481b-9f7f-2b1c1a00948f",
+        "4df24cb4-573c-4da1-b43b-4b94d563de1d",
+        "c115fc3f-5b0c-efca-bf25-eb4bc001159e",
+        "62d63169-7739-4515-9178-8f628c32a9d4",
+        "5489d54a-9925-44e3-a1a8-b26c1f64e811"
+      ]
+    },
+    {
+      "page": 24,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=24",
+      "ids": [
+        "a71ab99c-6756-4e56-9d2e-2a63246a5e94",
+        "53070989-c01a-e776-489b-2f9354b0a2ff",
+        "1c18c748-8704-1180-c91e-434a5627f09c",
+        "df792428-de5c-4c34-ad9c-ec1e47257076",
+        "18d2584e-95cd-9d2e-61ef-1f497d935005",
+        "887bb22c-a658-1589-93b5-97785a6fab5b",
+        "443c3c4b-ef3b-4a98-8d37-e3ba398609d8",
+        "53fe2022-7939-4ce1-86ab-b276a8b4f837",
+        "2d60830b-ee2e-4fb5-8c6c-f241f6bf76ba",
+        "84ee93a7-ca28-4033-b140-ba507aef61cf"
+      ]
+    },
+    {
+      "page": 25,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=25",
+      "ids": [
+        "9ceda932-d147-463f-bf8e-e36dc72e01b2",
+        "085024ac-5a48-427a-a2ea-d62af73f2142",
+        "12cafe67-8fdb-46d4-b07f-cb8ae5e6edc9",
+        "ed53f807-d9d3-41b2-ad75-80e8649ac4d4",
+        "d5a75b00-f93f-4e42-9672-85a6a77d4ea3",
+        "bc96c05e-801d-411b-8bbd-7926cadc02be",
+        "b7e77a61-cb7c-4adb-8d8d-9dce045cd4ef",
+        "c9500582-1155-453d-b441-6ae623206493",
+        "e46f34b2-dc17-434b-b8dd-e39e73321d6a",
+        "9e3080d1-704b-497a-8998-684f0f393a37"
+      ]
+    },
+    {
+      "page": 26,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=26",
+      "ids": [
+        "8b498a37-dde3-4306-ad18-f96a812b1b99",
+        "823ce7b5-fc0b-4948-9935-3ade45b55bbf",
+        "150beb08-b9bd-4441-a36e-fc624cf31c95",
+        "10d688ba-0fe4-4cdf-8830-4387e6c174c3",
+        "35a22b06-36fa-4ddc-8e09-c560830b0851",
+        "8724f153-b966-46c8-ae7c-ebfacd25e936",
+        "f8da9400-be08-4a0a-98e9-e4b10af561e2",
+        "85e0ba82-b514-4cad-b262-7dd0f630898c",
+        "093bcc9c-04d6-4ba0-a96c-c1eb6db8356c",
+        "7ed71bc4-e91d-4b04-ac2c-220294954cfb"
+      ]
+    },
+    {
+      "page": 27,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=27",
+      "ids": [
+        "d1016933-0eb6-4381-9eb5-317c5de052dd",
+        "eddc5332-42e8-40c1-94df-95c43cc23ba1",
+        "33a7762c-64a6-4705-83b9-2c5eae1873f1",
+        "258c2f60-35a6-40d6-a1f5-ed8830438b67",
+        "ec8b841e-a3ff-496f-8f69-b98f6e91bf5f",
+        "0ac3c0c3-62d6-4308-bd8a-96a088e363b2",
+        "8f8864b3-384c-490f-be74-12d08495ac56",
+        "7fbb7a4a-cf3d-4874-9a8f-951983f2d9db",
+        "5a017fad-5179-4830-ac73-6ad7e9216473",
+        "bfe541b4-f156-6eb4-2420-e30732e5fe1b"
+      ]
+    },
+    {
+      "page": 28,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=28",
+      "ids": [
+        "9bb4ac03-b4c7-f4fb-7d30-e70e9d48e49e",
+        "263db220-a0ec-65e7-041c-8e2163132292",
+        "bfec8842-6fd5-5181-955a-79fd84ab2d8c",
+        "2eec73f0-7dcd-1ced-6722-b45c1f964ad4",
+        "5faff0d1-f89d-7391-a306-2d0b26096282",
+        "f23d5d24-2bd3-d341-b0d6-f5bd253b3f61",
+        "7c9cd119-667b-67af-c836-100d97752e5a",
+        "a1bb42f6-d117-d594-5969-7a5136e0daaa",
+        "f5a08348-a8ad-3a10-4efd-4b7e431e3db8",
+        "26d6d756-f648-da3b-f9df-68a49c264436"
+      ]
+    },
+    {
+      "page": 29,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=29",
+      "ids": [
+        "b3e3a399-c80c-410e-af67-7c708565801b",
+        "0883f34a-53aa-4a0b-a77a-17ac2056462a",
+        "f2a374ee-3db0-4cd5-a4f9-57d6ab03f5fe",
+        "c99d8506-f3cd-404a-90e4-54b2dc9b21dc",
+        "74f979c7-0d34-4b77-8584-45a8dcd2134c",
+        "66c24181-b6d5-445c-8d92-fda6a8294a5a",
+        "611911cf-e58a-4efa-9acf-c19bd0767e10",
+        "c8dcf3a7-fb40-44e7-b478-17b20a2240a4",
+        "b5ebfcbd-eb5e-4f7b-850b-ab840408091d",
+        "c45c4cda-7134-4e65-8e99-5214eb07bcf3"
+      ]
+    },
+    {
+      "page": 30,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=30",
+      "ids": [
+        "890a5d8d-3dbb-4608-b6ce-3b6d4c3b7dce",
+        "5b966902-e7be-4a85-9c70-2b074ed4f324",
+        "04f5b200-bab1-4ecf-bd1a-0cd2f55cb34d",
+        "63e1cda6-debe-4b9b-b075-3666443e30b4",
+        "4e66dd2f-5cd0-42fd-b82c-a430044b31de",
+        "a97edbc1-7fda-4ebc-b135-691505d9a595",
+        "cdc1df4c-57a7-46a1-bf3a-46b240039759",
+        "d4714427-e69a-4e66-afcc-dce9757329c6",
+        "ed9b204b-590c-4b17-9703-f6e167acd6c6",
+        "8ec4ee78-9240-4bd0-9c97-d3a27829e209"
+      ]
+    },
+    {
+      "page": 31,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=31",
+      "ids": [
+        "c4c5e924-f72f-4c8e-83a3-e588dd4d43ca",
+        "a61fcd17-c16b-4154-9a60-36a5af5728e1",
+        "1a4c95bc-9973-4ac0-825c-c6aa84153934",
+        "2c600383-fffc-4c2b-a612-4e1419e43744",
+        "63f99728-13ea-44db-bcf2-ad899fdeb98f",
+        "0b1b8962-81a6-4d87-a79f-d29deeb9912e",
+        "9a0aead0-51d8-490f-89bc-72c5f4e5a31c",
+        "968dd7b2-3ffc-4311-8674-603717b748f4",
+        "c3e2a7ca-5ddc-4700-b2c2-153cdb1d2b73",
+        "d59400f1-fd59-456e-9556-df49c0b5bb8f"
+      ]
+    },
+    {
+      "page": 32,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=32",
+      "ids": [
+        "c83edf23-bcad-42ed-aa81-4dea81f2dc54",
+        "b87e2608-99da-41e4-a6a1-7f63420cf713",
+        "c063969a-403c-4c13-85fc-2282c3c4e2d1",
+        "308ef84a-52b5-4fb3-b14f-b760ec376240",
+        "9f47c556-15a9-4d2a-8cfe-c9124560584a",
+        "924a4c59-c532-4c85-9d90-da547d3af069",
+        "2411b1fe-38b4-43d3-82fd-8893f6f47db8",
+        "395b47dc-f86a-4fbe-9704-f6ed959d6045",
+        "fd68f7f0-869a-4350-8377-9b7fd93a4758",
+        "5d2904ed-8da5-424d-9ac1-ecb2035e541f"
+      ]
+    },
+    {
+      "page": 33,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=33",
+      "ids": [
+        "ea731904-cf0d-4898-a753-188d6989a180",
+        "56767b6f-77bf-4321-9b94-0cf6a01b7953",
+        "5776806f-e01d-42a7-9c77-b4a345144f32",
+        "3d6eee80-61ab-48e9-bf51-b7659444ac5d",
+        "f7ae3f1c-6c08-42cf-b318-7395ba0f333f",
+        "6c5575a2-5455-4746-a612-da5ad3077b04",
+        "f8a5c900-39cb-40ce-9f70-6d60fc5494e0",
+        "a5b668c4-de04-443c-a989-eb2b6a7059ae",
+        "85169a7a-b597-4a61-a7c2-301c53beda21",
+        "b8f5c5a3-0a81-4fe6-8729-ffbe862e990b"
+      ]
+    },
+    {
+      "page": 34,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=34",
+      "ids": [
+        "3f6e2c15-d714-4286-a373-5aa2830400e5",
+        "4d1b7df4-b6b8-4500-b1c5-78594aa8d6f5",
+        "85573682-ad0c-4e85-bb90-609586fd0860",
+        "8ed9c31b-d8fc-4ea7-b6a8-d6a6cdb5fd8b",
+        "834f2531-89c8-434e-9572-b1f64d4d3fa6",
+        "650aa3d3-cf5f-4076-b46d-f4ff93635627",
+        "9363495f-f0b0-4d09-8387-7aad897b5fc6",
+        "a49c60f5-72a0-4f5d-91be-f7f3f4c3e920",
+        "14dbd797-da83-4498-b292-f0f51cade361",
+        "a5a4774a-7a4e-4c4e-8901-da48c1c2d6e8"
+      ]
+    },
+    {
+      "page": 35,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=35",
+      "ids": [
+        "f244830c-32eb-4059-87b3-199436a1a087",
+        "857894c2-8f45-4609-af6d-eb92ab8be490",
+        "bcc8a256-bf02-4cf5-a0b3-b7ef1fcc62c6",
+        "a29622c3-1f0a-466e-8beb-18d534e3177d",
+        "4f8bf2ed-3913-4440-9221-c2a0a1a40cd6",
+        "680c37ce-1091-4ccf-bb76-3f8bf4311953",
+        "a620aaa8-61a4-4627-80a2-bdb4d5c2af30",
+        "77f0e881-900a-4e87-956d-2125dec96792",
+        "8c3442ae-4818-4604-97a0-117118d75576",
+        "5f3c309d-a225-49d1-92da-e978428735d2"
+      ]
+    },
+    {
+      "page": 36,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=36",
+      "ids": [
+        "3167eb44-c805-4d8b-8cd7-3889682e62f0",
+        "366afb76-279d-4de7-9b70-dcd0ce2e7f4a",
+        "ed55cd5b-46f2-47bd-b2e9-a96993aa2eac",
+        "f4a03a5f-3467-4c3d-afcf-c5ad4603ee29",
+        "5a2ff609-93f1-422d-98c0-af6e643cc5c5",
+        "0dd7d87a-c6c3-4c31-83df-6bdfe43f9f0a",
+        "a296a9c7-11e0-4982-b8ef-70ca9923222c",
+        "790ae66f-11c9-452c-ac56-0d4374773dc9",
+        "f153d04b-7368-4f25-ab75-2df3d23fdfbe",
+        "93bf6603-9048-4a0d-9a37-e0a9d9006f9b"
+      ]
+    },
+    {
+      "page": 37,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=37",
+      "ids": [
+        "554ce317-ea5d-4806-8f2a-16a2dea21841",
+        "3d8682d6-5d20-4b81-afc3-1350a1a6e98b",
+        "5a88db08-d35c-488e-895c-dc7b0dcfe53b",
+        "ae94c33e-1b68-422a-a712-a8fb822fc296",
+        "81256358-d64a-44fd-a08a-bcd10a5cb9c3",
+        "7590d295-5c17-44c8-ad2e-2e8f1a4b6054",
+        "5937f8ae-5561-48e8-b633-4516959c7945",
+        "349f2071-8fbe-4e7a-938f-77406312c693",
+        "c46a8ac2-d657-445d-8989-d8bc52e1db1b",
+        "f38606f2-add4-48bc-9bda-c8301fd419ef"
+      ]
+    },
+    {
+      "page": 38,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=38",
+      "ids": [
+        "3927c4ed-3539-4f7b-875f-ab40da81cd6a",
+        "a4ddfb17-c29c-47ae-b0d8-38c6da3a775e",
+        "3dea01f1-0161-412a-93b6-76b4bfab17d6",
+        "2f032cc5-23ae-468b-b915-f1dad5e42fd7",
+        "d384794e-82c6-4215-b34b-3c6358b5ee09",
+        "3a553013-ad91-4998-b053-11c6e68bf9fa",
+        "574c32db-aba7-4919-9c9f-c58398754173",
+        "5a4e2aa3-a3a0-462b-ac80-9c74392e792e",
+        "62b6557d-c893-4b23-a62b-f282fd0dc9b4",
+        "ed39f5d1-0b25-43aa-a2b9-792e2f3effb4"
+      ]
+    },
+    {
+      "page": 39,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=39",
+      "ids": [
+        "465b3f4e-7521-41dd-afbe-639875d226b3",
+        "6ca2937e-5cf8-5c26-aa6c-cceead2f64e4",
+        "f0e3bf4c-2159-5b25-a01d-18b043771ee9",
+        "10fe38cd-6cb0-5819-9a60-15ac3d42bc51",
+        "dd42fdc0-8893-11e0-8073-6cf049291510",
+        "ddfab500-8893-11e0-987f-6cf049291510",
+        "de7981f0-8893-11e0-9245-6cf049291510",
+        "da29fdf0-8893-11e0-aae9-6cf049291510",
+        "dab43c91-8893-11e0-b2de-6cf049291510",
+        "dabd3d40-8893-11e0-957d-6cf049291510"
+      ]
+    },
+    {
+      "page": 40,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=40",
+      "ids": [
+        "dac1d121-8893-11e0-9352-6cf049291510",
+        "dac68c0f-8893-11e0-a3af-6cf049291510",
+        "dacea25e-8893-11e0-94e7-6cf049291510",
+        "dd314a80-8893-11e0-b445-6cf049291510",
+        "dd57be40-8893-11e0-a4bf-6cf049291510",
+        "dd7160c0-8893-11e0-a7d8-6cf049291510",
+        "dd7c3630-8893-11e0-9125-6cf049291510",
+        "dd8cd800-8893-11e0-a015-6cf049291510",
+        "a0acfce7-52ba-599a-9870-1cfccd9dae03",
+        "aa7b6823-fd1e-49ff-a6fb-68076a4a477c"
+      ]
+    },
+    {
+      "page": 41,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=41",
+      "ids": [
+        "fcad08c4-0938-442d-a6cc-d6f5d1d951f6",
+        "f65c1ce8-2c3b-530e-9b2d-28df85d5f2c0",
+        "f01516b6-8cdf-41de-8c08-1c15ef10a6c0",
+        "ec9e2659-1c29-4ddb-87a2-6aced147a990",
+        "bfdd9e96-b6d5-4e16-a653-dddaab291f4e",
+        "bbf61e1d-9e82-5709-9594-3525242b41e8",
+        "ab0c22c6-bbc2-5838-9b6e-7d83c61ba91d",
+        "a81cf3ef-a80b-474b-9602-e6ecd2f23e6b",
+        "936204bb-5f29-4b4a-82a8-859ac2fd7059",
+        "8c5377ad-cb60-5c2c-9938-9a87ebf8ad48"
+      ]
+    },
+    {
+      "page": 42,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=42",
+      "ids": [
+        "838aa171-efa0-4951-9fad-37f9d99346ec",
+        "7cc2d3e2-cbb7-416c-8e6a-e13ca5338aae",
+        "7625e09a-edd9-4212-8aa0-2b6e53dea494",
+        "7544d672-aea2-4dff-bf1c-f511547d8e1a",
+        "70e6f981-27ec-4d80-8ab9-ee396353e082",
+        "6e98ad40-c58a-4225-a20e-27f243081929",
+        "6e1942ed-d4e6-4106-863a-5689b0238e1e",
+        "6d565968-2381-45fb-8059-06563d889b6f",
+        "698dc612-5059-43ee-84f3-49756e6d5ad6",
+        "697420ad-0bc1-4482-a8ff-8baa70eaf0c1"
+      ]
+    },
+    {
+      "page": 43,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=43",
+      "ids": [
+        "68b9f2b0-de5a-4571-a26d-473a15eedbf0",
+        "1bf46651-95ee-428f-9b30-27a42d12b079",
+        "12e7637a-4c5c-4550-90ab-06040ae1e932",
+        "7ad84d88-5d3b-45f6-894e-1c03876104be",
+        "147db6a1-84a5-46fa-aa47-5305cbaa210d",
+        "f2997015-1cd7-4407-b58d-1bfcbb4a8290",
+        "2d28cce2-5a68-40bd-aa1d-3b6c1520ca81",
+        "f5c63b7b-7d05-49df-907a-910d178466d9",
+        "848275de-bd08-4937-b8dd-f666e575b775",
+        "779f9b2d-d010-4ddc-b3b3-57a9ac7631b2"
+      ]
+    },
+    {
+      "page": 44,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=44",
+      "ids": [
+        "6b4ab063-b8fe-47fe-b68e-897cb2fb91f0",
+        "d8e97e3e-04c8-4599-8667-4ad410d0cdc6",
+        "e747750a-40dc-4ab3-be49-fe555eb68293",
+        "99875416-4ef0-4dc1-889f-aa098beb7950",
+        "79cc1180-459e-4be8-abc8-b98874288209",
+        "fdb8215d-9d25-4afa-b908-b8dbecbd2044",
+        "0e5dc74b-380c-433d-bdce-e3cd06effab3",
+        "77602df0-b797-4aff-af7c-287ab9999070",
+        "6163c6e4-5e0a-4dd1-9277-2e45b543c3cf",
+        "cc2e34ca-af04-4948-9e1a-2ef78c3b39fa"
+      ]
+    },
+    {
+      "page": 45,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=45",
+      "ids": [
+        "3acc0a45-7592-4ea6-94db-09f3681bc579",
+        "fcfc8289-528b-4538-a8c5-6563c4e5e824",
+        "ca6bf237-d7ca-4d49-9046-b39f89e1a10f",
+        "ed8aa69f-8580-4c10-a8d9-eb2dea487d96",
+        "c31120ad-52e9-4128-a410-a0b6daebece3",
+        "83aa1b18-6616-405e-9bce-af7ef8c2031c",
+        "011ff922-fb26-4edc-9474-f10acf410dbc",
+        "1e42f630-a435-4c23-a293-d7cc5709f3bd",
+        "add1346b-f632-4eb9-a83d-a662b38655ad",
+        "96626d93-c12e-443b-a1ab-f5aea97d3539"
+      ]
+    },
+    {
+      "page": 46,
+      "url": "https://search.open.canada.ca/data/?sort=metadata_modified+desc&search_text=fire&page=46",
+      "ids": [
+        "36c70643-508b-4380-8e70-444b97bcc9a4",
+        "2accf297-85bc-4037-9d4e-99c00d7ce965",
+        "dcff2084-0971-410e-9654-7a37200e7187",
+        "0e3c87fb-b4ac-470e-be78-d71c2f257cf7",
+        "5e2a8dce-a769-4276-82ba-12c7e7e3566f"
+      ]
+    }
+  ]
+}
