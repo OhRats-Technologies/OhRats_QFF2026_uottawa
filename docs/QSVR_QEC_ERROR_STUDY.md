@@ -1,5 +1,7 @@
 # Deep Technical Study: QSVR, Quantum-Device Errors, and Qiskit/IBM Quantum
 
+**Repository implementation, October 6:** the [actual pipeline study](PIPELINE_MITIGATION.md) now implements a bounded local subset of this programme on annual climate/fire data: isolated noise controls, DD/twirling, readout calibration, raw/PSD/rank kernels, QSVR predictions and QAOA/SQD cardinality diagnostics. It retains counts, circuits, models and a no-rerun collector. Improved kernel geometry did not improve QSVR error in that fixed cohort. This is simulator suppression/mitigation, not logical QEC or completed hardware calibration blocks. Earlier game instruments did not satisfy pipeline implementation.
+
 ## Scope and central conclusion
 
 “QSVR qubit error correction” has two technically distinct interpretations:
@@ -21,12 +23,12 @@ A second, higher-risk question can then ask:
 
 | Layer | Object | Primary failure mode | Appropriate response |
 |---|---|---|---|
-| Data | Classical feature vector \(x\) | Scale, leakage, poor inductive bias | Train-only preprocessing, dimensionality reduction, bandwidth tuning |
-| Encoding | \(|\phi(x)\rangle=U_\phi(x)|0^q\rangle\) | Excessive depth, concentration, routing overhead | Shallow hardware-aligned feature maps |
-| Kernel circuit | \(U_\phi(x_j)^\dagger U_\phi(x_i)\) | Gate noise, decoherence, coherent error | Better layout, dynamical decoupling, twirling |
+| Data | Classical feature vector $x$ | Scale, leakage, poor inductive bias | Train-only preprocessing, dimensionality reduction, bandwidth tuning |
+| Encoding | $\vert\phi(x)\rangle=U_\phi(x)\vert0^q\rangle$ | Excessive depth, concentration, routing overhead | Shallow hardware-aligned feature maps |
+| Kernel circuit | $U_\phi(x_j)^\dagger U_\phi(x_i)$ | Gate noise, decoherence, coherent error | Better layout, dynamical decoupling, twirling |
 | Measurement | All-zero probability | Shot noise, assignment error | Shot allocation, measurement twirling/calibration |
-| Gram matrix | \(K\) | Asymmetry, non-unit diagonal, negative eigenvalues | Symmetrization, diagonal constraints, PSD or low-rank repair |
-| Regressor | epsilon-SVR dual | Hyperparameter sensitivity, overfitting | Nested tuning of \(C\), \(\epsilon\), target scale |
+| Gram matrix | $K$ | Asymmetry, non-unit diagonal, negative eigenvalues | Symmetrization, diagonal constraints, PSD or low-rank repair |
+| Regressor | epsilon-SVR dual | Hyperparameter sensitivity, overfitting | Nested tuning of $C$, $\epsilon$, target scale |
 | Evaluation | Test predictions | Split variance, calibration drift | Repeated outer splits and time-separated hardware blocks |
 | True QEC | Encoded logical state | Logical errors and decoder latency | Syndrome extraction, decoding, correction or Pauli-frame tracking |
 
@@ -34,86 +36,86 @@ A second, higher-risk question can then ask:
 
 ### Epsilon-SVR
 
-Given training observations \((x_i,y_i)\), epsilon-SVR seeks a function
+Given training observations $(x_i,y_i)$, epsilon-SVR seeks a function
 
-\[
+$$
 f(x)=\langle w,\phi(x)\rangle+b
-\]
+$$
 
-that is flat while tolerating deviations smaller than \(\epsilon\). Its primal objective is
+that is flat while tolerating deviations smaller than $\epsilon$. Its primal objective is
 
-\[
+$$
 \min_{w,b,\xi,\xi^*}\frac{1}{2}\lVert w\rVert^2+C\sum_{i=1}^{n}(\xi_i+\xi_i^*)
-\]
+$$
 
 subject to
 
-\[
+$$
 y_i-f(x_i)\leq \epsilon+\xi_i,
-\]
+$$
 
-\[
+$$
 f(x_i)-y_i\leq \epsilon+\xi_i^*,
-\]
+$$
 
-\[
+$$
 \xi_i,\xi_i^*\geq0.
-\]
+$$
 
-The dual depends on samples only through a kernel \(K(x_i,x_j)=\langle\phi(x_i),\phi(x_j)\rangle\):
+The dual depends on samples only through a kernel $K(x_i,x_j)=\langle\phi(x_i),\phi(x_j)\rangle$:
 
-\[
+$$
 \max_{\alpha,\alpha^*}-\frac{1}{2}(\alpha-\alpha^*)^T K(\alpha-\alpha^*)-\epsilon\mathbf{1}^T(\alpha+\alpha^*)+y^T(\alpha-\alpha^*)
-\]
+$$
 
-with \(0\leq\alpha_i,\alpha_i^*\leq C\) and \(\sum_i(\alpha_i-\alpha_i^*)=0\). This is why the Qiskit implementation can remain a conventional scikit-learn SVR after replacing its kernel evaluator. Current Qiskit `QSVR` extends `sklearn.svm.SVR`, accepts a `quantum_kernel`, and can also consume a precomputed matrix.[^4][^5]
+with $0\leq\alpha_i,\alpha_i^*\leq C$ and $\sum_i(\alpha_i-\alpha_i^*)=0$. This is why the Qiskit implementation can remain a conventional scikit-learn SVR after replacing its kernel evaluator. Current Qiskit `QSVR` extends `sklearn.svm.SVR`, accepts a `quantum_kernel`, and can also consume a precomputed matrix.[^4][^5]
 
-A critical implication is that **the QPU does not train the support-vector optimization** in Qiskit’s QSVR. It estimates entries of \(K\); a classical convex solver determines the dual coefficients. This differs from quantum linear-system SVM proposals and from annealing-based SVR formulations.[^6][^7][^8]
+A critical implication is that **the QPU does not train the support-vector optimization** in Qiskit’s QSVR. It estimates entries of $K$; a classical convex solver determines the dual coefficients. This differs from quantum linear-system SVM proposals and from annealing-based SVR formulations.[^6][^7][^8]
 
 ### Fidelity quantum kernel
 
 For a classical vector encoded as
 
-\[
+$$
 |\phi(x)\rangle=U_\phi(x)|0^q\rangle,
-\]
+$$
 
 a common kernel is
 
-\[
+$$
 K(x,z)=|\langle\phi(z)|\phi(x)\rangle|^2.
-\]
+$$
 
-The compute-uncompute circuit applies \(U_\phi(x)\), followed by \(U_\phi(z)^\dagger\), and estimates the probability of observing \(0^q\). The all-zero probability equals the state fidelity in the noiseless pure-state case. This architecture underlies Qiskit’s `FidelityQuantumKernel` and `ComputeUncompute` path.[^9][^10]
+The compute-uncompute circuit applies $U_\phi(x)$, followed by $U_\phi(z)^\dagger$, and estimates the probability of observing $0^q$. The all-zero probability equals the state fidelity in the noiseless pure-state case. This architecture underlies Qiskit’s `FidelityQuantumKernel` and `ComputeUncompute` path.[^9][^10]
 
-For \(n\) unique training points, symmetry and the known diagonal reduce the nominal training cost from \(n^2\) to
+For $n$ unique training points, symmetry and the known diagonal reduce the nominal training cost from $n^2$ to
 
-\[
+$$
 N_{\mathrm{train}}=\frac{n(n-1)}{2}
-\]
+$$
 
-distinct off-diagonal overlap circuits. For \(m\) test points, the cross-kernel adds
+distinct off-diagonal overlap circuits. For $m$ test points, the cross-kernel adds
 
-\[
+$$
 N_{\mathrm{test}}=mn
-\]
-overlaps. At \(S\) shots per circuit, the nominal shot budget is
+$$
+overlaps. At $S$ shots per circuit, the nominal shot budget is
 
-\[
+$$
 S\left(\frac{n(n-1)}{2}+mn\right),
-\]
+$$
 
-before twirling randomizations, repeated calibrations, mitigation circuits, or feature-map tuning. This quadratic bottleneck is fundamental to the standard full Gram-matrix workflow. Nyström methods can reduce quantum-kernel construction toward linear scaling in \(n\) for a fixed number of landmarks, at some approximation cost.[^11]
+before twirling randomizations, repeated calibrations, mitigation circuits, or feature-map tuning. This quadratic bottleneck is fundamental to the standard full Gram-matrix workflow. Nyström methods can reduce quantum-kernel construction toward linear scaling in $n$ for a fixed number of landmarks, at some approximation cost.[^11]
 
 ### Shot-noise floor
 
-If one kernel entry is estimated as an all-zero frequency from \(S\) Bernoulli samples with success probability \(p=K(x,z)\), then
+If one kernel entry is estimated as an all-zero frequency from $S$ Bernoulli samples with success probability $p=K(x,z)$, then
 
-\[
+$$
 \operatorname{Var}(\hat K)=\frac{p(1-p)}{S}\leq\frac{1}{4S}.
-\]
+$$
 
-The worst-case standard deviation is therefore \(1/(2\sqrt{S})\). This gives approximately 0.0156 at 1,024 shots, 0.0078 at 4,096 shots, and 0.0055 at 8,192 shots before hardware bias. More shots reduce sampling variance but cannot remove coherent gate bias, relaxation, leakage, crosstalk, or drift. Qiskit’s `FidelityStatevectorKernel` can emulate this binomial shot noise and optionally project the resulting training kernel back to the PSD cone.[^12]
+The worst-case standard deviation is therefore $1/(2\sqrt{S})$. This gives approximately 0.0156 at 1,024 shots, 0.0078 at 4,096 shots, and 0.0055 at 8,192 shots before hardware bias. More shots reduce sampling variance but cannot remove coherent gate bias, relaxation, leakage, crosstalk, or drift. Qiskit’s `FidelityStatevectorKernel` can emulate this binomial shot noise and optionally project the resulting training kernel back to the PSD cone.[^12]
 
 ### Why PSD matters
 
@@ -121,13 +123,13 @@ An exact fidelity Gram matrix is positive semidefinite because it is an inner-pr
 
 Blind PSD projection is not automatically optimal for prediction. It changes the measured geometry and can behave as implicit regularization. A deep study should preserve both the **raw matrix** and every transformed matrix, then report:
 
-- Asymmetry \(\lVert K-K^T\rVert_F/\lVert K\rVert_F\).
-- Diagonal deviation \(\lVert\operatorname{diag}(K)-\mathbf{1}\rVert_2\).
+- Asymmetry $\lVert K-K^T\rVert_F/\lVert K\rVert_F$.
+- Diagonal deviation $\lVert\operatorname{diag}(K)-\mathbf{1}\rVert_2$.
 - Minimum eigenvalue and total negative spectral mass.
 - Effective rank.
 - Frobenius alignment to the exact reference.
 - Target alignment.
-- Downstream RMSE, MAE, and \(R^2\).
+- Downstream RMSE, MAE, and $R^2$.
 
 ## Error taxonomy for QSVR
 
@@ -135,11 +137,11 @@ Blind PSD projection is not automatically optimal for prediction. It changes the
 
 Shot noise perturbs each overlap estimate and can break PSD even if the circuit is otherwise ideal. It is input dependent because the Bernoulli variance is largest near fidelity 0.5. Shot allocation should therefore be treated as an experimental factor rather than a fixed implementation detail.
 
-A useful extension is adaptive shot allocation. Run a pilot budget \(S_0\), estimate \(\hat p_{ij}(1-\hat p_{ij})\), and allocate subsequent shots preferentially to entries with large estimated variance or high leverage under the provisional SVR. This tests whether equal-shot acquisition wastes QPU time on entries near zero or one.
+A useful extension is adaptive shot allocation. Run a pilot budget $S_0$, estimate $\hat p_{ij}(1-\hat p_{ij})$, and allocate subsequent shots preferentially to entries with large estimated variance or high leverage under the provisional SVR. This tests whether equal-shot acquisition wastes QPU time on entries near zero or one.
 
 ### State-preparation and gate error
 
-Errors in \(U_\phi(x)\) and \(U_\phi(z)^\dagger\) change the encoded states and therefore bias the kernel itself. Because both halves of a compute-uncompute circuit contain data-dependent gates, the bias need not be a uniform shrinkage. Two-qubit routing gates are particularly important: an expressive feature map that performs best exactly may be inferior after mapping to a sparse coupling graph.
+Errors in $U_\phi(x)$ and $U_\phi(z)^\dagger$ change the encoded states and therefore bias the kernel itself. Because both halves of a compute-uncompute circuit contain data-dependent gates, the bias need not be a uniform shrinkage. Two-qubit routing gates are particularly important: an expressive feature map that performs best exactly may be inferior after mapping to a sparse coupling graph.
 
 ### Coherent error
 
@@ -149,11 +151,11 @@ Systematic over-rotations and residual interactions can create structured, repea
 
 Relaxation and dephasing accumulate with scheduled duration. Dynamical decoupling inserts identity-equivalent pulse sequences into idle windows to suppress coherent idle evolution. IBM Sampler exposes `XX`, `XpXm`, and `XY4` sequences; the feature is disabled by default.[^15][^14]
 
-Amplitude damping deserves special attention because the IBM-hardware QSVR anomaly study found it more damaging than depolarizing, phase-damping, phase-flip, or bit-flip noise.[^16][^17] A feature map whose ideal states contain substantial excited-state population may therefore show input-dependent contraction toward \(|0^q\rangle\), biasing all-zero probabilities in a way that can superficially increase some overlaps and decrease others.
+Amplitude damping deserves special attention because the IBM-hardware QSVR anomaly study found it more damaging than depolarizing, phase-damping, phase-flip, or bit-flip noise.[^16][^17] A feature map whose ideal states contain substantial excited-state population may therefore show input-dependent contraction toward $|0^q\rangle$, biasing all-zero probabilities in a way that can superficially increase some overlaps and decrease others.
 
 ### Readout error
 
-The kernel is inferred from one distinguished bit string, \(0^q\). Assignment errors can therefore bias the kernel even if state preparation is perfect. Measurement twirling can reduce systematic readout bias, while full assignment-matrix mitigation becomes costly as qubit count grows. A recent fidelity-kernel study proposed bit-flip tolerance, where bit strings within a calibrated Hamming distance of zero contribute to the fidelity estimate; it reported that noisy finite-shot kernels need not be PSD and combined the method with dynamical decoupling and measurement twirling.[^18]
+The kernel is inferred from one distinguished bit string, $0^q$. Assignment errors can therefore bias the kernel even if state preparation is perfect. Measurement twirling can reduce systematic readout bias, while full assignment-matrix mitigation becomes costly as qubit count grows. A recent fidelity-kernel study proposed bit-flip tolerance, where bit strings within a calibrated Hamming distance of zero contribute to the fidelity estimate; it reported that noisy finite-shot kernels need not be PSD and combined the method with dynamical decoupling and measurement twirling.[^18]
 
 ### Drift and miscalibration
 
@@ -210,7 +212,7 @@ The 2023 anomaly-detection study used a QSVR reconstruction-loss method across e
 
 The expanded hardware study ran five qubits on a 27-qubit IBM device. It reported mean AUC 0.72 on hardware versus 0.76 in noiseless simulation; hardware outperformed ideal simulation on two of eleven datasets but underperformed on eight. More than 500 noisy models were used to study noise sensitivity, with amplitude damping and miscalibration causing the strongest degradation among the tested channels.[^16][^17]
 
-The same study found severe adversarial vulnerability: weak projected-gradient attacks with \(\varepsilon=0.01\) could reduce AUC by up to an order of magnitude, and neither noise nor the tested adversarial-training setup reliably fixed it. This is relevant even for ordinary regression because it shows that apparent hardware-noise robustness does not imply robustness to structured input perturbations.[^17]
+The same study found severe adversarial vulnerability: weak projected-gradient attacks with $\varepsilon=0.01$ could reduce AUC by up to an order of magnitude, and neither noise nor the tested adversarial-training setup reliably fixed it. This is relevant even for ordinary regression because it shows that apparent hardware-noise robustness does not imply robustness to structured input perturbations.[^17]
 
 ### Quantum-kernel-specific mitigation
 
@@ -221,7 +223,7 @@ This line of work is more directly applicable to QSVR than generic ZNE because i
 - Qiskit nearest-PSD projection.
 - Eigenvalue clipping.
 - Higham-style nearest correlation matrix projection.
-- Tikhonov shift \(K+\lambda I\).
+- Tikhonov shift $K+\lambda I$.
 - Truncated eigendecomposition.
 - Depolarizing-model correction using diagonal/survival estimates.
 - Nyström approximation with hardware-evaluated landmarks.
@@ -229,7 +231,7 @@ This line of work is more directly applicable to QSVR than generic ZNE because i
 
 ### QSVR as QEC decoder
 
-The direct evidence here is weak. i-QER used a **classical** nonlinear RBF-SVR to predict circuit error and selected it over linear regression, lasso, and random forest; the reported training MAE was 1.2305% with \(R^2=0.98\), after which predicted error guided recursive circuit fragmentation. This is error reduction through prediction and circuit cutting, not stabilizer decoding and not QSVR.[^1]
+The direct evidence here is weak. i-QER used a **classical** nonlinear RBF-SVR to predict circuit error and selected it over linear regression, lasso, and random forest; the reported training MAE was 1.2305% with $R^2=0.98$, after which predicted error guided recursive circuit fragmentation. This is error reduction through prediction and circuit cutting, not stabilizer decoding and not QSVR.[^1]
 
 Modern QEC decoding research instead emphasizes recurrent transformers, graph methods, matching, tensor networks, and maximum-likelihood search. AlphaQubit, for example, uses a recurrent transformer trained on simulated data and fine-tuned on experimental syndrome data; it outperformed prior decoders on the studied surface-code experiments. The Tesseract project implements a search-based most-likely-error decoder for quantum LDPC codes with Stim detector-error-model support.[^32][^19]
 
@@ -280,7 +282,7 @@ Batch mode groups related primitive jobs on one QPU and is appropriate for acqui
 
 ### Dynamic circuits and true QEC
 
-IBM’s repetition-code tutorial uses mid-circuit stabilizer measurement, reset, and conditional control to protect \(|\bar 1\rangle=|111\rangle\) against a single bit flip.[^2][^3] It compares repeated dynamic correction with end-only decoding and an unencoded qubit. This is the correct starting point for a genuine QEC extension, but the repetition code cannot protect an arbitrary qubit from both \(X\) and \(Z\) errors.
+IBM’s repetition-code tutorial uses mid-circuit stabilizer measurement, reset, and conditional control to protect $|\bar 1\rangle=|111\rangle$ against a single bit flip.[^2][^3] It compares repeated dynamic correction with end-only decoding and an unencoded qubit. This is the correct starting point for a genuine QEC extension, but the repetition code cannot protect an arbitrary qubit from both $X$ and $Z$ errors.
 
 Sampler’s current dynamical-decoupling implementation is incompatible with dynamic circuits. Therefore, a logical-QSVR experiment cannot blindly combine every suppression option with syndrome-feedback circuits; compatibility must be tested condition by condition.[^38]
 
@@ -332,10 +334,10 @@ Use Qiskit Aer to isolate:
 - Coherent over-rotation.
 - Amplitude damping.
 - Phase damping.
-- Thermal relaxation using \(T_1\), \(T_2\), and gate duration.
+- Thermal relaxation using $T_1$, $T_2$, and gate duration.
 - Composite backend-derived noise.
 
-Aer provides `NoiseModel`, `QuantumError`, and `ReadoutError`; thermal relaxation is parameterized by \(T_1\), \(T_2\), gate time, and equilibrium excited-state population. Device-derived Aer models combine depolarizing and thermal-relaxation approximations with readout error but remain only approximations to actual hardware.[^39][^40][^20][^41]
+Aer provides `NoiseModel`, `QuantumError`, and `ReadoutError`; thermal relaxation is parameterized by $T_1$, $T_2$, gate time, and equilibrium excited-state population. Device-derived Aer models combine depolarizing and thermal-relaxation approximations with readout error but remain only approximations to actual hardware.[^39][^40][^20][^41]
 
 For each channel, sweep physically interpretable strength and report both elementwise kernel distortion and regression performance. This will reveal cases in which a larger Frobenius error nevertheless regularizes the predictor, as well as cases in which a visually modest kernel error destroys the support-vector solution.
 
@@ -354,7 +356,7 @@ Use a blocked factorial design:
 
 Within a block, use the same dataset, backend, feature map, physical layout, and target preprocessing. Randomize or interleave circuit order when feasible so that drift is not confounded with matrix position.
 
-The minimum hardware matrix should be small enough to complete in one coherent block. For example, \(n=20\), \(m=10\) requires 190 training overlaps plus 200 test overlaps, or 390 distinct overlap circuits before randomized compilations. At 4,096 shots, this is about 1.60 million nominal shots per condition. A four-condition suppression ablation repeated across three calibration blocks already exceeds 19 million nominal shots, before calibration circuits and twirling expansion.
+The minimum hardware matrix should be small enough to complete in one coherent block. For example, $n=20$, $m=10$ requires 190 training overlaps plus 200 test overlaps, or 390 distinct overlap circuits before randomized compilations. At 4,096 shots, this is about 1.60 million nominal shots per condition. A four-condition suppression ablation repeated across three calibration blocks already exceeds 19 million nominal shots, before calibration circuits and twirling expansion.
 
 ### Phase 4: Kernel reconstruction
 
@@ -362,9 +364,9 @@ The minimum hardware matrix should be small enough to complete in one coherent b
 
 Construct
 
-\[
+$$
 K_s=\frac{K+K^T}{2}
-\]
+$$
 
 and compare two diagonal choices:
 
@@ -377,41 +379,41 @@ Never overwrite the only stored copy of the measured diagonal; kernel-specific m
 
 If
 
-\[
+$$
 K_s=Q\Lambda Q^T,
-\]
+$$
 
-set \(\Lambda_+=\max(\Lambda,0)\) and reconstruct \(Q\Lambda_+Q^T\). Renormalize to unit diagonal only after checking numerical stability. This is simple but can overfit noise if many small positive eigenvalues remain.
+set $\Lambda_+=\max(\Lambda,0)$ and reconstruct $Q\Lambda_+Q^T$. Renormalize to unit diagonal only after checking numerical stability. This is simple but can overfit noise if many small positive eigenvalues remain.
 
 #### Ridge repair
 
 Use
 
-\[
+$$
 K_\lambda=K_s+\lambda I.
-\]
+$$
 
-This changes the diagonal and corresponds to a Tikhonov-style regularization. Select \(\lambda\) using training-only cross-validation or a prespecified noise rule.
+This changes the diagonal and corresponds to a Tikhonov-style regularization. Select $\lambda$ using training-only cross-validation or a prespecified noise rule.
 
 #### Truncated spectrum
 
-Retain the largest \(r\) positive eigenvalues:
+Retain the largest $r$ positive eigenvalues:
 
-\[
+$$
 K_r=Q_r\Lambda_rQ_r^T.
-\]
+$$
 
-Choose \(r\) by nested validation, a training-only explained-spectrum threshold, or a random-matrix noise threshold. The evidence from noisy QSVR supports low-rank approximation, but test-set rank selection is invalid.[^29][^28]
+Choose $r$ by nested validation, a training-only explained-spectrum threshold, or a random-matrix noise threshold. The evidence from noisy QSVR supports low-rank approximation, but test-set rank selection is invalid.[^29][^28]
 
 #### Rectangular test kernel
 
-A square training repair does not uniquely define how to repair \(K_{\mathrm{test,train}}\). The transformation must be derived solely from training geometry. One consistent projection is
+A square training repair does not uniquely define how to repair $K_{\mathrm{test,train}}$. The transformation must be derived solely from training geometry. One consistent projection is
 
-\[
+$$
 K^*_{r}=K^*Q_rQ_r^T,
-\]
+$$
 
-possibly followed by the same training-column normalization used for \(K_r\). Alternatively, Nyström features can provide an explicit common embedding for train and test points. Independently taking an SVD of the entire test matrix risks test-dependent preprocessing and complicates deployment.
+possibly followed by the same training-column normalization used for $K_r$. Alternatively, Nyström features can provide an explicit common embedding for train and test points. Independently taking an SVD of the entire test matrix risks test-dependent preprocessing and complicates deployment.
 
 ### Phase 5: Statistical analysis
 
@@ -419,7 +421,7 @@ Primary endpoints:
 
 - Test RMSE.
 - Test MAE.
-- \(R^2\).
+- $R^2$.
 - QPU seconds or equivalent billed usage.
 
 Secondary endpoints:
@@ -457,13 +459,13 @@ A sensible success criterion is not merely “hardware QSVR beats exact QSVR,”
 
 A three-qubit bit-flip code maps
 
-\[
+$$
 \alpha|0\rangle+\beta|1\rangle
 \mapsto
 \alpha|000\rangle+\beta|111\rangle.
-\]
+$$
 
-It can diagnose and correct one \(X\) error through parity checks, but it does not protect against phase error. A QSVR feature map involving arbitrary rotations and entangling phases will generally leave the restricted set of operations that are easy to implement fault-tolerantly in this code. The IBM repetition tutorial accordingly demonstrates protected memory for a logical basis state, not arbitrary universal logical computation.[^3][^2]
+It can diagnose and correct one $X$ error through parity checks, but it does not protect against phase error. A QSVR feature map involving arbitrary rotations and entangling phases will generally leave the restricted set of operations that are easy to implement fault-tolerantly in this code. The IBM repetition tutorial accordingly demonstrates protected memory for a logical basis state, not arbitrary universal logical computation.[^3][^2]
 
 ### Feasible microbenchmark
 
@@ -477,15 +479,15 @@ A defensible first logical-kernel experiment is deliberately narrow:
 
 The correct figure of merit is not raw logical fidelity alone. Use cost-normalized improvement such as
 
-\[
+$$
 G=\frac{\operatorname{MSE}_{\mathrm{physical}}-\operatorname{MSE}_{\mathrm{logical}}}{\text{QPU cost multiplier}},
-\]
+$$
 
 and report negative values honestly when the encoding overhead makes performance worse.
 
 ### IBM hardware trajectory
 
-IBM’s current large-scale plan targets Starling in 2029 with 200 logical qubits and 100 million gates. The proposed bivariate-bicycle “gross” code has parameters \([[144,12,12]]\), using 144 data qubits and 144 check qubits to encode 12 logical qubits; IBM presents it as roughly tenfold lower qubit overhead than a comparable surface-code construction.[^42][^43][^44]
+IBM’s current large-scale plan targets Starling in 2029 with 200 logical qubits and 100 million gates. The proposed bivariate-bicycle “gross” code has parameters $[[144,12,12]]$, using 144 data qubits and 144 check qubits to encode 12 logical qubits; IBM presents it as roughly tenfold lower qubit overhead than a comparable surface-code construction.[^42][^43][^44]
 
 This roadmap does not mean that a general user can currently run a fully fault-tolerant QSVR. It means QEC architecture is progressing while present user-accessible experiments remain dominated by physical circuits, dynamic-circuit demonstrations, and research-scale logical memories.
 

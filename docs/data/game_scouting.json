@@ -1,0 +1,120 @@
+{
+  "plan": {
+    "version": 1,
+    "purpose": "Game decision audit only, not wildfire prediction or human play validation",
+    "seed_start": 1001,
+    "seed_count": 500,
+    "policies": [
+      "legacy_triage",
+      "no_scouting",
+      "decision_scouting",
+      "free_perfect_fuel"
+    ],
+    "matched": "Same incident/location/weather seed, visible-pressure crew priority and upgrade preference",
+    "upgrade_preference": [
+      "training",
+      "logistics",
+      "network",
+      "precision",
+      "survey"
+    ],
+    "water_threshold": 1.1,
+    "legacy_triage": "Existing size > 0.95 scouting rule, then water when forecast upper bound > 1.1",
+    "no_scouting": "Always use visible upper bound; never buy scouting",
+    "decision_scouting": "Buy scouting only when forecast bounds straddle 1.1 and at least five supplies remain; then use revealed forecast",
+    "free_perfect_fuel": "Unattainable free information control: every burning fire has known fuel before decisions",
+    "primary": "Paired final reserve difference versus no_scouting",
+    "secondary": [
+      "win fraction",
+      "spending",
+      "scouting count",
+      "water drops",
+      "contained fires"
+    ],
+    "limits": "No physical rule changes, fitting, quantum states, hardware, scientific test access or automatic policy tuning. All four policies are fixed before new seeds run.",
+    "output": ".cache/judge-submission/game-scouting-v1"
+  },
+  "hashes": {
+    "experiments/game_scouting.json": "4b7fcad71543012a78f7851af1900ff6682e964d49e4f1ddc2450470a62caf3e",
+    "web/demo/assets/context/scenario.json": "466bd0172a7172a421330d1940e2999f5ef2c0cb59c123f4bc3e6c63a2d6593d",
+    "web/demo/strategy/rules.js": "e996926b338308d7ed77e206c47e6e8c2f10562c0d31ee181b8a334f9d65211e",
+    "web/demo/strategy/upgrades.js": "4c37a08165177b7e38f933d868ecf35e7ce8152aa3a5b530010edd30a7a29b68",
+    "web/demo/strategy/scenario.js": "8db4b1dd1d0626822770ef8423128078d9c5fa5c22917fe5c4b8155579eb08ec",
+    "web/demo/strategy/random.js": "4f5bd543c959042f71edf506fd233316aa815d20b8d8ea2b7ee59769440a47da",
+    "web/demo/strategy/scouting-audit.js": "dddb48c9d21cf3371d1de77a05ef2ad406dfd53e641d0fd64cdfcf01f0d266be"
+  },
+  "simulated_seasons": 2000,
+  "position_pool": 66,
+  "policies": [
+    {
+      "policy": "legacy_triage",
+      "win_fraction": 0.762,
+      "mean_reserve": 62.082300603690165,
+      "mean_spent": 41.778,
+      "mean_scouting": 3.67,
+      "mean_water": 3.136,
+      "mean_contained": 7.544,
+      "paired_reserve_vs_no_scouting": {
+        "mean": -14.76350351582768,
+        "better": 19,
+        "worse": 468,
+        "same": 13
+      }
+    },
+    {
+      "policy": "no_scouting",
+      "win_fraction": 0.944,
+      "mean_reserve": 76.84580411951781,
+      "mean_spent": 41.628,
+      "mean_scouting": 0,
+      "mean_water": 3.638,
+      "mean_contained": 9.876,
+      "paired_reserve_vs_no_scouting": {
+        "mean": 0,
+        "better": 0,
+        "worse": 0,
+        "same": 500
+      }
+    },
+    {
+      "policy": "decision_scouting",
+      "win_fraction": 0.84,
+      "mean_reserve": 67.66249876587123,
+      "mean_spent": 41.874,
+      "mean_scouting": 1.158,
+      "mean_water": 3.646,
+      "mean_contained": 8.322,
+      "paired_reserve_vs_no_scouting": {
+        "mean": -9.183305353646524,
+        "better": 38,
+        "worse": 343,
+        "same": 119
+      }
+    },
+    {
+      "policy": "free_perfect_fuel",
+      "win_fraction": 0.876,
+      "mean_reserve": 71.19409379432552,
+      "mean_spent": 41.528,
+      "mean_scouting": 0,
+      "mean_water": 3.758,
+      "mean_contained": 8.948,
+      "paired_reserve_vs_no_scouting": {
+        "mean": -5.651710325192335,
+        "better": 39,
+        "worse": 211,
+        "same": 250
+      }
+    }
+  ],
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "interpretation": "Paid scouting under these fixed policies is costly; even the fixed threshold with free information is worse than the pessimistic threshold. This is not evidence that information intrinsically harms optimal decisions or that players cannot use it well.",
+  "first_attempt": {
+    "failure": "ArrayBuffer hashing before intent/season simulation",
+    "simulated_seasons": 0,
+    "preserved": true
+  },
+  "public_summary_validation": "Recomputed aggregate wins/reserve from 2,000 saved rows; no new seasons in collection."
+}

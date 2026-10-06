@@ -15,6 +15,20 @@ OPERATIONS = {
     'context': 'run_annual_context.py',
     'woodland': 'run_annual_woodland.py',
     'collect': None,
+    'mitigation': 'run_pipeline_mitigation.py',
+    'mitigation-collect': 'run_pipeline_mitigation.py',
+    'forest': 'run_forest_expansion.py',
+    'forest-orders': None,
+    'selector-scaling': None,
+    'forest-collect': 'collect_forest_study.py',
+    'forest-orders-collect': 'collect_forest_study.py',
+    'selector-scaling-collect': 'collect_forest_study.py',
+    'forest-source-collect': 'context/forest_collect.py',
+    'selector-hardware-collect': 'collect_selector_hardware.py',
+    'selector-search': None,
+    'expanded-tuning': None,
+    'selector-search-collect': 'collect_search.py',
+    'expanded-tuning-collect': 'collect_search.py',
 }
 
 
@@ -42,6 +56,54 @@ def collect_bundle(root, output):
 
 def run(root, operation, output, dataset=None, qubits=4, execute=False):
     output = Path(output)
+    if operation in {'selector-search', 'expanded-tuning',
+                     'selector-search-collect', 'expanded-tuning-collect'}:
+        if operation.endswith('-collect'):
+            study = 'selector-multistart' if operation.startswith('selector') else 'expanded-tuning'
+            command = [sys.executable, str(root/'scripts/collect_search.py'), study]
+        else:
+            module = 'selector_multistart' if operation == 'selector-search' else 'expanded_tuning'
+            command = [sys.executable, '-m', 'wildfire_lab.'+module]
+        command.extend(['--output', str(output)])
+        if execute:
+            subprocess.run(command, cwd=root, check=True)
+        return dict(operation=operation, command=command, executes=execute,
+                    information='New training-only search; collection replays saved arithmetic only. No hardware or final-year access.')
+    if operation == 'selector-hardware-collect':
+        command = [sys.executable,str(root/'scripts/collect_selector_hardware.py'),
+                   '--output',str(output)]
+        if execute:
+            subprocess.run(command,cwd=root,check=True)
+        return dict(operation=operation,command=command,executes=execute,
+                    information='Published hardware counts and prediction-equation replay only; no hardware, fits, quantum states, draws or credentials.')
+    if operation.startswith('forest') or operation.startswith('selector-scaling'):
+        command = [sys.executable]
+        if operation in {'forest-orders','selector-scaling'}:
+            module = 'forest_order_controls' if operation=='forest-orders' else 'selector_scaling'
+            command.extend(['-m','wildfire_lab.'+module])
+        else:
+            command.append(str(root/'scripts'/OPERATIONS[operation]))
+            if operation.endswith('-collect') and operation!='forest-source-collect':
+                study = {'forest-collect':'forest-expansion',
+                         'forest-orders-collect':'forest-order-controls',
+                         'selector-scaling-collect':'selector-scaling'}[operation]
+                command.append(study)
+            elif operation=='forest':
+                command.append('run')
+        command.extend(['--output',str(output)])
+        if execute:
+            subprocess.run(command,cwd=root,check=True)
+        return dict(operation=operation,command=command,executes=execute,
+                    information='Separately frozen training-only development; saved collection has no fits/states/draws/downloads. Source collection needs existing42-layer caches; public study collection needs only committed assets.')
+    if operation in {'mitigation', 'mitigation-collect'}:
+        command = [sys.executable, str(root / 'scripts/run_pipeline_mitigation.py'),
+                   'run' if operation == 'mitigation' else 'collect', '--output', str(output)]
+        if dataset is not None and operation == 'mitigation':
+            command.extend(['--dataset', str(dataset)])
+        if execute:
+            subprocess.run(command, cwd=root, check=True)
+        return dict(operation=operation, command=command, executes=execute,
+                    information='Separate training-only local mitigation; collection never fits or samples; no hardware')
     if operation == 'collect':
         command = [sys.executable, str(root / 'scripts/pipeline.py'), 'annual', 'collect',
                    '--output', str(output), '--execute']

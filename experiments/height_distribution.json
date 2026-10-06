@@ -1,0 +1,49 @@
+{
+  "id": "height-distribution-v1",
+  "purpose": "Descriptive interpretation of previously acquired source arrays; not predictive feature selection",
+  "epochs": [
+    1985,
+    1990,
+    1995,
+    2000,
+    2005,
+    2010,
+    2015
+  ],
+  "input_contract": "Published numeric NPZ hashes and grid; uint8 heights in metres; valid zero; nodata 255; common valid Ontario footprint across all seven epochs",
+  "parent_hashes": {
+    "docs/data/scanfi_height_context.json": "20258c3268a94cca9d8048dacb483a49019c388e672b21def5f9cd51c546ad4f",
+    "web/demo/assets/context/height-series.json": "0198c95fd5e19308ef04a2831a2cff2348d440dd9c0368de365f677ff6d3fd97"
+  },
+  "metrics": [
+    "255 integer-bin counts, values 0..254",
+    "Valid zero fraction",
+    "All-value and conditional positive-value means and p10/p50/p90",
+    "Fraction strictly above displayed 30m colour ceiling",
+    "Total variation distance from 1985 histogram",
+    "Consecutive-epoch same/decreased/increased proportions and mean absolute change",
+    "Exact symmetric decomposition of end-point mean change into positive-share and positive-height-mean terms"
+  ],
+  "figure": "Fixed 0..40m endpoint histogram; disclose mass beyond displayed extent. All seven all-value and conditional positive means, fixed 0..20m axis.",
+  "budget": {
+    "epochs": 7,
+    "downloads": 0,
+    "predictor_fits": 0,
+    "quantum_states": 0,
+    "hardware_jobs": 0,
+    "label_reads": 0
+  },
+  "checks": [
+    "NPZ hashes and grid identical to published parents",
+    "Histogram totals and weighted means agree with existing extraction receipt",
+    "Zero counts agree with existing extraction receipt",
+    "Direct-array moments and transition counts agree with histogram summary",
+    "Endpoint decomposition recomposes mean change to numerical tolerance"
+  ],
+  "limitations": [
+    "Positive height is not a forest-cover label or a tree-density measure",
+    "480m NEAREST overview is not native 30m area-weighted sampling",
+    "Full-series retrospective processing and common seven-epoch mask do not establish as-of availability",
+    "Descriptive source variation establishes no predictive improvement; no outcome data is read"
+  ]
+}

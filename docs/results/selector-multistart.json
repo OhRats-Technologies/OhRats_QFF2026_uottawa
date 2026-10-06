@@ -1,0 +1,899 @@
+{
+  "study": "selector-multistart",
+  "bundle": "docs/data/selector-multistart-evidence.zip",
+  "bundle_sha256": "1a919e3be33a741ed05720c215638bb9e5747bcd7977730bf4b9dcf4d11441a4",
+  "evidence_sha256": "0cbaf0b5eade5348eeac6dd2a3c80352a34bd1155ccaca27375486445fe2734a",
+  "status": "complete",
+  "information": "Reused1988\u20132018 annual Ontario development; no final-year access or hardware acquisition. Full recipe, optimizer/search traces and selected fit equations are in the bundle.",
+  "resources": {
+    "seconds": 48.18890595796984,
+    "model_fits": 189,
+    "hardware_jobs": 0,
+    "final_test_accessed": false,
+    "optimizer_searches": 108,
+    "optimizer_calls": 30011,
+    "converged_searches": 4,
+    "classical_sample_draws": 1152000,
+    "pair_circuits": 22071
+  },
+  "aggregates": [
+    {
+      "panel": "10",
+      "selector": "exact",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 68.89703057964407,
+      "fold_mae_ha": [
+        21.22614733107092,
+        137.55411422555886,
+        47.91083018230239
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 73.08040611968808,
+      "fold_mae_ha": [
+        29.48691085495832,
+        119.75752402415974,
+        69.99678347994622
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 70.87674238188828,
+      "fold_mae_ha": [
+        40.004455812037705,
+        123.98319881242566,
+        48.6425725212015
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "mi",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 66.90279655602355,
+      "fold_mae_ha": [
+        25.137973191253934,
+        143.57051158338277,
+        31.999904893433943
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "mi",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 67.97615123648279,
+      "fold_mae_ha": [
+        24.580039453527654,
+        130.06781666148137,
+        49.28059759443933
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "mi",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.5180601407326,
+      "fold_mae_ha": [
+        34.444880056932284,
+        129.39720552317408,
+        50.712094842091474
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "uniform",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 68.89703057964407,
+      "fold_mae_ha": [
+        21.22614733107092,
+        137.55411422555886,
+        47.91083018230239
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "uniform",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 73.08040611968808,
+      "fold_mae_ha": [
+        29.48691085495832,
+        119.75752402415974,
+        69.99678347994622
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "uniform",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 70.87674238188828,
+      "fold_mae_ha": [
+        40.004455812037705,
+        123.98319881242566,
+        48.6425725212015
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized1",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 68.89703057964407,
+      "fold_mae_ha": [
+        21.22614733107092,
+        137.55411422555886,
+        47.91083018230239
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized1",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 73.08040611968808,
+      "fold_mae_ha": [
+        29.48691085495832,
+        119.75752402415974,
+        69.99678347994622
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized1",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 70.87674238188828,
+      "fold_mae_ha": [
+        40.004455812037705,
+        123.98319881242566,
+        48.6425725212015
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized2",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 68.89703057964407,
+      "fold_mae_ha": [
+        21.22614733107092,
+        137.55411422555886,
+        47.91083018230239
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized2",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 73.08040611968808,
+      "fold_mae_ha": [
+        29.48691085495832,
+        119.75752402415974,
+        69.99678347994622
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized2",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 70.87674238188828,
+      "fold_mae_ha": [
+        40.004455812037705,
+        123.98319881242566,
+        48.6425725212015
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized3",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 68.89703057964407,
+      "fold_mae_ha": [
+        21.22614733107092,
+        137.55411422555886,
+        47.91083018230239
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized3",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 73.08040611968808,
+      "fold_mae_ha": [
+        29.48691085495832,
+        119.75752402415974,
+        69.99678347994622
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized3",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 70.87674238188828,
+      "fold_mae_ha": [
+        40.004455812037705,
+        123.98319881242566,
+        48.6425725212015
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized4",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 68.89703057964407,
+      "fold_mae_ha": [
+        21.22614733107092,
+        137.55411422555886,
+        47.91083018230239
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized4",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 73.08040611968808,
+      "fold_mae_ha": [
+        29.48691085495832,
+        119.75752402415974,
+        69.99678347994622
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "optimized4",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 70.87674238188828,
+      "fold_mae_ha": [
+        40.004455812037705,
+        123.98319881242566,
+        48.6425725212015
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 64.62830719753387,
+      "fold_mae_ha": [
+        20.435431354703752,
+        142.03510554572622,
+        31.414384692171637
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 79.21283438532289,
+      "fold_mae_ha": [
+        28.21202036282875,
+        138.53585470688944,
+        70.89062808625047
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 69.56691979612759,
+      "fold_mae_ha": [
+        25.032571128900603,
+        126.35278347862545,
+        57.31540478085671
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "mi",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 67.19138269879015,
+      "fold_mae_ha": [
+        19.015623678958704,
+        139.185988962968,
+        43.37253545444375
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "mi",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 75.20360327360528,
+      "fold_mae_ha": [
+        22.0356274987237,
+        133.5229693425213,
+        70.05221297957084
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "mi",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.19976357113315,
+      "fold_mae_ha": [
+        28.587872043549286,
+        126.73826514283954,
+        58.27315352701065
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "uniform",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 64.62830719753387,
+      "fold_mae_ha": [
+        20.435431354703752,
+        142.03510554572622,
+        31.414384692171637
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "uniform",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 79.21283438532289,
+      "fold_mae_ha": [
+        28.21202036282875,
+        138.53585470688944,
+        70.89062808625047
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "uniform",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 69.56691979612759,
+      "fold_mae_ha": [
+        25.032571128900603,
+        126.35278347862545,
+        57.31540478085671
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized1",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 61.6073666607397,
+      "fold_mae_ha": [
+        20.435431354703752,
+        132.9722839353437,
+        31.414384692171637
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized1",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 75.4848034200201,
+      "fold_mae_ha": [
+        28.21202036282875,
+        127.35176181098107,
+        70.89062808625047
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized1",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.33994714406542,
+      "fold_mae_ha": [
+        25.032571128900603,
+        131.67186552243894,
+        57.31540478085671
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized2",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 64.62830719753387,
+      "fold_mae_ha": [
+        20.435431354703752,
+        142.03510554572622,
+        31.414384692171637
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized2",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 79.21283438532289,
+      "fold_mae_ha": [
+        28.21202036282875,
+        138.53585470688944,
+        70.89062808625047
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized2",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 69.56691979612759,
+      "fold_mae_ha": [
+        25.032571128900603,
+        126.35278347862545,
+        57.31540478085671
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized3",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 61.6073666607397,
+      "fold_mae_ha": [
+        20.435431354703752,
+        132.9722839353437,
+        31.414384692171637
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized3",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 75.4848034200201,
+      "fold_mae_ha": [
+        28.21202036282875,
+        127.35176181098107,
+        70.89062808625047
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized3",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.33994714406542,
+      "fold_mae_ha": [
+        25.032571128900603,
+        131.67186552243894,
+        57.31540478085671
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized4",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 64.62830719753387,
+      "fold_mae_ha": [
+        20.435431354703752,
+        142.03510554572622,
+        31.414384692171637
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized4",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 79.21283438532289,
+      "fold_mae_ha": [
+        28.21202036282875,
+        138.53585470688944,
+        70.89062808625047
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "optimized4",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 69.56691979612759,
+      "fold_mae_ha": [
+        25.032571128900603,
+        126.35278347862545,
+        57.31540478085671
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 93.2872961202837,
+      "fold_mae_ha": [
+        19.085973184093426,
+        154.65022987760116,
+        106.12568529915649
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 89.31716429272468,
+      "fold_mae_ha": [
+        42.577185794804535,
+        143.53346019022888,
+        81.84084689314065
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 85.34569336088983,
+      "fold_mae_ha": [
+        33.955194335865585,
+        134.95709804274654,
+        87.1247877040574
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "mi",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 88.37569102567063,
+      "fold_mae_ha": [
+        19.63213410528971,
+        147.03473492275208,
+        98.46020404897013
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "mi",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 75.53934842067517,
+      "fold_mae_ha": [
+        26.440519459825886,
+        138.09412296446357,
+        62.08340283773606
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "mi",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 84.14519833429924,
+      "fold_mae_ha": [
+        32.63996054845119,
+        140.81432003137792,
+        78.9813144230686
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "uniform",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 75.84883138647649,
+      "fold_mae_ha": [
+        20.72278569997293,
+        147.03473492275208,
+        59.78897353670449
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "uniform",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 92.34955712020773,
+      "fold_mae_ha": [
+        38.24459826129802,
+        138.09412296446357,
+        100.70995013486163
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "uniform",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 75.74400604042349,
+      "fold_mae_ha": [
+        23.918534669394727,
+        140.81432003137792,
+        62.49916342049784
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized1",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 93.2872961202837,
+      "fold_mae_ha": [
+        19.085973184093426,
+        154.65022987760116,
+        106.12568529915649
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized1",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 89.31716429272468,
+      "fold_mae_ha": [
+        42.577185794804535,
+        143.53346019022888,
+        81.84084689314065
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized1",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 85.34569336088983,
+      "fold_mae_ha": [
+        33.955194335865585,
+        134.95709804274654,
+        87.1247877040574
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized2",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 93.2872961202837,
+      "fold_mae_ha": [
+        19.085973184093426,
+        154.65022987760116,
+        106.12568529915649
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized2",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 89.31716429272468,
+      "fold_mae_ha": [
+        42.577185794804535,
+        143.53346019022888,
+        81.84084689314065
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized2",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 85.34569336088983,
+      "fold_mae_ha": [
+        33.955194335865585,
+        134.95709804274654,
+        87.1247877040574
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized3",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 93.2872961202837,
+      "fold_mae_ha": [
+        19.085973184093426,
+        154.65022987760116,
+        106.12568529915649
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized3",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 89.31716429272468,
+      "fold_mae_ha": [
+        42.577185794804535,
+        143.53346019022888,
+        81.84084689314065
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized3",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 85.34569336088983,
+      "fold_mae_ha": [
+        33.955194335865585,
+        134.95709804274654,
+        87.1247877040574
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized4",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 93.2872961202837,
+      "fold_mae_ha": [
+        19.085973184093426,
+        154.65022987760116,
+        106.12568529915649
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized4",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 89.31716429272468,
+      "fold_mae_ha": [
+        42.577185794804535,
+        143.53346019022888,
+        81.84084689314065
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "optimized4",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 85.34569336088983,
+      "fold_mae_ha": [
+        33.955194335865585,
+        134.95709804274654,
+        87.1247877040574
+      ]
+    }
+  ],
+  "sampling": [
+    {
+      "pool_size": 10,
+      "policy": "uniform",
+      "shots": 1024,
+      "optimum_hits": 60,
+      "replicate_cohorts": 60,
+      "mean_gap": 0.0
+    },
+    {
+      "pool_size": 10,
+      "policy": "optimized1",
+      "shots": 1024,
+      "optimum_hits": 60,
+      "replicate_cohorts": 60,
+      "mean_gap": 0.0
+    },
+    {
+      "pool_size": 10,
+      "policy": "optimized2",
+      "shots": 1024,
+      "optimum_hits": 60,
+      "replicate_cohorts": 60,
+      "mean_gap": 0.0
+    },
+    {
+      "pool_size": 10,
+      "policy": "optimized3",
+      "shots": 1024,
+      "optimum_hits": 60,
+      "replicate_cohorts": 60,
+      "mean_gap": 0.0
+    },
+    {
+      "pool_size": 10,
+      "policy": "optimized4",
+      "shots": 1024,
+      "optimum_hits": 60,
+      "replicate_cohorts": 60,
+      "mean_gap": 0.0
+    },
+    {
+      "pool_size": 16,
+      "policy": "uniform",
+      "shots": 1024,
+      "optimum_hits": 26,
+      "replicate_cohorts": 60,
+      "mean_gap": 0.006161662431845727
+    },
+    {
+      "pool_size": 16,
+      "policy": "optimized1",
+      "shots": 1024,
+      "optimum_hits": 56,
+      "replicate_cohorts": 60,
+      "mean_gap": 9.579099857622472e-06
+    },
+    {
+      "pool_size": 16,
+      "policy": "optimized2",
+      "shots": 1024,
+      "optimum_hits": 56,
+      "replicate_cohorts": 60,
+      "mean_gap": 9.579099857622472e-06
+    },
+    {
+      "pool_size": 16,
+      "policy": "optimized3",
+      "shots": 1024,
+      "optimum_hits": 50,
+      "replicate_cohorts": 60,
+      "mean_gap": 2.3947749644056177e-05
+    },
+    {
+      "pool_size": 16,
+      "policy": "optimized4",
+      "shots": 1024,
+      "optimum_hits": 55,
+      "replicate_cohorts": 60,
+      "mean_gap": 1.1973874822028089e-05
+    },
+    {
+      "pool_size": 20,
+      "policy": "uniform",
+      "shots": 1024,
+      "optimum_hits": 10,
+      "replicate_cohorts": 60,
+      "mean_gap": 0.05905270893254967
+    },
+    {
+      "pool_size": 20,
+      "policy": "optimized1",
+      "shots": 1024,
+      "optimum_hits": 60,
+      "replicate_cohorts": 60,
+      "mean_gap": 0.0
+    },
+    {
+      "pool_size": 20,
+      "policy": "optimized2",
+      "shots": 1024,
+      "optimum_hits": 60,
+      "replicate_cohorts": 60,
+      "mean_gap": 0.0
+    },
+    {
+      "pool_size": 20,
+      "policy": "optimized3",
+      "shots": 1024,
+      "optimum_hits": 59,
+      "replicate_cohorts": 60,
+      "mean_gap": 6.596913406677155e-05
+    },
+    {
+      "pool_size": 20,
+      "policy": "optimized4",
+      "shots": 1024,
+      "optimum_hits": 60,
+      "replicate_cohorts": 60,
+      "mean_gap": 0.0
+    }
+  ]
+}

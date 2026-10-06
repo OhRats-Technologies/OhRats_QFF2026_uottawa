@@ -1,0 +1,61 @@
+{
+  "study": "forest-order-controls-v1",
+  "parent_evidence_sha256": "c357d3c99e8121bcab07a5f1071762eed976e3928034e8321bad47f1a3ea5c27",
+  "dataset": "docs/data/forest_expansion_training.csv",
+  "dataset_sha256": "2b5f52acc0b2409ae72ad65b06b070085f2e32acbf8a30bb3cfec418872c7805",
+  "folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "models": {
+    "ridge": {
+      "alpha": 1.0
+    },
+    "svr": {
+      "C": 1.0,
+      "epsilon": 0.2
+    }
+  },
+  "quantum": {
+    "angle_amplitude": 0.09817477042468103,
+    "reps": 1,
+    "kernel": "Actual FidelityQuantumKernel/QMLSampler analytic compute-uncompute, enforce_psd=False, linear ZZ",
+    "regressor": "Qiskit QSVR precomputed"
+  },
+  "conditions": [
+    "interleaved_zero8",
+    "interleaved_calendar8"
+  ],
+  "budget": {
+    "model_fits": 18,
+    "kernel_matrices": 6,
+    "pair_circuits_max": 2200,
+    "hardware_jobs": 0,
+    "selector_shots": 0,
+    "tuning_candidates": 0
+  },
+  "code_paths": [
+    "wildfire_lab/forest_order_controls.py",
+    "wildfire_lab/forest_models.py",
+    "wildfire_lab/library_kernel.py",
+    "wildfire_lab/annual_classical.py"
+  ],
+  "information_policy": "Post-hoc diagnosis after primary interleaved MAE60.12 was observed. Same already-inspected development years; no independent confirmation, tuning, model promotion or final-year opening. These two controls change placeholders under the same interleaved graph, not the fitted parameters. Main108-fit intent/evidence remains frozen.",
+  "control_policy": "Interleave each weather variable with one zero or calendar variable, matching weather/structure ordering and qubit count. Calendar uses the same four date-only transforms as primary calendar8. Compare with saved primary interleaved8, not with a different graph."
+}

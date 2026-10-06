@@ -1,0 +1,577 @@
+{
+  "checked_utc": "2026-10-06T08:01:20.749Z",
+  "commit": "af2b0fcf3bbe1327e1b7acf1db9693ddf7a10bbf",
+  "source_sha256": {
+    "web/demo/strategy/map.js": "f453786e2d54c9f25c9371436372c56795951ff47986f15290ccfd870e64407c",
+    "web/demo/strategy/styles/map-markers.css": "565e3f4df22f5b4df51a34b375af4f108549d5f5ecbac005bff11efe61fe90dc",
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/assets/context/scenario.json": "466bd0172a7172a421330d1940e2999f5ef2c0cb59c123f4bc3e6c63a2d6593d",
+    "web/demo/assets/strategy.js": "1aae1b074b9a2a200ffd08f82bfed5ca98c66fcf335c00abc3b9b1d001848485"
+  },
+  "audit_script_sha256": "76cd6d0937ba31c79b296225b2359ca2b1f123b06eb5ab5ca807e57c69b31afc",
+  "status": "reviewed",
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "seed": 1,
+      "status": "won",
+      "samples": [
+        {
+          "front": 0,
+          "status": "playing",
+          "markers": 3,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 4,
+          "status": "playing",
+          "markers": 7,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 8,
+          "status": "playing",
+          "markers": 12,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 12,
+          "status": "won",
+          "markers": 14,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "seed": 2,
+      "status": "won",
+      "samples": [
+        {
+          "front": 0,
+          "status": "playing",
+          "markers": 3,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 4,
+          "status": "playing",
+          "markers": 7,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 8,
+          "status": "playing",
+          "markers": 12,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 12,
+          "status": "won",
+          "markers": 14,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "seed": 7,
+      "status": "won",
+      "samples": [
+        {
+          "front": 0,
+          "status": "playing",
+          "markers": 3,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 4,
+          "status": "playing",
+          "markers": 7,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 8,
+          "status": "playing",
+          "markers": 12,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 12,
+          "status": "won",
+          "markers": 14,
+          "unreachable": [],
+          "covered_centers": [
+            {
+              "id": 2,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                472.78125,
+                284.140625
+              ],
+              "width": 30,
+              "height": 30
+            }
+          ],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "seed": 31,
+      "status": "won",
+      "samples": [
+        {
+          "front": 0,
+          "status": "playing",
+          "markers": 3,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 4,
+          "status": "playing",
+          "markers": 7,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 8,
+          "status": "playing",
+          "markers": 12,
+          "unreachable": [],
+          "covered_centers": [
+            {
+              "id": 5,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                443.671875,
+                369.328125
+              ],
+              "width": 30,
+              "height": 30
+            },
+            {
+              "id": 7,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                334.71875,
+                310.484375
+              ],
+              "width": 30,
+              "height": 30
+            }
+          ],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 12,
+          "status": "won",
+          "markers": 14,
+          "unreachable": [],
+          "covered_centers": [
+            {
+              "id": 5,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                443.671875,
+                369.328125
+              ],
+              "width": 30,
+              "height": 30
+            },
+            {
+              "id": 7,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                334.71875,
+                310.484375
+              ],
+              "width": 30,
+              "height": 30
+            }
+          ],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "seed": 1,
+      "status": "won",
+      "samples": [
+        {
+          "front": 0,
+          "status": "playing",
+          "markers": 3,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 4,
+          "status": "playing",
+          "markers": 7,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 8,
+          "status": "playing",
+          "markers": 12,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 12,
+          "status": "won",
+          "markers": 14,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "seed": 2,
+      "status": "won",
+      "samples": [
+        {
+          "front": 0,
+          "status": "playing",
+          "markers": 3,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 4,
+          "status": "playing",
+          "markers": 7,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 8,
+          "status": "playing",
+          "markers": 12,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 12,
+          "status": "won",
+          "markers": 14,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "seed": 7,
+      "status": "won",
+      "samples": [
+        {
+          "front": 0,
+          "status": "playing",
+          "markers": 3,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 4,
+          "status": "playing",
+          "markers": 7,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 8,
+          "status": "playing",
+          "markers": 12,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 12,
+          "status": "won",
+          "markers": 14,
+          "unreachable": [],
+          "covered_centers": [
+            {
+              "id": 2,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                225.046875,
+                281.84375
+              ],
+              "width": 30,
+              "height": 30
+            },
+            {
+              "id": 5,
+              "status": "fire burning",
+              "center_reachable": false,
+              "reachable": [
+                46.265625,
+                324.3125
+              ],
+              "width": 30,
+              "height": 30
+            }
+          ],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "seed": 31,
+      "status": "won",
+      "samples": [
+        {
+          "front": 0,
+          "status": "playing",
+          "markers": 3,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 4,
+          "status": "playing",
+          "markers": 7,
+          "unreachable": [],
+          "covered_centers": [],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 8,
+          "status": "playing",
+          "markers": 12,
+          "unreachable": [],
+          "covered_centers": [
+            {
+              "id": 1,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                80.703125,
+                242.015625
+              ],
+              "width": 30,
+              "height": 30
+            },
+            {
+              "id": 2,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                47.203125,
+                235.03125
+              ],
+              "width": 30,
+              "height": 30
+            },
+            {
+              "id": 5,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                199.84375,
+                355.609375
+              ],
+              "width": 30,
+              "height": 30
+            },
+            {
+              "id": 7,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                107.390625,
+                304.65625
+              ],
+              "width": 30,
+              "height": 30
+            }
+          ],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        },
+        {
+          "front": 12,
+          "status": "won",
+          "markers": 14,
+          "unreachable": [],
+          "covered_centers": [
+            {
+              "id": 1,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                80.703125,
+                242.015625
+              ],
+              "width": 30,
+              "height": 30
+            },
+            {
+              "id": 2,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                47.203125,
+                235.03125
+              ],
+              "width": 30,
+              "height": 30
+            },
+            {
+              "id": 5,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                199.84375,
+                355.609375
+              ],
+              "width": 30,
+              "height": 30
+            },
+            {
+              "id": 7,
+              "status": "fire contained",
+              "center_reachable": false,
+              "reachable": [
+                107.390625,
+                304.65625
+              ],
+              "width": 30,
+              "height": 30
+            }
+          ],
+          "minimum_hit_width": 30,
+          "animation_changes_canvas": true,
+          "passive_save_unchanged": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "scope": "Eight control-driven seasons at two sizes with ordinary motion. Five candidate points test marker reachability, then actual clicks confirm selection. Passive animations preserve saves. Fixed-policy authoring audit, not a balance estimate, physical touch or human enjoyment study.",
+  "predictor_fits": 0,
+  "quantum_circuit_executions": 0,
+  "hardware_jobs": 0
+}

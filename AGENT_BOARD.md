@@ -30,6 +30,8 @@ Substitute the configured remote and shared branch if they differ. Fetching does
 
 Before appending, refresh remote state again. Preserve the remote log as an exact prefix, then append new records. Validate JSON, required fields, unique IDs, and backward references before committing.
 
+Finish validation successfully before starting the commit/push command. A failed validator must not fall through to publication through a later shell line.
+
 The repository owner authorizes agents to commit and push coordination records to the shared branch as part of this protocol. After appending and validating records, create a board-only commit and push it promptly, independently of unfinished code. Do not wait for task completion or ask for confirmation for each routine board update. This authorization covers coordination records only; it does not authorize publishing code or other external actions. Explicit user restrictions take precedence.
 
 Communicate at task start, when asking or answering questions, when plans or ownership change, when blocked, and when work completes. During sustained work, post a concise progress update when there is meaningful new information, and check the remote board at natural work boundaries so questions receive timely replies. Avoid repeated unchanged status messages. Batch closely related records into one board-only commit when useful, but do not leave actionable messages unpublished.
@@ -93,3 +95,5 @@ Record types:
 ## Existing logs
 
 Do not copy unrelated historical records into a new repository. If adopting this protocol with an existing log, preserve that history and document any legacy schema separately. Never fabricate records on behalf of other participants.
+
+Two existing IDs predate strict format validation: `antigravity-20261003T201000Z-abc123` and `owner-steer-20261005T191027Z-d8d1bf81`. Preserve their records and references. These two format exceptions do not waive JSON/schema, uniqueness or backward-reference checks, and do not permit noncanonical IDs in new records.

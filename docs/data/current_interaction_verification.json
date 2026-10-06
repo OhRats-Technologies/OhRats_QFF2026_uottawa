@@ -1,0 +1,2095 @@
+{
+  "checked_utc": "2026-10-06T11:18:56.117021+00:00",
+  "status": "passed",
+  "git_head_at_check": "2513750c2f4da5ce8d966b8fc165db22bec32f49",
+  "authoring_runs": 14,
+  "source_sha256": {
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/strategy/slider.js": "9db690516a610a76b910e4814205b4fff3c5b2c282e9f035cd7e3f0df7458f8a",
+    "web/demo/strategy/marker-picker.js": "a1490cf4a08a7304d027ac736ba80c2f57c59ca784d27e140955deef2a079fc4",
+    "web/demo/strategy/main.js": "7ca2468f03c133bd811df06031e51cca4ddc120e40ef9eadc553a9e710c6b752",
+    "web/demo/strategy/touch-check.mjs": "e8f09542d92ccd8f7f9341ac9aa925c14363d13f0b0a271f6e84a6fdfa9a8a2b",
+    "web/demo/index.html": "2f2027b00b0017f5f688baa1566838f3c9b107f9780581b0fa48513ba42e377f",
+    "web/demo/assets/strategy.js": "4a7d351e4430d10b51a090c1d5a4b4db21642df52790398e86e275ed88697249",
+    "web/demo/assets/context/scenario.json": "466bd0172a7172a421330d1940e2999f5ef2c0cb59c123f4bc3e6c63a2d6593d",
+    "web/demo/strategy/styles/instruments.css": "6ab92f5f2144960abe5e9cefcea4eab2c12ab10c6e10b5111e9d578d13b9f8ad",
+    "web/demo/strategy/styles/responsive.css": "96f4c5aeb54dfeb185cdfd540267bc98e13f2d4d6d906e8b4d331ce11b1abd14",
+    "web/demo/strategy/short-viewport-check.mjs": "c7d537d03d8e23b011912b2fe08995011648e8e4bad5f52d1ff1cbf368d76fde",
+    "web/demo/strategy/styles/base.css": "036e4bb9e4a36fe30b6192257cf67f218f5f6a2a277e5d272c82631407667525",
+    "web/demo/strategy/styles/compact.css": "cc0571a462be84b829eb9b1366c42c14796816ad7e790fee2cd05090eea53d66",
+    "web/demo/strategy/styles/dialogs.css": "48eb9b50899c7d222174cb1dfe25fac55f25b557b6b1300e93102da0c56d35c2",
+    "web/demo/strategy/upgrade-choice-check.mjs": "82f71d9b8ec829668f6244fdae69033a85baf02c3000732947d1844313f14019",
+    "web/demo/strategy/keyboard.js": "9d3d52cec4eb0c38ac5c569ce2e5167a39ca4e5aa99b0e8ec144764dccebd3f9",
+    "web/demo/strategy/keyboard-check.mjs": "1416eda1fc405cb5dfe86bc8c34e52de777eca8264f12eae2e9c1a20848883ad",
+    "web/demo/strategy/ui.js": "7e0e11875f19c260588e76165f1e9ffb12ebdc7808f3ea18294ad2231c0b33a2",
+    "web/demo/strategy/map.js": "bdd0ab5f5f55bdebcec0153d2beaa90f9fcdc861c0648b1895b4af2e9ef2480b",
+    "web/demo/strategy/styles/marker-picker.css": "cb3d3bccd0620e6a7143c94e9fa88ba068e255e48ebec23086944e82c1f9132f",
+    "web/demo/strategy/styles/map-markers.css": "5ac5e61f5202f59fb276bcba318e455ff47ae1b34c28ac9dd1ab0294fffcc521",
+    "web/demo/strategy/picker-check.mjs": "087a4752973f28444a36f1ec6f992a005533a7ca4ea19c86502c1cb783a1e6f6",
+    "web/demo/strategy.css": "e5640c3cfe0d704a1fc213e417e6cc70d5d0e8868965a9f8e935e6d965f8c816",
+    "web/demo/strategy/channel-comparison.js": "62dc437282188c670d58cabd7e5f506af0576cdabcde1dcdedb3b3c28191a32d",
+    "web/demo/strategy/instruments.js": "9863ba627e26bb8435691ea9e9978722090f122bcfbfbacad986274782745149",
+    "web/demo/strategy/effect-check.mjs": "ade4d9020bf15d0b0c05485ee1d460be8a6c87e29250ef3d6c4eb19eae6ceaba",
+    "web/demo/strategy/styles/research.css": "ade4ad409d3df30a4699299eab0f21269625536f756a07efef6d72e1babd47be",
+    "web/demo/strategy/quantum.js": "2d44ac87b6b7d68c08fd49c982fe429ad87ca91b20b7b26bb8f92adf66e8acf4",
+    "web/demo/strategy/diagnostic.js": "7d480c71c9c8fca5d3ba658a6986c0b8398280a50e1d671d008b245364a1a03c",
+    "web/demo/strategy/debrief.js": "55b58759d13a67c586d70b1533140042842a578cc7598e87a8d61df7be56943c",
+    "web/demo/strategy/terminal-check.mjs": "d26e8986882c7c63328aaced27fa6e47f257a3ea5394a89b97cde355e43f022c",
+    "web/demo/strategy/sound.js": "c841272db004f81b81cbe1a4be63898375b1fad9e9cb788fb73b3dd5234df70d",
+    "web/demo/strategy/audio-check.mjs": "9bd2b8e2f1294e6717622e580e476b98bbf666e79afb9775921d29a66f3cedda",
+    "web/demo/strategy/render-check.mjs": "684d7ece59a9a7a7a8aba1307115ac1c10a653bd6e65ed9ad7ab937bc5189af2",
+    "web/demo/strategy/bench-check.mjs": "83588f9bf96d8d106aec74ab5eed40a7818fad64bf95b0149d8a6e57404dd2b4",
+    "web/demo/assets/context/canopy-legend.png": "b0ee742dfdec69573b7c16b947cf38aa1f4ddfcacec46b1315ce522672d50e22",
+    "web/demo/assets/context/canopy.png": "5277cee8b81233884f274952c7b498c6eaa5f36744afbd89882eeb78504e9374",
+    "web/demo/assets/context/fuel-legend.png": "a4ea3a7292dfc01e0ded0d4a18db6cf72b53ce371b19b807366d72fdaddd4b72",
+    "web/demo/assets/context/fuel.png": "bd7aec9abe58f7398b841540a46b15c000bab7d65b54807439988d5173b0abff",
+    "web/demo/assets/context/height-1985.png": "be1f7e287393b2c00a0ee8659613b1d9afe5880ba354056e6d129456b9aa027c",
+    "web/demo/assets/context/height-1990.png": "e1be2c27a6c6a1161665fb7fbdd198c078b456eaf5699013d769e626538317d0",
+    "web/demo/assets/context/height-1995.png": "ef02d29772580d0717e9ef081b55ef483bfbfe0dae39f38036ee610eecb30972",
+    "web/demo/assets/context/height-2000.png": "c4ccd00c297435a4a34027a72f57e80354d08d78881c0947244be06075243c47",
+    "web/demo/assets/context/height-2005.png": "2f909823a0c28936d2de742531be1e802cb0c6914a91b87a444a7ad691094938",
+    "web/demo/assets/context/height-2010.png": "c4b33dd969532b644ef6d280bac6c703b6f3ba32ce37f9a2640f5dfe31d01445",
+    "web/demo/assets/context/height-2015.png": "98755f2b0f2f8e0f8e0e7c4654b5083903ffe51cee362fb0d6694e598fef4e3c",
+    "web/demo/assets/context/height-change-legend.png": "ff66dabb884b9157e3d079de05bb9b7a63a9c98c224da8b0059e63a87c17e6d5",
+    "web/demo/assets/context/height-change.json": "9c16e733f10408ff30dedb19c43bb79ef4b4a724f0823502efb4742ed1903182",
+    "web/demo/assets/context/height-change.png": "700738fe74b49e64913f2070adc941f6bf4d4a74802de0c1e4040183225b4c10",
+    "web/demo/assets/context/height-legend.png": "2c7303961a33a9dbe246e10ad904deb26d7ca41cb1e6ab97766a2f705b742933",
+    "web/demo/assets/context/height-series-v2.json": "2008544e8ed0ace3e1b7df2bc3f7879658ecf8957fd4c9f5d2aeb6f64c9e589f",
+    "web/demo/assets/context/height-series.json": "0198c95fd5e19308ef04a2831a2cff2348d440dd9c0368de365f677ff6d3fd97",
+    "web/demo/assets/context/layers.json": "020b5db5fbaf02a204a139967fd8eecd437212c1da7fc09aef27ed60d5c18f6a",
+    "web/demo/assets/context/lorey-legend.png": "3e1972db3ce8566cfa317aa64a2806982de9385ceb17f72c41bee1fbf56bc18f",
+    "web/demo/assets/context/lorey.png": "a2c5bd579270267a424afed8e501648569117e348535af9875d403ed4c68dd93",
+    "web/demo/assets/context/recovery-legend.png": "e2b7b35b35ff5d38766fbc23697310a4e9de8edffe7bc7d8c37f85b5f1631851",
+    "web/demo/assets/context/recovery.png": "b9d6a3b67cecefec898059f00d844ecfd47f3f276d2bbd408782bcc69760d023",
+    "web/demo/assets/context/water-legend.png": "e4b889173f4e1e6319af47d052f04d20bf90499de57241e1390b356a0d60e87f",
+    "web/demo/assets/context/water.png": "dd1c43605c7feb208ea669962395db45c8e817c07d9b81f302381b79caacd7be",
+    "web/demo/strategy/bench-detail.js": "9b0d1c68c0e0a62d06e64394604dcf026132f7fb359484c4ec7dd63b572ed8c9",
+    "web/demo/strategy/bench.js": "963c8038ca1b4a170265583bc4f15baafbe5326308b030dd687d92529bd2f530",
+    "web/demo/strategy/calibrate.js": "1c11e57b839fd2b69881009b31b56006000e9ed791be1d565cf87a62ecae7014",
+    "web/demo/strategy/context.js": "9830934a5c8533599351594cd49db8384a7dc875fba3d8a69ec9f713df8de33a",
+    "web/demo/strategy/cover-legend.js": "d4cf21adba47a4f72fef9fb2a2eb656c98bae22acc88bfefc20f648b9c61b07b",
+    "web/demo/strategy/front-detail.js": "f5384e581f088b05d239ccb7ad38035581c85988887f97e5538a8b97143c8d4f",
+    "web/demo/strategy/incident-list.js": "1499ba43c7a7a8ee63e62b3c2d6911ad869162da21e448aa808284262f7d4542",
+    "web/demo/strategy/lens-fallback.js": "ef13f0c1afda764b608712b19018ed8c0720bb731fa03f0f174a581a24d5da54",
+    "web/demo/strategy/marker-description.js": "d5e2cd1708e153fce92551f40e47e1aced143fb6da11c8a02734ff30a81f9158",
+    "web/demo/strategy/next-season.js": "fb305b765c19295cd9ccfd13e0719e8af90800360ab9038433728db18179fcf5",
+    "web/demo/strategy/outcome.js": "186dbf0a7fa9388d8d424f5d702ebdcf524a6be00d5571a05caa03690d885d5b",
+    "web/demo/strategy/preview.js": "177b30698955d0a3b61b5c7b0225fc5c8028ccda71dd2d34964fc6202c9b5e91",
+    "web/demo/strategy/progression.js": "d810cf0864405881071e7b5a5d19546b35b500ef2d916cebf1969140b81fb4f8",
+    "web/demo/strategy/random.js": "4f5bd543c959042f71edf506fd233316aa815d20b8d8ea2b7ee59769440a47da",
+    "web/demo/strategy/readout.js": "5083d1667c1be4ce62bc2767573102e18de3f3d187ce1e87f2d1ea0a03c8aa6b",
+    "web/demo/strategy/scouting-audit.js": "308392dbd06fce60c1b7a78d2d7c47382ad6af2e51cc77cbf71fcbf8e3326128",
+    "web/demo/strategy/sphere.js": "1bde7b597babbdc23f66ba3601f03e459b416d3666fe7804e1293b9f4db9eb2c",
+    "web/demo/strategy/styles/bench-detail.css": "3f22973a4758d68d984637c900186dfb07d6c3ac57fe1cd8ca63fd6a69d36202",
+    "web/demo/strategy/styles/command.css": "eda619e89c6abb474fe81cda196a30496c510fadecea13a596a614e573a8b320",
+    "web/demo/strategy/styles/map-controls.css": "83a4a2ec4fc66e0bcae389b1e8a2e3f15f64a30f2f247d8c78ce7b6829a8e604",
+    "web/demo/strategy/styles/map-layout.css": "95aad2b6e4b8851feb3fe41ae6baf0b7de4810d3c0eb664c986eb5ff5b715bdb",
+    "web/demo/strategy/styles/operations.css": "9ae64e331e45e9a8083e8a4bf82c00973ae4c1669a5d3ba9e56fddb7c1a15ea3",
+    "web/demo/strategy/styles/progression.css": "2aad55173d21dc4ea3c3f7ebfba31d2a3a15defcd17ba24dec2ed3827ff12efd",
+    "web/demo/strategy/upgrade-audit.js": "5253a31b313937814309c9d61a98a9b6d8f5eb904b6bb88fa19c64754de73457",
+    "web/demo/strategy/focus-check.mjs": "3bd6929241fb69235daf270a65ad578b812e94c8c8f995cdf0dadc73a7438893",
+    "web/demo/strategy/accessibility-check.mjs": "9718cdd84abb94427d845fe41185b75a24c2343234a947ca5dae1cfbe9970944",
+    "web/demo/strategy/compact-check.mjs": "626dfc1e04904797ad5e3c4530d81413a4ab4b5530173f6c46f080894a263d06",
+    "web/demo/strategy/matrix-ink.js": "00b804b1682f7789578b91e99687524295c88899357c05b63bce6f508876c0bd",
+    "web/demo/strategy/matrix-ink-check.mjs": "970c18c32934ec7c39ab53ca79c34b1789d004fb42123808e1fd84bb8357fa9f"
+  },
+  "checks": [
+    {
+      "script": "web/demo/strategy/touch-check.mjs",
+      "receipt_sha256": "d3ea92b5490679e6a92d515f0268020f4e72417afef6e459e805175b20a1bbd4",
+      "command": "node web/demo/strategy/touch-check.mjs",
+      "cases": [
+        {
+          "width": 390,
+          "height": 844,
+          "reduced_motion": "no-preference",
+          "seed": 7,
+          "completed_fronts": 10,
+          "accepted_moves": 27,
+          "move_replay_exact": true,
+          "touch_events": 64,
+          "every_observed_pointer_was_touch": true,
+          "vertical_page_swipe": true,
+          "late_overlap_selection": 13,
+          "inspections": [
+            {
+              "width": 390,
+              "height": 844,
+              "slider_value": 0.9,
+              "slider_scroll_unchanged": true,
+              "slider_rail_width": 125,
+              "inspection_save_unchanged": true,
+              "native_select_via_authoring_api": true
+            },
+            {
+              "width": 844,
+              "height": 390,
+              "slider_value": 0.9,
+              "slider_scroll_unchanged": true,
+              "slider_rail_width": 43.375,
+              "inspection_save_unchanged": true,
+              "native_select_via_authoring_api": true
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "reduced_motion": "reduce",
+          "seed": 7,
+          "completed_fronts": 10,
+          "accepted_moves": 27,
+          "move_replay_exact": true,
+          "touch_events": 56,
+          "every_observed_pointer_was_touch": true,
+          "vertical_page_swipe": true,
+          "late_overlap_selection": 13,
+          "inspections": [
+            {
+              "width": 320,
+              "height": 568,
+              "slider_value": 0.9,
+              "slider_scroll_unchanged": true,
+              "slider_rail_width": 90,
+              "inspection_save_unchanged": true,
+              "native_select_via_authoring_api": true
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "checked_utc": "2026-10-06T11:17:21.330Z",
+        "status": "passed",
+        "baseline": {
+          "commit": "2da8cd8",
+          "viewport": [
+            320,
+            568
+          ],
+          "rail": {
+            "x": 72.234375,
+            "y": 521.5,
+            "width": 36.765625,
+            "height": 2
+          },
+          "hit_ids": [
+            "advance",
+            "advance"
+          ],
+          "save_unchanged": true,
+          "wrong_target_gesture_not_dispatched": true,
+          "source_sha256": {
+            "web/demo/index.html": "6093b5b65b17a740c8841373303f520d0dd602273f103ae12a8060d10283c3e6",
+            "web/demo/assets/strategy.js": "9ea6adf67faeb7ae49ebb150a9959e9096790a5c05bec7b79a970666ee653e6e",
+            "web/demo/strategy/styles/instruments.css": "068660fd230fecf947f226836615fedbe11df0bb95da5ae9272a48e57ea9fc77"
+          },
+          "scope": "Minimum authoring scroll leaves the old rail behind the sticky Advance button; manual additional scrolling was not ruled out."
+        },
+        "errors": [],
+        "predictor_fits": 0,
+        "quantum_circuit_executions": 0,
+        "hardware_jobs": 0,
+        "scope": "Chromium mobile touch emulation on a Mac: actual taps and CDP touch gestures, two ten-front histories and portrait-to-landscape resize. Offscreen locators auto-scroll; native select uses authoring API. No physical touch, OS picker, human enjoyment or broad device certification."
+      }
+    },
+    {
+      "script": "web/demo/strategy/short-viewport-check.mjs",
+      "receipt_sha256": "39a3cc9a2a4b19a788760aab892084897b6ae975a174a3b24e56adc736659514",
+      "command": "node web/demo/strategy/short-viewport-check.mjs",
+      "cases": [
+        {
+          "width": 844,
+          "height": 390,
+          "input": "touch",
+          "initial_scroll": 0,
+          "initial_focus": "game-title",
+          "native_command_scroll": 91,
+          "exact_accepted_moves": [
+            {
+              "type": "advance"
+            }
+          ],
+          "returned_to_map_scroll": 0,
+          "guide_save_unchanged": true,
+          "continuation_moves_preserved": true,
+          "fresh_seed": 588686121,
+          "fresh_moves": [],
+          "locator_auto_scroll": false
+        },
+        {
+          "width": 1024,
+          "height": 600,
+          "input": "mouse/wheel",
+          "initial_scroll": 0,
+          "initial_focus": "game-title",
+          "native_command_scroll": 0,
+          "exact_accepted_moves": [
+            {
+              "type": "advance"
+            }
+          ],
+          "returned_to_map_scroll": 0,
+          "guide_save_unchanged": true,
+          "continuation_moves_preserved": true,
+          "fresh_seed": 588686121,
+          "fresh_moves": [],
+          "locator_auto_scroll": false
+        }
+      ],
+      "summary": {
+        "checked_utc": "2026-10-06T11:17:13.937Z",
+        "status": "passed",
+        "baseline": {
+          "commit": "0cd319a",
+          "scroll_after_start": 1726,
+          "source_sha256": {
+            "web/demo/index.html": "90c6dcedad743be0b8059ad7df249d4f416c4ee215b7ba1c6d7a4e7e75c50437",
+            "web/demo/assets/strategy.js": "2f10e1eb8ee05756dc5c9316fc0e59462c38e6d34e2276370b7a43e149c6c553",
+            "web/demo/strategy.css": "e5640c3cfe0d704a1fc213e417e6cc70d5d0e8868965a9f8e935e6d965f8c816",
+            "web/demo/strategy/styles/base.css": "1a6d939c214229db80a0a6c9c724e1c9cd3d78fb882efbc831e843fbac4ea165",
+            "web/demo/strategy/styles/bench-detail.css": "3f22973a4758d68d984637c900186dfb07d6c3ac57fe1cd8ca63fd6a69d36202",
+            "web/demo/strategy/styles/command.css": "eda619e89c6abb474fe81cda196a30496c510fadecea13a596a614e573a8b320",
+            "web/demo/strategy/styles/compact.css": "81440bb5fb8446c784ec0eae7e5f2bbf2c370c443986439ea78bd8558ec95d7e",
+            "web/demo/strategy/styles/dialogs.css": "89573b48fb6f46c2c9c858ee833048779d8d0265de8f2ae5aaab872f2952c93f",
+            "web/demo/strategy/styles/instruments.css": "6ab92f5f2144960abe5e9cefcea4eab2c12ab10c6e10b5111e9d578d13b9f8ad",
+            "web/demo/strategy/styles/map-controls.css": "83a4a2ec4fc66e0bcae389b1e8a2e3f15f64a30f2f247d8c78ce7b6829a8e604",
+            "web/demo/strategy/styles/map-layout.css": "95aad2b6e4b8851feb3fe41ae6baf0b7de4810d3c0eb664c986eb5ff5b715bdb",
+            "web/demo/strategy/styles/map-markers.css": "5ac5e61f5202f59fb276bcba318e455ff47ae1b34c28ac9dd1ab0294fffcc521",
+            "web/demo/strategy/styles/marker-picker.css": "cb3d3bccd0620e6a7143c94e9fa88ba068e255e48ebec23086944e82c1f9132f",
+            "web/demo/strategy/styles/operations.css": "9ae64e331e45e9a8083e8a4bf82c00973ae4c1669a5d3ba9e56fddb7c1a15ea3",
+            "web/demo/strategy/styles/progression.css": "2aad55173d21dc4ea3c3f7ebfba31d2a3a15defcd17ba24dec2ed3827ff12efd",
+            "web/demo/strategy/styles/research.css": "8af9c1ef9a9aab31e54507486773d73cbe8dc55ca0e1583575bc8cfc3de38e2c",
+            "web/demo/strategy/styles/responsive.css": "96f4c5aeb54dfeb185cdfd540267bc98e13f2d4d6d906e8b4d331ce11b1abd14"
+          }
+        },
+        "errors": [],
+        "predictor_fits": 0,
+        "quantum_circuit_executions": 0,
+        "hardware_jobs": 0,
+        "scope": "Chromium on a Mac, emulated touch landscape and mouse/wheel short laptop. Native coordinate hits and gestures, no locator auto-scroll. Not a physical-device or assistive-technology study."
+      }
+    },
+    {
+      "script": "web/demo/strategy/upgrade-choice-check.mjs",
+      "receipt_sha256": "83a99b46d1eb490996c589f1bd8b7a783c5f997f5b8b82f615f92290ecb3145c",
+      "command": "node web/demo/strategy/upgrade-choice-check.mjs",
+      "cases": [
+        {
+          "width": 844,
+          "height": 390,
+          "input": "touch",
+          "accepted_moves": 23,
+          "move_replay_exact": true,
+          "milestones": [
+            {
+              "front": 4,
+              "selected": "network",
+              "layout": {
+                "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+                "rect": {
+                  "x": 112,
+                  "y": 24.90625,
+                  "width": 620,
+                  "height": 340.1875,
+                  "top": 24.90625,
+                  "right": 732,
+                  "bottom": 365.09375,
+                  "left": 112
+                },
+                "scrollTop": 0,
+                "scrollHeight": 338,
+                "clientHeight": 338,
+                "label": "upgrade-title",
+                "choices": [
+                  {
+                    "id": "network",
+                    "description": "One additional crew for the rest of the season.",
+                    "rect": {
+                      "x": 131,
+                      "y": 144.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 144.09375,
+                      "right": 713,
+                      "bottom": 206.09375,
+                      "left": 131
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "training",
+                    "description": "Crew suppression: 0.90 \u2192 1.15 pressure per turn.",
+                    "rect": {
+                      "x": 131,
+                      "y": 214.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 214.09375,
+                      "right": 713,
+                      "bottom": 276.09375,
+                      "left": 131
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "logistics",
+                    "description": "Resupply: 2 \u2192 3 supply credits each turn.",
+                    "rect": {
+                      "x": 131,
+                      "y": 284.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 284.09375,
+                      "right": 713,
+                      "bottom": 346.09375,
+                      "left": 131
+                    },
+                    "native_center_hit": true
+                  }
+                ]
+              },
+              "native_selection": true
+            },
+            {
+              "front": 8,
+              "selected": "logistics",
+              "layout": {
+                "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+                "rect": {
+                  "x": 112,
+                  "y": 24.90625,
+                  "width": 620,
+                  "height": 340.1875,
+                  "top": 24.90625,
+                  "right": 732,
+                  "bottom": 365.09375,
+                  "left": 112
+                },
+                "scrollTop": 0,
+                "scrollHeight": 338,
+                "clientHeight": 338,
+                "label": "upgrade-title",
+                "choices": [
+                  {
+                    "id": "logistics",
+                    "description": "Resupply: 2 \u2192 3 supply credits each turn.",
+                    "rect": {
+                      "x": 131,
+                      "y": 144.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 144.09375,
+                      "right": 713,
+                      "bottom": 206.09375,
+                      "left": 131
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "training",
+                    "description": "Crew suppression: 0.90 \u2192 1.15 pressure per turn.",
+                    "rect": {
+                      "x": 131,
+                      "y": 214.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 214.09375,
+                      "right": 713,
+                      "bottom": 276.09375,
+                      "left": 131
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "precision",
+                    "description": "Water removes 70% instead of 58% of current pressure.",
+                    "rect": {
+                      "x": 131,
+                      "y": 284.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 284.09375,
+                      "right": 713,
+                      "bottom": 346.09375,
+                      "left": 131
+                    },
+                    "native_center_hit": true
+                  }
+                ]
+              },
+              "native_selection": true
+            }
+          ],
+          "gameplay_locators_auto_scroll": true,
+          "upgrade_selection_auto_scroll": false
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "input": "touch",
+          "accepted_moves": 23,
+          "move_replay_exact": true,
+          "milestones": [
+            {
+              "front": 4,
+              "selected": "network",
+              "layout": {
+                "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+                "rect": {
+                  "x": 18,
+                  "y": 77.90625,
+                  "width": 284,
+                  "height": 412.1875,
+                  "top": 77.90625,
+                  "right": 302,
+                  "bottom": 490.09375,
+                  "left": 18
+                },
+                "scrollTop": 0,
+                "scrollHeight": 410,
+                "clientHeight": 410,
+                "label": "upgrade-title",
+                "choices": [
+                  {
+                    "id": "network",
+                    "description": "One additional crew for the rest of the season.",
+                    "rect": {
+                      "x": 37,
+                      "y": 215.09375,
+                      "width": 246,
+                      "height": 80,
+                      "top": 215.09375,
+                      "right": 283,
+                      "bottom": 295.09375,
+                      "left": 37
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "training",
+                    "description": "Crew suppression: 0.90 \u2192 1.15 pressure per turn.",
+                    "rect": {
+                      "x": 37,
+                      "y": 303.09375,
+                      "width": 246,
+                      "height": 80,
+                      "top": 303.09375,
+                      "right": 283,
+                      "bottom": 383.09375,
+                      "left": 37
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "logistics",
+                    "description": "Resupply: 2 \u2192 3 supply credits each turn.",
+                    "rect": {
+                      "x": 37,
+                      "y": 391.09375,
+                      "width": 246,
+                      "height": 80,
+                      "top": 391.09375,
+                      "right": 283,
+                      "bottom": 471.09375,
+                      "left": 37
+                    },
+                    "native_center_hit": true
+                  }
+                ]
+              },
+              "native_selection": true
+            },
+            {
+              "front": 8,
+              "selected": "logistics",
+              "layout": {
+                "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+                "rect": {
+                  "x": 18,
+                  "y": 77.90625,
+                  "width": 284,
+                  "height": 412.1875,
+                  "top": 77.90625,
+                  "right": 302,
+                  "bottom": 490.09375,
+                  "left": 18
+                },
+                "scrollTop": 0,
+                "scrollHeight": 410,
+                "clientHeight": 410,
+                "label": "upgrade-title",
+                "choices": [
+                  {
+                    "id": "logistics",
+                    "description": "Resupply: 2 \u2192 3 supply credits each turn.",
+                    "rect": {
+                      "x": 37,
+                      "y": 215.09375,
+                      "width": 246,
+                      "height": 80,
+                      "top": 215.09375,
+                      "right": 283,
+                      "bottom": 295.09375,
+                      "left": 37
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "training",
+                    "description": "Crew suppression: 0.90 \u2192 1.15 pressure per turn.",
+                    "rect": {
+                      "x": 37,
+                      "y": 303.09375,
+                      "width": 246,
+                      "height": 80,
+                      "top": 303.09375,
+                      "right": 283,
+                      "bottom": 383.09375,
+                      "left": 37
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "precision",
+                    "description": "Water removes 70% instead of 58% of current pressure.",
+                    "rect": {
+                      "x": 37,
+                      "y": 391.09375,
+                      "width": 246,
+                      "height": 80,
+                      "top": 391.09375,
+                      "right": 283,
+                      "bottom": 471.09375,
+                      "left": 37
+                    },
+                    "native_center_hit": true
+                  }
+                ]
+              },
+              "native_selection": true
+            }
+          ],
+          "gameplay_locators_auto_scroll": true,
+          "upgrade_selection_auto_scroll": false
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "input": "mouse",
+          "accepted_moves": 23,
+          "move_replay_exact": true,
+          "milestones": [
+            {
+              "front": 4,
+              "selected": "network",
+              "layout": {
+                "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+                "rect": {
+                  "x": 330,
+                  "y": 189.90625,
+                  "width": 620,
+                  "height": 340.1875,
+                  "top": 189.90625,
+                  "right": 950,
+                  "bottom": 530.09375,
+                  "left": 330
+                },
+                "scrollTop": 0,
+                "scrollHeight": 338,
+                "clientHeight": 338,
+                "label": "upgrade-title",
+                "choices": [
+                  {
+                    "id": "network",
+                    "description": "One additional crew for the rest of the season.",
+                    "rect": {
+                      "x": 349,
+                      "y": 309.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 309.09375,
+                      "right": 931,
+                      "bottom": 371.09375,
+                      "left": 349
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "training",
+                    "description": "Crew suppression: 0.90 \u2192 1.15 pressure per turn.",
+                    "rect": {
+                      "x": 349,
+                      "y": 379.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 379.09375,
+                      "right": 931,
+                      "bottom": 441.09375,
+                      "left": 349
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "logistics",
+                    "description": "Resupply: 2 \u2192 3 supply credits each turn.",
+                    "rect": {
+                      "x": 349,
+                      "y": 449.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 449.09375,
+                      "right": 931,
+                      "bottom": 511.09375,
+                      "left": 349
+                    },
+                    "native_center_hit": true
+                  }
+                ]
+              },
+              "native_selection": true
+            },
+            {
+              "front": 8,
+              "selected": "logistics",
+              "layout": {
+                "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+                "rect": {
+                  "x": 330,
+                  "y": 189.90625,
+                  "width": 620,
+                  "height": 340.1875,
+                  "top": 189.90625,
+                  "right": 950,
+                  "bottom": 530.09375,
+                  "left": 330
+                },
+                "scrollTop": 0,
+                "scrollHeight": 338,
+                "clientHeight": 338,
+                "label": "upgrade-title",
+                "choices": [
+                  {
+                    "id": "logistics",
+                    "description": "Resupply: 2 \u2192 3 supply credits each turn.",
+                    "rect": {
+                      "x": 349,
+                      "y": 309.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 309.09375,
+                      "right": 931,
+                      "bottom": 371.09375,
+                      "left": 349
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "training",
+                    "description": "Crew suppression: 0.90 \u2192 1.15 pressure per turn.",
+                    "rect": {
+                      "x": 349,
+                      "y": 379.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 379.09375,
+                      "right": 931,
+                      "bottom": 441.09375,
+                      "left": 349
+                    },
+                    "native_center_hit": true
+                  },
+                  {
+                    "id": "precision",
+                    "description": "Water removes 70% instead of 58% of current pressure.",
+                    "rect": {
+                      "x": 349,
+                      "y": 449.09375,
+                      "width": 582,
+                      "height": 62,
+                      "top": 449.09375,
+                      "right": 931,
+                      "bottom": 511.09375,
+                      "left": 349
+                    },
+                    "native_center_hit": true
+                  }
+                ]
+              },
+              "native_selection": true
+            }
+          ],
+          "gameplay_locators_auto_scroll": true,
+          "upgrade_selection_auto_scroll": false
+        }
+      ],
+      "summary": {
+        "checked_utc": "2026-10-06T11:17:16.675Z",
+        "status": "passed",
+        "baseline": {
+          "commit": "a32315b",
+          "layout": {
+            "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+            "rect": {
+              "x": 112,
+              "y": 17,
+              "width": 620,
+              "height": 356,
+              "top": 17,
+              "right": 732,
+              "bottom": 373,
+              "left": 112
+            },
+            "scrollTop": 0,
+            "scrollHeight": 453,
+            "clientHeight": 354,
+            "label": null,
+            "choices": [
+              {
+                "id": "network",
+                "description": "One additional crew for the rest of the season.",
+                "rect": {
+                  "x": 145,
+                  "y": 193,
+                  "width": 554,
+                  "height": 76,
+                  "top": 193,
+                  "right": 699,
+                  "bottom": 269,
+                  "left": 145
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "training",
+                "description": "Crew suppression: 0.90 \u2192 1.15 pressure per turn.",
+                "rect": {
+                  "x": 145,
+                  "y": 278,
+                  "width": 554,
+                  "height": 76,
+                  "top": 278,
+                  "right": 699,
+                  "bottom": 354,
+                  "left": 145
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "logistics",
+                "description": "Resupply: 2 \u2192 3 supply credits each turn.",
+                "rect": {
+                  "x": 145,
+                  "y": 363,
+                  "width": 554,
+                  "height": 76,
+                  "top": 363,
+                  "right": 699,
+                  "bottom": 439,
+                  "left": 145
+                },
+                "native_center_hit": false
+              }
+            ]
+          },
+          "source_sha256": {
+            "web/demo/index.html": "7b5b66c5c53b86ca522be1c7fe817bc222a6445b2939c1d67405bafaa099e5b0",
+            "web/demo/strategy/styles/dialogs.css": "89573b48fb6f46c2c9c858ee833048779d8d0265de8f2ae5aaab872f2952c93f"
+          }
+        },
+        "errors": [],
+        "predictor_fits": 0,
+        "quantum_circuit_executions": 0,
+        "hardware_jobs": 0,
+        "scope": "Chromium, blocked remote fonts, one replayed season per size. Both milestone comparisons fit without dialog scrolling; native selection coordinates do not auto-scroll. Preparatory gameplay locators do. Not physical-device, human choice or enjoyment certification."
+      }
+    },
+    {
+      "script": "web/demo/strategy/keyboard-check.mjs",
+      "receipt_sha256": "201d95ed024aa9805823cd56cbe6a96315a8b76e462b9e8e66c18adb7a1be4e5",
+      "command": "node web/demo/strategy/keyboard-check.mjs",
+      "cases": [
+        {
+          "width": 1280,
+          "height": 720,
+          "terminalStatus": "lost",
+          "terminalFront": 6,
+          "mapAndResponseAdvance": true,
+          "nativeSpaceRetained": true,
+          "heldKeyOneFrontOnly": true,
+          "crewAndWaterShortcuts": true,
+          "editableAndModalGuards": true,
+          "compositionAndCommandModifierFixtures": true,
+          "terminalReportReopensWithoutMove": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "terminalStatus": "lost",
+          "terminalFront": 6,
+          "mapAndResponseAdvance": true,
+          "nativeSpaceRetained": true,
+          "heldKeyOneFrontOnly": true,
+          "crewAndWaterShortcuts": true,
+          "editableAndModalGuards": true,
+          "compositionAndCommandModifierFixtures": true,
+          "terminalReportReopensWithoutMove": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "terminalStatus": "lost",
+          "terminalFront": 6,
+          "mapAndResponseAdvance": true,
+          "nativeSpaceRetained": true,
+          "heldKeyOneFrontOnly": true,
+          "crewAndWaterShortcuts": true,
+          "editableAndModalGuards": true,
+          "compositionAndCommandModifierFixtures": true,
+          "terminalReportReopensWithoutMove": true
+        }
+      ],
+      "summary": {
+        "checked_utc": "2026-10-06T11:17:11.232Z",
+        "status": "passed",
+        "baselineCommit": "baa0d9c",
+        "baselineBundleSHA256": "1a483b7d28e13bb2e5500dcafed43902978aada5a4a9a98fb7ab2a68d4e730e0",
+        "baselineNDoesNotAdvance": true,
+        "errors": [],
+        "predictor_fits": 0,
+        "qiskit_circuit_executions": 0,
+        "hardware_jobs": 0,
+        "scope": "Actual browser key input and saved-rule replay; composition/command modifier flags and a temporary textarea are explicitly authoring fixtures. Three sizes, unchanged rules/scenario/upgrades/save version. No physical keyboard, touch or assistive-device certification."
+      }
+    },
+    {
+      "script": "web/demo/strategy/picker-check.mjs",
+      "receipt_sha256": "228cec1fe5641d8015e6242cfee9601d8fe393ad66103f1107f619ed74b92da3",
+      "command": "node web/demo/strategy/picker-check.mjs",
+      "cases": [
+        {
+          "width": 390,
+          "baseline": true,
+          "desired": 13,
+          "selected": 2,
+          "reproduced_wrong_center_selection": true
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "seed": 7,
+          "status": "playing",
+          "completed_fronts": 10,
+          "selected_status": "burning",
+          "offered": [
+            13,
+            2
+          ],
+          "frame": {
+            "left": 504,
+            "right": 734,
+            "top": 199,
+            "bottom": 365,
+            "overflow": false
+          },
+          "pointer_choice": 13,
+          "keyboard_direct": true,
+          "escape_outside_focus": true,
+          "resize_closes": true,
+          "moves_unchanged": true,
+          "source_positions_unchanged": true,
+          "coordinate_percent_tolerance": 1e-08
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "seed": 7,
+          "status": "playing",
+          "completed_fronts": 10,
+          "selected_status": "burning",
+          "offered": [
+            13,
+            2
+          ],
+          "frame": {
+            "left": 412,
+            "right": 642,
+            "top": 221,
+            "bottom": 387,
+            "overflow": false
+          },
+          "pointer_choice": 13,
+          "keyboard_direct": true,
+          "escape_outside_focus": true,
+          "resize_closes": true,
+          "moves_unchanged": true,
+          "source_positions_unchanged": true,
+          "coordinate_percent_tolerance": 1e-08
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "seed": 7,
+          "status": "playing",
+          "completed_fronts": 10,
+          "selected_status": "burning",
+          "offered": [
+            13,
+            2
+          ],
+          "frame": {
+            "left": 152,
+            "right": 382,
+            "top": 197,
+            "bottom": 363,
+            "overflow": false
+          },
+          "pointer_choice": 13,
+          "keyboard_direct": true,
+          "escape_outside_focus": true,
+          "resize_closes": true,
+          "moves_unchanged": true,
+          "source_positions_unchanged": true,
+          "coordinate_percent_tolerance": 1e-08
+        }
+      ],
+      "summary": {
+        "checked_utc": "2026-10-06T11:17:19.445Z",
+        "status": "passed",
+        "baseline_commit": "079c8e4",
+        "baseline_bundle_sha256": "1aae1b074b9a2a200ffd08f82bfed5ca98c66fcf335c00abc3b9b1d001848485",
+        "baseline_markers_sha256": "565e3f4df22f5b4df51a34b375af4f108549d5f5ecbac005bff11efe61fe90dc",
+        "errors": [],
+        "predictor_fits": 0,
+        "quantum_circuit_executions": 0,
+        "hardware_jobs": 0,
+        "scope": "Actual four control-driven ten-front histories reproduces wrong mobile center selection on the pinned old bundle, then verifies named overlap choice at three sizes. Opening/cancel leaves saves unchanged; choosing changes selection only. No marker relocation, rule change, physical touch or human enjoyment claim."
+      }
+    },
+    {
+      "script": "web/demo/strategy/effect-check.mjs",
+      "receipt_sha256": "0a936c9ac8083698e8a3f364365cf3ef16ce311bd5ba2bc97762968ebd30844d",
+      "command": "node web/demo/strategy/effect-check.mjs",
+      "cases": [
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "dd",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.9810252268507611,
+          "effect_feedback": "Echo sequence equipped. Channel fidelity 0.805 \u2192 0.981. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "twirl",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8855832312024823,
+          "effect_feedback": "Pauli twirling equipped. Channel fidelity 0.805 \u2192 0.886. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "postselect",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "Cardinality filter equipped. Samples kept 17/32; 0 wrong-cardinality. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "readout",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "Readout calibration equipped. Kernel error 0.305 \u2192 0.311. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "psd",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "PSD repair equipped. Kernel error 0.305 \u2192 0.276. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "lowrank",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "Low-rank repair equipped. Kernel error 0.305 \u2192 0.313. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "technique": "dd",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.9810252268507611,
+          "effect_feedback": "Echo sequence equipped. Channel fidelity 0.805 \u2192 0.981. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "technique": "twirl",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8855832312024823,
+          "effect_feedback": "Pauli twirling equipped. Channel fidelity 0.805 \u2192 0.886. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "technique": "postselect",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "Cardinality filter equipped. Samples kept 17/32; 0 wrong-cardinality. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "technique": "readout",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "Readout calibration equipped. Kernel error 0.305 \u2192 0.311. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "technique": "psd",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "PSD repair equipped. Kernel error 0.305 \u2192 0.276. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "technique": "lowrank",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "Low-rank repair equipped. Kernel error 0.305 \u2192 0.313. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "dd",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.9810252268507611,
+          "effect_feedback": "Echo sequence equipped. Channel fidelity 0.805 \u2192 0.981. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "twirl",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8855832312024823,
+          "effect_feedback": "Pauli twirling equipped. Channel fidelity 0.805 \u2192 0.886. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "postselect",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "Cardinality filter equipped. Samples kept 17/32; 0 wrong-cardinality. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "readout",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "Readout calibration equipped. Kernel error 0.305 \u2192 0.311. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "psd",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "PSD repair equipped. Kernel error 0.305 \u2192 0.276. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "lowrank",
+          "initial_equip_pointer_opens": true,
+          "before_fidelity": 0.8047027810260875,
+          "loadout_fidelity": 0.8047027810260875,
+          "effect_feedback": "Low-rank repair equipped. Kernel error 0.305 \u2192 0.313. Fire response unchanged.",
+          "keyboard_focus_and_close": true,
+          "game_moves_unchanged": true
+        }
+      ],
+      "summary": {
+        "checked_utc": "2026-10-06T11:17:18.346Z",
+        "status": "passed",
+        "parent_records_sha256": "527d0ee70fb04f51305293d747b3961b5b3d470e64af01032e81c3a627135a65",
+        "saved_qiskit_paths": 256,
+        "maximum_vector_error": 6.661338147750939e-16,
+        "maximum_fidelity_error": 5.551115123125783e-16,
+        "damping_refresh": true,
+        "errors": [],
+        "predictor_fits": 0,
+        "pointer_repair": "Preserve feedback line height when focused Advance blurs; Equip no longer shifts between pointerdown and pointerup.",
+        "new_quantum_circuit_executions": 0,
+        "hardware_jobs": 0,
+        "scope": "Pure-input fidelity derived from saved Qiskit Bloch vectors; equatorial projection/UI controls and equipment at three sizes. Not a new physics run, device comparison, predictive or universal technique ranking."
+      }
+    },
+    {
+      "script": "web/demo/strategy/terminal-check.mjs",
+      "receipt_sha256": "9b2c870493c0948de4943bc2e59b7382886ff0c7e923e910d3af893fd1e9660e",
+      "command": "node web/demo/strategy/terminal-check.mjs",
+      "cases": [
+        {
+          "width": 1280,
+          "height": 720,
+          "seed": 2,
+          "status": "won",
+          "completed_fronts": 12,
+          "inspected_without_reopening": true,
+          "keyboard_report": true,
+          "resume_report": true,
+          "report_preserves_moves": true,
+          "restart": "new_seed",
+          "recorded_impact": 14.503428868688164,
+          "top_fire_ids": [
+            11,
+            10,
+            9
+          ],
+          "peak_front": 9,
+          "report_frame": {
+            "x": 330,
+            "y": 43.25,
+            "width": 620,
+            "height": 633.5
+          },
+          "opening": {
+            "scrollTop": 0,
+            "scrollHeight": 632,
+            "clientHeight": 632,
+            "titleFocused": true
+          }
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "seed": 7,
+          "status": "lost",
+          "completed_fronts": 5,
+          "inspected_without_reopening": true,
+          "keyboard_report": true,
+          "resume_report": true,
+          "report_preserves_moves": true,
+          "restart": "same_seed",
+          "recorded_impact": 68.2939759999464,
+          "top_fire_ids": [
+            3,
+            2,
+            1
+          ],
+          "peak_front": 5,
+          "report_frame": {
+            "x": 330,
+            "y": 43.25,
+            "width": 620,
+            "height": 633.5
+          },
+          "opening": {
+            "scrollTop": 0,
+            "scrollHeight": 632,
+            "clientHeight": 632,
+            "titleFocused": true
+          }
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "seed": 2,
+          "status": "won",
+          "completed_fronts": 12,
+          "inspected_without_reopening": true,
+          "keyboard_report": true,
+          "resume_report": true,
+          "report_preserves_moves": true,
+          "restart": "new_seed",
+          "recorded_impact": 14.503428868688164,
+          "top_fire_ids": [
+            11,
+            10,
+            9
+          ],
+          "peak_front": 9,
+          "report_frame": {
+            "x": 202,
+            "y": 67.25,
+            "width": 620,
+            "height": 633.5
+          },
+          "opening": {
+            "scrollTop": 0,
+            "scrollHeight": 632,
+            "clientHeight": 632,
+            "titleFocused": true
+          }
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "seed": 7,
+          "status": "lost",
+          "completed_fronts": 5,
+          "inspected_without_reopening": true,
+          "keyboard_report": true,
+          "resume_report": true,
+          "report_preserves_moves": true,
+          "restart": "same_seed",
+          "recorded_impact": 68.2939759999464,
+          "top_fire_ids": [
+            3,
+            2,
+            1
+          ],
+          "peak_front": 5,
+          "report_frame": {
+            "x": 202,
+            "y": 67.25,
+            "width": 620,
+            "height": 633.5
+          },
+          "opening": {
+            "scrollTop": 0,
+            "scrollHeight": 632,
+            "clientHeight": 632,
+            "titleFocused": true
+          }
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "seed": 2,
+          "status": "won",
+          "completed_fronts": 12,
+          "inspected_without_reopening": true,
+          "keyboard_report": true,
+          "resume_report": true,
+          "report_preserves_moves": true,
+          "restart": "new_seed",
+          "recorded_impact": 14.503428868688164,
+          "top_fire_ids": [
+            11,
+            10,
+            9
+          ],
+          "peak_front": 9,
+          "report_frame": {
+            "x": 18,
+            "y": 116.484375,
+            "width": 354,
+            "height": 611.03125
+          },
+          "opening": {
+            "scrollTop": 0,
+            "scrollHeight": 609,
+            "clientHeight": 609,
+            "titleFocused": true
+          }
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "seed": 7,
+          "status": "lost",
+          "completed_fronts": 5,
+          "inspected_without_reopening": true,
+          "keyboard_report": true,
+          "resume_report": true,
+          "report_preserves_moves": true,
+          "restart": "same_seed",
+          "recorded_impact": 68.2939759999464,
+          "top_fire_ids": [
+            3,
+            2,
+            1
+          ],
+          "peak_front": 5,
+          "report_frame": {
+            "x": 18,
+            "y": 116.484375,
+            "width": 354,
+            "height": 611.03125
+          },
+          "opening": {
+            "scrollTop": 0,
+            "scrollHeight": 609,
+            "clientHeight": 609,
+            "titleFocused": true
+          }
+        }
+      ],
+      "summary": {
+        "checked_utc": "2026-10-06T11:17:26.170Z",
+        "status": "passed",
+        "errors": [],
+        "game_rule_changes": false,
+        "predictor_fits": 0,
+        "qiskit_statevector_executions": 0,
+        "hardware_jobs": 0,
+        "scope": "Actual control-driven winning/losing endings at three viewports. Per-fire sums agree with stored front damage, peak front/ranked contributions are displayed, reports preserve moves across close/reopen/reload/retry. Reduced motion and external-font failure covered; no new balance estimate, human enjoyment trial, causal response effect or real fire validation."
+      }
+    },
+    {
+      "script": "web/demo/strategy/audio-check.mjs",
+      "receipt_sha256": "ae6c449f71d84ff6596ab4af1d48669f4fe7167e66db06e75d255dc08485025d",
+      "command": "node web/demo/strategy/audio-check.mjs",
+      "cases": [],
+      "summary": {
+        "checked_utc": "2026-10-06T11:17:20.904Z",
+        "status": "passed",
+        "old_commit": "f2c86e2",
+        "old_source_sha256": "629779fe79202f18e6058949b34c6d5b324a77fda67e8d1d49c30d42c59b16ad",
+        "offline": {
+          "cues": [
+            {
+              "kind": "crew",
+              "peak": 0.06247416138648987,
+              "rms": 0.006841199427574039,
+              "finite": true,
+              "tail_peak": 0
+            },
+            {
+              "kind": "water",
+              "peak": 0.04660799354314804,
+              "rms": 0.004085581104547365,
+              "finite": true,
+              "tail_peak": 0
+            },
+            {
+              "kind": "inspect",
+              "peak": 0.062455132603645325,
+              "rms": 0.006628338018718536,
+              "finite": true,
+              "tail_peak": 0
+            },
+            {
+              "kind": "advance",
+              "peak": 0.033049214631319046,
+              "rms": 0.0023132213320535824,
+              "finite": true,
+              "tail_peak": 0
+            },
+            {
+              "kind": "upgrade",
+              "peak": 0.09044179320335388,
+              "rms": 0.01133883425212277,
+              "finite": true,
+              "tail_peak": 0
+            },
+            {
+              "kind": "won",
+              "peak": 0.06670059263706207,
+              "rms": 0.012106167430127919,
+              "finite": true,
+              "tail_peak": 0
+            },
+            {
+              "kind": "lost",
+              "peak": 0.059345267713069916,
+              "rms": 0.008991503367239407,
+              "finite": true,
+              "tail_peak": 0
+            }
+          ],
+          "old_mute": {
+            "peak": 0.06670059263706207,
+            "rms": 0.014826966472119096,
+            "finite": true
+          },
+          "mute": {
+            "peak": 0,
+            "rms": 0,
+            "finite": true
+          },
+          "hidden": {
+            "peak": 0,
+            "rms": 0,
+            "finite": true
+          }
+        },
+        "no_context_before_opt_in": true,
+        "mute_stops_scheduled_sources": true,
+        "hidden_stops_sources_and_prevents_cues": true,
+        "returning_does_not_replay": true,
+        "sound_toggle_preserves_save": true,
+        "fallback": [
+          {
+            "failure": "constructor",
+            "gameplay_continues": true,
+            "no_horizontal_overflow": true
+          },
+          {
+            "failure": "resume",
+            "gameplay_continues": true,
+            "no_horizontal_overflow": true
+          }
+        ],
+        "errors": [],
+        "predictor_fits": 0,
+        "quantum_states": 0,
+        "hardware_jobs": 0,
+        "scope": "Offline waveform and browser control/failure-injection checks. Browser output muted during authoring; not a speaker/listening trial, measured loudness certification or OS visibility test."
+      }
+    },
+    {
+      "script": "web/demo/strategy/render-check.mjs",
+      "receipt_sha256": "961d28a48d986aebda10dacd24fcdb66d6b726681708768c696501583eb454b8",
+      "command": "node web/demo/strategy/render-check.mjs",
+      "cases": [
+        {
+          "noGPU": true,
+          "fontsBlocked": true,
+          "storageBlocked": true,
+          "reducedMotionStatic": true,
+          "liveEmbers": true,
+          "forcedVisibilityBranchStopsAndResumes": true,
+          "responseAndAdvanceWork": true,
+          "fallbackChannelChecked": true,
+          "overflow": false,
+          "operationsScroll": 0,
+          "errors": []
+        },
+        {
+          "noGPU": false,
+          "fontsBlocked": true,
+          "storageBlocked": true,
+          "reducedMotionStatic": true,
+          "liveEmbers": true,
+          "forcedVisibilityBranchStopsAndResumes": true,
+          "responseAndAdvanceWork": true,
+          "fallbackChannelChecked": false,
+          "overflow": false,
+          "operationsScroll": 0,
+          "errors": []
+        }
+      ],
+      "summary": {
+        "scope": "Forced browser failure and visibility branches; not physical GPU loss or operating-system tab scheduling."
+      }
+    },
+    {
+      "script": "web/demo/strategy/bench-check.mjs",
+      "receipt_sha256": "2cd35cad142690916740dd6a17e1bc0c012d7a0c59b4a88cf526e70be9ae4ac6",
+      "command": "node web/demo/strategy/bench-check.mjs",
+      "cases": [
+        {
+          "width": 1280,
+          "height": 720,
+          "basis_states": 5,
+          "equal_sampled_minima": true,
+          "no_dialog_horizontal_overflow": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "basis_states": 5,
+          "equal_sampled_minima": true,
+          "no_dialog_horizontal_overflow": true
+        }
+      ],
+      "summary": {
+        "exhaustive_objective_values": 210,
+        "errors": [],
+        "predictor_fits": 0,
+        "quantum_states": 0,
+        "hardware_jobs": 0
+      }
+    },
+    {
+      "script": "web/demo/strategy/focus-check.mjs",
+      "receipt_sha256": "e0d21aa51c73dd64c5da731bf1a94c97dbdef200e2c81c8e00ff1a5040bab38b",
+      "command": "node web/demo/strategy/focus-check.mjs",
+      "cases": [
+        {
+          "width": 1280,
+          "height": 720,
+          "enter_space_preserve_focus": true,
+          "water_reorders_same_node": true,
+          "tab_follows_new_order": true,
+          "map_focus_preserved": true,
+          "accepted_moves": [
+            {
+              "type": "action",
+              "id": 2,
+              "kind": "water"
+            }
+          ]
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "enter_space_preserve_focus": true,
+          "water_reorders_same_node": true,
+          "tab_follows_new_order": true,
+          "map_focus_preserved": true,
+          "accepted_moves": [
+            {
+              "type": "action",
+              "id": 2,
+              "kind": "water"
+            }
+          ]
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "enter_space_preserve_focus": true,
+          "water_reorders_same_node": true,
+          "tab_follows_new_order": true,
+          "map_focus_preserved": true,
+          "accepted_moves": [
+            {
+              "type": "action",
+              "id": 2,
+              "kind": "water"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "checked_utc": "2026-10-06T11:17:23.208Z",
+        "status": "passed",
+        "before": {
+          "focused_tag": "BODY",
+          "selected": 2
+        },
+        "before_commit": "16e346a",
+        "before_bundle_sha256": "ae56e59b7975be1c1fd25449dbdca0d06b87d360e3e43333af61ef750202afb3",
+        "fixtures": {
+          "contained_focus_next_fire": true,
+          "all_clear_focus_advance": true
+        },
+        "errors": [],
+        "game_rule_changes": false,
+        "predictor_fits": 0,
+        "quantum_states": 0,
+        "hardware_jobs": 0,
+        "scope": "Keyboard selection/response and tab order on three viewports; isolated containment/all-clear DOM fixtures. Not a human gameplay or balance study."
+      }
+    },
+    {
+      "script": "web/demo/strategy/accessibility-check.mjs",
+      "receipt_sha256": "f6dd90a0e75f03a2d14017d9bf76bde782616b43c8636046546e812ce155c6f0",
+      "command": "node web/demo/strategy/accessibility-check.mjs",
+      "cases": [
+        {
+          "width": 1280,
+          "height": 720,
+          "welcome": "Hold the season.",
+          "guide": "Decisions, not reflexes.",
+          "fire_button": "Central 02, burning, pressure 1.1, Crew returns in 2 fronts",
+          "readout_description": "Mixedwood cover. Toy fuel 0.9, exposure 0.6. Reserve loss is this fire's projected contribution after the current front. These are fictional game units, not hectares.",
+          "keyboard_focus_and_crew_response": true,
+          "escape_returns_to_opener": true,
+          "exact_save_preserved_through_guide_and_reload": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "welcome": "Hold the season.",
+          "guide": "Decisions, not reflexes.",
+          "fire_button": "Central 02, burning, pressure 1.1, Crew returns in 2 fronts",
+          "readout_description": "Mixedwood cover. Toy fuel 0.9, exposure 0.6. Reserve loss is this fire's projected contribution after the current front. These are fictional game units, not hectares.",
+          "keyboard_focus_and_crew_response": true,
+          "escape_returns_to_opener": true,
+          "exact_save_preserved_through_guide_and_reload": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "welcome": "Hold the season.",
+          "guide": "Decisions, not reflexes.",
+          "fire_button": "Central 02, burning, pressure 1.1, Crew returns in 2 fronts",
+          "readout_description": "Mixedwood cover. Toy fuel 0.9, exposure 0.6. Reserve loss is this fire's projected contribution after the current front. These are fictional game units, not hectares.",
+          "keyboard_focus_and_crew_response": true,
+          "escape_returns_to_opener": true,
+          "exact_save_preserved_through_guide_and_reload": true
+        }
+      ],
+      "summary": {
+        "checked_utc": "2026-10-06T11:17:24.677Z",
+        "status": "passed",
+        "baseline": "b1c203a",
+        "baseline_hashes": {
+          "index.html": "3f3eb3a95ba65dbc9e83af64df59eccfdd32cc35665af77ace5fdb28b4555cea",
+          "assets/strategy.js": "66e6ca8e1d6e187860fb3c03512cf102d4603ced65d31ff1e4dc6b71101fa820"
+        },
+        "before": {
+          "welcome_name": "",
+          "guide_name": "",
+          "fire_chip_label": null
+        },
+        "errors": [],
+        "game_rule_changes": false,
+        "new_predictor_fits": 0,
+        "new_quantum_states": 0,
+        "hardware_jobs": 0,
+        "scope": "Chromium accessibility-tree exposure and native keys in isolated pages at three sizes. No physical screen reader, speech output, assistive device or human enjoyment certification."
+      }
+    },
+    {
+      "script": "web/demo/strategy/compact-check.mjs",
+      "receipt_sha256": "0b36a259db037ea7706592d299b7b17c343ef7e1063b4ea442daea6074d47474",
+      "command": "node web/demo/strategy/compact-check.mjs",
+      "cases": [
+        {
+          "width": 1024,
+          "height": 600,
+          "visible": true,
+          "scroll": 0,
+          "horizontalOverflow": false,
+          "matrixLayout": {
+            "cellsContained": true,
+            "separated": true,
+            "densePreview": true,
+            "cells": 64
+          }
+        },
+        {
+          "width": 1280,
+          "height": 600,
+          "visible": true,
+          "scroll": 0,
+          "horizontalOverflow": false,
+          "matrixLayout": {
+            "cellsContained": true,
+            "separated": true,
+            "densePreview": true,
+            "cells": 64
+          }
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "visible": true,
+          "scroll": 0,
+          "horizontalOverflow": false,
+          "matrixLayout": {
+            "cellsContained": true,
+            "separated": true,
+            "densePreview": true,
+            "cells": 64
+          }
+        },
+        {
+          "width": 1024,
+          "height": 768,
+          "visible": true,
+          "scroll": 0,
+          "horizontalOverflow": false,
+          "matrixLayout": {
+            "cellsContained": true,
+            "separated": true,
+            "densePreview": true,
+            "cells": 64
+          }
+        },
+        {
+          "width": 1440,
+          "height": 820,
+          "visible": true,
+          "scroll": 0,
+          "horizontalOverflow": false,
+          "matrixLayout": {
+            "cellsContained": true,
+            "separated": true,
+            "densePreview": true,
+            "cells": 64
+          }
+        }
+      ],
+      "summary": {
+        "checked_utc": "2026-10-06T11:17:26.561Z",
+        "status": "passed",
+        "baseline": {
+          "commit": "4735884",
+          "compact_css_sha256": "81440bb5fb8446c784ec0eae7e5f2bbf2c370c443986439ea78bd8558ec95d7e",
+          "bottom": 627,
+          "height": 600
+        },
+        "errors": [],
+        "scope": "Pinned before-style clipping and current Chromium layout/control checks at five desktop sizes. Default instruments and command bar fit; expanded details may scroll. Narrow phone flow is separate. Not physical-device, human enjoyment or full platform certification."
+      }
+    },
+    {
+      "script": "web/demo/strategy/matrix-ink-check.mjs",
+      "receipt_sha256": "e6e24e205ea74c3abb05753037b739d4e4bc7aab53d44006052384397056ce88",
+      "command": "node web/demo/strategy/matrix-ink-check.mjs",
+      "cases": [
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "none",
+          "cells": 16,
+          "minimum_before": 2.348570854472208,
+          "minimum_after": 5.1081566084615275,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 1,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "dd",
+          "cells": 16,
+          "minimum_before": 2.348570854472208,
+          "minimum_after": 5.1081566084615275,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "twirl",
+          "cells": 16,
+          "minimum_before": 2.348570854472208,
+          "minimum_after": 5.1081566084615275,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "postselect",
+          "cells": 16,
+          "minimum_before": 2.348570854472208,
+          "minimum_after": 5.1081566084615275,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "readout",
+          "cells": 16,
+          "minimum_before": 2.0685509559248305,
+          "minimum_after": 4.92598555308656,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "psd",
+          "cells": 16,
+          "minimum_before": 2.196002876329592,
+          "minimum_after": 5.0465247042369015,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 1280,
+          "height": 720,
+          "technique": "lowrank",
+          "cells": 16,
+          "minimum_before": 2.2544865536300964,
+          "minimum_after": 4.808987261687025,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "none",
+          "cells": 16,
+          "minimum_before": 2.348570854472208,
+          "minimum_after": 5.1081566084615275,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 1,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "dd",
+          "cells": 16,
+          "minimum_before": 2.348570854472208,
+          "minimum_after": 5.1081566084615275,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "twirl",
+          "cells": 16,
+          "minimum_before": 2.348570854472208,
+          "minimum_after": 5.1081566084615275,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "postselect",
+          "cells": 16,
+          "minimum_before": 2.348570854472208,
+          "minimum_after": 5.1081566084615275,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "readout",
+          "cells": 16,
+          "minimum_before": 2.0685509559248305,
+          "minimum_after": 4.92598555308656,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "psd",
+          "cells": 16,
+          "minimum_before": 2.196002876329592,
+          "minimum_after": 5.0465247042369015,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "technique": "lowrank",
+          "cells": 16,
+          "minimum_before": 2.2544865536300964,
+          "minimum_after": 4.808987261687025,
+          "values_and_backgrounds_exact": true,
+          "metrics_channel_and_save_exact": true,
+          "close_preserves_save": true,
+          "option_labels_and_disabled_states_exact": true,
+          "descriptions_visible_when_disabled": true,
+          "minimum_option_opacity_before": 0.38,
+          "minimum_option_opacity_after": 1
+        }
+      ],
+      "summary": {
+        "checked_utc": "2026-10-06T11:16:28.392Z",
+        "status": "passed",
+        "baseline": {
+          "commit": "69d9677",
+          "bundle_sha256": "ed4b32fe114e1200817b294e731b54f179be4c57a7824dd052059806f72c0714",
+          "research_css_sha256": "8af9c1ef9a9aab31e54507486773d73cbe8dc55ca0e1583575bc8cfc3de38e2c"
+        },
+        "errors": [],
+        "new_predictor_fits": 0,
+        "new_quantum_states": 0,
+        "hardware_jobs": 0,
+        "scope": "Actual Chromium composited colours and native dialog controls for seven displays at two sizes. Locator scrolling is allowed for typography inspection. This is a matrix-number readability check, not whole-site accessibility, physical-device or predictive certification."
+      }
+    }
+  ],
+  "visual_review": [
+    {
+      "image": "upgrade-choice/844-front-4.png",
+      "sha256": "338773c385b0408377490c03ff3fa3f878ed13c793bed4a1809304d027000968",
+      "review": "byte_identical_to_prior_inspected_image"
+    },
+    {
+      "image": "touch-controls/390-late.png",
+      "sha256": "a37f7c9567a6491d02facc7cd0b7278fda4cdb928353a1220bb778fbc849556e",
+      "review": "reinspected_changed_image"
+    },
+    {
+      "image": "short-viewport/1024-entry.png",
+      "sha256": "392cf93dbf0c10ca8afbd0e441edba0d065df592c8e9d80a064740d31436048b",
+      "review": "byte_identical_to_prior_inspected_image"
+    },
+    {
+      "image": "strategy-render/svg-fallback.png",
+      "sha256": "a4e672d7511bb7b27794c599ba51dadd12fed047525a3a0a7dcffa07b6cb3c6a",
+      "review": "byte_identical_to_prior_inspected_image"
+    },
+    {
+      "image": "bench-inspection/hamiltonian-390.png",
+      "sha256": "23fbd2930a0b7544df1d9f600cf6d2b4a8d0439f5aeb2f44105835f514944e2b",
+      "review": "byte_identical_to_prior_inspected_image"
+    },
+    {
+      "image": "end-menu/390-won-report.png",
+      "sha256": "7325dc0a21dd4e93e16b43bd69acfe7f2ab7dbb5d348deb0c7a0e7b194e5be12",
+      "review": "reinspected_changed_image"
+    },
+    {
+      "image": "end-menu/1280-lost-report.png",
+      "sha256": "478e134faa0c2b5fa09cee6be433b5f90d90a2dde1a443272ae9b3377021f5b0",
+      "review": "byte_identical_to_prior_inspected_image"
+    },
+    {
+      "image": "instrument-effects/390-lowrank.png",
+      "sha256": "e5d140b52af3d2760be9922b1dd0ede8865d672d99ea699cebcf475660f4be74",
+      "review": "reinspected_changed_image"
+    },
+    {
+      "image": "strategy-compact/before-1024-600.png",
+      "sha256": "9b9250247ba10fb10ab4ea9bafe0ccd0f2a848116d3d29d4d548d281be72b474",
+      "review": "reinspected_changed_image"
+    },
+    {
+      "image": "strategy-compact/1024-600.png",
+      "sha256": "9cc4d196d061108be3e4f216f3ebb8673f5e29fa23ca576023ad691ffa6ad2fe",
+      "review": "reinspected_changed_image"
+    },
+    {
+      "image": "strategy-compact/1280-600.png",
+      "sha256": "4f567bd97dcf46b680f0b37fe33d408b5e70967fc45ed2248d03f81b4867ae61",
+      "review": "reinspected_changed_image"
+    },
+    {
+      "image": "matrix-ink/1280-lowrank.png",
+      "sha256": "a20d7cc3f1e892cc47d92d1b803aed06f3ea124f2e7a1e9011cd97b22dc9c478",
+      "review": "inspected_new_image"
+    },
+    {
+      "image": "matrix-ink/390-lowrank.png",
+      "sha256": "efaeb9a71c128dd609cad5f1224ad074a7daf71463dfae3ba06fd6464719e9a3",
+      "review": "inspected_new_image"
+    }
+  ],
+  "review_findings": [
+    "Upgrade comparisons and terminal reserve/contribution charts are readable in the inspected phone, short-screen and desktop views.",
+    "The Ontario view includes Toronto/GTA, Ottawa and Windsor; historical marker coordinates were not shifted to resolve overlap.",
+    "The feature inspector distinguishes the diagonal sampled minimum, exact reference and proxy cost; channel/kernel effects remain separate from fire response.",
+    "Chromium accessibility trees expose named welcome/guide dialogs and fire pressure/crew/context; native keys, opener focus and normal-URL continuation pass at three sizes. Physical speech output remains untested.",
+    "At 1024/1280x600 the default instruments and command bar fit without scrolling; desktop advance is activated at initial scroll zero. Expanded instrument details can scroll. The pinned before-style clips the command bar; narrow portrait flow and game rules remain unchanged.",
+    "Adaptive instrument-matrix ink improves minimum measured contrast from 2.07 to 4.81 across 224 cells in 14 displays, with exact prior cell backgrounds, numbers, channel metrics and serialized saves. Zero-credit option descriptions remain visible while their labels/disabled states stay exact. This is scoped number/description readability, not whole-site accessibility certification."
+  ],
+  "runtime_changes": [
+    "web/demo/strategy/matrix-ink.js",
+    "web/demo/strategy/instruments.js",
+    "web/demo/assets/strategy.js",
+    "web/demo/strategy/styles/research.css"
+  ],
+  "new_predictor_fits": 0,
+  "new_quantum_circuit_executions": 0,
+  "hardware_jobs": 0,
+  "scope": "Fourteen bounded Chromium/authoring checks on this pinned build. Current-case summaries are published here; raw receipts/screenshots remain in ignored authoring cache. Native touch events are emulated; offscreen locators can auto-scroll except where the short-screen/upgrade case explicitly excludes it. Render/storage/audio failures and composition flags are injected fixtures. Saved Qiskit vectors are compared without new circuits. This is not physical-device, OS scheduling, assistive-technology, speaker listening, human enjoyment or full historical experiment certification.",
+  "runtime": "Mac authoring browser with optional Codex-bundled Node/Playwright; owner viewer on 8790 stays running. These tools are not required for public viewing.",
+  "previous_receipt_sha256": "dde8c3f4e21830f40b5492a6ff30750ee6a60fb450665dde1df785712fd98119"
+}

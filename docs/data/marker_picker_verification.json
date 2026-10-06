@@ -1,0 +1,113 @@
+{
+  "checked_utc": "2026-10-06T08:07:27.266Z",
+  "status": "passed",
+  "baseline_commit": "079c8e4",
+  "baseline_bundle_sha256": "1aae1b074b9a2a200ffd08f82bfed5ca98c66fcf335c00abc3b9b1d001848485",
+  "baseline_markers_sha256": "565e3f4df22f5b4df51a34b375af4f108549d5f5ecbac005bff11efe61fe90dc",
+  "source_sha256": {
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/assets/context/scenario.json": "466bd0172a7172a421330d1940e2999f5ef2c0cb59c123f4bc3e6c63a2d6593d",
+    "web/demo/strategy/marker-picker.js": "a1490cf4a08a7304d027ac736ba80c2f57c59ca784d27e140955deef2a079fc4",
+    "web/demo/strategy/map.js": "bdd0ab5f5f55bdebcec0153d2beaa90f9fcdc861c0648b1895b4af2e9ef2480b",
+    "web/demo/strategy/styles/marker-picker.css": "cb3d3bccd0620e6a7143c94e9fa88ba068e255e48ebec23086944e82c1f9132f",
+    "web/demo/strategy/styles/map-markers.css": "5ac5e61f5202f59fb276bcba318e455ff47ae1b34c28ac9dd1ab0294fffcc521",
+    "web/demo/strategy/picker-check.mjs": "087a4752973f28444a36f1ec6f992a005533a7ca4ea19c86502c1cb783a1e6f6",
+    "web/demo/strategy.css": "e5640c3cfe0d704a1fc213e417e6cc70d5d0e8868965a9f8e935e6d965f8c816",
+    "web/demo/assets/strategy.js": "a39dee4e5eccf399671dc16ff6490f6e8c278502ff8230790f549dbec024c08d"
+  },
+  "results": [
+    {
+      "width": 390,
+      "baseline": true,
+      "desired": 13,
+      "selected": 2,
+      "reproduced_wrong_center_selection": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "seed": 7,
+      "status": "playing",
+      "completed_fronts": 10,
+      "selected_status": "burning",
+      "offered": [
+        13,
+        2
+      ],
+      "frame": {
+        "left": 504,
+        "right": 734,
+        "top": 199,
+        "bottom": 365,
+        "overflow": false
+      },
+      "pointer_choice": 13,
+      "keyboard_direct": true,
+      "escape_outside_focus": true,
+      "resize_closes": true,
+      "moves_unchanged": true,
+      "source_positions_unchanged": true,
+      "coordinate_percent_tolerance": 1e-8
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "seed": 7,
+      "status": "playing",
+      "completed_fronts": 10,
+      "selected_status": "burning",
+      "offered": [
+        13,
+        2
+      ],
+      "frame": {
+        "left": 412,
+        "right": 642,
+        "top": 221,
+        "bottom": 387,
+        "overflow": false
+      },
+      "pointer_choice": 13,
+      "keyboard_direct": true,
+      "escape_outside_focus": true,
+      "resize_closes": true,
+      "moves_unchanged": true,
+      "source_positions_unchanged": true,
+      "coordinate_percent_tolerance": 1e-8
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "seed": 7,
+      "status": "playing",
+      "completed_fronts": 10,
+      "selected_status": "burning",
+      "offered": [
+        13,
+        2
+      ],
+      "frame": {
+        "left": 152,
+        "right": 382,
+        "top": 197,
+        "bottom": 363,
+        "overflow": false
+      },
+      "pointer_choice": 13,
+      "keyboard_direct": true,
+      "escape_outside_focus": true,
+      "resize_closes": true,
+      "moves_unchanged": true,
+      "source_positions_unchanged": true,
+      "coordinate_percent_tolerance": 1e-8
+    }
+  ],
+  "errors": [],
+  "predictor_fits": 0,
+  "quantum_circuit_executions": 0,
+  "hardware_jobs": 0,
+  "scope": "Actual four control-driven ten-front histories reproduces wrong mobile center selection on the pinned old bundle, then verifies named overlap choice at three sizes. Opening/cancel leaves saves unchanged; choosing changes selection only. No marker relocation, rule change, physical touch or human enjoyment claim."
+}

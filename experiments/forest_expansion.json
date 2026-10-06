@@ -1,0 +1,143 @@
+{
+  "study": "forest-expansion-v1",
+  "dataset": "docs/data/forest_expansion_training.csv",
+  "observation_unit": "Ontario province-year",
+  "target": "Mean reported hectares per accepted fire; retrospective same-year estimation",
+  "folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "features": {
+    "weather": [
+      "annual_mean_temp_c",
+      "summer_mean_temp_c",
+      "annual_precip_mm",
+      "summer_precip_mm"
+    ],
+    "structure": [
+      "forest_closure",
+      "forest_biomass",
+      "forest_age",
+      "spruce_pine_share_of_three_species"
+    ],
+    "memory": [
+      "lag_reported_fire_area_ha",
+      "prior_epoch_biomass_change_per_year"
+    ],
+    "selection_pool": [
+      "annual_mean_temp_c",
+      "summer_mean_temp_c",
+      "annual_precip_mm",
+      "summer_precip_mm",
+      "forest_closure",
+      "forest_biomass",
+      "forest_age",
+      "spruce_pine_share_of_three_species",
+      "lag_reported_fire_area_ha",
+      "prior_epoch_biomass_change_per_year"
+    ]
+  },
+  "conditions": [
+    "weather",
+    "structure",
+    "weather_structure",
+    "zero8",
+    "calendar8",
+    "interleaved8",
+    "all10",
+    "zero10",
+    "mi4",
+    "exact4",
+    "sqd4",
+    "uniform4"
+  ],
+  "models": {
+    "ridge": {
+      "alpha": 1.0
+    },
+    "svr": {
+      "C": 1.0,
+      "epsilon": 0.2
+    }
+  },
+  "quantum": {
+    "angle_amplitude": 0.09817477042468103,
+    "reps": 1,
+    "kernel": "Actual FidelityQuantumKernel/QMLSampler analytic compute-uncompute, enforce_psd=False, linear ZZ",
+    "regressor": "Qiskit QSVR precomputed"
+  },
+  "selection": {
+    "selected_count": 4,
+    "cardinality_penalty": 2.0,
+    "redundancy_weight": 0.5,
+    "relevance_neighbors": 3,
+    "seed": 137,
+    "parameters": [
+      0.4,
+      0.2
+    ],
+    "shots": 1024,
+    "initial": "Uniform feasible StatePreparation",
+    "mixer": "Even-ring XY",
+    "sampling": "Actual local Qiskit StatevectorSampler, ideal only",
+    "controls": "Train MI ranking; exact same QUBO;1024 uniform-feasible classical draws. Diagonal SQD equals sampled minimum; no optimization or hardware."
+  },
+  "input_sha256": {
+    "docs/data/annual_training.csv": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+    "docs/data/forest_expansion_training.csv": "2b5f52acc0b2409ae72ad65b06b070085f2e32acbf8a30bb3cfec418872c7805",
+    "docs/data/forest_feature_sources.json": "8771d7bae11cae8a81f97e0932d2251587f8deff37858ead1d0418fa5016d6da",
+    "docs/data/forest_feature_summary.json": "84ce3d7e7669260eae881843ff43ab874e3a3fce6a3f0bd06c7bc150b91653c9",
+    "docs/data/forest_feature_derived.json": "576091d89e0cfa4c71786b334ab53a2a740b946af3114373aeb13b9909f7dfcc",
+    "wildfire_lab/annual_classical.py": "d43735f826ac40e2660d13f7f9e95e12bf13281467da895f5acf62ed8d145182",
+    "wildfire_lab/annual_selectors.py": "4a2289f19ec5ecd58393e8984a3f55c6e3e6fb9c1164b88d2ce89d02bd34034e",
+    "wildfire_lab/library_kernel.py": "905a9e3048542adb9bf6ece8f886adcfc43275f92ccec61950d09ab59509443c",
+    "wildfire_lab/constrained_qaoa.py": "fe0f35d5ac3c91c70b34c0bb47ff3d3dc43f7033294b620d24b8dc8fb16d6caa",
+    "wildfire_lab/sqd_selection.py": "d80ad9026b0a72db0d4a58ec50f350a0fadebb6378ee7c180127c49547ffda57",
+    "wildfire_lab/selection.py": "36544d742a333a75512c7358ba3912c6466e32e3ee0088ea2d2c1fddb349efb1",
+    "uv.lock": "8781496860e8e333b439eee75dd430bfdca26c23c3e52098b541c72448954e96"
+  },
+  "code_paths": [
+    "scripts/run_forest_expansion.py",
+    "wildfire_lab/forest_features.py",
+    "wildfire_lab/forest_models.py",
+    "wildfire_lab/forest_selectors.py",
+    "wildfire_lab/forest_run.py",
+    "wildfire_lab/annual_classical.py",
+    "wildfire_lab/annual_selectors.py",
+    "wildfire_lab/library_kernel.py",
+    "wildfire_lab/constrained_qaoa.py",
+    "wildfire_lab/sqd_selection.py",
+    "wildfire_lab/selection.py"
+  ],
+  "budget": {
+    "model_fits": 108,
+    "kernel_matrices": 36,
+    "pair_circuits_max": 13000,
+    "selector_quantum_shots": 3072,
+    "auxiliary_classical_draws": 3072,
+    "hardware_jobs": 0,
+    "tuning_candidates": 0,
+    "elapsed_soft_limit_seconds": 900
+  },
+  "preprocessing": "Same19/23/27 fold training labels for every selector/predictor,4 validation years. Train-only medians/population scaling; log1p target then training scaling. RBF inverse median positive training distance. Fixed parameters, no variant promotion.",
+  "controls": "Zero8/zero10 isolate width; calendar8 tests time-proxy value; interleaving changes ZZ adjacency without changing classical information. Exact/uniform selectors expose the easy diagonal SQD control.",
+  "information_policy": "All development folds were inspected previously: descriptive paired ablations, not fresh validation. No2019\u20132024, final reset, tuning or hardware.",
+  "source_policy": "Strict prior-year/epoch joins. Age2005/2010/2015 excluded for unadvertised resampling; age2000 carried forward with staleness. SCANFI reconstructs with later imagery, so no as-of forecast claim. Composition/biomass-change are dated proxies, not complete fuels or eventual recovery.",
+  "outcomes": "Publish every model/condition/fold, mean MAE/RMSE/bias, paired width/year/order contrasts, kernel geometry, subset gaps/acceptance and compute/source costs. Three overlapping chronological folds are not independent repetitions."
+}

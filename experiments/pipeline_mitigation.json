@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "study": "pipeline-mitigation-v1",
+  "dataset_sha256": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+  "train_years": [
+    1988,
+    1991,
+    1993,
+    1996,
+    1999,
+    2001,
+    2004,
+    2006
+  ],
+  "validation_years": [
+    2007,
+    2008,
+    2009,
+    2010
+  ],
+  "seeds": [
+    131,
+    137,
+    139
+  ],
+  "shots": 1024,
+  "randomizations": 4,
+  "calibration_shots": 4096,
+  "frames": {
+    "4": [
+      0,
+      15,
+      5,
+      10
+    ],
+    "10": [
+      0,
+      1023,
+      341,
+      682
+    ]
+  },
+  "angle_amplitude": 0.09817477042468103,
+  "feature_map": "4-qubit one-layer linear ZZFeatureMap; amplitude*tanh(train-standardized x/2)",
+  "qsvr": {
+    "C": 1,
+    "epsilon": 0.2
+  },
+  "qaoa": {
+    "qubits": 10,
+    "k": 4,
+    "gamma": 0.4,
+    "beta": 0.2,
+    "optimizer_calls": 0,
+    "initial": "generic StatePreparation uniform cardinality-four",
+    "mixer": "XY ring"
+  },
+  "noise": {
+    "cx_target_z_radians": 0.03,
+    "spectator_idle_z_radians": 0.12,
+    "amplitude_damping": 0.002,
+    "phase_damping": 0.002,
+    "readout_0_to_1": 0.08,
+    "readout_1_to_0": 0.03
+  },
+  "budget": {
+    "kernel_pairs": 68,
+    "kernel_forward_circuits": 3876,
+    "kernel_forward_shots": 2088960,
+    "selector_forward_circuits": 45,
+    "selector_forward_shots": 18432,
+    "calibration_circuits": 12,
+    "calibration_shots": 49152,
+    "maximum_predictor_fits": 78
+  },
+  "information_policy": "Training-period development only; these years and narrow angle were inspected previously, not independent confirmation. No adaptive tuning, 2019-2024 access, promotion or hardware.",
+  "noise_policy": "Declared synthetic local model, not backend calibration. Four-qubit density matrix includes damping; ten-qubit selector uses unitary coherent errors plus readout. DD is ideal XpXm refocusing of explicit spectator idle drift per CX, not physical scheduled DD. Twirling is CX Pauli-frame conjugation; correct readout separately for each randomization before averaging.",
+  "postprocessing_policy": "Preserve raw counts/quasi-probabilities. Kernel PSD/rank4 repair uses training eigenvectors for cross projection. Selection clips/normalizes corrected quasi-probabilities for one fixed auxiliary classical resample, then existing cardinality filter and actual addon SQD. No extra quantum shots to replace discarded draws.",
+  "source_preflight": "Available dependencies, dataset hash and circuit resources checked before freezing; no noisy performance outcomes evaluated.",
+  "execution": "Exclusive intent, local simulator only; partial failures preserved; no automated retries.",
+  "isolated_kernel_controls": [
+    "shots only",
+    "readout only",
+    "coherent only",
+    "amplitude damping only",
+    "phase damping only"
+  ],
+  "kernel_repair_arms": [
+    "raw PSD",
+    "raw rank4",
+    "readout corrected",
+    "readout PSD",
+    "readout rank4"
+  ]
+}

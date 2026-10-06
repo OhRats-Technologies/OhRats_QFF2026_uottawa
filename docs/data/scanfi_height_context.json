@@ -1,0 +1,203 @@
+{
+  "role": "coarse retrospective province context, not native-area means or contemporaneous forecasts",
+  "effective_resolution_m": 480,
+  "resampling": "Source overview NEAREST; no averaging of native pixels",
+  "nodata": 255,
+  "height_units": "metres per official README; valid zero retained",
+  "shape": [
+    3939,
+    3678
+  ],
+  "transform": [
+    480.0,
+    0.0,
+    -13500.0,
+    0.0,
+    -480.0,
+    7647540.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "crs": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Lambert_Conformal_Conic_2SP\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-95],PARAMETER[\"standard_parallel_1\",49],PARAMETER[\"standard_parallel_2\",77],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "years": [
+    1985,
+    1990,
+    1995,
+    2000,
+    2005,
+    2010,
+    2015
+  ],
+  "rows": [
+    {
+      "year": 1985,
+      "inside_samples": 4530009,
+      "valid_samples": 4528955,
+      "valid_fraction": 0.9997673293805818,
+      "common_samples": 4528955,
+      "common_mean_height_m": 7.095605498398637,
+      "common_height_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "zero_height_samples": 1597794
+    },
+    {
+      "year": 1990,
+      "inside_samples": 4530009,
+      "valid_samples": 4528955,
+      "valid_fraction": 0.9997673293805818,
+      "common_samples": 4528955,
+      "common_mean_height_m": 7.110425031823015,
+      "common_height_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "zero_height_samples": 1601555
+    },
+    {
+      "year": 1995,
+      "inside_samples": 4530009,
+      "valid_samples": 4528955,
+      "valid_fraction": 0.9997673293805818,
+      "common_samples": 4528955,
+      "common_mean_height_m": 7.1508244175532765,
+      "common_height_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "zero_height_samples": 1599606
+    },
+    {
+      "year": 2000,
+      "inside_samples": 4530009,
+      "valid_samples": 4528955,
+      "valid_fraction": 0.9997673293805818,
+      "common_samples": 4528955,
+      "common_mean_height_m": 7.09494397714263,
+      "common_height_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "zero_height_samples": 1594507
+    },
+    {
+      "year": 2005,
+      "inside_samples": 4530009,
+      "valid_samples": 4528955,
+      "valid_fraction": 0.9997673293805818,
+      "common_samples": 4528955,
+      "common_mean_height_m": 7.100423166050446,
+      "common_height_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "zero_height_samples": 1572282
+    },
+    {
+      "year": 2010,
+      "inside_samples": 4530009,
+      "valid_samples": 4528955,
+      "valid_fraction": 0.9997673293805818,
+      "common_samples": 4528955,
+      "common_mean_height_m": 7.191014041870586,
+      "common_height_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "zero_height_samples": 1548469
+    },
+    {
+      "year": 2015,
+      "inside_samples": 4530009,
+      "valid_samples": 4528955,
+      "valid_fraction": 0.9997673293805818,
+      "common_samples": 4528955,
+      "common_mean_height_m": 7.29509058933021,
+      "common_height_p10_p50_p90_m": [
+        0.0,
+        7.0,
+        17.0
+      ],
+      "zero_height_samples": 1544282
+    }
+  ],
+  "controls": [
+    {
+      "name": "Toronto / GTA",
+      "inside_mask": true,
+      "roundtrip_error_degrees": 0.0,
+      "heights_m_by_year": {
+        "1985": 0,
+        "1990": 0,
+        "1995": 0,
+        "2000": 0,
+        "2005": 0,
+        "2010": 0,
+        "2015": 0
+      }
+    },
+    {
+      "name": "Ottawa",
+      "inside_mask": true,
+      "roundtrip_error_degrees": 7.105427357601002e-15,
+      "heights_m_by_year": {
+        "1985": 0,
+        "1990": 0,
+        "1995": 0,
+        "2000": 0,
+        "2005": 0,
+        "2010": 0,
+        "2015": 0
+      }
+    },
+    {
+      "name": "Windsor",
+      "inside_mask": true,
+      "roundtrip_error_degrees": 7.105427357601002e-15,
+      "heights_m_by_year": {
+        "1985": 0,
+        "1990": 0,
+        "1995": 0,
+        "2000": 0,
+        "2005": 0,
+        "2010": 0,
+        "2015": 0
+      }
+    },
+    {
+      "name": "Thunder Bay",
+      "inside_mask": true,
+      "roundtrip_error_degrees": 1.4210854715202004e-14,
+      "heights_m_by_year": {
+        "1985": 0,
+        "1990": 0,
+        "1995": 0,
+        "2000": 0,
+        "2005": 0,
+        "2010": 0,
+        "2015": 0
+      }
+    }
+  ],
+  "common_mean_range_m": 0.2001466121875799,
+  "source_hashes": {
+    "docs/data/scanfi_layouts.json": "5a576a92878a5c73c5f2b1d8f201dfe4ce44724109258b8a7c8920c3e3a518b8",
+    "data/raw/boundaries/ontario-2021.geojson": "d5af8d3e98aa9209f24bbab28e05b95f8685e1e36ae4df8f868108f5916fbfd3",
+    ".cache/catalogue/20261006/guides/scanfi-readme.raw": "996f671e4379fea728274034b4b82858d5008fc04869fa2438a039e9096f11c5"
+  },
+  "limitations": [
+    "Province polygon includes water; valid zeros are not automatically tree absence.",
+    "480m nearest samples approximate structure, not a 30m area-weighted inventory.",
+    "Only seven epochs, five years apart; annual carry-forward repeats inputs.",
+    "LandTrendr/full-series reconstruction uses future observations relative to historical years.",
+    "No improvement or independent validation is established by nonzero temporal variation."
+  ]
+}

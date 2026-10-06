@@ -1,0 +1,266 @@
+{
+  "status": "published",
+  "study": "forest-expansion",
+  "bundle": "docs/data/forest-expansion-evidence.zip",
+  "bundle_sha256": "39849f2ae4d00b81dad7eaad69a035c2efea3a9993463886c3e7d1666d85a84f",
+  "evidence_sha256": "c357d3c99e8121bcab07a5f1071762eed976e3928034e8321bad47f1a3ea5c27",
+  "audit": {
+    "status": "verified",
+    "predictor_equations_checked": 108,
+    "baseline_records_checked": 3,
+    "kernel_records_checked": 36,
+    "selectors": [
+      {
+        "quantum_shots": 1024,
+        "uniform_draws": 1024,
+        "diagonal_subspaces_checked": 2,
+        "mutual_information_refitted": false
+      },
+      {
+        "quantum_shots": 1024,
+        "uniform_draws": 1024,
+        "diagonal_subspaces_checked": 2,
+        "mutual_information_refitted": false
+      },
+      {
+        "quantum_shots": 1024,
+        "uniform_draws": 1024,
+        "diagonal_subspaces_checked": 2,
+        "mutual_information_refitted": false
+      }
+    ],
+    "new_predictor_fits": 0,
+    "new_quantum_evaluations": 0,
+    "new_draws": 0,
+    "limitation": "Checks stored quantum matrix shape/PSD and fitted prediction equations; does not regenerate quantum kernels, refit mutual information, or establish independent predictive validation."
+  },
+  "aggregate": [
+    {
+      "condition": "all10",
+      "model": "qsvr",
+      "mae_ha": 77.19830038548281,
+      "rmse_ha": 112.91996649246107
+    },
+    {
+      "condition": "all10",
+      "model": "rbf",
+      "mae_ha": 75.74584213682179,
+      "rmse_ha": 108.6928166084955
+    },
+    {
+      "condition": "all10",
+      "model": "ridge",
+      "mae_ha": 87.3961787909606,
+      "rmse_ha": 119.67186505907777
+    },
+    {
+      "condition": "calendar8",
+      "model": "qsvr",
+      "mae_ha": 79.32385770994632,
+      "rmse_ha": 111.86079665314055
+    },
+    {
+      "condition": "calendar8",
+      "model": "rbf",
+      "mae_ha": 79.50919238774449,
+      "rmse_ha": 112.29192088329575
+    },
+    {
+      "condition": "calendar8",
+      "model": "ridge",
+      "mae_ha": 83.55570744668665,
+      "rmse_ha": 112.3123914496631
+    },
+    {
+      "condition": "exact4",
+      "model": "qsvr",
+      "mae_ha": 70.87674238188829,
+      "rmse_ha": 103.15961083685279
+    },
+    {
+      "condition": "exact4",
+      "model": "rbf",
+      "mae_ha": 73.08040611968809,
+      "rmse_ha": 106.4062958803939
+    },
+    {
+      "condition": "exact4",
+      "model": "ridge",
+      "mae_ha": 68.89703057964407,
+      "rmse_ha": 99.65596096307746
+    },
+    {
+      "condition": "interleaved8",
+      "model": "qsvr",
+      "mae_ha": 60.12322406824353,
+      "rmse_ha": 90.62545301077989
+    },
+    {
+      "condition": "interleaved8",
+      "model": "rbf",
+      "mae_ha": 78.04631523994573,
+      "rmse_ha": 110.56136187143359
+    },
+    {
+      "condition": "interleaved8",
+      "model": "ridge",
+      "mae_ha": 74.15942281267824,
+      "rmse_ha": 103.95601017192678
+    },
+    {
+      "condition": "mi4",
+      "model": "qsvr",
+      "mae_ha": 77.72086571832003,
+      "rmse_ha": 109.59490587003427
+    },
+    {
+      "condition": "mi4",
+      "model": "rbf",
+      "mae_ha": 67.97615123648279,
+      "rmse_ha": 100.24875987933854
+    },
+    {
+      "condition": "mi4",
+      "model": "ridge",
+      "mae_ha": 66.90279655602353,
+      "rmse_ha": 97.58494961997701
+    },
+    {
+      "condition": "no_inputs",
+      "model": "training_mean",
+      "mae_ha": 91.99948809925418,
+      "rmse_ha": 116.05435335042931
+    },
+    {
+      "condition": "sqd4",
+      "model": "qsvr",
+      "mae_ha": 70.87674238188829,
+      "rmse_ha": 103.15961083685279
+    },
+    {
+      "condition": "sqd4",
+      "model": "rbf",
+      "mae_ha": 73.08040611968809,
+      "rmse_ha": 106.4062958803939
+    },
+    {
+      "condition": "sqd4",
+      "model": "ridge",
+      "mae_ha": 68.89703057964407,
+      "rmse_ha": 99.65596096307746
+    },
+    {
+      "condition": "structure",
+      "model": "qsvr",
+      "mae_ha": 89.54366943058226,
+      "rmse_ha": 121.34985962981614
+    },
+    {
+      "condition": "structure",
+      "model": "rbf",
+      "mae_ha": 67.97459491937774,
+      "rmse_ha": 100.177847575128
+    },
+    {
+      "condition": "structure",
+      "model": "ridge",
+      "mae_ha": 68.73138252352656,
+      "rmse_ha": 99.0587113504959
+    },
+    {
+      "condition": "uniform4",
+      "model": "qsvr",
+      "mae_ha": 70.87674238188829,
+      "rmse_ha": 103.15961083685279
+    },
+    {
+      "condition": "uniform4",
+      "model": "rbf",
+      "mae_ha": 73.08040611968809,
+      "rmse_ha": 106.4062958803939
+    },
+    {
+      "condition": "uniform4",
+      "model": "ridge",
+      "mae_ha": 68.89703057964407,
+      "rmse_ha": 99.65596096307746
+    },
+    {
+      "condition": "weather",
+      "model": "qsvr",
+      "mae_ha": 93.88532700334783,
+      "rmse_ha": 128.27752244907842
+    },
+    {
+      "condition": "weather",
+      "model": "rbf",
+      "mae_ha": 85.1910331618042,
+      "rmse_ha": 114.06716386367242
+    },
+    {
+      "condition": "weather",
+      "model": "ridge",
+      "mae_ha": 89.77890477134139,
+      "rmse_ha": 125.12708297180627
+    },
+    {
+      "condition": "weather_structure",
+      "model": "qsvr",
+      "mae_ha": 85.06757353526602,
+      "rmse_ha": 118.8101813035979
+    },
+    {
+      "condition": "weather_structure",
+      "model": "rbf",
+      "mae_ha": 78.04631523994573,
+      "rmse_ha": 110.56136187143359
+    },
+    {
+      "condition": "weather_structure",
+      "model": "ridge",
+      "mae_ha": 74.15942281267826,
+      "rmse_ha": 103.95601017192679
+    },
+    {
+      "condition": "zero10",
+      "model": "qsvr",
+      "mae_ha": 93.39239989350854,
+      "rmse_ha": 127.45190933066237
+    },
+    {
+      "condition": "zero10",
+      "model": "rbf",
+      "mae_ha": 85.1910331618042,
+      "rmse_ha": 114.06716386367242
+    },
+    {
+      "condition": "zero10",
+      "model": "ridge",
+      "mae_ha": 89.77890477134139,
+      "rmse_ha": 125.12708297180627
+    },
+    {
+      "condition": "zero8",
+      "model": "qsvr",
+      "mae_ha": 93.39239989350854,
+      "rmse_ha": 127.45190933066237
+    },
+    {
+      "condition": "zero8",
+      "model": "rbf",
+      "mae_ha": 85.1910331618042,
+      "rmse_ha": 114.06716386367242
+    },
+    {
+      "condition": "zero8",
+      "model": "ridge",
+      "mae_ha": 89.77890477134139,
+      "rmse_ha": 125.12708297180627
+    }
+  ],
+  "seconds": 50.00038591702469,
+  "model_fits": 108,
+  "pair_circuits": 12612,
+  "final_test_accessed": false,
+  "hardware_jobs": 0
+}

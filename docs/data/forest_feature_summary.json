@@ -1,0 +1,1524 @@
+{
+  "status": "summarized",
+  "rows": [
+    {
+      "layer": "closure",
+      "epoch": 1985,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.3526966272784318,
+      "mean": 33.022277926176095,
+      "p10_p50_p90": [
+        0.0,
+        37.0,
+        70.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "closure",
+      "epoch": 1990,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.3534504190897003,
+      "mean": 32.661683265247724,
+      "p10_p50_p90": [
+        0.0,
+        35.0,
+        68.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "closure",
+      "epoch": 1995,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.35303002670286515,
+      "mean": 32.98701817711326,
+      "p10_p50_p90": [
+        0.0,
+        37.0,
+        70.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "closure",
+      "epoch": 2000,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.3518472315262496,
+      "mean": 32.96718797677774,
+      "p10_p50_p90": [
+        0.0,
+        36.0,
+        70.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "closure",
+      "epoch": 2005,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.3470109527230784,
+      "mean": 33.259069016330386,
+      "p10_p50_p90": [
+        0.0,
+        37.0,
+        70.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "closure",
+      "epoch": 2010,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.3418465735591735,
+      "mean": 34.09289391141997,
+      "p10_p50_p90": [
+        0.0,
+        38.0,
+        70.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "closure",
+      "epoch": 2015,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.34094065446086225,
+      "mean": 34.827931232284016,
+      "p10_p50_p90": [
+        0.0,
+        39.0,
+        72.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "biomass",
+      "epoch": 1985,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "tonnes/ha aboveground biomass",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.16094537062755487,
+      "mean": 35.86937520947861,
+      "p10_p50_p90": [
+        0.0,
+        21.0,
+        94.0
+      ],
+      "minimum": 0.0,
+      "maximum": 296.0,
+      "nodata": -32768.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "biomass",
+      "epoch": 1990,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "tonnes/ha aboveground biomass",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.16197338898527788,
+      "mean": 35.81274433651527,
+      "p10_p50_p90": [
+        0.0,
+        20.0,
+        95.0
+      ],
+      "minimum": 0.0,
+      "maximum": 296.0,
+      "nodata": -32768.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "biomass",
+      "epoch": 1995,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "tonnes/ha aboveground biomass",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.16233880358622968,
+      "mean": 36.1636282424198,
+      "p10_p50_p90": [
+        0.0,
+        21.0,
+        95.0
+      ],
+      "minimum": 0.0,
+      "maximum": 298.0,
+      "nodata": -32768.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "biomass",
+      "epoch": 2000,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "tonnes/ha aboveground biomass",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.16305837227777162,
+      "mean": 35.70587856047402,
+      "p10_p50_p90": [
+        0.0,
+        20.0,
+        95.0
+      ],
+      "minimum": 0.0,
+      "maximum": 284.0,
+      "nodata": -32768.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "biomass",
+      "epoch": 2005,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "tonnes/ha aboveground biomass",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.16304909891629732,
+      "mean": 35.351145326380376,
+      "p10_p50_p90": [
+        0.0,
+        20.0,
+        94.0
+      ],
+      "minimum": 0.0,
+      "maximum": 305.0,
+      "nodata": -32768.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "biomass",
+      "epoch": 2010,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "tonnes/ha aboveground biomass",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.16173890541657043,
+      "mean": 35.98648319247392,
+      "p10_p50_p90": [
+        0.0,
+        21.0,
+        95.0
+      ],
+      "minimum": 0.0,
+      "maximum": 288.0,
+      "nodata": -32768.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "biomass",
+      "epoch": 2015,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "tonnes/ha aboveground biomass",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.1616227676038208,
+      "mean": 36.60909535709286,
+      "p10_p50_p90": [
+        0.0,
+        22.0,
+        96.0
+      ],
+      "minimum": 0.0,
+      "maximum": 296.0,
+      "nodata": -32768.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "age",
+      "epoch": 1985,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "years stand age",
+      "resolution_m": 960,
+      "inside_samples": 1132505,
+      "valid_samples": 825063,
+      "valid_fraction": 0.7285292338665171,
+      "zero_fraction": 0.09285836354314761,
+      "mean": 45.890042336160995,
+      "p10_p50_p90": [
+        2.0,
+        47.0,
+        82.0
+      ],
+      "minimum": 0.0,
+      "maximum": 158.0,
+      "nodata": -32768.0,
+      "transform": [
+        960.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -960.0,
+        7648020.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1971,
+        1840
+      ]
+    },
+    {
+      "layer": "age",
+      "epoch": 1990,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "years stand age",
+      "resolution_m": 960,
+      "inside_samples": 1132505,
+      "valid_samples": 824974,
+      "valid_fraction": 0.728450647017011,
+      "zero_fraction": 0.0774654716391062,
+      "mean": 48.907074647201,
+      "p10_p50_p90": [
+        5.0,
+        50.0,
+        85.0
+      ],
+      "minimum": 0.0,
+      "maximum": 156.0,
+      "nodata": -32768.0,
+      "transform": [
+        960.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -960.0,
+        7648020.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1971,
+        1840
+      ]
+    },
+    {
+      "layer": "age",
+      "epoch": 1995,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "years stand age",
+      "resolution_m": 960,
+      "inside_samples": 1132505,
+      "valid_samples": 824849,
+      "valid_fraction": 0.7283402722283787,
+      "zero_fraction": 0.06855679039436309,
+      "mean": 51.69210607032318,
+      "p10_p50_p90": [
+        5.0,
+        55.0,
+        88.0
+      ],
+      "minimum": 0.0,
+      "maximum": 158.0,
+      "nodata": -32768.0,
+      "transform": [
+        960.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -960.0,
+        7648020.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1971,
+        1840
+      ]
+    },
+    {
+      "layer": "age",
+      "epoch": 2000,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "years stand age",
+      "resolution_m": 960,
+      "inside_samples": 1132505,
+      "valid_samples": 824759,
+      "valid_fraction": 0.7282608023805635,
+      "zero_fraction": 0.04960479364274897,
+      "mean": 54.381646032356116,
+      "p10_p50_p90": [
+        8.0,
+        58.0,
+        91.0
+      ],
+      "minimum": 0.0,
+      "maximum": 161.0,
+      "nodata": -32768.0,
+      "transform": [
+        960.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -960.0,
+        7648020.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1971,
+        1840
+      ]
+    },
+    {
+      "layer": "age",
+      "epoch": 2005,
+      "resampling": "unadvertised",
+      "model_eligible": false,
+      "units": "years stand age",
+      "resolution_m": 960,
+      "inside_samples": 1132505,
+      "valid_samples": 824694,
+      "valid_fraction": 0.7282034074904746,
+      "zero_fraction": 0.026814794335838506,
+      "mean": 57.423484346921406,
+      "p10_p50_p90": [
+        10.0,
+        62.0,
+        95.0
+      ],
+      "minimum": 0.0,
+      "maximum": 165.0,
+      "nodata": -32768.0,
+      "transform": [
+        960.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -960.0,
+        7648020.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1971,
+        1840
+      ]
+    },
+    {
+      "layer": "age",
+      "epoch": 2010,
+      "resampling": "unadvertised",
+      "model_eligible": false,
+      "units": "years stand age",
+      "resolution_m": 960,
+      "inside_samples": 1132505,
+      "valid_samples": 824648,
+      "valid_fraction": 0.728162789568258,
+      "zero_fraction": 0.00183957276316683,
+      "mean": 61.48676647490808,
+      "p10_p50_p90": [
+        14.0,
+        67.0,
+        99.0
+      ],
+      "minimum": 0.0,
+      "maximum": 169.0,
+      "nodata": -32768.0,
+      "transform": [
+        960.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -960.0,
+        7648020.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1971,
+        1840
+      ]
+    },
+    {
+      "layer": "age",
+      "epoch": 2015,
+      "resampling": "unadvertised",
+      "model_eligible": false,
+      "units": "years stand age",
+      "resolution_m": 960,
+      "inside_samples": 1132505,
+      "valid_samples": 824544,
+      "valid_fraction": 0.7280709577441159,
+      "zero_fraction": 0.0022145573795940544,
+      "mean": 65.14087544145613,
+      "p10_p50_p90": [
+        16.0,
+        70.0,
+        103.0
+      ],
+      "minimum": 0.0,
+      "maximum": 165.0,
+      "nodata": -32768.0,
+      "transform": [
+        960.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -960.0,
+        7648020.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        1971,
+        1840
+      ]
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 1985,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.6008968223722937,
+      "mean": 9.136737702087522,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        38.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 1990,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.6042038797094876,
+      "mean": 9.05762908408775,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        38.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 1995,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.5967617863320367,
+      "mean": 9.437657619545773,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        39.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 2000,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.5891775014119797,
+      "mean": 9.515109396962135,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        39.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 2005,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.5800037181763625,
+      "mean": 9.89201634231245,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        40.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 2010,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.5686301611224477,
+      "mean": 10.338175205592632,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        41.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 2015,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.5564489384429849,
+      "mean": 10.76563786816901,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        43.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 1985,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.4108659950692212,
+      "mean": 15.499615155498816,
+      "p10_p50_p90": [
+        0.0,
+        8.0,
+        45.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 1990,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.4116096303417322,
+      "mean": 15.53961204671478,
+      "p10_p50_p90": [
+        0.0,
+        7.0,
+        45.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 1995,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.41301277825052296,
+      "mean": 15.334207752441875,
+      "p10_p50_p90": [
+        0.0,
+        7.0,
+        45.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 2000,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.4118633230163507,
+      "mean": 15.119552838509708,
+      "p10_p50_p90": [
+        0.0,
+        7.0,
+        44.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 2005,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.4079709399346714,
+      "mean": 14.803058089661041,
+      "p10_p50_p90": [
+        0.0,
+        7.0,
+        43.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 2010,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.40390788284300067,
+      "mean": 14.874381720703132,
+      "p10_p50_p90": [
+        0.0,
+        7.0,
+        43.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 2015,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.4046808837601803,
+      "mean": 14.522890851210681,
+      "p10_p50_p90": [
+        0.0,
+        7.0,
+        42.0
+      ],
+      "minimum": 0.0,
+      "maximum": 100.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 1985,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.7595717649988895,
+      "mean": 2.9377790564222224,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        11.0
+      ],
+      "minimum": 0.0,
+      "maximum": 85.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 1990,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.7637313092087571,
+      "mean": 2.7735955162855683,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "minimum": 0.0,
+      "maximum": 90.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 1995,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.7648876090668746,
+      "mean": 2.7443705175992945,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "minimum": 0.0,
+      "maximum": 92.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 2000,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.7695342255484642,
+      "mean": 2.719343702129031,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        9.0
+      ],
+      "minimum": 0.0,
+      "maximum": 95.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 2005,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.7665799975359354,
+      "mean": 2.813280425126217,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        9.0
+      ],
+      "minimum": 0.0,
+      "maximum": 92.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 2010,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.7587139790625161,
+      "mean": 3.059178839425564,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "minimum": 0.0,
+      "maximum": 95.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 2015,
+      "resampling": "NEAREST",
+      "model_eligible": true,
+      "units": "percent absolute species crown closure",
+      "resolution_m": 480,
+      "inside_samples": 4530009,
+      "valid_samples": 4529102,
+      "valid_fraction": 0.9997997796472369,
+      "zero_fraction": 0.7455652356692342,
+      "mean": 3.534987951253913,
+      "p10_p50_p90": [
+        0.0,
+        0.0,
+        12.0
+      ],
+      "minimum": 0.0,
+      "maximum": 95.0,
+      "nodata": 255.0,
+      "transform": [
+        480.0,
+        0.0,
+        -13500.0,
+        0.0,
+        -480.0,
+        7647540.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "shape": [
+        3939,
+        3678
+      ]
+    }
+  ],
+  "crs": "+proj=lcc +lat_0=0 +lon_0=-95 +lat_1=49 +lat_2=77 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs",
+  "source": "docs/data/forest_feature_sources.json",
+  "plan_sha256": "ea044ef6cde4bbd2d4c53de7f6677d5778d208de3464e3526b8598a072f266e8",
+  "aggregation": "Per-epoch/per-variable valid coarse samples inside the full audited Ontario polygon, retaining zero; no mask intersection across future epochs. Publish coverage and missingness. No outcome-conditioned location weighting.",
+  "time_policy": "Latest epoch strictly before annual example; no interpolation from later epochs. This is retrospective reconstructed inventory: full-series future imagery prevents an as-of forecasting claim even with a prior-epoch join.",
+  "recovery_policy": "No same-event eventual recovery-rate map predictor. Compare explicitly labelled prior-epoch biomass-change and prior-year recorded fire-area memory proxies; neither is measured spectral recovery or FBP fuel hazard.",
+  "final_test_accessed": false
+}

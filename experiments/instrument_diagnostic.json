@@ -1,0 +1,20 @@
+{
+  "id": "quantum-instrument-v1",
+  "purpose": "Cross-check accepted sphere/channel/control steers with exact local Qiskit density matrices",
+  "scope": "Illustrative one-qubit physical model; no wildfire fitting, labels, shots or hardware",
+  "theta": [0.2, 0.8, 1.5, 2.6],
+  "phi": [0.0, 0.4, 1.2, 2.4],
+  "damping": [0.0, 0.4],
+  "dephasing": [0.0, 0.4],
+  "controls": ["raw", "echo", "twirled", "echo_twirled"],
+  "idle_z_drift": 0.7,
+  "gate_z_overrotation": 0.3,
+  "budget": {"density_matrix_paths": 256, "qpu_jobs": 0, "shots": 0, "model_fits": 0},
+  "success": "Maximum absolute Bloch-coordinate difference between Qiskit and browser arithmetic below 1e-12",
+  "restrictions": [
+    "Ideal instantaneous pulses and static idle drift; not a hardware DD performance claim",
+    "Twirling is a channel ensemble average, not removal of total infidelity",
+    "No comparison can imply a better annual QSVR predictor or universal noise ranking",
+    "Preserve all frozen scientific evidence"
+  ]
+}

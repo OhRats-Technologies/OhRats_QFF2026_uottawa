@@ -1,0 +1,94 @@
+{
+  "checked_utc": "2026-10-06T07:50:55.464Z",
+  "status": "passed",
+  "source_sha256": {
+    "web/presentation/assets/map.json": "b56fde73cafa600b788b1a30f369758e7ad0d1b18a627b9327abb4af59e2113b",
+    "web/presentation/assets/ontario-cover.png": "95d5d196bdbdd626f204366835459676644a46043477520e33ae6b36482dcfbf",
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/strategy/cover-legend.js": "d4cf21adba47a4f72fef9fb2a2eb656c98bae22acc88bfefc20f648b9c61b07b",
+    "web/demo/strategy/context.js": "e98282e172fbe0bd274fc254220ea42ff4501ec93deb68fd0438f2719c296645",
+    "web/demo/strategy/legend-check.mjs": "52f4149cf7a05c3dc94d2b3183f0a7d5a34cffbccced725f563621ebf0afebaa",
+    "web/demo/strategy/styles/map-controls.css": "83a4a2ec4fc66e0bcae389b1e8a2e3f15f64a30f2f247d8c78ce7b6829a8e604",
+    "web/demo/assets/strategy.js": "1aae1b074b9a2a200ffd08f82bfed5ca98c66fcf335c00abc3b9b1d001848485"
+  },
+  "schema_sha256": "45ac8a9a3ad2b0ad0dbc1f16bd3edc3c908521f4518fa5fa47f02ac4b5bc7bc1",
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "frame": {
+        "left": 24,
+        "right": 344,
+        "top": 346.34375,
+        "bottom": 551,
+        "overflow": false
+      },
+      "checked_other_layers": [
+        "canopy",
+        "lorey",
+        "recovery",
+        "water",
+        "fuel",
+        "height"
+      ],
+      "height_epochs": 7,
+      "legend_groups": 13,
+      "source_codes": 14,
+      "save_unchanged": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "frame": {
+        "left": 16,
+        "right": 336,
+        "top": 394.34375,
+        "bottom": 599,
+        "overflow": false
+      },
+      "checked_other_layers": [
+        "canopy",
+        "lorey",
+        "recovery",
+        "water",
+        "fuel",
+        "height"
+      ],
+      "height_epochs": 7,
+      "legend_groups": 13,
+      "source_codes": 14,
+      "save_unchanged": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "frame": {
+        "left": 14,
+        "right": 334,
+        "top": 347.890625,
+        "bottom": 552.546875,
+        "overflow": false
+      },
+      "checked_other_layers": [
+        "canopy",
+        "lorey",
+        "recovery",
+        "water",
+        "fuel",
+        "height"
+      ],
+      "height_epochs": 7,
+      "legend_groups": 13,
+      "source_codes": 14,
+      "save_unchanged": true
+    }
+  ],
+  "errors": [],
+  "predictor_fits": 0,
+  "quantum_circuit_executions": 0,
+  "hardware_jobs": 0,
+  "downloads": 0,
+  "scope": "Every declared cover class/colour matches the published palette and inspected schema. Actual keyboard toggle, three-size framing, other-layer switching and unchanged game save. No native raster reclassification, source accuracy, tree density or new predictive information is established."
+}

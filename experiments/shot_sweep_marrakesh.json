@@ -1,0 +1,32 @@
+{
+  "study": "shot-sweep-marrakesh-v1",
+  "backend": "ibm_marrakesh",
+  "credential_env": "IBM_QUANTUM_API_TOKEN",
+  "instance_env": "IBM_QUANTUM_INSTANCE",
+  "parent_namespace": "results/basis-confirmation-marrakesh-v1",
+  "parent_prepared_sha256": "8af941ca42cc94a1c3ff8f4991ac9ab859e81899939ae9750b901dc3cdc54de6",
+  "shots": [
+    512,
+    1024,
+    2048
+  ],
+  "shot_order": [
+    1024,
+    512,
+    2048
+  ],
+  "caps_seconds": {
+    "512": 10,
+    "1024": 16,
+    "2048": 25
+  },
+  "remaining_reserve_seconds": 102,
+  "uniform_replicates": 100,
+  "uniform_seed": 2701,
+  "code_paths": [
+    "wildfire_lab/shot_sweep.py",
+    "wildfire_lab/search_acquisition.py",
+    "wildfire_lab/mitigation_hardware.py"
+  ],
+  "policy": "Owner requests measurement-count sweep on both locations. Six new independent jobs per device: same frozen hardware-chosen10/16/20 selector circuits and simple random/MI basis controls, raw and combined-DD/twirling at512/1024/2048 shots. Copy exact device-native QPY and metadata without recompilation/retuning. Fresh512 level avoids treating an older calibration block as contemporaneous. Fixed staggered level/arm ordering reduces monotone-order confounding but is not randomization or replicated calibration. Every PUB including readout calibration uses matched job shots. Publish valid-shot count/fraction/Wilson interval, unconditional objective, best sampled SQD objective/gap, distinct observed subsets, optimum found, and classical feasible sampling at both physical-shot and accepted-shot budgets. Charge is per entire job (circuits+controls+calibration), never invented per-circuit usage. No predictor refits or final-year reads; no intrinsic device ranking. Preserve intents and failures; no retry or extra parameter search.102 seconds worst-case per account,204 across both; check live usage before all submissions."
+}

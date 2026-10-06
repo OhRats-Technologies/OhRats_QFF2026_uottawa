@@ -1,0 +1,142 @@
+{
+  "checked_utc": "2026-10-06T05:23:23.253343+00:00",
+  "status": "identical_context",
+  "pipeline_receipt": {
+    "status": "prepared",
+    "cache_bytes": 119501042,
+    "stages_completed": 7,
+    "predictor_fits": 0,
+    "hardware_jobs": 0
+  },
+  "seven_overview_sources_identical": true,
+  "seven_native_overview_grids_identical": true,
+  "extracted_statistics_and_city_controls_identical": true,
+  "seven_extracted_arrays_identical": true,
+  "display_grid_and_boundary_identical": true,
+  "expected_eighteen_images_present": true,
+  "images": [
+    {
+      "file": "canopy-legend.png",
+      "replica_sha256": "b0ee742dfdec69573b7c16b947cf38aa1f4ddfcacec46b1315ce522672d50e22",
+      "published_sha256": "b0ee742dfdec69573b7c16b947cf38aa1f4ddfcacec46b1315ce522672d50e22",
+      "identical": true
+    },
+    {
+      "file": "canopy.png",
+      "replica_sha256": "5277cee8b81233884f274952c7b498c6eaa5f36744afbd89882eeb78504e9374",
+      "published_sha256": "5277cee8b81233884f274952c7b498c6eaa5f36744afbd89882eeb78504e9374",
+      "identical": true
+    },
+    {
+      "file": "fuel-legend.png",
+      "replica_sha256": "a4ea3a7292dfc01e0ded0d4a18db6cf72b53ce371b19b807366d72fdaddd4b72",
+      "published_sha256": "a4ea3a7292dfc01e0ded0d4a18db6cf72b53ce371b19b807366d72fdaddd4b72",
+      "identical": true
+    },
+    {
+      "file": "fuel.png",
+      "replica_sha256": "bd7aec9abe58f7398b841540a46b15c000bab7d65b54807439988d5173b0abff",
+      "published_sha256": "bd7aec9abe58f7398b841540a46b15c000bab7d65b54807439988d5173b0abff",
+      "identical": true
+    },
+    {
+      "file": "height-1985.png",
+      "replica_sha256": "be1f7e287393b2c00a0ee8659613b1d9afe5880ba354056e6d129456b9aa027c",
+      "published_sha256": "be1f7e287393b2c00a0ee8659613b1d9afe5880ba354056e6d129456b9aa027c",
+      "identical": true
+    },
+    {
+      "file": "height-1990.png",
+      "replica_sha256": "e1be2c27a6c6a1161665fb7fbdd198c078b456eaf5699013d769e626538317d0",
+      "published_sha256": "e1be2c27a6c6a1161665fb7fbdd198c078b456eaf5699013d769e626538317d0",
+      "identical": true
+    },
+    {
+      "file": "height-1995.png",
+      "replica_sha256": "ef02d29772580d0717e9ef081b55ef483bfbfe0dae39f38036ee610eecb30972",
+      "published_sha256": "ef02d29772580d0717e9ef081b55ef483bfbfe0dae39f38036ee610eecb30972",
+      "identical": true
+    },
+    {
+      "file": "height-2000.png",
+      "replica_sha256": "c4ccd00c297435a4a34027a72f57e80354d08d78881c0947244be06075243c47",
+      "published_sha256": "c4ccd00c297435a4a34027a72f57e80354d08d78881c0947244be06075243c47",
+      "identical": true
+    },
+    {
+      "file": "height-2005.png",
+      "replica_sha256": "2f909823a0c28936d2de742531be1e802cb0c6914a91b87a444a7ad691094938",
+      "published_sha256": "2f909823a0c28936d2de742531be1e802cb0c6914a91b87a444a7ad691094938",
+      "identical": true
+    },
+    {
+      "file": "height-2010.png",
+      "replica_sha256": "c4b33dd969532b644ef6d280bac6c703b6f3ba32ce37f9a2640f5dfe31d01445",
+      "published_sha256": "c4b33dd969532b644ef6d280bac6c703b6f3ba32ce37f9a2640f5dfe31d01445",
+      "identical": true
+    },
+    {
+      "file": "height-2015.png",
+      "replica_sha256": "98755f2b0f2f8e0f8e0e7c4654b5083903ffe51cee362fb0d6694e598fef4e3c",
+      "published_sha256": "98755f2b0f2f8e0f8e0e7c4654b5083903ffe51cee362fb0d6694e598fef4e3c",
+      "identical": true
+    },
+    {
+      "file": "height-legend.png",
+      "replica_sha256": "2c7303961a33a9dbe246e10ad904deb26d7ca41cb1e6ab97766a2f705b742933",
+      "published_sha256": "2c7303961a33a9dbe246e10ad904deb26d7ca41cb1e6ab97766a2f705b742933",
+      "identical": true
+    },
+    {
+      "file": "lorey-legend.png",
+      "replica_sha256": "3e1972db3ce8566cfa317aa64a2806982de9385ceb17f72c41bee1fbf56bc18f",
+      "published_sha256": "3e1972db3ce8566cfa317aa64a2806982de9385ceb17f72c41bee1fbf56bc18f",
+      "identical": true
+    },
+    {
+      "file": "lorey.png",
+      "replica_sha256": "a2c5bd579270267a424afed8e501648569117e348535af9875d403ed4c68dd93",
+      "published_sha256": "a2c5bd579270267a424afed8e501648569117e348535af9875d403ed4c68dd93",
+      "identical": true
+    },
+    {
+      "file": "recovery-legend.png",
+      "replica_sha256": "e2b7b35b35ff5d38766fbc23697310a4e9de8edffe7bc7d8c37f85b5f1631851",
+      "published_sha256": "e2b7b35b35ff5d38766fbc23697310a4e9de8edffe7bc7d8c37f85b5f1631851",
+      "identical": true
+    },
+    {
+      "file": "recovery.png",
+      "replica_sha256": "b9d6a3b67cecefec898059f00d844ecfd47f3f276d2bbd408782bcc69760d023",
+      "published_sha256": "b9d6a3b67cecefec898059f00d844ecfd47f3f276d2bbd408782bcc69760d023",
+      "identical": true
+    },
+    {
+      "file": "water-legend.png",
+      "replica_sha256": "e4b889173f4e1e6319af47d052f04d20bf90499de57241e1390b356a0d60e87f",
+      "published_sha256": "e4b889173f4e1e6319af47d052f04d20bf90499de57241e1390b356a0d60e87f",
+      "identical": true
+    },
+    {
+      "file": "water.png",
+      "replica_sha256": "dd1c43605c7feb208ea669962395db45c8e817c07d9b81f302381b79caacd7be",
+      "published_sha256": "dd1c43605c7feb208ea669962395db45c8e817c07d9b81f302381b79caacd7be",
+      "identical": true
+    }
+  ],
+  "code_hashes": {
+    "pipeline.py": "9216735af3b5eceefe508b86b8528d6725b5b0e00358474de1124656100a2327",
+    "bootstrap.py": "6bf863764e11e20a11f463a86e8de69c25d5f25ed5f1cb92c1bc868bff96d851",
+    "overview.py": "bd1346cc9bfb528d2c556f979aa3e843b9b9d2649b5b6ab1004bd01355fa8fe0",
+    "scanfi.py": "8319507cae664ea1ff9a276043c0cfa2917d77381fd590b11d20280ef92e996b",
+    "layouts.py": "d293df4b17b117a57a1354caec03915654488515430d458032c497bd0abb49ec",
+    "extract.py": "ffac8b3c21e013c9529c9c1af388a36d6a4153b9c6a66d16ba49c5964b4714a0",
+    "render_height.py": "e0396ccc871dc3451697ad8a4731aadea638b487b39cec5cce6a944001ae3fbc",
+    "wms.py": "ebfe315be912001bfae4f5bfd49976ea2c1b00622a740de96323d7fe4c895006",
+    "verify_replica.py": "335fa4436d7f03b835c019a38dd9d4bfdbe15305e5680fa9cd7cb6939422a067"
+  },
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "limitation": "Context acquisition/rendering equivalence, not predictor replication. Fresh WMS styles or metadata may drift in later acquisitions."
+}

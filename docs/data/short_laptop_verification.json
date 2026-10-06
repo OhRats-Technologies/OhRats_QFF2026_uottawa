@@ -1,0 +1,87 @@
+{
+  "checked_utc": "2026-10-06T10:51:48.155Z",
+  "status": "passed",
+  "source_sha256": {
+    "web/demo/strategy/styles/compact.css": "cc0571a462be84b829eb9b1366c42c14796816ad7e790fee2cd05090eea53d66",
+    "web/demo/strategy/styles/base.css": "036e4bb9e4a36fe30b6192257cf67f218f5f6a2a277e5d272c82631407667525",
+    "web/demo/strategy/styles/responsive.css": "96f4c5aeb54dfeb185cdfd540267bc98e13f2d4d6d906e8b4d331ce11b1abd14",
+    "web/demo/index.html": "2f2027b00b0017f5f688baa1566838f3c9b107f9780581b0fa48513ba42e377f",
+    "web/demo/assets/strategy.js": "ed4b32fe114e1200817b294e731b54f179be4c57a7824dd052059806f72c0714",
+    "web/demo/strategy/compact-check.mjs": "626dfc1e04904797ad5e3c4530d81413a4ab4b5530173f6c46f080894a263d06"
+  },
+  "baseline": {
+    "commit": "4735884",
+    "compact_css_sha256": "81440bb5fb8446c784ec0eae7e5f2bbf2c370c443986439ea78bd8558ec95d7e",
+    "bottom": 627,
+    "height": 600
+  },
+  "views": [
+    {
+      "width": 1024,
+      "height": 600,
+      "visible": true,
+      "scroll": 0,
+      "horizontalOverflow": false,
+      "matrixLayout": {
+        "cellsContained": true,
+        "separated": true,
+        "densePreview": true,
+        "cells": 64
+      }
+    },
+    {
+      "width": 1280,
+      "height": 600,
+      "visible": true,
+      "scroll": 0,
+      "horizontalOverflow": false,
+      "matrixLayout": {
+        "cellsContained": true,
+        "separated": true,
+        "densePreview": true,
+        "cells": 64
+      }
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "visible": true,
+      "scroll": 0,
+      "horizontalOverflow": false,
+      "matrixLayout": {
+        "cellsContained": true,
+        "separated": true,
+        "densePreview": true,
+        "cells": 64
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "visible": true,
+      "scroll": 0,
+      "horizontalOverflow": false,
+      "matrixLayout": {
+        "cellsContained": true,
+        "separated": true,
+        "densePreview": true,
+        "cells": 64
+      }
+    },
+    {
+      "width": 1440,
+      "height": 820,
+      "visible": true,
+      "scroll": 0,
+      "horizontalOverflow": false,
+      "matrixLayout": {
+        "cellsContained": true,
+        "separated": true,
+        "densePreview": true,
+        "cells": 64
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "Pinned before-style clipping and current Chromium layout/control checks at five desktop sizes. Default instruments and command bar fit; expanded details may scroll. Narrow phone flow is separate. Not physical-device, human enjoyment or full platform certification."
+}

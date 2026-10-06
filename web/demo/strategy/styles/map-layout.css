@@ -1,0 +1,56 @@
+.map-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.map-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  z-index: 2;
+}
+.utility {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  font-size: 11px;
+}
+.utility button {
+  padding: 7px 9px;
+}
+.utility a {
+  padding: 8px;
+}
+.map-stage {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: radial-gradient(ellipse at 40% 48%, #183332aa, transparent 67%);
+}
+#map-frame {
+  height: 100%;
+  max-width: 100%;
+  aspect-ratio: 1118/1200;
+  position: relative;
+}
+#map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: saturate(0.65) brightness(0.87);
+  display: block;
+}
+#map-effects,
+#cities,
+#markers {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}

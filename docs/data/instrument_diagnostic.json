@@ -1,0 +1,18 @@
+{
+  "id": "quantum-instrument-v1",
+  "status": "passed",
+  "paths": 256,
+  "maximum_coordinate_error": 6.661338147750939e-16,
+  "seconds": 0.090412582969293,
+  "qiskit_version": "2.5.2",
+  "source_hashes": {
+    "experiments/instrument_diagnostic.json": "3518563c27faed0448b6b34d5b8dda430ddac02a2f3ae5c9856b3b7f95d88542",
+    "scripts/context/quantum_check.py": "530bb33523f79252a8b068e1ddfbb4703dc3f5cf38d9fc21602fc2e839180730",
+    "web/demo/strategy/quantum.js": "2d44ac87b6b7d68c08fd49c982fe429ad87ca91b20b7b26bb8f92adf66e8acf4",
+    "web/demo/strategy/diagnostic.js": "7d480c71c9c8fca5d3ba658a6986c0b8398280a50e1d671d008b245364a1a03c"
+  },
+  "hardware_jobs": 0,
+  "shots": 0,
+  "fits": 0,
+  "interpretation": "Browser formulas match exact Qiskit for these declared one-qubit channels and ideal control assumptions. This is a physical-arithmetic verification, not novel predictive evidence or a real-device noise comparison."
+}

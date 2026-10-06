@@ -1,0 +1,200 @@
+.instrument-panel {
+  position: relative;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+#sphere {
+  height: 155px;
+  position: relative;
+  cursor: grab;
+  touch-action: pan-y;
+}
+#sphere canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#sphere.lens-fallback {
+  cursor: default;
+}
+.lens-fallback svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.lens-fallback text {
+  font-size: 11px;
+  fill: var(--muted);
+  text-anchor: middle;
+}
+.fallback-grid {
+  fill: none;
+  stroke: #56746a;
+  stroke-opacity: 0.55;
+}
+#fallback-vector {
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+#fallback-tip {
+  fill: var(--accent);
+}
+.sphere-pole {
+  position: absolute;
+  font-size: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--muted);
+  pointer-events: none;
+}
+.sphere-pole.north {
+  top: 4px;
+}
+.sphere-pole.south {
+  bottom: 4px;
+}
+.lens-caption {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  color: var(--muted);
+}
+#lens-controls {
+  padding: 10px 0;
+}
+#lens-controls label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  padding: 4px 0;
+}
+#lens-controls input {
+  width: auto;
+  accent-color: var(--mint);
+}
+.value-slider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 155px;
+  min-height: 25px;
+  padding: 0 5px;
+  cursor: ew-resize;
+  touch-action: none;
+}
+.value-slider:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.value-slider output {
+  font-size: 10px;
+  width: 28px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--mint);
+}
+.slider-rail {
+  height: 2px;
+  flex: 1;
+  position: relative;
+  background: var(--line);
+}
+.slider-rail i {
+  display: block;
+  height: 100%;
+  width: var(--at);
+  background: var(--mint);
+}
+.slider-rail b {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  top: 50%;
+  left: var(--at);
+  background: var(--mint);
+  box-shadow: 0 0 14px #99d4b633;
+}
+#lens-controls p {
+  font-size: 10px;
+  margin-top: 6px;
+}
+@media (max-width: 760px) {
+  #lens-controls .noise-parameter {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 3px;
+  }
+  #lens-controls .value-slider { width: 100%; }
+}
+.matrix-panel {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+.matrix-body {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+#matrix {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 2px;
+  width: 145px;
+  height: 145px;
+  flex-shrink: 0;
+}
+.matrix-cell {
+  border-radius: 1px;
+  position: relative;
+}
+.matrix-cell.chosen {
+  outline: 1px solid #efa47499;
+  outline-offset: -1px;
+}
+.matrix-readout {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 9px;
+  color: var(--muted);
+}
+.matrix-readout strong {
+  font-family: "Instrument Serif", serif;
+  font-size: 46px;
+  line-height: 1;
+  color: var(--ink);
+  font-weight: 400;
+}
+.matrix-readout b {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--accent);
+  margin-top: 8px;
+}
+#feature-subset {
+  font-size: 10px;
+  margin-top: 9px;
+  color: var(--mint);
+}
+@media (max-width: 360px) {
+  .matrix-body { flex-direction: column; align-items: flex-start; }
+  .matrix-readout { width: 100%; flex-direction: row; flex-wrap: wrap; gap: 3px 8px; overflow-wrap: normal; }
+  .matrix-readout strong, .matrix-readout b { white-space: nowrap; }
+  .matrix-readout b { margin-top: 0; }
+}
+.instrument-note {
+  font-size: 9px;
+  margin-top: 5px;
+}
+.projected-cell {
+  display: grid;
+  place-items: center;
+  font-size: 9px;
+  color: var(--muted);
+  background: #152b2b;
+}
+.projected-cell.minimum {
+  background: #476054;
+  color: var(--accent);
+}

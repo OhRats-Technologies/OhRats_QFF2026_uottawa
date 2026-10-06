@@ -1,0 +1,69 @@
+{
+  "checked_utc": "2026-10-06T11:17:24.677Z",
+  "status": "passed",
+  "baseline": "b1c203a",
+  "baseline_hashes": {
+    "index.html": "3f3eb3a95ba65dbc9e83af64df59eccfdd32cc35665af77ace5fdb28b4555cea",
+    "assets/strategy.js": "66e6ca8e1d6e187860fb3c03512cf102d4603ced65d31ff1e4dc6b71101fa820"
+  },
+  "before": {
+    "welcome_name": "",
+    "guide_name": "",
+    "fire_chip_label": null
+  },
+  "source_sha256": {
+    "web/demo/index.html": "2f2027b00b0017f5f688baa1566838f3c9b107f9780581b0fa48513ba42e377f",
+    "web/demo/assets/strategy.js": "4a7d351e4430d10b51a090c1d5a4b4db21642df52790398e86e275ed88697249",
+    "web/demo/strategy/incident-list.js": "1499ba43c7a7a8ee63e62b3c2d6911ad869162da21e448aa808284262f7d4542",
+    "web/demo/strategy/marker-description.js": "d5e2cd1708e153fce92551f40e47e1aced143fb6da11c8a02734ff30a81f9158",
+    "web/demo/strategy/ui.js": "7e0e11875f19c260588e76165f1e9ffb12ebdc7808f3ea18294ad2231c0b33a2",
+    "web/demo/strategy/main.js": "7ca2468f03c133bd811df06031e51cca4ddc120e40ef9eadc553a9e710c6b752",
+    "web/demo/strategy/keyboard.js": "9d3d52cec4eb0c38ac5c569ce2e5167a39ca4e5aa99b0e8ec144764dccebd3f9",
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/strategy/accessibility-check.mjs": "9718cdd84abb94427d845fe41185b75a24c2343234a947ca5dae1cfbe9970944"
+  },
+  "cases": [
+    {
+      "width": 1280,
+      "height": 720,
+      "welcome": "Hold the season.",
+      "guide": "Decisions, not reflexes.",
+      "fire_button": "Central 02, burning, pressure 1.1, Crew returns in 2 fronts",
+      "readout_description": "Mixedwood cover. Toy fuel 0.9, exposure 0.6. Reserve loss is this fire's projected contribution after the current front. These are fictional game units, not hectares.",
+      "keyboard_focus_and_crew_response": true,
+      "escape_returns_to_opener": true,
+      "exact_save_preserved_through_guide_and_reload": true
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "welcome": "Hold the season.",
+      "guide": "Decisions, not reflexes.",
+      "fire_button": "Central 02, burning, pressure 1.1, Crew returns in 2 fronts",
+      "readout_description": "Mixedwood cover. Toy fuel 0.9, exposure 0.6. Reserve loss is this fire's projected contribution after the current front. These are fictional game units, not hectares.",
+      "keyboard_focus_and_crew_response": true,
+      "escape_returns_to_opener": true,
+      "exact_save_preserved_through_guide_and_reload": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "welcome": "Hold the season.",
+      "guide": "Decisions, not reflexes.",
+      "fire_button": "Central 02, burning, pressure 1.1, Crew returns in 2 fronts",
+      "readout_description": "Mixedwood cover. Toy fuel 0.9, exposure 0.6. Reserve loss is this fire's projected contribution after the current front. These are fictional game units, not hectares.",
+      "keyboard_focus_and_crew_response": true,
+      "escape_returns_to_opener": true,
+      "exact_save_preserved_through_guide_and_reload": true
+    }
+  ],
+  "errors": [],
+  "game_rule_changes": false,
+  "new_predictor_fits": 0,
+  "new_quantum_states": 0,
+  "hardware_jobs": 0,
+  "scope": "Chromium accessibility-tree exposure and native keys in isolated pages at three sizes. No physical screen reader, speech output, assistive device or human enjoyment certification."
+}

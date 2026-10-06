@@ -1,0 +1,77 @@
+{
+  "checked_utc": "2026-10-06T06:46:42.259Z",
+  "status": "passed",
+  "before": {
+    "focused_tag": "BODY",
+    "selected": 2
+  },
+  "before_commit": "16e346a",
+  "before_bundle_sha256": "ae56e59b7975be1c1fd25449dbdca0d06b87d360e3e43333af61ef750202afb3",
+  "source_sha256": {
+    "web/demo/strategy/incident-list.js": "bd46b379574e56703bc36b6fbb39f011d87de719e1a4c0f93abb7ca3ed96fb85",
+    "web/demo/strategy/ui.js": "7191aa7d2e1b88000f399401bd67496a53816bfa6008a2f13dc09046062e4f95",
+    "web/demo/strategy/focus-check.mjs": "3bd6929241fb69235daf270a65ad578b812e94c8c8f995cdf0dadc73a7438893",
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/assets/strategy.js": "e0bcaa7efc2eadc147061b6b9f98f50eaaa7bb7034ec4e2c0534e56835b732e0"
+  },
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "enter_space_preserve_focus": true,
+      "water_reorders_same_node": true,
+      "tab_follows_new_order": true,
+      "map_focus_preserved": true,
+      "accepted_moves": [
+        {
+          "type": "action",
+          "id": 2,
+          "kind": "water"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "enter_space_preserve_focus": true,
+      "water_reorders_same_node": true,
+      "tab_follows_new_order": true,
+      "map_focus_preserved": true,
+      "accepted_moves": [
+        {
+          "type": "action",
+          "id": 2,
+          "kind": "water"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "enter_space_preserve_focus": true,
+      "water_reorders_same_node": true,
+      "tab_follows_new_order": true,
+      "map_focus_preserved": true,
+      "accepted_moves": [
+        {
+          "type": "action",
+          "id": 2,
+          "kind": "water"
+        }
+      ]
+    }
+  ],
+  "fixtures": {
+    "contained_focus_next_fire": true,
+    "all_clear_focus_advance": true
+  },
+  "errors": [],
+  "game_rule_changes": false,
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "scope": "Keyboard selection/response and tab order on three viewports; isolated containment/all-clear DOM fixtures. Not a human gameplay or balance study."
+}

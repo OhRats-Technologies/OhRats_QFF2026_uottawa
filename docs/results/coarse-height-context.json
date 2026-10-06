@@ -1,0 +1,1916 @@
+{
+  "results": [
+    {
+      "condition": "no_inputs",
+      "model": "training_mean",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        133.72643168946658,
+        133.72643168946658,
+        133.72643168946658,
+        133.72643168946658
+      ],
+      "mae_ha": 106.30439641642272,
+      "rmse_ha": 107.99541752639716,
+      "bias_ha": 106.30439641642272
+    },
+    {
+      "condition": "weather_four",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        41.413212411994245,
+        169.290436006697,
+        39.148148159972465,
+        85.01931802432502
+      ],
+      "mae_ha": 63.52231696702978,
+      "rmse_ha": 89.9563339473362,
+      "bias_ha": 56.29574337770333
+    },
+    {
+      "condition": "weather_four",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        115.32312709397046,
+        172.81094408921226,
+        49.655218553025605,
+        102.18313091637346
+      ],
+      "mae_ha": 84.54410828290148,
+      "rmse_ha": 102.7646130606435,
+      "bias_ha": 82.5710698901016
+    },
+    {
+      "condition": "weather_four",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        83.02729039580382,
+        187.74555005039753,
+        91.93514436287722,
+        102.55528718433071
+      ],
+      "mae_ha": 88.89378272530845,
+      "rmse_ha": 106.02567386592997,
+      "bias_ha": 88.89378272530845
+    },
+    {
+      "condition": "weather_plus_zero",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "zero"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        41.413212411994245,
+        169.29043600669684,
+        39.148148159972486,
+        85.01931802432502
+      ],
+      "mae_ha": 63.522316967029724,
+      "rmse_ha": 89.95633394733612,
+      "bias_ha": 56.29574337770329
+    },
+    {
+      "condition": "weather_plus_zero",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "zero"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        115.32312709397046,
+        172.81094408921226,
+        49.655218553025605,
+        102.18313091637346
+      ],
+      "mae_ha": 84.54410828290148,
+      "rmse_ha": 102.7646130606435,
+      "bias_ha": 82.5710698901016
+    },
+    {
+      "condition": "weather_plus_zero",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "zero"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        82.97194098173081,
+        185.66111753580944,
+        92.07421071427139,
+        103.2781450655971
+      ],
+      "mae_ha": 88.57431830130834,
+      "rmse_ha": 105.27915499730437,
+      "bias_ha": 88.57431830130834
+    },
+    {
+      "condition": "weather_plus_year",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        13.623222545940546,
+        54.03873070038936,
+        9.488590651926087,
+        26.33599890682719
+      ],
+      "mae_ha": 31.82400260421712,
+      "rmse_ha": 35.646870772002565,
+      "bias_ha": -1.5503995717730605
+    },
+    {
+      "condition": "weather_plus_year",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        61.00544338993566,
+        87.11076981799788,
+        36.22317782515317,
+        76.59574232219694
+      ],
+      "mae_ha": 46.500806822513155,
+      "rmse_ha": 53.66635130746623,
+      "bias_ha": 37.81174806577705
+    },
+    {
+      "condition": "weather_plus_year",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        65.52740711778769,
+        106.3207359374254,
+        59.84995802915685,
+        56.91879258308916
+      ],
+      "mae_ha": 44.73218814382092,
+      "rmse_ha": 57.16080042055178,
+      "bias_ha": 44.73218814382092
+    },
+    {
+      "condition": "weather_plus_height",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "height"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        40.30668283908179,
+        139.6891480209032,
+        33.40285022516257,
+        60.678422382644676
+      ],
+      "mae_ha": 51.1964631506356,
+      "rmse_ha": 72.23371193063232,
+      "bias_ha": 41.0972405939042
+    },
+    {
+      "condition": "weather_plus_height",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "height"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        103.8929078303858,
+        175.1983949530664,
+        66.80405395688801,
+        87.62213142417833
+      ],
+      "mae_ha": 80.95733676808578,
+      "rmse_ha": 99.04228633432143,
+      "bias_ha": 80.95733676808578
+    },
+    {
+      "condition": "weather_plus_height",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "height"
+      ],
+      "years": [
+        2007,
+        2008,
+        2009,
+        2010
+      ],
+      "actual_ha": [
+        36.25932221122164,
+        3.871764712189033,
+        53.60129533862536,
+        15.955758830139391
+      ],
+      "predicted_ha": [
+        82.90586316631949,
+        195.22528810509408,
+        90.35747244511494,
+        109.96277170773503
+      ],
+      "mae_ha": 92.19081358302203,
+      "rmse_ha": 110.65758641368285,
+      "bias_ha": 92.19081358302203
+    },
+    {
+      "condition": "no_inputs",
+      "model": "training_mean",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        115.23871057356699,
+        115.23871057356699,
+        115.23871057356699,
+        115.23871057356699
+      ],
+      "mae_ha": 127.05923375771103,
+      "rmse_ha": 188.43899840652062,
+      "bias_ha": -54.183666443830035
+    },
+    {
+      "condition": "weather_four",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        86.69305311919275,
+        43.17818369063474,
+        68.33487680235771,
+        53.44530839791416
+      ],
+      "mae_ha": 124.20046430341068,
+      "rmse_ha": 198.1926402597629,
+      "bias_ha": -106.50952151487218
+    },
+    {
+      "condition": "weather_four",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        160.89098967468232,
+        58.570454687826086,
+        90.76139797717227,
+        54.2243269334552
+      ],
+      "mae_ha": 97.80572898477769,
+      "rmse_ha": 160.4308210207127,
+      "bias_ha": -78.31058469911306
+    },
+    {
+      "condition": "weather_four",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        97.19443760310179,
+        70.90845472288997,
+        95.51352570771137,
+        66.58845533042117
+      ],
+      "mae_ha": 114.92443102578312,
+      "rmse_ha": 192.18943094000437,
+      "bias_ha": -86.87115867636595
+    },
+    {
+      "condition": "weather_plus_zero",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "zero"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        86.69305311919275,
+        43.17818369063474,
+        68.33487680235771,
+        53.44530839791419
+      ],
+      "mae_ha": 124.20046430341068,
+      "rmse_ha": 198.1926402597629,
+      "bias_ha": -106.50952151487218
+    },
+    {
+      "condition": "weather_plus_zero",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "zero"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        160.89098967468232,
+        58.570454687826086,
+        90.76139797717227,
+        54.2243269334552
+      ],
+      "mae_ha": 97.80572898477769,
+      "rmse_ha": 160.4308210207127,
+      "bias_ha": -78.31058469911306
+    },
+    {
+      "condition": "weather_plus_zero",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "zero"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        99.47883558621893,
+        69.02612117838801,
+        92.99453716539576,
+        66.96081942317599
+      ],
+      "mae_ha": 114.28725880373912,
+      "rmse_ha": 191.12074107064439,
+      "bias_ha": -87.30729867910233
+    },
+    {
+      "condition": "weather_plus_year",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        23.438746564901063,
+        15.518599614453752,
+        15.440304460732854,
+        10.845293908073016
+      ],
+      "mae_ha": 153.11164088035684,
+      "rmse_ha": 233.3651957329649,
+      "bias_ha": -153.11164088035684
+    },
+    {
+      "condition": "weather_plus_year",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        45.62788363195047,
+        38.174945926108315,
+        37.629519760764865,
+        53.13907783357114
+      ],
+      "mae_ha": 143.3173477356653,
+      "rmse_ha": 219.98930477368185,
+      "bias_ha": -125.77952022929831
+    },
+    {
+      "condition": "weather_plus_year",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        61.60555834148157,
+        40.021255719606266,
+        45.36717702341743,
+        35.348669248820705
+      ],
+      "mae_ha": 132.47933514805732,
+      "rmse_ha": 211.05446418410577,
+      "bias_ha": -123.83671193406553
+    },
+    {
+      "condition": "weather_plus_height",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "height"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        341.5509728496665,
+        147.74598679630097,
+        248.5708273404509,
+        194.99578161815884
+      ],
+      "mae_ha": 131.8802841972386,
+      "rmse_ha": 140.12942640614656,
+      "bias_ha": 63.79351513374728
+    },
+    {
+      "condition": "weather_plus_height",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "height"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        102.35283102665076,
+        88.41895879316095,
+        67.89960285116585,
+        43.45173959507576
+      ],
+      "mae_ha": 106.58575233800299,
+      "rmse_ha": 188.401546833074,
+      "bias_ha": -93.89159395088369
+    },
+    {
+      "condition": "weather_plus_height",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "height"
+      ],
+      "years": [
+        2011,
+        2012,
+        2013,
+        2014
+      ],
+      "actual_ha": [
+        477.7245109766491,
+        93.96956075364076,
+        87.93201351846106,
+        18.063422820837157
+      ],
+      "predicted_ha": [
+        104.15400991278965,
+        77.14719369073339,
+        88.03546681929679,
+        59.98530898330368
+      ],
+      "mae_ha": 108.10455189751728,
+      "rmse_ha": 188.14579887729786,
+      "bias_ha": -87.09188216586615
+    },
+    {
+      "condition": "no_inputs",
+      "model": "training_mean",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        123.26592041709739,
+        123.26592041709739,
+        123.26592041709739,
+        123.26592041709739
+      ],
+      "mae_ha": 42.634834123628806,
+      "rmse_ha": 51.72864411837016,
+      "bias_ha": -10.558039330744833
+    },
+    {
+      "condition": "weather_four",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        25.326776324620667,
+        53.285906187311355,
+        43.43878281043541,
+        86.78864149466663
+      ],
+      "mae_ha": 81.6139330435837,
+      "rmse_ha": 87.23227470831972,
+      "bias_ha": -81.6139330435837
+    },
+    {
+      "condition": "weather_four",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        27.879575053590806,
+        65.9837771791003,
+        59.51993909939859,
+        89.01949878834529
+      ],
+      "mae_ha": 73.22326221773348,
+      "rmse_ha": 79.00605750966108,
+      "bias_ha": -73.22326221773348
+    },
+    {
+      "condition": "weather_four",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        31.38848394099692,
+        64.00589623733563,
+        60.70702016936677,
+        67.84336960786194
+      ],
+      "mae_ha": 77.8377672589519,
+      "rmse_ha": 86.61746254130091,
+      "bias_ha": -77.8377672589519
+    },
+    {
+      "condition": "weather_plus_zero",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "zero"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        25.326776324620667,
+        53.285906187311355,
+        43.43878281043541,
+        86.78864149466663
+      ],
+      "mae_ha": 81.6139330435837,
+      "rmse_ha": 87.23227470831972,
+      "bias_ha": -81.6139330435837
+    },
+    {
+      "condition": "weather_plus_zero",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "zero"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        27.879575053590806,
+        65.9837771791003,
+        59.51993909939859,
+        89.01949878834529
+      ],
+      "mae_ha": 73.22326221773348,
+      "rmse_ha": 79.00605750966108,
+      "bias_ha": -73.22326221773348
+    },
+    {
+      "condition": "weather_plus_zero",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "zero"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        32.234346150715865,
+        64.47591900034837,
+        59.15689544647391,
+        70.16618809191812
+      ],
+      "mae_ha": 77.31562257547816,
+      "rmse_ha": 85.95583192403839,
+      "bias_ha": -77.31562257547816
+    },
+    {
+      "condition": "weather_plus_year",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        15.13938362615476,
+        28.33944025570931,
+        19.78560238972552,
+        38.232188537217084
+      ],
+      "mae_ha": 108.44980604564056,
+      "rmse_ha": 116.73286025126897,
+      "bias_ha": -108.44980604564056
+    },
+    {
+      "condition": "weather_plus_year",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        27.276395174902447,
+        51.793127608795956,
+        52.143209696700055,
+        51.10727511040292
+      ],
+      "mae_ha": 88.24395785014188,
+      "rmse_ha": 97.81823041128881,
+      "bias_ha": -88.24395785014188
+    },
+    {
+      "condition": "weather_plus_year",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "year"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        28.278978764884453,
+        56.9767415784724,
+        45.728937213101,
+        58.855739000340776
+      ],
+      "mae_ha": 86.36386060864257,
+      "rmse_ha": 95.3959014307968,
+      "bias_ha": -86.36386060864257
+    },
+    {
+      "condition": "weather_plus_height",
+      "model": "ridge",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "height"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        41.48425758875558,
+        244.26919225058856,
+        211.7559361095142,
+        414.10054701695566
+      ],
+      "mae_ha": 102.8925601148982,
+      "rmse_ha": 125.70275282003638,
+      "bias_ha": 94.07852349361127
+    },
+    {
+      "condition": "weather_plus_height",
+      "model": "rbf",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "height"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        28.536307604753883,
+        59.28144246634377,
+        50.20298238539322,
+        55.3425339758314
+      ],
+      "mae_ha": 85.48314313976165,
+      "rmse_ha": 95.12653930372957,
+      "bias_ha": -85.48314313976165
+    },
+    {
+      "condition": "weather_plus_height",
+      "model": "qsvr",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "height"
+      ],
+      "years": [
+        2015,
+        2016,
+        2017,
+        2018
+      ],
+      "actual_ha": [
+        59.11233083132944,
+        129.75203142219226,
+        145.32587309720486,
+        201.10560364064233
+      ],
+      "predicted_ha": [
+        28.78694748713158,
+        68.78168166994129,
+        51.9445944471607,
+        69.795563832693
+      ],
+      "mae_ha": 78.99676288861058,
+      "rmse_ha": 87.46342404194851,
+      "bias_ha": -78.99676288861058
+    }
+  ],
+  "resources": [
+    {
+      "condition": "weather_four",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "kernel_seconds": 0.22070820804219693,
+      "pair_circuits": 247,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "6569b615c971fda1607c6a40f559091e9b9af3ea2cfec7b5621c7905ea70edde",
+      "raw_min_eigenvalue": 8.971351177144763e-06,
+      "train_rows": 19,
+      "validation_rows": 4,
+      "qubits": 4,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.108821084667376,
+      "off_diagonal_mean": 0.7748503068334621,
+      "minimum_eigenvalue": 8.971351177144763e-06
+    },
+    {
+      "condition": "weather_plus_zero",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "kernel_seconds": 0.30301379202865064,
+      "pair_circuits": 247,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "e04779a1c54baf97beeb0273bd7363df6d4f2d3d04b0928345168b4f4f09e7c2",
+      "raw_min_eigenvalue": 3.9026054045718546e-05,
+      "train_rows": 19,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.236038385102004,
+      "off_diagonal_mean": 0.7556627788468092,
+      "minimum_eigenvalue": 3.9026054045718546e-05
+    },
+    {
+      "condition": "weather_plus_year",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "kernel_seconds": 0.29645129200071096,
+      "pair_circuits": 247,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "b0953ab16fbbe24843d8c8d7065fc76e6ceb441692f563618eff10c6b4f72eb0",
+      "raw_min_eigenvalue": 0.0004362914372872386,
+      "train_rows": 19,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.5462201578742967,
+      "off_diagonal_mean": 0.7279524029696266,
+      "minimum_eigenvalue": 0.0004362914372872386
+    },
+    {
+      "condition": "weather_plus_height",
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "kernel_seconds": 0.3009345829486847,
+      "pair_circuits": 247,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "5583b26af88967cd20e108e0ecb8dcc417dcfbd79445c6ae131dff29d3cf0e22",
+      "raw_min_eigenvalue": 0.00042304129997578925,
+      "train_rows": 19,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.6377839051167293,
+      "off_diagonal_mean": 0.7111948864066113,
+      "minimum_eigenvalue": 0.00042304129997578925
+    },
+    {
+      "condition": "weather_four",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "kernel_seconds": 0.2801322079030797,
+      "pair_circuits": 345,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "fe5265ac2e2f0bdf6a6895db9a0e1bb67b97bb28ea4af99bbcf0e9ec075feaeb",
+      "raw_min_eigenvalue": 6.3803210037046575e-06,
+      "train_rows": 23,
+      "validation_rows": 4,
+      "qubits": 4,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.172838061878918,
+      "off_diagonal_mean": 0.7669397421880715,
+      "minimum_eigenvalue": 6.3803210037046575e-06
+    },
+    {
+      "condition": "weather_plus_zero",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "kernel_seconds": 0.41318395908456296,
+      "pair_circuits": 345,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "7d34ac4c5a8c73e0dfa770dff8f63cd3c982bd0eb122256ee115f8ffbad0d533",
+      "raw_min_eigenvalue": 2.8770066411865913e-05,
+      "train_rows": 23,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.330557767452147,
+      "off_diagonal_mean": 0.7450913650784649,
+      "minimum_eigenvalue": 2.8770066411865913e-05
+    },
+    {
+      "condition": "weather_plus_year",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "kernel_seconds": 0.4162198749836534,
+      "pair_circuits": 345,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "203176b7387d4f0ad84feaab2131f8540994df57f3da020ebf959c8a5d527a59",
+      "raw_min_eigenvalue": 0.00017001417576886898,
+      "train_rows": 23,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.715870555548937,
+      "off_diagonal_mean": 0.7092891475997323,
+      "minimum_eigenvalue": 0.00017001417576886898
+    },
+    {
+      "condition": "weather_plus_height",
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "kernel_seconds": 0.433526000007987,
+      "pair_circuits": 345,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "d5f9d6ee773fa8500c40ee2545a85c43ce46eac5f273f5ca6d0f60178651b4e9",
+      "raw_min_eigenvalue": 0.000242195729463546,
+      "train_rows": 23,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.6986751020477557,
+      "off_diagonal_mean": 0.7084691781221172,
+      "minimum_eigenvalue": 0.000242195729463546
+    },
+    {
+      "condition": "weather_four",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "kernel_seconds": 0.3750387920299545,
+      "pair_circuits": 459,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "3c0458e5557e63df90bc11f86212498a732db73bebd997c96f9724d785cb632e",
+      "raw_min_eigenvalue": 3.3543104593997785e-06,
+      "train_rows": 27,
+      "validation_rows": 4,
+      "qubits": 4,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.18056064958846,
+      "off_diagonal_mean": 0.7662638063430389,
+      "minimum_eigenvalue": 3.3543104593997785e-06
+    },
+    {
+      "condition": "weather_plus_zero",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "kernel_seconds": 0.5573973329737782,
+      "pair_circuits": 459,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "ded7ef5981c11a8401e209135fc2ee27bddd792ebcaa98431a9cdfc9ba3ec060",
+      "raw_min_eigenvalue": 5.958917713844938e-06,
+      "train_rows": 27,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.337635515777148,
+      "off_diagonal_mean": 0.7445936052357803,
+      "minimum_eigenvalue": 5.958917713844938e-06
+    },
+    {
+      "condition": "weather_plus_year",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "kernel_seconds": 0.5566439171088859,
+      "pair_circuits": 459,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "ce6c1e8807d715bc57c0be4a116c22c8b4fd7e27f0f77d8f8a59425ec2af79c1",
+      "raw_min_eigenvalue": 8.415596132988616e-05,
+      "train_rows": 27,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.71839353352513,
+      "off_diagonal_mean": 0.7095787047636263,
+      "minimum_eigenvalue": 8.415596132988616e-05
+    },
+    {
+      "condition": "weather_plus_height",
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "kernel_seconds": 0.5751797079574317,
+      "pair_circuits": 459,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0,
+      "matrix_sha256": "6570ede163d33f4a5b83e86a8c3f00dc1952fd305ab03cded33d729e72f4256a",
+      "raw_min_eigenvalue": 8.561465663164535e-05,
+      "train_rows": 27,
+      "validation_rows": 4,
+      "qubits": 5,
+      "reps": 1,
+      "amplitude": 0.09817477042468103,
+      "effective_rank": 2.700371945100984,
+      "off_diagonal_mean": 0.7108566829953072,
+      "minimum_eigenvalue": 8.561465663164535e-05
+    }
+  ],
+  "contrasts": [
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "model": "ridge",
+      "height_minus_zero_mae": -12.325853816394122,
+      "height_minus_year_mae": 19.37246054641848,
+      "zero_minus_four_mae": -5.684341886080802e-14
+    },
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "model": "rbf",
+      "height_minus_zero_mae": -3.5867715148156947,
+      "height_minus_year_mae": 34.456529945572626,
+      "zero_minus_four_mae": 0.0
+    },
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "model": "qsvr",
+      "height_minus_zero_mae": 3.6164952817136964,
+      "height_minus_year_mae": 47.458625439201114,
+      "zero_minus_four_mae": -0.31946442400011676
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "model": "ridge",
+      "height_minus_zero_mae": 7.679819893827926,
+      "height_minus_year_mae": -21.231356683118236,
+      "zero_minus_four_mae": 0.0
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "model": "rbf",
+      "height_minus_zero_mae": 8.780023353225303,
+      "height_minus_year_mae": -36.7315953976623,
+      "zero_minus_four_mae": 0.0
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "model": "qsvr",
+      "height_minus_zero_mae": -6.1827069062218385,
+      "height_minus_year_mae": -24.374783250540034,
+      "zero_minus_four_mae": -0.6371722220440006
+    },
+    {
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "model": "ridge",
+      "height_minus_zero_mae": 21.278627071314503,
+      "height_minus_year_mae": -5.557245930742354,
+      "zero_minus_four_mae": 0.0
+    },
+    {
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "model": "rbf",
+      "height_minus_zero_mae": 12.259880922028174,
+      "height_minus_year_mae": -2.760814710380231,
+      "zero_minus_four_mae": 0.0
+    },
+    {
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "model": "qsvr",
+      "height_minus_zero_mae": 1.681140313132417,
+      "height_minus_year_mae": -7.3670977200319925,
+      "zero_minus_four_mae": -0.5221446834737407
+    }
+  ],
+  "width_control": [
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "maximum_kernel_change_from_zero_qubit": 0.10922827554350079
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "maximum_kernel_change_from_zero_qubit": 0.11566613336071896
+    },
+    {
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "maximum_kernel_change_from_zero_qubit": 0.12137188243832497
+    }
+  ],
+  "pair_circuits": 4204,
+  "model_fits": 36,
+  "seconds": 4.814432499930263,
+  "hardware_jobs": 0,
+  "status": "complete",
+  "interpretation": [
+    "Four vs five qubits is an architectural change, even if the new feature is constant: ZZ interactions can change the kernel.",
+    "Ridge/RBF zero-column invariance is an arithmetic control.",
+    "Year control tests whether height merely supplies a temporal proxy.",
+    "Development folds have already been inspected; results are descriptive, not independent confirmation.",
+    "SCANFI full-series LandTrendr reconstruction uses later imagery: no as-of forecast claim.",
+    "No 2019\u20132024 labels or final records are opened; no adaptive retuning or model promotion."
+  ],
+  "plan_sha256": "6a40a57d7fddd85ce51d3167d06fe019af329383134ce01e73091ae259d6e59d",
+  "runner_hashes": {
+    "experiments/coarse_height_context.json": "6a40a57d7fddd85ce51d3167d06fe019af329383134ce01e73091ae259d6e59d",
+    "scripts/context/pilot.py": "1f2d3f8d0a8cba2f68e113c085bcedc35cbf0c3ca874ba1e04fc8bcc8679d34f",
+    "wildfire_lab/height_context.py": "b68589e8a0ad08bf736b517b5d848caaf979ba3a8d21412008df8e06ed223988"
+  }
+}

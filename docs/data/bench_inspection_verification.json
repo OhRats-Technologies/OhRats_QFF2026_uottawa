@@ -1,0 +1,32 @@
+{
+  "exhaustive_objective_values": 210,
+  "views": [
+    {
+      "width": 1280,
+      "height": 720,
+      "basis_states": 5,
+      "equal_sampled_minima": true,
+      "no_dialog_horizontal_overflow": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "basis_states": 5,
+      "equal_sampled_minima": true,
+      "no_dialog_horizontal_overflow": true
+    }
+  ],
+  "errors": [],
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "checked_utc": "2026-10-06T05:50:27.525347+00:00",
+  "code_sha256": {
+    "web/demo/strategy/bench.js": "c0370e64c5b2532bc7225f6e86bc5f206abc9fd73d5e030b4a3d64e13867583f",
+    "web/demo/strategy/bench-detail.js": "9b0d1c68c0e0a62d06e64394604dcf026132f7fb359484c4ec7dd63b572ed8c9",
+    "web/demo/strategy/bench-check.mjs": "83588f9bf96d8d106aec74ab5eed40a7818fad64bf95b0149d8a6e57404dd2b4",
+    "web/demo/strategy/compact-check.mjs": "adf97729a5b5e6c3744bfdff3a123067bdfb57da96be3f7493e52d4da33550b5"
+  },
+  "data_sha256": "23a175a9ed9ba7f6b79f4ee0401eb499533eec93eb4803ffe970dbbd602293d4",
+  "limitation": "Objective and display/control equivalence; no addon execution, predictor benefit or quantum advantage."
+}

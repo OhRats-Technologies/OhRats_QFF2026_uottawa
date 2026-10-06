@@ -1,0 +1,287 @@
+{
+  "study": "expanded-proxy-controls",
+  "bundle": "docs/data/expanded-proxy-controls-evidence.zip",
+  "bundle_sha256": "7b7174e0795193931d7abc420e32a794b0f63dd8e6249e137da3f5cae4f4d4d5",
+  "evidence_sha256": "c1188caa82ebf76ecd484e3e799cc6aa6fa16e6a67f1b57d0886d7f1fc3c1292",
+  "status": "complete",
+  "revision": "9f6f4033edf7c364b508b4d2438922865b3b004f",
+  "resources": {
+    "seconds": 45.52526170806959,
+    "model_fits": 65445,
+    "hardware_jobs": 0,
+    "final_test_accessed": false,
+    "state_evaluations": 50322,
+    "parity_pair_circuits": 72
+  },
+  "aggregates": [
+    {
+      "panel": "no_inputs",
+      "selector": "",
+      "model": "training_mean",
+      "folds": 3,
+      "mae_ha": 91.99948809925418,
+      "fold_mae_ha": [
+        106.30439641642272,
+        127.05923375771103,
+        42.634834123628806
+      ]
+    },
+    {
+      "panel": "station4",
+      "selector": "",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 85.25124054634036,
+      "fold_mae_ha": [
+        18.53286936245034,
+        146.99306240113012,
+        90.2277898754406
+      ]
+    },
+    {
+      "panel": "station4",
+      "selector": "",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 119.19302673418512,
+      "fold_mae_ha": [
+        26.707693302504328,
+        252.45728071938217,
+        78.41410618066882
+      ]
+    },
+    {
+      "panel": "station4",
+      "selector": "",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 83.08202916532962,
+      "fold_mae_ha": [
+        20.76724955704859,
+        148.64587172870932,
+        79.83296621023091
+      ]
+    },
+    {
+      "panel": "station4",
+      "selector": "",
+      "model": "fixed_qsvr",
+      "folds": 3,
+      "mae_ha": 87.88241825860382,
+      "fold_mae_ha": [
+        23.16331196656981,
+        144.3604991075801,
+        96.12344370166153
+      ]
+    },
+    {
+      "panel": "calendar4",
+      "selector": "",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 80.17138551005179,
+      "fold_mae_ha": [
+        19.54638840119751,
+        146.94010641927133,
+        74.02766170968653
+      ]
+    },
+    {
+      "panel": "calendar4",
+      "selector": "",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 105.95373068639215,
+      "fold_mae_ha": [
+        45.2064818004165,
+        144.13050178422446,
+        128.5242084745355
+      ]
+    },
+    {
+      "panel": "calendar4",
+      "selector": "",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 88.60995741903285,
+      "fold_mae_ha": [
+        51.52422089545698,
+        119.0848741231433,
+        95.22077723849827
+      ]
+    },
+    {
+      "panel": "calendar4",
+      "selector": "",
+      "model": "fixed_qsvr",
+      "folds": 3,
+      "mae_ha": 77.76379063617567,
+      "fold_mae_ha": [
+        25.019130411362305,
+        147.7661643218706,
+        60.506077175294095
+      ]
+    },
+    {
+      "panel": "weather_station8",
+      "selector": "",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 91.62722004565018,
+      "fold_mae_ha": [
+        22.73004967277622,
+        148.10646189668165,
+        104.04514856749265
+      ]
+    },
+    {
+      "panel": "weather_station8",
+      "selector": "",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 94.62046923910462,
+      "fold_mae_ha": [
+        40.46230699838323,
+        138.13737573942845,
+        105.26172497950216
+      ]
+    },
+    {
+      "panel": "weather_station8",
+      "selector": "",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 87.0779661862651,
+      "fold_mae_ha": [
+        29.96310437570683,
+        143.84871511127864,
+        87.42207907180985
+      ]
+    },
+    {
+      "panel": "weather_station8",
+      "selector": "",
+      "model": "fixed_qsvr",
+      "folds": 3,
+      "mae_ha": 88.40214071774524,
+      "fold_mae_ha": [
+        24.90377764782428,
+        143.87441496586712,
+        96.42822953954433
+      ]
+    },
+    {
+      "panel": "weather_calendar8",
+      "selector": "",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 67.97029300041082,
+      "fold_mae_ha": [
+        20.195539864159475,
+        157.57830901887218,
+        26.137030118200823
+      ]
+    },
+    {
+      "panel": "weather_calendar8",
+      "selector": "",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 82.19582984524502,
+      "fold_mae_ha": [
+        18.756631740209386,
+        149.74561632078468,
+        78.08524147474097
+      ]
+    },
+    {
+      "panel": "weather_calendar8",
+      "selector": "",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 101.35737559507267,
+      "fold_mae_ha": [
+        40.21491486707585,
+        146.8433516351576,
+        117.01386028298458
+      ]
+    },
+    {
+      "panel": "weather_calendar8",
+      "selector": "",
+      "model": "fixed_qsvr",
+      "folds": 3,
+      "mae_ha": 92.5297262990753,
+      "fold_mae_ha": [
+        53.605247859461016,
+        145.39720223668985,
+        78.586728801075
+      ]
+    },
+    {
+      "panel": "weather_null8",
+      "selector": "",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 91.3151888362667,
+      "fold_mae_ha": [
+        68.53917495352697,
+        125.49151408968545,
+        79.91487746558767
+      ]
+    },
+    {
+      "panel": "weather_null8",
+      "selector": "",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 98.87291878681363,
+      "fold_mae_ha": [
+        33.517717784461375,
+        182.1472546140655,
+        80.953783961914
+      ]
+    },
+    {
+      "panel": "weather_null8",
+      "selector": "",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 89.28641124941548,
+      "fold_mae_ha": [
+        62.07682009146905,
+        126.10572907033166,
+        79.6766845864457
+      ]
+    },
+    {
+      "panel": "weather_null8",
+      "selector": "",
+      "model": "fixed_qsvr",
+      "folds": 3,
+      "mae_ha": 90.54762870067016,
+      "fold_mae_ha": [
+        86.29138987513826,
+        113.54702925995416,
+        71.80446696691806
+      ]
+    }
+  ],
+  "information": "Reused1988\u20132018 annual Ontario development, never independent confirmation. Full recipe/code hashes/traces/counts/selected fit equations in bundle. No hardware acquisition in these studies.",
+  "distinct_geometry": [
+    {
+      "width": 4,
+      "distinct_candidates": 60,
+      "state_evaluations": 420,
+      "tolerance": 1e-10,
+      "labels_used": 0
+    },
+    {
+      "width": 8,
+      "distinct_candidates": 60,
+      "state_evaluations": 420,
+      "tolerance": 1e-10,
+      "labels_used": 0
+    }
+  ]
+}

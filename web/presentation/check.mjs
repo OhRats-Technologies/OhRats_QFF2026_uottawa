@@ -1,13 +1,18 @@
-// Functional browser checks and PDF export; requires the bundled Playwright runtime.
+// Functional browser checks and ignored QA export; preserves published artifacts.
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 import {createRequire} from 'node:module';
 const require=createRequire(path.join(process.env.RUNTIME_NODE_MODULES,'../package.json'));
 const {chromium}=require('playwright');
 const browser=await chromium.launch({headless:true,channel:'chrome'});
 const root=process.cwd(),out=path.join(root,'.cache/judge-submission/browser');
 await fs.mkdir(out,{recursive:true});
+const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
+const published=['ontario-wildfire.pdf','ontario-wildfire.pptx'];
+const before=Object.fromEntries(await Promise.all(published.map(async name=>
+  [name,hash(await fs.readFile(path.join(root,'web/presentation/slides',name)))])));
 const page=await browser.newPage({viewport:{width:1280,height:720},deviceScaleFactor:1});
 const errors=[];page.on('pageerror',error=>errors.push(error.message));
 const url='http://127.0.0.1:8790/web/presentation/';
@@ -100,10 +105,11 @@ await page.screenshot({path:path.join(out,'wide-cover.png'),animations:'disabled
 const denied=await page.request.get('http://127.0.0.1:8790/.env');assert.equal(denied.status(),404);
 const traversal=await page.request.get('http://127.0.0.1:8790/web/presentation/%2e%2e/%2e%2e/.env');assert.equal(traversal.status(),404);
 await page.setViewportSize({width:1280,height:720});
-await fs.mkdir(path.join(root,'web/presentation/slides'),{recursive:true});
-await page.pdf({path:path.join(root,'web/presentation/slides/ontario-wildfire.pdf'),preferCSSPageSize:true,printBackground:true});
-const pdf=await fs.readFile(path.join(root,'web/presentation/slides/ontario-wildfire.pdf'));
+await page.pdf({path:path.join(out,'qa-presentation.pdf'),preferCSSPageSize:true,printBackground:true});
+const pdf=await fs.readFile(path.join(out,'qa-presentation.pdf'));
 assert.equal((pdf.toString('latin1').match(/\/Type\s*\/Page\b/g)||[]).length,9,'PDF must contain nine pages, with no blank tail');
 assert.deepEqual(errors,[]);
-await fs.writeFile(path.join(out,'checks.json'),JSON.stringify({status:'passed',slides:9,main_seconds:300,keyboard:true,notes:true,index:true,measured_scales:5,reduced_motion:true,portrait_width:390,wide_width:1920,private_paths_denied:true,page_errors:errors,pdf_exported:true},null,2));
-await browser.close();console.log('Browser navigation, scale evidence, reduced motion, viewport and private-route checks passed; PDF exported.');
+for(const name of published)
+  assert.equal(hash(await fs.readFile(path.join(root,'web/presentation/slides',name))),before[name],name);
+await fs.writeFile(path.join(out,'checks.json'),JSON.stringify({status:'passed',slides:9,main_seconds:300,keyboard:true,notes:true,index:true,measured_scales:5,reduced_motion:true,portrait_width:390,wide_width:1920,private_paths_denied:true,page_errors:errors,qa_pdf_exported:true,published_artifacts_sha256:before,published_artifacts_preserved:true},null,2));
+await browser.close();console.log('Browser checks and cached QA PDF pass; published PDF/PPTX remain unchanged.');

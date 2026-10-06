@@ -1,0 +1,1002 @@
+{
+  "checked_utc": "2026-10-06T07:41:26.559Z",
+  "status": "passed",
+  "source_sha256": {
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/strategy/progression.js": "d810cf0864405881071e7b5a5d19546b35b500ef2d916cebf1969140b81fb4f8",
+    "web/demo/strategy/front-detail.js": "f5384e581f088b05d239ccb7ad38035581c85988887f97e5538a8b97143c8d4f",
+    "web/demo/strategy/ui.js": "d5d3221f4897da624a140b46463d96fa17d57d38b024a42c2d6396ab2773acce",
+    "web/demo/strategy/progression-check.mjs": "9ac49d0dd542bfbc1a099e85ac61b808fed9876f156cdc9d6c732948d941f904",
+    "web/demo/strategy/styles/progression.css": "2aad55173d21dc4ea3c3f7ebfba31d2a3a15defcd17ba24dec2ed3827ff12efd",
+    "web/demo/strategy.css": "68303501d396ad87dac04f9696250d3ec6dd384e36fcf50aaeff12542e83b9d9",
+    "web/demo/index.html": "bb35d2738bd13f78ab698aff45137167386ff6137c1e55d3463b57454bd595ac",
+    "web/demo/assets/strategy.js": "f53168515d532e0e3c7ba54d6ea2ae48f17270b93a4b08ef4aec3c3e88a9292a"
+  },
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "preferred": "network",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "network"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "network",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "network",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "network",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "preferred": "training",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "training",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "training",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "training",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "preferred": "logistics",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "logistics",
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "preferred": "precision",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "logistics",
+            "precision"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "70%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "precision"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "70%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "precision"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "70%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "preferred": "network",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "network"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "network",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "network",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "network",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "preferred": "training",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "training",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "training",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "training",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "preferred": "logistics",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "logistics",
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "preferred": "precision",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "logistics",
+            "precision"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "70%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "precision"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "70%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "precision"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "70%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "preferred": "network",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "network"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "network",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "network",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "network",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "3",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "preferred": "training",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "training",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "training",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "training",
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "preferred": "logistics",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "logistics",
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "training"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "1.15",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "preferred": "precision",
+      "status": "won",
+      "views": [
+        {
+          "front": 0,
+          "upgrades": [],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "2",
+            "water": "58%"
+          },
+          "weather_description": "Small ignitions. Crews take two fronts to return.",
+          "save_unchanged": true
+        },
+        {
+          "front": 4,
+          "upgrades": [
+            "logistics"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "58%"
+          },
+          "weather_description": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+          "save_unchanged": true
+        },
+        {
+          "front": 8,
+          "upgrades": [
+            "logistics",
+            "precision"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "70%"
+          },
+          "weather_description": "Two new fires. Rain slows growth; relief is temporary.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "precision"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "70%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        },
+        {
+          "front": 12,
+          "upgrades": [
+            "logistics",
+            "precision"
+          ],
+          "effects": {
+            "crews": "2",
+            "power": "0.90",
+            "supplies": "3",
+            "water": "70%"
+          },
+          "weather_description": "Season finished. Inspect the map or open the season report.",
+          "save_unchanged": true
+        }
+      ]
+    }
+  ],
+  "chosen_upgrades": [
+    "logistics",
+    "network",
+    "precision",
+    "training"
+  ],
+  "errors": [],
+  "predictor_fits": 0,
+  "quantum_circuit_executions": 0,
+  "hardware_jobs": 0,
+  "scope": "Read-only upgrade ledger, milestone prompt before/after choices, front-unit descriptions, all four existing effects and saved continuation across three sizes. Game rules/sampling/effects remain unchanged; not a new balance or human-enjoyment study.",
+  "additional_milestone_reload": {
+    "checked_utc": "2026-10-06T07:42:48.924Z",
+    "rows": [
+      {
+        "front": 4,
+        "before": "Choose your first upgrade before the next front.",
+        "after": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+        "reloadedDescription": "Heat lifts pressure. Keep crews moving as new fires arrive.",
+        "movesUnchanged": true
+      },
+      {
+        "front": 8,
+        "before": "Two new fires. Choose a second upgrade; relief is temporary.",
+        "after": "Two new fires. Rain slows growth; relief is temporary.",
+        "reloadedDescription": "Two new fires. Rain slows growth; relief is temporary.",
+        "movesUnchanged": true
+      }
+    ],
+    "predictor_fits": 0,
+    "quantum_circuits": 0,
+    "hardware_jobs": 0,
+    "scope": "Separate control-driven authoring-browser sequence; actual choices and normal continuation at fronts 4 and 8. Not an additional predictor or physical-device check."
+  }
+}

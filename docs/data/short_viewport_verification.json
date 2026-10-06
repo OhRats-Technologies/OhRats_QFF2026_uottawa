@@ -1,0 +1,81 @@
+{
+  "checked_utc": "2026-10-06T10:48:12.252Z",
+  "status": "passed",
+  "baseline": {
+    "commit": "0cd319a",
+    "scroll_after_start": 1726,
+    "source_sha256": {
+      "web/demo/index.html": "90c6dcedad743be0b8059ad7df249d4f416c4ee215b7ba1c6d7a4e7e75c50437",
+      "web/demo/assets/strategy.js": "2f10e1eb8ee05756dc5c9316fc0e59462c38e6d34e2276370b7a43e149c6c553",
+      "web/demo/strategy.css": "e5640c3cfe0d704a1fc213e417e6cc70d5d0e8868965a9f8e935e6d965f8c816",
+      "web/demo/strategy/styles/base.css": "1a6d939c214229db80a0a6c9c724e1c9cd3d78fb882efbc831e843fbac4ea165",
+      "web/demo/strategy/styles/bench-detail.css": "3f22973a4758d68d984637c900186dfb07d6c3ac57fe1cd8ca63fd6a69d36202",
+      "web/demo/strategy/styles/command.css": "eda619e89c6abb474fe81cda196a30496c510fadecea13a596a614e573a8b320",
+      "web/demo/strategy/styles/compact.css": "81440bb5fb8446c784ec0eae7e5f2bbf2c370c443986439ea78bd8558ec95d7e",
+      "web/demo/strategy/styles/dialogs.css": "89573b48fb6f46c2c9c858ee833048779d8d0265de8f2ae5aaab872f2952c93f",
+      "web/demo/strategy/styles/instruments.css": "6ab92f5f2144960abe5e9cefcea4eab2c12ab10c6e10b5111e9d578d13b9f8ad",
+      "web/demo/strategy/styles/map-controls.css": "83a4a2ec4fc66e0bcae389b1e8a2e3f15f64a30f2f247d8c78ce7b6829a8e604",
+      "web/demo/strategy/styles/map-layout.css": "95aad2b6e4b8851feb3fe41ae6baf0b7de4810d3c0eb664c986eb5ff5b715bdb",
+      "web/demo/strategy/styles/map-markers.css": "5ac5e61f5202f59fb276bcba318e455ff47ae1b34c28ac9dd1ab0294fffcc521",
+      "web/demo/strategy/styles/marker-picker.css": "cb3d3bccd0620e6a7143c94e9fa88ba068e255e48ebec23086944e82c1f9132f",
+      "web/demo/strategy/styles/operations.css": "9ae64e331e45e9a8083e8a4bf82c00973ae4c1669a5d3ba9e56fddb7c1a15ea3",
+      "web/demo/strategy/styles/progression.css": "2aad55173d21dc4ea3c3f7ebfba31d2a3a15defcd17ba24dec2ed3827ff12efd",
+      "web/demo/strategy/styles/research.css": "8af9c1ef9a9aab31e54507486773d73cbe8dc55ca0e1583575bc8cfc3de38e2c",
+      "web/demo/strategy/styles/responsive.css": "96f4c5aeb54dfeb185cdfd540267bc98e13f2d4d6d906e8b4d331ce11b1abd14"
+    }
+  },
+  "source_sha256": {
+    "web/demo/index.html": "2f2027b00b0017f5f688baa1566838f3c9b107f9780581b0fa48513ba42e377f",
+    "web/demo/assets/strategy.js": "ed4b32fe114e1200817b294e731b54f179be4c57a7824dd052059806f72c0714",
+    "web/demo/strategy/main.js": "7ca2468f03c133bd811df06031e51cca4ddc120e40ef9eadc553a9e710c6b752",
+    "web/demo/strategy/short-viewport-check.mjs": "c7d537d03d8e23b011912b2fe08995011648e8e4bad5f52d1ff1cbf368d76fde",
+    "web/demo/strategy/styles/base.css": "036e4bb9e4a36fe30b6192257cf67f218f5f6a2a277e5d272c82631407667525",
+    "web/demo/strategy/styles/compact.css": "cc0571a462be84b829eb9b1366c42c14796816ad7e790fee2cd05090eea53d66",
+    "web/demo/strategy/styles/responsive.css": "96f4c5aeb54dfeb185cdfd540267bc98e13f2d4d6d906e8b4d331ce11b1abd14"
+  },
+  "results": [
+    {
+      "width": 844,
+      "height": 390,
+      "input": "touch",
+      "initial_scroll": 0,
+      "initial_focus": "game-title",
+      "native_command_scroll": 91,
+      "exact_accepted_moves": [
+        {
+          "type": "advance"
+        }
+      ],
+      "returned_to_map_scroll": 0,
+      "guide_save_unchanged": true,
+      "continuation_moves_preserved": true,
+      "fresh_seed": 588686121,
+      "fresh_moves": [],
+      "locator_auto_scroll": false
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "input": "mouse/wheel",
+      "initial_scroll": 0,
+      "initial_focus": "game-title",
+      "native_command_scroll": 0,
+      "exact_accepted_moves": [
+        {
+          "type": "advance"
+        }
+      ],
+      "returned_to_map_scroll": 0,
+      "guide_save_unchanged": true,
+      "continuation_moves_preserved": true,
+      "fresh_seed": 588686121,
+      "fresh_moves": [],
+      "locator_auto_scroll": false
+    }
+  ],
+  "errors": [],
+  "predictor_fits": 0,
+  "quantum_circuit_executions": 0,
+  "hardware_jobs": 0,
+  "scope": "Chromium on a Mac, emulated touch landscape and mouse/wheel short laptop. Native coordinate hits and gestures, no locator auto-scroll. Not a physical-device or assistive-technology study."
+}

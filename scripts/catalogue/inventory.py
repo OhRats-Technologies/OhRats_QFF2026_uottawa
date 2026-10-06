@@ -4,6 +4,10 @@ import json
 from collections import Counter
 from pathlib import Path
 
+from metadata import OWNER_IDS, read_package
+
+ROOT = Path(__file__).resolve().parents[2]
+
 
 def english(record, field):
     translated = record.get(field + '_translated', {})
@@ -71,16 +75,19 @@ def screen(record):
     return category, decision
 
 
-def publish(cache, output):
-    pages = json.loads((output / 'fire_catalogue_pages.json').read_text())
+def publish(cache, output, manifest):
+    pages = json.loads(manifest.read_text())
     page_by_id = {identifier: p['page'] for p in pages['pages'] for identifier in p['ids']}
+    if len(page_by_id) != pages['unique_ids'] or sum(len(p['ids']) for p in pages['pages']) != len(page_by_id):
+        raise ValueError('Page manifest has duplicate or missing IDs')
+    paths = sorted(p for p in (cache / 'packages').glob('*.json') if '.receipt.' not in p.name)
+    expected = set(page_by_id) | set(OWNER_IDS)
+    if {p.stem for p in paths} != expected:
+        raise ValueError('Cache membership does not match screened IDs and owner-linked sources')
     packages = []
-    for path in sorted((cache / 'packages').glob('*.json')):
-        if '.receipt.' in path.name:
-            continue
-        record = json.loads(path.read_text())['result']
+    for path in paths:
+        record, receipt = read_package(path)
         category, decision = screen(record)
-        receipt = json.loads(path.with_suffix('.receipt.json').read_text())
         resources = [{'name': english(r, 'name'), 'format': r.get('format'), 'url': r['url']}
                      for r in record['resources'] if 'safelinks.protection.outlook.com' not in r['url']]
         packages.append({'id': record['id'], 'page': page_by_id.get(record['id']),
@@ -95,6 +102,7 @@ def publish(cache, output):
                          'category': category, 'decision': decision,
                          'metadata_sha256': receipt['sha256'], 'resources': resources})
     counts = Counter(p['category'] for p in packages if p['page'])
+    output.mkdir(parents=True, exist_ok=True)
     (output / 'fire_catalogue_inventory.json').write_text(json.dumps({'method': 'All search-result summaries inspected; transparent title-based triage plus selected detailed source review. Candidate does not mean verified usable data.', 'categories': dict(counts), 'records': packages}, indent=2) + '\n')
     by_id = {p['id']: p for p in packages}
     lines = ['# Fire catalogue: page-by-page screening', '',
@@ -113,6 +121,7 @@ def publish(cache, output):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--cache', type=Path, default=Path('.cache/catalogue/20261006'))
-    parser.add_argument('--output', type=Path, default=Path('docs/data'))
+    parser.add_argument('--manifest', type=Path, default=ROOT / 'docs/data/fire_catalogue_pages.json')
+    parser.add_argument('--output', type=Path, default=ROOT / '.cache/catalogue/rebuilt-inventory')
     args = parser.parse_args()
-    publish(args.cache, args.output)
+    publish(args.cache, args.output, args.manifest)

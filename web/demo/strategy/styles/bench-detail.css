@@ -1,0 +1,148 @@
+#matrix {
+  cursor: pointer;
+}
+#matrix .projected-cell {
+  font-size: var(--basis-font, 9px);
+  min-width: 0;
+  overflow: hidden;
+}
+#matrix.dense-preview .projected-cell {
+  font-size: 0;
+}
+#matrix.dense-preview .diagonal {
+  background: #29443c;
+}
+#matrix.dense-preview .minimum {
+  background: #718776;
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.matrix-readout {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+#bench-dialog .bench-scope {
+  font-size: 10px;
+  color: var(--muted);
+  margin: -8px 0 15px;
+}
+#bench-dialog {
+  width: min(740px, 95vw);
+  max-height: 90svh;
+  overflow: auto;
+}
+#bench-dialog h2 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+.bench-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 15px;
+}
+.bench-controls button {
+  padding: 8px 12px;
+  font-size: 11px;
+}
+.bench-controls [aria-pressed="true"] {
+  background: #29443c;
+  color: var(--mint);
+}
+#bench-visual {
+  overflow-x: auto;
+}
+#bench-visual table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+#bench-visual caption {
+  text-align: left;
+  font-size: 10px;
+  color: var(--muted);
+  padding-bottom: 10px;
+}
+#bench-visual th {
+  font-weight: 400;
+  padding: 7px 3px;
+  color: var(--muted);
+}
+#bench-visual td {
+  padding: 10px 5px;
+  background: color-mix(in srgb, #14262a, #6a9a7e calc(var(--cell) * 100%));
+}
+#bench-visual .minimum {
+  background: #385147;
+  color: var(--accent);
+  outline: 1px solid var(--accent);
+}
+.bench-minima {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  border-block: 1px solid var(--line);
+  padding: 14px 0;
+  margin: 16px 0;
+}
+.bench-minima span {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+}
+.bench-minima b {
+  display: block;
+  margin-top: 5px;
+  font-size: 21px;
+  font-weight: 400;
+  color: var(--mint);
+  font-variant-numeric: tabular-nums;
+}
+.bench-basis-row {
+  display: grid;
+  grid-template-columns: 25px 90px 1fr;
+  gap: 8px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 10px;
+}
+.bench-basis-row b,
+.bench-feature-key b {
+  font-weight: 400;
+  color: var(--accent);
+}
+.bench-basis-row code {
+  color: var(--mint);
+  font-size: 10px;
+}
+.bench-feature-key {
+  display: inline-flex;
+  gap: 7px;
+  width: 50%;
+  padding: 5px 0;
+  font-size: 10px;
+}
+#bench-dialog p {
+  font-size: 12px;
+  line-height: 1.6;
+}
+#bench-dialog small {
+  font-size: 10px;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .bench-minima {
+    gap: 6px;
+  }
+  .bench-minima b {
+    font-size: 17px;
+  }
+  .bench-basis-row {
+    grid-template-columns: 22px 90px;
+  }
+  .bench-basis-row span {
+    grid-column: 1 / -1;
+  }
+}

@@ -40,7 +40,7 @@ export function kernelView(e,d,s) {
 export function predictionView(e,d,s) {
   const rows=predictionRows(e,s.year);
   return `${title('05','Predictions<br>meet reality.','Frozen QSVR and classical estimates, compared with the training mean. The SVR optimizer is classical.')}
-    <div class="prediction-stage">${years(s.year)}<div class="prediction-chart">${predictionGraphic(rows,s.reveal)}</div><button class="reveal-button" data-reveal="toggle" aria-pressed="${s.reveal}">${s.reveal?'Hide recorded mean':'Show recorded mean'}</button><p class="context-note">${s.reveal?`${s.year} recorded mean: ${fmt(rows[0].actual,1)} ha/fire. This is total reported hectares divided by accepted fire count.`:'No outcome is changed here. Reveal the previously evaluated annual observation.'}</p></div>
+    <div class="prediction-stage">${years(s.year)}<div class="prediction-chart">${predictionGraphic(rows,s.year)}</div><p class="context-note">Recorded mean = reported hectares ÷ accepted fire records.<br>Each bar is an annual mean, not the size of one fire.</p></div>
     <div class="final-readout"><p class="micro">MAE across six reused years · ha/fire</p>${rows.map((r,i)=>`<div class="result-row"><span>${['Training mean','QSVR · 4','RBF · 4'][i]}</span><strong>${fmt(r.mae,2)}</strong></div>`).join('')}<p class="final-verdict">No main model beats<br>the training mean.</p><p class="context-note">Same-year climate makes this retrospective. Six evaluation years were previously inspected. No quantum advantage is claimed.</p></div>`;
 }
 

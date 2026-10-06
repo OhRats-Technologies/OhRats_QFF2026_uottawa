@@ -1,0 +1,47 @@
+{
+  "study": "shallow-preparation-v1",
+  "parent_evidence_sha256": "6e731e706e546a61c0a37210bc86e41cb898f036646e16d62c5b060a54805836",
+  "dataset": "docs/data/forest_selector_scaling_training.csv",
+  "dataset_sha256": "acdf25db5d77510af958abc33aceceb870374208740f3a57d37e4758ac29e105",
+  "models": {
+    "ridge": {
+      "alpha": 1.0
+    },
+    "svr": {
+      "C": 1.0,
+      "epsilon": 0.2
+    }
+  },
+  "quantum": {
+    "angle_amplitude": 0.09817477042468103,
+    "reps": 1,
+    "kernel": "Actual FidelityQuantumKernel/QMLSampler analytic compute-uncompute, enforce_psd=False, linear ZZ",
+    "regressor": "Qiskit QSVR precomputed"
+  },
+  "seed": 137,
+  "optimization_calls": {
+    "1": 160,
+    "2": 240,
+    "3": 320
+  },
+  "shots": 1024,
+  "sampling_replicates": 20,
+  "budget": {
+    "model_fits": 216,
+    "optimizer_calls_max": 12960,
+    "hardware_jobs": 0
+  },
+  "code_paths": [
+    "wildfire_lab/shallow_selector.py",
+    "wildfire_lab/shallow_study.py",
+    "wildfire_lab/selector_scaling.py",
+    "wildfire_lab/selector_sector.py",
+    "wildfire_lab/selector_features.py",
+    "wildfire_lab/forest_models.py",
+    "wildfire_lab/annual_selectors.py",
+    "wildfire_lab/sqd_selection.py",
+    "wildfire_lab/selection.py",
+    "wildfire_lab/library_kernel.py"
+  ],
+  "policy": "Use the nine original training-only pool/fold cohorts. Two initializations: seeded random cardinality-four state (seed137+pool width), and classical MI ranking. First cost phase on a basis state is global and omitted; optimize2p\u22121 parameters at p1/2/3, one bounded start each. Record reachable numerical support and convergence; warm starts are explicitly classically informed. Equal1024 samples,20 paired MC replicates, real diagonal SQD representative check; fixed ridge/RBF/analytic QSVR on initial and sampled subsets. No hardware or final access; no quantum speedup."
+}

@@ -1,0 +1,95 @@
+{
+  "rows": [
+    {
+      "epoch": 1985,
+      "forest_closure": 33.022277926176095,
+      "forest_biomass": 35.86937520947861,
+      "forest_age": 45.890042336160995,
+      "forest_age_epoch": 1985,
+      "spruce_pine_share_of_three_species": 0.6686482196218928,
+      "species_common_samples": 4529102,
+      "prior_epoch_biomass_change_per_year": null,
+      "biomass_pair_samples": null
+    },
+    {
+      "epoch": 1990,
+      "forest_closure": 32.661683265247724,
+      "forest_biomass": 35.81274433651527,
+      "forest_age": 48.907074647201,
+      "forest_age_epoch": 1990,
+      "spruce_pine_share_of_three_species": 0.6690773760088417,
+      "species_common_samples": 4529102,
+      "prior_epoch_biomass_change_per_year": -0.011326174592667597,
+      "biomass_pair_samples": 4529102,
+      "previous_biomass_epoch": 1985
+    },
+    {
+      "epoch": 1995,
+      "forest_closure": 32.98701817711326,
+      "forest_biomass": 36.1636282424198,
+      "forest_age": 51.69210607032318,
+      "forest_age_epoch": 1995,
+      "spruce_pine_share_of_three_species": 0.6570149471964188,
+      "species_common_samples": 4529102,
+      "prior_epoch_biomass_change_per_year": 0.07017678118090517,
+      "biomass_pair_samples": 4529102,
+      "previous_biomass_epoch": 1990
+    },
+    {
+      "epoch": 2000,
+      "forest_closure": 32.96718797677774,
+      "forest_biomass": 35.70587856047402,
+      "forest_age": 54.381646032356116,
+      "forest_age_epoch": 2000,
+      "spruce_pine_share_of_three_species": 0.6521493261839706,
+      "species_common_samples": 4529102,
+      "prior_epoch_biomass_change_per_year": -0.09154993638915618,
+      "biomass_pair_samples": 4529102,
+      "previous_biomass_epoch": 1995
+    },
+    {
+      "epoch": 2005,
+      "forest_closure": 33.259069016330386,
+      "forest_biomass": 35.351145326380376,
+      "forest_age": 54.381646032356116,
+      "forest_age_epoch": 2000,
+      "spruce_pine_share_of_three_species": 0.6403995661063899,
+      "species_common_samples": 4529102,
+      "prior_epoch_biomass_change_per_year": -0.07094664681872918,
+      "biomass_pair_samples": 4529102,
+      "previous_biomass_epoch": 2000
+    },
+    {
+      "epoch": 2010,
+      "forest_closure": 34.09289391141997,
+      "forest_biomass": 35.98648319247392,
+      "forest_age": 54.381646032356116,
+      "forest_age_epoch": 2000,
+      "spruce_pine_share_of_three_species": 0.6343282460170919,
+      "species_common_samples": 4529102,
+      "prior_epoch_biomass_change_per_year": 0.1270675732187087,
+      "biomass_pair_samples": 4529102,
+      "previous_biomass_epoch": 2005
+    },
+    {
+      "epoch": 2015,
+      "forest_closure": 34.827931232284016,
+      "forest_biomass": 36.60909535709286,
+      "forest_age": 54.381646032356116,
+      "forest_age_epoch": 2000,
+      "spruce_pine_share_of_three_species": 0.6264981129406249,
+      "species_common_samples": 4529102,
+      "prior_epoch_biomass_change_per_year": 0.12452243292378931,
+      "biomass_pair_samples": 4529102,
+      "previous_biomass_epoch": 2010
+    }
+  ],
+  "source_sha256": "8771d7bae11cae8a81f97e0932d2251587f8deff37858ead1d0418fa5016d6da",
+  "summary_sha256": "84ce3d7e7669260eae881843ff43ab874e3a3fce6a3f0bd06c7bc150b91653c9",
+  "interpretation": "Selected-species share is spruce+pine/(broadleaf+spruce+pine), not all-conifer fraction, tree density, FBP fuel class or hazard. Biomass change uses the pairwise common footprint of two earlier epochs, not future-mask intersection or eventual recovery. Age uses only advertised-NEAREST epochs; latest eligible2000 remains stale thereafter.",
+  "annual_source_sha256": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+  "code_sha256": {
+    "scripts/context/forest_prepare.py": "a31094f31954474cd262440dc3de59f045da9953c6f7e2bf9a31f675c54dd213",
+    "wildfire_lab/forest_features.py": "6945c9f1a74580af9a35eb60c2243fdc97aaeadbaea057b7bdd8b44d4fb762f7"
+  }
+}

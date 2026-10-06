@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "revision": "08928099e8dde7f03b839c5bf5c8a891d553bab0",
+  "tracked_checkout": true,
+  "ignored_cache": false,
+  "credentials": false,
+  "dependency_interpreter": "Existing locked project interpreter reused; dependency installation not retested",
+  "studies": [
+    {
+      "prediction_equations": 189,
+      "optimizer_trace_records": 30011,
+      "preserved_sample_draws": 1152000,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_draws": 0,
+      "network_requests": 0,
+      "hardware_submissions": 0,
+      "status": "passed"
+    },
+    {
+      "selected_prediction_equations": 36,
+      "candidate_score_records": 11781,
+      "saved_predictor_fits": 35379,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_draws": 0,
+      "network_requests": 0,
+      "hardware_submissions": 0,
+      "status": "passed"
+    },
+    {
+      "selected_prediction_equations": 36,
+      "candidate_score_records": 13077,
+      "saved_predictor_fits": 39267,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_draws": 0,
+      "network_requests": 0,
+      "hardware_submissions": 0,
+      "status": "passed"
+    },
+    {
+      "selected_prediction_equations": 60,
+      "candidate_score_records": 21795,
+      "saved_predictor_fits": 65445,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_draws": 0,
+      "network_requests": 0,
+      "hardware_submissions": 0,
+      "status": "passed"
+    },
+    {
+      "prediction_equations": 216,
+      "optimizer_trace_records": 6218,
+      "preserved_draws": 1105920,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_draws": 0,
+      "network_requests": 0,
+      "hardware_submissions": 0,
+      "status": "passed"
+    },
+    {
+      "prediction_equations": 216,
+      "inner_fit_score_records": 216,
+      "optimizer_trace_records": 12960,
+      "preserved_draws": 368640,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_draws": 0,
+      "network_requests": 0,
+      "hardware_submissions": 0,
+      "status": "passed"
+    },
+    {
+      "status": "passed",
+      "study": "shallow-hardware-search",
+      "prediction_equations": 0,
+      "measured_count_rows": 66,
+      "physical_shots": 39936,
+      "charged_seconds": 18.0,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_samples": 0,
+      "hardware_jobs_submitted": 0
+    },
+    {
+      "status": "passed",
+      "study": "basis-confirmation-quebec",
+      "prediction_equations": 0,
+      "measured_count_rows": 18,
+      "physical_shots": 21504,
+      "charged_seconds": 10.0,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_samples": 0,
+      "hardware_jobs_submitted": 0
+    },
+    {
+      "status": "passed",
+      "study": "basis-confirmation-marrakesh",
+      "prediction_equations": 0,
+      "measured_count_rows": 18,
+      "physical_shots": 21504,
+      "charged_seconds": 10.0,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_samples": 0,
+      "hardware_jobs_submitted": 0
+    },
+    {
+      "status": "passed",
+      "study": "tuned-kernel-hardware",
+      "prediction_equations": 30,
+      "measured_count_rows": 0,
+      "physical_shots": 136704,
+      "charged_seconds": 44.0,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_samples": 0,
+      "hardware_jobs_submitted": 0
+    }
+  ]
+}

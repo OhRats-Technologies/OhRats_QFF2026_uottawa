@@ -85,12 +85,12 @@ for(const year of [2019,2020,2021,2022,2023,2024]){
   await page.locator(`[data-year="${year}"]`).click();
   const rows=predictionRows(evidence,year);
   const shown=await page.locator('.bar-value').allTextContents();
-  assert.deepEqual(shown.slice(0,3),rows.map(r=>r.value.toFixed(1)));
+  assert.deepEqual(shown,[...rows.map(r=>r.value),rows[0].actual].map(v=>v.toFixed(1)));
+  assert.equal(await page.locator('.series-3').count(),1);
 }
 await page.locator('[data-year="2021"]').click();
-await page.locator('[data-reveal]').click();
 assert.equal(await page.locator('.series-3').count(),1);
-assert.match(await page.locator('.prediction-stage>.context-note').innerText(),/657.0 ha\/fire/);
+assert.match(await page.locator('.prediction-stage>.context-note').innerText(),/annual mean, not the size of one fire/);
 await page.locator('#details').click();
 assert.equal(await page.locator('#notes').evaluate(e=>e.open),true);
 await page.keyboard.press('Escape');

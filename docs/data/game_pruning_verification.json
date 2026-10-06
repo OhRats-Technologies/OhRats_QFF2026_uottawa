@@ -1,0 +1,62 @@
+{
+  "recipe": "fireline-season-20261006-v2",
+  "rule_tests": 14,
+  "expectations": 177,
+  "control_driven_play": [
+    {
+      "seed": 7,
+      "policy": "idle",
+      "status": "lost",
+      "integrity": 31.70602400005359,
+      "turns": 5,
+      "contained": 0
+    },
+    {
+      "seed": 2,
+      "policy": "triage",
+      "status": "won",
+      "integrity": 85.49657113131184,
+      "turns": 12,
+      "contained": 11
+    }
+  ],
+  "compact_views": [
+    {
+      "width": 1280,
+      "height": 720,
+      "visible": true,
+      "scroll": 0,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "visible": true,
+      "scroll": 0,
+      "horizontalOverflow": false
+    },
+    {
+      "width": 1440,
+      "height": 820,
+      "visible": true,
+      "scroll": 0,
+      "horizontalOverflow": false
+    }
+  ],
+  "browser_errors": [],
+  "old_rule_audit_refuses_current_hashes_before_output_creation": true,
+  "old_season_recipe_rejected_in_fixture": true,
+  "two_costed_response_actions": true,
+  "source_hashes": {
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/strategy/check.mjs": "0fe3ab2617f7c7c3e242aa3e10b6688fe53698e2e4a8b4832fbe5ce039039361",
+    "web/demo/strategy/scouting-audit.js": "308392dbd06fce60c1b7a78d2d7c47382ad6af2e51cc77cbf71fcbf8e3326128"
+  },
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "limitation": "Toy-game balance and browser behavior, not human fun or operational prediction validation."
+}

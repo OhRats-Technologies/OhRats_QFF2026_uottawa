@@ -1,0 +1,124 @@
+#markers .fire {
+  pointer-events: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffc594;
+  display: grid;
+  place-items: center;
+  z-index: 3;
+  isolation: isolate;
+}
+.fire::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 8px;
+  background: var(--red);
+  border-radius: 50%;
+  box-shadow: 0 0 13px #ff602b99;
+}
+.fire::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 1px solid #f68c5799;
+  border-radius: 50%;
+  animation: ping 3s ease-out infinite;
+}
+.fire.selected {
+  z-index: 5 !important;
+  outline: 1px solid #f5d1a1;
+  outline-offset: 4px;
+}
+.fire.selected::before {
+  background: #f7cf92;
+}
+.fire.has-crew::before {
+  box-shadow:
+    0 0 0 3px #a5e0ca,
+    0 0 12px #ff602b99;
+}
+.fire.contained::before {
+  background: #92cbae;
+  box-shadow: none;
+  inset: 11px;
+}
+.fire.contained::after {
+  animation: none;
+  border-color: #92cbae55;
+  inset: 7px;
+}
+.fire-number {
+  font-size: 8px;
+  position: relative;
+  z-index: 2;
+  color: #0a171b;
+  font-weight: 700;
+}
+.fire.contained .fire-number {
+  font-size: 11px;
+}
+.fire-crew {
+  position: absolute;
+  right: -3px;
+  bottom: -1px;
+  display: grid;
+  place-items: center;
+  width: 13px;
+  height: 13px;
+  background: var(--bg);
+  color: var(--mint);
+  border: 1px solid var(--mint);
+  border-radius: 2px;
+  font-size: 8px;
+  font-weight: 700;
+  z-index: 3;
+}
+.fire:hover .fire-name,
+.fire:focus-visible .fire-name {
+  opacity: 1;
+  transform: translate(var(--label-shift, -50%), 0);
+}
+.fire-name {
+  position: absolute;
+  left: var(--label-left, 50%);
+  bottom: 37px;
+  white-space: pre-line;
+  width: max-content;
+  max-width: 180px;
+  text-align: center;
+  font-size: 10px;
+  background: #0a171bee;
+  border: 1px solid var(--line);
+  padding: 5px 8px;
+  opacity: 0;
+  transform: translate(var(--label-shift, -50%), 4px);
+  transition: 0.2s;
+  pointer-events: none;
+  color: var(--ink);
+}
+.city {
+  position: absolute;
+  transform: translate(-4px, -4px);
+  font-size: 9px;
+  white-space: nowrap;
+  color: #d4e2da;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-shadow: 0 1px 4px #000;
+}
+.city::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #b1cac0;
+}

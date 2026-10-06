@@ -1,0 +1,19 @@
+{
+  "status": "verified",
+  "result_sha256": "f0e1a15641b9984d3d78c36a62de75c36b1671509d715a9d2ed0e9eb1bbad788",
+  "saved_predictions": 156,
+  "saved_kernels": 12,
+  "pair_circuits_in_original_run": 4204,
+  "new_fits": 0,
+  "new_quantum_states": 0,
+  "hardware_jobs": 0,
+  "checks": [
+    "source/code hashes",
+    "strict prior-epoch join",
+    "years/truth",
+    "saved prediction metrics",
+    "matrix hashes/PSD",
+    "contrasts",
+    "width placebo"
+  ]
+}

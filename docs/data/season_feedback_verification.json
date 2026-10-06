@@ -1,0 +1,211 @@
+{
+  "checked_utc": "2026-10-06T08:42:17.446Z",
+  "status": "passed",
+  "source_sha256": {
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/strategy/ui.js": "e9bb707ce395342e825cbfd5166c7796ab82ecd59aad02fb89a3732c8c4c5fc2",
+    "web/demo/strategy/main.js": "9653e701d49cea13098a47ed15721edeaa6193235552ab520ec4bb5504726705",
+    "web/demo/strategy/debrief.js": "55b58759d13a67c586d70b1533140042842a578cc7598e87a8d61df7be56943c",
+    "web/demo/strategy/terminal-check.mjs": "2addad9a65fc2729bcfb0331f7914206c8dc84a554a4311e133fea8f7dbdfabb",
+    "web/demo/assets/strategy.js": "9ea6adf67faeb7ae49ebb150a9959e9096790a5c05bec7b79a970666ee653e6e",
+    "web/demo/index.html": "6093b5b65b17a740c8841373303f520d0dd602273f103ae12a8060d10283c3e6",
+    "web/demo/strategy/styles/dialogs.css": "89573b48fb6f46c2c9c858ee833048779d8d0265de8f2ae5aaab872f2952c93f"
+  },
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "seed": 2,
+      "status": "won",
+      "completed_fronts": 12,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "new_seed",
+      "recorded_impact": 14.503428868688164,
+      "top_fire_ids": [
+        11,
+        10,
+        9
+      ],
+      "peak_front": 9,
+      "report_frame": {
+        "x": 330,
+        "y": 43.25,
+        "width": 620,
+        "height": 633.5
+      },
+      "opening": {
+        "scrollTop": 0,
+        "scrollHeight": 632,
+        "clientHeight": 632,
+        "titleFocused": true
+      }
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "seed": 7,
+      "status": "lost",
+      "completed_fronts": 5,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "same_seed",
+      "recorded_impact": 68.2939759999464,
+      "top_fire_ids": [
+        3,
+        2,
+        1
+      ],
+      "peak_front": 5,
+      "report_frame": {
+        "x": 330,
+        "y": 43.25,
+        "width": 620,
+        "height": 633.5
+      },
+      "opening": {
+        "scrollTop": 0,
+        "scrollHeight": 632,
+        "clientHeight": 632,
+        "titleFocused": true
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "seed": 2,
+      "status": "won",
+      "completed_fronts": 12,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "new_seed",
+      "recorded_impact": 14.503428868688164,
+      "top_fire_ids": [
+        11,
+        10,
+        9
+      ],
+      "peak_front": 9,
+      "report_frame": {
+        "x": 202,
+        "y": 67.25,
+        "width": 620,
+        "height": 633.5
+      },
+      "opening": {
+        "scrollTop": 0,
+        "scrollHeight": 632,
+        "clientHeight": 632,
+        "titleFocused": true
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "seed": 7,
+      "status": "lost",
+      "completed_fronts": 5,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "same_seed",
+      "recorded_impact": 68.2939759999464,
+      "top_fire_ids": [
+        3,
+        2,
+        1
+      ],
+      "peak_front": 5,
+      "report_frame": {
+        "x": 202,
+        "y": 67.25,
+        "width": 620,
+        "height": 633.5
+      },
+      "opening": {
+        "scrollTop": 0,
+        "scrollHeight": 632,
+        "clientHeight": 632,
+        "titleFocused": true
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "seed": 2,
+      "status": "won",
+      "completed_fronts": 12,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "new_seed",
+      "recorded_impact": 14.503428868688164,
+      "top_fire_ids": [
+        11,
+        10,
+        9
+      ],
+      "peak_front": 9,
+      "report_frame": {
+        "x": 18,
+        "y": 116.484375,
+        "width": 354,
+        "height": 611.03125
+      },
+      "opening": {
+        "scrollTop": 0,
+        "scrollHeight": 609,
+        "clientHeight": 609,
+        "titleFocused": true
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "seed": 7,
+      "status": "lost",
+      "completed_fronts": 5,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "same_seed",
+      "recorded_impact": 68.2939759999464,
+      "top_fire_ids": [
+        3,
+        2,
+        1
+      ],
+      "peak_front": 5,
+      "report_frame": {
+        "x": 18,
+        "y": 116.484375,
+        "width": 354,
+        "height": 611.03125
+      },
+      "opening": {
+        "scrollTop": 0,
+        "scrollHeight": 609,
+        "clientHeight": 609,
+        "titleFocused": true
+      }
+    }
+  ],
+  "errors": [],
+  "game_rule_changes": false,
+  "predictor_fits": 0,
+  "qiskit_statevector_executions": 0,
+  "hardware_jobs": 0,
+  "scope": "Actual control-driven winning/losing endings at three viewports. Per-fire sums agree with stored front damage, peak front/ranked contributions are displayed, reports preserve moves across close/reopen/reload/retry. Reduced motion and external-font failure covered; no new balance estimate, human enjoyment trial, causal response effect or real fire validation."
+}

@@ -1,8 +1,8 @@
 # Wildfire data schema and source mapping
 
-The earlier scope assessment below describes the 1 PM run. The owner authorized a new annual study through 5 PM; [current annual implementation and measured progress](ANNUAL_QSVR.md) supersede its unrun status as milestones finish.
+The annual climate/fire comparison is complete. [Measured annual results](ANNUAL_QSVR.md) supersede the earlier unrun macro assessment; the incident tables below remain a supporting branch.
 
-Version 5 · 5 October 2026 · Ontario first. Annual climate/fire aggregation is implemented in `wildfire_lab/annual_data.py`, with [31-row training data](data/annual_training.csv) and [measured regressions](ANNUAL_QSVR.md). The existing pipeline implements station-month CSVs and a supporting NFDB incident-classification CSV with hash-linked manifests. The relational design below also describes future update/availability tables; those are not all materialized.
+Version 9 · 6 October 2026 · Ontario first. Annual climate/fire aggregation is implemented in `wildfire_lab/annual_data.py`, with [31-row training data](data/annual_training.csv) and [measured regressions](ANNUAL_QSVR.md). The pipeline also implements station-month CSVs, a supporting NFDB incident-classification CSV and separate forest-context replicas with hash-linked manifests. Future update/availability relations below are not all materialized.
 
 ## Sources and observation units
 
@@ -15,11 +15,11 @@ Version 5 · 5 October 2026 · Ontario first. Annual climate/fire aggregation is
 
 Training: **1988–2018 inclusive (31 calendar years)**. Testing: **2019–2024**. Woodland cutoff **2022** is accepted. Historical fire aggregates exist before 2010. Incident/per-date records support source auditing and annual aggregation; they do not require an incident-level prediction target. Audited NFDB points are selected for historical incident labels; operational update history remains unresolved before 2010. Missing incident records are not evidence of zero fires. See [coverage and acquisition](DATA_DOWNLOADS.md).
 
-Keep raw files unchanged under ignored `data/`. Curated tables and training outputs also remain ignored. Commit schemas, import code, configurations and compact aggregate audits. The owner delegated historical source choice; NRCan NFDB points are now selected. Other source additions require an explicit scope decision.
+Keep raw files unchanged under ignored `data/`. Curated tables and training outputs also remain ignored. Commit schemas, import code, configurations and compact aggregate audits. The owner delegated historical source choice and subsequently authorized the [forest-context acquisition](FOREST_CONTEXT.md) below. This scope does not permit replacing frozen scientific inputs.
 
 ## Annual modelling contract · climate/fire implemented
 
-One modelling row is **Ontario × year**, giving 31 training and six reused test-year rows. Defined regions are a separate optional design, not additional independent years. The frozen primary outcome is annual mean reported size over size-observed incidents. Same-year climate gives retrospective annual estimation; prior-year context is an explicit sensitivity. The annual CSV retains counts, exclusions, total size, ten climate predictors and eligible station counts. Provincial woodland aggregation is the remaining optional preparation stage.
+One modelling row is **Ontario × year**, giving 31 training and six reused test-year rows. Defined regions are a separate optional design, not additional independent years. The frozen primary outcome is annual mean reported size over size-observed incidents. Same-year climate gives retrospective annual estimation; prior-year context is an explicit sensitivity. The annual CSV retains counts, exclusions, total size, ten climate predictors and eligible station counts. Coarse provincial height summaries are prepared separately; native area-weighted annual cover fractions remain an optional unimplemented stage.
 
 | Field group | Required meaning |
 |---|---|
@@ -30,6 +30,35 @@ One modelling row is **Ontario × year**, giving 31 training and six reused test
 | Timing | Predictor availability/horizon; same-year full climate summaries imply retrospective analysis, not an advance annual forecast |
 
 Build annual labels from audited source incidents under macro-specific rules. Coordinate, weather-distance and buffer filters needed by incident joins must not silently remove fire contributions from province totals. Missing size is not zero size; missing reporting is not zero activity. Preserve prescribed-fire/identity policies with explicit annual denominators. [Scope correction](SCOPE_CORRECTION.md) · [required experiment](EXPERIMENTS.md).
+
+## Numerical forest predictors and selector pools
+
+The separately frozen [forest expansion](FOREST_CONTEXT.md) stores 42 layer×epoch source records in `forest_feature_sources.json`: exact URLs/range hashes, native custom-LCC grid, signed datatype/nodata, selected coarse frame and ROI-array hashes. `forest_feature_summary.json` supplies units, masks, valid/zero fractions, mean/percentiles and **model_eligible**. Byte fields use nodata255; biomass/age use signed −32768. Closure/biomass/species are 480m nearest samples; age is 960m. Three later age epochs have missing resampling metadata and are descriptive only.
+
+`forest_expansion_training.csv` is **31 Ontario-year rows, 1988–2018**, retaining original climate/target fields plus dated forest closure, biomass, eligible age, selected-species share, biomass-change and lag fire-area proxies. `forest_epoch < year`; `forest_age_epoch` can be older (latest eligible2000), with explicit staleness. Biomass change uses two preceding epochs' pairwise common valid footprint. Fire memory maps **year−1 by identity**, leaving1988 missing for fold-local imputation; no positional shift across gaps. Calendar/zero columns are diagnostic controls, not added measurements.
+
+`forest_selector_scaling_training.csv` separately adds the three absolute species-closure means and `lag_recorded_incidents`; the plan defines nested **10/16/20 candidate pools** using six additional original climate fields. Selectors choose four inclusion bits, so logical selector widths10/16/20 differ from four-qubit downstream QSVR. The first count lag is missing; no current-year fire outcomes enter predictors. Metadata and eligible-station counts do not silently become model inputs.
+
+All means are province-wide **valid coarse-sample summaries**, retaining valid zeros, not forest-only/native area-weighted inventories. Species closure is absolute%, not complete proportions/fuel types; the ratio omits other species. SCANFI full-series reconstruction uses future imagery, so strict prior-epoch joins still support retrospective investigation rather than historical as-of forecasting. Prior-year fire labels become available between validation years; they do not implement a fixed-origin multiyear forecast. WMS colours/static2026/Quebec-only/same-event recovery remain excluded from numeric predictor evidence.
+
+## Prepared forest-context contract
+
+`asset-manifest.json.rendering` identifies and checks the current renderer source SHA. Empty, missing or mismatched producer hashes are rejected. The viewer uses [height metadata v2](../web/demo/assets/context/height-series-v2.json), a provenance correction with identical numerical/image records; the original manifest remains a frozen study parent. [Correction and reconstruction checks](data/height_renderer_provenance.json).
+
+`scripts/context/pipeline.py prepare` writes to ignored `.cache/context/prepared-replica/`; raw response bytes stay in `.cache/context/source-replica/`. `asset-manifest.json` version 1 indexes relative paths, byte sizes, SHA-256s, numeric/display grids and parent receipts. It checks asset hashes against the available rendering receipts; the extraction/grid audit remains separate. `scripts/context/manifest.py --prepared <ignored-directory>` indexes existing outputs without downloading, fitting or changing published evidence.
+
+| Artifact / observation unit | Type and grid | Meaning / missing values |
+|---|---|---|
+| `arrays/<epoch>.npz`: SCANFI sample × epoch | `height`: uint8 2D; `inside`: bool 2D; `transform`: nine row-major affine values; `crs`: scalar WKT string | Height in metres, epochs 1985–2015 every five years. `255` is nodata; zero is valid. Mask excludes locations outside Ontario. Source 30 m NEAREST overviews retain samples at 480 m, not area means. |
+| `height-context.json`: Ontario × epoch | Seven summary rows plus shape/affine/CRS and city controls | Common-valid-footprint mean/percentiles and counts. Province includes water; means are not forest-only, tree density or seven independent annual measurements. |
+| `maps/height-<epoch>.png`, `height-series.json` | Styled RGBA on 1118 × 1200 EPSG:3978 display grid, fixed 0–30+ m colour scale | Dated presentation context. Grey denotes nodata; transparent outside province. Read numeric NPZ samples for measurements, never infer values from RGB. |
+| `maps/{canopy,lorey,recovery,water,fuel}.png`, `layers.json` | Optional styled WMS RGBA on the same display grid, with legends | Dated 2015/2015/2017/2022/2026 context; `numeric_predictor=false`. Colours are styles, not numeric bands. Recovery includes censored classes; fuel classes are categorical; water is not soil moisture. |
+
+Optional `--include-change` adds `change/height-change.npz`: signed int16 metres (2015 minus 1985), nodata −32768, valid zero, common seven-epoch mask and the saved native affine/WKT. `change/summary.json` pins the plan, producers and seven inputs; histogram and styled PNG/legend are separately typed/hash-checked. Numerical extremes are retained; colour saturates at ±10 m. Differences are retrospective estimates, not measured growth/disturbance or predictor improvements. [Interpretation](FOREST_CONTEXT.md#spatial-differences-behind-a-small-mean).
+
+SCANFI's native CRS has latitude of origin **0°**; it is **not EPSG:3978**. Use the saved WKT/affine for numeric sampling and explicitly reproject into the display CRS. The standalone overview omits georeferencing; its validated native-header relationship is retained in `layouts.json`. Longitude/latitude inputs use explicit x/y order. Boundary/city controls and source hashes are in the [extraction receipt](data/scanfi_height_context.json); the [fresh replica verification](data/context_replica_verification.json) compares arrays, grids and rendered outputs.
+
+For the separate [training-only height pilot](FOREST_CONTEXT.md#fixed-annual-comparison), join Ontario years to the latest epoch **strictly before** that year and retain the chosen epoch. Do not interpolate unobserved yearly maps or fill nodata with zero. Full-series reconstruction and common masking use later observations, so a prior map year is not proof of historical availability. The coarse pilot neither improves the main claim nor replaces the frozen annual tables. Game weather, fuel pressure and interventions are synthetic game units; these dated display layers do not drive simulated fire growth.
 
 ## Implemented supporting incident branch
 

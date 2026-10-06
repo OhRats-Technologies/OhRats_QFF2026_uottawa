@@ -1,0 +1,108 @@
+{
+  "checked_utc": "2026-10-06T09:04:23.839Z",
+  "status": "passed",
+  "baseline": {
+    "commit": "2da8cd8",
+    "viewport": [
+      320,
+      568
+    ],
+    "rail": {
+      "x": 72.234375,
+      "y": 521.5,
+      "width": 36.765625,
+      "height": 2
+    },
+    "hit_ids": [
+      "advance",
+      "advance"
+    ],
+    "save_unchanged": true,
+    "wrong_target_gesture_not_dispatched": true,
+    "source_sha256": {
+      "web/demo/index.html": "6093b5b65b17a740c8841373303f520d0dd602273f103ae12a8060d10283c3e6",
+      "web/demo/assets/strategy.js": "9ea6adf67faeb7ae49ebb150a9959e9096790a5c05bec7b79a970666ee653e6e",
+      "web/demo/strategy/styles/instruments.css": "068660fd230fecf947f226836615fedbe11df0bb95da5ae9272a48e57ea9fc77"
+    },
+    "scope": "Minimum authoring scroll leaves the old rail behind the sticky Advance button; manual additional scrolling was not ruled out."
+  },
+  "source_sha256": {
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/strategy/slider.js": "9db690516a610a76b910e4814205b4fff3c5b2c282e9f035cd7e3f0df7458f8a",
+    "web/demo/strategy/marker-picker.js": "a1490cf4a08a7304d027ac736ba80c2f57c59ca784d27e140955deef2a079fc4",
+    "web/demo/strategy/main.js": "55c79d3ea7a04b56f79a8ffa8204837e035d217b8914882763734568c1f42d1a",
+    "web/demo/strategy/touch-check.mjs": "e8f09542d92ccd8f7f9341ac9aa925c14363d13f0b0a271f6e84a6fdfa9a8a2b",
+    "web/demo/index.html": "7b5b66c5c53b86ca522be1c7fe817bc222a6445b2939c1d67405bafaa099e5b0",
+    "web/demo/assets/strategy.js": "4d4d0223847599ed4f724a2d5aa51e7e28fbc6f35937d7aa0941067c9b6c3293",
+    "web/demo/assets/context/scenario.json": "466bd0172a7172a421330d1940e2999f5ef2c0cb59c123f4bc3e6c63a2d6593d",
+    "web/demo/strategy/styles/instruments.css": "6ab92f5f2144960abe5e9cefcea4eab2c12ab10c6e10b5111e9d578d13b9f8ad",
+    "web/demo/strategy/styles/responsive.css": "96f4c5aeb54dfeb185cdfd540267bc98e13f2d4d6d906e8b4d331ce11b1abd14"
+  },
+  "results": [
+    {
+      "width": 390,
+      "height": 844,
+      "reduced_motion": "no-preference",
+      "seed": 7,
+      "completed_fronts": 10,
+      "accepted_moves": 27,
+      "move_replay_exact": true,
+      "touch_events": 64,
+      "every_observed_pointer_was_touch": true,
+      "vertical_page_swipe": true,
+      "late_overlap_selection": 13,
+      "inspections": [
+        {
+          "width": 390,
+          "height": 844,
+          "slider_value": 0.9,
+          "slider_scroll_unchanged": true,
+          "slider_rail_width": 125,
+          "inspection_save_unchanged": true,
+          "native_select_via_authoring_api": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "slider_value": 0.9,
+          "slider_scroll_unchanged": true,
+          "slider_rail_width": 43.375,
+          "inspection_save_unchanged": true,
+          "native_select_via_authoring_api": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "reduced_motion": "reduce",
+      "seed": 7,
+      "completed_fronts": 10,
+      "accepted_moves": 27,
+      "move_replay_exact": true,
+      "touch_events": 56,
+      "every_observed_pointer_was_touch": true,
+      "vertical_page_swipe": true,
+      "late_overlap_selection": 13,
+      "inspections": [
+        {
+          "width": 320,
+          "height": 568,
+          "slider_value": 0.9,
+          "slider_scroll_unchanged": true,
+          "slider_rail_width": 90,
+          "inspection_save_unchanged": true,
+          "native_select_via_authoring_api": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "predictor_fits": 0,
+  "quantum_circuit_executions": 0,
+  "hardware_jobs": 0,
+  "scope": "Chromium mobile touch emulation on a Mac: actual taps and CDP touch gestures, two ten-front histories and portrait-to-landscape resize. Offscreen locators auto-scroll; native select uses authoring API. No physical touch, OS picker, human enjoyment or broad device certification."
+}

@@ -1,0 +1,817 @@
+{
+  "status": "published",
+  "study": "selector-scaling",
+  "bundle": "docs/data/selector-scaling-evidence.zip",
+  "bundle_sha256": "635b0e0c56c1f237a5a42e549f1ab3d1c3461f685522287a695cd6266113f937",
+  "evidence_sha256": "6e731e706e546a61c0a37210bc86e41cb898f036646e16d62c5b060a54805836",
+  "audit": {
+    "status": "verified",
+    "predictor_equations_checked": 162,
+    "kernel_records_checked": 54,
+    "sampling_count_records_checked": 1440,
+    "sqd_records_checked": 36,
+    "saved_pair_circuits": 18918,
+    "new_predictor_fits": 0,
+    "new_quantum_evaluations": 0,
+    "new_draws": 0,
+    "limitation": "Checks saved costs/count minima, probability arithmetic, train-only scaling and fit equations; does not regenerate quantum states, MI objectives or kernels, rerun optimizers or establish independent validation."
+  },
+  "aggregate": [
+    {
+      "pool_size": 10,
+      "selector": "exact",
+      "model": "qsvr",
+      "mae_ha": 70.87674238188829,
+      "rmse_ha": 103.15961083685279
+    },
+    {
+      "pool_size": 10,
+      "selector": "exact",
+      "model": "rbf",
+      "mae_ha": 73.08040611968809,
+      "rmse_ha": 106.4062958803939
+    },
+    {
+      "pool_size": 10,
+      "selector": "exact",
+      "model": "ridge",
+      "mae_ha": 68.89703057964407,
+      "rmse_ha": 99.65596096307746
+    },
+    {
+      "pool_size": 10,
+      "selector": "fixed",
+      "model": "qsvr",
+      "mae_ha": 68.10448354621934,
+      "rmse_ha": 100.10036519188837
+    },
+    {
+      "pool_size": 10,
+      "selector": "fixed",
+      "model": "rbf",
+      "mae_ha": 73.0414343956632,
+      "rmse_ha": 104.05178819624827
+    },
+    {
+      "pool_size": 10,
+      "selector": "fixed",
+      "model": "ridge",
+      "mae_ha": 69.02227970152482,
+      "rmse_ha": 99.70520738394573
+    },
+    {
+      "pool_size": 10,
+      "selector": "mi",
+      "model": "qsvr",
+      "mae_ha": 71.5180601407326,
+      "rmse_ha": 103.99332900631072
+    },
+    {
+      "pool_size": 10,
+      "selector": "mi",
+      "model": "rbf",
+      "mae_ha": 67.97615123648279,
+      "rmse_ha": 100.24875987933852
+    },
+    {
+      "pool_size": 10,
+      "selector": "mi",
+      "model": "ridge",
+      "mae_ha": 66.90279655602355,
+      "rmse_ha": 97.58494961997702
+    },
+    {
+      "pool_size": 10,
+      "selector": "optimized1",
+      "model": "qsvr",
+      "mae_ha": 70.87674238188829,
+      "rmse_ha": 103.15961083685279
+    },
+    {
+      "pool_size": 10,
+      "selector": "optimized1",
+      "model": "rbf",
+      "mae_ha": 73.08040611968809,
+      "rmse_ha": 106.4062958803939
+    },
+    {
+      "pool_size": 10,
+      "selector": "optimized1",
+      "model": "ridge",
+      "mae_ha": 68.89703057964407,
+      "rmse_ha": 99.65596096307746
+    },
+    {
+      "pool_size": 10,
+      "selector": "optimized2",
+      "model": "qsvr",
+      "mae_ha": 70.87674238188829,
+      "rmse_ha": 103.15961083685279
+    },
+    {
+      "pool_size": 10,
+      "selector": "optimized2",
+      "model": "rbf",
+      "mae_ha": 73.08040611968809,
+      "rmse_ha": 106.4062958803939
+    },
+    {
+      "pool_size": 10,
+      "selector": "optimized2",
+      "model": "ridge",
+      "mae_ha": 68.89703057964407,
+      "rmse_ha": 99.65596096307746
+    },
+    {
+      "pool_size": 10,
+      "selector": "uniform",
+      "model": "qsvr",
+      "mae_ha": 70.87674238188829,
+      "rmse_ha": 103.15961083685279
+    },
+    {
+      "pool_size": 10,
+      "selector": "uniform",
+      "model": "rbf",
+      "mae_ha": 73.08040611968809,
+      "rmse_ha": 106.4062958803939
+    },
+    {
+      "pool_size": 10,
+      "selector": "uniform",
+      "model": "ridge",
+      "mae_ha": 68.89703057964407,
+      "rmse_ha": 99.65596096307746
+    },
+    {
+      "pool_size": 16,
+      "selector": "exact",
+      "model": "qsvr",
+      "mae_ha": 69.56691979612759,
+      "rmse_ha": 103.51233486240251
+    },
+    {
+      "pool_size": 16,
+      "selector": "exact",
+      "model": "rbf",
+      "mae_ha": 79.21283438532289,
+      "rmse_ha": 111.86935711697915
+    },
+    {
+      "pool_size": 16,
+      "selector": "exact",
+      "model": "ridge",
+      "mae_ha": 64.62830719753387,
+      "rmse_ha": 95.49211433833447
+    },
+    {
+      "pool_size": 16,
+      "selector": "fixed",
+      "model": "qsvr",
+      "mae_ha": 72.93083751062747,
+      "rmse_ha": 106.07397577125816
+    },
+    {
+      "pool_size": 16,
+      "selector": "fixed",
+      "model": "rbf",
+      "mae_ha": 75.95218951852202,
+      "rmse_ha": 107.85687340703781
+    },
+    {
+      "pool_size": 16,
+      "selector": "fixed",
+      "model": "ridge",
+      "mae_ha": 68.21699533323138,
+      "rmse_ha": 99.77075065655917
+    },
+    {
+      "pool_size": 16,
+      "selector": "mi",
+      "model": "qsvr",
+      "mae_ha": 71.19976357113315,
+      "rmse_ha": 103.98341108667724
+    },
+    {
+      "pool_size": 16,
+      "selector": "mi",
+      "model": "rbf",
+      "mae_ha": 75.20360327360528,
+      "rmse_ha": 105.17345116248129
+    },
+    {
+      "pool_size": 16,
+      "selector": "mi",
+      "model": "ridge",
+      "mae_ha": 67.19138269879015,
+      "rmse_ha": 97.82806648434537
+    },
+    {
+      "pool_size": 16,
+      "selector": "optimized1",
+      "model": "qsvr",
+      "mae_ha": 71.99942480133605,
+      "rmse_ha": 105.09880570762488
+    },
+    {
+      "pool_size": 16,
+      "selector": "optimized1",
+      "model": "rbf",
+      "mae_ha": 77.71778309690818,
+      "rmse_ha": 109.40303797869063
+    },
+    {
+      "pool_size": 16,
+      "selector": "optimized1",
+      "model": "ridge",
+      "mae_ha": 65.33747378768334,
+      "rmse_ha": 97.04293229069243
+    },
+    {
+      "pool_size": 16,
+      "selector": "optimized2",
+      "model": "qsvr",
+      "mae_ha": 71.33994714406542,
+      "rmse_ha": 105.64121710411614
+    },
+    {
+      "pool_size": 16,
+      "selector": "optimized2",
+      "model": "rbf",
+      "mae_ha": 75.4848034200201,
+      "rmse_ha": 107.408240308978
+    },
+    {
+      "pool_size": 16,
+      "selector": "optimized2",
+      "model": "ridge",
+      "mae_ha": 61.6073666607397,
+      "rmse_ha": 92.63949050046085
+    },
+    {
+      "pool_size": 16,
+      "selector": "uniform",
+      "model": "qsvr",
+      "mae_ha": 69.56691979612759,
+      "rmse_ha": 103.51233486240251
+    },
+    {
+      "pool_size": 16,
+      "selector": "uniform",
+      "model": "rbf",
+      "mae_ha": 79.21283438532289,
+      "rmse_ha": 111.86935711697915
+    },
+    {
+      "pool_size": 16,
+      "selector": "uniform",
+      "model": "ridge",
+      "mae_ha": 64.62830719753387,
+      "rmse_ha": 95.49211433833447
+    },
+    {
+      "pool_size": 20,
+      "selector": "exact",
+      "model": "qsvr",
+      "mae_ha": 85.34569336088985,
+      "rmse_ha": 120.35649447614963
+    },
+    {
+      "pool_size": 20,
+      "selector": "exact",
+      "model": "rbf",
+      "mae_ha": 89.31716429272468,
+      "rmse_ha": 121.88943972686262
+    },
+    {
+      "pool_size": 20,
+      "selector": "exact",
+      "model": "ridge",
+      "mae_ha": 93.2872961202837,
+      "rmse_ha": 127.87315927032758
+    },
+    {
+      "pool_size": 20,
+      "selector": "fixed",
+      "model": "qsvr",
+      "mae_ha": 80.58717039480449,
+      "rmse_ha": 114.84352903958164
+    },
+    {
+      "pool_size": 20,
+      "selector": "fixed",
+      "model": "rbf",
+      "mae_ha": 84.81029651268626,
+      "rmse_ha": 117.1125796517681
+    },
+    {
+      "pool_size": 20,
+      "selector": "fixed",
+      "model": "ridge",
+      "mae_ha": 75.42894199387912,
+      "rmse_ha": 109.57819349727872
+    },
+    {
+      "pool_size": 20,
+      "selector": "mi",
+      "model": "qsvr",
+      "mae_ha": 84.14519833429924,
+      "rmse_ha": 117.67166960230156
+    },
+    {
+      "pool_size": 20,
+      "selector": "mi",
+      "model": "rbf",
+      "mae_ha": 75.53934842067517,
+      "rmse_ha": 107.5470744711517
+    },
+    {
+      "pool_size": 20,
+      "selector": "mi",
+      "model": "ridge",
+      "mae_ha": 88.37569102567063,
+      "rmse_ha": 120.00665422006311
+    },
+    {
+      "pool_size": 20,
+      "selector": "optimized1",
+      "model": "qsvr",
+      "mae_ha": 74.85377219496651,
+      "rmse_ha": 111.62968847306429
+    },
+    {
+      "pool_size": 20,
+      "selector": "optimized1",
+      "model": "rbf",
+      "mae_ha": 93.32300629127552,
+      "rmse_ha": 128.49474448982963
+    },
+    {
+      "pool_size": 20,
+      "selector": "optimized1",
+      "model": "ridge",
+      "mae_ha": 74.79448813397444,
+      "rmse_ha": 107.7210024736943
+    },
+    {
+      "pool_size": 20,
+      "selector": "optimized2",
+      "model": "qsvr",
+      "mae_ha": 85.34569336088985,
+      "rmse_ha": 120.35649447614963
+    },
+    {
+      "pool_size": 20,
+      "selector": "optimized2",
+      "model": "rbf",
+      "mae_ha": 89.31716429272468,
+      "rmse_ha": 121.88943972686262
+    },
+    {
+      "pool_size": 20,
+      "selector": "optimized2",
+      "model": "ridge",
+      "mae_ha": 93.2872961202837,
+      "rmse_ha": 127.87315927032758
+    },
+    {
+      "pool_size": 20,
+      "selector": "uniform",
+      "model": "qsvr",
+      "mae_ha": 75.74400604042349,
+      "rmse_ha": 111.19605245967904
+    },
+    {
+      "pool_size": 20,
+      "selector": "uniform",
+      "model": "rbf",
+      "mae_ha": 92.34955712020773,
+      "rmse_ha": 126.06318668402798
+    },
+    {
+      "pool_size": 20,
+      "selector": "uniform",
+      "model": "ridge",
+      "mae_ha": 75.84883138647649,
+      "rmse_ha": 108.00919696304398
+    }
+  ],
+  "seconds": 25.72779429203365,
+  "model_fits": 162,
+  "pair_circuits": 18918,
+  "sampling": [
+    {
+      "pool_size": 10,
+      "policy": "fixed",
+      "shots": 256,
+      "mean_gap": 0.005788743929877663,
+      "trials": 60,
+      "optimum_wins": 42
+    },
+    {
+      "pool_size": 10,
+      "policy": "fixed",
+      "shots": 1024,
+      "mean_gap": 0.0006970533115155793,
+      "trials": 60,
+      "optimum_wins": 58
+    },
+    {
+      "pool_size": 10,
+      "policy": "optimized1",
+      "shots": 256,
+      "mean_gap": 0.006258874338904263,
+      "trials": 60,
+      "optimum_wins": 41
+    },
+    {
+      "pool_size": 10,
+      "policy": "optimized1",
+      "shots": 1024,
+      "mean_gap": 0.0,
+      "trials": 60,
+      "optimum_wins": 60
+    },
+    {
+      "pool_size": 10,
+      "policy": "optimized2",
+      "shots": 256,
+      "mean_gap": 0.0,
+      "trials": 60,
+      "optimum_wins": 60
+    },
+    {
+      "pool_size": 10,
+      "policy": "optimized2",
+      "shots": 1024,
+      "mean_gap": 0.0,
+      "trials": 60,
+      "optimum_wins": 60
+    },
+    {
+      "pool_size": 10,
+      "policy": "uniform",
+      "shots": 256,
+      "mean_gap": 0.004388889834364088,
+      "trials": 60,
+      "optimum_wins": 49
+    },
+    {
+      "pool_size": 10,
+      "policy": "uniform",
+      "shots": 1024,
+      "mean_gap": 0.0,
+      "trials": 60,
+      "optimum_wins": 60
+    },
+    {
+      "pool_size": 16,
+      "policy": "fixed",
+      "shots": 256,
+      "mean_gap": 0.02937647595881181,
+      "trials": 60,
+      "optimum_wins": 15
+    },
+    {
+      "pool_size": 16,
+      "policy": "fixed",
+      "shots": 1024,
+      "mean_gap": 0.006491407698417007,
+      "trials": 60,
+      "optimum_wins": 27
+    },
+    {
+      "pool_size": 16,
+      "policy": "optimized1",
+      "shots": 256,
+      "mean_gap": 0.025738481255458724,
+      "trials": 60,
+      "optimum_wins": 7
+    },
+    {
+      "pool_size": 16,
+      "policy": "optimized1",
+      "shots": 1024,
+      "mean_gap": 0.005728531377344245,
+      "trials": 60,
+      "optimum_wins": 30
+    },
+    {
+      "pool_size": 16,
+      "policy": "optimized2",
+      "shots": 256,
+      "mean_gap": 0.012942153267547715,
+      "trials": 60,
+      "optimum_wins": 24
+    },
+    {
+      "pool_size": 16,
+      "policy": "optimized2",
+      "shots": 1024,
+      "mean_gap": 0.001693980416978036,
+      "trials": 60,
+      "optimum_wins": 44
+    },
+    {
+      "pool_size": 16,
+      "policy": "uniform",
+      "shots": 256,
+      "mean_gap": 0.02654370554771681,
+      "trials": 60,
+      "optimum_wins": 10
+    },
+    {
+      "pool_size": 16,
+      "policy": "uniform",
+      "shots": 1024,
+      "mean_gap": 0.006161662431845727,
+      "trials": 60,
+      "optimum_wins": 26
+    },
+    {
+      "pool_size": 20,
+      "policy": "fixed",
+      "shots": 256,
+      "mean_gap": 0.11039856808660768,
+      "trials": 60,
+      "optimum_wins": 1
+    },
+    {
+      "pool_size": 20,
+      "policy": "fixed",
+      "shots": 1024,
+      "mean_gap": 0.0634806061511591,
+      "trials": 60,
+      "optimum_wins": 4
+    },
+    {
+      "pool_size": 20,
+      "policy": "optimized1",
+      "shots": 256,
+      "mean_gap": 0.10398343746986143,
+      "trials": 60,
+      "optimum_wins": 1
+    },
+    {
+      "pool_size": 20,
+      "policy": "optimized1",
+      "shots": 1024,
+      "mean_gap": 0.06351969608461197,
+      "trials": 60,
+      "optimum_wins": 8
+    },
+    {
+      "pool_size": 20,
+      "policy": "optimized2",
+      "shots": 256,
+      "mean_gap": 0.027063243153581478,
+      "trials": 60,
+      "optimum_wins": 29
+    },
+    {
+      "pool_size": 20,
+      "policy": "optimized2",
+      "shots": 1024,
+      "mean_gap": 0.0037424772691473152,
+      "trials": 60,
+      "optimum_wins": 50
+    },
+    {
+      "pool_size": 20,
+      "policy": "uniform",
+      "shots": 256,
+      "mean_gap": 0.10859498973603637,
+      "trials": 60,
+      "optimum_wins": 2
+    },
+    {
+      "pool_size": 20,
+      "policy": "uniform",
+      "shots": 1024,
+      "mean_gap": 0.05905270893254967,
+      "trials": 60,
+      "optimum_wins": 10
+    }
+  ],
+  "resources": [
+    {
+      "pool_size": 10,
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "feasible_subsets": 210,
+      "enumeration_seconds": 0.0001140000531449914,
+      "mixer_setup_seconds": 0.0001153330085799098,
+      "optimizer_seconds": {
+        "uniform": 0,
+        "fixed": 9.099999442696571e-05,
+        "optimized1": 0.01931391702964902,
+        "optimized2": 0.05130874994210899
+      },
+      "optimizer_calls": {
+        "uniform": 0,
+        "fixed": 0,
+        "optimized1": 48,
+        "optimized2": 72
+      }
+    },
+    {
+      "pool_size": 16,
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "feasible_subsets": 1820,
+      "enumeration_seconds": 0.0009212919976562262,
+      "mixer_setup_seconds": 0.0008979999693110585,
+      "optimizer_seconds": {
+        "uniform": 0,
+        "fixed": 0.00013470801059156656,
+        "optimized1": 0.018109624972566962,
+        "optimized2": 0.03190950001589954
+      },
+      "optimizer_calls": {
+        "uniform": 0,
+        "fixed": 0,
+        "optimized1": 48,
+        "optimized2": 72
+      }
+    },
+    {
+      "pool_size": 20,
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "feasible_subsets": 4845,
+      "enumeration_seconds": 0.0033681250642985106,
+      "mixer_setup_seconds": 0.0025979579659178853,
+      "optimizer_seconds": {
+        "uniform": 0,
+        "fixed": 0.00024741701781749725,
+        "optimized1": 0.022557583986781538,
+        "optimized2": 0.04617629200220108
+      },
+      "optimizer_calls": {
+        "uniform": 0,
+        "fixed": 0,
+        "optimized1": 48,
+        "optimized2": 72
+      }
+    },
+    {
+      "pool_size": 10,
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "feasible_subsets": 210,
+      "enumeration_seconds": 9.937502909451723e-05,
+      "mixer_setup_seconds": 0.00010579102672636509,
+      "optimizer_seconds": {
+        "uniform": 0,
+        "fixed": 7.324991747736931e-05,
+        "optimized1": 0.014628708944655955,
+        "optimized2": 0.025069291004911065
+      },
+      "optimizer_calls": {
+        "uniform": 0,
+        "fixed": 0,
+        "optimized1": 48,
+        "optimized2": 72
+      }
+    },
+    {
+      "pool_size": 16,
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "feasible_subsets": 1820,
+      "enumeration_seconds": 0.002047999994829297,
+      "mixer_setup_seconds": 0.002464542048983276,
+      "optimizer_seconds": {
+        "uniform": 0,
+        "fixed": 0.00017224997282028198,
+        "optimized1": 0.02570333401672542,
+        "optimized2": 0.03201741701923311
+      },
+      "optimizer_calls": {
+        "uniform": 0,
+        "fixed": 0,
+        "optimized1": 48,
+        "optimized2": 72
+      }
+    },
+    {
+      "pool_size": 20,
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "feasible_subsets": 4845,
+      "enumeration_seconds": 0.003179082996211946,
+      "mixer_setup_seconds": 0.002468499937094748,
+      "optimizer_seconds": {
+        "uniform": 0,
+        "fixed": 0.0002233339473605156,
+        "optimized1": 0.02201883401721716,
+        "optimized2": 0.045779458014294505
+      },
+      "optimizer_calls": {
+        "uniform": 0,
+        "fixed": 0,
+        "optimized1": 48,
+        "optimized2": 72
+      }
+    },
+    {
+      "pool_size": 10,
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "feasible_subsets": 210,
+      "enumeration_seconds": 0.00010104209650307894,
+      "mixer_setup_seconds": 0.00010920793283730745,
+      "optimizer_seconds": {
+        "uniform": 0,
+        "fixed": 7.724994793534279e-05,
+        "optimized1": 0.01506662496831268,
+        "optimized2": 0.024048250052146614
+      },
+      "optimizer_calls": {
+        "uniform": 0,
+        "fixed": 0,
+        "optimized1": 48,
+        "optimized2": 72
+      }
+    },
+    {
+      "pool_size": 16,
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "feasible_subsets": 1820,
+      "enumeration_seconds": 0.0009870000649243593,
+      "mixer_setup_seconds": 0.0009190830169245601,
+      "optimizer_seconds": {
+        "uniform": 0,
+        "fixed": 0.00012741691898554564,
+        "optimized1": 0.017393874935805798,
+        "optimized2": 0.03216433303896338
+      },
+      "optimizer_calls": {
+        "uniform": 0,
+        "fixed": 0,
+        "optimized1": 48,
+        "optimized2": 72
+      }
+    },
+    {
+      "pool_size": 20,
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "feasible_subsets": 4845,
+      "enumeration_seconds": 0.0031704159919172525,
+      "mixer_setup_seconds": 0.0025604170514270663,
+      "optimizer_seconds": {
+        "uniform": 0,
+        "fixed": 0.0002221670001745224,
+        "optimized1": 0.021686124964617193,
+        "optimized2": 0.04727800004184246
+      },
+      "optimizer_calls": {
+        "uniform": 0,
+        "fixed": 0,
+        "optimized1": 48,
+        "optimized2": 72
+      }
+    }
+  ],
+  "classical_sample_draws": 921600,
+  "final_test_accessed": false,
+  "hardware_jobs": 0
+}

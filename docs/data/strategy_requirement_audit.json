@@ -1,0 +1,713 @@
+{
+  "checked_utc": "2026-10-06T11:46:13.446152+00:00",
+  "status": "artifact_review",
+  "git_head_at_check": "d8aa4396ac9d64b81492f34872e01ee04c2bb5cc",
+  "requirements": [
+    {
+      "id": "complete_catalogue_and_priority_sources",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "docs/FIRE_FEATURE_SPACE.md",
+        "docs/data/FIRE_CATALOGUE_PAGES.md",
+        "docs/data/fire_catalogue_pages.json",
+        "docs/data/fire_catalogue_inventory.json"
+      ],
+      "facts": {
+        "pages": 46,
+        "search_ids": 455,
+        "metadata_records": 458,
+        "priority_ids": [
+          "0bce352f-6f3f-4a30-9763-c80805fcf272",
+          "1728e7f9-472a-474e-9e04-f96bf59479f9",
+          "347a2de5-1006-4c1f-ba09-b66947654d0a",
+          "7cbdfae1-f724-4679-8f0f-1c611f17186f",
+          "836082d5-d55f-46c3-9b9c-aaf1a306c247",
+          "a6b81e8b-d429-4629-9121-5a56786fcb83",
+          "adfa340a-1781-48b1-ab17-2e1ca1b915df"
+        ],
+        "observed_utc": "2026-10-06T04:17:28.622957+00:00"
+      },
+      "scope": "Preserved search membership and metadata/report coverage; not a new live search or raster validation."
+    },
+    {
+      "id": "bounded_context_schema_and_geography",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "docs/FOREST_CONTEXT.md",
+        "docs/DATA_SCHEMA.md",
+        "scripts/context/pipeline.py",
+        "scripts/context/manifest.py",
+        "web/demo/assets/context/layers.json",
+        "web/demo/assets/context/height-series-v2.json",
+        "docs/data/scanfi_height_context.json"
+      ],
+      "facts": {
+        "styled_wms_layers": 5,
+        "numeric_epochs": 7,
+        "sample_resolution_m": 480,
+        "display_crs": "EPSG:3978",
+        "city_controls": [
+          {
+            "name": "Toronto / GTA",
+            "inside_mask": true,
+            "roundtrip_error_degrees": 0.0,
+            "heights_m_by_year": {
+              "1985": 0,
+              "1990": 0,
+              "1995": 0,
+              "2000": 0,
+              "2005": 0,
+              "2010": 0,
+              "2015": 0
+            }
+          },
+          {
+            "name": "Ottawa",
+            "inside_mask": true,
+            "roundtrip_error_degrees": 7.105427357601002e-15,
+            "heights_m_by_year": {
+              "1985": 0,
+              "1990": 0,
+              "1995": 0,
+              "2000": 0,
+              "2005": 0,
+              "2010": 0,
+              "2015": 0
+            }
+          },
+          {
+            "name": "Windsor",
+            "inside_mask": true,
+            "roundtrip_error_degrees": 7.105427357601002e-15,
+            "heights_m_by_year": {
+              "1985": 0,
+              "1990": 0,
+              "1995": 0,
+              "2000": 0,
+              "2005": 0,
+              "2010": 0,
+              "2015": 0
+            }
+          },
+          {
+            "name": "Thunder Bay",
+            "inside_mask": true,
+            "roundtrip_error_degrees": 1.4210854715202004e-14,
+            "heights_m_by_year": {
+              "1985": 0,
+              "1990": 0,
+              "1995": 0,
+              "2000": 0,
+              "2005": 0,
+              "2010": 0,
+              "2015": 0
+            }
+          }
+        ]
+      },
+      "scope": "Current public display hashes/producer, source-reported grid semantics and city controls. WMS images are not numerical predictors; native custom LCC differs from display EPSG:3978."
+    },
+    {
+      "id": "spatial_context_interpretation",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "docs/data/height_spatial_change.json",
+        "docs/data/height_spatial_verification.json"
+      ],
+      "facts": {
+        "common_samples": 4528955,
+        "mean_signed_m": 0.19948509093157252,
+        "mean_absolute_m": 2.862919371024883
+      },
+      "scope": "Pinned descriptive difference and arithmetic; not physical growth, causal disturbance or forecast accuracy."
+    },
+    {
+      "id": "context_performance_and_architecture",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "experiments/coarse_height_context.json",
+        "docs/results/coarse-height-context.json",
+        "docs/data/coarse_height_verification.json",
+        "experiments/constant_ancilla_control.json",
+        "docs/data/constant_ancilla_verification.json"
+      ],
+      "facts": {
+        "original_fits": 36,
+        "original_pair_circuits": 4204,
+        "development_mean_mae_ha": {
+          "ridge/weather_four": 89.77890477134139,
+          "ridge/weather_plus_zero": 89.77890477134137,
+          "ridge/weather_plus_year": 97.79514984340484,
+          "ridge/weather_plus_height": 95.3231024875908,
+          "rbf/weather_four": 85.19103316180421,
+          "rbf/weather_plus_zero": 85.19103316180421,
+          "rbf/weather_plus_year": 92.68737080277344,
+          "rbf/weather_plus_height": 91.00874408195014,
+          "qsvr/weather_four": 93.88532700334783,
+          "qsvr/weather_plus_zero": 93.39239989350854,
+          "qsvr/weather_plus_year": 87.8584613001736,
+          "qsvr/weather_plus_height": 93.09737612304997
+        }
+      },
+      "scope": "Saved fixed training-only pilot: no consistent height gain; known constant-ancilla identity/control, not a breakthrough, independent confirmation or replacement for frozen final models."
+    },
+    {
+      "id": "feature_order_and_coupling_control",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "experiments/context_input_order.json",
+        "docs/results/context-input-order.json",
+        "docs/data/context_input_order_verification.json",
+        "scripts/context/ordering_public.py",
+        "docs/figures/context-input-order.png"
+      ],
+      "facts": {
+        "original_state_preparations": 496,
+        "matrices": 16,
+        "predictor_fits": 0,
+        "maximum_formula_residual": 3.9854145878879915e-15,
+        "chain_cx": 6,
+        "full_cx": 12
+      },
+      "scope": "Public frozen source/result hashes, resource counts and recorded symmetry/direct-formula controls. The ignored amplitude archive is not reconstructed by this public check; repeat arithmetic collection in the original audit checkout. Expected graph symmetries, not predictive validation or a new algorithm."
+    },
+    {
+      "id": "strategy_challenge_progression_and_pruning",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "docs/WILDFIRE_GAME.md",
+        "web/demo/strategy/rules.js",
+        "web/demo/strategy/upgrades.js",
+        "web/demo/strategy/session.js",
+        "docs/data/game_balance_v2.json",
+        "docs/data/game_pruning_verification.json"
+      ],
+      "facts": {
+        "balance_seeds": 500,
+        "policies": [
+          {
+            "id": "idle",
+            "win_rate": 0,
+            "mean_integrity": 22.135413034081363,
+            "mean_turns": 5.9,
+            "mean_contained": 0,
+            "mean_spent": 0,
+            "mean_score": 273.368
+          },
+          {
+            "id": "water_only",
+            "win_rate": 0,
+            "mean_integrity": 24.21646682632962,
+            "mean_turns": 8.038,
+            "mean_contained": 0,
+            "mean_spent": 31.936,
+            "mean_score": 242.448
+          },
+          {
+            "id": "crew_only",
+            "win_rate": 0.106,
+            "mean_integrity": 31.961972629743705,
+            "mean_turns": 9.864,
+            "mean_contained": 2.752,
+            "mean_spent": 20.852,
+            "mean_score": 400.932
+          },
+          {
+            "id": "random",
+            "win_rate": 0.052,
+            "mean_integrity": 29.784408454859992,
+            "mean_turns": 9.768,
+            "mean_contained": 3.872,
+            "mean_spent": 35.5,
+            "mean_score": 369.456
+          },
+          {
+            "id": "triage",
+            "win_rate": 0.902,
+            "mean_integrity": 71.65509841558335,
+            "mean_turns": 11.932,
+            "mean_contained": 9,
+            "mean_spent": 40.396,
+            "mean_score": 883.33
+          }
+        ],
+        "retired_runtime_paths": []
+      },
+      "scope": "Implemented/reviewed constrained crews, supplies, delays, seeded permanent choices, win/loss and replay. Fixed policy balance does not establish human enjoyment or operational effectiveness."
+    },
+    {
+      "id": "quantum_lens_sqd_and_accepted_steers",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "web/demo/README.md",
+        "web/demo/strategy/quantum.js",
+        "web/demo/strategy/bench.js",
+        "web/demo/strategy/instruments.js",
+        "docs/data/instrument_diagnostic.json",
+        "docs/data/bench_inspection_verification.json",
+        "docs/data/instrument_effect_verification.json"
+      ],
+      "facts": {
+        "saved_qiskit_paths": 256,
+        "maximum_coordinate_error": 6.661338147750939e-16
+      },
+      "scope": "Working illustrative sphere/noise/echo/twirling/readout/PSD controls and sampled diagonal objective; browser sampling equals classical minimum, with no game-response or predictive benefit."
+    },
+    {
+      "id": "touch_input",
+      "status": "historical_pinned_scope",
+      "evidence": [
+        "docs/data/touch_input_verification.json"
+      ],
+      "facts": {
+        "current_source_pins": {
+          "web/demo/strategy/rules.js": true,
+          "web/demo/strategy/scenario.js": true,
+          "web/demo/strategy/upgrades.js": true,
+          "web/demo/strategy/session.js": true,
+          "web/demo/strategy/slider.js": true,
+          "web/demo/strategy/marker-picker.js": true,
+          "web/demo/strategy/main.js": false,
+          "web/demo/strategy/touch-check.mjs": true,
+          "web/demo/index.html": false,
+          "web/demo/assets/strategy.js": false,
+          "web/demo/assets/context/scenario.json": true,
+          "web/demo/strategy/styles/instruments.css": true,
+          "web/demo/strategy/styles/responsive.css": true
+        }
+      },
+      "scope": "Chromium mobile touch emulation on a Mac: actual taps and CDP touch gestures, two ten-front histories and portrait-to-landscape resize. Offscreen locators auto-scroll; native select uses authoring API. No physical touch, OS picker, human enjoyment or broad device certification."
+    },
+    {
+      "id": "short_viewport",
+      "status": "historical_pinned_scope",
+      "evidence": [
+        "docs/data/short_viewport_verification.json"
+      ],
+      "facts": {
+        "current_source_pins": {
+          "web/demo/index.html": true,
+          "web/demo/assets/strategy.js": false,
+          "web/demo/strategy/main.js": true,
+          "web/demo/strategy/short-viewport-check.mjs": true,
+          "web/demo/strategy/styles/base.css": true,
+          "web/demo/strategy/styles/compact.css": true,
+          "web/demo/strategy/styles/responsive.css": true
+        }
+      },
+      "scope": "Chromium on a Mac, emulated touch landscape and mouse/wheel short laptop. Native coordinate hits and gestures, no locator auto-scroll. Not a physical-device or assistive-technology study."
+    },
+    {
+      "id": "upgrade_choice",
+      "status": "historical_pinned_scope",
+      "evidence": [
+        "docs/data/upgrade_choice_verification.json"
+      ],
+      "facts": {
+        "current_source_pins": {
+          "web/demo/index.html": false,
+          "web/demo/strategy/styles/dialogs.css": true,
+          "web/demo/strategy/styles/base.css": true,
+          "web/demo/strategy/upgrade-choice-check.mjs": true,
+          "web/demo/assets/strategy.js": false,
+          "web/demo/assets/context/scenario.json": true,
+          "web/demo/strategy/rules.js": true,
+          "web/demo/strategy/scenario.js": true,
+          "web/demo/strategy/upgrades.js": true,
+          "web/demo/strategy/session.js": true
+        }
+      },
+      "scope": "Chromium, blocked remote fonts, one replayed season per size. Both milestone comparisons fit without dialog scrolling; native selection coordinates do not auto-scroll. Preparatory gameplay locators do. Not physical-device, human choice or enjoyment certification."
+    },
+    {
+      "id": "game_keyboard",
+      "status": "historical_pinned_scope",
+      "evidence": [
+        "docs/data/game_keyboard_verification.json"
+      ],
+      "facts": {
+        "current_source_pins": {
+          "web/demo/strategy/rules.js": true,
+          "web/demo/strategy/scenario.js": true,
+          "web/demo/strategy/upgrades.js": true,
+          "web/demo/strategy/session.js": true,
+          "web/demo/strategy/main.js": false,
+          "web/demo/strategy/keyboard.js": true,
+          "web/demo/strategy/keyboard-check.mjs": true,
+          "web/demo/strategy/ui.js": false,
+          "web/demo/index.html": false,
+          "web/demo/assets/strategy.js": false
+        }
+      },
+      "scope": "Actual browser key input and saved-rule replay; composition/command modifier flags and a temporary textarea are explicitly authoring fixtures. Three sizes, unchanged rules/scenario/upgrades/save version. No physical keyboard, touch or assistive-device certification."
+    },
+    {
+      "id": "season_feedback",
+      "status": "historical_pinned_scope",
+      "evidence": [
+        "docs/data/season_feedback_verification.json"
+      ],
+      "facts": {
+        "current_source_pins": {
+          "web/demo/strategy/rules.js": true,
+          "web/demo/strategy/scenario.js": true,
+          "web/demo/strategy/upgrades.js": true,
+          "web/demo/strategy/session.js": true,
+          "web/demo/strategy/ui.js": false,
+          "web/demo/strategy/main.js": false,
+          "web/demo/strategy/debrief.js": true,
+          "web/demo/strategy/terminal-check.mjs": false,
+          "web/demo/assets/strategy.js": false,
+          "web/demo/index.html": false,
+          "web/demo/strategy/styles/dialogs.css": false
+        }
+      },
+      "scope": "Actual control-driven winning/losing endings at three viewports. Per-fire sums agree with stored front damage, peak front/ranked contributions are displayed, reports preserve moves across close/reopen/reload/retry. Reduced motion and external-font failure covered; no new balance estimate, human enjoyment trial, causal response effect or real fire validation."
+    },
+    {
+      "id": "marker_picker",
+      "status": "historical_pinned_scope",
+      "evidence": [
+        "docs/data/marker_picker_verification.json"
+      ],
+      "facts": {
+        "current_source_pins": {
+          "web/demo/strategy/rules.js": true,
+          "web/demo/strategy/scenario.js": true,
+          "web/demo/strategy/upgrades.js": true,
+          "web/demo/strategy/session.js": true,
+          "web/demo/assets/context/scenario.json": true,
+          "web/demo/strategy/marker-picker.js": true,
+          "web/demo/strategy/map.js": true,
+          "web/demo/strategy/styles/marker-picker.css": true,
+          "web/demo/strategy/styles/map-markers.css": true,
+          "web/demo/strategy/picker-check.mjs": true,
+          "web/demo/strategy.css": true,
+          "web/demo/assets/strategy.js": false
+        }
+      },
+      "scope": "Actual four control-driven ten-front histories reproduces wrong mobile center selection on the pinned old bundle, then verifies named overlap choice at three sizes. Opening/cancel leaves saves unchanged; choosing changes selection only. No marker relocation, rule change, physical touch or human enjoyment claim."
+    },
+    {
+      "id": "forest_audio",
+      "status": "historical_pinned_scope",
+      "evidence": [
+        "docs/data/forest_audio_verification.json"
+      ],
+      "facts": {
+        "current_source_pins": {
+          "web/demo/strategy/sound.js": true,
+          "web/demo/strategy/main.js": false,
+          "web/demo/strategy/audio-check.mjs": true,
+          "web/demo/strategy/rules.js": true,
+          "web/demo/strategy/scenario.js": true,
+          "web/demo/strategy/upgrades.js": true,
+          "web/demo/strategy/session.js": true,
+          "web/demo/assets/strategy.js": false
+        }
+      },
+      "scope": "Offline waveform and browser control/failure-injection checks. Browser output muted during authoring; not a speaker/listening trial, measured loudness certification or OS visibility test."
+    },
+    {
+      "id": "render_fallback",
+      "status": "historical_pinned_scope",
+      "evidence": [
+        "docs/data/render_fallback_verification.json"
+      ],
+      "facts": {
+        "current_source_pins": {
+          "web/demo/strategy/map.js": false,
+          "web/demo/strategy/sphere.js": true,
+          "web/demo/strategy/lens-fallback.js": true,
+          "web/demo/strategy/render-check.mjs": true,
+          "web/demo/strategy/styles/instruments.css": false,
+          "web/demo/assets/strategy.js": false
+        }
+      },
+      "scope": "Forced browser failure and visibility branches; not physical GPU loss or operating-system tab scheduling."
+    },
+    {
+      "id": "current_interaction_and_visual_review",
+      "status": "current_pinned_scope",
+      "evidence": [
+        "docs/data/current_interaction_verification.json"
+      ],
+      "facts": {
+        "authoring_runs": 14,
+        "enumerated_cases": 67,
+        "inspected_screenshots": 13
+      },
+      "scope": "Fourteen bounded Chromium/authoring checks on this pinned build. Current-case summaries are published here; raw receipts/screenshots remain in ignored authoring cache. Native touch events are emulated; offscreen locators can auto-scroll except where the short-screen/upgrade case explicitly excludes it. Render/storage/audio failures and composition flags are injected fixtures. Saved Qiskit vectors are compared without new circuits. This is not physical-device, OS scheduling, assistive-technology, speaker listening, human enjoyment or full historical experiment certification."
+    },
+    {
+      "id": "accessible_dialog_and_fire_context",
+      "status": "current_pinned_scope",
+      "evidence": [
+        "docs/data/accessibility_context_verification.json"
+      ],
+      "facts": {
+        "viewports": 3,
+        "baseline": {
+          "welcome_name": "",
+          "guide_name": "",
+          "fire_chip_label": null
+        }
+      },
+      "scope": "Chromium accessibility-tree exposure and native keys in isolated pages at three sizes. No physical screen reader, speech output, assistive device or human enjoyment certification."
+    },
+    {
+      "id": "new_season_variety_and_replay",
+      "status": "current_pinned_scope",
+      "evidence": [
+        "docs/data/new_season_verification.json"
+      ],
+      "facts": {
+        "seasons": 32,
+        "observed_offer_sets": 4
+      },
+      "scope": "New season selection only. Fixed seed scenarios, offer function, random generator and saved replay format are unchanged; Continue and Replay paths preserve moves/equipment in authoring cases. Thirty-two deterministic seasons from seed 2 now expose all four first-offer sets. This is not uniformity, cryptographic randomness, long-cycle, physical-device or human-enjoyment certification."
+    },
+    {
+      "id": "upgrade_tradeoffs",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "experiments/game_upgrade_tradeoffs.json",
+        "docs/data/upgrade_tradeoff_review.json"
+      ],
+      "facts": {
+        "game_branches": 384,
+        "paired_rows": 12
+      },
+      "scope": "Toy game counterfactuals under two fixed heuristics and 32 seeds distinct from balance/scouting studies. Not optimal policies, human skill/enjoyment, causal suppression effectiveness, hectares, predictive accuracy or quantum advantage. No rule tuning follows automatically; no final models or scientific labels are read. All 32 consecutive seeds share the same front-4 offer set (logistics/network/precision); default-prefix front-8 offers are network/precision/training after logistics. This does not cover every upgrade/prefix distribution."
+    },
+    {
+      "id": "presentation_and_clean_viewing",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "web/presentation/slides.js",
+        "web/presentation/talk.md",
+        "docs/data/current_view_portability.json",
+        "docs/data/presentation_note_review.json"
+      ],
+      "facts": {
+        "main_seconds": 300,
+        "main_slides": 7,
+        "appendix_slides": 2,
+        "runtime_unchanged_since_view": true,
+        "spoken_words_whitespace": 538,
+        "changed_runtime_assets": []
+      },
+      "scope": "Existing nine-slide exports retained and current served runtime assets match the clean-view receipt; Markdown/authoring-check changes are outside that runtime comparison. Planned duration is not measured rehearsal; native PowerPoint and broad platforms remain untested."
+    },
+    {
+      "id": "frozen_science_preserved",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "experiments/annual_final.json",
+        "docs/results/annual-final-training.json",
+        "docs/results/annual-final.json",
+        "docs/data/annual_final_bundle.json",
+        "docs/data/annual_training.csv",
+        "docs/data/annual_reused_evaluation.csv",
+        "docs/data/annual_goal_handoff.json",
+        "docs/data/annual_requirement_audit.json"
+      ],
+      "facts": {
+        "protected_annual_public_hashes": {
+          "experiments/annual_final.json": "4df95f26e963d7db8038dfb19c3ff512464e8471bff0fc35ba3316f046c633f1",
+          "docs/results/annual-final-training.json": "678e930d0397e0d1853d716501fee8899bdf9f7240345b3d07d75b1e0aeebc78",
+          "docs/results/annual-final.json": "dcf41e991b279e5837d57810c4652337a6ce8f2015ed7cb3d4a3332b2ea37432",
+          "docs/data/annual_final_bundle.json": "4e6e243de608e950ce6d08c6e2637cdb6e64cfd1c953dfaac3e87c71420d5b91",
+          "docs/data/annual_training.csv": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+          "docs/data/annual_reused_evaluation.csv": "6c1cc55f1f44990e249fadaafbed5a0baa37deb90a4843f539e52b0f9db28636"
+        },
+        "annual_execution_code_hashes_match": {
+          "wildfire_lab/annual_data.py": true,
+          "wildfire_lab/annual_classical.py": true,
+          "wildfire_lab/annual_quantum.py": true,
+          "wildfire_lab/annual_matched.py": true,
+          "wildfire_lab/annual_selectors.py": true,
+          "wildfire_lab/annual_model_state.py": true,
+          "wildfire_lab/annual_final_kernel.py": true,
+          "wildfire_lab/annual_final_train.py": true,
+          "wildfire_lab/annual_final_evaluate.py": true,
+          "wildfire_lab/annual_final_protocol.py": true,
+          "wildfire_lab/nfdb.py": true,
+          "wildfire_lab/selection.py": true,
+          "wildfire_lab/qaoa.py": true,
+          "wildfire_lab/sqd_selection.py": true,
+          "wildfire_lab/library_kernel.py": true,
+          "scripts/run_annual_final.py": true
+        },
+        "project_manifests_match_frozen_execution": {
+          "uv.lock": false,
+          "pyproject.toml": false
+        },
+        "legacy_parent_availability": {
+          ".cache/wildfire/final-test/outcome.json": true,
+          ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8/features.csv": true,
+          "docs/results/policy-evolution.json": true
+        }
+      },
+      "scope": "Annual public plan, execution record, result, bundle and datasets match their annual handoff. Legacy incident/policy parents are checked only when present; missing ignored files do not certify private state. Current project dependency manifests differ from frozen execution; this does not certify its environment or refit predictors. No hardware accounts are inspected or jobs authorized."
+    },
+    {
+      "id": "modularity_and_tooling",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "scripts/audit_strategy.py",
+        "web/demo/package.json",
+        "web/demo/bun.lock",
+        "pyproject.toml",
+        "uv.lock",
+        "AGENTS.md"
+      ],
+      "facts": {
+        "handwritten_files_checked": 104,
+        "maximum_loc": 300
+      },
+      "scope": "New context/catalogue/strategy concern modules meet the 300-line preference. Generated bundles and historical unrelated modules are outside this count; Bun/uv configuration is explicit."
+    },
+    {
+      "id": "coordination_and_peer_steering",
+      "status": "verified_public_snapshot",
+      "evidence": [
+        "AGENTS.md",
+        "AGENT_BOARD.md"
+      ],
+      "facts": {
+        "board_records": 408,
+        "local_board_matches_fetched_tracking_branch": true
+      },
+      "scope": "Current local board order/uniqueness/backrefs and steering policy; caller fetches first. This does not infer peer agreement or authorize unrelated spending."
+    },
+    {
+      "id": "catalogue_local_source_check",
+      "status": "verified_local_source_scope",
+      "evidence": [
+        ".cache/catalogue/goal-review-0912/receipt.json"
+      ],
+      "facts": {
+        "checked_utc": "2026-10-06T09:12:31.352282+00:00"
+      },
+      "scope": "Saved snapshot hashes, identity, CSV membership, all-page reconstruction and cache-failure handling. Not a new live search audit or validation of all downloadable datasets."
+    },
+    {
+      "id": "context_local_source_check",
+      "status": "verified_local_source_scope",
+      "evidence": [
+        ".cache/context/goal-review-0912.json"
+      ],
+      "facts": {
+        "checked_utc": "2026-10-06T09:12:52.151629+00:00"
+      },
+      "scope": "Base context equivalence; optional derived differences have separate hash checks, not new source accuracy validation"
+    }
+  ],
+  "artifact_sha256": {
+    "docs/FIRE_FEATURE_SPACE.md": "2b58fc735b3f07a5184812d136dd41f2de23c2d4be26f8cc033f1d0b119d56c3",
+    "docs/data/FIRE_CATALOGUE_PAGES.md": "9dc69b4560f6389eac6af3f37bee6d724a5334c52e7d5a8be48d34bd62b0208d",
+    "docs/data/fire_catalogue_pages.json": "27a7036f0a3f9a78ffc52495975f2f0baf9d7f7a4773fd4e2df27a48a7c42e24",
+    "docs/data/fire_catalogue_inventory.json": "915a4380e06380422aabf63626dc5d4c8873f0a7cfe0718ee3d4a66ad0f0a9a4",
+    "web/demo/assets/context/canopy.png": "5277cee8b81233884f274952c7b498c6eaa5f36744afbd89882eeb78504e9374",
+    "web/demo/assets/context/lorey.png": "a2c5bd579270267a424afed8e501648569117e348535af9875d403ed4c68dd93",
+    "web/demo/assets/context/recovery.png": "b9d6a3b67cecefec898059f00d844ecfd47f3f276d2bbd408782bcc69760d023",
+    "web/demo/assets/context/water.png": "dd1c43605c7feb208ea669962395db45c8e817c07d9b81f302381b79caacd7be",
+    "web/demo/assets/context/fuel.png": "bd7aec9abe58f7398b841540a46b15c000bab7d65b54807439988d5173b0abff",
+    "web/demo/assets/context/height-1985.png": "be1f7e287393b2c00a0ee8659613b1d9afe5880ba354056e6d129456b9aa027c",
+    "web/demo/assets/context/height-1990.png": "e1be2c27a6c6a1161665fb7fbdd198c078b456eaf5699013d769e626538317d0",
+    "web/demo/assets/context/height-1995.png": "ef02d29772580d0717e9ef081b55ef483bfbfe0dae39f38036ee610eecb30972",
+    "web/demo/assets/context/height-2000.png": "c4ccd00c297435a4a34027a72f57e80354d08d78881c0947244be06075243c47",
+    "web/demo/assets/context/height-2005.png": "2f909823a0c28936d2de742531be1e802cb0c6914a91b87a444a7ad691094938",
+    "web/demo/assets/context/height-2010.png": "c4b33dd969532b644ef6d280bac6c703b6f3ba32ce37f9a2640f5dfe31d01445",
+    "web/demo/assets/context/height-2015.png": "98755f2b0f2f8e0f8e0e7c4654b5083903ffe51cee362fb0d6694e598fef4e3c",
+    "docs/FOREST_CONTEXT.md": "71eced3c92626ddcbe6481c03b1b6298521c782fc591683739a61abd7f788a9d",
+    "docs/DATA_SCHEMA.md": "6486a6b9ee413b8341d4f43fd5c1f5888e12ba94451f4198a3b46e7350559169",
+    "scripts/context/pipeline.py": "8ffd8a999e9eaf5c5808a69b99857eafce77453dbd95ed568e4d2ff47d92acb3",
+    "scripts/context/manifest.py": "852be73761a88188972c51906358ea60179080ec2b01ca1bbd188da1b24a0aeb",
+    "web/demo/assets/context/layers.json": "020b5db5fbaf02a204a139967fd8eecd437212c1da7fc09aef27ed60d5c18f6a",
+    "web/demo/assets/context/height-series-v2.json": "2008544e8ed0ace3e1b7df2bc3f7879658ecf8957fd4c9f5d2aeb6f64c9e589f",
+    "docs/data/scanfi_height_context.json": "20258c3268a94cca9d8048dacb483a49019c388e672b21def5f9cd51c546ad4f",
+    "web/demo/assets/context/height-change.png": "700738fe74b49e64913f2070adc941f6bf4d4a74802de0c1e4040183225b4c10",
+    "web/demo/assets/context/height-change-legend.png": "ff66dabb884b9157e3d079de05bb9b7a63a9c98c224da8b0059e63a87c17e6d5",
+    "docs/data/height_spatial_change.json": "9c16e733f10408ff30dedb19c43bb79ef4b4a724f0823502efb4742ed1903182",
+    "docs/data/height_spatial_verification.json": "789d2ea38d8170874605dbd2eed30189e72c3a7ebb9812e333563a34c35004d1",
+    "experiments/coarse_height_context.json": "6a40a57d7fddd85ce51d3167d06fe019af329383134ce01e73091ae259d6e59d",
+    "docs/results/coarse-height-context.json": "f0e1a15641b9984d3d78c36a62de75c36b1671509d715a9d2ed0e9eb1bbad788",
+    "docs/data/coarse_height_verification.json": "3c67a14fdc3e0545fb057647aeb4b4faf30635edd5f28a872b0825c3fd810f4e",
+    "experiments/constant_ancilla_control.json": "0cf76311cbff6472f07bb0704433f29006c8b566746dabe736cc4345067310d4",
+    "docs/data/constant_ancilla_verification.json": "c007f40906b92787b9ac1363ca2a53ca07858ab7efc8e177a63ae748f79a75b9",
+    "experiments/context_input_order.json": "8c537d2570d37787e34d25b764115bb456ef0096fd788c14353e4b094b0544e4",
+    "docs/results/context-input-order.json": "d7c1f9a326c07dd7151a31b23290eab864c58791ee9c044dd793d326148239ed",
+    "docs/data/context_input_order_verification.json": "bbb762bc9cc101487d67377a1a690258ad4133d44b494297492dc1b8a261b048",
+    "scripts/context/ordering_public.py": "155262ec2290423b024b892bca090c6b17c9551497d5345757c01cfe7da7ee06",
+    "docs/figures/context-input-order.png": "e21fcffed5a5b749a62e84343583add99d110cbaeda54e05156393178d9eaf9b",
+    "docs/WILDFIRE_GAME.md": "d759c95ee27ca3a8c34a5175152a9e5d4ba17bc86b39f90e18b743a75ee1bee5",
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "docs/data/game_balance_v2.json": "ff3440bd75a1361acded0275ef03270ec57451323a954d5ca7b6c47cad607b18",
+    "docs/data/game_pruning_verification.json": "85b2185daada6df9088ea49c616c48d838bf774779d2a4bb96cd9c3f1e7c0e58",
+    "web/demo/README.md": "ba903fb057935cf90d9ac088926afd00f97f0644b43815ce737b9b225eb0c521",
+    "web/demo/strategy/quantum.js": "2d44ac87b6b7d68c08fd49c982fe429ad87ca91b20b7b26bb8f92adf66e8acf4",
+    "web/demo/strategy/bench.js": "963c8038ca1b4a170265583bc4f15baafbe5326308b030dd687d92529bd2f530",
+    "web/demo/strategy/instruments.js": "9863ba627e26bb8435691ea9e9978722090f122bcfbfbacad986274782745149",
+    "docs/data/instrument_diagnostic.json": "26df201019753e6c12d7290020be58da0454bdac8bbb83856478862d10614475",
+    "docs/data/bench_inspection_verification.json": "f5b4106c430e51d00e7116f3e86d604f011056904e8d410a8b0515893c28be6e",
+    "docs/data/instrument_effect_verification.json": "e13991f26c618f9a420fe318485076875004b6ebb13bf6a6a8c5ced480103d26",
+    "docs/data/touch_input_verification.json": "8ea9abc11cef2454b71fc28ec70a036d977443dff6392542f2345d93b708474d",
+    "docs/data/short_viewport_verification.json": "000a28ef21c11c529e6b943fef93381ebf6214d782fffa065c39fa15d47a7047",
+    "docs/data/upgrade_choice_verification.json": "a45cc6881946ffd7e568e9561eb40dbeb842c177ddcca6e3d9775c540a222a7d",
+    "docs/data/game_keyboard_verification.json": "0f1dc26ee5fe87a03b93175bd6bab1d812b2d67f15fcb62f18c022da2c2aaa04",
+    "docs/data/season_feedback_verification.json": "38a9b130970019bbc6f2cfb851178c9e626cf5c2fa466208709c7ad73b47969b",
+    "docs/data/marker_picker_verification.json": "ad410ef95ad9d407b28c104ff530d0969b696cca13d47ec0d8592360174e2f09",
+    "docs/data/forest_audio_verification.json": "d5cd06d8ce41cb7f6b2d97f792c93f8a8e1c0d1ae75bbce05702de5bc2c58076",
+    "docs/data/render_fallback_verification.json": "d01e8a76986be2ae48f8cba2ff88df766f44c4b75086f0a251dc9274d8d5f80c",
+    "docs/data/current_interaction_verification.json": "e06992de3563c485c4e87b492809f986880876300a76914d2d94b155f95e3d86",
+    "docs/data/accessibility_context_verification.json": "f6dd90a0e75f03a2d14017d9bf76bde782616b43c8636046546e812ce155c6f0",
+    "docs/data/new_season_verification.json": "d3fcfcb55603dc56eba7be7a57a4ff45daf40de74d1d522659364df2125e99bc",
+    "experiments/game_upgrade_tradeoffs.json": "43e60640ab2cd403a7d4d3cda7d40e36c386f905392b395e5673de9084ca3f51",
+    "docs/data/upgrade_tradeoff_review.json": "de4b97b2fd864da2ff111e95a9b4f42f8daec2943b8045cb6e9f1dcb7aee6ecc",
+    "web/presentation/slides/ontario-wildfire.pdf": "e8fa02088b7853459c998cee044c25036774202435338d39196a670102ae293e",
+    "web/presentation/slides/ontario-wildfire.pptx": "4b2a0a42cc50c689f9dbe3ea41d2be2b5767c4e7b4456bdc0c359f275d805bfd",
+    "web/presentation/slides.js": "53a6efa8709043bf89684b832598b44f299281fa2f9ddcc2d3acb9c6bc4bb202",
+    "web/presentation/talk.md": "30abe8c3139b829892d3714a599b093206f13111d1119ef5b50b3a7c3e8e28b5",
+    "docs/data/current_view_portability.json": "dbc11c382d797000523369e4d4c6a3eb813efc1e7874cc091f96fde4a71a79e9",
+    "docs/data/presentation_note_review.json": "1d2f1d4ba2040f5df135e976d60ba95da446127a8892dc9acee234f26fb78753",
+    "experiments/annual_final.json": "4df95f26e963d7db8038dfb19c3ff512464e8471bff0fc35ba3316f046c633f1",
+    "docs/results/annual-final-training.json": "678e930d0397e0d1853d716501fee8899bdf9f7240345b3d07d75b1e0aeebc78",
+    "docs/results/annual-final.json": "dcf41e991b279e5837d57810c4652337a6ce8f2015ed7cb3d4a3332b2ea37432",
+    "docs/data/annual_final_bundle.json": "4e6e243de608e950ce6d08c6e2637cdb6e64cfd1c953dfaac3e87c71420d5b91",
+    "docs/data/annual_training.csv": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+    "docs/data/annual_reused_evaluation.csv": "6c1cc55f1f44990e249fadaafbed5a0baa37deb90a4843f539e52b0f9db28636",
+    "docs/data/annual_goal_handoff.json": "ef5e35cfbdb3fd4df00e885ca8b49955a0fce9593ca6a70421dec3008730b8e4",
+    "docs/data/annual_requirement_audit.json": "2b330248bdad9abf8f0cc3be0c05ae2840fb433dd345e0f33b27b6ace0e0e2df",
+    "scripts/audit_strategy.py": "57fe40f5c90906ee96cfaefbafab034ef0a3f3d253b113b5075a410bab8f3765",
+    "web/demo/package.json": "d67b7967e2d2d5771165aca2f1f22ba25be724d0b6b79f44404ed01fa5a87c7d",
+    "web/demo/bun.lock": "13c7f63e1e32500ec92936015ef213bde5df933ff89236f2106f16d2cda25b96",
+    "pyproject.toml": "a1d3886e050b83e8dbcb12222575303fdf4cb4b19a30e4a0e4e8512469ff2136",
+    "uv.lock": "0ce47161596d8a6cba697ac2f106b3bcf7cd3f67538174ce397e33dd5d00378d",
+    "AGENTS.md": "9884ccfb14e434c7483332ebdcb378751353d6784ed59a83864831be1fad0c9e",
+    "AGENT_BOARD.md": "d01d4b31ef9cceaed6cb6ea074c142a84bbfdc20865383189b4253064dae8044",
+    ".cache/catalogue/goal-review-0912/receipt.json": "d2e966a39a0798cfba5f1607f00df4c12cc529f8e2ed4e3c141d5c13e26f9c53",
+    ".cache/context/goal-review-0912.json": "abdd40f92413a81d868cb7ec3abecbe7e50bf9ca5912242854542cd69422c649"
+  },
+  "goal_complete": false,
+  "audit_revision": 2,
+  "correction": "0743287 mislabeled the legacy incident/policy freeze as annual parents and required ignored files. Annual checks now use annual execution/handoff hashes; private legacy parents are optional.",
+  "completion_not_checked": [
+    "Manual full-objective review beyond these artifact contracts",
+    "Final report and successful Git/board publication",
+    "Goal-tool completion after required work is achieved"
+  ],
+  "limits": [
+    "Physical devices, human enjoyment, listening quality and actual rehearsal are unmeasured",
+    "Native PowerPoint/public repository access/submission are separate checks or team actions",
+    "Historical input receipts are explicitly distinguished from current pinned scopes"
+  ],
+  "new_downloads": 0,
+  "new_predictor_fits": 0,
+  "new_quantum_states": 0,
+  "hardware_jobs": 0,
+  "scope": "Public artifact/static contracts plus optional completed offline source-check receipts; not an end-to-end rerun of every historical experiment or UI case."
+}

@@ -1,0 +1,8 @@
+{
+  "backend": "ibm_marrakesh",
+  "account": "owner IBM instance",
+  "usage_consumed_seconds": 196,
+  "usage_remaining_seconds": 404,
+  "usage_limit_seconds": 600,
+  "limitation": "Active-instance month snapshot after this run, not all project accounts combined."
+}

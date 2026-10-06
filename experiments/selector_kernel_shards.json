@@ -1,0 +1,17 @@
+{
+  "study": "selector-kernel-shards-v1",
+  "backend": "ibm_marrakesh",
+  "parent_plan": "experiments/selector_kernel_hardware.json",
+  "failed_namespace": "results/selector-kernel-hardware-v1",
+  "model_keys": ["raw-10-optimized2", "raw-16-optimized2", "raw-20-optimized2", "dd_twirl-10-optimized2", "dd_twirl-16-optimized2"],
+  "arms": ["raw", "dd_twirl"],
+  "max_execution_time_per_job_seconds": 20,
+  "max_jobs": 10,
+  "reserve_seconds": 200,
+  "shots_per_pub": 128,
+  "pubs_per_job": 268,
+  "correction": "Both earlier1332-PUB jobs terminal ERROR1520, zero execution/counts,2 charged seconds each. IBM explicitly recommends splitting circuits/PUBs. This separately frozen acquisition splits the unchanged compiled overlap circuits by subset and replicates two physical-layout calibration circuits per subset/arm. No failed intent is modified, no ambiguous job is retried, and no model is chosen using observed predictive errors.",
+  "owner_authorization": "Owner authorizes real hardware, further jobs beyond the original pair and use of available ten-minute monthly budget as needed. After diagnosed failure the active instance has529 seconds remaining; ten20-second caps reserve200. This explicit bounded scheduler correction supersedes the prior assistant-authored no-replacement acquisition limit; no automatic retries of this new plan.",
+  "analysis_policy": "Same19 training/four reused development years and five predeclared subsets, fixed C1/epsilon0.2,128 shots and raw/PSD/rank4/readout variants. Keep both failed original jobs and every new shard, shot/charge ledger and temporal calibration limits. Calibrate each actual shard. No final-year access or hardware parameter tuning.",
+  "execution_policy": "One exclusive submission intent per subset/arm. All circuits copied from frozen parent QPY; same physical mapping and shots. A terminal failed shard is retained, never reset or automatically resubmitted. No session or new backend selection. Recheck live usage before submission."
+}

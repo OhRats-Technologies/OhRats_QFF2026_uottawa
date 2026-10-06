@@ -1,0 +1,27 @@
+{
+  "study": "tuned-kernel-hardware-v1",
+  "backend": "ibm_marrakesh",
+  "search_plan": "experiments/expanded_tuning_distinct.json",
+  "search_plan_sha256": "ac94e82b220bfc1ba4e49db6abff232365d2fef08e64bbb35ea59299afc88460",
+  "exploration_output": "results/shallow-hardware-search-v1",
+  "choices_sha256": "3297df1ba3159c3b49b334b738969f114b25e004318b462183eec508b9c66292",
+  "fold": [
+    1988,
+    2006,
+    2007,
+    2010
+  ],
+  "remaining_reserve_seconds": 70,
+  "shots": 128,
+  "cap_seconds": 35,
+  "code_paths": [
+    "wildfire_lab/tuned_kernel_hardware.py",
+    "wildfire_lab/nested_search.py",
+    "wildfire_lab/search_kernels.py",
+    "wildfire_lab/search_acquisition.py",
+    "wildfire_lab/forest_models.py",
+    "wildfire_lab/annual_classical.py",
+    "wildfire_lab/mitigation_hardware.py"
+  ],
+  "policy": "Two four-input panels, fixed20-pool hardware exploration subset and fold-local MI4 reference. Freeze chosen circuit and C/epsilon inside chronological training folds before hardware counts. Hardware subset uses outer training labels: conditional inner tuning is not fully nested selector assessment. MI reference is refitted inside every inner split. Match720 QSVR/720 RBF candidates and ridge grid. Both panels retain same19 training/four reused validation years. Evaluate same raw/combined-DD kernels with six declared readout/PSD/rank4 repairs; never select best repair from validation or retune on counts. Matched128 shots, exclusive intents and no retries. Original2019\u20132024 unchanged; no quantum advantage or independent climate-validation claim."
+}

@@ -1,0 +1,113 @@
+{
+  "checked_utc": "2026-10-06T08:31:08.914996+00:00",
+  "plan_sha256": "a15136c7529dbab1e573097f6d62b9f78a93d7de0534abf7b3524a0c7a1550fa",
+  "code_sha256": "33b0826d740e6f0ef6c9e05d381534ae4be24e080503ceedecfa59bfda4a3e7c",
+  "source_array_hashes": {
+    "1985": "23adf79eeeb771bb9f99de4dd85c2d43b92eacbd3e16e0347ade0de7fcf00dba",
+    "1990": "f7560b85c5405a93415541cedb04f5bc6d0704f191ff24b1f55206bf31700443",
+    "1995": "545fa9ea0eda6fcb49b30b3595f21d06c2d0084b3986f6cf2108d10cd5e6d07a",
+    "2000": "229c05c1beca9a7d02dffca129d838e996fd380e25a3cf5ba94ee367f306c85d",
+    "2005": "e6daa50bf872c79acb0342a55016d08d651b9a199e73d9a70fe4df29cb51e588",
+    "2010": "0af67b83b2ce3586d437b0749aa222d56364eb5c2166482f5940e5fdcce3673d",
+    "2015": "2a8839d0d41e5fa5a977c13cea73b607d50c1783bc9b6c1c137ffb12f6411da1"
+  },
+  "endpoints": [
+    1985,
+    2015
+  ],
+  "difference": "2015 minus 1985, estimated metres",
+  "common_samples": 4528955,
+  "sample_resolution_m": 480,
+  "mean_signed_m": 0.19948509093157252,
+  "mean_absolute_m": 2.862919371024883,
+  "root_mean_square_m": 4.698571456836714,
+  "min_max_m": [
+    -74,
+    90
+  ],
+  "p05_p25_p50_p75_p95_m": [
+    -8.0,
+    -1.0,
+    0.0,
+    2.0,
+    8.0
+  ],
+  "sign_counts": {
+    "lower": 1295874,
+    "same": 1685366,
+    "higher": 1547715
+  },
+  "sign_fractions": {
+    "lower": 0.2861309065777867,
+    "same": 0.37213131947656797,
+    "higher": 0.3417377739456453
+  },
+  "absolute_threshold_counts": {
+    "5": 1062388,
+    "10": 306061
+  },
+  "mean_positive_contribution_m": 1.5312022309782278,
+  "mean_negative_contribution_m": 1.3317171400466554,
+  "cancellation_fraction": 0.9303210935835193,
+  "arithmetic_identity": "net = positive contribution - negative contribution; mean absolute = positive contribution + negative contribution",
+  "verification": "Pinned parents, seven array hashes/native grids/masks, signed histogram and counts, direct means and previously published endpoint mean agree.",
+  "budget": {
+    "downloads": 0,
+    "label_reads": 0,
+    "predictor_fits": 0,
+    "quantum_circuit_executions": 0,
+    "hardware_jobs": 0
+  },
+  "limitations": [
+    "Estimated retrospective maps, not observed physical growth or disturbance",
+    "Common future-informed mask and processing are not as-of availability",
+    "480m nearest samples, not native area-weighted measurements",
+    "A source difference/cancellation pattern proves no predictive improvement or quantum insight"
+  ],
+  "calculation_seconds": 0.24855166708584875,
+  "numeric_sha256": "68cb0825053edeef7c1dc745fbd38a73a0dcebeb73829fb176851e309f5c7616",
+  "histogram_sha256": "66c589cf2a6544cda207f465b4fb38f08f9132af13445198ebb17dcd2c905c26",
+  "map": {
+    "image": "assets/context/height-change.png",
+    "legend": "assets/context/height-change-legend.png",
+    "image_sha256": "700738fe74b49e64913f2070adc941f6bf4d4a74802de0c1e4040183225b4c10",
+    "legend_sha256": "ff66dabb884b9157e3d079de05bb9b7a63a9c98c224da8b0059e63a87c17e6d5",
+    "renderer_sha256": "fb35fe66cb4daa46a3faafcb6b13041b2a79e5d76347950b5c6ac0a850fad3c7",
+    "display_crs": "EPSG:3978",
+    "shape": [
+      1200,
+      1118
+    ],
+    "colour_limits_m": [
+      -10,
+      10
+    ],
+    "colours_rgb": [
+      [
+        203,
+        126,
+        77
+      ],
+      [
+        221,
+        228,
+        221
+      ],
+      [
+        53,
+        151,
+        156
+      ]
+    ],
+    "boundary_sha256": "d5af8d3e98aa9209f24bbab28e05b95f8685e1e36ae4df8f868108f5916fbfd3",
+    "resampling": "nearest",
+    "projected_endpoint_subtraction_matches": true,
+    "numeric_values_unclipped": true,
+    "missing_rgb": [
+      64,
+      84,
+      91
+    ]
+  },
+  "figure_sha256": "4de6891cd5453c020e7c5146815d953cd1ea92f79bc1293dbe1656efe3cf8350"
+}

@@ -147,13 +147,13 @@
   stroke:var(--line); stroke-width:1;
 }
 .tick,.bar-label,.chart-unit {
-  fill:var(--muted); font-size:11px;
+  fill:var(--muted); font-size:14px;
 }
 .bar-label {
-  font-size:10px;
+  font-size:14px;
 }
 .bar-value {
-  fill:var(--ink); font-size:13px;
+  fill:var(--ink); font-size:16px;
 }
 .series-0 {
   fill:#66796c;
@@ -170,12 +170,6 @@
 .pred-bar {
   transform-origin:bottom; transform-box:fill-box;
   animation:bar-reveal .7s both;
-}
-.reveal-button {
-  border:1px solid #526d57; background:none;
-  color:var(--accent); border-radius:30px;
-  padding:11px 20px; font-size:12px;
-  display:block; margin:25px auto 0;
 }
 .prediction-stage>.context-note {
   text-align:center; font-size:12px;

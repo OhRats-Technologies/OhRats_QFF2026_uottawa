@@ -1,0 +1,114 @@
+{
+  "checked_utc": "2026-10-06T06:49:18.909Z",
+  "status": "passed",
+  "source_sha256": {
+    "web/demo/strategy/readout.js": "5083d1667c1be4ce62bc2767573102e18de3f3d187ce1e87f2d1ea0a03c8aa6b",
+    "web/demo/strategy/ui.js": "c9cf9aca28c9d1f2d1fd0f83d3c03e65f59602ac12ad6056e8349754a0c6d7fe",
+    "web/demo/strategy/risk-check.mjs": "179c4b1bd5e2a4f17f322e58663e875afe69aeab1fc64c77b033d7761781f65b",
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/index.html": "9fc060ebdd1c6d77356ce640c16beaca380d8dfebda4dc8e9797493450bc2e64",
+    "web/demo/assets/strategy.js": "d9989c381dcf739261e25f19839278d9c7a264274a177d657ada01b2d54a1d7a"
+  },
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "completed_front": 1,
+      "projected_total": 1.4108180350674224,
+      "actual_damage": 1.4108180350674224,
+      "displayed_incident_values_match": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "completed_front": 2,
+      "projected_total": 1.0506776882496887,
+      "actual_damage": 1.0506776882496887,
+      "displayed_incident_values_match": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "completed_front": 3,
+      "projected_total": 2.7247408906005326,
+      "actual_damage": 2.7247408906005326,
+      "displayed_incident_values_match": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "completed_front": 1,
+      "projected_total": 1.4108180350674224,
+      "actual_damage": 1.4108180350674224,
+      "displayed_incident_values_match": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "completed_front": 2,
+      "projected_total": 1.0506776882496887,
+      "actual_damage": 1.0506776882496887,
+      "displayed_incident_values_match": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "completed_front": 3,
+      "projected_total": 2.7247408906005326,
+      "actual_damage": 2.7247408906005326,
+      "displayed_incident_values_match": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "completed_front": 1,
+      "projected_total": 1.4108180350674224,
+      "actual_damage": 1.4108180350674224,
+      "displayed_incident_values_match": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "completed_front": 2,
+      "projected_total": 1.0506776882496887,
+      "actual_damage": 1.0506776882496887,
+      "displayed_incident_values_match": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "completed_front": 3,
+      "projected_total": 2.7247408906005326,
+      "actual_damage": 2.7247408906005326,
+      "displayed_incident_values_match": true
+    }
+  ],
+  "terminal_views": [
+    {
+      "width": 1280,
+      "height": 720,
+      "risk_unavailable": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "risk_unavailable": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "risk_unavailable": true
+    }
+  ],
+  "contained_zero": true,
+  "terminal_unavailable": true,
+  "errors": [],
+  "game_rule_changes": false,
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "scope": "Three accepted response/advance fronts at three viewport sizes; selected-fire contributions agree with actual history before combined reserve clamping. Containment and three control-driven terminal views checked. Not measured wildfire risk or a policy-quality study."
+}

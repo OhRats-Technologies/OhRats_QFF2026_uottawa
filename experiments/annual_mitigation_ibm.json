@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "study": "annual-mitigation-ibm-v1",
+  "owner_authorization": "October 6 owner explicitly requests real IBM evaluation with approximately two minutes QCPU budget.",
+  "backend": "ibm_fez",
+  "parent_evidence_sha256": "57e3ba8b664df9962812a88ca5c7ed373dcffd82aab320bdfac455de11c9f7d7",
+  "parent": "docs/data/pipeline_mitigation_evidence.zip",
+  "arms": [
+    "raw",
+    "dd_twirl"
+  ],
+  "jobs": 2,
+  "max_execution_time_per_job_seconds": 60,
+  "max_total_configured_qpu_seconds": 120,
+  "kernel_shots": 512,
+  "selector_shots": 512,
+  "calibration_shots": 512,
+  "randomizations": 4,
+  "shots_per_randomization": 128,
+  "train_years": [
+    1988,
+    1991,
+    1993,
+    1996,
+    1999,
+    2001,
+    2004,
+    2006
+  ],
+  "validation_years": [
+    2007,
+    2008,
+    2009,
+    2010
+  ],
+  "information_policy": "Same fixed development inputs/targets/circuits as local pipeline diagnostic. No new hyperparameters, final-test reads, backend-performance search or model promotion.",
+  "execution_policy": "Two single-job Sampler executions, no active session billing. Freeze and validate before submission; exclusive per-arm submission intent before API call. No automatic retry of an existing or ambiguous submission. Cancellation/failure usage counts toward allowance; no replacement jobs.",
+  "layout_policy": "Deterministic connected ten-qubit path from backend coupling graph; first four encode QSVR. Verify measured physical mapping across overlap circuits; calibrate actual measured qubits for selector separately. Fixed layout/transpiler seed.",
+  "analysis_policy": "Preserve actual hardware counts and circuits. Compare raw/combined suppression at matched forward shots; fit fixed QSVR and ridge, reuse paired calibration to compute independent-qubit readout reconstruction, PSD and fixed rank-four train-derived repair. Report downstream hectares/fire, kernel geometry, feasible fraction/SQD gap and actual usage. Two executions are not replicated calibration blocks. Combined arm cannot attribute hardware benefit to DD versus twirling.",
+  "measurement_policy": "Measurement twirling is Runtime-managed. Readout calibration estimates each arm's effective independent assignment channel; no claim of exact removal of correlated/readout-frame-specific effects.",
+  "preflight_revision": "Before plan freeze/submission, local installed Sampler inspection showed a single program shot count; all 73 PUBs therefore use 512 shots, including calibration. Earlier timing preflight used mixed counts and was not submitted."
+}

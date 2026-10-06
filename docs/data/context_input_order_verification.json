@@ -1,0 +1,176 @@
+{
+  "collection": {
+    "status": "passed",
+    "result_sha256": "d7c1f9a326c07dd7151a31b23290eab864c58791ee9c044dd793d326148239ed",
+    "plan_sha256": "8c537d2570d37787e34d25b764115bb456ef0096fd788c14353e4b094b0544e4",
+    "arrays_sha256": "19dfafd8360ff1860021438c0b50579d0a244a8c55277c63953a9fe92527a977",
+    "checked": [
+      {
+        "key": "linear_d4_identity",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "linear_d4_reverse",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "linear_d4_middle_swap",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "linear_d4_rotate_left",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "full_d4_identity",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "full_d4_reverse",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "full_d4_middle_swap",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "full_d4_rotate_left",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "linear_d32_identity",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "linear_d32_reverse",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "linear_d32_middle_swap",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "linear_d32_rotate_left",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "full_d32_identity",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "full_d32_reverse",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "full_d32_middle_swap",
+        "metrics_and_state_relabelling_match": true
+      },
+      {
+        "key": "full_d32_rotate_left",
+        "metrics_and_state_relabelling_match": true
+      }
+    ],
+    "new_statevector_preparations": 0,
+    "predictor_fits": 0,
+    "hardware_jobs": 0,
+    "scope": "Saved preprocessing/state/matrix arithmetic. Circuit generation is not repeated; source hashes and normalization are checked. No labels, test years, order ranking or predictive claims."
+  },
+  "formula_audit": {
+    "status": "passed",
+    "result_sha256": "d7c1f9a326c07dd7151a31b23290eab864c58791ee9c044dd793d326148239ed",
+    "arrays_sha256": "19dfafd8360ff1860021438c0b50579d0a244a8c55277c63953a9fe92527a977",
+    "audit_code_sha256": "197d13bb3c22e1ef8ca2f638e13be708975d9e33a3978dba31e5d9950086de96",
+    "rows": [
+      {
+        "key": "linear_d4_identity",
+        "amplitude_residual": 2.2504706118399135e-15,
+        "kernel_residual": 1.7763568394002505e-15
+      },
+      {
+        "key": "linear_d4_reverse",
+        "amplitude_residual": 2.6146282585860906e-15,
+        "kernel_residual": 1.887379141862766e-15
+      },
+      {
+        "key": "linear_d4_middle_swap",
+        "amplitude_residual": 2.0949944511296616e-15,
+        "kernel_residual": 1.7763568394002505e-15
+      },
+      {
+        "key": "linear_d4_rotate_left",
+        "amplitude_residual": 2.2420252351056813e-15,
+        "kernel_residual": 2.4424906541753444e-15
+      },
+      {
+        "key": "full_d4_identity",
+        "amplitude_residual": 3.930649133014653e-15,
+        "kernel_residual": 2.914335439641036e-15
+      },
+      {
+        "key": "full_d4_reverse",
+        "amplitude_residual": 3.7294085696503274e-15,
+        "kernel_residual": 2.831068712794149e-15
+      },
+      {
+        "key": "full_d4_middle_swap",
+        "amplitude_residual": 3.930649133014653e-15,
+        "kernel_residual": 2.914335439641036e-15
+      },
+      {
+        "key": "full_d4_rotate_left",
+        "amplitude_residual": 3.936304305892037e-15,
+        "kernel_residual": 2.7200464103316335e-15
+      },
+      {
+        "key": "linear_d32_identity",
+        "amplitude_residual": 2.1161692528456224e-15,
+        "kernel_residual": 2.886579864025407e-15
+      },
+      {
+        "key": "linear_d32_reverse",
+        "amplitude_residual": 1.9875783008292022e-15,
+        "kernel_residual": 2.3314683517128287e-15
+      },
+      {
+        "key": "linear_d32_middle_swap",
+        "amplitude_residual": 2.1677797545656835e-15,
+        "kernel_residual": 2.220446049250313e-15
+      },
+      {
+        "key": "linear_d32_rotate_left",
+        "amplitude_residual": 2.24401082458251e-15,
+        "kernel_residual": 3.219646771412954e-15
+      },
+      {
+        "key": "full_d32_identity",
+        "amplitude_residual": 3.9854145878879915e-15,
+        "kernel_residual": 3.774758283725532e-15
+      },
+      {
+        "key": "full_d32_reverse",
+        "amplitude_residual": 3.867921457449011e-15,
+        "kernel_residual": 3.6637359812630166e-15
+      },
+      {
+        "key": "full_d32_middle_swap",
+        "amplitude_residual": 3.9854145878879915e-15,
+        "kernel_residual": 3.885780586188048e-15
+      },
+      {
+        "key": "full_d32_rotate_left",
+        "amplitude_residual": 3.6516983997805334e-15,
+        "kernel_residual": 4.107825191113079e-15
+      }
+    ],
+    "classical_amplitude_reconstructions": 496,
+    "new_qiskit_calls": 0,
+    "predictor_fits": 0,
+    "hardware_jobs": 0,
+    "scope": "Post-hoc direct NumPy bit/parity-phase audit of all saved one-layer ZZ states. No circuit simulator or shared fidelity/statistics/basis helper used; no labels, fresh predictive validation, optimal-order selection or new quantum claim."
+  },
+  "figure": {
+    "path": "docs/figures/context-input-order.png",
+    "sha256": "e21fcffed5a5b749a62e84343583add99d110cbaeda54e05156393178d9eaf9b",
+    "code_sha256": "209dd806d26688fabac97f885e054671603d6bcf288972dc7adac74c8aee2cb4"
+  }
+}

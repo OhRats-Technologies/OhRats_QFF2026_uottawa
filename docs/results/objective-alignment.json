@@ -1,0 +1,1003 @@
+{
+  "study": "objective-alignment",
+  "bundle": "docs/data/objective-alignment-evidence.zip",
+  "bundle_sha256": "0241f98e550bd13cb54ba7e2bda8c7deeeba648f49ffab4ba37757cf1fe5d6ad",
+  "evidence_sha256": "918c20aa1854442d7eb0a8ee05e4b617310d181f7c7052296323eaa4163be697",
+  "status": "complete",
+  "revision": "9410ef848d6a47e46527d17b8bd5196d3d51a2ef",
+  "resources": {
+    "seconds": 34.26298241689801,
+    "model_fits": 432,
+    "hardware_jobs": 0,
+    "final_test_accessed": false,
+    "objective_calls": 12960,
+    "pair_circuits": 25224,
+    "classical_sample_draws": 368640
+  },
+  "aggregates": [
+    {
+      "panel": "10",
+      "selector": "mi",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 66.90279655602355,
+      "fold_mae_ha": [
+        25.137973191253934,
+        143.57051158338277,
+        31.999904893433943
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "mi",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 67.97615123648279,
+      "fold_mae_ha": [
+        24.580039453527654,
+        130.06781666148137,
+        49.28059759443933
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "mi",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.5180601407326,
+      "fold_mae_ha": [
+        34.444880056932284,
+        129.39720552317408,
+        50.712094842091474
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "random",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 62.93900993843977,
+      "fold_mae_ha": [
+        16.943758661396686,
+        150.3453081748604,
+        21.527962979062202
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "random",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 78.18174604417031,
+      "fold_mae_ha": [
+        37.245283385223416,
+        125.41079044793993,
+        71.88916429934758
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "random",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 87.55041170925405,
+      "fold_mae_ha": [
+        59.21231328682946,
+        136.03769240350567,
+        67.40122943742703
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_original",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 68.89703057964407,
+      "fold_mae_ha": [
+        21.22614733107092,
+        137.55411422555886,
+        47.91083018230239
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_original",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 73.08040611968808,
+      "fold_mae_ha": [
+        29.48691085495832,
+        119.75752402415974,
+        69.99678347994622
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_original",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 70.87674238188828,
+      "fold_mae_ha": [
+        40.004455812037705,
+        123.98319881242566,
+        48.6425725212015
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_no_redundancy",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 66.90279655602355,
+      "fold_mae_ha": [
+        25.137973191253934,
+        143.57051158338277,
+        31.999904893433943
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_no_redundancy",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 67.97615123648279,
+      "fold_mae_ha": [
+        24.580039453527654,
+        130.06781666148137,
+        49.28059759443933
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_no_redundancy",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.5180601407326,
+      "fold_mae_ha": [
+        34.444880056932284,
+        129.39720552317408,
+        50.712094842091474
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_ridge",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 66.90279655602355,
+      "fold_mae_ha": [
+        25.137973191253934,
+        143.57051158338277,
+        31.999904893433943
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_ridge",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 67.97615123648279,
+      "fold_mae_ha": [
+        24.580039453527654,
+        130.06781666148137,
+        49.28059759443933
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_ridge",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.5180601407326,
+      "fold_mae_ha": [
+        34.444880056932284,
+        129.39720552317408,
+        50.712094842091474
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "qaoa_ridge",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 66.90279655602355,
+      "fold_mae_ha": [
+        25.137973191253934,
+        143.57051158338277,
+        31.999904893433943
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "qaoa_ridge",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 67.97615123648279,
+      "fold_mae_ha": [
+        24.580039453527654,
+        130.06781666148137,
+        49.28059759443933
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "qaoa_ridge",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.5180601407326,
+      "fold_mae_ha": [
+        34.444880056932284,
+        129.39720552317408,
+        50.712094842091474
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_rbf",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 72.20643831897969,
+      "fold_mae_ha": [
+        25.137973191253934,
+        143.57051158338277,
+        47.91083018230239
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_rbf",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 74.88154653165175,
+      "fold_mae_ha": [
+        24.580039453527654,
+        130.06781666148137,
+        69.99678347994622
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "exact_rbf",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 70.82821936710262,
+      "fold_mae_ha": [
+        34.444880056932284,
+        129.39720552317408,
+        48.6425725212015
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "qaoa_rbf",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 72.20643831897969,
+      "fold_mae_ha": [
+        25.137973191253934,
+        143.57051158338277,
+        47.91083018230239
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "qaoa_rbf",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 74.88154653165175,
+      "fold_mae_ha": [
+        24.580039453527654,
+        130.06781666148137,
+        69.99678347994622
+      ]
+    },
+    {
+      "panel": "10",
+      "selector": "qaoa_rbf",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 70.82821936710262,
+      "fold_mae_ha": [
+        34.444880056932284,
+        129.39720552317408,
+        48.6425725212015
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "mi",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 67.19138269879015,
+      "fold_mae_ha": [
+        19.015623678958704,
+        139.185988962968,
+        43.37253545444375
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "mi",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 75.20360327360528,
+      "fold_mae_ha": [
+        22.0356274987237,
+        133.5229693425213,
+        70.05221297957084
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "mi",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.19976357113315,
+      "fold_mae_ha": [
+        28.587872043549286,
+        126.73826514283954,
+        58.27315352701065
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "random",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 103.38507729217436,
+      "fold_mae_ha": [
+        18.586992070159077,
+        194.09917913831026,
+        97.46906066805371
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "random",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 79.11326279219656,
+      "fold_mae_ha": [
+        33.14576038572942,
+        117.34777305326,
+        86.84625493760028
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "random",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 66.44028908416543,
+      "fold_mae_ha": [
+        37.38234731124417,
+        106.08039143284984,
+        55.85812850840229
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_original",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 64.62830719753387,
+      "fold_mae_ha": [
+        20.435431354703752,
+        142.03510554572622,
+        31.414384692171637
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_original",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 79.21283438532289,
+      "fold_mae_ha": [
+        28.21202036282875,
+        138.53585470688944,
+        70.89062808625047
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_original",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 69.56691979612759,
+      "fold_mae_ha": [
+        25.032571128900603,
+        126.35278347862545,
+        57.31540478085671
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_no_redundancy",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 67.19138269879015,
+      "fold_mae_ha": [
+        19.015623678958704,
+        139.185988962968,
+        43.37253545444375
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_no_redundancy",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 75.20360327360528,
+      "fold_mae_ha": [
+        22.0356274987237,
+        133.5229693425213,
+        70.05221297957084
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_no_redundancy",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.19976357113315,
+      "fold_mae_ha": [
+        28.587872043549286,
+        126.73826514283954,
+        58.27315352701065
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_ridge",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 63.678601669947795,
+      "fold_mae_ha": [
+        20.435431354703752,
+        139.185988962968,
+        31.414384692171637
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_ridge",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 77.54187259720017,
+      "fold_mae_ha": [
+        28.21202036282875,
+        133.5229693425213,
+        70.89062808625047
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_ridge",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 69.69541368419895,
+      "fold_mae_ha": [
+        25.032571128900603,
+        126.73826514283954,
+        57.31540478085671
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "qaoa_ridge",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 63.678601669947795,
+      "fold_mae_ha": [
+        20.435431354703752,
+        139.185988962968,
+        31.414384692171637
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "qaoa_ridge",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 77.54187259720017,
+      "fold_mae_ha": [
+        28.21202036282875,
+        133.5229693425213,
+        70.89062808625047
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "qaoa_ridge",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 69.69541368419895,
+      "fold_mae_ha": [
+        25.032571128900603,
+        126.73826514283954,
+        57.31540478085671
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_rbf",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 67.19138269879015,
+      "fold_mae_ha": [
+        19.015623678958704,
+        139.185988962968,
+        43.37253545444375
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_rbf",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 75.20360327360528,
+      "fold_mae_ha": [
+        22.0356274987237,
+        133.5229693425213,
+        70.05221297957084
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "exact_rbf",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.19976357113315,
+      "fold_mae_ha": [
+        28.587872043549286,
+        126.73826514283954,
+        58.27315352701065
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "qaoa_rbf",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 67.19138269879015,
+      "fold_mae_ha": [
+        19.015623678958704,
+        139.185988962968,
+        43.37253545444375
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "qaoa_rbf",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 75.20360327360528,
+      "fold_mae_ha": [
+        22.0356274987237,
+        133.5229693425213,
+        70.05221297957084
+      ]
+    },
+    {
+      "panel": "16",
+      "selector": "qaoa_rbf",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 71.19976357113315,
+      "fold_mae_ha": [
+        28.587872043549286,
+        126.73826514283954,
+        58.27315352701065
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "mi",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 88.37569102567063,
+      "fold_mae_ha": [
+        19.63213410528971,
+        147.03473492275208,
+        98.46020404897013
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "mi",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 75.53934842067517,
+      "fold_mae_ha": [
+        26.440519459825886,
+        138.09412296446357,
+        62.08340283773606
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "mi",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 84.14519833429924,
+      "fold_mae_ha": [
+        32.63996054845119,
+        140.81432003137792,
+        78.9813144230686
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "random",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 91.96288228029282,
+      "fold_mae_ha": [
+        17.039134466236412,
+        145.08804187942178,
+        113.76147049522024
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "random",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 89.08787698054662,
+      "fold_mae_ha": [
+        58.45880287201516,
+        143.00245748836247,
+        65.80237058126225
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "random",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 89.24538386220841,
+      "fold_mae_ha": [
+        56.4576946364504,
+        131.744698475263,
+        79.53375847491185
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_original",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 93.2872961202837,
+      "fold_mae_ha": [
+        19.085973184093426,
+        154.65022987760116,
+        106.12568529915649
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_original",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 89.31716429272468,
+      "fold_mae_ha": [
+        42.577185794804535,
+        143.53346019022888,
+        81.84084689314065
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_original",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 85.34569336088983,
+      "fold_mae_ha": [
+        33.955194335865585,
+        134.95709804274654,
+        87.1247877040574
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_no_redundancy",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 88.37569102567063,
+      "fold_mae_ha": [
+        19.63213410528971,
+        147.03473492275208,
+        98.46020404897013
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_no_redundancy",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 75.53934842067517,
+      "fold_mae_ha": [
+        26.440519459825886,
+        138.09412296446357,
+        62.08340283773606
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_no_redundancy",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 84.14519833429924,
+      "fold_mae_ha": [
+        32.63996054845119,
+        140.81432003137792,
+        78.9813144230686
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_ridge",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 88.19363738527188,
+      "fold_mae_ha": [
+        19.085973184093426,
+        147.03473492275208,
+        98.46020404897013
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_ridge",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 80.91823719900138,
+      "fold_mae_ha": [
+        42.577185794804535,
+        138.09412296446357,
+        62.08340283773606
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_ridge",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 84.5836095967707,
+      "fold_mae_ha": [
+        33.955194335865585,
+        140.81432003137792,
+        78.9813144230686
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "qaoa_ridge",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 88.19363738527188,
+      "fold_mae_ha": [
+        19.085973184093426,
+        147.03473492275208,
+        98.46020404897013
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "qaoa_ridge",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 80.91823719900138,
+      "fold_mae_ha": [
+        42.577185794804535,
+        138.09412296446357,
+        62.08340283773606
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "qaoa_ridge",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 84.5836095967707,
+      "fold_mae_ha": [
+        33.955194335865585,
+        140.81432003137792,
+        78.9813144230686
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_rbf",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 90.7321357035549,
+      "fold_mae_ha": [
+        19.085973184093426,
+        154.65022987760116,
+        98.46020404897013
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_rbf",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 82.73134960758982,
+      "fold_mae_ha": [
+        42.577185794804535,
+        143.53346019022888,
+        62.08340283773606
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "exact_rbf",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 82.6312022672269,
+      "fold_mae_ha": [
+        33.955194335865585,
+        134.95709804274654,
+        78.9813144230686
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "qaoa_rbf",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 90.7321357035549,
+      "fold_mae_ha": [
+        19.085973184093426,
+        154.65022987760116,
+        98.46020404897013
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "qaoa_rbf",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 82.73134960758982,
+      "fold_mae_ha": [
+        42.577185794804535,
+        143.53346019022888,
+        62.08340283773606
+      ]
+    },
+    {
+      "panel": "20",
+      "selector": "qaoa_rbf",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 82.6312022672269,
+      "fold_mae_ha": [
+        33.955194335865585,
+        134.95709804274654,
+        78.9813144230686
+      ]
+    }
+  ],
+  "information": "Reused1988\u20132018 annual Ontario development, never independent confirmation. Full recipe/code hashes/traces/counts/selected fit equations in bundle. No hardware acquisition in these studies.",
+  "chosen_weights": [
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "pool_size": 10,
+      "chosen": {
+        "ridge": 0.0,
+        "rbf": 0.0
+      }
+    },
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "pool_size": 16,
+      "chosen": {
+        "ridge": 1.0,
+        "rbf": 0.0
+      }
+    },
+    {
+      "fold": [
+        1988,
+        2006,
+        2007,
+        2010
+      ],
+      "pool_size": 20,
+      "chosen": {
+        "ridge": 1.0,
+        "rbf": 0.25
+      }
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "pool_size": 10,
+      "chosen": {
+        "ridge": 0.0,
+        "rbf": 0.0
+      }
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "pool_size": 16,
+      "chosen": {
+        "ridge": 0.25,
+        "rbf": 0.25
+      }
+    },
+    {
+      "fold": [
+        1988,
+        2010,
+        2011,
+        2014
+      ],
+      "pool_size": 20,
+      "chosen": {
+        "ridge": 0.0,
+        "rbf": 0.25
+      }
+    },
+    {
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "pool_size": 10,
+      "chosen": {
+        "ridge": 0.0,
+        "rbf": 0.25
+      }
+    },
+    {
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "pool_size": 16,
+      "chosen": {
+        "ridge": 1.0,
+        "rbf": 0.0
+      }
+    },
+    {
+      "fold": [
+        1988,
+        2014,
+        2015,
+        2018
+      ],
+      "pool_size": 20,
+      "chosen": {
+        "ridge": 0.0,
+        "rbf": 0.0
+      }
+    }
+  ]
+}

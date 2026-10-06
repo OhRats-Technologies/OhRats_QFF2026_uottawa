@@ -1,0 +1,191 @@
+{
+  "study": "expanded-tuning-distinct",
+  "bundle": "docs/data/expanded-tuning-distinct-evidence.zip",
+  "bundle_sha256": "e45d2a685207b8cd77b26503a98e8fb1489d51d5e4dec3f7a8e98f6c6641f99f",
+  "evidence_sha256": "722ede77aeaebcaf5c7c56303c912623389f6895ddf034ddc9dbef97630f53c7",
+  "status": "complete",
+  "revision": "b73317a1fe05f70a00dd9578837c64de7962090a",
+  "resources": {
+    "seconds": 24.866016374900937,
+    "model_fits": 39267,
+    "hardware_jobs": 0,
+    "final_test_accessed": false,
+    "state_evaluations": 27258,
+    "parity_pair_circuits": 72
+  },
+  "aggregates": [
+    {
+      "panel": "no_inputs",
+      "selector": "",
+      "model": "training_mean",
+      "folds": 3,
+      "mae_ha": 91.99948809925418,
+      "fold_mae_ha": [
+        106.30439641642272,
+        127.05923375771103,
+        42.634834123628806
+      ]
+    },
+    {
+      "panel": "weather4",
+      "selector": "",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 91.3151888362667,
+      "fold_mae_ha": [
+        68.53917495352697,
+        125.49151408968545,
+        79.91487746558767
+      ]
+    },
+    {
+      "panel": "weather4",
+      "selector": "",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 98.87291878681363,
+      "fold_mae_ha": [
+        33.517717784461375,
+        182.1472546140655,
+        80.953783961914
+      ]
+    },
+    {
+      "panel": "weather4",
+      "selector": "",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 83.61808790294242,
+      "fold_mae_ha": [
+        107.91500317462202,
+        66.20925243906068,
+        76.73000809514457
+      ]
+    },
+    {
+      "panel": "weather4",
+      "selector": "",
+      "model": "fixed_qsvr",
+      "folds": 3,
+      "mae_ha": 93.88532700325618,
+      "fold_mae_ha": [
+        88.89378272565187,
+        114.9244310251758,
+        77.83776725894087
+      ]
+    },
+    {
+      "panel": "mi4",
+      "selector": "",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 82.71490598420472,
+      "fold_mae_ha": [
+        22.542860232401445,
+        148.07115131908094,
+        77.53070640113177
+      ]
+    },
+    {
+      "panel": "mi4",
+      "selector": "",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 83.82978227145074,
+      "fold_mae_ha": [
+        33.19861942005471,
+        138.38529011740974,
+        79.90543727688777
+      ]
+    },
+    {
+      "panel": "mi4",
+      "selector": "",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 178.01623357533018,
+      "fold_mae_ha": [
+        20.255546158945595,
+        145.4272444058498,
+        368.3659101611952
+      ]
+    },
+    {
+      "panel": "mi4",
+      "selector": "",
+      "model": "fixed_qsvr",
+      "folds": 3,
+      "mae_ha": 84.14519833430909,
+      "fold_mae_ha": [
+        32.63996054845991,
+        140.8143200311815,
+        78.98131442328582
+      ]
+    },
+    {
+      "panel": "interleaved8",
+      "selector": "",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 84.84743042972109,
+      "fold_mae_ha": [
+        32.95954435725824,
+        150.5169134691786,
+        71.0658334627264
+      ]
+    },
+    {
+      "panel": "interleaved8",
+      "selector": "",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 86.36429060656712,
+      "fold_mae_ha": [
+        33.51771778446132,
+        147.48991256096988,
+        78.08524147427019
+      ]
+    },
+    {
+      "panel": "interleaved8",
+      "selector": "",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 102.48406965757447,
+      "fold_mae_ha": [
+        135.81532141176308,
+        115.34871728436852,
+        56.28817027659178
+      ]
+    },
+    {
+      "panel": "interleaved8",
+      "selector": "",
+      "model": "fixed_qsvr",
+      "folds": 3,
+      "mae_ha": 60.12322406711257,
+      "fold_mae_ha": [
+        36.58622790889768,
+        116.41028350369234,
+        27.373160788747676
+      ]
+    }
+  ],
+  "information": "Reused1988\u20132018 annual Ontario development, never independent confirmation. Full recipe/code hashes/traces/counts/selected fit equations in bundle. No hardware acquisition in these studies.",
+  "distinct_geometry": [
+    {
+      "width": 4,
+      "distinct_candidates": 60,
+      "state_evaluations": 420,
+      "tolerance": 1e-10,
+      "labels_used": 0
+    },
+    {
+      "width": 8,
+      "distinct_candidates": 60,
+      "state_evaluations": 420,
+      "tolerance": 1e-10,
+      "labels_used": 0
+    }
+  ]
+}

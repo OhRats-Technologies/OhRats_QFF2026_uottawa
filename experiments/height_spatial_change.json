@@ -1,0 +1,63 @@
+{
+  "id": "height-spatial-v1",
+  "role": "Exploratory descriptive source interpretation; prior endpoint means already inspected, not independent hypothesis validation",
+  "epochs": [
+    1985,
+    1990,
+    1995,
+    2000,
+    2005,
+    2010,
+    2015
+  ],
+  "endpoints": [
+    1985,
+    2015
+  ],
+  "input_contract": "Pinned uint8 metre estimates; zero valid, 255 missing; same native grid and Ontario mask; common valid footprint across all seven epochs",
+  "parent_hashes": {
+    "docs/data/scanfi_height_context.json": "20258c3268a94cca9d8048dacb483a49019c388e672b21def5f9cd51c546ad4f",
+    "docs/data/height_distribution.json": "ea9ae954ff01d9d825abf20e709da6cbcc1374d6d2e96470cbc1115d9ec0cfd1",
+    "web/demo/assets/context/height-series-v2.json": "2008544e8ed0ace3e1b7df2bc3f7879658ecf8957fd4c9f5d2aeb6f64c9e589f",
+    "web/demo/assets/context/layers.json": "020b5db5fbaf02a204a139967fd8eecd437212c1da7fc09aef27ed60d5c18f6a"
+  },
+  "metrics": [
+    "Endpoint signed/absolute/RMS difference and 5/25/50/75/95 percentiles",
+    "Same/lower/higher counts; |difference| >=5 and >=10 counts",
+    "Positive/negative mean contributions; net equals gain minus loss; cancellation = 1 - |net|/mean_absolute",
+    "Signed integer histogram -254..254; total equals common valid sample count"
+  ],
+  "map": {
+    "colour_limits_m": [
+      -10,
+      10
+    ],
+    "difference": "2015 minus 1985",
+    "display_crs": "EPSG:3978",
+    "resampling": "nearest",
+    "numeric_nodata": -32768,
+    "numeric_values_unclipped": true
+  },
+  "checks": [
+    "Every numeric source hash and grid matches published parents",
+    "Net difference matches previously published endpoint mean difference",
+    "Signed subtraction avoids uint8 wraparound",
+    "Histogram/sign partitions agree with direct arrays",
+    "Reprojected difference matches separately reprojected endpoints where valid",
+    "Map clipping affects colour only; zero and nodata distinct"
+  ],
+  "budget": {
+    "downloads": 0,
+    "label_reads": 0,
+    "predictor_fits": 0,
+    "quantum_circuit_executions": 0,
+    "hardware_jobs": 0
+  },
+  "limitations": [
+    "Estimated retrospective maps, not observed physical growth or disturbance",
+    "Common future-informed mask and processing are not as-of availability",
+    "480m nearest samples, not native area-weighted measurements",
+    "A source difference/cancellation pattern proves no predictive improvement or quantum insight"
+  ],
+  "review_gate": "Inspect quantitative consistency and map readability before optional game integration; prune if unhelpful"
+}

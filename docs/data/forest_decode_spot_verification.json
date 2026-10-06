@@ -1,0 +1,445 @@
+{
+  "status": "passed",
+  "sources": 12,
+  "tiles": 36,
+  "pixels": 2328320,
+  "mismatches": 0,
+  "network_requests": 0,
+  "shared": "Cached TIFF header parser and existing ROI transform/masks.",
+  "independent": "Deflate codec and signed/horizontal-predictor decoding use zlib/NumPy, not Pillow/libtiff.",
+  "limitation": "Bounded decoder spot check, not all42 full arrays or an independent spatial-boundary audit. Excluded2015 age remains excluded.",
+  "records": [
+    {
+      "layer": "age",
+      "epoch": 1985,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_age_median_1985_v2_20260119.tif.ovr",
+      "source_frame_sha256": "2a174789ca0779b5a078c596235f7ef3b21c1877cd00638aeff20691a924426e",
+      "saved_roi_sha256": "9231c7cf080ad6a2520ad01f72245060aca264fb304a2c60b690680a368c9932",
+      "sample_format": 2,
+      "bits": 16,
+      "overview_eligible": true,
+      "tiles": [
+        {
+          "tile_row": 9,
+          "tile_column": 12,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": -32768,
+          "maximum": 158
+        },
+        {
+          "tile_row": 10,
+          "tile_column": 13,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": -32768,
+          "maximum": 150
+        },
+        {
+          "tile_row": 12,
+          "tile_column": 13,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": -32768,
+          "maximum": 123
+        }
+      ]
+    },
+    {
+      "layer": "age",
+      "epoch": 2015,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_age_median_2015_v2_20260119.tif.ovr",
+      "source_frame_sha256": "0a4f69e0a0462aec21f67ff2556b37ed4619efcc067ec5a17458017ceed0edc8",
+      "saved_roi_sha256": "528986bc492614281ae96e2dc211f1d399667ab476b00523d96d2737a29f691e",
+      "sample_format": 2,
+      "bits": 16,
+      "overview_eligible": false,
+      "tiles": [
+        {
+          "tile_row": 9,
+          "tile_column": 12,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": -32768,
+          "maximum": 165
+        },
+        {
+          "tile_row": 10,
+          "tile_column": 9,
+          "pixels": 34560,
+          "mismatches": 0,
+          "signed_minimum": -32768,
+          "maximum": 150
+        },
+        {
+          "tile_row": 12,
+          "tile_column": 13,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": -32768,
+          "maximum": 138
+        }
+      ]
+    },
+    {
+      "layer": "biomass",
+      "epoch": 1985,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_biomass_1985_v2_20260119.tif.ovr",
+      "source_frame_sha256": "4028464b4b0886d3098666e28749cf18f49aa14171561a2166cab5aa88f35414",
+      "saved_roi_sha256": "4006574db567b7595bd384cead02d72c2f7a46131cbc59f0383433c0a0baefdb",
+      "sample_format": 2,
+      "bits": 16,
+      "overview_eligible": true,
+      "tiles": [
+        {
+          "tile_row": 18,
+          "tile_column": 21,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 140
+        },
+        {
+          "tile_row": 21,
+          "tile_column": 27,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 190
+        },
+        {
+          "tile_row": 25,
+          "tile_column": 28,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 250
+        }
+      ]
+    },
+    {
+      "layer": "biomass",
+      "epoch": 2015,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_biomass_2015_v2_20260119.tif.ovr",
+      "source_frame_sha256": "24ec8437ca7dc5472321760ff1aa291c443bcb75b73c3a6b476d761a5ecaa66c",
+      "saved_roi_sha256": "f5adbd180ddc8d05ebaa8e41fc2f269e3222de29a51d16470be50531720afb7d",
+      "sample_format": 2,
+      "bits": 16,
+      "overview_eligible": true,
+      "tiles": [
+        {
+          "tile_row": 18,
+          "tile_column": 21,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 156
+        },
+        {
+          "tile_row": 21,
+          "tile_column": 27,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 188
+        },
+        {
+          "tile_row": 25,
+          "tile_column": 28,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 250
+        }
+      ]
+    },
+    {
+      "layer": "closure",
+      "epoch": 1985,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_closure_1985_v2_20260119.tif.ovr",
+      "source_frame_sha256": "7f3842a7b58c4dfd9b78eeb6a3e71575a442a61d1c7ddd937677121377125d2e",
+      "saved_roi_sha256": "6b6f8c23c7ed9e3337f7a444b5597d2ef2ff9ee9840d5c8955bcb7e9abd184f6",
+      "sample_format": 1,
+      "bits": 8,
+      "overview_eligible": true,
+      "tiles": [
+        {
+          "tile_row": 18,
+          "tile_column": 21,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 95
+        },
+        {
+          "tile_row": 21,
+          "tile_column": 27,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 95
+        },
+        {
+          "tile_row": 25,
+          "tile_column": 28,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 100
+        }
+      ]
+    },
+    {
+      "layer": "closure",
+      "epoch": 2015,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_closure_2015_v2_20260119.tif.ovr",
+      "source_frame_sha256": "4c252752c9c4e860f7361806ded9ebab082a1b45c877c1e8d56a4a6438eef684",
+      "saved_roi_sha256": "5a9378f6f47da2d331706fbfabdc7d41c71eecc445756e53c485af925c58fb1d",
+      "sample_format": 1,
+      "bits": 8,
+      "overview_eligible": true,
+      "tiles": [
+        {
+          "tile_row": 18,
+          "tile_column": 21,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 95
+        },
+        {
+          "tile_row": 21,
+          "tile_column": 27,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 95
+        },
+        {
+          "tile_row": 25,
+          "tile_column": 28,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 100
+        }
+      ]
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 1985,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_spsCC_blackSpruce_1985_v2_20260119.tif.ovr",
+      "source_frame_sha256": "57c00064afe0151a9564d3a095df202df949b07548c892f3e68ab64ce9583cb1",
+      "saved_roi_sha256": "0d3ff463859fed5f7dec40d3b6f76c08df65beaf22e2fb5942785954ae8a6dc9",
+      "sample_format": 1,
+      "bits": 8,
+      "overview_eligible": true,
+      "tiles": [
+        {
+          "tile_row": 18,
+          "tile_column": 21,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 85
+        },
+        {
+          "tile_row": 21,
+          "tile_column": 27,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 88
+        },
+        {
+          "tile_row": 25,
+          "tile_column": 28,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 61
+        }
+      ]
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 2015,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_spsCC_blackSpruce_2015_v2_20260119.tif.ovr",
+      "source_frame_sha256": "b9bdae755c7156c05d94521b27d4e967cc007629fc9e9b7e8f3f63c6874d631c",
+      "saved_roi_sha256": "f47fe56afa88ba057d85039587a9b6e37bdf900b8faa929b4beec237d7a98e2c",
+      "sample_format": 1,
+      "bits": 8,
+      "overview_eligible": true,
+      "tiles": [
+        {
+          "tile_row": 18,
+          "tile_column": 21,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 89
+        },
+        {
+          "tile_row": 21,
+          "tile_column": 27,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 88
+        },
+        {
+          "tile_row": 25,
+          "tile_column": 28,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 62
+        }
+      ]
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 1985,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_spsCC_broadleaf_1985_v2_20260119.tif.ovr",
+      "source_frame_sha256": "99ed6f152e18183754605af82feb7daa5dbfc21872c52189ec3940457148d302",
+      "saved_roi_sha256": "62f9fa357aba17c0fb8aeaf674c58b62a1ce74c203b32700587e96489eaf70c0",
+      "sample_format": 1,
+      "bits": 8,
+      "overview_eligible": true,
+      "tiles": [
+        {
+          "tile_row": 18,
+          "tile_column": 21,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 75
+        },
+        {
+          "tile_row": 21,
+          "tile_column": 27,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 92
+        },
+        {
+          "tile_row": 25,
+          "tile_column": 28,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 97
+        }
+      ]
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 2015,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_spsCC_broadleaf_2015_v2_20260119.tif.ovr",
+      "source_frame_sha256": "7c93d75b157bf6e368cc7d679d3e7c9bdf1057bd4afabab05fc13daf69606405",
+      "saved_roi_sha256": "fcb940dd6322a1d4381c6ba1e794a68c2d15b9cb0ce9a9f8c7f0c5b88ab17b7d",
+      "sample_format": 1,
+      "bits": 8,
+      "overview_eligible": true,
+      "tiles": [
+        {
+          "tile_row": 18,
+          "tile_column": 21,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 79
+        },
+        {
+          "tile_row": 21,
+          "tile_column": 27,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 95
+        },
+        {
+          "tile_row": 25,
+          "tile_column": 28,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 100
+        }
+      ]
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 1985,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_spsCC_jackPine_1985_v2_20260119.tif.ovr",
+      "source_frame_sha256": "30bd57037a981488c1bc46dab0c217b159f72afb68d817b373c96c713657e3b3",
+      "saved_roi_sha256": "bab2a6b9bead05adf25716db1be8a9571146fca317f06f4407336501f43eebc3",
+      "sample_format": 1,
+      "bits": 8,
+      "overview_eligible": true,
+      "tiles": [
+        {
+          "tile_row": 18,
+          "tile_column": 21,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 64
+        },
+        {
+          "tile_row": 21,
+          "tile_column": 27,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 85
+        },
+        {
+          "tile_row": 25,
+          "tile_column": 28,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 70
+        }
+      ]
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 2015,
+      "source_url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_spsCC_jackPine_2015_v2_20260119.tif.ovr",
+      "source_frame_sha256": "3da618e4eb8f7b72229a971d9fd57d83156500c1d278499a3d209ebc34c2d9f8",
+      "saved_roi_sha256": "0ff7d1bcbc902c474f888257ae5019d9c1ae99d79c598bd27b2e1188058be7ec",
+      "sample_format": 1,
+      "bits": 8,
+      "overview_eligible": true,
+      "tiles": [
+        {
+          "tile_row": 18,
+          "tile_column": 21,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 71
+        },
+        {
+          "tile_row": 21,
+          "tile_column": 27,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 95
+        },
+        {
+          "tile_row": 25,
+          "tile_column": 28,
+          "pixels": 65536,
+          "mismatches": 0,
+          "signed_minimum": 0,
+          "maximum": 75
+        }
+      ]
+    }
+  ]
+}

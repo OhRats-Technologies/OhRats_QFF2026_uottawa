@@ -1,0 +1,310 @@
+{
+  "role": "display context only; no new model inputs",
+  "bounds": [
+    -17280.52400000021,
+    -836021.8895,
+    1755389.4759999998,
+    1066638.1105
+  ],
+  "crs": "EPSG:3978",
+  "width": 1118,
+  "height": 1200,
+  "boundary_sha256": "d5af8d3e98aa9209f24bbab28e05b95f8685e1e36ae4df8f868108f5916fbfd3",
+  "layers": [
+    {
+      "key": "canopy",
+      "dataset_id": "7cbdfae1-f724-4679-8f0f-1c611f17186f",
+      "title": "Canopy height",
+      "year": 2015,
+      "units": "m; styled image only",
+      "layer": "CA_forest_elev_mean_2015_NN",
+      "role": "dated_visual_context",
+      "numeric_predictor": false,
+      "native_resolution_m": 30,
+      "display_crs": "EPSG:3978",
+      "display_bounds": [
+        -17280.52400000021,
+        -836021.8895,
+        1755389.4759999998,
+        1066638.1105
+      ],
+      "display_shape": [
+        1200,
+        1118
+      ],
+      "resampling": "nearest styled RGBA",
+      "source_display_crs": "EPSG:3978",
+      "source_display_bounds": [
+        -17280.52400000021,
+        -836021.8895,
+        1755389.4759999998,
+        1066638.1105
+      ],
+      "alpha_pixels_inside": 240088,
+      "image": "assets/context/canopy.png",
+      "legend": "assets/context/canopy-legend.png",
+      "output_sha256": "5277cee8b81233884f274952c7b498c6eaa5f36744afbd89882eeb78504e9374",
+      "request": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=CA_forest_elev_mean_2015_NN&STYLES=&CRS=EPSG%3A3978&BBOX=-17280.52400000021%2C-836021.8895%2C1755389.4759999998%2C1066638.1105&WIDTH=1118&HEIGHT=1200&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
+        "retrieved_utc": "2026-10-06T04:22:41.331822+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 603673,
+        "sha256": "059f966616e1947d2a5734f45e2f073286242bc657e0e8f784163cd08d07ba66"
+      },
+      "capabilities": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+        "retrieved_utc": "2026-10-06T04:22:33.712701+00:00",
+        "status": 200,
+        "content_type": "text/xml",
+        "bytes": 506338,
+        "sha256": "9c9fcc0c3b45993b43d2094f20451fa8464b6b986281bb6555cf35018ea00265"
+      },
+      "legend_request": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetLegendGraphic&SLD_VERSION=1.1.0&LAYER=CA_forest_elev_mean_2015_NN&FORMAT=image%2Fpng&STYLE=default",
+        "retrieved_utc": "2026-10-06T04:24:43.486250+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 8737,
+        "sha256": "dcf7c24e4c321ffbda5d9815aa22a070d963747bcd8094e14411b60056069047"
+      },
+      "catalogue": "https://open.canada.ca/data/en/dataset/7cbdfae1-f724-4679-8f0f-1c611f17186f"
+    },
+    {
+      "key": "lorey",
+      "dataset_id": "836082d5-d55f-46c3-9b9c-aaf1a306c247",
+      "title": "Lorey\u2019s height",
+      "year": 2015,
+      "units": "m; styled image only",
+      "layer": "CA_forest_loreys_height_2015_NN",
+      "role": "dated_visual_context",
+      "numeric_predictor": false,
+      "native_resolution_m": 30,
+      "display_crs": "EPSG:3978",
+      "display_bounds": [
+        -17280.52400000021,
+        -836021.8895,
+        1755389.4759999998,
+        1066638.1105
+      ],
+      "display_shape": [
+        1200,
+        1118
+      ],
+      "resampling": "nearest styled RGBA",
+      "source_display_crs": "EPSG:3978",
+      "source_display_bounds": [
+        -17280.52400000021,
+        -836021.8895,
+        1755389.4759999998,
+        1066638.1105
+      ],
+      "alpha_pixels_inside": 240087,
+      "image": "assets/context/lorey.png",
+      "legend": "assets/context/lorey-legend.png",
+      "output_sha256": "a2c5bd579270267a424afed8e501648569117e348535af9875d403ed4c68dd93",
+      "request": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=CA_forest_loreys_height_2015_NN&STYLES=&CRS=EPSG%3A3978&BBOX=-17280.52400000021%2C-836021.8895%2C1755389.4759999998%2C1066638.1105&WIDTH=1118&HEIGHT=1200&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
+        "retrieved_utc": "2026-10-06T04:22:41.026699+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 707457,
+        "sha256": "ea568e9a5220535ee430ea11adaafb964d1ee4226c377a1d3c4188add9a19b9e"
+      },
+      "capabilities": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+        "retrieved_utc": "2026-10-06T04:22:33.712701+00:00",
+        "status": 200,
+        "content_type": "text/xml",
+        "bytes": 506338,
+        "sha256": "9c9fcc0c3b45993b43d2094f20451fa8464b6b986281bb6555cf35018ea00265"
+      },
+      "legend_request": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetLegendGraphic&SLD_VERSION=1.1.0&LAYER=CA_forest_loreys_height_2015_NN&FORMAT=image%2Fpng&STYLE=default",
+        "retrieved_utc": "2026-10-06T04:24:43.486219+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 8665,
+        "sha256": "a115c7f32a5eb1ce83b328e8ed04613f613e03095c2ad7067f609d874e7ce8cb"
+      },
+      "catalogue": "https://open.canada.ca/data/en/dataset/836082d5-d55f-46c3-9b9c-aaf1a306c247"
+    },
+    {
+      "key": "recovery",
+      "dataset_id": "a6b81e8b-d429-4629-9121-5a56786fcb83",
+      "title": "Spectral recovery",
+      "year": 2017,
+      "units": "years to 80% spectral recovery; censored classes require legend",
+      "layer": "CA_forest_fire_years2recovery",
+      "role": "dated_visual_context",
+      "numeric_predictor": false,
+      "native_resolution_m": 30,
+      "display_crs": "EPSG:3978",
+      "display_bounds": [
+        -17280.52400000021,
+        -836021.8895,
+        1755389.4759999998,
+        1066638.1105
+      ],
+      "display_shape": [
+        1200,
+        1118
+      ],
+      "resampling": "nearest styled RGBA",
+      "source_display_crs": "EPSG:3978",
+      "source_display_bounds": [
+        -17280.52400000021,
+        -836021.8895,
+        1755389.4759999998,
+        1066638.1105
+      ],
+      "alpha_pixels_inside": 10549,
+      "image": "assets/context/recovery.png",
+      "legend": "assets/context/recovery-legend.png",
+      "output_sha256": "b9d6a3b67cecefec898059f00d844ecfd47f3f276d2bbd408782bcc69760d023",
+      "request": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=CA_forest_fire_years2recovery&STYLES=&CRS=EPSG%3A3978&BBOX=-17280.52400000021%2C-836021.8895%2C1755389.4759999998%2C1066638.1105&WIDTH=1118&HEIGHT=1200&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
+        "retrieved_utc": "2026-10-06T04:22:35.784528+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 84209,
+        "sha256": "ad579f7e6f6b3a8bdd3499862a7d9c7ca57d35cedbea8d8b67a50ce30cf90554"
+      },
+      "capabilities": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+        "retrieved_utc": "2026-10-06T04:22:33.712701+00:00",
+        "status": 200,
+        "content_type": "text/xml",
+        "bytes": 506338,
+        "sha256": "9c9fcc0c3b45993b43d2094f20451fa8464b6b986281bb6555cf35018ea00265"
+      },
+      "legend_request": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CA_forest_fire_years2recovery&format=image/png&STYLE=default",
+        "retrieved_utc": "2026-10-06T04:24:43.416533+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 15499,
+        "sha256": "526c4385866a789a17b3d22ca9708d1ce1f945e145cca1967e8ed4022323f39f"
+      },
+      "catalogue": "https://open.canada.ca/data/en/dataset/a6b81e8b-d429-4629-9121-5a56786fcb83"
+    },
+    {
+      "key": "water",
+      "dataset_id": "0bce352f-6f3f-4a30-9763-c80805fcf272",
+      "title": "Mapped water",
+      "year": 2022,
+      "units": "categorical water mask; styled image only",
+      "layer": "CA_Water_2022",
+      "role": "dated_visual_context",
+      "numeric_predictor": false,
+      "native_resolution_m": 30,
+      "display_crs": "EPSG:3978",
+      "display_bounds": [
+        -17280.52400000021,
+        -836021.8895,
+        1755389.4759999998,
+        1066638.1105
+      ],
+      "display_shape": [
+        1200,
+        1118
+      ],
+      "resampling": "nearest styled RGBA",
+      "source_display_crs": "EPSG:3857",
+      "source_display_bounds": [
+        -10609457.358284025,
+        4755323.418807598,
+        -7353303.938662491,
+        8122140.697454247
+      ],
+      "alpha_pixels_inside": 46545,
+      "image": "assets/context/water.png",
+      "legend": "assets/context/water-legend.png",
+      "output_sha256": "dd1c43605c7feb208ea669962395db45c8e817c07d9b81f302381b79caacd7be",
+      "request": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=CA_Water_2022&STYLES=&CRS=EPSG%3A3857&BBOX=-10609457.358284025%2C4755323.418807598%2C-7353303.938662491%2C8122140.697454247&WIDTH=1118&HEIGHT=1200&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
+        "retrieved_utc": "2026-10-06T04:22:51.367564+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 104890,
+        "sha256": "36d3eed65bdffd754436d1e3cc12ae7bb33ff4d5e9a8e36461d02d106311ce5f"
+      },
+      "capabilities": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+        "retrieved_utc": "2026-10-06T04:22:33.712701+00:00",
+        "status": 200,
+        "content_type": "text/xml",
+        "bytes": 506338,
+        "sha256": "9c9fcc0c3b45993b43d2094f20451fa8464b6b986281bb6555cf35018ea00265"
+      },
+      "legend_request": {
+        "url": "https://opendata.nfis.org/mapserver/cgi-bin/wms_change.cgi?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CA_Water_2022&format=image/png&STYLE=default",
+        "retrieved_utc": "2026-10-06T04:24:44.324788+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 1542,
+        "sha256": "d1cfc823767ef94e9aafa9335e239e0506a707dc6da33294c139b27f3fcf559c"
+      },
+      "catalogue": "https://open.canada.ca/data/en/dataset/0bce352f-6f3f-4a30-9763-c80805fcf272"
+    },
+    {
+      "key": "fuel",
+      "dataset_id": "851e6a27-a250-41e6-9cd0-d7ff96455dd6",
+      "title": "FBP fuel types",
+      "year": 2026,
+      "units": "categorical; unmatched fuels are not zero risk",
+      "layer": "fpb100m2026",
+      "role": "dated_visual_context",
+      "numeric_predictor": false,
+      "native_resolution_m": 100,
+      "display_crs": "EPSG:3978",
+      "display_bounds": [
+        -17280.52400000021,
+        -836021.8895,
+        1755389.4759999998,
+        1066638.1105
+      ],
+      "display_shape": [
+        1200,
+        1118
+      ],
+      "resampling": "nearest styled RGBA",
+      "source_display_crs": "EPSG:3978",
+      "source_display_bounds": [
+        -17280.52400000021,
+        -836021.8895,
+        1755389.4759999998,
+        1066638.1105
+      ],
+      "alpha_pixels_inside": 415150,
+      "image": "assets/context/fuel.png",
+      "legend": "assets/context/fuel-legend.png",
+      "output_sha256": "bd7aec9abe58f7398b841540a46b15c000bab7d65b54807439988d5173b0abff",
+      "request": {
+        "url": "https://ca.nfis.org/mapserver/cgi-bin/fbp_eng.cgi?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=fpb100m2026&STYLES=&CRS=EPSG%3A3978&BBOX=-17280.52400000021%2C-836021.8895%2C1755389.4759999998%2C1066638.1105&WIDTH=1118&HEIGHT=1200&FORMAT=image%2Fpng&TRANSPARENT=TRUE",
+        "retrieved_utc": "2026-10-06T04:22:42.965297+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 434342,
+        "sha256": "bbb61fbff2d923e690a853ba2c24f0c865eb16b49178822044f185c8c4a56629"
+      },
+      "capabilities": {
+        "url": "https://ca.nfis.org/mapserver/cgi-bin/fbp_eng.cgi?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+        "retrieved_utc": "2026-10-06T04:22:34.063380+00:00",
+        "status": 200,
+        "content_type": "text/xml; charset=UTF-8",
+        "bytes": 13040,
+        "sha256": "ebc2ac42582acc8d0ab4317d16c22195a1dd09aa6afe5b8ecd37b450f2ead5d9"
+      },
+      "legend_request": {
+        "url": "https://ca.nfis.org/mapserver/cgi-bin/fbp_eng.cgi?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=fpb100m2026&format=image/png&STYLE=default",
+        "retrieved_utc": "2026-10-06T04:24:44.253661+00:00",
+        "status": 200,
+        "content_type": "image/png",
+        "bytes": 51401,
+        "sha256": "7fbb3d9c362106f662f29fdf5ceff3377a1f429de0973664f63ca373a07f32b5"
+      },
+      "catalogue": "https://open.canada.ca/data/en/dataset/851e6a27-a250-41e6-9cd0-d7ff96455dd6"
+    }
+  ]
+}

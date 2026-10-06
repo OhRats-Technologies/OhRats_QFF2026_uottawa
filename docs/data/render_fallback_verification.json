@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "noGPU": true,
+      "fontsBlocked": true,
+      "storageBlocked": true,
+      "reducedMotionStatic": true,
+      "liveEmbers": true,
+      "forcedVisibilityBranchStopsAndResumes": true,
+      "responseAndAdvanceWork": true,
+      "fallbackChannelChecked": true,
+      "overflow": false,
+      "operationsScroll": 0,
+      "errors": []
+    },
+    {
+      "noGPU": false,
+      "fontsBlocked": true,
+      "storageBlocked": true,
+      "reducedMotionStatic": true,
+      "liveEmbers": true,
+      "forcedVisibilityBranchStopsAndResumes": true,
+      "responseAndAdvanceWork": true,
+      "fallbackChannelChecked": false,
+      "overflow": false,
+      "operationsScroll": 0,
+      "errors": []
+    }
+  ],
+  "scope": "Forced browser failure and visibility branches; not physical GPU loss or operating-system tab scheduling.",
+  "source_sha256": {
+    "web/demo/strategy/map.js": "ecf4ea55b4e72f751ba598ad8de2909e6ec8e7b80100e98e4938e78fc6a5ec05",
+    "web/demo/strategy/sphere.js": "1bde7b597babbdc23f66ba3601f03e459b416d3666fe7804e1293b9f4db9eb2c",
+    "web/demo/strategy/lens-fallback.js": "ef13f0c1afda764b608712b19018ed8c0720bb731fa03f0f174a581a24d5da54",
+    "web/demo/strategy/render-check.mjs": "684d7ece59a9a7a7a8aba1307115ac1c10a653bd6e65ed9ad7ab937bc5189af2",
+    "web/demo/strategy/styles/instruments.css": "068660fd230fecf947f226836615fedbe11df0bb95da5ae9272a48e57ea9fc77",
+    "web/demo/assets/strategy.js": "2e7be8de6251f117b4f11679189e4f046133a03fb3c69df8f41d1d658301df5a"
+  },
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0
+}

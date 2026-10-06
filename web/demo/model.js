@@ -1,7 +1,7 @@
 export const sections=['data','features','encoding','kernel','prediction'];
 export const labels=['Annual data','Features + SQD','Phase encoding','Similarity','Prediction'];
 export const shortNames=['Annual temperature','Summer temperature','Annual precipitation','Summer precipitation','Spring precipitation','Annual snowfall','Highest temperature','Lowest temperature','Heating degree days','Cooling degree days'];
-export const initialState=()=>({section:0,year:2021,map:'cover',selector:'physical_four',sqdStage:0,width:10,denominator:4,pair:[19,20],z:[-1,.3,.8,1.4],reveal:false});
+export const initialState=()=>({section:0,year:2021,map:'cover',selector:'physical_four',sqdStage:0,width:10,denominator:4,pair:[19,20],z:[-1,.3,.8,1.4]});
 export const angle=(z,denominator)=>Math.PI/denominator*Math.tanh(z/2);
 export function subsetCost(indices,data) {
   let relevance=0,redundancy=0;

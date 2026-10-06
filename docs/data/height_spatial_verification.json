@@ -1,0 +1,48 @@
+{
+  "checked_utc": "2026-10-06T08:34:00.637347+00:00",
+  "status": "passed",
+  "source": "Original retained extraction arrays, independently subtracted as int64",
+  "plan_sha256": "a15136c7529dbab1e573097f6d62b9f78a93d7de0534abf7b3524a0c7a1550fa",
+  "result_sha256": "9c16e733f10408ff30dedb19c43bb79ef4b4a724f0823502efb4742ed1903182",
+  "all_native_signed_samples_and_mask_agree": true,
+  "all_509_histogram_bins_agree": true,
+  "all_frozen_parent_hashes_match": true,
+  "data_only_rebuild_numeric_histogram_and_images_identical": true,
+  "derived_typed_assets": 4,
+  "total_typed_assets": 29,
+  "mismatch_fixtures": [
+    {
+      "case": "producer",
+      "rejected": true
+    },
+    {
+      "case": "plan",
+      "rejected": true
+    },
+    {
+      "case": "numeric",
+      "rejected": true
+    },
+    {
+      "case": "sources",
+      "rejected": true
+    }
+  ],
+  "pipeline_plan_steps_with_wms_and_change": 8,
+  "executed_this_check": [
+    "change.py only; reused existing seven-stage context"
+  ],
+  "base_context_comparison": "identical_context",
+  "extra_downloads": 0,
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "code_sha256": {
+    "scripts/context/change.py": "33b0826d740e6f0ef6c9e05d381534ae4be24e080503ceedecfa59bfda4a3e7c",
+    "scripts/context/render_change.py": "fb35fe66cb4daa46a3faafcb6b13041b2a79e5d76347950b5c6ac0a850fad3c7",
+    "scripts/context/pipeline.py": "8ffd8a999e9eaf5c5808a69b99857eafce77453dbd95ed568e4d2ff47d92acb3",
+    "scripts/context/manifest.py": "852be73761a88188972c51906358ea60179080ec2b01ca1bbd188da1b24a0aeb",
+    "scripts/context/verify_replica.py": "68c3e6fdf382f8616809029a31b2fc3e35a4c60ac0340750394a9ba1765184f4"
+  },
+  "limitation": "Numeric reproduction and context integrity, not observed biological change, new source acquisition or predictive accuracy."
+}

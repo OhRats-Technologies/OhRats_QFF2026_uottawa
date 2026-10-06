@@ -1,0 +1,77 @@
+{
+  "status": "complete_with_explicit_pruning",
+  "checked_utc": "2026-10-06T17:58:36.514182+00:00",
+  "revision": "08928099e8dde7f03b839c5bf5c8a891d553bab0",
+  "local_studies": 6,
+  "hardware_jobs": 9,
+  "physical_shots": 219648,
+  "charged_seconds": 82.0,
+  "test_count": 209,
+  "local_replay_studies": 10,
+  "public_bundle_sha256": {
+    "selector-multistart": "1a919e3be33a741ed05720c215638bb9e5747bcd7977730bf4b9dcf4d11441a4",
+    "expanded-tuning": "6cee6733658ba15f65fd0feafde8592c40226148a344480b1b66db5d4672a9a0",
+    "expanded-tuning-distinct": "e45d2a685207b8cd77b26503a98e8fb1489d51d5e4dec3f7a8e98f6c6641f99f",
+    "expanded-proxy-controls": "7b7174e0795193931d7abc420e32a794b0f63dd8e6249e137da3f5cae4f4d4d5",
+    "shallow-preparation": "91743da54d00ad062f46b23c52617e6826b20f04f5a3fa7ea867987b6dabd834",
+    "objective-alignment": "0241f98e550bd13cb54ba7e2bda8c7deeeba648f49ffab4ba37757cf1fe5d6ad",
+    "shallow-hardware-search": "2e1ce1e7549c898e76b3b6b4bb204b30f4b84f647ec3834d8d39765d8e63b59c",
+    "basis-confirmation-marrakesh": "a58c9fb42c7d33f8c3f29f5dbedd7395955304da8ce325aabaa7683b8bbb3ed9",
+    "basis-confirmation-quebec": "377b93f6a9d9fe59b6d97fbb57fd230d8b9eab4aa69bd7a86f79e1323754084a",
+    "tuned-kernel-hardware": "4a238d95684977d750012be84e0f6c46d77bada5c7a97e91a28904437709a318"
+  },
+  "preserved_final_sha256": {
+    "experiments/annual_final.json": "4df95f26e963d7db8038dfb19c3ff512464e8471bff0fc35ba3316f046c633f1",
+    "docs/results/annual-final-training.json": "678e930d0397e0d1853d716501fee8899bdf9f7240345b3d07d75b1e0aeebc78",
+    "docs/results/annual-final.json": "dcf41e991b279e5837d57810c4652337a6ce8f2015ed7cb3d4a3332b2ea37432",
+    "docs/data/annual_final_bundle.json": "4e6e243de608e950ce6d08c6e2637cdb6e64cfd1c953dfaac3e87c71420d5b91",
+    "docs/data/annual_training.csv": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+    "docs/data/annual_reused_evaluation.csv": "6c1cc55f1f44990e249fadaafbed5a0baa37deb90a4843f539e52b0f9db28636"
+  },
+  "annual_execution_code_matches": {
+    "wildfire_lab/annual_data.py": true,
+    "wildfire_lab/annual_classical.py": true,
+    "wildfire_lab/annual_quantum.py": true,
+    "wildfire_lab/annual_matched.py": true,
+    "wildfire_lab/annual_selectors.py": true,
+    "wildfire_lab/annual_model_state.py": true,
+    "wildfire_lab/annual_final_kernel.py": true,
+    "wildfire_lab/annual_final_train.py": true,
+    "wildfire_lab/annual_final_evaluate.py": true,
+    "wildfire_lab/annual_final_protocol.py": true,
+    "wildfire_lab/nfdb.py": true,
+    "wildfire_lab/selection.py": true,
+    "wildfire_lab/qaoa.py": true,
+    "wildfire_lab/sqd_selection.py": true,
+    "wildfire_lab/library_kernel.py": true,
+    "scripts/run_annual_final.py": true
+  },
+  "dependency_manifests_match_original_execution": {
+    "uv.lock": false,
+    "pyproject.toml": false
+  },
+  "personal_instance": {
+    "consumed_seconds": 268,
+    "remaining_seconds": 332,
+    "limit_seconds": 600
+  },
+  "reservations_released": true,
+  "pending_jobs": 0,
+  "final_test_accessed": false,
+  "pruned": [
+    "Further C/depth escalation after unstable selection",
+    "Full20-input quantum regression without predictive justification",
+    "Unsupported historical fuels and same-event recovery",
+    "Logical QEC outside implemented mitigation",
+    "Independent climate validation from previously inspected folds"
+  ],
+  "limits": [
+    "Repeated development folds; no independent predictive confirmation",
+    "One raw/combined pair per device; no intrinsic ranking",
+    "No full Git-history credential scan",
+    "Existing locked interpreter reused for fresh-tree replay; no fresh dependency install",
+    "Current dependency manifests differ from original frozen annual execution",
+    "Source decoder spot check shares metadata/mask",
+    "Exported PDF/PPTX retain original final-study snapshot; browser appendix includes followups"
+  ]
+}

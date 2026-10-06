@@ -1,0 +1,276 @@
+{
+  "status": "collected",
+  "hardware_jobs": 6,
+  "physical_shots": 224256,
+  "charged_qpu_seconds": 75,
+  "owner_allowance_seconds": 120,
+  "source_hashes": {
+    "docs/results/pipeline-mitigation-ibm.json": "99f77f9ba7d8238f809cc3f8be4236b0223e9444ebca3abcd6c4d555a098cb7a",
+    "docs/results/pipeline-mitigation-marrakesh.json": "99a32e2814e63fe767ad831147cecbfb8fd758d4e78b4767c318db24efb1bdc1",
+    "docs/results/pipeline-mitigation-quebec.json": "b575b396bb37d18e163ed589bee4b520f790dcbc3bc30e238b0d752ae27b42ac"
+  },
+  "rows": [
+    {
+      "backend": "ibm_fez",
+      "arm": "raw",
+      "kernel_rmse": 0.15434248513454657,
+      "qsvr_mae_ha": 69.81065746601175,
+      "feasible_fraction": 0.212890625,
+      "selector_mae_ha": 92.55558905198045,
+      "subset": [
+        1,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "backend": "ibm_fez",
+      "arm": "raw_readout",
+      "kernel_rmse": 0.12638894191175298,
+      "qsvr_mae_ha": 70.04817334772976,
+      "feasible_fraction": 0.201171875,
+      "selector_mae_ha": 92.55558905198045,
+      "subset": [
+        1,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "backend": "ibm_fez",
+      "arm": "dd_twirl",
+      "kernel_rmse": 0.16983374192441927,
+      "qsvr_mae_ha": 69.04147904038565,
+      "feasible_fraction": 0.19140625,
+      "selector_mae_ha": 92.55558905198045,
+      "subset": [
+        1,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "backend": "ibm_fez",
+      "arm": "dd_twirl_readout",
+      "kernel_rmse": 0.1284269212508761,
+      "qsvr_mae_ha": 69.32201278509135,
+      "feasible_fraction": 0.1953125,
+      "selector_mae_ha": 484.0238820231628,
+      "subset": [
+        3,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "backend": "ibm_marrakesh",
+      "arm": "raw",
+      "kernel_rmse": 0.06022913749664449,
+      "qsvr_mae_ha": 79.99998944271633,
+      "feasible_fraction": 0.17578125,
+      "selector_mae_ha": 92.55558905198045,
+      "subset": [
+        1,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "backend": "ibm_marrakesh",
+      "arm": "raw_readout",
+      "kernel_rmse": 0.027761305392816273,
+      "qsvr_mae_ha": 80.69416466892531,
+      "feasible_fraction": 0.185546875,
+      "selector_mae_ha": 387.20806709616227,
+      "subset": [
+        1,
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "backend": "ibm_marrakesh",
+      "arm": "dd_twirl",
+      "kernel_rmse": 0.07330979304501696,
+      "qsvr_mae_ha": 89.29318055274744,
+      "feasible_fraction": 0.1953125,
+      "selector_mae_ha": 92.55558905198045,
+      "subset": [
+        1,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "backend": "ibm_marrakesh",
+      "arm": "dd_twirl_readout",
+      "kernel_rmse": 0.047335301502718835,
+      "qsvr_mae_ha": 89.93639480647752,
+      "feasible_fraction": 0.19140625,
+      "selector_mae_ha": 92.55558905198045,
+      "subset": [
+        1,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "backend": "ibm_quebec",
+      "arm": "raw",
+      "kernel_rmse": 0.03414103492291094,
+      "qsvr_mae_ha": 81.91782649886514,
+      "feasible_fraction": 0.212890625,
+      "selector_mae_ha": 107.26431332066518,
+      "subset": [
+        2,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "backend": "ibm_quebec",
+      "arm": "raw_readout",
+      "kernel_rmse": 0.021094467949946162,
+      "qsvr_mae_ha": 82.3715339589412,
+      "feasible_fraction": 0.205078125,
+      "selector_mae_ha": 49.36151297297283,
+      "subset": [
+        1,
+        2,
+        5,
+        7
+      ]
+    },
+    {
+      "backend": "ibm_quebec",
+      "arm": "dd_twirl",
+      "kernel_rmse": 0.051991207691756684,
+      "qsvr_mae_ha": 76.97166037922716,
+      "feasible_fraction": 0.205078125,
+      "selector_mae_ha": 49.36151297297283,
+      "subset": [
+        1,
+        2,
+        5,
+        7
+      ]
+    },
+    {
+      "backend": "ibm_quebec",
+      "arm": "dd_twirl_readout",
+      "kernel_rmse": 0.030623061859849896,
+      "qsvr_mae_ha": 77.39373188586183,
+      "feasible_fraction": 0.19921875,
+      "selector_mae_ha": 49.36151297297283,
+      "subset": [
+        1,
+        2,
+        5,
+        7
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "backend": "ibm_fez",
+      "charged_qpu_seconds": 25,
+      "arms": {
+        "raw": {
+          "quantum_seconds": 12,
+          "timestamps": {
+            "created": "2026-10-06T13:18:37.720713Z",
+            "running": "2026-10-06T13:18:39.608936Z",
+            "finished": "2026-10-06T13:20:02.119381Z"
+          },
+          "created_to_finished_seconds": 84.398668,
+          "running_to_finished_seconds": 82.510445,
+          "submission_roundtrip_seconds": 1.3780969580402598,
+          "usage_metric": "qpu_charge_time_seconds"
+        },
+        "dd_twirl": {
+          "quantum_seconds": 13,
+          "timestamps": {
+            "created": "2026-10-06T13:18:49.909844Z",
+            "running": "2026-10-06T13:19:46.680853Z",
+            "finished": "2026-10-06T13:20:19.004059Z"
+          },
+          "created_to_finished_seconds": 89.094215,
+          "running_to_finished_seconds": 32.323206,
+          "submission_roundtrip_seconds": 12.17920608294662,
+          "usage_metric": "qpu_charge_time_seconds"
+        }
+      }
+    },
+    {
+      "backend": "ibm_marrakesh",
+      "charged_qpu_seconds": 25,
+      "arms": {
+        "raw": {
+          "quantum_seconds": 12,
+          "timestamps": {
+            "created": "2026-10-06T13:41:07.391845Z",
+            "running": "2026-10-06T13:41:08.61249Z",
+            "finished": "2026-10-06T13:41:29.098404Z"
+          },
+          "created_to_finished_seconds": 21.706559,
+          "running_to_finished_seconds": 20.485914,
+          "submission_roundtrip_seconds": 1.3231000000378117,
+          "usage_metric": "qpu_charge_time_seconds"
+        },
+        "dd_twirl": {
+          "quantum_seconds": 13,
+          "timestamps": {
+            "created": "2026-10-06T13:41:21.504908Z",
+            "running": "2026-10-06T13:41:22.967934Z",
+            "finished": "2026-10-06T13:41:52.530955Z"
+          },
+          "created_to_finished_seconds": 31.026047,
+          "running_to_finished_seconds": 29.563021,
+          "submission_roundtrip_seconds": 14.199788540950976,
+          "usage_metric": "qpu_charge_time_seconds"
+        }
+      }
+    },
+    {
+      "backend": "ibm_quebec",
+      "charged_qpu_seconds": 25,
+      "arms": {
+        "raw": {
+          "quantum_seconds": 12,
+          "timestamps": {
+            "created": "2026-10-06T13:41:42.772415Z",
+            "running": "2026-10-06T13:41:45.438702Z",
+            "finished": "2026-10-06T13:42:04.832729Z"
+          },
+          "created_to_finished_seconds": 22.060314,
+          "running_to_finished_seconds": 19.394027,
+          "submission_roundtrip_seconds": 1.1630871669622138,
+          "usage_metric": "qpu_charge_time_seconds"
+        },
+        "dd_twirl": {
+          "quantum_seconds": 13,
+          "timestamps": {
+            "created": "2026-10-06T13:41:54.291123Z",
+            "running": "2026-10-06T13:41:59.062761Z",
+            "finished": "2026-10-06T13:42:27.892522Z"
+          },
+          "created_to_finished_seconds": 33.601399,
+          "running_to_finished_seconds": 28.829761,
+          "submission_roundtrip_seconds": 11.521049915929325,
+          "usage_metric": "qpu_charge_time_seconds"
+        }
+      }
+    }
+  ],
+  "final_test_accessed": false,
+  "limitation": "One raw/combined pair per backend on reused development years. Device, account, calibration and submission time differ. Descriptive comparison; no causal hardware ranking, statistical improvement or quantum advantage."
+}

@@ -1,0 +1,429 @@
+{
+  "status": "completed",
+  "plan_sha256": "8c537d2570d37787e34d25b764115bb456ef0096fd788c14353e4b094b0544e4",
+  "source_sha256": {
+    "docs/data/annual_training.csv": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+    "scripts/context/ordering.py": "4e8924ab76405364e6635bf27f8e6155d817df4a81e3fd4f1985587f1894d0e7",
+    "scripts/context/ordering_math.py": "0808b6d410b32bfbc0fdade5b458ed44ea2f5ab592d310ec218e297b9df24878",
+    "scripts/context/ordering_collect.py": "9f46a23f7bae6b597186631a1d6d31662fadee7ab2a5a5deba27a1f48c1540ed",
+    "pyproject.toml": "a1d3886e050b83e8dbcb12222575303fdf4cb4b19a30e4a0e4e8512469ff2136",
+    "uv.lock": "0ce47161596d8a6cba697ac2f106b3bcf7cd3f67538174ce397e33dd5d00378d"
+  },
+  "software": {
+    "qiskit": "2.5.2",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1"
+  },
+  "years": [
+    1988,
+    1989,
+    1990,
+    1991,
+    1992,
+    1993,
+    1994,
+    1995,
+    1996,
+    1997,
+    1998,
+    1999,
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018
+  ],
+  "gamma": 0.15920521615935565,
+  "rows": [
+    {
+      "key": "linear_d4_identity",
+      "graph": "linear",
+      "denominator": 4,
+      "order": {
+        "name": "identity",
+        "indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 0.0,
+      "rbf_permutation_error": 0.0,
+      "max_entry_change": 0.0,
+      "relative_frobenius_change": 0.0,
+      "mean_off_diagonal": 0.07618654632355751,
+      "effective_rank": 25.199891104195412,
+      "minimum_eigenvalue": 0.1277881688283806
+    },
+    {
+      "key": "linear_d4_reverse",
+      "graph": "linear",
+      "denominator": 4,
+      "order": {
+        "name": "reverse",
+        "indices": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 1.0007415106216804e-16,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 4.440892098500626e-16,
+      "relative_frobenius_change": 2.9634770270071766e-16,
+      "mean_off_diagonal": 0.07618654632355751,
+      "effective_rank": 25.199891104195412,
+      "minimum_eigenvalue": 0.12778816882838034
+    },
+    {
+      "key": "linear_d4_middle_swap",
+      "graph": "linear",
+      "denominator": 4,
+      "order": {
+        "name": "middle_swap",
+        "indices": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      "expected_symmetry": false,
+      "state_relabelling_error": 0.49999076899971573,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 0.7346475302929114,
+      "relative_frobenius_change": 0.60145758439937,
+      "mean_off_diagonal": 0.07459266795379241,
+      "effective_rank": 24.74375440325195,
+      "minimum_eigenvalue": 0.15123919610184616
+    },
+    {
+      "key": "linear_d4_rotate_left",
+      "graph": "linear",
+      "denominator": 4,
+      "order": {
+        "name": "rotate_left",
+        "indices": [
+          1,
+          2,
+          3,
+          0
+        ]
+      },
+      "expected_symmetry": false,
+      "state_relabelling_error": 0.4999996996620246,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 0.49884530203580846,
+      "relative_frobenius_change": 0.34047991590574517,
+      "mean_off_diagonal": 0.06978897066981729,
+      "effective_rank": 25.553844349506,
+      "minimum_eigenvalue": 0.08828445316648277
+    },
+    {
+      "key": "full_d4_identity",
+      "graph": "full",
+      "denominator": 4,
+      "order": {
+        "name": "identity",
+        "indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 0.0,
+      "rbf_permutation_error": 0.0,
+      "max_entry_change": 0.0,
+      "relative_frobenius_change": 0.0,
+      "mean_off_diagonal": 0.10984997824769605,
+      "effective_rank": 24.021650051300245,
+      "minimum_eigenvalue": 0.20895970710378378
+    },
+    {
+      "key": "full_d4_reverse",
+      "graph": "full",
+      "denominator": 4,
+      "order": {
+        "name": "reverse",
+        "indices": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 1.3092278833360675e-16,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 6.661338147750939e-16,
+      "relative_frobenius_change": 3.274691805471091e-16,
+      "mean_off_diagonal": 0.10984997824769603,
+      "effective_rank": 24.021650051300277,
+      "minimum_eigenvalue": 0.2089597071037847
+    },
+    {
+      "key": "full_d4_middle_swap",
+      "graph": "full",
+      "denominator": 4,
+      "order": {
+        "name": "middle_swap",
+        "indices": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 1.2412670766236366e-16,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 4.440892098500626e-16,
+      "relative_frobenius_change": 2.2406910109818793e-16,
+      "mean_off_diagonal": 0.10984997824769603,
+      "effective_rank": 24.021650051300277,
+      "minimum_eigenvalue": 0.20895970710378411
+    },
+    {
+      "key": "full_d4_rotate_left",
+      "graph": "full",
+      "denominator": 4,
+      "order": {
+        "name": "rotate_left",
+        "indices": [
+          1,
+          2,
+          3,
+          0
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 1.1188630228279524e-16,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 6.661338147750939e-16,
+      "relative_frobenius_change": 2.9859714547624847e-16,
+      "mean_off_diagonal": 0.10984997824769603,
+      "effective_rank": 24.021650051300266,
+      "minimum_eigenvalue": 0.20895970710378456
+    },
+    {
+      "key": "linear_d32_identity",
+      "graph": "linear",
+      "denominator": 32,
+      "order": {
+        "name": "identity",
+        "indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 0.0,
+      "rbf_permutation_error": 0.0,
+      "max_entry_change": 0.0,
+      "relative_frobenius_change": 0.0,
+      "mean_off_diagonal": 0.767713086487097,
+      "effective_rank": 2.189697137341032,
+      "minimum_eigenvalue": 5.271904691279003e-07
+    },
+    {
+      "key": "linear_d32_reverse",
+      "graph": "linear",
+      "denominator": 32,
+      "order": {
+        "name": "reverse",
+        "indices": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 7.850462293418876e-17,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 8.881784197001252e-16,
+      "relative_frobenius_change": 2.6746360027840973e-16,
+      "mean_off_diagonal": 0.767713086487097,
+      "effective_rank": 2.1896971373410326,
+      "minimum_eigenvalue": 5.271904690105556e-07
+    },
+    {
+      "key": "linear_d32_middle_swap",
+      "graph": "linear",
+      "denominator": 32,
+      "order": {
+        "name": "middle_swap",
+        "indices": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      "expected_symmetry": false,
+      "state_relabelling_error": 0.4807653429238039,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 0.6993173031220343,
+      "relative_frobenius_change": 0.22850977472202974,
+      "mean_off_diagonal": 0.8772249046017718,
+      "effective_rank": 1.6435382125259816,
+      "minimum_eigenvalue": 3.1550748263492994e-07
+    },
+    {
+      "key": "linear_d32_rotate_left",
+      "graph": "linear",
+      "denominator": 32,
+      "order": {
+        "name": "rotate_left",
+        "indices": [
+          1,
+          2,
+          3,
+          0
+        ]
+      },
+      "expected_symmetry": false,
+      "state_relabelling_error": 0.3784843122576819,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 0.35958346898464183,
+      "relative_frobenius_change": 0.13444134423106302,
+      "mean_off_diagonal": 0.8183310499346078,
+      "effective_rank": 1.9632019800163103,
+      "minimum_eigenvalue": 7.877723636452004e-07
+    },
+    {
+      "key": "full_d32_identity",
+      "graph": "full",
+      "denominator": 32,
+      "order": {
+        "name": "identity",
+        "indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 0.0,
+      "rbf_permutation_error": 0.0,
+      "max_entry_change": 0.0,
+      "relative_frobenius_change": 0.0,
+      "mean_off_diagonal": 0.694179396826567,
+      "effective_rank": 2.9064236679775783,
+      "minimum_eigenvalue": 2.6780413676168008e-06
+    },
+    {
+      "key": "full_d32_reverse",
+      "graph": "full",
+      "denominator": 32,
+      "order": {
+        "name": "reverse",
+        "indices": [
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 1.0838898772828417e-16,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 6.661338147750939e-16,
+      "relative_frobenius_change": 2.8396650467346936e-16,
+      "mean_off_diagonal": 0.694179396826567,
+      "effective_rank": 2.906423667977577,
+      "minimum_eigenvalue": 2.678041367347008e-06
+    },
+    {
+      "key": "full_d32_middle_swap",
+      "graph": "full",
+      "denominator": 32,
+      "order": {
+        "name": "middle_swap",
+        "indices": [
+          0,
+          2,
+          1,
+          3
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 1.1443916996305594e-16,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 6.661338147750939e-16,
+      "relative_frobenius_change": 2.335654862305841e-16,
+      "mean_off_diagonal": 0.694179396826567,
+      "effective_rank": 2.90642366797758,
+      "minimum_eigenvalue": 2.6780413676338126e-06
+    },
+    {
+      "key": "full_d32_rotate_left",
+      "graph": "full",
+      "denominator": 32,
+      "order": {
+        "name": "rotate_left",
+        "indices": [
+          1,
+          2,
+          3,
+          0
+        ]
+      },
+      "expected_symmetry": true,
+      "state_relabelling_error": 1.0007415106216804e-16,
+      "rbf_permutation_error": 1.1102230246251565e-16,
+      "max_entry_change": 6.661338147750939e-16,
+      "relative_frobenius_change": 2.742460406353801e-16,
+      "mean_off_diagonal": 0.694179396826567,
+      "effective_rank": 2.906423667977577,
+      "minimum_eigenvalue": 2.6780413669220906e-06
+    }
+  ],
+  "arrays_sha256": "19dfafd8360ff1860021438c0b50579d0a244a8c55277c63953a9fe92527a977",
+  "statevector_preparations": 496,
+  "untranspiled_gate_counts": {
+    "linear": {
+      "p": 7,
+      "cx": 6,
+      "h": 4
+    },
+    "full": {
+      "cx": 12,
+      "p": 10,
+      "h": 4
+    }
+  },
+  "kernel_matrices": 16,
+  "gram_entries": 15376,
+  "seconds": 0.1236280829180032,
+  "predictor_fits": 0,
+  "preprocessing_fits": 2,
+  "sampler_pair_circuits": 0,
+  "shots": 0,
+  "hardware_jobs": 0,
+  "scope": "Known graph-symmetry and feature-order checks on reused training inputs. No labels or 2019\u20132024 inputs, prediction scores, optimal-order selection, noise mitigation, hardware, novel algorithm, architectural breakthrough or quantum-advantage claim. Preserve the submitted annual models/results and all prior namespaces."
+}

@@ -1,0 +1,60 @@
+{
+  "purpose": "Game balancing only; actual position pool, pressure-only priority and visible toy fuel and next-front pressure. Fictional dynamics, no trained predictor or quantum simulation.",
+  "position_pool": 66,
+  "seeds": 500,
+  "policies": [
+    {
+      "id": "idle",
+      "win_rate": 0,
+      "mean_integrity": 22.135413034081363,
+      "mean_turns": 5.9,
+      "mean_contained": 0,
+      "mean_spent": 0,
+      "mean_score": 273.368
+    },
+    {
+      "id": "water_only",
+      "win_rate": 0,
+      "mean_integrity": 24.21646682632962,
+      "mean_turns": 8.038,
+      "mean_contained": 0,
+      "mean_spent": 31.936,
+      "mean_score": 242.448
+    },
+    {
+      "id": "crew_only",
+      "win_rate": 0.106,
+      "mean_integrity": 31.961972629743705,
+      "mean_turns": 9.864,
+      "mean_contained": 2.752,
+      "mean_spent": 20.852,
+      "mean_score": 400.932
+    },
+    {
+      "id": "random",
+      "win_rate": 0.052,
+      "mean_integrity": 29.784408454859992,
+      "mean_turns": 9.768,
+      "mean_contained": 3.872,
+      "mean_spent": 35.5,
+      "mean_score": 369.456
+    },
+    {
+      "id": "triage",
+      "win_rate": 0.902,
+      "mean_integrity": 71.65509841558335,
+      "mean_turns": 11.932,
+      "mean_contained": 9,
+      "mean_spent": 40.396,
+      "mean_score": 883.33
+    }
+  ],
+  "rules_sha256": {
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/calibrate.js": "1c11e57b839fd2b69881009b31b56006000e9ed791be1d565cf87a62ecae7014"
+  },
+  "recipe_version": "fireline-season-20261006-v2",
+  "history": "Paid scouting and Fuel survey pruned after separate matched audit; toy fuel visible. Previous receipts preserved."
+}

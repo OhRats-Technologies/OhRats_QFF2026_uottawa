@@ -38,11 +38,12 @@ export function projectionGraphic(data,stage) {
   }).join('')).join('')}<text x="295" y="93">H in the sampled basis</text><text x="295" y="126">Off-diagonal entries = 0</text><text x="295" y="194" class="projection-energy">${stage===2?fmt(data.record.exact_objective,4):'Diagonal objective'}</text><text x="34" y="302">Teaching basis · ${n} distinct saved selector outputs</text></svg>`;
 }
 
-export function predictionGraphic(rows,reveal) {
+export function predictionGraphic(rows,year) {
   const names=['Training mean','QSVR · 4 qubits','RBF · 4 inputs'];
-  const all=reveal?[...rows.map((r,i)=>({label:names[i],value:r.value,kind:i})),{label:'Recorded mean',value:rows[0].actual,kind:3}]:rows.map((r,i)=>({label:names[i],value:r.value,kind:i}));
-  return `<svg viewBox="0 0 670 430" role="img" aria-label="Saved predictions compared on a fixed 0–700 hectare-per-fire scale">${[0,200,400,600].map(t=>`<path d="M40 ${370-t/700*290} H630" class="chart-grid"/><text x="645" y="${375-t/700*290}" class="tick">${t}</text>`).join('')}${all.map((r,i)=>{
+  const all=[...rows.map((r,i)=>({label:names[i],value:r.value,kind:i})),{label:'Recorded mean',value:rows[0].actual,kind:3}];
+  const description=`${year} annual mean hectares per recorded fire. ${all.map(r=>`${r.label}: ${fmt(r.value,1)} ha/fire`).join('. ')}. Fixed 0–700 ha/fire scale; reused evaluation years.`;
+  return `<svg viewBox="0 0 670 430" role="img" aria-label="${description}">${[0,200,400,600].map(t=>`<path d="M40 ${370-t/700*290} H630" class="chart-grid"/><text x="645" y="${375-t/700*290}" class="tick">${t}</text>`).join('')}${all.map((r,i)=>{
     const x=70+i*135,h=r.value/700*290;
-    return `<rect x="${x}" y="${370-h}" width="58" height="${h}" class="pred-bar series-${r.kind}"/><text x="${x+29}" y="${355-h}" text-anchor="middle" class="bar-value">${fmt(r.value,1)}</text><text x="${x+29}" y="${397+i%2*21}" text-anchor="middle" class="bar-label"><tspan class="full-label">${r.label}</tspan><tspan class="compact-label">${["Mean","QSVR","RBF","Recorded"][r.kind]}</tspan></text>`;
+    return `<rect x="${x}" y="${370-h}" width="58" height="${h}" class="pred-bar series-${r.kind}"/><text x="${x+29}" y="${355-h}" text-anchor="middle" class="bar-value">${fmt(r.value,1)}</text><text x="${x+29}" y="${397+i%2*21}" text-anchor="middle" class="bar-label"><tspan class="full-label">${r.label}</tspan><tspan class="compact-label">${["Baseline","QSVR","RBF","Recorded"][r.kind]}</tspan></text>`;
   }).join('')}<text x="40" y="25" class="chart-unit">Mean hectares / recorded fire</text></svg>`;
 }

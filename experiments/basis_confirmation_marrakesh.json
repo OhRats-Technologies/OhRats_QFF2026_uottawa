@@ -1,0 +1,19 @@
+{
+  "study": "basis-confirmation-marrakesh-v1",
+  "backend": "ibm_marrakesh",
+  "credential_env": "IBM_QUANTUM_API_TOKEN",
+  "instance_env": "IBM_QUANTUM_INSTANCE",
+  "exploration_output": "results/shallow-hardware-search-v1",
+  "choices_sha256": "3297df1ba3159c3b49b334b738969f114b25e004318b462183eec508b9c66292",
+  "remaining_reserve_seconds": 120,
+  "shots": 512,
+  "cap_seconds": 25,
+  "code_paths": [
+    "wildfire_lab/basis_confirmation.py",
+    "wildfire_lab/shallow_selector.py",
+    "wildfire_lab/shallow_hardware.py",
+    "wildfire_lab/search_acquisition.py",
+    "wildfire_lab/mitigation_hardware.py"
+  ],
+  "policy": "Separate acquisition of frozen hardware-chosen 10/16/20-pool circuits plus original random and MI basis controls. Raw and combined DD/twirling at matched shots; calibrate actual mapping per pool and arm. No parameter update or replacement on failure. Choices derive solely from prior training unconditional full-QUBO expectation, not downstream validation. Separate acquisition reduces winner bias but is not independent climate validation. Device layout, native compilation, time and account differ; no intrinsic device ranking. Reserve measured kernel70 seconds on personal instance after Marrakesh confirmation50. Quebec50 on PINQ instance checked separately."
+}

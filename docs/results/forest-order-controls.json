@@ -1,0 +1,59 @@
+{
+  "status": "published",
+  "study": "forest-order-controls",
+  "bundle": "docs/data/forest-order-controls-evidence.zip",
+  "bundle_sha256": "92225f9a35dc08fdf64f4a7ebb872822c6e8e7c6f6aa4762677b7b608cda8032",
+  "evidence_sha256": "cb929543b5d2319e93e5df09dc2cdc07e462219a4a972d76b7a2f2061c6b4d84",
+  "audit": {
+    "status": "verified",
+    "predictor_equations_checked": 18,
+    "kernel_records_checked": 6,
+    "new_predictor_fits": 0,
+    "new_quantum_evaluations": 0,
+    "new_draws": 0,
+    "limitation": "Arithmetic collection of post-hoc control equations; no independent confirmation."
+  },
+  "aggregate": [
+    {
+      "condition": "interleaved_calendar8",
+      "model": "qsvr",
+      "mae_ha": 92.5297262991171,
+      "rmse_ha": 123.70306129373854
+    },
+    {
+      "condition": "interleaved_calendar8",
+      "model": "rbf",
+      "mae_ha": 79.5091923877445,
+      "rmse_ha": 112.29192088329575
+    },
+    {
+      "condition": "interleaved_calendar8",
+      "model": "ridge",
+      "mae_ha": 83.55570744668665,
+      "rmse_ha": 112.31239144966311
+    },
+    {
+      "condition": "interleaved_zero8",
+      "model": "qsvr",
+      "mae_ha": 90.54762870177878,
+      "rmse_ha": 121.41922503216028
+    },
+    {
+      "condition": "interleaved_zero8",
+      "model": "rbf",
+      "mae_ha": 85.1910331618042,
+      "rmse_ha": 114.06716386367242
+    },
+    {
+      "condition": "interleaved_zero8",
+      "model": "ridge",
+      "mae_ha": 89.77890477134139,
+      "rmse_ha": 125.12708297180627
+    }
+  ],
+  "seconds": 11.305778292007744,
+  "model_fits": 18,
+  "pair_circuits": 2102,
+  "final_test_accessed": false,
+  "hardware_jobs": 0
+}

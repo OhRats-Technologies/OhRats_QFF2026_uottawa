@@ -1,0 +1,2168 @@
+[
+  {
+    "backend": "ibm_fez",
+    "circuits_sha256": "dfd65855e074b3d1b6d2d57c7d4696ae30c620f1c8530c4b34792aac8f1532f0",
+    "qsvr_physical_qubits": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selector_physical_qubits": [
+      6,
+      9,
+      8,
+      7,
+      4,
+      3,
+      2,
+      1,
+      0,
+      5
+    ],
+    "baseline_serial_estimate_qpu_seconds": 13.450126335999983,
+    "resources": [
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 8424,
+        "operations": {
+          "sx": 6338,
+          "rz": 3499,
+          "cz": 3304,
+          "x": 10,
+          "measure": 10,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 2,
+        "operations": {
+          "x": 4,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 10,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 2,
+        "operations": {
+          "x": 10,
+          "measure": 10,
+          "barrier": 1
+        }
+      }
+    ]
+  },
+  {
+    "backend": "ibm_marrakesh",
+    "circuits_sha256": "9e57a86a2b8d72b2490917cf6d1870c6be0be82ebec319cf26caa96976a2e250",
+    "qsvr_physical_qubits": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selector_physical_qubits": [
+      6,
+      9,
+      8,
+      7,
+      4,
+      3,
+      2,
+      1,
+      0,
+      5
+    ],
+    "baseline_serial_estimate_qpu_seconds": 12.057345024000021,
+    "resources": [
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 8424,
+        "operations": {
+          "sx": 6338,
+          "rz": 3499,
+          "cz": 3304,
+          "x": 10,
+          "measure": 10,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 2,
+        "operations": {
+          "x": 4,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 10,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 2,
+        "operations": {
+          "x": 10,
+          "measure": 10,
+          "barrier": 1
+        }
+      }
+    ]
+  },
+  {
+    "backend": "ibm_quebec",
+    "circuits_sha256": "209505dee130f011cbd09c960cfe1a167e8e13ecfde347133036672855fa6872",
+    "qsvr_physical_qubits": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selector_physical_qubits": [
+      6,
+      9,
+      8,
+      7,
+      4,
+      3,
+      2,
+      1,
+      0,
+      5
+    ],
+    "baseline_serial_estimate_qpu_seconds": 11.975058432000004,
+    "resources": [
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 58,
+        "operations": {
+          "rz": 45,
+          "sx": 28,
+          "cz": 10,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 8424,
+        "operations": {
+          "sx": 6338,
+          "rz": 3499,
+          "cz": 3304,
+          "x": 10,
+          "measure": 10,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 2,
+        "operations": {
+          "x": 4,
+          "measure": 4,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 1,
+        "operations": {
+          "measure": 10,
+          "barrier": 1
+        }
+      },
+      {
+        "depth": 2,
+        "operations": {
+          "x": 10,
+          "measure": 10,
+          "barrier": 1
+        }
+      }
+    ]
+  }
+]

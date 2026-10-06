@@ -1,0 +1,236 @@
+{
+  "checked_utc": "2026-10-06T07:34:07.788430+00:00",
+  "plan_sha256": "f4f642f3c7b3bd717f28ba7d901238f412b20e847cb8469df65a5ffea234a305",
+  "code_sha256": "b4360d9199a7aa1b0446e3e57d4987756f7f717f25bb7e193a6c08d03935a242",
+  "source_array_hashes": {
+    "1985": "23adf79eeeb771bb9f99de4dd85c2d43b92eacbd3e16e0347ade0de7fcf00dba",
+    "1990": "f7560b85c5405a93415541cedb04f5bc6d0704f191ff24b1f55206bf31700443",
+    "1995": "545fa9ea0eda6fcb49b30b3595f21d06c2d0084b3986f6cf2108d10cd5e6d07a",
+    "2000": "229c05c1beca9a7d02dffca129d838e996fd380e25a3cf5ba94ee367f306c85d",
+    "2005": "e6daa50bf872c79acb0342a55016d08d651b9a199e73d9a70fe4df29cb51e588",
+    "2010": "0af67b83b2ce3586d437b0749aa222d56364eb5c2166482f5940e5fdcce3673d",
+    "2015": "2a8839d0d41e5fa5a977c13cea73b607d50c1783bc9b6c1c137ffb12f6411da1"
+  },
+  "sample_resolution_m": 480,
+  "common_samples": 4528955,
+  "rows": [
+    {
+      "year": 1985,
+      "common_samples": 4528955,
+      "zero_samples": 1597794,
+      "zero_fraction": 0.3527952916290844,
+      "mean_height_m": 7.095605498398637,
+      "positive_mean_height_m": 10.963463965302486,
+      "all_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "positive_p10_p50_p90_m": [
+        4.0,
+        11.0,
+        18.0
+      ],
+      "above_30m_fraction": 0.00021064461890215293,
+      "above_40m_fraction": 7.463090271376068e-05,
+      "histogram_total_variation_from_1985": 0.0
+    },
+    {
+      "year": 1990,
+      "common_samples": 4528955,
+      "zero_samples": 1601555,
+      "zero_fraction": 0.3536257260228905,
+      "mean_height_m": 7.110425031823015,
+      "positive_mean_height_m": 11.000476532076245,
+      "all_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "positive_p10_p50_p90_m": [
+        4.0,
+        11.0,
+        18.0
+      ],
+      "above_30m_fraction": 0.0001534570336865789,
+      "above_40m_fraction": 3.621144392028625e-05,
+      "histogram_total_variation_from_1985": 0.00801597719562239
+    },
+    {
+      "year": 1995,
+      "common_samples": 4528955,
+      "zero_samples": 1599606,
+      "zero_fraction": 0.3531953839241061,
+      "mean_height_m": 7.1508244175532765,
+      "positive_mean_height_m": 11.055617476784091,
+      "all_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "positive_p10_p50_p90_m": [
+        4.0,
+        11.0,
+        18.0
+      ],
+      "above_30m_fraction": 0.00022367190665396322,
+      "above_40m_fraction": 8.854139641484625e-05,
+      "histogram_total_variation_from_1985": 0.00977466104211678
+    },
+    {
+      "year": 2000,
+      "common_samples": 4528955,
+      "zero_samples": 1594507,
+      "zero_fraction": 0.35206951714026746,
+      "mean_height_m": 7.09494397714263,
+      "positive_mean_height_m": 10.950162347398898,
+      "all_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "positive_p10_p50_p90_m": [
+        4.0,
+        11.0,
+        18.0
+      ],
+      "above_30m_fraction": 0.0003170709357898235,
+      "above_40m_fraction": 0.00010885513324817756,
+      "histogram_total_variation_from_1985": 0.008328411300178518
+    },
+    {
+      "year": 2005,
+      "common_samples": 4528955,
+      "zero_samples": 1572282,
+      "zero_fraction": 0.34716220408460674,
+      "mean_height_m": 7.100423166050446,
+      "positive_mean_height_m": 10.87624400804553,
+      "all_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "positive_p10_p50_p90_m": [
+        4.0,
+        11.0,
+        18.0
+      ],
+      "above_30m_fraction": 0.00022168469326809385,
+      "above_40m_fraction": 5.4979570342385824e-05,
+      "histogram_total_variation_from_1985": 0.012870960298788573
+    },
+    {
+      "year": 2010,
+      "common_samples": 4528955,
+      "zero_samples": 1548469,
+      "zero_fraction": 0.3419042582670837,
+      "mean_height_m": 7.191014041870586,
+      "positive_mean_height_m": 10.92700284450254,
+      "all_p10_p50_p90_m": [
+        0.0,
+        6.0,
+        16.0
+      ],
+      "positive_p10_p50_p90_m": [
+        4.0,
+        11.0,
+        18.0
+      ],
+      "above_30m_fraction": 0.00029256197069743464,
+      "above_40m_fraction": 5.895399711412456e-05,
+      "histogram_total_variation_from_1985": 0.015851780377592623
+    },
+    {
+      "year": 2015,
+      "common_samples": 4528955,
+      "zero_samples": 1544282,
+      "zero_fraction": 0.3409797624396798,
+      "mean_height_m": 7.29509058933021,
+      "positive_mean_height_m": 11.069600254366224,
+      "all_p10_p50_p90_m": [
+        0.0,
+        7.0,
+        17.0
+      ],
+      "positive_p10_p50_p90_m": [
+        4.0,
+        11.0,
+        18.0
+      ],
+      "above_30m_fraction": 0.0003451127246793134,
+      "above_40m_fraction": 7.043567445470313e-05,
+      "histogram_total_variation_from_1985": 0.018297819254110496
+    }
+  ],
+  "transitions": [
+    {
+      "from": 1985,
+      "to": 1990,
+      "unchanged_fraction": 0.4791067696632004,
+      "decreased_fraction": 0.24634402417334683,
+      "increased_fraction": 0.27454920616345274,
+      "mean_absolute_change_m": 1.6621187448318653
+    },
+    {
+      "from": 1990,
+      "to": 1995,
+      "unchanged_fraction": 0.4852905361170513,
+      "decreased_fraction": 0.2400723787275431,
+      "increased_fraction": 0.2746370851554056,
+      "mean_absolute_change_m": 1.6251238972345718
+    },
+    {
+      "from": 1995,
+      "to": 2000,
+      "unchanged_fraction": 0.48326269525751525,
+      "decreased_fraction": 0.24410995472465502,
+      "increased_fraction": 0.27262735001782973,
+      "mean_absolute_change_m": 1.674177376458808
+    },
+    {
+      "from": 2000,
+      "to": 2005,
+      "unchanged_fraction": 0.48151107705861507,
+      "decreased_fraction": 0.24145305042774767,
+      "increased_fraction": 0.27703587251363726,
+      "mean_absolute_change_m": 1.6406555154555522
+    },
+    {
+      "from": 2005,
+      "to": 2010,
+      "unchanged_fraction": 0.4763911321706663,
+      "decreased_fraction": 0.24177630380518242,
+      "increased_fraction": 0.28183256402415124,
+      "mean_absolute_change_m": 1.599345544391587
+    },
+    {
+      "from": 2010,
+      "to": 2015,
+      "unchanged_fraction": 0.47566778649820984,
+      "decreased_fraction": 0.23872703526530956,
+      "increased_fraction": 0.28560517823648063,
+      "mean_absolute_change_m": 1.600118349597203
+    }
+  ],
+  "endpoint_mean_change_decomposition_m": {
+    "1985_to_2015_mean_change": 0.19948509093157263,
+    "positive_share_term": 0.13016615670976142,
+    "positive_height_term": 0.06931893422181135,
+    "identity": "mean = positive_fraction * conditional_positive_mean; delta(mean) = average(mu)*delta(p) + average(p)*delta(mu)"
+  },
+  "verification": "Pinned source/grid hashes, histogram counts, weighted means and zeros agree with the original receipt; direct array means and transition partitions checked; decomposition residual <1e-12.",
+  "label_reads": 0,
+  "downloads": 0,
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "limitations": [
+    "Positive height is not a forest-cover label or a tree-density measure",
+    "480m NEAREST overview is not native 30m area-weighted sampling",
+    "Full-series retrospective processing and common seven-epoch mask do not establish as-of availability",
+    "Descriptive source variation establishes no predictive improvement; no outcome data is read"
+  ],
+  "calculation_seconds": 0.8601506249979138,
+  "histogram_sha256": "c90e98e90a23decbac2331f5583961691a245d545a8c259c05a584e1dc642758",
+  "figure_sha256": "a9a93a02ece0baab2ed97c495eebde310d92b88b723cc51344b204d1cbef8040"
+}

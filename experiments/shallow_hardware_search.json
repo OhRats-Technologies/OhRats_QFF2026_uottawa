@@ -1,0 +1,64 @@
+{
+  "study": "shallow-hardware-search-v1",
+  "backend": "ibm_marrakesh",
+  "parent_evidence_sha256": "6e731e706e546a61c0a37210bc86e41cb898f036646e16d62c5b060a54805836",
+  "fold": [
+    1988,
+    2006,
+    2007,
+    2010
+  ],
+  "local_study": ".cache/wildfire/shallow-preparation-v1/evidence.json",
+  "local_evidence_sha256": "974f2cf2fe85d000c39468640e48981a38ee6e98c436042fa2fba7668a85979c",
+  "beta0": [
+    0.3,
+    0.7,
+    1.1
+  ],
+  "normalized_gamma": [
+    0.8,
+    2.4,
+    4.8
+  ],
+  "beta1": [
+    0.2,
+    0.6
+  ],
+  "shots": 512,
+  "exploration_job_cap_seconds": 30,
+  "personal_total_reserve_seconds": 210,
+  "remaining_reserve_seconds": 210,
+  "total_project_reserve_seconds": 260,
+  "code_paths": [
+    "wildfire_lab/shallow_selector.py",
+    "wildfire_lab/shallow_hardware.py",
+    "wildfire_lab/search_acquisition.py",
+    "wildfire_lab/shallow_study.py",
+    "wildfire_lab/selector_sector.py",
+    "wildfire_lab/selection.py",
+    "wildfire_lab/dicke_selector.py",
+    "wildfire_lab/mitigation_hardware.py"
+  ],
+  "stages": {
+    "exploration": {
+      "jobs": 3,
+      "caps_seconds": 90
+    },
+    "marrakesh_confirmation": {
+      "jobs": 2,
+      "caps_seconds": 50
+    },
+    "measured_kernel_confirmation": {
+      "jobs": 2,
+      "caps_seconds": 70
+    },
+    "quebec_confirmation": {
+      "jobs": 2,
+      "caps_seconds": 50,
+      "account": "PINQ; separately checked live usage"
+    }
+  },
+  "policy": "First existing development fold,10/16/20 candidate pools. Each raw grid contains18 p2 points from a fixed seeded-random basis plus frozen analytic random/MI p2 points and two unentangled basis controls. Calibrate every distinct physical readout map. All PUBs512 shots. Choose only candidate circuits by unconditional full penalized training-QUBO expected energy, then index for ties, after validating at least one feasible observed subset. Controls cannot masquerade as quantum winners. Freeze chosen parameters and subsets before separate raw/DD confirmation. No outer validation, predictor error or final years may select the hardware point.",
+  "budget_policy": "Actual live monthly guard before preparation and every submission; total personal worst-case210 seconds, PINQ50 separately. Total new project reserve260 below tentative280. No retries/replacements of failed or ambiguous intents. Small jobs, uniform shots, fully private identifiers. Future-stage plans must be separately frozen before each acquisition and release unused reserve when pruned.",
+  "preflight_policy": "Small full-circuit parity, exact cardinality/global-phase tests, then actual native compilation for basis versus original Dicke. Remove first global cost phase on a basis state; same full objective scored after measurement. Changes in initialization/support and compilation/layout/time block any intrinsic hardware or speedup claim."
+}

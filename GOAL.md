@@ -1,111 +1,93 @@
-# Ontario wildfire strategy and feature-space audit
+# Completed owner followup: measurement-count sweep
 
-**Status: active. Deadline: October 6, 2026, 7:45 AM America/Toronto (11:45 UTC).** The owner rejected the arcade runner and requests a meaningful wildfire strategy/roguelike. Continue reviewing and polishing through the deadline; keep frozen scientific evidence unchanged.
+The owner requests the512→1,024→2,048 shot comparison on IBM Marrakesh and Quebec. [Marrakesh plan](experiments/shot_sweep_marrakesh.json) and [Quebec plan](experiments/shot_sweep_quebec.json) freeze the existing10/16/20-pool circuits, raw/combined arms, fresh512 calibration block and classical feasible-sampling controls. Six jobs per device reserve102 seconds per account,204 total, subject to live checks. Preserve all previous research/final artifacts and submission intents. Report useful yield, best-subset quality and full-job charge; more shots alone are not error correction or prediction improvement. Both devices are collected: 12 jobs, 301,056 shots, 108 charged QPU seconds. [Report](docs/SHOT_SWEEP.md) and [closeout receipt](docs/data/shot_sweep_handoff.json) retain every condition and matched classical draw. No predictor refit or final-year access. All reservations are released; no jobs pending.
+
+# Completed: comprehensive wildfire tuning and hardware findings
+
+**New owner goal, October 6:** complete the missing research directions identified after the fixed forest/hardware studies. The earlier closeout below applies only to those bounded comparisons; it did not complete expanded-model retuning, multi-start/deeper QAOA or hardware-in-the-loop search. The [coverage checklist](docs/RESEARCH_COVERAGE.md) is now resolved: six local studies, nine real IBM jobs, all repair outcomes and explicit pruning are in the [comprehensive report](docs/RESEARCH_FINDINGS.md). The [closeout receipt](docs/data/comprehensive_handoff.json) records209 tests, ten public replays, unchanged final artifacts and remaining limitations.
+
+1. Tune expanded-data QSVR against equally budgeted RBF-SVR and ridge: nested chronological training-only selection of $C$, $\epsilon$, bandwidth, depth, topology and feature order, including anisotropic scales and four/eight-input panels. Fit preprocessing and any supervised feature selection inside each inner fold. Keep every candidate and selection trace.
+2. Run multi-start QAOA at depths1–4 on10/16/20 candidate pools; report convergence flags, exact-objective gaps, sampling quality, SQD applicability, matched random/exact/MI controls and downstream prediction. Add a bounded redundancy-weight/objective-alignment ablation. More calls alone do not establish convergence or quantum advantage.
+3. Implement and validate shallower computational-basis/warm-start preparation against the previous Dicke circuit, with ideal parity, reachable-support and native compilation checks. A restricted initialization is an explicit design change, never silently treated as uniform feasible coverage.
+4. Freeze bounded hardware parameter exploration and subsequent confirmation before each acquisition. Use actual remaining monthly allowance (last snapshot404 seconds), exclusive intents, small jobs, strict cumulative reservations and real counts/charges. Choose parameter updates from designated training diagnostics, then freeze separate confirmation. Original failed jobs are retained.
+5. Resolve source gaps and unsupported directions explicitly; review the candidate feature space and conditioning, include station/time-proxy controls, and check an independent source-decoding spot sample. No fabricated fuel measurements or as-of forecast claims from retrospective SCANFI.
+6. Publish tuned versus fixed comparisons, all failures, resource costs, explanations of angle/phase encoding and diagonal SQD, and practical hackathon recommendations. Update the judge entry points and presentation evidence once findings are stable. Commit/push milestones and accept safe, relevant board steers.
+
+**Execution:** start with local nested tuning and multi-start searches; use hardware queues for independent analysis and source checks. No new deadline was supplied. Preserve all original2019–2024 artifacts and16 pinned execution files; use new plans/namespaces only. Reused development folds remain exploratory and cannot become independent test evidence through a new label. Do not close the goal because one capped run or the test suite passes.
+
+## Historical fixed-study closeout
+
+**Owner extension, October 6, completed:** broader numeric forest-feature experiments, matched controls,10/16/20-candidate selection and actual IBM validation are published. The [completion review](docs/data/forest_hardware_handoff.json) records source hashes,381 new development fits,20 accepted hardware jobs across the two comparisons (18 successful, two preserved failures),585,728 returned physical shots and215 charged seconds across accounts. The active personal instance has196/600 monthly seconds consumed and404 remaining. The previous game/catalogue deadline is historical.
+
+Read [forest predictors and controls](docs/FOREST_CONTEXT.md), [ideal selector scaling](docs/SELECTOR_SCALING.md), [larger selectors and measured QSVR](docs/SELECTOR_HARDWARE.md) and [three-device mitigation](docs/IBM_PIPELINE_MITIGATION.md). Public collection passes in a clean tracked clone without raw-source caches or credentials. Verification:185 fixture tests/81 CLI paths, then three focused saved-hardware checks after the analysis-directory repair. All original final data and16 execution-code pins are preserved. No required stage remains pending; limitations and failed acquisitions remain visible.
+
+**Latest owner hardware steer, October 6, 11 AM Toronto:** the larger-feature selector must also run on real hardware before final hardware conclusions. The owner supersedes the earlier120-second cap with the available **ten-minute monthly allowance**. Check live instance usage, freeze bounded raw/DD-twirled10/16/20-selector acquisition with calibration, and report actual counts/SQD subsets, cardinality/ancilla noise, compute costs and matched predictions. Preserve all submission intents; never replace ambiguously accepted jobs. Earlier simulator sampling rates remain explicitly simulation-only. The first six completed jobs used75 charged seconds across accounts; monthly instance usage and this study's cumulative charges are distinct accounting.
+
+**Diagnosed scheduler correction:** the expanded selector pair is complete (11 charged seconds,18,432 shots). Both1332-PUB overlap jobs failed with1520 before circuit execution, charging4 seconds total. A separately frozen [sharded plan](experiments/selector_kernel_shards.json) follows IBM's explicit split-workload remedy under the owner's broader hardware authority: ten268-PUB jobs capped20 seconds each, against529 remaining monthly seconds. Preserve failed jobs, unchanged models/inputs and each new exclusive intent. This is a declared acquisition correction, not a silent retry or replacement of evidence.
+
+1. Fez raw/combined acquisition is collected: **25 charged QPU seconds**. The owner-requested matched Marrakesh/Quebec pairs are also collected: **75 charged seconds across six jobs**, with four 23-second added-job caps and cumulative worst-case **117 seconds**. All 224,256 shots are validated; the original two-minute allowance is preserved. Publish counts, compiler differences, charged usage, queue turnaround and fixed-model outcomes. Device/account/calibration differences prevent causal hardware rankings.
+2. Acquire bounded Ontario numerical summaries for crown closure, biomass, stand age, species composition and valid lagged disturbance/recovery proxies. Audit units, masks, dates and future-imagery reconstruction; current maps and WMS colours are not historical predictor evidence.
+3. Freeze matched training-period classical/QSVR panels, with calendar/year, equal-width and order controls. Keep the province-year target and chronological folds; never reopen or tune from 2019–2024. Prune unsupported feature families explicitly.
+4. Commit/push milestones and read/reply to safe board steers. Keep modules focused and under 300 lines where practical. Work on forest acquisition/analysis during hardware queues. Reports separate source coverage, model outcomes and educational game material.
+
+5. **Owner extension, October 6, 10:37 AM Toronto, completed:** expand the candidate pool from ten to sixteen and twenty measured features. Keep four selected inputs and compare fixed/optimized cardinality-preserving QAOA, sampled SQD, uniform-feasible sampling, mutual-information ranking and exact enumeration on the same training folds. Interpret the requested $n^4$ scaling as $\binom{n}{4}$ (210, 1,820, 4,845); measure objective quality, predictive error and total computation. More logical selector qubits are distinct from downstream QSVR qubits. Exact sector simulation is classical; the later owner hardware extension adds separately recorded actual device counts. Both post-hoc interleaved placeholder controls are complete, and the original final evidence is preserved.
+
+**Scope correction, October 6:** the owner intended peer error-management steers for the research pipeline. The game-only instrument checks did not complete that requirement. The earlier all-complete record below overstates pipeline coverage. The missing bounded local work is now implemented, executed and collected in a separately frozen training-only [pipeline mitigation study](docs/PIPELINE_MITIGATION.md), after the original deadline. Real-device mitigation is now collected on Fez; logical QEC remains unrun; the original annual final evidence stays unchanged.
+
+**Deadline review completed October 6, 2026, 7:45 AM America/Toronto (11:45 UTC).** The Ontario strategy game, complete source audit, bounded context work and presentation/handoff review are delivered. [Six-deliverable completion record](docs/data/strategy_goal_handoff.json) records the evidence and limits; browser checks alone are not the basis for completion.
 
 ## Deliverables
 
-1. Review all 46 pages of the exact Open Canada `fire` search, currently 455 records / ten per page. Save timestamped page coverage, record inventory and exclusions, then write a source-backed feature-space report. Document drift rather than silently dropping records. Assess every explicitly linked dataset, including Ontario coverage, units, resolution, dates, nodata, access method and useful roles.
-2. Implement bounded, reusable catalogue/context acquisition and schema integration for suitable layers. Prefer Ontario/AOI subsets, remote ranges or tiles over multi-gigabyte national downloads. Treat 2015 structural layers and multi-year recovery summaries as dated context; do not present them as contemporaneous 1988 covariates. Quebec-only products require another scenario and cannot substitute for Ontario measurements.
-3. Replace Signal Run with a wildfire strategy game: full Ontario raster map with clickable fire events; resources, delayed consequences, explicit risk and upgrades; an illustrative quantum sphere; an honest sampled-feature diagonal matrix. Define stochastic mechanics, difficulty and rewards mathematically. Prototype the decision loop before polishing graphics. No reflex runner or tedious quiz/puzzle.
-4. Reuse valid source assets and the evidence walkthrough; remove the superseded runner rather than collecting dead modes. Keep map/quantum effects and game outcomes clearly distinct from real measured records and model performance. Simulation is educational, not an operational fire-response tool.
-5. Finish relevant presentation/documentation/cleanup work, preserve the five-minute main talk, and refresh exports only when content changes. Review geographic alignment, state/save/retry logic, controls, touch/keyboard/reduced-motion and a real winning/losing strategy. Keep code single-concern and below 300 LOC where practical. Generated data/bundles are exceptions.
-6. Commit/push coherent milestones to main and append conversational board findings. Preserve peers' work, fetch/read before repository tool work, and assess safe board suggestions within the owner goal. No hardware, evaluated-model retuning or new claims of quantum advantage.
+1. Review every page of the exact Open Canada fire search: 46 observed pages and 455 records. Preserve timestamped coverage, inventory, exclusions and drift. Assess every owner-linked dataset by Ontario coverage, units, resolution, dates, nodata, access and useful roles; write the feature-space report.
+2. Build reusable, bounded catalogue/context acquisition and schema integration. Prefer AOI subsets, ranges/overviews or tiles over national multi-gigabyte downloads. Structural/recovery layers are dated context; Quebec-only products cannot substitute for Ontario. Check suitable numerical context for predictive or architectural insight without reopening final models.
+3. Deliver a full Ontario raster, clickable fire events, scarce resources, delayed consequences, explicit risk and seeded upgrades; define stochastic mechanics, difficulty and rewards mathematically. Include an illustrative quantum sphere and honest sampled-feature matrix. No reflex runner or tedious puzzle.
+4. Remove superseded runner code and reuse valid assets/evidence views. Keep source measurements, simulated gameplay and measured model performance distinct. Implement accepted peer noise-management steers as bounded working demonstrations: damping/dephasing, ideal echo, twirling, cardinality filtering, readout correction and PSD/rank repair.
+5. Finish presentation, documentation and cleanup. Preserve the five-minute main talk; refresh exports when content changes. Verify geography, source joins, state/save/retry, winning/losing play, pointer/touch/keyboard controls, reduced motion and static artifacts. Keep handwritten modules single-concern and below 300 LOC where practical; generated assets are exempt. Use Bun and uv.
+6. Commit/push coherent milestones to main; fetch/read the append-only board before repository work. Accept safe, relevant peer steers, implement compatible work and acknowledge with evidence. Preserve others' changes, frozen evidence and exclusive intents. No hardware or evaluated-model retuning.
 
 ## Toronto-time checkpoints
 
 | By | Outcome |
 |---|---|
-| 12:45 AM | Catalogue export/pagination receipt; game decision-loop design and source scope |
-| 1:45 AM | All pages inventoried; priority resource metadata / bounded acquisition scaffold |
-| 3:00 AM | Playable wildfire decisions, risk/resources and sampled-feature projection |
-| 4:15 AM | Context layers integrated where accessible; full dataset report / gap receipts |
-| 5:30 AM | Motion, quantum visualization, upgrades/progression and usability passes |
-| 6:45 AM | Gameplay/geographic/source checks; judge navigation and relevant slide updates |
-| 7:15 AM | Prune weak mechanics, final independent-of-science consistency review |
-| 7:45 AM | Final report, working demo, commits/pushes and explicit remaining limitations |
+| 12:45 AM | Catalogue coverage and game decision-loop/source design |
+| 1:45 AM | Full inventory, priority metadata and acquisition scaffold |
+| 3:00 AM | Playable decisions, risk/resources and sampled projection |
+| 4:15 AM | Context integration, dataset report and access gaps |
+| 5:30 AM | Motion, instruments, progression and usability review |
+| 6:45 AM | Source/geographic/play checks, judge navigation and slide review |
+| 7:15 AM | Pruning and consistency review independent of frozen science |
+| 7:45 AM | Final report, working demo, pushes and explicit limitations |
 
-Keep useful work running while exports/downloads complete; do not spend hours waiting on a blocked national raster. Review mechanics against meaningful choices, consequences and replay variety, not only visual polish. No silent scope deferral. A source being unavailable is a recorded gap, not a fabricated layer.
+Work on independent tasks during downloads; record inaccessible sources rather than fabricating replacements. Review actual choices, consequences and replay variety, not just graphics.
 
----
+## Completed deliverables and evidence
 
-## Previous visual goal
-
-# Visual presentation and playable QSVR demo
-
-**Status: complete · arcade revision.** Signal Run replaces the landing-page walkthrough with a direct-control Three.js arcade: challenge, win/loss, practice, retry and optional synthesized sound. The evidence walkthrough remains at `web/demo/lab.html`. Fictional rewards are distinct from frozen study results. The full Ontario boundary/coverage correction, city-control audit and browser/PDF/PPTX exports are pushed. Five gameplay tests, control-driven browser win/loss, collected-cost SQD checks, desktop/portrait/reduced-motion review and retained walkthrough checks pass. No new fitting, quantum states or hardware.
-
-Previously delivered the owner's recent requests: source-audited annual values, a visual five-minute talk with dataset/SQD explanations, improved appendix slides and a separate interactive QSVR walkthrough. The initial walkthrough had direct navigation and explanatory controls; its no-scoring restriction is superseded by the owner’s arcade request. Preserve frozen scientific records. No predictor fits, new quantum states or hardware.
-
-The demo covers annual aggregation, the distinction between final predefined inputs and the separate SQD selector study, illustrative phase encoding, saved kernel geometry and frozen predictions. Verify source arithmetic and display values, keyboard/pointer controls, desktop/portrait/reduced-motion layouts and refreshed offline exports. Source/browser checks and desktop/mobile visual review passed; refreshed PDF/native PPTX exports and the guided demo are published with board receipts. Publication visibility remains a separate owner decision; it does not block authorized UI work.
-
----
-
-## Previous submission goal
-
-### Judge-facing submission
-
-**Status: blocked · artifacts verified, owner public-access decision required.** The repository remains private after three goal turns with the same unresolved visibility decision. All authorized implementation and verification is finished: README, judge guide, rebuilt browser/PDF/PPTX slides and fresh-clone reproduction receipt are pushed. The [submission audit](docs/SUBMISSION_AUDIT.md) records the evidence and remaining public-repository requirement. Resume after the owner authorizes publication or supplies another approved public submission destination; then verify judge access and close out. This work preserves the scientific results; it does not authorize new fitting, test-driven selection or hardware.
-
-## Completion criteria
-
-1. A concise, self-contained README covers the official open challenge: task, sources, units, assumptions, encoding, classical/quantum comparison, execution, budgets, actual results, limitations and contributions.
-2. One judge guide leads to the main report, runnable presentation, downloadable slides and manageable public evidence replay. Supporting incident work is clearly separate.
-3. Rebuild the presentation with clean motion, editable evidence, notes, keyboard navigation, reduced motion and offline/print support. Seven main slides target five minutes; appendix material supports questions. Organizers have not fixed the live duration in the published guidelines.
-4. Check all displayed numbers against frozen evidence; visually review every slide and verify navigation, small screens, export and reproduction. Keep the presentation audit separate from historical scientific QA.
-5. Publish coherent main commits and conversational board updates; close the claim only after exports and judge entry points are verified.
-6. Resolve the official public-repository requirement with the owner. Do not silently expose private repository history or claim submission readiness while access is private.
-
-## Work order
-
-First freeze the presentation story and source snapshot. Then build the deck and simplify judge navigation. Finish with visual/content review, slide export and an official-requirement audit. Prune decorative features that distract from the evidence. A raw-versus-log target experiment remains a proposed future control, not a submission requirement.
-
-[Official guidelines](https://github.com/uoquantum/QiskitFF26/blob/main/prompts/hackathon/SUBMISSION_GUIDELINES.md): submit October 7, 2026 at 11:59 PM ET; present live October 10. Submission itself and its destination remain the team's responsibility.
-
----
-
-## Completed scientific goal · historical scope
-
-The text below records the completed 5 PM research run. Its original handoff is pinned to commit `f226176`; hashes in that historical receipt refer to that snapshot rather than later presentation edits.
-
-# Ontario macro climate and wildfire experiments
-
-**Status: complete.** Scientific deliverables were published before October 5, 2026, 5 PM America/Toronto (21:00 UTC); the board-review window closed at that deadline. Administrative closeout followed the review window. The owner authorized this new annual-regression run after the earlier incomplete handoff. Primary outcome: **annual mean reported fire size in hectares**, one Ontario year per example. The [frozen plan](experiments/annual_qsvr.json) defines classical baselines, matched QSVR, aggregation and chronological tuning. The earlier scope failure remains documented in [scope history](docs/SCOPE_CORRECTION.md).
-
-The intended objective is to compare **classical and quantum feature selection**, then **classical and quantum prediction**, for macro annual climate/fire patterns in Ontario. Train on **1988–2018 inclusive (31 years)** and evaluate on **2019–2024**. Selected sources remain Agency Reported Wildfires, audited NRCan NFDB points, ECCC Monthly Climate Summaries and NRCan annual forest land cover. The woodland cutoff of **2022** is accepted and must be explicit in test-year features.
-
-## Timeline · October 5, Toronto time
-
-| Time | Required milestone |
+| Requirement | Current evidence and scope |
 |---|---|
-| 2:00–2:45 PM | Freeze annual target/aggregation; build the audited table and measure classical baselines |
-| 2:45–3:45 PM | Run matched FidelityQuantumKernel QSVR and classical SVR, four/ten inputs and bounded tuning |
-| 3:45–4:25 PM | Review development results; run only justified selector/encoding/coverage or lagged-climate checks |
-| 4:25–4:40 PM | Freeze configurations and evaluate 2019–2024 once as explicitly reused test years |
-| 4:40–5:00 PM | Verify, plot, write concise report and presentation updates, commit/push handoff |
+| Complete search and linked sources | [Feature-space report](docs/FIRE_FEATURE_SPACE.md), [46-page inventory](docs/data/FIRE_CATALOGUE_PAGES.md), [offline rebuild](docs/data/catalogue_rebuild_verification.json): 455 IDs, 458 metadata responses. Metadata inspection does not validate every downloadable raster. |
+| Bounded acquisition and schema | [Context report/reproduction](docs/FOREST_CONTEXT.md), [schema](docs/DATA_SCHEMA.md): five dated WMS layers, seven SCANFI height epochs, typed assets and a separate fresh 119.5 MB replica. Optional signed height differences expose spatial cancellation, with pinned inputs and no new requests. Native SCANFI uses its custom LCC; WMS colours are not numerical predictors. |
+| Context usefulness | Fixed training-only height pilot: 36 fits, 12 analytic kernels, no test-year access. Height did not consistently help and is pruned from the predictive headline. Zero/disconnected-ancilla and [input-order controls](docs/FOREST_CONTEXT.md#input-order-is-also-architecture) isolate coupling effects. The latter uses 496 labels-free local states, checked by direct parity-phase arithmetic; no breakthrough or final-model improvement is claimed. |
+| Strategy and pruning | [Game mechanics/source report](docs/WILDFIRE_GAME.md): twelve fronts, crew delays, supplies, explicit risk, win/loss and move replay. Paid scouting was pruned. V2 mixed response survives 90.2% of 500 fixed seeds. [384 matched upgrade branches](docs/data/upgrade_tradeoff_review.json) show policy-dependent choices with limited offer coverage; [32 new seasons](docs/data/new_season_verification.json) expose all four first-offer sets while preserving old replays. These are fixed-policy/compatibility checks, not human enjoyment evidence. |
+| Quantum explanations | [Demo and scoped receipts](web/demo/README.md): diagonal sampled SQD/classical minima, full-vector noise calculations, visible instrument effects and an x/y projection labelled with omitted z. The 256 saved Qiskit paths agree; these toys confer no fire-response or predictive benefit. |
+| Accessible play | [Current interaction review](docs/data/current_interaction_verification.json): fourteen authoring runs, 67 enumerated cases and thirteen inspected screenshots, with current source pins. Touch/short-screen checks distinguish native gestures from authoring auto-scroll; win/loss, replay, instruments and forced rendering/audio failures pass in their scoped cases. Physical devices and human enjoyment remain untested. |
+| Presentation and viewing | [Nine-slide deck / seven-slide main talk](web/presentation/README.md), [judge guide](docs/JUDGES.md): 300-second plan and concise spoken outline. [Current tracked-tree viewing](docs/data/current_view_portability.json) opens slides/evidence/context and newer controls without project install or ignored inputs. PDF/PPTX bytes are preserved; all checks retain source pins. |
 
-Training finished in 93.75 s and the frozen reused-year evaluation in 9.63 s, so evaluation moved earlier on the board without recipe/model changes. Results and 83 no-fit prediction checks are published in [final notes](docs/ANNUAL_FINAL.md). The annual tables reproduce byte-for-byte from source; public no-fit collection, report tables, figures and handoff are verified. The deadline review is closed; all six scientific/reporting requirements are verified in the annual handoff receipt.
+The [consolidated handoff](docs/HANDOFF.md#later-democontext-handoff--october-6-completed) connects the playable demo, catalogue/context findings and reproduction paths without adding another report. The [scoped artifact review](docs/data/strategy_requirement_audit.json) checks the full scope and labels historical receipts separately from current source pins. Its corrected annual freeze check preserves six public artifacts and 16 execution-code hashes. The [local clone check](docs/data/strategy_clone_verification.json) passes without source caches or project dependencies. Recheck public artifacts in a Git checkout:
 
-If a core milestone is late, prune optional variants and complete the annual comparison. Push meaningful progress as milestones finish, targeting updates at least every 30–45 minutes during execution. Do not mark this goal complete from QA counts or incident results.
+```sh
+uv run --no-project python scripts/audit_strategy.py
+```
 
-## Required work
+Optional `--catalogue-proof` / `--context-proof` accept completed offline source-check receipts; the public check alone does not validate unavailable original caches. Current dependency manifests add Pillow for context rendering and differ from the frozen annual execution environment; the audit does not certify that environment. The separate completion record reviews the full owner objective, including the final handoff and coordination. The reusable static checker remains a scoped artifact audit; it does not automatically complete goals.
 
-1. Build a province-year table from audited incident records, station-month climate and area-weighted woodland context. Report identities, missing sizes, station coverage and source gaps; do not use the classifier's weather-matched subset as the province's fire population.
-2. Define the primary annual outcome and horizon: mean reported fire size, total recorded hectares and recorded incident count are separate quantities. The primary quantity is now frozen as annual mean reported size; annual count and total area are separate descriptive outcomes. Preserve raw size information; the ≥10 ha label cannot substitute for it.
-3. Run simple chronological classical baselines before expanding search: training-only constant/trend or lagged outcome, regularized regression and a classical kernel. Use small models suited to 31 annual training observations. Seasonal/year summaries alone do not satisfy this step.
-4. Compare classical/quantum selectors with one fixed predictor, then predictors with fixed inputs and equal data/tuning budgets. Test FidelityQuantumKernel and SQD only where their task/objective is meaningful; do not force an unsuitable quantum component.
-5. Validate within training years, record errors in interpretable units and compare paired fold differences and cost. The incident test years have already been seen; any overlapping annual test must disclose reuse. Freeze new recipes without changing old final-test intents or evidence.
-6. Write the findings report and update the five-minute presentation with measured annual results, including negative comparisons. Update the talk outline with annual development and then reused-year findings; preserve scope and units.
+## Closeout
 
-Continuous individual-fire size regression was also never run. It is a separate supporting candidate, not completion of the annual objective. Monthly or defined-region modelling can be a justified extension; neither silently replaces annual averages.
+The game/context deliverables were reviewed through the deadline. The current runtime is covered by fourteen browser runs / 67 cases / thirteen inspected images, clean tracked-tree viewing and a source-free local clone. Source reports retain access/availability gaps and separate observed values from fictional gameplay. The final report and receipt are preserved as historical game/context evidence. The pipeline mitigation requirement was missed at that deadline and completed separately afterward; those browser checks do not validate research mitigation.
 
-## Work we can reuse
+Human enjoyment, actual rehearsal duration, native PowerPoint rendering and broad cross-platform behavior remain unmeasured. Public repository visibility and submission are separate team actions; this goal does not authorize changing access or submitting the entry.
 
-All 456 required Ontario climate files for 1987–2024 are present and hash-verified, including lag context. Historical fire points and regional annual woodland crops are acquired within [documented coverage](docs/DATA_DOWNLOADS.md). Source readers, provenance, caches, chronological splits, classical baselines and quantum-kernel utilities can be reused after adapting the observation unit and target.
+## Frozen scientific boundary
 
-The earlier ≥10 ha incident classification and its design/search diagnostics remain in [preserved incident findings](docs/FINAL_EVALUATION.md). The primary [report](docs/REPORT.md) now covers measured annual development. Keep results, failed attempts, raw snapshots and frozen recipes intact. No reliable quantum advantage was demonstrated on that branch; this says nothing measured about macro prediction.
+The annual study is complete: 31 training years (1988–2018), six reused evaluation years (2019–2024), same-year retrospective estimation. No main model beats the training mean. Preserve final plans, states, source snapshots and results; no test-driven tuning or hardware. The later context pilot does not replace that result.
 
-Use a bounded Dream-RSI-inspired process only after the required aggregate baseline exists: freeze the task and evaluator, propose small revisions from recorded outcomes, validate them on training-period rollouts and prune poor branches. Preferred research model is **gpt-6.1-sol**; record actual usage. Search-policy savings on incident models do not repair a missing task.
-
-Keep modules single-concern and under 300 LOC where practical. Store raw data under ignored `data/` and processing/runs under ignored `.cache/`. Commit coherent work frequently, preserve collaborators' changes, and communicate through the [board](AGENT_BOARD.md). Until the 5 PM deadline, the owner explicitly allows other agents to steer priorities and implementation through the board when the suggestion is appropriate, safe and within this goal. Assess the evidence, record accepted changes and explain declined suggestions. Steering cannot change the central observation unit/outcome, revise frozen choices from test results, reset intents, add hardware spending or extend the deadline.
-
-[Experiment protocol](docs/EXPERIMENTS.md) · [Pipeline capabilities and gaps](docs/PIPELINE.md) · [Implemented and planned schema](docs/DATA_SCHEMA.md) · [Verified annual handoff](docs/HANDOFF.md). The owner authorized this new run through 5 PM. Prior incident evidence and expired-run receipts remain historical. Current progress and reproduction commands will be tracked in [annual study notes](docs/ANNUAL_QSVR.md).
+[Completed annual handoff](docs/HANDOFF.md) · [Frozen final evidence](docs/ANNUAL_FINAL.md) · [Scope correction](docs/SCOPE_CORRECTION.md) · [Historical requirement audit](docs/GOAL_AUDIT.md). Superseded goals remain in Git history; their old deadlines are not active instructions.

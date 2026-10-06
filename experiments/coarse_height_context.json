@@ -1,0 +1,93 @@
+{
+  "id": "coarse-height-context-v1",
+  "observation_unit": "Ontario province-year",
+  "target": "mean reported hectares per accepted fire",
+  "purpose": "Descriptive training-only sensitivity to dated coarse forest structure, with width and time-trend controls; no final-model promotion",
+  "data_hashes": {
+    "docs/data/annual_training.csv": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+    "docs/data/scanfi_height_context.json": "20258c3268a94cca9d8048dacb483a49019c388e672b21def5f9cd51c546ad4f",
+    "wildfire_lab/annual_classical.py": "d43735f826ac40e2660d13f7f9e95e12bf13281467da895f5acf62ed8d145182",
+    "wildfire_lab/annual_quantum.py": "b8bc74bcb73d5a2944b7b7c2a25dadd7367ebda7393c0441c6d6efe292a68b10",
+    "wildfire_lab/library_kernel.py": "905a9e3048542adb9bf6ece8f886adcfc43275f92ccec61950d09ab59509443c"
+  },
+  "years": [
+    1988,
+    2018
+  ],
+  "folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "weather_features": [
+    "annual_mean_temp_c",
+    "summer_mean_temp_c",
+    "annual_precip_mm",
+    "summer_precip_mm"
+  ],
+  "conditions": [
+    "weather_four",
+    "weather_plus_zero",
+    "weather_plus_year",
+    "weather_plus_height"
+  ],
+  "height_join": "Latest coarse SCANFI epoch strictly before the annual example; common-footprint mean from nearest 480m samples. No per-fire outcome-conditioned join.",
+  "models": {
+    "ridge": {
+      "alpha": 1.0
+    },
+    "rbf": {
+      "C": 1.0,
+      "epsilon": 0.2,
+      "gamma": "inverse median positive training squared distance"
+    },
+    "qsvr": {
+      "C": 1.0,
+      "epsilon": 0.2,
+      "reps": 1,
+      "entanglement": "linear",
+      "angle": "pi/32*tanh(z/2)",
+      "kernel": "actual FidelityQuantumKernel, analytic local QMLSampler, enforce_psd=False"
+    }
+  },
+  "preprocessing": "Training-only median imputation and standardization. Target log1p then training standardization; inverse to nonnegative hectares.",
+  "metrics": [
+    "MAE ha/fire",
+    "RMSE ha/fire",
+    "bias ha/fire",
+    "fold-paired height-minus-zero and height-minus-year MAE",
+    "kernel effective rank/off-diagonal mean and width-placebo difference"
+  ],
+  "budget": {
+    "model_fits": 36,
+    "quantum_kernels": 12,
+    "pair_circuits_max": 4400,
+    "hardware_jobs": 0,
+    "shots": 0,
+    "tuning_candidates": 0,
+    "elapsed_soft_limit_seconds": 600
+  },
+  "interpretation": [
+    "Four vs five qubits is an architectural change, even if the new feature is constant: ZZ interactions can change the kernel.",
+    "Ridge/RBF zero-column invariance is an arithmetic control.",
+    "Year control tests whether height merely supplies a temporal proxy.",
+    "Development folds have already been inspected; results are descriptive, not independent confirmation.",
+    "SCANFI full-series LandTrendr reconstruction uses later imagery: no as-of forecast claim.",
+    "No 2019\u20132024 labels or final records are opened; no adaptive retuning or model promotion."
+  ]
+}

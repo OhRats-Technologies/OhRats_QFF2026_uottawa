@@ -59,12 +59,25 @@ Use the official Ontario polygon independently of raster classification. Full On
 
 ## Could the features improve performance?
 
-**No improvement has been measured from these new layers.** The annual study has 31 training years and remains frozen. A fixed Ontario-wide 2015 height average is the same number for every year: after centring it has zero variance and supplies no annual predictive information. Adding ten static attributes does not create ten useful yearly features. Sampling context around the fires whose eventual sizes define the target can also condition on the outcome and change the intended task.
+**No consistent improvement was found in the fixed coarse-height pilot.** See [the training-only comparison](FOREST_CONTEXT.md): height worsens ridge/RBF mean error and makes only a mixed, 0.30 ha/fire change against QSVR's same-width zero control. A constant extra qubit changes the ZZ kernel, so width is a required control. The annual study has 31 training years and remains frozen. A fixed Ontario-wide 2015 height average is the same number for every year: after centring it has zero variance and supplies no annual predictive information. Adding ten static attributes does not create ten useful yearly features. Sampling context around the fires whose eventual sizes define the target can also condition on the outcome and change the intended task.
 
 A worthwhile next design is **dated regional aggregation with ecological memory**, retaining annual targets and the agreed observation unit. Candidate inputs are previous-available forest composition/closure, prior disturbance fraction and lagged seasonal weather. An ablation should compare weather only; weather plus one structural block; weather plus lagged disturbance; and both. Match chronological folds and feature/label budgets against ridge and RBF before one small QSVR. Training-only evaluation must precede any new reserved test period; the already inspected 2019–2024 years cannot certify a newly selected architecture. SCANFI temporal smoothing and the availability of historical snapshots require a separate leakage audit.
 
-This is a feasible hypothesis, **not an architectural breakthrough**. New context can improve a game's explanatory depth without improving the published predictor. Current work acquires and audits context and assesses eligibility; it does not retune evaluated annual models, alter final predictions or submit hardware.
+This is a feasible hypothesis, **not an architectural breakthrough**. New context can improve a game's explanatory depth without improving the published predictor. The separate fixed height pilot is descriptive; it does not retune evaluated annual models, alter final predictions or submit hardware.
 
 ## Access status and remaining checks
 
-All package metadata were retrieved. NTEMS and national FBP WMS capabilities and the SCANFI README were retrieved successfully. The Quebec potential PDF guide returned an access error; its catalogue description supports the limited interpretation above. Ontario display windows, legends and any numerical subset checks are being collected separately, with receipts. Raw resource availability, nodata decoding and empirical model benefit are not inferred from a successful metadata request.
+All package metadata were retrieved. NTEMS and national FBP WMS capabilities and the SCANFI README were retrieved successfully. The Quebec potential PDF guide returned an access error; its catalogue description supports the limited interpretation above. Five aligned Ontario WMS windows and legends are saved in `web/demo/assets/context/layers.json`. Seven SCANFI height overviews, bounded native-header checks and numerical Ontario extraction are complete; see [the acquisition and pilot report](FOREST_CONTEXT.md). Raw resource availability, nodata decoding and empirical model benefit are not inferred from a successful metadata request.
+
+## Rebuild the catalogue evidence
+
+Cached metadata must match its receipt hash, package ID, request URL, byte count and HTTP status. Damaged or partial cache entries are preserved and reported as failures; acquisition exits nonzero. Use another ignored cache for a new retrieval rather than overwriting the original snapshot.
+
+```sh
+uv run --no-sync python scripts/catalogue/fetch.py --cache .cache/catalogue/metadata-replica
+uv run --no-sync python scripts/catalogue/inventory.py --cache .cache/catalogue/metadata-replica --output .cache/catalogue/metadata-inventory
+```
+
+Inventory reads the committed page manifest independently of its output directory and rejects incomplete membership before writing. Its default output is ignored. New metadata may drift; fetching these screened IDs does not repeat the current live search or admit new predictors.
+
+For the preserved original cache, `uv run --no-sync python scripts/catalogue/verify.py` checks all 458 responses and the original search CSV. The [offline rebuild receipt](data/catalogue_rebuild_verification.json) reproduces both published inventory and page report byte-for-byte, reconciles all 455 IDs across 46 pages, preserves the source files, and rejects changed/partial fixtures without requests. Verification needs the ignored original export and raw receipts; those source files are not bundled with the public repository.

@@ -1,0 +1,13 @@
+{
+  "study": "basis-confirmation-marrakesh",
+  "bundle": "docs/data/basis-confirmation-marrakesh-evidence.zip",
+  "bundle_sha256": "a58c9fb42c7d33f8c3f29f5dbedd7395955304da8ce325aabaa7683b8bbb3ed9",
+  "evidence_sha256": "4fe29d337c4cc244f9fd3169a3ea18766d2fe60be8ba5e062760c2cd89df8633",
+  "status": "complete",
+  "backend": "ibm_marrakesh",
+  "hardware_jobs": 2,
+  "physical_shots": 21504,
+  "charged_seconds": 10.0,
+  "final_test_accessed": false,
+  "limitation": "Frozen circuit confirmation, one raw/combined pair per device. No retuning or intrinsic device ranking. Readout weights cover only actually observed feasible states and add no SQD states. Combined DD/twirling cannot attribute an isolated effect. Reused climate folds are not independent prediction validation."
+}

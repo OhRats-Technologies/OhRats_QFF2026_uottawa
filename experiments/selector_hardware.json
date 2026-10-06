@@ -1,0 +1,36 @@
+{
+  "study": "selector-hardware-v1",
+  "backend": "ibm_marrakesh",
+  "parent_evidence_sha256": "6e731e706e546a61c0a37210bc86e41cb898f036646e16d62c5b060a54805836",
+  "fold": [
+    1988,
+    2006,
+    2007,
+    2010
+  ],
+  "pool_sizes": [
+    10,
+    16,
+    20
+  ],
+  "selected_count": 4,
+  "policies": [
+    "uniform",
+    "optimized2"
+  ],
+  "arms": [
+    "raw",
+    "dd_twirl"
+  ],
+  "selector_shots": 512,
+  "kernel_shots": 128,
+  "max_execution_time_per_job_seconds": 90,
+  "max_reserved_qpu_seconds": 360,
+  "monthly_allowance_seconds": 600,
+  "owner_authorization": "Owner requests real hardware before findings and supersedes120-second allowance with available10-minute monthly allowance. Live active instance reports56 used/544 remaining before acquisition; previous three-device comparison75 seconds spans accounts.",
+  "preparation_policy": "Polynomial conditional-count Dicke preparation with3 counter ancillas, ideal finalcounter0. Small exact amplitude and p1/p2 sector-parity tests before compilation. No exponentially sized StatePreparation vector.",
+  "phase_policy": "Remove cardinality penalty only from cost-unitary because it vanishes in ideal feasible sector; retain original full QUBO for scored observed states. Noisy out-of-sector dynamics differ and are diagnosed, not called error correction.",
+  "selection_policy": "First predeclared development fold only; three nested feature pools. Freeze all p2 parameters from published simulator; no hardware retuning, performance-based backend choice or final access. Paired raw/DD-twirled forwards512 shots with128-shot randomizations.2 independent calibration circuits per selector physical layout, same512-shot budget. Readout diagnostics may reweight observed basis but never invent sampled SQD states.",
+  "analysis_policy": "Preserve full raw counts, physical wiring and calibrated assignment matrices. Compare cardinality-four, ancilla-zero acceptance, actual addon SQD sampled minima/gaps against exact and uniform controls matched to accepted draws. One acquisition pair; no significance or hardware quantum advantage. Fixed ridge/RBF/analytic QSVR predict from sampled subsets; separately measure actual QSVR overlaps for declared selected subsets at128 shots under capped additional raw/DD executions when budget allows.",
+  "execution_policy": "Four possible single executions total:2 selector and2 downstream kernel jobs, each capped90s; no sessions, replacement/ambiguous retry. Reserve360seconds against live instance remaining. Actual charges are reported independently; use exclusive intents and actual parent hashes."
+}

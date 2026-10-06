@@ -1,0 +1,242 @@
+{
+  "checked_utc": "2026-10-06T08:08:37.522Z",
+  "status": "passed",
+  "source_sha256": {
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/strategy/map.js": "bdd0ab5f5f55bdebcec0153d2beaa90f9fcdc861c0648b1895b4af2e9ef2480b",
+    "web/demo/strategy/marker-description.js": "d5e2cd1708e153fce92551f40e47e1aced143fb6da11c8a02734ff30a81f9158",
+    "web/demo/strategy/map-status-check.mjs": "d48816070a6296ae78058c2d713ca8d6166daded47bdcb4765d496367a90c102",
+    "web/demo/strategy/styles/map-markers.css": "5ac5e61f5202f59fb276bcba318e455ff47ae1b34c28ac9dd1ab0294fffcc521",
+    "web/demo/assets/strategy.js": "a39dee4e5eccf399671dc16ff6490f6e8c278502ff8230790f549dbec024c08d"
+  },
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "motion": "reduce",
+      "countdown": [
+        {
+          "front": 0,
+          "crew": 2,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 1.5, Crew returns in 2 fronts",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 436.78125,
+            "labelRight": 569.078125
+          }
+        },
+        {
+          "front": 1,
+          "crew": 1,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 1.1, Crew returns in 1 front",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 443.421875,
+            "labelRight": 569.078125
+          }
+        },
+        {
+          "front": 2,
+          "crew": 0,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 0.8",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 500.328125,
+            "labelRight": 569.078125
+          }
+        }
+      ],
+      "contained": {
+        "front": 1,
+        "crew": 0,
+        "status": "contained",
+        "description": "Northwest 01, contained, pressure 0.0",
+        "framing": {
+          "width": 30,
+          "height": 30,
+          "labelLeft": 223.953125,
+          "labelRight": 305.703125
+        }
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "motion": "reduce",
+      "countdown": [
+        {
+          "front": 0,
+          "crew": 2,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 1.5, Crew returns in 2 fronts",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 351.296875,
+            "labelRight": 483.59375
+          }
+        },
+        {
+          "front": 1,
+          "crew": 1,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 1.1, Crew returns in 1 front",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 357.9375,
+            "labelRight": 483.59375
+          }
+        },
+        {
+          "front": 2,
+          "crew": 0,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 0.8",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 414.84375,
+            "labelRight": 483.59375
+          }
+        }
+      ],
+      "contained": {
+        "front": 1,
+        "crew": 0,
+        "status": "contained",
+        "description": "Northwest 01, contained, pressure 0.0",
+        "framing": {
+          "width": 30,
+          "height": 30,
+          "labelLeft": 104.765625,
+          "labelRight": 186.515625
+        }
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "motion": "reduce",
+      "countdown": [
+        {
+          "front": 0,
+          "crew": 2,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 1.5, Crew returns in 2 fronts",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 179.078125,
+            "labelRight": 311.375
+          }
+        },
+        {
+          "front": 1,
+          "crew": 1,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 1.1, Crew returns in 1 front",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 185.71875,
+            "labelRight": 311.375
+          }
+        },
+        {
+          "front": 2,
+          "crew": 0,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 0.8",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 242.625,
+            "labelRight": 311.375
+          }
+        }
+      ],
+      "contained": {
+        "front": 1,
+        "crew": 0,
+        "status": "contained",
+        "description": "Northwest 01, contained, pressure 0.0",
+        "framing": {
+          "width": 30,
+          "height": 30,
+          "labelLeft": 8.515625,
+          "labelRight": 90.265625
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "motion": "no-preference",
+      "countdown": [
+        {
+          "front": 0,
+          "crew": 2,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 1.5, Crew returns in 2 fronts",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 436.78125,
+            "labelRight": 569.078125
+          }
+        },
+        {
+          "front": 1,
+          "crew": 1,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 1.1, Crew returns in 1 front",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 443.421875,
+            "labelRight": 569.078125
+          }
+        },
+        {
+          "front": 2,
+          "crew": 0,
+          "status": "burning",
+          "description": "Central 03, burning, pressure 0.8",
+          "framing": {
+            "width": 30,
+            "height": 30,
+            "labelLeft": 500.328125,
+            "labelRight": 569.078125
+          }
+        }
+      ],
+      "contained": {
+        "front": 1,
+        "crew": 0,
+        "status": "contained",
+        "description": "Northwest 01, contained, pressure 0.0",
+        "framing": {
+          "width": 30,
+          "height": 30,
+          "labelLeft": 223.953125,
+          "labelRight": 305.703125
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "predictor_fits": 0,
+  "qiskit_circuit_executions": 0,
+  "hardware_jobs": 0,
+  "scope": "Actual crew countdown, water containment, stable keyboard marker nodes, hover/focus descriptions and fixed hit areas at three sizes plus normal motion. Terminal description uses a separate bounded fixture. No rules/source-position/save-format changes; effects are illustrative, not real fire footprints."
+}

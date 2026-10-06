@@ -1,0 +1,13 @@
+{
+  "study": "shot-sweep-marrakesh",
+  "bundle": "docs/data/shot-sweep-marrakesh-evidence.zip",
+  "bundle_sha256": "1e2b7434d12307b777edaed24094558309831057a86112cf15f282bb3c789dea",
+  "evidence_sha256": "db4fb471ebb1e701acdf9033e3fca66028ace69533913ebdb0300eb917975d17",
+  "status": "complete",
+  "backend": "ibm_marrakesh",
+  "hardware_jobs": 6,
+  "physical_shots": 150528,
+  "charged_seconds": 54.0,
+  "final_test_accessed": false,
+  "limitation": "One independent job per device/shot/arm, fixed staggered order; calibration drift remains confounded. Wilson intervals assume independent Bernoulli shots and do not cover drift/correlated execution errors. Compare full-shot and accepted-shot uniform feasible draws separately. Charge covers all selector/control/calibration PUBs in the job, not an individual circuit. Actual diagonal SQD only chooses among observed states. No predictor refit, error-correction claim, intrinsic device ranking or quantum advantage."
+}

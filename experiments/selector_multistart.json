@@ -1,0 +1,133 @@
+{
+  "study": "selector-multistart-v1",
+  "dataset": "docs/data/forest_selector_scaling_training.csv",
+  "input_sha256": {
+    "docs/data/forest_selector_scaling_training.csv": "acdf25db5d77510af958abc33aceceb870374208740f3a57d37e4758ac29e105",
+    "docs/data/forest_expansion_training.csv": "2b5f52acc0b2409ae72ad65b06b070085f2e32acbf8a30bb3cfec418872c7805",
+    "docs/data/forest_feature_summary.json": "84ce3d7e7669260eae881843ff43ab874e3a3fce6a3f0bd06c7bc150b91653c9"
+  },
+  "features": [
+    "annual_mean_temp_c",
+    "summer_mean_temp_c",
+    "annual_precip_mm",
+    "summer_precip_mm",
+    "forest_closure",
+    "forest_biomass",
+    "forest_age",
+    "spruce_pine_share_of_three_species",
+    "lag_reported_fire_area_ha",
+    "prior_epoch_biomass_change_per_year",
+    "spring_precip_mm",
+    "annual_snowfall_cm",
+    "annual_highest_max_temp_c",
+    "annual_lowest_min_temp_c",
+    "annual_heating_degree_days",
+    "annual_cooling_degree_days",
+    "broadleaf_crown_closure",
+    "black_spruce_crown_closure",
+    "jack_pine_crown_closure",
+    "lag_recorded_incidents"
+  ],
+  "pool_sizes": [
+    10,
+    16,
+    20
+  ],
+  "folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "models": {
+    "ridge": {
+      "alpha": 1.0
+    },
+    "svr": {
+      "C": 1.0,
+      "epsilon": 0.2
+    }
+  },
+  "quantum": {
+    "angle_amplitude": 0.09817477042468103,
+    "reps": 1,
+    "kernel": "Actual FidelityQuantumKernel/QMLSampler analytic compute-uncompute, enforce_psd=False, linear ZZ",
+    "regressor": "Qiskit QSVR precomputed"
+  },
+  "selection": {
+    "selected_count": 4,
+    "relevance_neighbors": 3,
+    "redundancy_weight": 0.5,
+    "cardinality_penalty": 2.0,
+    "seed": 137,
+    "fixed_parameters": [
+      0.4,
+      0.2
+    ]
+  },
+  "optimization_calls": {
+    "1": 160,
+    "2": 240,
+    "3": 320,
+    "4": 400
+  },
+  "shot_budgets": [
+    256,
+    1024
+  ],
+  "sampling_replicates": 20,
+  "budget": {
+    "model_fits": 189,
+    "optimizer_calls_max": 30240,
+    "pair_circuits_max": 23000,
+    "elapsed_soft_limit_seconds": 1800,
+    "hardware_jobs": 0
+  },
+  "code_paths": [
+    "wildfire_lab/selector_scaling.py",
+    "wildfire_lab/selector_sector.py",
+    "wildfire_lab/selector_features.py",
+    "wildfire_lab/forest_models.py",
+    "wildfire_lab/annual_selectors.py",
+    "wildfire_lab/sqd_selection.py",
+    "wildfire_lab/selection.py",
+    "wildfire_lab/library_kernel.py",
+    "wildfire_lab/selector_multistart.py",
+    "wildfire_lab/selector_search.py",
+    "wildfire_lab/forest_run.py",
+    "wildfire_lab/annual_classical.py"
+  ],
+  "information_policy": "All three folds are previously inspected development folds; no independent confirmation, final2019-2024 reads or model promotion. SCANFI full-series future imagery blocks as-of forecasts. Strict prior-epoch species and previous-year incident-count joins; first lag missing and train-median imputed. Six extra weather columns are already audited ECCC aggregates, not added independent years.",
+  "optimization_policy": "Three predeclared normalized starts per depth1\u20134. Choose the lowest observed feasible expected training objective across starts; ties choose earliest start. Keep every evaluation and cap/convergence flag. No validation selection. Physical gamma = normalized gamma / feasible energy range. Uniform Dicke initialization; exact cardinality-sector classical simulation.",
+  "resource_policy": "Entire run is classical sector simulation, addon diagonal SQD checks and Qiskit analytic FidelityQuantumKernel downstream; no hardware authority inferred from these data. Original fixed scaling/final artifacts unchanged. Hard per-optimizer evaluation limits; wall limit checked between cohorts; no automatic rerun of output.",
+  "sampling_policy": "For uniform and each training-chosen optimized depth,20 paired MC seeds at256/1024 samples. Same data/seed mapping as historical scaling. Downstream fixed ridge/RBF/QSVR on representative predeclared1024 seed plus exact and MI controls:189 fits, not retuned models. Nested regression tuning is a separate new plan.",
+  "sqd_policy": "Diagonal QUBO: SQD eigenvalue equals minimum observed cost; it supplies no additional optimization beyond the sampling distribution.",
+  "starts": [
+    [
+      2.0,
+      0.4
+    ],
+    [
+      1.2,
+      0.8
+    ],
+    [
+      4.8,
+      -0.6
+    ]
+  ]
+}

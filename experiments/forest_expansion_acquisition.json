@@ -1,0 +1,122 @@
+{
+  "study": "forest-features-v2",
+  "observation_unit": "Ontario province-year",
+  "source": "https://open.canada.ca/data/en/dataset/07653869-f303-46c2-a04e-9ab479b73cbf",
+  "epochs": [
+    1985,
+    1990,
+    1995,
+    2000,
+    2005,
+    2010,
+    2015
+  ],
+  "layers": {
+    "closure": {
+      "prefix": "SCANFI_att_closure",
+      "units": "percent crown closure",
+      "factor": 16,
+      "range": [
+        0,
+        100
+      ]
+    },
+    "biomass": {
+      "prefix": "SCANFI_att_biomass",
+      "units": "tonnes/ha aboveground biomass",
+      "factor": 16,
+      "range": [
+        0,
+        2000
+      ]
+    },
+    "age": {
+      "prefix": "SCANFI_age_median",
+      "units": "years stand age",
+      "factor": 32,
+      "range": [
+        0,
+        1000
+      ]
+    },
+    "broadleaf": {
+      "prefix": "SCANFI_spsCC_broadleaf",
+      "units": "percent absolute species crown closure",
+      "factor": 16,
+      "range": [
+        0,
+        100
+      ]
+    },
+    "black_spruce": {
+      "prefix": "SCANFI_spsCC_blackSpruce",
+      "units": "percent absolute species crown closure",
+      "factor": 16,
+      "range": [
+        0,
+        100
+      ]
+    },
+    "jack_pine": {
+      "prefix": "SCANFI_spsCC_jackPine",
+      "units": "percent absolute species crown closure",
+      "factor": 16,
+      "range": [
+        0,
+        100
+      ]
+    }
+  },
+  "budget": {
+    "metadata_bytes_per_resource": 1000000,
+    "pixel_range_bytes_per_resource": 40000000,
+    "total_source_bytes": 650000000,
+    "parallel_downloads": 3
+  },
+  "boundary": "data/raw/boundaries/ontario-2021.geojson",
+  "source_hashes": {
+    "data/raw/boundaries/ontario-2021.geojson": "d5af8d3e98aa9209f24bbab28e05b95f8685e1e36ae4df8f868108f5916fbfd3",
+    ".cache/catalogue/20261006/guides/scanfi-directory.raw": "d86add3d14f70be62c78518d35a761a94a656d2351a30e7b39538c213c243ebb",
+    ".cache/catalogue/20261006/guides/scanfi-readme.raw": "996f671e4379fea728274034b4b82858d5008fc04869fa2438a039e9096f11c5"
+  },
+  "crs": "+proj=lcc +lat_0=0 +lon_0=-95 +lat_1=49 +lat_2=77 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs",
+  "aggregation": "Per-epoch/per-variable valid coarse samples inside the full audited Ontario polygon, retaining zero; no mask intersection across future epochs. Publish coverage and missingness. No outcome-conditioned location weighting.",
+  "time_policy": "Latest epoch strictly before annual example; no interpolation from later epochs. This is retrospective reconstructed inventory: full-series future imagery prevents an as-of forecasting claim even with a prior-epoch join.",
+  "recovery_policy": "No same-event eventual recovery-rate map predictor. Compare explicitly labelled prior-epoch biomass-change and prior-year recorded fire-area memory proxies; neither is measured spectral recovery or FBP fuel hazard.",
+  "native_grid": {
+    "width": 178400,
+    "height": 119100,
+    "pixel_scale": [
+      30.0,
+      30.0,
+      0.0
+    ],
+    "tiepoint": [
+      0.0,
+      0.0,
+      0.0,
+      -2341500.0,
+      9436500.0,
+      0.0
+    ],
+    "geo_double_params": [
+      0.0,
+      -95.0,
+      49.0,
+      77.0,
+      0.0,
+      0.0,
+      298.257222101004,
+      6378137.0
+    ]
+  },
+  "nodata_policy": "Read signed/unsigned datatype and numeric nodata per resource. Never apply height uint8/255 assumptions to biomass or stand age. Check per-frame resampling eligibility and absence of band scale/offset transformations before aggregation.",
+  "scope": "Bounded source audit/acquisition only, no fitting, hardware or final-year access.",
+  "parent_plan_sha256": "12b5a89fb46753024a12a9a77381f56b20754423dbe74661f67027807d61ff5e",
+  "allowed_unadvertised_resampling": [
+    "SCANFI_age_median_2005_v2_20260119.tif",
+    "SCANFI_age_median_2010_v2_20260119.tif",
+    "SCANFI_age_median_2015_v2_20260119.tif"
+  ],
+  "resampling_policy": "Revision before pixel acquisition or model fitting: age2005/2010/2015 source coarse frames omit resampling metadata. Retain numerical summaries as descriptive only; model_eligible=false. Predictive inputs use latest prior eligible age epoch, explicitly reporting staleness. Other layers and earlier age epochs advertise NEAREST. No inference that missing metadata means NEAREST."
+}

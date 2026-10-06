@@ -1,0 +1,246 @@
+{
+  "study": "expanded-proxy-controls-v1",
+  "dataset": "docs/data/forest_selector_scaling_training.csv",
+  "input_sha256": {
+    "docs/data/forest_selector_scaling_training.csv": "acdf25db5d77510af958abc33aceceb870374208740f3a57d37e4758ac29e105",
+    "docs/data/forest_expansion_training.csv": "2b5f52acc0b2409ae72ad65b06b070085f2e32acbf8a30bb3cfec418872c7805",
+    "docs/data/forest_feature_summary.json": "84ce3d7e7669260eae881843ff43ab874e3a3fce6a3f0bd06c7bc150b91653c9"
+  },
+  "folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "candidate_features": [
+    "annual_mean_temp_c",
+    "summer_mean_temp_c",
+    "annual_precip_mm",
+    "summer_precip_mm",
+    "forest_closure",
+    "forest_biomass",
+    "forest_age",
+    "spruce_pine_share_of_three_species",
+    "lag_reported_fire_area_ha",
+    "prior_epoch_biomass_change_per_year",
+    "spring_precip_mm",
+    "annual_snowfall_cm",
+    "annual_highest_max_temp_c",
+    "annual_lowest_min_temp_c",
+    "annual_heating_degree_days",
+    "annual_cooling_degree_days",
+    "broadleaf_crown_closure",
+    "black_spruce_crown_closure",
+    "jack_pine_crown_closure",
+    "lag_recorded_incidents"
+  ],
+  "panels": {
+    "station4": [
+      "annual_mean_temp_c_stations",
+      "summer_mean_temp_c_stations",
+      "annual_precip_mm_stations",
+      "summer_precip_mm_stations"
+    ],
+    "calendar4": [
+      "calendar_linear",
+      "calendar_square",
+      "calendar_cube",
+      "calendar_epoch"
+    ],
+    "weather_station8": [
+      "annual_mean_temp_c",
+      "annual_mean_temp_c_stations",
+      "summer_mean_temp_c",
+      "summer_mean_temp_c_stations",
+      "annual_precip_mm",
+      "annual_precip_mm_stations",
+      "summer_precip_mm",
+      "summer_precip_mm_stations"
+    ],
+    "weather_calendar8": [
+      "annual_mean_temp_c",
+      "calendar_linear",
+      "summer_mean_temp_c",
+      "calendar_square",
+      "annual_precip_mm",
+      "calendar_cube",
+      "summer_precip_mm",
+      "calendar_epoch"
+    ],
+    "weather_null8": [
+      "annual_mean_temp_c",
+      "zero",
+      "summer_mean_temp_c",
+      "zero",
+      "annual_precip_mm",
+      "zero",
+      "summer_precip_mm",
+      "zero"
+    ]
+  },
+  "svr": {
+    "C": [
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "epsilon": [
+      0.05,
+      0.2,
+      0.5
+    ]
+  },
+  "quantum": {
+    "amplitudes": {
+      "pi64": 0.04908738521234052,
+      "pi32": 0.09817477042468103,
+      "pi16": 0.19634954084936207,
+      "pi8": 0.39269908169872414,
+      "first_half_wide": [
+        0.19634954084936207,
+        0.09817477042468103
+      ],
+      "second_half_wide": [
+        0.09817477042468103,
+        0.19634954084936207
+      ]
+    },
+    "depths": [
+      1,
+      2
+    ],
+    "topologies": [
+      "product",
+      "linear",
+      "ring"
+    ],
+    "orders": [
+      "canonical",
+      "interleaved"
+    ],
+    "unique_product_orders": true,
+    "require_distinct_geometry": true
+  },
+  "rbf_multipliers": [
+    0.001,
+    0.0012638482029342984,
+    0.001597312280060254,
+    0.002018760254679039,
+    0.0025514065200312875,
+    0.0032245905452963947,
+    0.004075392965871778,
+    0.005150678076168122,
+    0.00650967523045817,
+    0.008227241341700473,
+    0.0103979841848149,
+    0.013141473626117567,
+    0.016608827826277157,
+    0.020991037201085545,
+    0.026529484644318972,
+    0.03352924149249558,
+    0.04237587160604064,
+    0.05355666917706899,
+    0.06768750009458535,
+    0.08554672535565684,
+    0.10811807510766078,
+    0.13664483492953258,
+    0.1726983290659436,
+    0.21826447283974873,
+    0.2758531617629184,
+    0.34863652276780877,
+    0.44062364277735727,
+    0.5568813990945273,
+    0.7038135554931562,
+    0.8895134973108236,
+    1.1242100350620874,
+    1.4208308325339223,
+    1.795714494371641,
+    2.269510536694671,
+    2.868316813342012,
+    3.6251170499885355,
+    4.581597669054491,
+    5.790443980602489,
+    7.318242219076182,
+    9.249147277217336,
+    11.689518164985776,
+    14.773776525985127,
+    18.671810912919206,
+    23.598334667821938,
+    29.82471286216894,
+    37.69390975388364,
+    47.639380104013405,
+    60.20894493336138,
+    76.09496685459884,
+    96.17248711152965,
+    121.54742500762885,
+    153.61749466718297,
+    194.14919457438816,
+    245.37511066398218,
+    310.11689265747816,
+    391.94067748472213,
+    495.353520895918,
+    626.0516572014828,
+    791.2342618981327,
+    1000.0
+  ],
+  "ridge_alpha": [
+    0.0001,
+    0.00046415888336127773,
+    0.002154434690031882,
+    0.01,
+    0.046415888336127774,
+    0.21544346900318823,
+    1.0,
+    4.641588833612772,
+    21.54434690031882,
+    100.0,
+    464.1588833612773,
+    2154.4346900318824,
+    10000.0
+  ],
+  "fixed_qsvr": {
+    "model": "qsvr",
+    "circuit": {
+      "amplitude": "pi32",
+      "reps": 1,
+      "topology": "linear",
+      "order": "canonical"
+    },
+    "C": 1.0,
+    "epsilon": 0.2
+  },
+  "budget": {
+    "model_fits": 65445,
+    "elapsed_soft_limit_seconds": 3600,
+    "hardware_jobs": 0
+  },
+  "code_paths": [
+    "wildfire_lab/expanded_tuning.py",
+    "wildfire_lab/nested_search.py",
+    "wildfire_lab/search_kernels.py",
+    "wildfire_lab/forest_models.py",
+    "wildfire_lab/forest_run.py",
+    "wildfire_lab/annual_classical.py",
+    "wildfire_lab/library_kernel.py"
+  ],
+  "selection_policy": "Three expanding chronological inner folds for each outer fold/panel. Refit MI selection, median/scale and target log1p scale inside every split; refit on outer training after choosing by pooled inner MAE in hectares/fire. Ties choose first declared candidate. Outer validation never chooses C/epsilon/circuit/MI. Same train labels for each classical/quantum panel.",
+  "candidate_policy": "60 distinct circuit specifications:6 amplitude profiles x2 depths x(product canonical only +linear/ring canonical and even-odd interleaved).12 C/epsilon combinations produce720 QSVR candidates;60 RBF gamma multipliers x12 identical solver choices give720 classical candidates. Labels-free numerical distinctness checked at4/8 inputs; not a universal kernel proof. Two amplitude blocks attach to original feature identities before permutation. Same reused development panels; C100 extension follows disclosed C10 boundary in prior run. Keep old duplicate-containing study unchanged.",
+  "kernel_policy": "Exact FidelityStatevectorKernel with counting Statevector and cached simulations for broad screening;24 labels-free circuit-family/width parity checks use actual analytic FidelityQuantumKernel ComputeUncompute. No finite-shot or hardware training claimed. Selected fits save coefficients/matrices for arithmetic replay.",
+  "information_policy": "Only pinned1988\u20132018 province-year table. Three reused development folds, retrospective SCANFI future-imagery reconstruction and source limits preserved. No original2019\u20132024 files accessed or changed. New exclusive output, no rerun/retry.",
+  "control_policy": "Same nested hyperparameter/solver candidate budget as distinct search. Station counts proxy measurement/coverage drift, not weather or forest values. Calendar controls use only deterministic year/prior-epoch codes; null columns match quantum input width. Controls are interpreted against matching previously measured weather/forest panels on reused folds; no outer-error selection or causal attribution. Constant/duplicate actual inputs can make nominal candidates coincide; distinct labels-free geometry proof is not data-dependent uniqueness."
+}

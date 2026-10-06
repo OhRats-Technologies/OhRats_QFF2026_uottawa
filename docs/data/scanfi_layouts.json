@@ -1,0 +1,3525 @@
+{
+  "purpose": "Numerical context eligibility and grid verification, not model fitting",
+  "records": [
+    {
+      "status": "verified",
+      "native": {
+        "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+        "purpose": "layout/metadata only; no pixels or model fitting",
+        "status": "inspected",
+        "size_bytes": 2859525761,
+        "width": 178400,
+        "height": 119100,
+        "mode": "L",
+        "compression": 8,
+        "tile_width": 256,
+        "tile_height": 256,
+        "rows_per_strip": null,
+        "model_pixel_scale": [
+          30.0,
+          30.0,
+          0.0
+        ],
+        "model_tiepoint": [
+          0.0,
+          0.0,
+          0.0,
+          -2341500.0,
+          9436500.0,
+          0.0
+        ],
+        "geo_keys": [
+          1,
+          1,
+          0,
+          18,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          24,
+          0,
+          2048,
+          0,
+          1,
+          4269,
+          2049,
+          34737,
+          6,
+          24,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          7,
+          2059,
+          34736,
+          1,
+          6,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          8,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3079,
+          34736,
+          1,
+          3,
+          3084,
+          34736,
+          1,
+          1,
+          3085,
+          34736,
+          1,
+          0,
+          3086,
+          34736,
+          1,
+          4,
+          3087,
+          34736,
+          1,
+          5
+        ],
+        "nodata": "255",
+        "geo_double_params": [
+          0.0,
+          -95.0,
+          49.0,
+          77.0,
+          0.0,
+          0.0,
+          298.257222101004,
+          6378137.0
+        ],
+        "geo_ascii_params": "NAD_1983_Canada_Lambert|NAD83|",
+        "gdal_metadata": null,
+        "sub_ifds": null,
+        "retrieved_bytes": 3932160,
+        "requests": [
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:01.037792+00:00",
+            "content_range": "bytes 0-65535/2859525761",
+            "sha256": "4100b70f1eeb2034d01a5b00aa7b569a9d6bb6a872a7150a2507df98cb1e71c4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:04.309398+00:00",
+            "content_range": "bytes 1245184-1310719/2859525761",
+            "sha256": "62e621319b757d1bf98ea815ee5e80ba480c3e2c759d05633c015f1e4d793b24"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:07.645398+00:00",
+            "content_range": "bytes 1310720-1376255/2859525761",
+            "sha256": "924d13f36cd9d49fa6c7655ac280c3c6cecd40579d8a45c643da8c7e1e49bab6"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:12.287060+00:00",
+            "content_range": "bytes 1376256-1441791/2859525761",
+            "sha256": "df7eea1f0558747ed7013124e57e0033d0981f12d84bbf4177e5e1f5cd934ee7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:15.245344+00:00",
+            "content_range": "bytes 1441792-1507327/2859525761",
+            "sha256": "393a6242f95140e341931952f5909e4ec76cef215ff220b56ddfc5ed399b46f7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:18.869842+00:00",
+            "content_range": "bytes 1507328-1572863/2859525761",
+            "sha256": "111177e4a74ba68efad35c187f491cb765be35d7af532bb932fec2187df0e063"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:22.179725+00:00",
+            "content_range": "bytes 1572864-1638399/2859525761",
+            "sha256": "af900a7949a29c3e58e92a26ea37d016a6d2d6a4a4e3240efec1cbea5aac5b9f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:25.870323+00:00",
+            "content_range": "bytes 1638400-1703935/2859525761",
+            "sha256": "d7012aa4eb62ce9e9012d602a5e4744cd602691aed1f97255d0061db23e5de62"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:28.734517+00:00",
+            "content_range": "bytes 1703936-1769471/2859525761",
+            "sha256": "1488800ea15af9fbd40b280bb78ced7dbf2e209a29700226a1b4881c83242eba"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:32.624595+00:00",
+            "content_range": "bytes 1769472-1835007/2859525761",
+            "sha256": "de174c70f72b8d5228ccc11ea6a159e5f0b938ab4bdd5cf928f7a0d4c96a9448"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:36.083321+00:00",
+            "content_range": "bytes 1835008-1900543/2859525761",
+            "sha256": "3144bdea5c04dc918f6762561934efd8e18e2fd1b57bc09aee0e49cc7cd82b94"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:39.717002+00:00",
+            "content_range": "bytes 1900544-1966079/2859525761",
+            "sha256": "f72eb99f7ede40012dc1cef5eb85dbdf0c380a712e40205a81dca1a57e9ec825"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:43.000431+00:00",
+            "content_range": "bytes 1966080-2031615/2859525761",
+            "sha256": "955382682f546f921aa573d46383ee4d312dd29f40675d21dca0f45c2713de41"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:47.114946+00:00",
+            "content_range": "bytes 2031616-2097151/2859525761",
+            "sha256": "9295e9e7c6764c9c9e978cafcdc86fcb57aea227c515e0383c602b31843fe315"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:50.960798+00:00",
+            "content_range": "bytes 2097152-2162687/2859525761",
+            "sha256": "09b4d7a0f7ce7ce77f54babc569f80e4d3009b299604379b1cb3aca9ca64bbe2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:56.901880+00:00",
+            "content_range": "bytes 2162688-2228223/2859525761",
+            "sha256": "9858c62e7b28b765b5dab28fdcdb777eae880131c2e90072410b5e3d10e12e7e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:00.734801+00:00",
+            "content_range": "bytes 2228224-2293759/2859525761",
+            "sha256": "8e693042ecd76f369a1b36c8fbe1da3b15841569d1045281c1d805fed6957be2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:05.675008+00:00",
+            "content_range": "bytes 2293760-2359295/2859525761",
+            "sha256": "4687f238e3cb3d50d68a745b293d558d1df72560505f93769d19f4de361af6e7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:09.262380+00:00",
+            "content_range": "bytes 2359296-2424831/2859525761",
+            "sha256": "a9a525908795d5a2f691ff42d68cdce6f2322249c8c0960ad45e83699df95c92"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:12.759463+00:00",
+            "content_range": "bytes 2424832-2490367/2859525761",
+            "sha256": "2e1588ea86a920d495728b1c85aa1a6fd8a6fffa56368ee6a382571b55ac3ba4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:15.757527+00:00",
+            "content_range": "bytes 2490368-2555903/2859525761",
+            "sha256": "9ef7906c68fda52366f1c61829cc8fd7bedb6df10bc68acaad0a0fda56191dde"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:18.852727+00:00",
+            "content_range": "bytes 2555904-2621439/2859525761",
+            "sha256": "28f92e329b8c815db2c9599e42a75a574a13ba7488199819fdee8ac4b20eda2a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:23.091172+00:00",
+            "content_range": "bytes 2621440-2686975/2859525761",
+            "sha256": "bf19dcaeb0bd8a709c920eb429d321b2aa15ab16f70d6cbc45f44e940f619e31"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:26.067290+00:00",
+            "content_range": "bytes 2686976-2752511/2859525761",
+            "sha256": "4649138e884cc6ddad6354539d8c6c449a32be2a329826cba117269a9ea59699"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:29.174438+00:00",
+            "content_range": "bytes 2752512-2818047/2859525761",
+            "sha256": "687df0d7eec20412020f78ea39cfac79c9b6a0322794c6c3dc1c91a567500b25"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:34.755410+00:00",
+            "content_range": "bytes 2818048-2883583/2859525761",
+            "sha256": "6783ccfc76ccd7bc256ba7cdffc35f4eaac74a5e6f3ef1ef3fe3a0c8268febc8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:39.800994+00:00",
+            "content_range": "bytes 2883584-2949119/2859525761",
+            "sha256": "59b24f710c1f0b0a260245523b8ee01b0e33ebc24617128a0b2daa7f9901a1a5"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:44.051523+00:00",
+            "content_range": "bytes 2949120-3014655/2859525761",
+            "sha256": "2a0b217ff624a84358705690d2f7d399e4e93bebd14810b26f92a88e47162b6c"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:47.459959+00:00",
+            "content_range": "bytes 3014656-3080191/2859525761",
+            "sha256": "0f5824094fe2b57b8c40ee8f5b111f840f21ae865bb0094a1fd0ad7b6f8c90c3"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:51.811329+00:00",
+            "content_range": "bytes 3080192-3145727/2859525761",
+            "sha256": "b3ac3076fee49aff0b0de85cb620328ef7944d23e548a00bac775d64af20258d"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:55.439127+00:00",
+            "content_range": "bytes 3145728-3211263/2859525761",
+            "sha256": "14541a0e900e80b4b5b9444cb796c2bfc28d0d30c195c7d14193072991d90beb"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:01.379330+00:00",
+            "content_range": "bytes 3211264-3276799/2859525761",
+            "sha256": "7326fe076f135fcfbc62edd73cbddcad6419c4141b1ade53cc9dcf2994ca3e78"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:05.508797+00:00",
+            "content_range": "bytes 3276800-3342335/2859525761",
+            "sha256": "20cd86b1e477644429a8ead082c2cc66357e9723ca6f68f2784446368cd7988b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:09.291448+00:00",
+            "content_range": "bytes 3342336-3407871/2859525761",
+            "sha256": "67e7b539b3ee73a1306fe890f5201150285c6a3665b3fa113fe292a27dea2ead"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:12.669055+00:00",
+            "content_range": "bytes 3407872-3473407/2859525761",
+            "sha256": "eb3829bd636cfa740cea29bef1ef95f38020ebe8240eba1bc9aa3841f5b560a3"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:16.671000+00:00",
+            "content_range": "bytes 3473408-3538943/2859525761",
+            "sha256": "b8a4857447a862a918a6a24a6240ea2267e611a062f63cf97ebd733866487a17"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:20.657635+00:00",
+            "content_range": "bytes 3538944-3604479/2859525761",
+            "sha256": "d866016cf90c8eff99726be2a77532f15525da473828a02ef3aec15056006ae3"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:26.713576+00:00",
+            "content_range": "bytes 3604480-3670015/2859525761",
+            "sha256": "a9c74183458e0920d2ea33fde9b678c7ac6a52164426f7e0e3360c6683dde55e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:30.736002+00:00",
+            "content_range": "bytes 3670016-3735551/2859525761",
+            "sha256": "f8105d9d78d88512a58be3f63357ff231dafaefad9153ac5f4c8c6d22141c325"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:34.639417+00:00",
+            "content_range": "bytes 3735552-3801087/2859525761",
+            "sha256": "151ff9b52f04531f0941af434501fd328b69b0c8677e9278bdbbaf3d2fbefc02"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:37.136805+00:00",
+            "content_range": "bytes 3801088-3866623/2859525761",
+            "sha256": "837039d9367c8a91da6b51a1d14e3273797eaa6d8a486d200f3940bb9d5efd98"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:38.990748+00:00",
+            "content_range": "bytes 3866624-3932159/2859525761",
+            "sha256": "553720768fa81a7260d7d715c0183d996d3edea8fece2119c0b9c89b64fb6912"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:40.214541+00:00",
+            "content_range": "bytes 65536-131071/2859525761",
+            "sha256": "39ca9cd613b388ebaa434c63e502b56f5452b95c1d244ce52facc6cb92a6afae"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:42.271527+00:00",
+            "content_range": "bytes 131072-196607/2859525761",
+            "sha256": "0d1f6f30ba21e36096a3a106e9036f6758148acfeb5fe88cfd07842d07a62d53"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:43.372852+00:00",
+            "content_range": "bytes 196608-262143/2859525761",
+            "sha256": "055f6e8373622a31b7a08d1ab10d59eac603a146482c2ba589580d7a5abf46bd"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:44.925332+00:00",
+            "content_range": "bytes 262144-327679/2859525761",
+            "sha256": "ff193688beee543a3d1a51503249b224327a9996ff38c35f30566348b1805cb5"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:46.102598+00:00",
+            "content_range": "bytes 327680-393215/2859525761",
+            "sha256": "32be5ae9c32e8755e7115bdc577368994cf67db105ce86d18e73912efae64f49"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:48.293180+00:00",
+            "content_range": "bytes 393216-458751/2859525761",
+            "sha256": "1ffc66b8c781d04843324529c31c79a8cd094e8883573383d6c0c8af4a8e7627"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:50.865105+00:00",
+            "content_range": "bytes 458752-524287/2859525761",
+            "sha256": "2d2ebafaf036a6873915f8b28628caa0de7dddd228e09ce78451406613a5f016"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:52.921045+00:00",
+            "content_range": "bytes 524288-589823/2859525761",
+            "sha256": "3e5ce6edb27e4a7a92a982e08de29be2ac752760e559984263c4568d9174e846"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:55.102787+00:00",
+            "content_range": "bytes 589824-655359/2859525761",
+            "sha256": "2e595c31fb044c024b93ae3e41e7390a42cf9b848d36c38d5ed3eb27e43a2cba"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:57.729584+00:00",
+            "content_range": "bytes 655360-720895/2859525761",
+            "sha256": "b7787101d119e44ef56200323d8c5dcfac45f028c5401e007904f55017190a8a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:59.772594+00:00",
+            "content_range": "bytes 720896-786431/2859525761",
+            "sha256": "7f777eb969e7cf04d6aad0c4b298ec52b94bdb89797cc80c820b590c067fcee7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:01.518002+00:00",
+            "content_range": "bytes 786432-851967/2859525761",
+            "sha256": "345986f65151203bc1a4f049ed14f11298b2f9ef1fece2447febad5bc7c193b0"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:04.432621+00:00",
+            "content_range": "bytes 851968-917503/2859525761",
+            "sha256": "9bbe8d58981c081307d7c6ee338d7cb4fd47df942636ac2be51bc43c3640a002"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:06.538484+00:00",
+            "content_range": "bytes 917504-983039/2859525761",
+            "sha256": "ae374a1504ed2cec974ca4331cdd8a6fb633c1317367fdaa6e17fb37a3f5391e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:08.179300+00:00",
+            "content_range": "bytes 983040-1048575/2859525761",
+            "sha256": "4d81e3d25aa068c6c555293ea733a8e2af28d028fbbfdcb0b97c2afd4ef710c8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:09.812106+00:00",
+            "content_range": "bytes 1048576-1114111/2859525761",
+            "sha256": "b7e5c4dd5b19bbd892ada042b4901df8e3341beea696ff4cbddf5e2f37ff0ff5"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:11.590107+00:00",
+            "content_range": "bytes 1114112-1179647/2859525761",
+            "sha256": "b62deba7cd1c3f0a674424cf65277e39f3f241e67f701eaabb669b9d58efc860"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:12.890135+00:00",
+            "content_range": "bytes 1179648-1245183/2859525761",
+            "sha256": "9a5613740d6fb5d1a408ac246dc94060ace2ecdb2c96669fb6f82f184bc239ff"
+          }
+        ]
+      },
+      "overview": {
+        "width": 11150,
+        "height": 7444,
+        "nodata": 255.0,
+        "dtype": "uint8",
+        "resampling": "NEAREST",
+        "scales": [
+          1.0
+        ],
+        "offsets": [
+          0.0
+        ],
+        "crs_present": false
+      },
+      "overview_sha256": "8209d52e7de1a981080cafcb43dee2ec01fb1784ab8b006b3891006cdd1c10e9",
+      "overview_factor": 16,
+      "effective_resolution_m": 480,
+      "georeference": "Explicit native tiepoint / 30m pixel scale \u00d716; CRS from source README and GeoTIFF parameters."
+    },
+    {
+      "status": "verified",
+      "native": {
+        "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+        "purpose": "layout/metadata only; no pixels or model fitting",
+        "status": "inspected",
+        "size_bytes": 2786275470,
+        "width": 178400,
+        "height": 119100,
+        "mode": "L",
+        "compression": 8,
+        "tile_width": 256,
+        "tile_height": 256,
+        "rows_per_strip": null,
+        "model_pixel_scale": [
+          30.0,
+          30.0,
+          0.0
+        ],
+        "model_tiepoint": [
+          0.0,
+          0.0,
+          0.0,
+          -2341500.0,
+          9436500.0,
+          0.0
+        ],
+        "geo_keys": [
+          1,
+          1,
+          0,
+          18,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          24,
+          0,
+          2048,
+          0,
+          1,
+          4269,
+          2049,
+          34737,
+          6,
+          24,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          7,
+          2059,
+          34736,
+          1,
+          6,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          8,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3079,
+          34736,
+          1,
+          3,
+          3084,
+          34736,
+          1,
+          1,
+          3085,
+          34736,
+          1,
+          0,
+          3086,
+          34736,
+          1,
+          4,
+          3087,
+          34736,
+          1,
+          5
+        ],
+        "nodata": "255",
+        "geo_double_params": [
+          0.0,
+          -95.0,
+          49.0,
+          77.0,
+          0.0,
+          0.0,
+          298.257222101004,
+          6378137.0
+        ],
+        "geo_ascii_params": "NAD_1983_Canada_Lambert|NAD83|",
+        "gdal_metadata": null,
+        "sub_ifds": null,
+        "retrieved_bytes": 3932160,
+        "requests": [
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:24.839177+00:00",
+            "content_range": "bytes 0-65535/2786275470",
+            "sha256": "097ea120d796a5e8b78ced12f77b7fa079406c8763c2b144036b7443890a3055"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:25.908534+00:00",
+            "content_range": "bytes 1245184-1310719/2786275470",
+            "sha256": "57de26d313cfcd74bb42b9565fa5dfdeafd6d0793acb484b1623f0c41b86fb5b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:27.648746+00:00",
+            "content_range": "bytes 1310720-1376255/2786275470",
+            "sha256": "f5a58d1a958819e90fc8701d92c56afd9a8631e6fc61ba4407e09ecf01b60d4e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:28.841738+00:00",
+            "content_range": "bytes 1376256-1441791/2786275470",
+            "sha256": "e967e9db5dfd1e53ebede0451c9483e63d071859935a08fa02cf606900bcd68a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:29.579897+00:00",
+            "content_range": "bytes 1441792-1507327/2786275470",
+            "sha256": "97da3c8f6e67001a01386e20a9211587e7d22f8414fab9bc672e14dcf23363b3"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:30.705250+00:00",
+            "content_range": "bytes 1507328-1572863/2786275470",
+            "sha256": "cbe82a8a032c2f0883002e8c69a5eeaa303b9ed8e1db391c15cca7e268c7523e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:31.645652+00:00",
+            "content_range": "bytes 1572864-1638399/2786275470",
+            "sha256": "792ed173c67938d1c6aea8fc49c0570241cf56c123dfdcccd4bf457418b73c67"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:32.979923+00:00",
+            "content_range": "bytes 1638400-1703935/2786275470",
+            "sha256": "8819c38485ef06ee71df58f61e91354071fdac676fb127abefb3053f0589f36a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:33.794394+00:00",
+            "content_range": "bytes 1703936-1769471/2786275470",
+            "sha256": "bc8968985ccdf852c84d16ce02b2c3db937ab5ca19a5eec62505a882ee7885b4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:34.893629+00:00",
+            "content_range": "bytes 1769472-1835007/2786275470",
+            "sha256": "c3ae9d615075014f0dd0dfaf701ee911c60cc1b664439013ee48c7ba579e167f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:35.762099+00:00",
+            "content_range": "bytes 1835008-1900543/2786275470",
+            "sha256": "09e29be8ccd36216d3a404d90d4eb740150333e9954dbdd5abd1d91579e9a51a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:37.181218+00:00",
+            "content_range": "bytes 1900544-1966079/2786275470",
+            "sha256": "f223960e24ee9e76bcdf62c378c2608b5773a104c256bd6ca6e847d28c63a3db"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:38.924426+00:00",
+            "content_range": "bytes 1966080-2031615/2786275470",
+            "sha256": "52e7c0c70084a23e80f3245648a62123624e8bdade6022d904f32cba6653ba8a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:40.161355+00:00",
+            "content_range": "bytes 2031616-2097151/2786275470",
+            "sha256": "02841747680143f38221121edfb321a8c800f51239b36d3d13ada841fac29bf8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:41.381632+00:00",
+            "content_range": "bytes 2097152-2162687/2786275470",
+            "sha256": "66671de69773ba8cae244cbc8d0db1954f904234e861fd653d96dc0105022e51"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:42.399886+00:00",
+            "content_range": "bytes 2162688-2228223/2786275470",
+            "sha256": "c15c6cc854ab84ea3d31134728604f093d8a1d1bd4c1f6e4bc1720dbe884fbf2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:43.287445+00:00",
+            "content_range": "bytes 2228224-2293759/2786275470",
+            "sha256": "f633532b7c4ebe6c2ee4627ffc789236f844916a6441e55fb14012d0436ad138"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:44.315172+00:00",
+            "content_range": "bytes 2293760-2359295/2786275470",
+            "sha256": "e5650e79ba06919ea5290e8b6fae9e781b5f9da415fbda66f749514d72f6ce06"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:45.077662+00:00",
+            "content_range": "bytes 2359296-2424831/2786275470",
+            "sha256": "a48a4ae4ca55a6f3d3b5031e99858d519ec7142a371d70e2c3dde3c571cb8f06"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:45.897988+00:00",
+            "content_range": "bytes 2424832-2490367/2786275470",
+            "sha256": "0f15e4069b05c7cae9d5f5863dd53886df48804f8f80689872569c611cdf6144"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:46.911866+00:00",
+            "content_range": "bytes 2490368-2555903/2786275470",
+            "sha256": "8d30200f97d4dd51ee98fd5427dec6065cfec95e57229b2f79267dfde73fe5c4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:47.938008+00:00",
+            "content_range": "bytes 2555904-2621439/2786275470",
+            "sha256": "eef5b01fcb22251f319ff8face3b1437c191878e0bb4fb28bc7878b3a5129fb7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:49.880002+00:00",
+            "content_range": "bytes 2621440-2686975/2786275470",
+            "sha256": "c95f2d9fc46b0b8284abaeca80da0696513dfa829145bc2cc2a84a3736dbe3aa"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:52.009793+00:00",
+            "content_range": "bytes 2686976-2752511/2786275470",
+            "sha256": "ccfc9e1dbe50f7a03cc95facadf07abe80d51dc16c7d2318a00b0b605ff20645"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:53.653481+00:00",
+            "content_range": "bytes 2752512-2818047/2786275470",
+            "sha256": "b00e520ca1ee590213ef49d1e01c506fc9217c3954bd2591c5c3dd9d4bb52b15"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:54.490050+00:00",
+            "content_range": "bytes 2818048-2883583/2786275470",
+            "sha256": "568dc28eb572b49cba291aa5d1db023744d76e9e1d656ee7cc4df1f24f6690f9"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:56.017978+00:00",
+            "content_range": "bytes 2883584-2949119/2786275470",
+            "sha256": "5c03a9ad9f2eec57b32f55ba0ed6ba610a91d7e5fa108b2f4e59d0ebd3f70c34"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:56.736352+00:00",
+            "content_range": "bytes 2949120-3014655/2786275470",
+            "sha256": "27d9127b6ee0ce9844be0249522bf6ef193de93d68079d8654e56839c36fc84f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:57.560361+00:00",
+            "content_range": "bytes 3014656-3080191/2786275470",
+            "sha256": "762bf66b2d9924da6fca48759a19fe4076eb427eacd0fcfcb01424cc0202babc"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:58.492088+00:00",
+            "content_range": "bytes 3080192-3145727/2786275470",
+            "sha256": "3ed52bb204d60e518842e8e460049bd3df41d82a16be1f4f00e5af5239a44cb4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:25:59.608716+00:00",
+            "content_range": "bytes 3145728-3211263/2786275470",
+            "sha256": "772e17aa3b0f101dacd8cbdd9773a5e90ad7510b6b0250222b5978be8f8ae90f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:01.070797+00:00",
+            "content_range": "bytes 3211264-3276799/2786275470",
+            "sha256": "a586ac72fa19393110477b701eb1d13ed79ef1bdbd3939612e64d41f11e395d7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:02.167995+00:00",
+            "content_range": "bytes 3276800-3342335/2786275470",
+            "sha256": "20e266d247682d4efc7c309092b77bdbff851f7aa2ab80b4b213c71869f41407"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:02.894416+00:00",
+            "content_range": "bytes 3342336-3407871/2786275470",
+            "sha256": "ea0f8293457cc09462c2a438c6912377f48bdbd10d9c82ca5475270c0aa409c5"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:03.840570+00:00",
+            "content_range": "bytes 3407872-3473407/2786275470",
+            "sha256": "318c9f52f0ea9107840795c109434ea74f9ea4b91c1a3468d83b9672b1898a08"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:04.579351+00:00",
+            "content_range": "bytes 3473408-3538943/2786275470",
+            "sha256": "3749c5b2764c5d6eeb7a2d58bb9da2e3fcf821bbbb86c45eb1c8a975500f6cf2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:05.455618+00:00",
+            "content_range": "bytes 3538944-3604479/2786275470",
+            "sha256": "017dcf306990e74ac0140d103b87a00faff10924e23a3b892d5bd55807b9bb01"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:06.300264+00:00",
+            "content_range": "bytes 3604480-3670015/2786275470",
+            "sha256": "92815bec66d2ae30f9032874a3bbb6acb36a52ed3f99f4bac8197f3fe45cf81c"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:08.019950+00:00",
+            "content_range": "bytes 3670016-3735551/2786275470",
+            "sha256": "3c580122c95d06f13eedffea3e9819f971da36d6b2add448bf2ff21a5120e5f2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:08.821203+00:00",
+            "content_range": "bytes 3735552-3801087/2786275470",
+            "sha256": "b5f4da1585725e4e5a879260ee0070464b9bf30aadb138a11abc271a8b775cc1"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:09.226776+00:00",
+            "content_range": "bytes 3801088-3866623/2786275470",
+            "sha256": "d98cafd439afe06d3520237211e3ea2a6dd9d4e0a0e216c987de6e839e5ffe64"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:09.650396+00:00",
+            "content_range": "bytes 3866624-3932159/2786275470",
+            "sha256": "8924c4904b9db495c3d88a2bade0d3e73fdb0abb5a20974abf54ea84f722a0d0"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:10.607179+00:00",
+            "content_range": "bytes 65536-131071/2786275470",
+            "sha256": "c7398802465c5e5afe9c4ff788628d0bde7d6aa048ae78dd4a88f74fee7e965c"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:11.389555+00:00",
+            "content_range": "bytes 131072-196607/2786275470",
+            "sha256": "cceb5103f064282240a27078ad93663a9de71c8208d118bd07b6b9c7f711c033"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:12.300318+00:00",
+            "content_range": "bytes 196608-262143/2786275470",
+            "sha256": "f3d3f6b8b964fdaa26b0101b74e38df8497ba1552c8f28e64a42be8c1f8621a4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:13.414798+00:00",
+            "content_range": "bytes 262144-327679/2786275470",
+            "sha256": "a94468097ca3511b0dc0eefe353614b8f9fd338385fd43b749689d55cb1c0a66"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:14.596568+00:00",
+            "content_range": "bytes 327680-393215/2786275470",
+            "sha256": "5a1046ee749be5b4d6fab2cf0bb61fc92868f2feedd59a5b991026a19fd2e4dc"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:15.041331+00:00",
+            "content_range": "bytes 393216-458751/2786275470",
+            "sha256": "27dda50ee85ecabb404a377a6b8900120db88ce727e002faaf2ae29834b11c9d"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:15.585496+00:00",
+            "content_range": "bytes 458752-524287/2786275470",
+            "sha256": "7ad46a1ce259c83266b29c8da3b41be60fcb4aae0a2cdeecf273f787fea8a79b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:16.495178+00:00",
+            "content_range": "bytes 524288-589823/2786275470",
+            "sha256": "ca65621a95843540ecaec2296cee2317c601baeb3c33f8e1bfe6e9e17cbbe686"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:16.974798+00:00",
+            "content_range": "bytes 589824-655359/2786275470",
+            "sha256": "34cb87a37fa76a90c9f5e859ad96f173112d45275c453cc411996c4763283c99"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:19.363196+00:00",
+            "content_range": "bytes 655360-720895/2786275470",
+            "sha256": "c6c7aeba6360c071bdb0cb846ac48b96f370e5e0f40a911490d876790c173a95"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:21.512488+00:00",
+            "content_range": "bytes 720896-786431/2786275470",
+            "sha256": "6637b1fe0220717dec55cc3849ac3013ebbbd00193b48d7ca94d88910a8f5832"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:22.640400+00:00",
+            "content_range": "bytes 786432-851967/2786275470",
+            "sha256": "b998e3b41b393d7f3d34e5df2eea9b139eb80474fbf266d588de641d665d7304"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:23.683592+00:00",
+            "content_range": "bytes 851968-917503/2786275470",
+            "sha256": "5b6b3cf28c2650b325946f5b21b8307ca93672ffd047f8ae524880878e5349d7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:24.703693+00:00",
+            "content_range": "bytes 917504-983039/2786275470",
+            "sha256": "c678ef04188845b9fd297ce809baf7a5087ca03264a8f4ac12449a2866afbdb5"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:25.149920+00:00",
+            "content_range": "bytes 983040-1048575/2786275470",
+            "sha256": "7fa1ac0995ded26145a46e7d9b8c216df11674aa281f5994a864daaf185c8458"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:25.578569+00:00",
+            "content_range": "bytes 1048576-1114111/2786275470",
+            "sha256": "cc1aed0b25e4dc6e83de1c5d78fd06006f4b52b03ead4e8eb5508fea8113d4b6"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:26.437541+00:00",
+            "content_range": "bytes 1114112-1179647/2786275470",
+            "sha256": "53f263bc37bb6909ab857ac8e1076424d4bc40d318c7cffb02a6b78090494595"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:27.203953+00:00",
+            "content_range": "bytes 1179648-1245183/2786275470",
+            "sha256": "86ef45d1e4a7ef3d7119e408932cb939f7e5d37f08857358b50e08858c13c7b3"
+          }
+        ]
+      },
+      "overview": {
+        "width": 11150,
+        "height": 7444,
+        "nodata": 255.0,
+        "dtype": "uint8",
+        "resampling": "NEAREST",
+        "scales": [
+          1.0
+        ],
+        "offsets": [
+          0.0
+        ],
+        "crs_present": false
+      },
+      "overview_sha256": "06665eff8ed26e4805cd011ced598bd73f956d6784fbf44c846e9123874f6bd2",
+      "overview_factor": 16,
+      "effective_resolution_m": 480,
+      "georeference": "Explicit native tiepoint / 30m pixel scale \u00d716; CRS from source README and GeoTIFF parameters."
+    },
+    {
+      "status": "verified",
+      "native": {
+        "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+        "purpose": "layout/metadata only; no pixels or model fitting",
+        "status": "inspected",
+        "size_bytes": 2802470280,
+        "width": 178400,
+        "height": 119100,
+        "mode": "L",
+        "compression": 8,
+        "tile_width": 256,
+        "tile_height": 256,
+        "rows_per_strip": null,
+        "model_pixel_scale": [
+          30.0,
+          30.0,
+          0.0
+        ],
+        "model_tiepoint": [
+          0.0,
+          0.0,
+          0.0,
+          -2341500.0,
+          9436500.0,
+          0.0
+        ],
+        "geo_keys": [
+          1,
+          1,
+          0,
+          18,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          24,
+          0,
+          2048,
+          0,
+          1,
+          4269,
+          2049,
+          34737,
+          6,
+          24,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          7,
+          2059,
+          34736,
+          1,
+          6,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          8,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3079,
+          34736,
+          1,
+          3,
+          3084,
+          34736,
+          1,
+          1,
+          3085,
+          34736,
+          1,
+          0,
+          3086,
+          34736,
+          1,
+          4,
+          3087,
+          34736,
+          1,
+          5
+        ],
+        "nodata": "255",
+        "geo_double_params": [
+          0.0,
+          -95.0,
+          49.0,
+          77.0,
+          0.0,
+          0.0,
+          298.257222101004,
+          6378137.0
+        ],
+        "geo_ascii_params": "NAD_1983_Canada_Lambert|NAD83|",
+        "gdal_metadata": null,
+        "sub_ifds": null,
+        "retrieved_bytes": 3932160,
+        "requests": [
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:00.354477+00:00",
+            "content_range": "bytes 0-65535/2802470280",
+            "sha256": "ae466546be48767ff8f850f91ec9ac8c7502e91eac69a776f0a7df9232e2e522"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:04.767334+00:00",
+            "content_range": "bytes 1245184-1310719/2802470280",
+            "sha256": "65005a1a512e691099a796545de330a25eafb59c20cba1b37de465fede55b9dd"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:08.560379+00:00",
+            "content_range": "bytes 1310720-1376255/2802470280",
+            "sha256": "1310f56238e89eb9680cf5ffdb03fe986f8fdac5daeb487e0b218a4b541b1b6b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:11.164935+00:00",
+            "content_range": "bytes 1376256-1441791/2802470280",
+            "sha256": "406fe3535799dbcf7783d3c43caa5271b9f35dc690ab8302e73cb7bd28cc8d93"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:14.655454+00:00",
+            "content_range": "bytes 1441792-1507327/2802470280",
+            "sha256": "b57fc8e9d1f4fd97a7e18e41567b58048d5532b86de34f78e4d3ac4c1690acf9"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:18.495989+00:00",
+            "content_range": "bytes 1507328-1572863/2802470280",
+            "sha256": "1eaf45a0904b6e077982324a7beb81bf1ea9e640eff4fd2b893f681387910046"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:21.664870+00:00",
+            "content_range": "bytes 1572864-1638399/2802470280",
+            "sha256": "9f9a4869dde909cc2164b7ab6071c77418fa6a9d690bbc065a3a892e076ac008"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:24.634894+00:00",
+            "content_range": "bytes 1638400-1703935/2802470280",
+            "sha256": "7438bd75d1e60a258a6a50d44534be31c081f19ba1bafe2cf651e4deb70c0047"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:27.509811+00:00",
+            "content_range": "bytes 1703936-1769471/2802470280",
+            "sha256": "c5f497ac1a0dd2fca014acb5e2746abb7e94e89e47ece3e8067ce410393dead4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:31.095326+00:00",
+            "content_range": "bytes 1769472-1835007/2802470280",
+            "sha256": "6c889f021b5cae7b2b67fc4ad6ffbe69c270169fc99efc537be4dc59420ddf14"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:35.543004+00:00",
+            "content_range": "bytes 1835008-1900543/2802470280",
+            "sha256": "96bcb3c7edbf73edce6f849f0ba97164340a2e832b2b4d4781c79a5517baa703"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:38.204242+00:00",
+            "content_range": "bytes 1900544-1966079/2802470280",
+            "sha256": "88d2b76605ce2412c2389bc507e365701fe0dcd85d8834737daac9daa74582e6"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:41.329549+00:00",
+            "content_range": "bytes 1966080-2031615/2802470280",
+            "sha256": "a658e840c5588d371a161a90e4fc6e2fe0fbef1982352c71bb8addb57f43ae50"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:43.528306+00:00",
+            "content_range": "bytes 2031616-2097151/2802470280",
+            "sha256": "49f375c98e7b2a45867496ce689f88a86ae5eddf2b14ffc1887955107810795b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:47.124004+00:00",
+            "content_range": "bytes 2097152-2162687/2802470280",
+            "sha256": "e03d28dc122f8e4737bfd808af540000645fd9b26e76295eca0a5838f45d1544"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:51.723337+00:00",
+            "content_range": "bytes 2162688-2228223/2802470280",
+            "sha256": "9a821c011b506a733fb82896c5d528e92b516c8525b816b16c79ebbd73c6aa6d"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:55.324370+00:00",
+            "content_range": "bytes 2228224-2293759/2802470280",
+            "sha256": "8194368915ebe22e9f7069d23f272548decf2e4f545d5dc46090422420843a10"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:59.861202+00:00",
+            "content_range": "bytes 2293760-2359295/2802470280",
+            "sha256": "da654820101c83026530a9046748513f2cc7ef0abce69243591e5f215c55997a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:04.524463+00:00",
+            "content_range": "bytes 2359296-2424831/2802470280",
+            "sha256": "1da38386f57c7ad86f2f3c1eae72f2c6f7bc292338fe8827cda5b72a1b5c48eb"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:07.489430+00:00",
+            "content_range": "bytes 2424832-2490367/2802470280",
+            "sha256": "f47c2a685a422cf35f568fb0609e8f0c904b9dea8bc7681da147d9398db31c7d"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:11.848034+00:00",
+            "content_range": "bytes 2490368-2555903/2802470280",
+            "sha256": "72117244b2fd82b8e65011e9a04b76fc00f620b9c628c38a64604613c1052526"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:13.766315+00:00",
+            "content_range": "bytes 2555904-2621439/2802470280",
+            "sha256": "e54172a0b74e06fbb099c3d90d68a4ab6cb8a6c5389d39d46daa5a1f238a3f49"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:17.985570+00:00",
+            "content_range": "bytes 2621440-2686975/2802470280",
+            "sha256": "48aa6d88ceeae83323d1c4659b4ee8b2975238a5d335845bf245657d3be8fea1"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:21.466934+00:00",
+            "content_range": "bytes 2686976-2752511/2802470280",
+            "sha256": "9e37d9d6d423ab8fa0125777e9d0a7c10848988c127ee76bb6054b679dbe2e27"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:25.116685+00:00",
+            "content_range": "bytes 2752512-2818047/2802470280",
+            "sha256": "b531a7796ccfe5c5e5c841fcff61e440c4d46e88666ed40aa65834351ba02c39"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:30.972786+00:00",
+            "content_range": "bytes 2818048-2883583/2802470280",
+            "sha256": "c913e5c4def204a9ae811497bf82955600e4c616aee35085cdf3cabe44e593e8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:35.183541+00:00",
+            "content_range": "bytes 2883584-2949119/2802470280",
+            "sha256": "e0b2fe486987465387dab1e2ff91a6260e142d23f4d45dab2bfb80d838f5e02a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:38.379332+00:00",
+            "content_range": "bytes 2949120-3014655/2802470280",
+            "sha256": "514428e4c6f5971d73e54a148ca418d8351a911e676f23c556b0ae7dfe02c497"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:41.758869+00:00",
+            "content_range": "bytes 3014656-3080191/2802470280",
+            "sha256": "29ec3bfdd1da74d17893e7bc52e1c514c8ff0014507c7f0bb58b1d27da310bb2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:46.791371+00:00",
+            "content_range": "bytes 3080192-3145727/2802470280",
+            "sha256": "3612baa45c159b0ec88eb72747b18db82f7348a1b05b369d571dea29b5b76471"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:49.879888+00:00",
+            "content_range": "bytes 3145728-3211263/2802470280",
+            "sha256": "b3ae54934608bd3d512a7d50645ed8d6ac73bb473024eca5c9da7e081122b5b6"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:53.594628+00:00",
+            "content_range": "bytes 3211264-3276799/2802470280",
+            "sha256": "871d5597d7a5723e60da888ecc5d7013bc64f93ba621caebba4153595645ba94"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:00.942966+00:00",
+            "content_range": "bytes 3276800-3342335/2802470280",
+            "sha256": "8208dcfd77813bd564c1dd028921eca5d4fb2ae73a8556ad9bbda6cbfa9ce206"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:03.474270+00:00",
+            "content_range": "bytes 3342336-3407871/2802470280",
+            "sha256": "8fe1d21a8916b36c30df7d15aac29e9d80060a032597b20b97ad3148a960e515"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:06.837406+00:00",
+            "content_range": "bytes 3407872-3473407/2802470280",
+            "sha256": "4835e674a528ce4f703dda17cd4e9bbcd82c55839e81be85abb3e83f82d32516"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:10.863763+00:00",
+            "content_range": "bytes 3473408-3538943/2802470280",
+            "sha256": "f033c0b6639d471310dd32147e84ff45fed92f54551183a1ed6f1b8a34119242"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:13.198743+00:00",
+            "content_range": "bytes 3538944-3604479/2802470280",
+            "sha256": "1652bee310a7b5ae84ccf0ac125283185e9c49ceb03dde611c671930bc7fbfa1"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:17.479769+00:00",
+            "content_range": "bytes 3604480-3670015/2802470280",
+            "sha256": "96a6709ee6cc051fdb7fc65a4d03f29c43e6f05648070a3e619ec8c2d96fe44f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:20.251423+00:00",
+            "content_range": "bytes 3670016-3735551/2802470280",
+            "sha256": "5eaf286e3f7832403ec6bd36bf96155d293b21e989194719cebf9b1526573905"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:26.246805+00:00",
+            "content_range": "bytes 3735552-3801087/2802470280",
+            "sha256": "b6a7aa17f467d6415aa7a9a1a643f6085764f5fabe545305e05c3d9ad4ca0a82"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:29.671537+00:00",
+            "content_range": "bytes 3801088-3866623/2802470280",
+            "sha256": "e49e2eac45820967ec75d5c29ae065fb079f262412779e239ef1579bae6e817b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:32.953118+00:00",
+            "content_range": "bytes 3866624-3932159/2802470280",
+            "sha256": "fd7a8ca08e432e485b36e81762cbabf317a2bec8c39634efbcb1406e1558fe9b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:36.639037+00:00",
+            "content_range": "bytes 65536-131071/2802470280",
+            "sha256": "5558c0beb040f6822a7473dc97732a79963a75d9cde697429ac65759dd7f56cb"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:39.760528+00:00",
+            "content_range": "bytes 131072-196607/2802470280",
+            "sha256": "038e4d47563d6b9e8aa005262a556f492174da5f70494df22299af50eb629c06"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:41.386854+00:00",
+            "content_range": "bytes 196608-262143/2802470280",
+            "sha256": "87366df333a5947e4ea74d9e3ebcf6c24ce52fe04cc6459d92020d53acce62bd"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:43.088681+00:00",
+            "content_range": "bytes 262144-327679/2802470280",
+            "sha256": "b488c270039e4dedc1eb5d95bb38ba09af066596b1aeee6cbef0fec142f9ecf5"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:44.320152+00:00",
+            "content_range": "bytes 327680-393215/2802470280",
+            "sha256": "befd3d19fdc1d063a1ff261a13df528b5967e012f84d1e174bf807e2af94ebab"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:45.745951+00:00",
+            "content_range": "bytes 393216-458751/2802470280",
+            "sha256": "874776654c985af51f16eb0bab9399b035e9b8aab467ff3f8d6885ee4f06da5e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:47.390598+00:00",
+            "content_range": "bytes 458752-524287/2802470280",
+            "sha256": "b67093ed0d733c31fd0cdd90ba5a8f5faa824c1a78fcd27180b3ecf4ff43009d"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:49.433779+00:00",
+            "content_range": "bytes 524288-589823/2802470280",
+            "sha256": "e361c752d7800109e58bdefd1c0ba966e6684c1ab8be5fafd2daf58109accba4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:51.584365+00:00",
+            "content_range": "bytes 589824-655359/2802470280",
+            "sha256": "2a1b5fed56b23cf3a35d1c3884472a44c96ac7220df6ce9744c28a178f4161f3"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:53.181367+00:00",
+            "content_range": "bytes 655360-720895/2802470280",
+            "sha256": "987bbfa98f90c4c786314fd2d08e2db310467c5f8c232128654c8c81d7ed4bd2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:54.761585+00:00",
+            "content_range": "bytes 720896-786431/2802470280",
+            "sha256": "4d3eab020529ae691d776431e04f68974d50075ece32ad1db08c3d3e76a84104"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:56.908701+00:00",
+            "content_range": "bytes 786432-851967/2802470280",
+            "sha256": "933c68870e4259be5d2adc54c2434b92a404213218c3403525f4f4a3a2078267"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:58.036253+00:00",
+            "content_range": "bytes 851968-917503/2802470280",
+            "sha256": "0b6de4840165f18b87f8f7433ff5905d85c9734dc296f817ea5e6fd295f6307f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:00.460228+00:00",
+            "content_range": "bytes 917504-983039/2802470280",
+            "sha256": "d6c0e11150b9103ed2981188e704e6eb7feed6fb68e758e2b47e3c1592d68193"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:01.888521+00:00",
+            "content_range": "bytes 983040-1048575/2802470280",
+            "sha256": "55658aceb8e6f2f669e7af41f302561c1793c1743d9aa9d05fd996e84d09622f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:02.909333+00:00",
+            "content_range": "bytes 1048576-1114111/2802470280",
+            "sha256": "e891799c8bbfc7c586afe334ca1ac91cbbf0cf003a4b869ae850ad0a15e2f945"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:05.931395+00:00",
+            "content_range": "bytes 1114112-1179647/2802470280",
+            "sha256": "5fa25a94d8881cc24a012879e6652907dd729362f79313e7cf90a95b75393e64"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:07.507725+00:00",
+            "content_range": "bytes 1179648-1245183/2802470280",
+            "sha256": "e6f5828427448eafb9be3a1401ddbe6c826888d3b1e526f2a891ca3bd2e851b3"
+          }
+        ]
+      },
+      "overview": {
+        "width": 11150,
+        "height": 7444,
+        "nodata": 255.0,
+        "dtype": "uint8",
+        "resampling": "NEAREST",
+        "scales": [
+          1.0
+        ],
+        "offsets": [
+          0.0
+        ],
+        "crs_present": false
+      },
+      "overview_sha256": "5ac751cf12c5b1d8f87ed0dd78348bb838c0f6525b81d7979d38422f320e19e5",
+      "overview_factor": 16,
+      "effective_resolution_m": 480,
+      "georeference": "Explicit native tiepoint / 30m pixel scale \u00d716; CRS from source README and GeoTIFF parameters."
+    },
+    {
+      "status": "verified",
+      "native": {
+        "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+        "purpose": "layout/metadata only; no pixels or model fitting",
+        "status": "inspected",
+        "size_bytes": 2838040136,
+        "width": 178400,
+        "height": 119100,
+        "mode": "L",
+        "compression": 8,
+        "tile_width": 256,
+        "tile_height": 256,
+        "rows_per_strip": null,
+        "model_pixel_scale": [
+          30.0,
+          30.0,
+          0.0
+        ],
+        "model_tiepoint": [
+          0.0,
+          0.0,
+          0.0,
+          -2341500.0,
+          9436500.0,
+          0.0
+        ],
+        "geo_keys": [
+          1,
+          1,
+          0,
+          18,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          24,
+          0,
+          2048,
+          0,
+          1,
+          4269,
+          2049,
+          34737,
+          6,
+          24,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          7,
+          2059,
+          34736,
+          1,
+          6,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          8,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3079,
+          34736,
+          1,
+          3,
+          3084,
+          34736,
+          1,
+          1,
+          3085,
+          34736,
+          1,
+          0,
+          3086,
+          34736,
+          1,
+          4,
+          3087,
+          34736,
+          1,
+          5
+        ],
+        "nodata": "255",
+        "geo_double_params": [
+          0.0,
+          -95.0,
+          49.0,
+          77.0,
+          0.0,
+          0.0,
+          298.257222101004,
+          6378137.0
+        ],
+        "geo_ascii_params": "NAD_1983_Canada_Lambert|NAD83|",
+        "gdal_metadata": null,
+        "sub_ifds": null,
+        "retrieved_bytes": 3932160,
+        "requests": [
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:01.494616+00:00",
+            "content_range": "bytes 0-65535/2838040136",
+            "sha256": "5b807f25ac92050ba4e7c41b1647a61528c7a9090c66a0bce54c44b9cbe4fedf"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:06.339794+00:00",
+            "content_range": "bytes 1245184-1310719/2838040136",
+            "sha256": "bb688c9a4e8b8c78016ebf1361c56c41d0e03deab5a057c91ca53794f6118183"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:10.322616+00:00",
+            "content_range": "bytes 1310720-1376255/2838040136",
+            "sha256": "f9f2ee084e12a9081361cf77f455f9c30279b66859fb84b95cd5492944b56be8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:13.989976+00:00",
+            "content_range": "bytes 1376256-1441791/2838040136",
+            "sha256": "f5b5db1fb140bd2132fc84b22d8702fd09ff4b1fa11e31cfd43421a2ca13ccb5"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:17.917399+00:00",
+            "content_range": "bytes 1441792-1507327/2838040136",
+            "sha256": "3d71ed72c5033583649964bd08d5079becaabdbe168f201fa2fb470a9d731095"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:21.729609+00:00",
+            "content_range": "bytes 1507328-1572863/2838040136",
+            "sha256": "5f8d6380106d34ac5e97742a577fb0accb93343ff18fdc04f682fef3dcabc8b0"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:25.863969+00:00",
+            "content_range": "bytes 1572864-1638399/2838040136",
+            "sha256": "fc882df2c6f4ffd33d40cecb7620db9b3381a3570b045eaa17e4cb8db8409ac7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:30.475275+00:00",
+            "content_range": "bytes 1638400-1703935/2838040136",
+            "sha256": "e2c2aa86e87a9bb55fa8fc78cd048249fa3ed2384b08faa91a7c52bdd8654a76"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:32.972574+00:00",
+            "content_range": "bytes 1703936-1769471/2838040136",
+            "sha256": "1defcb471076ba8b09971ec4c0ade355e64d53f06fd602afd6bc7b770d2957ff"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:36.907919+00:00",
+            "content_range": "bytes 1769472-1835007/2838040136",
+            "sha256": "488f1fb28ec99bac989e5b7b47171ef8609b1d1f6557c30c36254d4107dfcea4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:39.338729+00:00",
+            "content_range": "bytes 1835008-1900543/2838040136",
+            "sha256": "b35a12675df9ae4de8517bb9e98ee55b3360ba7cc308b5bdcce702c318dfc13e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:42.634537+00:00",
+            "content_range": "bytes 1900544-1966079/2838040136",
+            "sha256": "6849d7cae8d402731add0064fe96ece300586a3c0a81f6f3b2bac0293c163f43"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:46.090414+00:00",
+            "content_range": "bytes 1966080-2031615/2838040136",
+            "sha256": "9ef20f97984374e573314ae5c48174ef3628cfcc9919a2397367685c4235da6b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:51.360471+00:00",
+            "content_range": "bytes 2031616-2097151/2838040136",
+            "sha256": "5e8be544d45b81d4459b5a6f50ae8bd05ba4ef239c88f374b899716973bd90ba"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:54.344665+00:00",
+            "content_range": "bytes 2097152-2162687/2838040136",
+            "sha256": "4bd4c650df1a6c1c88e42423c53a985f612a2bd22bb09249f779439f2a6780b0"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:44:59.469104+00:00",
+            "content_range": "bytes 2162688-2228223/2838040136",
+            "sha256": "b88b507aa95c15cda4916dea2636d6ac95b3b3de96c02c47cc219690d853a9a3"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:04.177077+00:00",
+            "content_range": "bytes 2228224-2293759/2838040136",
+            "sha256": "534c9526695c3a2df68ea165c5aca87588909689c2768d90c463f583e27499ed"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:07.116598+00:00",
+            "content_range": "bytes 2293760-2359295/2838040136",
+            "sha256": "c811e51912d0a84f4e95d17f2892a0bea0bd5ce8083fbda7bcc213266e9e844a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:11.435298+00:00",
+            "content_range": "bytes 2359296-2424831/2838040136",
+            "sha256": "65cdd44c260ee8272a3c676dd999bf233746338b56a6b5cbf3ec8e8a31887159"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:13.372941+00:00",
+            "content_range": "bytes 2424832-2490367/2838040136",
+            "sha256": "8afc1b2c59c47313b81b745386e353fd8c85c6e7265133ca39cc4c19f428ac1d"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:17.565859+00:00",
+            "content_range": "bytes 2490368-2555903/2838040136",
+            "sha256": "bf39651451d6106aa33757d5a938d222217e46ebd36c2cea9adb0d8647522fc0"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:20.311073+00:00",
+            "content_range": "bytes 2555904-2621439/2838040136",
+            "sha256": "3b4307b4eddd6c3e1d6f7f4e4ef617c36193e9ce27a482696f976f9e409f82c3"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:24.030710+00:00",
+            "content_range": "bytes 2621440-2686975/2838040136",
+            "sha256": "65e16f21e8a4611c3a87a73ede15665d7b654df803c10d7b89ef475de5d25485"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:28.544895+00:00",
+            "content_range": "bytes 2686976-2752511/2838040136",
+            "sha256": "c3fa51325daf8d8a5f1e0c0e840400080c0c537647eae3a90980abd434600f44"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:34.173696+00:00",
+            "content_range": "bytes 2752512-2818047/2838040136",
+            "sha256": "9c8498d46ad42fd9d838c131af8078303aba0348e7c731b5f2896437e837909e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:38.385933+00:00",
+            "content_range": "bytes 2818048-2883583/2838040136",
+            "sha256": "bf030e249bfb8039efbca1f5e737110d97f71309aafa45a358979ce7ec41c770"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:42.258418+00:00",
+            "content_range": "bytes 2883584-2949119/2838040136",
+            "sha256": "851347144aef6f3c8974ca74e24fb438ae0bc401e499935da5ebad80faab6fb3"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:46.047531+00:00",
+            "content_range": "bytes 2949120-3014655/2838040136",
+            "sha256": "8b4d17cdd3d57aaa41bfa4b28d2171e07db185e289ec34bce78cfae132e9af78"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:49.879851+00:00",
+            "content_range": "bytes 3014656-3080191/2838040136",
+            "sha256": "232959c68c328eb779dd43b6889e806258ac2e23797543a618b915b1094cd8fe"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:53.172379+00:00",
+            "content_range": "bytes 3080192-3145727/2838040136",
+            "sha256": "c0e21d8a77327ed088c98843c0154d8576180c50d05e1b35062cd7791d3f9473"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:45:58.897527+00:00",
+            "content_range": "bytes 3145728-3211263/2838040136",
+            "sha256": "d8a72ae70efdb53b924fe023b3f531ea85a601d83b866e6bd00795fb2306e13e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:02.554222+00:00",
+            "content_range": "bytes 3211264-3276799/2838040136",
+            "sha256": "82d300730000c7f777f6e9175049d67457a93a8bc9119902b3c01eefdde851aa"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:08.325632+00:00",
+            "content_range": "bytes 3276800-3342335/2838040136",
+            "sha256": "abf3dbdeca4e260a9ea5c1146f4dccabf07a48d63887d8719acaffcea7e4ae94"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:11.464202+00:00",
+            "content_range": "bytes 3342336-3407871/2838040136",
+            "sha256": "6467ad9b4a067bedc2e6c7990af950f5121a169c434c9db255ccf44c8e4cef75"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:15.124931+00:00",
+            "content_range": "bytes 3407872-3473407/2838040136",
+            "sha256": "099c5ebdbb96452a9f6fe7a58161386226eafc2b0f26151c84cf0541e6c65d5b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:18.714429+00:00",
+            "content_range": "bytes 3473408-3538943/2838040136",
+            "sha256": "d3724602ac5ce0d22ade4add617a7213357e3c9c4461b3a8bd4f1d1d25da031b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:24.452407+00:00",
+            "content_range": "bytes 3538944-3604479/2838040136",
+            "sha256": "0861694318370cb7449ab0fc8d2e696c6e7baac404a7b782faac50c96d070b45"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:28.623293+00:00",
+            "content_range": "bytes 3604480-3670015/2838040136",
+            "sha256": "aa719c526de1b8435f7eb451e021b8df9d92d944391fdc1c1f285e80fede3477"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:32.291008+00:00",
+            "content_range": "bytes 3670016-3735551/2838040136",
+            "sha256": "39981d6e976352dc43ca3d363216e513a6eea034f035ccddcf0ef6dc11b37475"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:35.923657+00:00",
+            "content_range": "bytes 3735552-3801087/2838040136",
+            "sha256": "fbcda96076f7901487f4d091dd4ed7dca963276f1e26ef100eec9bc03a26aa7d"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:37.502983+00:00",
+            "content_range": "bytes 3801088-3866623/2838040136",
+            "sha256": "30aeee2891ad5a7e47e15827e10a54c5002f0a5425a22a6eb0d981701edbc948"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:39.496245+00:00",
+            "content_range": "bytes 3866624-3932159/2838040136",
+            "sha256": "422f7c5eb5cdec04ce7cb873b1f5511fdaae4552a634fe4d70973f6c44edb2fa"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:41.039144+00:00",
+            "content_range": "bytes 65536-131071/2838040136",
+            "sha256": "7eb4f57a6a36efde813b3d8822f72565915f322ff100946ac6a1a706f8fc5f18"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:42.542476+00:00",
+            "content_range": "bytes 131072-196607/2838040136",
+            "sha256": "d9229cd8e55594f1f55b25c545e8dd3a93c36c152385fb72845558fa1e549749"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:43.780596+00:00",
+            "content_range": "bytes 196608-262143/2838040136",
+            "sha256": "f14544234faf71ddd1909755c36e864aac815342cd7d4749ee7eb42b1584786c"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:45.259640+00:00",
+            "content_range": "bytes 262144-327679/2838040136",
+            "sha256": "98afaf4bddc793f95fd373acd0adea3da2cf1510305f59b457d5045d788fd94e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:46.538894+00:00",
+            "content_range": "bytes 327680-393215/2838040136",
+            "sha256": "cbf1819c662572b257d9423f45307dcd5ddce9cffaacdc44c162052d1c80623e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:49.438466+00:00",
+            "content_range": "bytes 393216-458751/2838040136",
+            "sha256": "24217ccd0e8f2aa89eb8e069fed1da554216033261d22d47fadd7e00358e87b7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:51.944628+00:00",
+            "content_range": "bytes 458752-524287/2838040136",
+            "sha256": "173aac4f7469640d6b55dc4e8123cca45c5e8c3fc5d25fe5722c05e2294befed"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:54.454715+00:00",
+            "content_range": "bytes 524288-589823/2838040136",
+            "sha256": "2271e71c2e4e9a3a97ea6b49fda513c3beb0de47329dc48fa31fc1c4c2d5e1e9"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:57.241679+00:00",
+            "content_range": "bytes 589824-655359/2838040136",
+            "sha256": "a5a7ca222cdb50f46f47d1bfda2c7acd4a59697e20f89fd3b44095a1ec14cdf6"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:46:59.064212+00:00",
+            "content_range": "bytes 655360-720895/2838040136",
+            "sha256": "a97c26444b4fc5d274e7ddb2c32a9935a17ae3e29b02aa4d09e6ffac12507f9a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:02.253205+00:00",
+            "content_range": "bytes 720896-786431/2838040136",
+            "sha256": "40a38bc2ba837db68bd2c9f4235c878aac84998b3bd4eec88785712a701fd4bf"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:04.073046+00:00",
+            "content_range": "bytes 786432-851967/2838040136",
+            "sha256": "e0fce722ae08f50443cfc0c02e77b110e15d4552225eec4c64de8ee3dd22a9b9"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:05.569449+00:00",
+            "content_range": "bytes 851968-917503/2838040136",
+            "sha256": "f3156eeea40c530b02d0489ae2cde670bec983973651ec98699bdc3ed3841ada"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:06.839993+00:00",
+            "content_range": "bytes 917504-983039/2838040136",
+            "sha256": "502af5ce4870c734fedf9e273f85be8606a17e781f497b0c05fd3b55c313309c"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:09.196709+00:00",
+            "content_range": "bytes 983040-1048575/2838040136",
+            "sha256": "c300a3ac83af8a1ebf533551e4e19258e4973863caa884cbf3a7452f2fb612aa"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:10.575136+00:00",
+            "content_range": "bytes 1048576-1114111/2838040136",
+            "sha256": "a1cfb8ad1948fd7d747cd00a0db20781cd70588b752957d3cb4cbfb4e72daca4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:12.403595+00:00",
+            "content_range": "bytes 1114112-1179647/2838040136",
+            "sha256": "6b455cf602752d6dec01425cb02bda79370d594978ea52d979927e434378393b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:13.730752+00:00",
+            "content_range": "bytes 1179648-1245183/2838040136",
+            "sha256": "79994ade36d438f25b7e3f1887727776fb11dee5ed78ce18a08d317258505f41"
+          }
+        ]
+      },
+      "overview": {
+        "width": 11150,
+        "height": 7444,
+        "nodata": 255.0,
+        "dtype": "uint8",
+        "resampling": "NEAREST",
+        "scales": [
+          1.0
+        ],
+        "offsets": [
+          0.0
+        ],
+        "crs_present": false
+      },
+      "overview_sha256": "1f29057f955357c8daf74d5e527486a24eaecfd34f7bba0539f7f9c970f91fd4",
+      "overview_factor": 16,
+      "effective_resolution_m": 480,
+      "georeference": "Explicit native tiepoint / 30m pixel scale \u00d716; CRS from source README and GeoTIFF parameters."
+    },
+    {
+      "status": "verified",
+      "native": {
+        "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+        "purpose": "layout/metadata only; no pixels or model fitting",
+        "status": "inspected",
+        "size_bytes": 2840845855,
+        "width": 178400,
+        "height": 119100,
+        "mode": "L",
+        "compression": 8,
+        "tile_width": 256,
+        "tile_height": 256,
+        "rows_per_strip": null,
+        "model_pixel_scale": [
+          30.0,
+          30.0,
+          0.0
+        ],
+        "model_tiepoint": [
+          0.0,
+          0.0,
+          0.0,
+          -2341500.0,
+          9436500.0,
+          0.0
+        ],
+        "geo_keys": [
+          1,
+          1,
+          0,
+          18,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          24,
+          0,
+          2048,
+          0,
+          1,
+          4269,
+          2049,
+          34737,
+          6,
+          24,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          7,
+          2059,
+          34736,
+          1,
+          6,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          8,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3079,
+          34736,
+          1,
+          3,
+          3084,
+          34736,
+          1,
+          1,
+          3085,
+          34736,
+          1,
+          0,
+          3086,
+          34736,
+          1,
+          4,
+          3087,
+          34736,
+          1,
+          5
+        ],
+        "nodata": "255",
+        "geo_double_params": [
+          0.0,
+          -95.0,
+          49.0,
+          77.0,
+          0.0,
+          0.0,
+          298.257222101004,
+          6378137.0
+        ],
+        "geo_ascii_params": "NAD_1983_Canada_Lambert|NAD83|",
+        "gdal_metadata": null,
+        "sub_ifds": null,
+        "retrieved_bytes": 3932160,
+        "requests": [
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:08.894400+00:00",
+            "content_range": "bytes 0-65535/2840845855",
+            "sha256": "60971ad711d54f9a07b5f9a90fcf040ef10176c1fdf502ea301942a2f7aba1aa"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:10.330892+00:00",
+            "content_range": "bytes 1245184-1310719/2840845855",
+            "sha256": "15a284501f64df6cd5cb8212f81a40cc17282d0f8a8f3e201766fff67ffbb1fb"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:12.021771+00:00",
+            "content_range": "bytes 1310720-1376255/2840845855",
+            "sha256": "ac08a3948ad096098bf5ab9e092931dd7b83d3ef274ce2a1e82d3188b43d93de"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:13.282001+00:00",
+            "content_range": "bytes 1376256-1441791/2840845855",
+            "sha256": "0b7b1c2ffa47d084f043dfdcfa3461b1c380ca1c5ab6f09c1248b3f82124657a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:14.729241+00:00",
+            "content_range": "bytes 1441792-1507327/2840845855",
+            "sha256": "b4e37943b866ff6746f46d3c6747b15cda944eb4adc4fda0c595bfb5fd5ebbb4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:16.152241+00:00",
+            "content_range": "bytes 1507328-1572863/2840845855",
+            "sha256": "9b8cb40d98359dd5a2fe0412051a062418cc72267bcd77c19ec2559f53ba58cf"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:17.752647+00:00",
+            "content_range": "bytes 1572864-1638399/2840845855",
+            "sha256": "7c5c01a11a80d40e75702656285b73b1e71f145fb4f8998699adec4970cc0ef2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:19.229627+00:00",
+            "content_range": "bytes 1638400-1703935/2840845855",
+            "sha256": "29a3948e270769bf24da41292cf4c5be500fc4ad6643ed6117407efb34292b3f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:20.433512+00:00",
+            "content_range": "bytes 1703936-1769471/2840845855",
+            "sha256": "d5d75d5f0f603fd0496a16c14fed01282956d227d9e57c78af1f486b59600541"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:21.552206+00:00",
+            "content_range": "bytes 1769472-1835007/2840845855",
+            "sha256": "f8299b2e9d6c1a9ac0d29f2b3d52c4e4d890de718d6f845fac0cb3b9de53a96a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:23.223770+00:00",
+            "content_range": "bytes 1835008-1900543/2840845855",
+            "sha256": "749d6fb60a253ae03d067990b8b26512f35f9662c72682c4bfe927ae0f86a427"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:25.494289+00:00",
+            "content_range": "bytes 1900544-1966079/2840845855",
+            "sha256": "807bdb26d3933499445c12e2d9782b3271aad7d18dfbeb9f0b0e62c9acac7249"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:27.901613+00:00",
+            "content_range": "bytes 1966080-2031615/2840845855",
+            "sha256": "f3d8e86d2496a343d80df52866d7d3aa0954345ec41e5afee817b7155c347c53"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:29.685104+00:00",
+            "content_range": "bytes 2031616-2097151/2840845855",
+            "sha256": "6cf28927a7f2db0516c19553f9e37a6faefeb5050ab2ef9b6ecc266e3c84a289"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:31.636948+00:00",
+            "content_range": "bytes 2097152-2162687/2840845855",
+            "sha256": "fee58701dce76c4aa27e9ae6b3a2e4909264326df7aa9bc8db772861a77e53b8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:32.174738+00:00",
+            "content_range": "bytes 2162688-2228223/2840845855",
+            "sha256": "59c7e61f49470150effddb94922c5df0ab4c8a87deb57595d680ca80b734215b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:32.954641+00:00",
+            "content_range": "bytes 2228224-2293759/2840845855",
+            "sha256": "50fcf1cc0adc68a1b4028b563913acbf216e99255b5e9a3e83c02d2880132431"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:33.397771+00:00",
+            "content_range": "bytes 2293760-2359295/2840845855",
+            "sha256": "e0ddb388a8a95ad59e769c8360a67248ecb999631332c95d6b2885d14b2b1a18"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:34.470026+00:00",
+            "content_range": "bytes 2359296-2424831/2840845855",
+            "sha256": "f9bb791821c4ea2e26e5639887a3b05ffe64f4507098aaa1f2de35bc60c2a33b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:35.924514+00:00",
+            "content_range": "bytes 2424832-2490367/2840845855",
+            "sha256": "1c33df5237a59bc42f210ba97944da3be2e19981b230ddf39e8bb0bba61dc70b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:36.856178+00:00",
+            "content_range": "bytes 2490368-2555903/2840845855",
+            "sha256": "dc23b1b4da798bd72f0ad64e97f32a0cb785cff1a3ff39267b1b3a494781f33c"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:38.561898+00:00",
+            "content_range": "bytes 2555904-2621439/2840845855",
+            "sha256": "31a909f757a1f876bc4769c1f7af0bc9588176246efc3850a6313d2d52291293"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:39.302785+00:00",
+            "content_range": "bytes 2621440-2686975/2840845855",
+            "sha256": "af4c238ff686e61d9341bd415958b7f6ebfc1664a2ca5215a86cf1565cc5ab5a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:41.257938+00:00",
+            "content_range": "bytes 2686976-2752511/2840845855",
+            "sha256": "b7874633b982e669f980165bc7fbeedecda7d03a25f1ea45cf49fb6d6b5a6fd2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:42.177809+00:00",
+            "content_range": "bytes 2752512-2818047/2840845855",
+            "sha256": "1c498a1fbc47383de2358c1d360785b1e1215c818fd3e9cfec64596722e1fec9"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:43.177293+00:00",
+            "content_range": "bytes 2818048-2883583/2840845855",
+            "sha256": "61511ee9fea9fbd858f32f3581b7ac8c0a713b277ece8439f8260ef18b297c13"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:44.873289+00:00",
+            "content_range": "bytes 2883584-2949119/2840845855",
+            "sha256": "bcb119cf3a9d219dc850bcf18a3cb2a6307a825c6234f48661a4afe37c070da7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:47.294577+00:00",
+            "content_range": "bytes 2949120-3014655/2840845855",
+            "sha256": "d1b3eda70589ec4e9d90471396ade34998c26687267edc5afc70fccbebb00a20"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:58.967995+00:00",
+            "content_range": "bytes 3014656-3080191/2840845855",
+            "sha256": "431d8679f6dd23eca0c3966f36c921252449cf72db22b65bf52c18a8ab870ee4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:00.279048+00:00",
+            "content_range": "bytes 3080192-3145727/2840845855",
+            "sha256": "3207ed918a6e3cf0eaf8bf0a292537c2ab75b80729fc11a288d014c3e12a3566"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:00.696047+00:00",
+            "content_range": "bytes 3145728-3211263/2840845855",
+            "sha256": "ef0dfb824236907caf98bb12888068153c3507f076dc4ef07d94d4c4410f831f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:01.229364+00:00",
+            "content_range": "bytes 3211264-3276799/2840845855",
+            "sha256": "06599ceab0cad13a87b6b3b1e9f5d35ded8af996126e426818132b9b1d3458b7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:05.099897+00:00",
+            "content_range": "bytes 3276800-3342335/2840845855",
+            "sha256": "ea2c5f4b2ddb88390aebc46c117737550b98362eb71ddf8312d4e833cfecf265"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:06.532232+00:00",
+            "content_range": "bytes 3342336-3407871/2840845855",
+            "sha256": "ababf5f96c0f6f4c37d3a1eadd95c0a7fe9d5f0ff3a4715e4d603313a56cbcde"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:07.931686+00:00",
+            "content_range": "bytes 3407872-3473407/2840845855",
+            "sha256": "80503fdbaf2b2bfd449eaddc079e51090119ba02c909c83ebb4148f6620e3ef9"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:08.965424+00:00",
+            "content_range": "bytes 3473408-3538943/2840845855",
+            "sha256": "1595d9bd2d88601410a199b40adbb14fd9316fe6218c2b6c7011cb018bd5624e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:10.090409+00:00",
+            "content_range": "bytes 3538944-3604479/2840845855",
+            "sha256": "d6b7f3b8ee6e990bbade1a19f3cd2156d7aae637e598b7ab075c70c1da5d97b0"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:12.038082+00:00",
+            "content_range": "bytes 3604480-3670015/2840845855",
+            "sha256": "7a7ff591124a0ea2741984fc345c343f053282622c0b744b062e2f601ddd9760"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:13.701994+00:00",
+            "content_range": "bytes 3670016-3735551/2840845855",
+            "sha256": "e51a206630d7862d4293158429e9d790b114ecd525d15b4a1096c30f7a8a644f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:14.787328+00:00",
+            "content_range": "bytes 3735552-3801087/2840845855",
+            "sha256": "95a206b2db4e29e39aa67003653d4432b134cfbacab8eca5afc10c3edcea0271"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:15.781016+00:00",
+            "content_range": "bytes 3801088-3866623/2840845855",
+            "sha256": "7e682c71edcee1cc7498cb6db818c6e26fdd79b0419c488b263506d69bb3b1d7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:17.491917+00:00",
+            "content_range": "bytes 3866624-3932159/2840845855",
+            "sha256": "4917e61bee709d9daafc116ab77da52cd25542ac7e09edee91cc6bb2b3e092ba"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:18.945169+00:00",
+            "content_range": "bytes 65536-131071/2840845855",
+            "sha256": "a5b830fda7d4ff613f508dab365afc15f8b34b92ac7a781ceefd10bba114e211"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:20.367260+00:00",
+            "content_range": "bytes 131072-196607/2840845855",
+            "sha256": "f0dee90a13aaa6c06fba0b5110937fba79281a3602a92eba8288816e358a160e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:21.906866+00:00",
+            "content_range": "bytes 196608-262143/2840845855",
+            "sha256": "05576057f484350e5d78017f549149e77886f46fc1ae3f758d0239845774b36b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:24.047332+00:00",
+            "content_range": "bytes 262144-327679/2840845855",
+            "sha256": "d5b087e1750ebb09a9047ae3e81d14ef04d85acfa54261d6dc2f8b8983c36127"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:25.367522+00:00",
+            "content_range": "bytes 327680-393215/2840845855",
+            "sha256": "4965f422d8b3c393db2c99b957eacb8bf58a0e8c5492afa0c546d51238846989"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:27.356480+00:00",
+            "content_range": "bytes 393216-458751/2840845855",
+            "sha256": "9653f8f8f04271f34c1d2bf99c2c904dbe21f6ddb43ff658ca5ee0eedbf8a1bf"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:29.950404+00:00",
+            "content_range": "bytes 458752-524287/2840845855",
+            "sha256": "3f82f55a47400ff906a17e30e14af962d9681ad80c3aea4b62b71246c70f8ac2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:30.957603+00:00",
+            "content_range": "bytes 524288-589823/2840845855",
+            "sha256": "0fe7d3fa08e314f8a1a631092c5850b0d661989e0da2a28a25ae5dfef0ab244b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:32.350651+00:00",
+            "content_range": "bytes 589824-655359/2840845855",
+            "sha256": "41bf82755177fe685ccda1c9db57f9cf0bf0cc1676ad260cd432cb85ebf50b2c"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:33.488206+00:00",
+            "content_range": "bytes 655360-720895/2840845855",
+            "sha256": "6336a3acf67a6831378c4dda2aa606e0ed64d97e07fb82f4f12eabea696765a8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:35.016573+00:00",
+            "content_range": "bytes 720896-786431/2840845855",
+            "sha256": "2a16c25331a179f654d89fe4206abb27fba70c449c4fa81c021b83381710d975"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:35.979694+00:00",
+            "content_range": "bytes 786432-851967/2840845855",
+            "sha256": "cf519db2d8f705db83ee7567d8ce0d00fcbecd5c57936aea2c97880166d161d1"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:37.553388+00:00",
+            "content_range": "bytes 851968-917503/2840845855",
+            "sha256": "ad1382f5b49771d1c936918bc7cb3d62d488a8c9619ce360cf50ca2f7b47b973"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:38.051861+00:00",
+            "content_range": "bytes 917504-983039/2840845855",
+            "sha256": "9140b1e944bc85d489561d44b9810dcc367f830dc31e9ddbd879b80ddc1acd99"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:39.009036+00:00",
+            "content_range": "bytes 983040-1048575/2840845855",
+            "sha256": "43742b92cbd013b0b4f0ff8b16eb7b29bbb9e6880713fc5296a53c077e0c27cd"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:40.024064+00:00",
+            "content_range": "bytes 1048576-1114111/2840845855",
+            "sha256": "e2fc83d3159d2fa4381bf6baefc63895ce83728031f7ba15f12645e515a3bccc"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:41.446122+00:00",
+            "content_range": "bytes 1114112-1179647/2840845855",
+            "sha256": "fe7725c6a0356051bfab8199fde19bba64694a28c273be91ac9e7c0db2245c02"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:42.731369+00:00",
+            "content_range": "bytes 1179648-1245183/2840845855",
+            "sha256": "d3cc93b663158161d6f8b2f3215c4e46a7572fb4992764dcd772df199abde72b"
+          }
+        ]
+      },
+      "overview": {
+        "width": 11150,
+        "height": 7444,
+        "nodata": 255.0,
+        "dtype": "uint8",
+        "resampling": "NEAREST",
+        "scales": [
+          1.0
+        ],
+        "offsets": [
+          0.0
+        ],
+        "crs_present": false
+      },
+      "overview_sha256": "4d764a00f589eefee1baa2fce5510ee08a0318863cf367ec3308e734597bcc76",
+      "overview_factor": 16,
+      "effective_resolution_m": 480,
+      "georeference": "Explicit native tiepoint / 30m pixel scale \u00d716; CRS from source README and GeoTIFF parameters."
+    },
+    {
+      "status": "verified",
+      "native": {
+        "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+        "purpose": "layout/metadata only; no pixels or model fitting",
+        "status": "inspected",
+        "size_bytes": 2854194265,
+        "width": 178400,
+        "height": 119100,
+        "mode": "L",
+        "compression": 8,
+        "tile_width": 256,
+        "tile_height": 256,
+        "rows_per_strip": null,
+        "model_pixel_scale": [
+          30.0,
+          30.0,
+          0.0
+        ],
+        "model_tiepoint": [
+          0.0,
+          0.0,
+          0.0,
+          -2341500.0,
+          9436500.0,
+          0.0
+        ],
+        "geo_keys": [
+          1,
+          1,
+          0,
+          18,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          24,
+          0,
+          2048,
+          0,
+          1,
+          4269,
+          2049,
+          34737,
+          6,
+          24,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          7,
+          2059,
+          34736,
+          1,
+          6,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          8,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3079,
+          34736,
+          1,
+          3,
+          3084,
+          34736,
+          1,
+          1,
+          3085,
+          34736,
+          1,
+          0,
+          3086,
+          34736,
+          1,
+          4,
+          3087,
+          34736,
+          1,
+          5
+        ],
+        "nodata": "255",
+        "geo_double_params": [
+          0.0,
+          -95.0,
+          49.0,
+          77.0,
+          0.0,
+          0.0,
+          298.257222101004,
+          6378137.0
+        ],
+        "geo_ascii_params": "NAD_1983_Canada_Lambert|NAD83|",
+        "gdal_metadata": null,
+        "sub_ifds": null,
+        "retrieved_bytes": 3932160,
+        "requests": [
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:14.340012+00:00",
+            "content_range": "bytes 0-65535/2854194265",
+            "sha256": "637493b0175ad1ee21f165f1b782ca43c0a23a8592722c710eb5d991e72f9adb"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:15.668419+00:00",
+            "content_range": "bytes 1245184-1310719/2854194265",
+            "sha256": "5cfd8ded00f356228bb8d1cf182769c1be8dab4af1e188058bd95189683bb3df"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:17.396070+00:00",
+            "content_range": "bytes 1310720-1376255/2854194265",
+            "sha256": "d63433ff46947cb5e0ee1a4767da394e19850dd8158092d279d6e36a0dd1b8c1"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:19.236073+00:00",
+            "content_range": "bytes 1376256-1441791/2854194265",
+            "sha256": "cb80e0f03ebe7e060520a3fb786a8f7b92513a1a68b400808aaf29bb06c1e1df"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:20.787777+00:00",
+            "content_range": "bytes 1441792-1507327/2854194265",
+            "sha256": "832fc511317693c29c94541b4bd8565a455dd3dea527fcb219e2ddcc30200e64"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:22.202137+00:00",
+            "content_range": "bytes 1507328-1572863/2854194265",
+            "sha256": "0ec018772ffd8376de12fd930b1492ee89f1bc86e641e293bbbfbefbe82aa5a0"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:23.515250+00:00",
+            "content_range": "bytes 1572864-1638399/2854194265",
+            "sha256": "5da0bd54bc17a05bbfdcd29c529d68bc48840b4f1de77e0202a16a38aec1cf61"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:25.277916+00:00",
+            "content_range": "bytes 1638400-1703935/2854194265",
+            "sha256": "86f34d1f010e9fa5e80088a5e86b1dda0db030f562a654e518d02360ddf105e1"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:26.915396+00:00",
+            "content_range": "bytes 1703936-1769471/2854194265",
+            "sha256": "f1f26e288bfcfd2383007862ad59745bab5d54536b632a2ae8180c57d08bc5eb"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:28.297945+00:00",
+            "content_range": "bytes 1769472-1835007/2854194265",
+            "sha256": "5a41d57382719027604170e91aa0c9f61cb44415e9b708b3e3c3926cd45823d0"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:30.026112+00:00",
+            "content_range": "bytes 1835008-1900543/2854194265",
+            "sha256": "733f253b19eef115c68ddf8c7e17f94d25fb07000aab466c76ec2026ca837fd2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:31.630406+00:00",
+            "content_range": "bytes 1900544-1966079/2854194265",
+            "sha256": "f0683f9a230e31752a9280619090cb8747a1c9b24cc5cb602b05d9fb2a90fcb5"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:32.075497+00:00",
+            "content_range": "bytes 1966080-2031615/2854194265",
+            "sha256": "e29948b42899c46d931247eb362c697647e2674f8315295c94f533b2cb2f19fa"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:32.954583+00:00",
+            "content_range": "bytes 2031616-2097151/2854194265",
+            "sha256": "d39d75b09e662e4cd77978adab01a5e1ddab6f49dfda23e5df65006b42e1ae5b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:33.344473+00:00",
+            "content_range": "bytes 2097152-2162687/2854194265",
+            "sha256": "3a120575025c6619a2e4c61f3070554cadfab787432a3490bb50607947a7a2c7"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:34.181722+00:00",
+            "content_range": "bytes 2162688-2228223/2854194265",
+            "sha256": "977b906e36d0b9ab4a796a835e46b35507317120ce963d836dda040d738b42be"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:35.107921+00:00",
+            "content_range": "bytes 2228224-2293759/2854194265",
+            "sha256": "2df26753abb467b8cf67f54a3158ff702a002350e7f9a081b453de902bf53ee2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:36.438173+00:00",
+            "content_range": "bytes 2293760-2359295/2854194265",
+            "sha256": "424f5022b67c41e7c55378a638c20061e01b0e01beedf3915bb491d4fbda4d46"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:38.561775+00:00",
+            "content_range": "bytes 2359296-2424831/2854194265",
+            "sha256": "f981de0e296886cc852eb9343ef1a08019ff33326c170afac06442ac62ea1c3a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:39.713974+00:00",
+            "content_range": "bytes 2424832-2490367/2854194265",
+            "sha256": "7f13a13d3ca52af51f414766e58bc92a561ca578a2a521359c41b82797c0bc47"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:41.266029+00:00",
+            "content_range": "bytes 2490368-2555903/2854194265",
+            "sha256": "63b7a57eb3726aef86ade7a88064537894456aff5c0357266eb8112874a81165"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:42.492179+00:00",
+            "content_range": "bytes 2555904-2621439/2854194265",
+            "sha256": "d8f28fc14ede868a6111a688c2f599c99c280bd8f7a516701d29ea669aaaf7e1"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:43.798644+00:00",
+            "content_range": "bytes 2621440-2686975/2854194265",
+            "sha256": "4f97e25cf2f521a1d7b12faa15e9916801aa16154992d0d25138346f3d310759"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:45.648404+00:00",
+            "content_range": "bytes 2686976-2752511/2854194265",
+            "sha256": "7e0af697b49657a3bc7841a46d98daed293d3c81f6e4cfed4f93703246698d71"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:47.292785+00:00",
+            "content_range": "bytes 2752512-2818047/2854194265",
+            "sha256": "791f6d1cc508936e3fad540071367a27ba7289de2a9650d47fa6a64b270c4874"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:58.626141+00:00",
+            "content_range": "bytes 2818048-2883583/2854194265",
+            "sha256": "d725a1089063ae1c27328db7681d40963bf4412ff19081e2ee0c78de8c3271a3"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:47:59.985271+00:00",
+            "content_range": "bytes 2883584-2949119/2854194265",
+            "sha256": "481aabe90caed15b0f4a1bda97303e9fd045be2bc91e344fcecc9c2916c646fe"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:00.452669+00:00",
+            "content_range": "bytes 2949120-3014655/2854194265",
+            "sha256": "eb1ecc3a0060865f441d76bde18a51185d0eee6e3d9b9dcd6faed00f37e6a0d2"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:00.859971+00:00",
+            "content_range": "bytes 3014656-3080191/2854194265",
+            "sha256": "2f1f16596b2dfc56cf40a9a87e88a109ab26f600bc81738c175a210014176101"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:03.062186+00:00",
+            "content_range": "bytes 3080192-3145727/2854194265",
+            "sha256": "600b8c2fc4f2c4d218f23dd6e53acb212e7813d79278686edc255707e16c5061"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:05.095747+00:00",
+            "content_range": "bytes 3145728-3211263/2854194265",
+            "sha256": "cd32cf93001b000450b1bbb511105a9cb4cb94b51f1f359edce1e05a65d676fa"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:06.142766+00:00",
+            "content_range": "bytes 3211264-3276799/2854194265",
+            "sha256": "bb9ed08f224471aabca47713b8912122a710e6f14f1d91228bfd112f9c6ae682"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:07.542461+00:00",
+            "content_range": "bytes 3276800-3342335/2854194265",
+            "sha256": "770ec84ec7fb0e2d17abacc179d28a0598e66592670ab17d7235ca716889b995"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:08.541947+00:00",
+            "content_range": "bytes 3342336-3407871/2854194265",
+            "sha256": "8eb02fec0e971ea9179198b707826252f435da4dadf006bd069d42b463c08805"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:10.384723+00:00",
+            "content_range": "bytes 3407872-3473407/2854194265",
+            "sha256": "28e4999c101c9b7ec578aff27d85255b03db37d102733705ed1cf42a3dbfd128"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:12.446127+00:00",
+            "content_range": "bytes 3473408-3538943/2854194265",
+            "sha256": "dcf42d35c6fb5d3d0c212a85773f4306132b7ca42a043f4aba74f815b57f89b4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:13.709333+00:00",
+            "content_range": "bytes 3538944-3604479/2854194265",
+            "sha256": "4f2d1a6701fcc800cc68a146a382dd1d9496abb76c1d80880d078a9b1f87083c"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:15.156476+00:00",
+            "content_range": "bytes 3604480-3670015/2854194265",
+            "sha256": "8cdbd3c5d421eebd7d3e719780f671cfdaf139035deac0b7b8ec04209d8c746f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:16.582417+00:00",
+            "content_range": "bytes 3670016-3735551/2854194265",
+            "sha256": "25c1df50defb147b07a6eebcb84dbe6d46cafa2a4ed651425fb836a7a8ae2365"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:17.921478+00:00",
+            "content_range": "bytes 3735552-3801087/2854194265",
+            "sha256": "1f264f720d60370cf02d44023273a62a228b747ff39cd2a7a0c6a19c48b59f54"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:19.274769+00:00",
+            "content_range": "bytes 3801088-3866623/2854194265",
+            "sha256": "255fb92e4f0ba109b79344da1220f559d87f0afb545bd90b3a4a363619fc80b4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:20.880735+00:00",
+            "content_range": "bytes 3866624-3932159/2854194265",
+            "sha256": "0bab615b1027ab885c52242121424958608c9fe08ed5773a687bd3b38efe8cb9"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:22.271918+00:00",
+            "content_range": "bytes 65536-131071/2854194265",
+            "sha256": "1a1362d86816d671ff5835fbba4dd0bf95e1b19a4542d213ebff66c1bc37756a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:23.434583+00:00",
+            "content_range": "bytes 131072-196607/2854194265",
+            "sha256": "085111bf2e4123f7f0a35e9923198fe24561d9638c3d9161a73036fbd6a2f153"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:26.820692+00:00",
+            "content_range": "bytes 196608-262143/2854194265",
+            "sha256": "cf6fb9e0e7b35b6b8ba108b4afe318f3cbdff4ca9fc9ffe8719c022bdcdde428"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:28.133773+00:00",
+            "content_range": "bytes 262144-327679/2854194265",
+            "sha256": "40e31fb7cff5de3d9a8ef3a5ddcdaf65a9e518f5224adcd3a5928e8049fa5c8f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:29.678243+00:00",
+            "content_range": "bytes 327680-393215/2854194265",
+            "sha256": "2eb0d0164a9f73f2b2430d159f50dce05b69c7ee07473efd1926d4832ff053ed"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:30.596599+00:00",
+            "content_range": "bytes 393216-458751/2854194265",
+            "sha256": "8ba6977744dd576599e5cfaba44f319db0b7a47c22f30a304fce56a7eed87d84"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:31.532767+00:00",
+            "content_range": "bytes 458752-524287/2854194265",
+            "sha256": "0e52d5e1be747dba4bdaa900ea5f74f24ad557e6ab1c00542f98e0ce32b26a31"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:32.855683+00:00",
+            "content_range": "bytes 524288-589823/2854194265",
+            "sha256": "e93d29897cb588a18bf2ca4276b5854d700c0eca160bad9ef4a67b859ba767d8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:33.708869+00:00",
+            "content_range": "bytes 589824-655359/2854194265",
+            "sha256": "b3227f86e97d03e9e9ef6adc039565af18317e72d5ec55c2b42c77bc778336fe"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:34.671218+00:00",
+            "content_range": "bytes 655360-720895/2854194265",
+            "sha256": "6c2f20c5c231017e502b3a1877ecbd7a039d20791049d788b5c5da894fa56be8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:35.620908+00:00",
+            "content_range": "bytes 720896-786431/2854194265",
+            "sha256": "3bd09132d1c187c13f13c1604481a7b68a273b22dbd203c893c6811720eb8a0b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:36.790904+00:00",
+            "content_range": "bytes 786432-851967/2854194265",
+            "sha256": "cffc7f6c87ded5f49369cb7081e59c30f7bf43c9538767d33309afc56d64d460"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:38.338302+00:00",
+            "content_range": "bytes 851968-917503/2854194265",
+            "sha256": "4a1cd1daa88f88ad97205f37341404820f55f949068b696efbae4069d3329723"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:39.344133+00:00",
+            "content_range": "bytes 917504-983039/2854194265",
+            "sha256": "96f7e3560b8d8537a0d2e9960ae7573edb65cbe1cdff0429f2a21b29480033bb"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:41.000971+00:00",
+            "content_range": "bytes 983040-1048575/2854194265",
+            "sha256": "ce7435b0b4f58e7752e14f344a573ac267267fa124f6ba5bddf97ca6a6d0dc03"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:42.591126+00:00",
+            "content_range": "bytes 1048576-1114111/2854194265",
+            "sha256": "0fbb570dbba12fda45583c82aeb53a320f65e1ee9c5be8be827c0dff361492a5"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:44.120540+00:00",
+            "content_range": "bytes 1114112-1179647/2854194265",
+            "sha256": "9adac471393876ed980c54c2249609fb5e31028509b9eaf9547e8958c65c63da"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:48:44.840323+00:00",
+            "content_range": "bytes 1179648-1245183/2854194265",
+            "sha256": "8d98c0c1341f0de6c3df14353ec846580351fc4ebe166284ea87321ac8513501"
+          }
+        ]
+      },
+      "overview": {
+        "width": 11150,
+        "height": 7444,
+        "nodata": 255.0,
+        "dtype": "uint8",
+        "resampling": "NEAREST",
+        "scales": [
+          1.0
+        ],
+        "offsets": [
+          0.0
+        ],
+        "crs_present": false
+      },
+      "overview_sha256": "09fd90691168773212043cca42d5235ffec9674a4cfd6665f4595ca9b8209bdf",
+      "overview_factor": 16,
+      "effective_resolution_m": 480,
+      "georeference": "Explicit native tiepoint / 30m pixel scale \u00d716; CRS from source README and GeoTIFF parameters."
+    },
+    {
+      "status": "verified",
+      "native": {
+        "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+        "purpose": "layout/metadata only; no pixels or model fitting",
+        "status": "inspected",
+        "size_bytes": 2889791960,
+        "width": 178400,
+        "height": 119100,
+        "mode": "L",
+        "compression": 8,
+        "tile_width": 256,
+        "tile_height": 256,
+        "rows_per_strip": null,
+        "model_pixel_scale": [
+          30.0,
+          30.0,
+          0.0
+        ],
+        "model_tiepoint": [
+          0.0,
+          0.0,
+          0.0,
+          -2341500.0,
+          9436500.0,
+          0.0
+        ],
+        "geo_keys": [
+          1,
+          1,
+          0,
+          18,
+          1024,
+          0,
+          1,
+          1,
+          1025,
+          0,
+          1,
+          1,
+          1026,
+          34737,
+          24,
+          0,
+          2048,
+          0,
+          1,
+          4269,
+          2049,
+          34737,
+          6,
+          24,
+          2054,
+          0,
+          1,
+          9102,
+          2057,
+          34736,
+          1,
+          7,
+          2059,
+          34736,
+          1,
+          6,
+          3072,
+          0,
+          1,
+          32767,
+          3074,
+          0,
+          1,
+          32767,
+          3075,
+          0,
+          1,
+          8,
+          3076,
+          0,
+          1,
+          9001,
+          3078,
+          34736,
+          1,
+          2,
+          3079,
+          34736,
+          1,
+          3,
+          3084,
+          34736,
+          1,
+          1,
+          3085,
+          34736,
+          1,
+          0,
+          3086,
+          34736,
+          1,
+          4,
+          3087,
+          34736,
+          1,
+          5
+        ],
+        "nodata": "255",
+        "geo_double_params": [
+          0.0,
+          -95.0,
+          49.0,
+          77.0,
+          0.0,
+          0.0,
+          298.257222101004,
+          6378137.0
+        ],
+        "geo_ascii_params": "NAD_1983_Canada_Lambert|NAD83|",
+        "gdal_metadata": null,
+        "sub_ifds": null,
+        "retrieved_bytes": 3932160,
+        "requests": [
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:29.943033+00:00",
+            "content_range": "bytes 0-65535/2889791960",
+            "sha256": "9ab216e465fa047031f0c0171de84345f9e27d536cc06634a5ea255fcfe24a93"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:31.572010+00:00",
+            "content_range": "bytes 1245184-1310719/2889791960",
+            "sha256": "9549486a057cabbd2eacc64a10fe39e05deeed91cfe161bd0e9ac71695ec1aa8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:33.201601+00:00",
+            "content_range": "bytes 1310720-1376255/2889791960",
+            "sha256": "cbf025b4045eca14487021067e8067cf2c33869ac5759cac221410330d6aedee"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:34.203552+00:00",
+            "content_range": "bytes 1376256-1441791/2889791960",
+            "sha256": "c3b86bb1a236ca9ee42ee0cb93a8e59b9f504862a0f588989f3154179467c937"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:34.677446+00:00",
+            "content_range": "bytes 1441792-1507327/2889791960",
+            "sha256": "1061d5d0d24c2a5ea2d14c8e4e3f4e19386284ef0254db3cc87eac3d329a2718"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:36.242859+00:00",
+            "content_range": "bytes 1507328-1572863/2889791960",
+            "sha256": "05f65042203a4bf8672922ed29f1281a72948e71b16e0ae8cbf824000331979d"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:36.977203+00:00",
+            "content_range": "bytes 1572864-1638399/2889791960",
+            "sha256": "4629dafe8ca3f7914d549c8878ac42777f3c0d544f975d9692d75809c09ea2f4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:37.695256+00:00",
+            "content_range": "bytes 1638400-1703935/2889791960",
+            "sha256": "7baf0467d3f1a72d9a285d73584c4d34d91f87e514076e8f910e13a0f725d660"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:38.723328+00:00",
+            "content_range": "bytes 1703936-1769471/2889791960",
+            "sha256": "da22ca7aa7e1388df4dc603ca143e55d325164598f3cc578d18d136e4641000d"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:39.445689+00:00",
+            "content_range": "bytes 1769472-1835007/2889791960",
+            "sha256": "6811ae99498f2f776c137468511ee7abfc0f171a10edb773b31bbdfbd81d4d6e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:40.259017+00:00",
+            "content_range": "bytes 1835008-1900543/2889791960",
+            "sha256": "369e02593df3790e280ab284ea5874c10f669ee1ec52f73c5a8425af57be3981"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:41.385245+00:00",
+            "content_range": "bytes 1900544-1966079/2889791960",
+            "sha256": "09a033b48078ef53bbd26056ffac01145b697388c92c9ed8352e4105641dc217"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:42.201786+00:00",
+            "content_range": "bytes 1966080-2031615/2889791960",
+            "sha256": "d8acede8801b3612fc1548a36da847bdac0ced46be83a72f56f9afc6f3fe4b48"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:43.542230+00:00",
+            "content_range": "bytes 2031616-2097151/2889791960",
+            "sha256": "f5b30481076b3acc11797a27daa565f3df46214ffb56752d6c4a2e630650e029"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:44.561951+00:00",
+            "content_range": "bytes 2097152-2162687/2889791960",
+            "sha256": "bdbf164ccb6e20b09ed2b6e7431530bbc198cd6f91c532f94242d65a65b42ff6"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:46.100577+00:00",
+            "content_range": "bytes 2162688-2228223/2889791960",
+            "sha256": "7124bdc821f5535251e21badb2aaeff9e47d73282e15b7d85fa7a544d5076cfc"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:47.147310+00:00",
+            "content_range": "bytes 2228224-2293759/2889791960",
+            "sha256": "9a3e2664b6b0be84bdeb14fd0a49ba6e70c876e26a8899f032e432633848e06e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:48.188265+00:00",
+            "content_range": "bytes 2293760-2359295/2889791960",
+            "sha256": "3d3db1ad92ca94318f0f47d714af0b3076ac2a2f04d0459ce26af4d933b5bd16"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:49.296452+00:00",
+            "content_range": "bytes 2359296-2424831/2889791960",
+            "sha256": "2fb11310a4fe4619318e50b335479678d7bbbb33e5004029913be71c8ef21b7b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:50.274540+00:00",
+            "content_range": "bytes 2424832-2490367/2889791960",
+            "sha256": "3a700c482a7d41f568bd37ad76d91cc4ceefe3ef7e4e4d0b6e3173b4e345d589"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:51.164802+00:00",
+            "content_range": "bytes 2490368-2555903/2889791960",
+            "sha256": "abd13d9a5f147e93406e7be26ce0356ef362283b92a5e2a45f7521103f7a4c3a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:51.859872+00:00",
+            "content_range": "bytes 2555904-2621439/2889791960",
+            "sha256": "7140688520c58727bffcbc60df768153ff1002fd27e71b8167d04d6303119d06"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:52.656626+00:00",
+            "content_range": "bytes 2621440-2686975/2889791960",
+            "sha256": "423af975b4b87aeacbb181a453fee84e12dcd3fd118bbfbb1526f20d411bc0f3"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:53.469582+00:00",
+            "content_range": "bytes 2686976-2752511/2889791960",
+            "sha256": "7ee8f47bfcd0cd8311aea405eeac19931b737d921f9273084acdda022dbdbd4c"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:54.840679+00:00",
+            "content_range": "bytes 2752512-2818047/2889791960",
+            "sha256": "c561d98ec81fa4e49fcc852ab6093ab1f14f5b015ff4ca9fe8ab34761b1a1616"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:55.925632+00:00",
+            "content_range": "bytes 2818048-2883583/2889791960",
+            "sha256": "1cc24e3b086582fa5153d47c8a178dfe99384900543edf55114a06b5de01453f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:57.159534+00:00",
+            "content_range": "bytes 2883584-2949119/2889791960",
+            "sha256": "c3bca34d26a68fc62337f3831342e8755270658a85a768c64e95ab0c063aeabe"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:58.381238+00:00",
+            "content_range": "bytes 2949120-3014655/2889791960",
+            "sha256": "e4c0c84a8e1237f884f84bd5c4fec09552bcf492e91f9bdd08805e0d63c46bd4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:26:59.212885+00:00",
+            "content_range": "bytes 3014656-3080191/2889791960",
+            "sha256": "d38a6698755b57184c02dabd252952ccbf61881b868bf99053494e295640b1a3"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:00.230356+00:00",
+            "content_range": "bytes 3080192-3145727/2889791960",
+            "sha256": "9333a2125e4df95c856a7e08f273e5c6432814dbbd8aefc399d5c96d22b2cde4"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:00.939574+00:00",
+            "content_range": "bytes 3145728-3211263/2889791960",
+            "sha256": "0fed43fc8b7cc84ecd607546981a9800a35883a810fe124e108d0be793b895d0"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:02.597737+00:00",
+            "content_range": "bytes 3211264-3276799/2889791960",
+            "sha256": "c6db592f6d7cf953d53819ea44530eb3762f72a9b104fb0ae4fb603d6589acd9"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:03.554254+00:00",
+            "content_range": "bytes 3276800-3342335/2889791960",
+            "sha256": "80d838b7bd47f2f5e1ab5f7512ecf25c51781e43020d65243de762bd2c5f5226"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:04.289239+00:00",
+            "content_range": "bytes 3342336-3407871/2889791960",
+            "sha256": "3b51831ea315f01b4cbf655b68e0bcaad4a269819578e69210af6625a8bb5cbd"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:05.302338+00:00",
+            "content_range": "bytes 3407872-3473407/2889791960",
+            "sha256": "c951c84c0061cba3d40c2e1b3a948900866c2bc33dd78bb2e70073618d8483c6"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:06.020997+00:00",
+            "content_range": "bytes 3473408-3538943/2889791960",
+            "sha256": "065f84950f8ef69b32ac99d4418f818c382bc93ba3b2ac3e970f9159d15fb373"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:06.982264+00:00",
+            "content_range": "bytes 3538944-3604479/2889791960",
+            "sha256": "855f3729738a20f9c0f3d447c87f54a1dbd93a529839750e46891a7e81033dab"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:07.773325+00:00",
+            "content_range": "bytes 3604480-3670015/2889791960",
+            "sha256": "086de9699e8e1ba7b61d37af4cfd319c8424037668dd0f7852e05649a98a8385"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:08.764529+00:00",
+            "content_range": "bytes 3670016-3735551/2889791960",
+            "sha256": "32ed717dbdce29e153262fee50e089885a8642722566674b435a18cd931beecd"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:09.502222+00:00",
+            "content_range": "bytes 3735552-3801087/2889791960",
+            "sha256": "77e3659a0daf435b5789636e63555299a4bdbd5a996753a1a9714429b5b653df"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:10.225164+00:00",
+            "content_range": "bytes 3801088-3866623/2889791960",
+            "sha256": "f215ed0af0e50153b15e3bec2f93f6677710f46a171d3e8796e2a6161bfc9915"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:11.075322+00:00",
+            "content_range": "bytes 3866624-3932159/2889791960",
+            "sha256": "d66608353c839c9bb45f0f1a8548dfd4d22ca308050df0885a9a4b9876d51d8a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:12.819042+00:00",
+            "content_range": "bytes 65536-131071/2889791960",
+            "sha256": "2f21457e5a386397657c430af285b455c0e58d5185441dd184df619008cad00e"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:14.248861+00:00",
+            "content_range": "bytes 131072-196607/2889791960",
+            "sha256": "4772661e26758a3edfd3ce03afa27af35e5e2516123c6a93aa215a6b0c374f9a"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:15.188049+00:00",
+            "content_range": "bytes 196608-262143/2889791960",
+            "sha256": "9fd7e9fc3f87396e624ff7076a4fd57f362054cd249ca412c5ad3913247d1060"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:16.399120+00:00",
+            "content_range": "bytes 262144-327679/2889791960",
+            "sha256": "12690b7f8d49b80ad889f3ee8283c0c16f5a31ddc7d2d721f020c2ab07fcbb0d"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:17.758898+00:00",
+            "content_range": "bytes 327680-393215/2889791960",
+            "sha256": "f6a95e26c94c64411fbdc98ce61179c04246cfadb273da7d8dc38fbee492f8e1"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:19.482161+00:00",
+            "content_range": "bytes 393216-458751/2889791960",
+            "sha256": "5603482c5aea7cb3082effeb97543e7a5c7025d0bd620b519ceef25efc4fc40f"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:20.884149+00:00",
+            "content_range": "bytes 458752-524287/2889791960",
+            "sha256": "73534993878a6f6ae0ca54375dd18d6b7b8163e7dd9102984bcbc3d127b46b79"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:21.827082+00:00",
+            "content_range": "bytes 524288-589823/2889791960",
+            "sha256": "d3a3d9885c21b5b724cd43b5e45d136dd9158022c13429108e9f4413b7d997e8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:22.925538+00:00",
+            "content_range": "bytes 589824-655359/2889791960",
+            "sha256": "7f20ab0ad49a73fb19fa9fbcecfcab6fc2d0e22f8e2173a58120d96d0b6b387c"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:23.679354+00:00",
+            "content_range": "bytes 655360-720895/2889791960",
+            "sha256": "62c3cbdf412c6cefe0c0e72080b3fe00597de8d2a7e650e70f3e113b43f7e6d8"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:24.493721+00:00",
+            "content_range": "bytes 720896-786431/2889791960",
+            "sha256": "d780c4a5158856d02536a5afbd90411da74ab86876ee1f0500cfca910b31fdef"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:25.223454+00:00",
+            "content_range": "bytes 786432-851967/2889791960",
+            "sha256": "b39ed47ec8e21a617e32bfbe7a307e2a95a5bee51d0aa8f894f7455850807668"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:26.034289+00:00",
+            "content_range": "bytes 851968-917503/2889791960",
+            "sha256": "2c3d121c1f4476f5098ed0c0d77e261cf07f959d074aae9dd776d10e71d8d3ba"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:27.143709+00:00",
+            "content_range": "bytes 917504-983039/2889791960",
+            "sha256": "ad56c402d17aee07cd8ff6c6860a43177c0f3e09df4a306d4410bf5354105adf"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:28.029973+00:00",
+            "content_range": "bytes 983040-1048575/2889791960",
+            "sha256": "bf05dec9702bd32be321388e0101992ed0aea506d0f32af57a4d26691ae906c9"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:29.207572+00:00",
+            "content_range": "bytes 1048576-1114111/2889791960",
+            "sha256": "9b9872fd813c9d440644e2020807f244b17d1c6c6938cc9ec5a987dcdb82f18b"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:30.530871+00:00",
+            "content_range": "bytes 1114112-1179647/2889791960",
+            "sha256": "b98db9fb904d96a75fa4d7ac804f1934670827061eeb46928d0c47fd7a30e6b0"
+          },
+          {
+            "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif",
+            "retrieved_utc": "2026-10-06T04:27:31.670040+00:00",
+            "content_range": "bytes 1179648-1245183/2889791960",
+            "sha256": "cb7cd8f11a0789d61c28f2080426dfbc434ce793d9863a0f9f02abcd1b02414a"
+          }
+        ]
+      },
+      "overview": {
+        "width": 11150,
+        "height": 7444,
+        "nodata": 255.0,
+        "dtype": "uint8",
+        "resampling": "NEAREST",
+        "scales": [
+          1.0
+        ],
+        "offsets": [
+          0.0
+        ],
+        "crs_present": false
+      },
+      "overview_sha256": "c295699096a0efa561e3df8fb40a0afbc83632546a742dad614cb886f5492553",
+      "overview_factor": 16,
+      "effective_resolution_m": 480,
+      "georeference": "Explicit native tiepoint / 30m pixel scale \u00d716; CRS from source README and GeoTIFF parameters."
+    }
+  ],
+  "readme_crs": "+proj=lcc +lat_0=0 +lon_0=-95 +lat_1=49 +lat_2=77 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs",
+  "units": "Forest height metres per official README; nearest overview retains byte values.",
+  "limitations": [
+    "480m sparse nearest samples are not native-area-weighted 30m provincial means.",
+    "Retrospective LandTrendr reconstruction uses the full observation series."
+  ]
+}

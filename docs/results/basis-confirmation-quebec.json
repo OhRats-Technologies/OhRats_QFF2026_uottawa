@@ -1,0 +1,13 @@
+{
+  "study": "basis-confirmation-quebec",
+  "bundle": "docs/data/basis-confirmation-quebec-evidence.zip",
+  "bundle_sha256": "377b93f6a9d9fe59b6d97fbb57fd230d8b9eab4aa69bd7a86f79e1323754084a",
+  "evidence_sha256": "8fa1553baca8ed9a0ab76d0e0d4e65edff52718060770e9665ac235de6282e0c",
+  "status": "complete",
+  "backend": "ibm_quebec",
+  "hardware_jobs": 2,
+  "physical_shots": 21504,
+  "charged_seconds": 10.0,
+  "final_test_accessed": false,
+  "limitation": "Frozen circuit confirmation, one raw/combined pair per device. No retuning or intrinsic device ranking. Readout weights cover only actually observed feasible states and add no SQD states. Combined DD/twirling cannot attribute an isolated effect. Reused climate folds are not independent prediction validation."
+}

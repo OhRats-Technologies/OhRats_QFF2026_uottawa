@@ -1,0 +1,175 @@
+{
+  "study": "expanded-tuning",
+  "bundle": "docs/data/expanded-tuning-evidence.zip",
+  "bundle_sha256": "6cee6733658ba15f65fd0feafde8592c40226148a344480b1b66db5d4672a9a0",
+  "evidence_sha256": "ce459352f2d483ab443802b4b8c5f169b73ce2a1484f67ba5fb7388d4c712d23",
+  "status": "complete",
+  "information": "Reused1988\u20132018 annual Ontario development; no final-year access or hardware acquisition. Full recipe, optimizer/search traces and selected fit equations are in the bundle.",
+  "resources": {
+    "seconds": 23.129481334006414,
+    "model_fits": 35379,
+    "hardware_jobs": 0,
+    "final_test_accessed": false,
+    "state_evaluations": 31590,
+    "parity_pair_circuits": 72,
+    "parity_maximum_error": 4.639344464152373e-11
+  },
+  "aggregates": [
+    {
+      "panel": "no_inputs",
+      "selector": "",
+      "model": "training_mean",
+      "folds": 3,
+      "mae_ha": 91.99948809925418,
+      "fold_mae_ha": [
+        106.30439641642272,
+        127.05923375771103,
+        42.634834123628806
+      ]
+    },
+    {
+      "panel": "weather4",
+      "selector": "",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 91.3151888362667,
+      "fold_mae_ha": [
+        68.53917495352697,
+        125.49151408968545,
+        79.91487746558767
+      ]
+    },
+    {
+      "panel": "weather4",
+      "selector": "",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 76.9206624489533,
+      "fold_mae_ha": [
+        33.517717784461375,
+        116.29310714616071,
+        80.95116241623778
+      ]
+    },
+    {
+      "panel": "weather4",
+      "selector": "",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 82.13470623281539,
+      "fold_mae_ha": [
+        71.44096647548962,
+        93.39638504089311,
+        81.56676718206342
+      ]
+    },
+    {
+      "panel": "weather4",
+      "selector": "",
+      "model": "fixed_qsvr",
+      "folds": 3,
+      "mae_ha": 93.88532700325618,
+      "fold_mae_ha": [
+        88.89378272565187,
+        114.9244310251758,
+        77.83776725894087
+      ]
+    },
+    {
+      "panel": "mi4",
+      "selector": "",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 82.71490598420472,
+      "fold_mae_ha": [
+        22.542860232401445,
+        148.07115131908094,
+        77.53070640113177
+      ]
+    },
+    {
+      "panel": "mi4",
+      "selector": "",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 82.89950265082952,
+      "fold_mae_ha": [
+        32.86494029968945,
+        135.9760950822021,
+        79.85747257059701
+      ]
+    },
+    {
+      "panel": "mi4",
+      "selector": "",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 69.95029666689364,
+      "fold_mae_ha": [
+        25.806604285959974,
+        145.4272444058498,
+        38.61704130887113
+      ]
+    },
+    {
+      "panel": "mi4",
+      "selector": "",
+      "model": "fixed_qsvr",
+      "folds": 3,
+      "mae_ha": 84.14519833430909,
+      "fold_mae_ha": [
+        32.63996054845991,
+        140.8143200311815,
+        78.98131442328582
+      ]
+    },
+    {
+      "panel": "interleaved8",
+      "selector": "",
+      "model": "ridge",
+      "folds": 3,
+      "mae_ha": 84.84743042972109,
+      "fold_mae_ha": [
+        32.95954435725824,
+        150.5169134691786,
+        71.0658334627264
+      ]
+    },
+    {
+      "panel": "interleaved8",
+      "selector": "",
+      "model": "rbf",
+      "folds": 3,
+      "mae_ha": 83.3102670008748,
+      "fold_mae_ha": [
+        33.51771778446132,
+        138.3278417438929,
+        78.08524147427019
+      ]
+    },
+    {
+      "panel": "interleaved8",
+      "selector": "",
+      "model": "qsvr",
+      "folds": 3,
+      "mae_ha": 75.64528616646605,
+      "fold_mae_ha": [
+        22.86703719123917,
+        124.31163083759114,
+        79.75719047056782
+      ]
+    },
+    {
+      "panel": "interleaved8",
+      "selector": "",
+      "model": "fixed_qsvr",
+      "folds": 3,
+      "mae_ha": 60.12322406711257,
+      "fold_mae_ha": [
+        36.58622790889768,
+        116.41028350369234,
+        27.373160788747676
+      ]
+    }
+  ]
+}

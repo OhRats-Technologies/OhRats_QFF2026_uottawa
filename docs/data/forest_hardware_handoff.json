@@ -1,0 +1,209 @@
+{
+  "status": "complete",
+  "recorded_utc": "2026-10-06T16:02:52.639075+00:00",
+  "reviewed_commit": "4a0bb4b71697918b6982f4527a797ca61c1a4b12",
+  "coverage": {
+    "numeric_forest_families": 6,
+    "source_layers": 42,
+    "source_bytes": 556056461,
+    "primary_fits": 108,
+    "posthoc_order_control_fits": 18,
+    "selector_scaling_fits": 162,
+    "hardware_selector_reference_fits": 33,
+    "hardware_kernel_fits": 60,
+    "candidate_pools": [
+      10,
+      16,
+      20
+    ],
+    "selected_qsvr_inputs": 4,
+    "original_final_preserved": true
+  },
+  "source_limits": [
+    "SCANFI full-series future-imagery reconstruction: retrospective, not contemporaneous forecast inputs.",
+    "Province coarse valid means retain zero, exclude nodata; not native tree density or forest-only inventory.",
+    "Unverified later stand-age resampling carries eligible2000 epoch; biomass/species proxies are not measured fuels or causal recovery.",
+    "Current2026 fuel and Quebec-only vegetation layers are excluded from historical Ontario predictors."
+  ],
+  "hardware": {
+    "earlier_device_jobs": 6,
+    "earlier_charged_seconds": 75,
+    "earlier_physical_shots": 224256,
+    "expanded_successful_jobs": 12,
+    "expanded_failed_jobs": 2,
+    "expanded_charged_seconds": 140,
+    "expanded_returned_shots": 361472,
+    "all_study_charged_seconds": 215,
+    "all_returned_shots": 585728,
+    "monthly_instance_consumed_seconds": 196,
+    "monthly_instance_remaining_seconds": 404,
+    "monthly_instance_limit_seconds": 600,
+    "accounting": "Project totals span accounts; monthly snapshot includes prior account usage. Failed original overlaps charge4 seconds with execution0 and no counts; documented sharded correction retained separately."
+  },
+  "qa": {
+    "full_fixture_tests": 185,
+    "full_cli_help_paths": 81,
+    "full_checks_log_sha256": "0dd0bc267b1fcbc64a957c4fe83edf26b5fb02a5a846df0c6c67e6bc092a0ad7",
+    "subsequent_directory_fix_focused_tests": 3,
+    "source_audit": "42 saved source/layout/frame/ROI hashes and masks/statistics, no independent pixel re-decode",
+    "scoped_strategy_requirements": 23,
+    "scoped_strategy_is_goal_completion": false,
+    "credential_and_new_private_job_scan_passed": true,
+    "tracked_paths_scanned": 797,
+    "scientific_figures_visually_reviewed": [
+      "docs/figures/forest-expansion.png",
+      "docs/figures/selector-scaling.png",
+      "docs/figures/selector-hardware.png"
+    ]
+  },
+  "public_clone": {
+    "status": "verified",
+    "commit": "4a0bb4b71697918b6982f4527a797ca61c1a4b12",
+    "ignored_source_caches_present": false,
+    "credentials_present": false,
+    "environment": "Reused existing locked Python3.12 environment; no claim of fresh dependency installation.",
+    "forest_equations": 108,
+    "order_equations": 18,
+    "scaling_equations": 162,
+    "selector_equations": 33,
+    "measured_kernel_equations": 60,
+    "hardware_receipt": {
+      "selector": {
+        "status": "verified",
+        "selector_records": 12,
+        "predictor_equations": 33,
+        "uniform_count_records": 220,
+        "physical_shots": 18432,
+        "charged_qpu_seconds": 11.0,
+        "result_sha256": "ad49b0f1e2e6afbb62d0518f5c8b81e198422db7db5b60326c5e92eed6486f22",
+        "new_fits": 0,
+        "new_quantum_evaluations": 0,
+        "new_draws": 0,
+        "network_requests": 0,
+        "limitation": "Arithmetic replay of published counts, diagonal energies, preprocessing and predictions; not a new acquisition or independent predictive replication."
+      },
+      "kernels": {
+        "status": "verified_terminal_failure",
+        "hardware_jobs": 2,
+        "error_code": 1520,
+        "returned_physical_shots": 0,
+        "predictor_equations": 0,
+        "charged_qpu_seconds": 4,
+        "new_fits": 0,
+        "new_quantum_evaluations": 0,
+        "new_draws": 0,
+        "network_requests": 0,
+        "limitation": "Checks the published terminal-failure accounting, not private service logs or any unreturned hardware measurements.",
+        "result_sha256": "807768d1c7783ecf0ba8f7128a5cfc012673d0bc84791682ec46998460a15a60"
+      },
+      "shards": {
+        "status": "verified",
+        "shards": {
+          "raw-10-optimized2": {
+            "status": "verified",
+            "kernel_pubs": 536,
+            "predictor_equations": 12,
+            "physical_shots": 68608,
+            "charged_qpu_seconds": 25.0,
+            "new_fits": 0,
+            "new_quantum_evaluations": 0,
+            "new_draws": 0,
+            "network_requests": 0,
+            "limitation": "Counts-to-matrices and saved prediction-equation replay, including declared readout/PSD/rank repair; neither new hardware nor independent validation."
+          },
+          "raw-16-optimized2": {
+            "status": "verified",
+            "kernel_pubs": 536,
+            "predictor_equations": 12,
+            "physical_shots": 68608,
+            "charged_qpu_seconds": 25.0,
+            "new_fits": 0,
+            "new_quantum_evaluations": 0,
+            "new_draws": 0,
+            "network_requests": 0,
+            "limitation": "Counts-to-matrices and saved prediction-equation replay, including declared readout/PSD/rank repair; neither new hardware nor independent validation."
+          },
+          "raw-20-optimized2": {
+            "status": "verified",
+            "kernel_pubs": 536,
+            "predictor_equations": 12,
+            "physical_shots": 68608,
+            "charged_qpu_seconds": 25.0,
+            "new_fits": 0,
+            "new_quantum_evaluations": 0,
+            "new_draws": 0,
+            "network_requests": 0,
+            "limitation": "Counts-to-matrices and saved prediction-equation replay, including declared readout/PSD/rank repair; neither new hardware nor independent validation."
+          },
+          "dd_twirl-10-optimized2": {
+            "status": "verified",
+            "kernel_pubs": 536,
+            "predictor_equations": 12,
+            "physical_shots": 68608,
+            "charged_qpu_seconds": 25.0,
+            "new_fits": 0,
+            "new_quantum_evaluations": 0,
+            "new_draws": 0,
+            "network_requests": 0,
+            "limitation": "Counts-to-matrices and saved prediction-equation replay, including declared readout/PSD/rank repair; neither new hardware nor independent validation."
+          },
+          "dd_twirl-16-optimized2": {
+            "status": "verified",
+            "kernel_pubs": 536,
+            "predictor_equations": 12,
+            "physical_shots": 68608,
+            "charged_qpu_seconds": 25.0,
+            "new_fits": 0,
+            "new_quantum_evaluations": 0,
+            "new_draws": 0,
+            "network_requests": 0,
+            "limitation": "Counts-to-matrices and saved prediction-equation replay, including declared readout/PSD/rank repair; neither new hardware nor independent validation."
+          }
+        },
+        "result_sha256": "f86a8c757be2ace7003dd6d1f7d00c889c53563d076fc5d75fe7605ba88f738a",
+        "predictor_equations": 60,
+        "physical_shots": 343040,
+        "charged_qpu_seconds": 125.0,
+        "new_fits": 0,
+        "new_quantum_evaluations": 0,
+        "new_draws": 0,
+        "network_requests": 0
+      }
+    },
+    "new_fits": 0,
+    "new_states": 0,
+    "new_draws": 0,
+    "new_hardware_jobs": 0
+  },
+  "pins": {
+    "docs/FOREST_CONTEXT.md": "9e94c54bb7b58b39c570de7eec112c46ae629f04caf81f1e0bf122cdf69e6f94",
+    "docs/SELECTOR_SCALING.md": "f103b9966c839def6ad9b278982c445767906c040c81fef5c5222a9e69ef3ad1",
+    "docs/SELECTOR_HARDWARE.md": "e6b1f3f3b3a13d549bd0d3018c8d1c778bee5fea767683f74edea8b35323a63a",
+    "docs/IBM_PIPELINE_MITIGATION.md": "4defd0d0c0bf5c789d380014ac4754639d2cb65d606433b06be98b070b2f303e",
+    "docs/data/forest_source_verification.json": "88d589ee1dff296937fd099109e278d20aec4cb302c8c608cb4f3bb88a9dc828",
+    "docs/data/forest_feature_sources.json": "8771d7bae11cae8a81f97e0932d2251587f8deff37858ead1d0418fa5016d6da",
+    "docs/data/forest_feature_summary.json": "84ce3d7e7669260eae881843ff43ab874e3a3fce6a3f0bd06c7bc150b91653c9",
+    "docs/data/forest_expansion_training.csv": "2b5f52acc0b2409ae72ad65b06b070085f2e32acbf8a30bb3cfec418872c7805",
+    "docs/data/forest_selector_scaling_training.csv": "acdf25db5d77510af958abc33aceceb870374208740f3a57d37e4758ac29e105",
+    "docs/results/forest-expansion.json": "ee623f01d0f5d0b9cb3d4fd23c3be40cb90f3ca6e19536f48e67c555c46941a3",
+    "docs/results/forest-order-controls.json": "767c052282fd1637fe7a123f593439185299d2a0dadeb6e029aed2f2fe6d5b94",
+    "docs/results/selector-scaling.json": "b99159e4c9799834331f145a4eadba323d3ab1ae2fbfea227b44b7d0cae723dc",
+    "docs/results/selector-hardware.json": "ad49b0f1e2e6afbb62d0518f5c8b81e198422db7db5b60326c5e92eed6486f22",
+    "docs/results/selector-hardware-kernels.json": "807768d1c7783ecf0ba8f7128a5cfc012673d0bc84791682ec46998460a15a60",
+    "docs/results/selector-hardware-kernel-shards.json": "f86a8c757be2ace7003dd6d1f7d00c889c53563d076fc5d75fe7605ba88f738a",
+    "docs/results/selector-monthly-usage.json": "33c9c994f562b4205d4e00cd4e872aac34bcf0539c6c228fd5f112e25e3091f2",
+    "wildfire_lab/selector_kernel_shards.py": "e571e32bd448a25889a8e6be79932cdaa56080ea0d9fecdfe057ce8681cbcd18",
+    "wildfire_lab/saved_hardware_selector.py": "1de658956a5e5f10fc00b19266d2eaa3955a44b528e4e7eeab48496694a1cf9f",
+    "wildfire_lab/saved_hardware_kernels.py": "b305843ef89fb9e5197fdad10c5b6db9b4f80da07c8e93730b3d77a42013a59c",
+    "wildfire_lab/annual_workflow.py": "aa7afed96ed9d3620ffb2ebe20f92ada8f94316d93b5ecbb7c5062ad6d42da6a",
+    "scripts/report_selector_hardware.py": "a2c373b8053c11cb943f09dfe63e833aec407aade85cb43431f7983d3b14edfe",
+    "scripts/collect_selector_hardware.py": "5b19df5e3571fd9169c76ab78074e42508be7cc972a873b7a096b7d1d7772b2d"
+  },
+  "acquisition_code_note": "Hardware prepared pins retain historical acquisition code at d2e78cf. Later4a0bb4b creates private analysis scratch parents only; it changes no circuits, counts or fitted evidence.",
+  "conclusion": "Ideal larger-pool QAOA improves objective sampling but not consistent prediction; deep physical preparation loses cardinality. Real kernel mitigation has subset-specific effects and no consistent quantum win over matched ridge. Forest/order findings are development evidence, not independent final confirmation.",
+  "remaining_required_work": [],
+  "limitations": [
+    "One hardware pair per subset, four reused validation years, non-independent chronological folds.",
+    "No logical QEC, operational forecasting, causal backend ranking or quantum speedup claim."
+  ]
+}

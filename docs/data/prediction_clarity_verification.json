@@ -1,0 +1,321 @@
+{
+  "checked_utc": "2026-10-06T06:24:35.894Z",
+  "status": "passed",
+  "base_commit": "2660321ad205e58308fc40c8e51c528a8fa0ee5d",
+  "source_sha256": {
+    "web/demo/model.js": "9b1f8ad59e82cf72199ddc478b504ca93eb264ddbf35802f9f4ff4e7319a3ea3",
+    "web/demo/app.js": "ff0211f1d2f33d668af8f07af65ef72cd72740119488ed6478c5f6b34e6d8e81",
+    "web/demo/views.js": "041b02d1112889b04195982dfc18b00f7899dd8f86c7fa63b5d1b15a41d1e823",
+    "web/demo/graphics.js": "ba70924888f43dde0f4f58dcbbb01ac93d4b1230f3c8141cd6192b77f233f9fb",
+    "web/demo/quantum.css": "9f885de17f27feb15d832c21bf4abb0afcd334f22df02e80bc5ed37d7d4b31f9",
+    "web/demo/responsive.css": "7b6426a101b8e072c30cad7f4ffb860c7e3ab1364b9fbae86ecf68ef1f264fc8",
+    "web/demo/prediction-check.mjs": "868addef2bf3d8cb10dd67382854a4e67db17f529961627d42957137b82c2924",
+    "web/presentation/evidence.json": "f9a8d89823dd293ef4fa0fc2db47dce93e86602d3c0236e23793c800f70394e1"
+  },
+  "frozen_sources_sha256": {
+    "docs/results/annual-final.json": "dcf41e991b279e5837d57810c4652337a6ce8f2015ed7cb3d4a3332b2ea37432",
+    "docs/results/annual-final-training.json": "678e930d0397e0d1853d716501fee8899bdf9f7240345b3d07d75b1e0aeebc78",
+    "docs/results/annual-matched.json": "f0e5ed102399f976c38234af147be81767bbaa0245d6379ea7bff974c3107b61",
+    "docs/results/annual-classical.json": "68304df5660c0817eee27d97d4c98588fed84da1d770662a737650ef183fb8c7",
+    "docs/results/annual-selectors.json": "56159e2840930b67324431d53b178d0275df161a35a40e56d62fb112f1c23b28",
+    "docs/results/annual-bandwidth-geometry.json": "2b79b98947be9da369ed2895fe4c52df12a885c7be5e8d70af1229bfeb4c5139",
+    "docs/data/annual_source_review.json": "0eeb2d972d84f6df74276c18ac3a5f8d4c9eff4acaf5fbdf2dc1ee772a0afb2d",
+    "docs/data/annual_reused_evaluation.csv": "6c1cc55f1f44990e249fadaafbed5a0baa37deb90a4843f539e52b0f9db28636"
+  },
+  "default_recorded_bar_visible": true,
+  "reveal_toggle_removed": true,
+  "source_checks": [
+    {
+      "year": 2019,
+      "predictions": [
+        124.62824807267737,
+        77.10533992349873,
+        57.15777782132416
+      ],
+      "recorded": 503.0483200680744
+    },
+    {
+      "year": 2020,
+      "predictions": [
+        124.62824807267737,
+        72.46505788029441,
+        58.51192449584801
+      ],
+      "recorded": 25.51471087437827
+    },
+    {
+      "year": 2021,
+      "predictions": [
+        124.62824807267737,
+        95.90595400001598,
+        60.20745202188012
+      ],
+      "recorded": 656.9907864011519
+    },
+    {
+      "year": 2022,
+      "predictions": [
+        124.62824807267737,
+        51.64715723710258,
+        57.557055797779086
+      ],
+      "recorded": 9.343430480701931
+    },
+    {
+      "year": 2023,
+      "predictions": [
+        124.62824807267737,
+        120.15681491894453,
+        57.504895415933916
+      ],
+      "recorded": 598.199864498645
+    },
+    {
+      "year": 2024,
+      "predictions": [
+        124.62824807267737,
+        56.994580030466516,
+        52.44454123971625
+      ],
+      "recorded": 186.72079002079
+    }
+  ],
+  "browser_checks": [
+    {
+      "width": 1280,
+      "height": 720,
+      "year": 2019,
+      "displayed": [
+        "124.6",
+        "77.1",
+        "57.2",
+        "503.0"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "year": 2020,
+      "displayed": [
+        "124.6",
+        "72.5",
+        "58.5",
+        "25.5"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "year": 2021,
+      "displayed": [
+        "124.6",
+        "95.9",
+        "60.2",
+        "657.0"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "year": 2022,
+      "displayed": [
+        "124.6",
+        "51.6",
+        "57.6",
+        "9.3"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "year": 2023,
+      "displayed": [
+        "124.6",
+        "120.2",
+        "57.5",
+        "598.2"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "year": 2024,
+      "displayed": [
+        "124.6",
+        "57.0",
+        "52.4",
+        "186.7"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "year": 2019,
+      "displayed": [
+        "124.6",
+        "77.1",
+        "57.2",
+        "503.0"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "year": 2020,
+      "displayed": [
+        "124.6",
+        "72.5",
+        "58.5",
+        "25.5"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "year": 2021,
+      "displayed": [
+        "124.6",
+        "95.9",
+        "60.2",
+        "657.0"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "year": 2022,
+      "displayed": [
+        "124.6",
+        "51.6",
+        "57.6",
+        "9.3"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "year": 2023,
+      "displayed": [
+        "124.6",
+        "120.2",
+        "57.5",
+        "598.2"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "year": 2024,
+      "displayed": [
+        "124.6",
+        "57.0",
+        "52.4",
+        "186.7"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "year": 2019,
+      "displayed": [
+        "124.6",
+        "77.1",
+        "57.2",
+        "503.0"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "year": 2020,
+      "displayed": [
+        "124.6",
+        "72.5",
+        "58.5",
+        "25.5"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "year": 2021,
+      "displayed": [
+        "124.6",
+        "95.9",
+        "60.2",
+        "657.0"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "year": 2022,
+      "displayed": [
+        "124.6",
+        "51.6",
+        "57.6",
+        "9.3"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "year": 2023,
+      "displayed": [
+        "124.6",
+        "120.2",
+        "57.5",
+        "598.2"
+      ],
+      "clipped": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "year": 2024,
+      "displayed": [
+        "124.6",
+        "57.0",
+        "52.4",
+        "186.7"
+      ],
+      "clipped": []
+    }
+  ],
+  "page_errors": [],
+  "fixed_scale_ha_per_fire": [
+    0,
+    700
+  ],
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "scope": "Displayed frozen values, source arithmetic, SVG geometry and reduced-motion layouts on this Mac; no new fit, statistical validation or human usability trial.",
+  "iab_review": {
+    "year": 2021,
+    "recorded_ha_per_fire_display": "657.0",
+    "estimates_ha_per_fire_display": [
+      "124.6",
+      "95.9",
+      "60.2"
+    ],
+    "recorded_visible_without_click": true,
+    "scope": "Actual browser accessibility state and visual review; not a human usability study."
+  }
+}

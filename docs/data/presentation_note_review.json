@@ -1,0 +1,122 @@
+{
+  "source_sha256": "145c8778e5e948218a3f3e25bbf35506065c61c3c63b5312d25d199364c7610f",
+  "output_sha256": "4b2a0a42cc50c689f9dbe3ea41d2be2b5767c4e7b4456bdc0c359f275d805bfd",
+  "pdf_unchanged_sha256": "e8fa02088b7853459c998cee044c25036774202435338d39196a670102ae293e",
+  "native_chart_parts_identical": 4,
+  "notes_parts_changed": [
+    "ppt/notesSlides/notesSlide2.xml",
+    "ppt/notesSlides/notesSlide4.xml",
+    "ppt/notesSlides/notesSlide5.xml",
+    "ppt/notesSlides/notesSlide6.xml"
+  ],
+  "slides": [
+    {
+      "slide": 1,
+      "shape": [
+        720,
+        1280,
+        4
+      ],
+      "identical_pixels": true
+    },
+    {
+      "slide": 2,
+      "shape": [
+        720,
+        1280,
+        4
+      ],
+      "identical_pixels": true
+    },
+    {
+      "slide": 3,
+      "shape": [
+        720,
+        1280,
+        4
+      ],
+      "identical_pixels": true
+    },
+    {
+      "slide": 4,
+      "shape": [
+        720,
+        1280,
+        4
+      ],
+      "identical_pixels": true
+    },
+    {
+      "slide": 5,
+      "shape": [
+        720,
+        1280,
+        4
+      ],
+      "identical_pixels": true
+    },
+    {
+      "slide": 6,
+      "shape": [
+        720,
+        1280,
+        4
+      ],
+      "identical_pixels": true
+    },
+    {
+      "slide": 7,
+      "shape": [
+        720,
+        1280,
+        4
+      ],
+      "identical_pixels": true
+    },
+    {
+      "slide": 8,
+      "shape": [
+        720,
+        1280,
+        4
+      ],
+      "identical_pixels": true
+    },
+    {
+      "slide": 9,
+      "shape": [
+        720,
+        1280,
+        4
+      ],
+      "identical_pixels": true
+    }
+  ],
+  "main_seconds": 300,
+  "package_integrity": "pass",
+  "first_party_import": true,
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "limitation": "Rendered with the bundled Artifact Tool, not the native PowerPoint application. Internal IDs/workbook metadata changed during rebuild.",
+  "browser": {
+    "size": {
+      "slides": 9,
+      "seconds": 300
+    },
+    "notes_checked": [
+      "data",
+      "development",
+      "geometry"
+    ],
+    "errors": []
+  },
+  "narration_word_count": 545,
+  "rehearsal_required": true,
+  "source_files_sha256": {
+    "web/presentation/slides.js": "53a6efa8709043bf89684b832598b44f299281fa2f9ddcc2d3acb9c6bc4bb202",
+    "web/presentation/talk.md": "30abe8c3139b829892d3714a599b093206f13111d1119ef5b50b3a7c3e8e28b5",
+    "web/presentation/evidence.json": "f9a8d89823dd293ef4fa0fc2db47dce93e86602d3c0236e23793c800f70394e1"
+  },
+  "narration_count_scope": "Spoken paragraphs only; excludes headings, directions and introductory guidance."
+}

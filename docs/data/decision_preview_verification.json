@@ -1,0 +1,80 @@
+{
+  "comparisons": [
+    {
+      "kind": "advance",
+      "expected": {
+        "reserve": 97.77926149692516,
+        "loss": 2.220738503074844,
+        "supplies": 20,
+        "contained": 0,
+        "status": "playing"
+      },
+      "acceptedMoves": 1
+    },
+    {
+      "kind": "crew",
+      "expected": {
+        "reserve": 98.24331159953047,
+        "loss": 1.7566884004695265,
+        "supplies": 18,
+        "contained": 1,
+        "status": "playing"
+      },
+      "acceptedMoves": 2
+    },
+    {
+      "kind": "water",
+      "expected": {
+        "reserve": 98.07945496842625,
+        "loss": 1.9205450315737518,
+        "supplies": 16,
+        "contained": 0,
+        "status": "playing"
+      },
+      "acceptedMoves": 2
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1280,
+      "height": 720,
+      "horizontalOverflow": false,
+      "feedbackOverflow": false,
+      "operationsScroll": 0,
+      "focusRingUnclipped": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "horizontalOverflow": false,
+      "feedbackOverflow": false,
+      "operationsScroll": 0,
+      "focusRingUnclipped": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "horizontalOverflow": false,
+      "feedbackOverflow": false,
+      "operationsScroll": 0,
+      "focusRingUnclipped": true
+    }
+  ],
+  "errors": [],
+  "stateAndSaveImmutability": true,
+  "blockedAndTerminalFixtures": true,
+  "lossWarning": true,
+  "scope": "One-front toy-rule projection agrees with subsequent control clicks; no scientific prediction or policy-quality claim.",
+  "source_sha256": {
+    "web/demo/strategy/preview.js": "177b30698955d0a3b61b5c7b0225fc5c8028ccda71dd2d34964fc6202c9b5e91",
+    "web/demo/strategy/ui.js": "4a4846626a711052819c2d3aa453d49fd128fec1809a7ae0f29dd76dd34401e8",
+    "web/demo/strategy/preview-check.mjs": "59987b2d4769edde3069e9d49af5b6f8058ae6d212d93391c25610db5446ac71",
+    "web/demo/strategy/styles/operations.css": "9ae64e331e45e9a8083e8a4bf82c00973ae4c1669a5d3ba9e56fddb7c1a15ea3",
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/assets/strategy.js": "1c21bb62b711f08e128ba218da75b04df2f92b7939d78026fd3d30adaa21d75c"
+  },
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "supersedes_authoring_receipt": "f94c922; same consequence checks plus explicit unclipped keyboard-ring geometry"
+}

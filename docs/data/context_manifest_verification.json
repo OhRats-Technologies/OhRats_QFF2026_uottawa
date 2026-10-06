@@ -1,0 +1,15 @@
+{
+  "scope": "Prepared context manifest handoff; no downloads, fits, quantum states or hardware",
+  "numeric_assets": 7,
+  "display_assets_with_wms": 18,
+  "display_assets_without_wms": 8,
+  "full_context_index_matches": true,
+  "optional_wms_absence_supported": true,
+  "tampered_rendered_asset_rejected": true,
+  "isolated_data_runtime_index_written": true,
+  "code_sha256": {
+    "scripts/context/manifest.py": "9996471ab13d477a0b6d01a361c8583c207afb8c52f14e5c5acd132f96f86a1e",
+    "scripts/context/pipeline.py": "b5ea5c512ee4a7e8130c42d4f3e89b749cdbcf81d5568a15e67053c36ba1e7ef"
+  },
+  "limitation": "Asset hash/contract checks; original grid and scientific evidence remain separate."
+}

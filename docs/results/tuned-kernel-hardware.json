@@ -1,0 +1,13 @@
+{
+  "study": "tuned-kernel-hardware",
+  "bundle": "docs/data/tuned-kernel-hardware-evidence.zip",
+  "bundle_sha256": "4a238d95684977d750012be84e0f6c46d77bada5c7a97e91a28904437709a318",
+  "evidence_sha256": "a8c2058c8e6af4aa88007f4e42a908719fbf990468fae16c019edd0b3ac598fd",
+  "status": "complete",
+  "backend": "ibm_marrakesh",
+  "hardware_jobs": 2,
+  "physical_shots": 136704,
+  "charged_seconds": 44.0,
+  "final_test_accessed": false,
+  "limitation": "Measured tuned kernels, fixed before acquisition, with all six declared repairs. No repair promotion or parameter retuning on validation. Hardware subset inner tuning is conditional on full outer-training selection; MI reference refits inner selection. One raw/combined pair, approximate independent readout inversion, clipped probabilities and PSD/rank projection. No logical QEC, replicated-device ranking or independent climate test."
+}

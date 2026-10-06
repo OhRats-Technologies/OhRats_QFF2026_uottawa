@@ -1,0 +1,15 @@
+/* Single-concern strategy styles; imports stay local except optional display fonts. */
+@import url("strategy/styles/base.css");
+@import url("strategy/styles/map-layout.css");
+@import url("strategy/styles/map-markers.css");
+@import url("strategy/styles/marker-picker.css");
+@import url("strategy/styles/map-controls.css");
+@import url("strategy/styles/operations.css");
+@import url("strategy/styles/instruments.css");
+@import url("strategy/styles/command.css");
+@import url("strategy/styles/dialogs.css");
+@import url("strategy/styles/research.css");
+@import url("strategy/styles/responsive.css");
+@import url("strategy/styles/compact.css");
+@import url("strategy/styles/bench-detail.css");
+@import url("strategy/styles/progression.css");

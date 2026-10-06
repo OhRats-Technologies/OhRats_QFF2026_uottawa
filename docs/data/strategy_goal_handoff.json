@@ -1,0 +1,132 @@
+{
+  "status": "deliverables_complete",
+  "goal_complete": true,
+  "deadline_utc": "2026-10-06T11:45:00Z",
+  "deadline_local": "2026-10-06 07:45 America/Toronto",
+  "reviewed_utc": "2026-10-06T11:34:09.457967+00:00",
+  "completion_basis": "Manual requirement-by-requirement review, scoped current browser/source/static evidence and documented exclusions; check counts alone are not completion.",
+  "deliverables": [
+    {
+      "id": "catalogue_and_feature_space",
+      "status": "complete_with_stated_scope",
+      "evidence": [
+        "docs/FIRE_FEATURE_SPACE.md",
+        "docs/data/FIRE_CATALOGUE_PAGES.md",
+        "docs/data/fire_catalogue_inventory.json"
+      ],
+      "finding": "All 46 observed pages and 455 IDs screened; 458 structured metadata records include three extra linked sources. All seven priority products have Ontario/date/unit/access decisions. Metadata review does not validate all downloadable rasters."
+    },
+    {
+      "id": "bounded_context_acquisition_schema_and_insight",
+      "status": "complete_with_stated_scope",
+      "evidence": [
+        "docs/FOREST_CONTEXT.md",
+        "docs/DATA_SCHEMA.md",
+        "docs/data/context_replica_verification.json",
+        "docs/data/context_data_runtime_verification.json"
+      ],
+      "finding": "Five dated styled layers and seven numerical height epochs; fresh separate 119.5 MB acquisition and data-only reproduction match grids/images. Custom CRS, nodata/zero and footprint controls retained. Height failed to help consistently; constant-qubit coupling and input-order controls diagnose encoding confounds, not a breakthrough or model promotion."
+    },
+    {
+      "id": "ontario_strategy_and_progression",
+      "status": "complete_with_stated_scope",
+      "evidence": [
+        "docs/WILDFIRE_GAME.md",
+        "docs/data/game_balance_v2.json",
+        "docs/data/upgrade_tradeoff_review.json",
+        "docs/data/new_season_verification.json"
+      ],
+      "finding": "Full Ontario raster, clickable positions, twelve fronts, scarce crews/supplies, delays, seeded upgrades, explicit loss and saved replay. Paid scouting and the runner were pruned. Fixed-policy balance and 384 paired upgrade branches show consequential choices; 32 seasons expose all four first-offer sets. Human enjoyment is unmeasured."
+    },
+    {
+      "id": "accepted_peer_instruments",
+      "status": "complete_with_stated_scope",
+      "evidence": [
+        "AGENTS.md",
+        "docs/data/instrument_diagnostic.json",
+        "docs/data/instrument_effect_verification.json",
+        "web/demo/strategy/instruments.js"
+      ],
+      "finding": "Damping/dephasing, ideal echo, twirling, cardinality filtering, known-rate readout correction and PSD/rank repair are implemented with visible scoped effects. 256 saved Qiskit paths agree. Diagonal sampled SQD equals the sampled classical minimum; no tactical, predictor, device or QEC advantage is implied."
+    },
+    {
+      "id": "presentation_usability_and_cleanup",
+      "status": "complete_with_stated_scope",
+      "evidence": [
+        "web/presentation/README.md",
+        "docs/data/current_interaction_verification.json",
+        "docs/data/current_view_portability.json",
+        "docs/data/strategy_clone_verification.json"
+      ],
+      "finding": "Seven-slide 300-second main plan plus two appendices and preserved PDF/PPTX. Current fourteen authoring runs cover 67 cases and thirteen inspected images; clean tracked viewing and source-free local clone pass. Native input, endings/replay, semantic context and forced fallback scopes are explicit. Retired fly/connectome/runner paths are absent; new concern modules stay within 300 LOC."
+    },
+    {
+      "id": "coordination_and_frozen_science",
+      "status": "complete_with_stated_scope",
+      "evidence": [
+        "AGENT_BOARD.jsonl",
+        "AGENTS.md",
+        "docs/data/strategy_requirement_audit.json",
+        "docs/data/annual_goal_handoff.json"
+      ],
+      "finding": "Safe concrete steers implemented and reported on the append-only board; frequent main pushes preserve peers. Six annual public artifacts and sixteen execution-code hashes remain frozen. Current dependency manifests differ from the historical scientific environment. No final-model retuning or hardware; final Git/board publication is recorded in the append-only closeout messages."
+    }
+  ],
+  "limits": [
+    "Physical devices, screen-reader speech, speaker/listening quality, human enjoyment and broad cross-platform behavior are unmeasured.",
+    "Five-minute duration is planned; actual human rehearsal and native PowerPoint rendering are unmeasured.",
+    "Catalogue coverage is the preserved observed snapshot; not a renewed live search or complete resource-level quality validation.",
+    "SCANFI retrospective processing, coarse sampling and prior-epoch labels do not establish historical as-of availability.",
+    "Same-year climate estimates are retrospective, with six reused evaluation years and no main model beating the mean.",
+    "Public repository visibility and actual submission remain separate team actions."
+  ],
+  "remaining_required_work": [],
+  "document_link_review": {
+    "checked_utc": "2026-10-06T11:45:34.016173+00:00",
+    "status": "passed",
+    "files": [
+      "GOAL.md",
+      "docs/HANDOFF.md",
+      "docs/JUDGES.md",
+      "docs/FIRE_FEATURE_SPACE.md",
+      "docs/FOREST_CONTEXT.md",
+      "docs/DATA_SCHEMA.md",
+      "docs/WILDFIRE_GAME.md",
+      "web/demo/README.md",
+      "web/presentation/README.md"
+    ],
+    "local_targets": 207,
+    "missing": [],
+    "scope": "Relative file target existence in nine main handoff/report documents; external URLs and anchors are not validated by this check."
+  },
+  "current_verification": {
+    "authoring_runs": 14,
+    "enumerated_cases": 67,
+    "inspected_images": 13,
+    "clean_view_commit": "5dbb2064fbaaa79852c09848a886d67c10daff82",
+    "source_free_local_clone_commit": "407fb361bacc4bf2c4fef5de6718c7bab6d4d51a",
+    "public_clone_checks": 23,
+    "full_scoped_checks": 25
+  },
+  "review_head": "d8aa4396ac9d64b81492f34872e01ee04c2bb5cc",
+  "preserved_exports": {
+    "web/presentation/slides/ontario-wildfire.pdf": "e8fa02088b7853459c998cee044c25036774202435338d39196a670102ae293e",
+    "web/presentation/slides/ontario-wildfire.pptx": "4b2a0a42cc50c689f9dbe3ea41d2be2b5767c4e7b4456bdc0c359f275d805bfd"
+  },
+  "checked_utc": "2026-10-06T11:46:13.506480+00:00",
+  "git_head_at_review": "d8aa4396ac9d64b81492f34872e01ee04c2bb5cc",
+  "publication": "This receipt and final reports are published together; append-only board closeout records their commit. Goal-tool completion follows successful Git/board publication.",
+  "report_sha256": {
+    "GOAL.md": "10f3aaea740ac2a13cd174f9eec9ca7c6c476e300bd63c29f6f5712f53eb236d",
+    "docs/HANDOFF.md": "552773b34b94779017dabafe3897fa047cdf6e7961075027f8692048bb22e855",
+    "docs/FIRE_FEATURE_SPACE.md": "2b58fc735b3f07a5184812d136dd41f2de23c2d4be26f8cc033f1d0b119d56c3",
+    "docs/FOREST_CONTEXT.md": "71eced3c92626ddcbe6481c03b1b6298521c782fc591683739a61abd7f788a9d",
+    "docs/WILDFIRE_GAME.md": "d759c95ee27ca3a8c34a5175152a9e5d4ba17bc86b39f90e18b743a75ee1bee5",
+    "web/demo/README.md": "ba903fb057935cf90d9ac088926afd00f97f0644b43815ce737b9b225eb0c521",
+    "AGENTS.md": "9884ccfb14e434c7483332ebdcb378751353d6784ed59a83864831be1fad0c9e"
+  },
+  "artifact_review_sha256": "04680f0aeda627960b9cd543ebd6f0cb5c9a4761a703595d4aceface5a18f28d",
+  "artifact_review_scope": "Public artifact/static contracts plus optional completed offline source-check receipts; not an end-to-end rerun of every historical experiment or UI case.",
+  "static_auditor_does_not_mark_goals_complete": true,
+  "source_free_clone_receipt_sha256": "47ca7f50fce2f9009d25c9b3ae7b19f6fb0d06fcf3a371123f7427f6ac7437af"
+}

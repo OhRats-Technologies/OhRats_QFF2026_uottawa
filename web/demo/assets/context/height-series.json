@@ -1,0 +1,83 @@
+{
+  "dataset_id": "07653869-f303-46c2-a04e-9ab479b73cbf",
+  "role": "dated visual context; does not change gameplay or the submitted predictor",
+  "units": "height metres; fixed colour scale 0-30+, nodata grey",
+  "native_resolution_m": 30,
+  "sample_resolution_m": 480,
+  "display_crs": "EPSG:3978",
+  "resampling": "nearest",
+  "limitations": "Full-series retrospective reconstruction; not observed as-of forecasts or tree density.",
+  "records": [
+    {
+      "year": 1985,
+      "image": "assets/context/height-1985.png",
+      "source_sha256": "23adf79eeeb771bb9f99de4dd85c2d43b92eacbd3e16e0347ade0de7fcf00dba",
+      "image_sha256": "be1f7e287393b2c00a0ee8659613b1d9afe5880ba354056e6d129456b9aa027c"
+    },
+    {
+      "year": 1990,
+      "image": "assets/context/height-1990.png",
+      "source_sha256": "f7560b85c5405a93415541cedb04f5bc6d0704f191ff24b1f55206bf31700443",
+      "image_sha256": "e1be2c27a6c6a1161665fb7fbdd198c078b456eaf5699013d769e626538317d0"
+    },
+    {
+      "year": 1995,
+      "image": "assets/context/height-1995.png",
+      "source_sha256": "545fa9ea0eda6fcb49b30b3595f21d06c2d0084b3986f6cf2108d10cd5e6d07a",
+      "image_sha256": "ef02d29772580d0717e9ef081b55ef483bfbfe0dae39f38036ee610eecb30972"
+    },
+    {
+      "year": 2000,
+      "image": "assets/context/height-2000.png",
+      "source_sha256": "229c05c1beca9a7d02dffca129d838e996fd380e25a3cf5ba94ee367f306c85d",
+      "image_sha256": "c4ccd00c297435a4a34027a72f57e80354d08d78881c0947244be06075243c47"
+    },
+    {
+      "year": 2005,
+      "image": "assets/context/height-2005.png",
+      "source_sha256": "e6daa50bf872c79acb0342a55016d08d651b9a199e73d9a70fe4df29cb51e588",
+      "image_sha256": "2f909823a0c28936d2de742531be1e802cb0c6914a91b87a444a7ad691094938"
+    },
+    {
+      "year": 2010,
+      "image": "assets/context/height-2010.png",
+      "source_sha256": "0af67b83b2ce3586d437b0749aa222d56364eb5c2166482f5940e5fdcce3673d",
+      "image_sha256": "c4b33dd969532b644ef6d280bac6c703b6f3ba32ce37f9a2640f5dfe31d01445"
+    },
+    {
+      "year": 2015,
+      "image": "assets/context/height-2015.png",
+      "source_sha256": "2a8839d0d41e5fa5a977c13cea73b607d50c1783bc9b6c1c137ffb12f6411da1",
+      "image_sha256": "98755f2b0f2f8e0f8e0e7c4654b5083903ffe51cee362fb0d6694e598fef4e3c"
+    }
+  ],
+  "renderer_sha256": "e3b0df8b196f8bc1a4ead9bf0a533d8aadace3dbd44931826f5fd83061041356",
+  "colour_scale_m": [
+    0,
+    7.5,
+    19.5,
+    30
+  ],
+  "colours_rgb": [
+    [
+      19,
+      44,
+      51
+    ],
+    [
+      45,
+      86,
+      76
+    ],
+    [
+      107,
+      163,
+      116
+    ],
+    [
+      215,
+      228,
+      170
+    ]
+  ]
+}

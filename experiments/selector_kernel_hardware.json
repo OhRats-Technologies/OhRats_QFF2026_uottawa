@@ -1,0 +1,41 @@
+{
+  "study": "selector-kernel-hardware-v1",
+  "backend": "ibm_marrakesh",
+  "selector_result_sha256": "ad49b0f1e2e6afbb62d0518f5c8b81e198422db7db5b60326c5e92eed6486f22",
+  "model_keys": [
+    "raw-10-optimized2",
+    "raw-16-optimized2",
+    "raw-20-optimized2",
+    "dd_twirl-10-optimized2",
+    "dd_twirl-16-optimized2"
+  ],
+  "kernel_shots": 128,
+  "arms": [
+    "raw",
+    "dd_twirl"
+  ],
+  "max_execution_time_per_job_seconds": 90,
+  "fold": [
+    1988,
+    2006,
+    2007,
+    2010
+  ],
+  "models": {
+    "C": 1.0,
+    "epsilon": 0.2
+  },
+  "repairs": [
+    "raw",
+    "psd",
+    "rank4",
+    "readout",
+    "readout_psd",
+    "readout_rank4"
+  ],
+  "angle_amplitude": 0.09817477042468103,
+  "reps": 1,
+  "information_policy": "Predeclared first-fold hardware-p2 selections, all10/16/20 pools and both selector acquisition arms. No choice based on validation errors; source result hashes freeze them. Actual19-training/4-validation compute-uncompute overlaps plus2 calibration circuits on one fixed physical4-qubit path. Original final2019-2024 remains unopened. Scalar meanreportedha/fire target and training-only preprocessing unchanged.",
+  "execution_policy": "Two single capped90-second jobs;128 shots/PUB,4x32 randomized shots for DD/twirl. Reserve180 seconds against live active instance remaining; exclusive no-retry intents. Combined with selector caps180 gives360 worstcase against initial544 monthly remaining. No active sessions or replacement jobs.",
+  "analysis_policy": "Fit fixed QSVR to raw/calibrated/PSD/rank4 measured matrices, retain every arm and actual shots. Calibrated all-zero values clip to[0,1] before matrix repair; keep original quasi values/residuals. Compare matched ridge/RBF and analytic-QSVR references on each same subset. No retuning, significance, logical QEC or quantum advantage claimed."
+}

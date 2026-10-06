@@ -1,0 +1,541 @@
+{
+  "checked_utc": "2026-10-06T09:08:36.231Z",
+  "status": "passed",
+  "baseline": {
+    "commit": "a32315b",
+    "layout": {
+      "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+      "rect": {
+        "x": 112,
+        "y": 17,
+        "width": 620,
+        "height": 356,
+        "top": 17,
+        "right": 732,
+        "bottom": 373,
+        "left": 112
+      },
+      "scrollTop": 0,
+      "scrollHeight": 453,
+      "clientHeight": 354,
+      "label": null,
+      "choices": [
+        {
+          "id": "network",
+          "description": "One additional crew for the rest of the season.",
+          "rect": {
+            "x": 145,
+            "y": 193,
+            "width": 554,
+            "height": 76,
+            "top": 193,
+            "right": 699,
+            "bottom": 269,
+            "left": 145
+          },
+          "native_center_hit": true
+        },
+        {
+          "id": "training",
+          "description": "Crew suppression: 0.90 → 1.15 pressure per turn.",
+          "rect": {
+            "x": 145,
+            "y": 278,
+            "width": 554,
+            "height": 76,
+            "top": 278,
+            "right": 699,
+            "bottom": 354,
+            "left": 145
+          },
+          "native_center_hit": true
+        },
+        {
+          "id": "logistics",
+          "description": "Resupply: 2 → 3 supply credits each turn.",
+          "rect": {
+            "x": 145,
+            "y": 363,
+            "width": 554,
+            "height": 76,
+            "top": 363,
+            "right": 699,
+            "bottom": 439,
+            "left": 145
+          },
+          "native_center_hit": false
+        }
+      ]
+    },
+    "source_sha256": {
+      "web/demo/index.html": "7b5b66c5c53b86ca522be1c7fe817bc222a6445b2939c1d67405bafaa099e5b0",
+      "web/demo/strategy/styles/dialogs.css": "89573b48fb6f46c2c9c858ee833048779d8d0265de8f2ae5aaab872f2952c93f"
+    }
+  },
+  "source_sha256": {
+    "web/demo/index.html": "3f3eb3a95ba65dbc9e83af64df59eccfdd32cc35665af77ace5fdb28b4555cea",
+    "web/demo/strategy/styles/dialogs.css": "48eb9b50899c7d222174cb1dfe25fac55f25b557b6b1300e93102da0c56d35c2",
+    "web/demo/strategy/styles/base.css": "036e4bb9e4a36fe30b6192257cf67f218f5f6a2a277e5d272c82631407667525",
+    "web/demo/strategy/upgrade-choice-check.mjs": "82f71d9b8ec829668f6244fdae69033a85baf02c3000732947d1844313f14019",
+    "web/demo/assets/strategy.js": "4d4d0223847599ed4f724a2d5aa51e7e28fbc6f35937d7aa0941067c9b6c3293",
+    "web/demo/assets/context/scenario.json": "466bd0172a7172a421330d1940e2999f5ef2c0cb59c123f4bc3e6c63a2d6593d",
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c"
+  },
+  "results": [
+    {
+      "width": 844,
+      "height": 390,
+      "input": "touch",
+      "accepted_moves": 23,
+      "move_replay_exact": true,
+      "milestones": [
+        {
+          "front": 4,
+          "selected": "network",
+          "layout": {
+            "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+            "rect": {
+              "x": 112,
+              "y": 24.90625,
+              "width": 620,
+              "height": 340.1875,
+              "top": 24.90625,
+              "right": 732,
+              "bottom": 365.09375,
+              "left": 112
+            },
+            "scrollTop": 0,
+            "scrollHeight": 338,
+            "clientHeight": 338,
+            "label": "upgrade-title",
+            "choices": [
+              {
+                "id": "network",
+                "description": "One additional crew for the rest of the season.",
+                "rect": {
+                  "x": 131,
+                  "y": 144.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 144.09375,
+                  "right": 713,
+                  "bottom": 206.09375,
+                  "left": 131
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "training",
+                "description": "Crew suppression: 0.90 → 1.15 pressure per turn.",
+                "rect": {
+                  "x": 131,
+                  "y": 214.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 214.09375,
+                  "right": 713,
+                  "bottom": 276.09375,
+                  "left": 131
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "logistics",
+                "description": "Resupply: 2 → 3 supply credits each turn.",
+                "rect": {
+                  "x": 131,
+                  "y": 284.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 284.09375,
+                  "right": 713,
+                  "bottom": 346.09375,
+                  "left": 131
+                },
+                "native_center_hit": true
+              }
+            ]
+          },
+          "native_selection": true
+        },
+        {
+          "front": 8,
+          "selected": "logistics",
+          "layout": {
+            "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+            "rect": {
+              "x": 112,
+              "y": 24.90625,
+              "width": 620,
+              "height": 340.1875,
+              "top": 24.90625,
+              "right": 732,
+              "bottom": 365.09375,
+              "left": 112
+            },
+            "scrollTop": 0,
+            "scrollHeight": 338,
+            "clientHeight": 338,
+            "label": "upgrade-title",
+            "choices": [
+              {
+                "id": "logistics",
+                "description": "Resupply: 2 → 3 supply credits each turn.",
+                "rect": {
+                  "x": 131,
+                  "y": 144.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 144.09375,
+                  "right": 713,
+                  "bottom": 206.09375,
+                  "left": 131
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "training",
+                "description": "Crew suppression: 0.90 → 1.15 pressure per turn.",
+                "rect": {
+                  "x": 131,
+                  "y": 214.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 214.09375,
+                  "right": 713,
+                  "bottom": 276.09375,
+                  "left": 131
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "precision",
+                "description": "Water removes 70% instead of 58% of current pressure.",
+                "rect": {
+                  "x": 131,
+                  "y": 284.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 284.09375,
+                  "right": 713,
+                  "bottom": 346.09375,
+                  "left": 131
+                },
+                "native_center_hit": true
+              }
+            ]
+          },
+          "native_selection": true
+        }
+      ],
+      "gameplay_locators_auto_scroll": true,
+      "upgrade_selection_auto_scroll": false
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "input": "touch",
+      "accepted_moves": 23,
+      "move_replay_exact": true,
+      "milestones": [
+        {
+          "front": 4,
+          "selected": "network",
+          "layout": {
+            "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+            "rect": {
+              "x": 18,
+              "y": 77.90625,
+              "width": 284,
+              "height": 412.1875,
+              "top": 77.90625,
+              "right": 302,
+              "bottom": 490.09375,
+              "left": 18
+            },
+            "scrollTop": 0,
+            "scrollHeight": 410,
+            "clientHeight": 410,
+            "label": "upgrade-title",
+            "choices": [
+              {
+                "id": "network",
+                "description": "One additional crew for the rest of the season.",
+                "rect": {
+                  "x": 37,
+                  "y": 215.09375,
+                  "width": 246,
+                  "height": 80,
+                  "top": 215.09375,
+                  "right": 283,
+                  "bottom": 295.09375,
+                  "left": 37
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "training",
+                "description": "Crew suppression: 0.90 → 1.15 pressure per turn.",
+                "rect": {
+                  "x": 37,
+                  "y": 303.09375,
+                  "width": 246,
+                  "height": 80,
+                  "top": 303.09375,
+                  "right": 283,
+                  "bottom": 383.09375,
+                  "left": 37
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "logistics",
+                "description": "Resupply: 2 → 3 supply credits each turn.",
+                "rect": {
+                  "x": 37,
+                  "y": 391.09375,
+                  "width": 246,
+                  "height": 80,
+                  "top": 391.09375,
+                  "right": 283,
+                  "bottom": 471.09375,
+                  "left": 37
+                },
+                "native_center_hit": true
+              }
+            ]
+          },
+          "native_selection": true
+        },
+        {
+          "front": 8,
+          "selected": "logistics",
+          "layout": {
+            "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+            "rect": {
+              "x": 18,
+              "y": 77.90625,
+              "width": 284,
+              "height": 412.1875,
+              "top": 77.90625,
+              "right": 302,
+              "bottom": 490.09375,
+              "left": 18
+            },
+            "scrollTop": 0,
+            "scrollHeight": 410,
+            "clientHeight": 410,
+            "label": "upgrade-title",
+            "choices": [
+              {
+                "id": "logistics",
+                "description": "Resupply: 2 → 3 supply credits each turn.",
+                "rect": {
+                  "x": 37,
+                  "y": 215.09375,
+                  "width": 246,
+                  "height": 80,
+                  "top": 215.09375,
+                  "right": 283,
+                  "bottom": 295.09375,
+                  "left": 37
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "training",
+                "description": "Crew suppression: 0.90 → 1.15 pressure per turn.",
+                "rect": {
+                  "x": 37,
+                  "y": 303.09375,
+                  "width": 246,
+                  "height": 80,
+                  "top": 303.09375,
+                  "right": 283,
+                  "bottom": 383.09375,
+                  "left": 37
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "precision",
+                "description": "Water removes 70% instead of 58% of current pressure.",
+                "rect": {
+                  "x": 37,
+                  "y": 391.09375,
+                  "width": 246,
+                  "height": 80,
+                  "top": 391.09375,
+                  "right": 283,
+                  "bottom": 471.09375,
+                  "left": 37
+                },
+                "native_center_hit": true
+              }
+            ]
+          },
+          "native_selection": true
+        }
+      ],
+      "gameplay_locators_auto_scroll": true,
+      "upgrade_selection_auto_scroll": false
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "input": "mouse",
+      "accepted_moves": 23,
+      "move_replay_exact": true,
+      "milestones": [
+        {
+          "front": 4,
+          "selected": "network",
+          "layout": {
+            "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+            "rect": {
+              "x": 330,
+              "y": 189.90625,
+              "width": 620,
+              "height": 340.1875,
+              "top": 189.90625,
+              "right": 950,
+              "bottom": 530.09375,
+              "left": 330
+            },
+            "scrollTop": 0,
+            "scrollHeight": 338,
+            "clientHeight": 338,
+            "label": "upgrade-title",
+            "choices": [
+              {
+                "id": "network",
+                "description": "One additional crew for the rest of the season.",
+                "rect": {
+                  "x": 349,
+                  "y": 309.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 309.09375,
+                  "right": 931,
+                  "bottom": 371.09375,
+                  "left": 349
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "training",
+                "description": "Crew suppression: 0.90 → 1.15 pressure per turn.",
+                "rect": {
+                  "x": 349,
+                  "y": 379.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 379.09375,
+                  "right": 931,
+                  "bottom": 441.09375,
+                  "left": 349
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "logistics",
+                "description": "Resupply: 2 → 3 supply credits each turn.",
+                "rect": {
+                  "x": 349,
+                  "y": 449.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 449.09375,
+                  "right": 931,
+                  "bottom": 511.09375,
+                  "left": 349
+                },
+                "native_center_hit": true
+              }
+            ]
+          },
+          "native_selection": true
+        },
+        {
+          "front": 8,
+          "selected": "logistics",
+          "layout": {
+            "nativeTapHighlight": "rgba(0, 0, 0, 0)",
+            "rect": {
+              "x": 330,
+              "y": 189.90625,
+              "width": 620,
+              "height": 340.1875,
+              "top": 189.90625,
+              "right": 950,
+              "bottom": 530.09375,
+              "left": 330
+            },
+            "scrollTop": 0,
+            "scrollHeight": 338,
+            "clientHeight": 338,
+            "label": "upgrade-title",
+            "choices": [
+              {
+                "id": "logistics",
+                "description": "Resupply: 2 → 3 supply credits each turn.",
+                "rect": {
+                  "x": 349,
+                  "y": 309.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 309.09375,
+                  "right": 931,
+                  "bottom": 371.09375,
+                  "left": 349
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "training",
+                "description": "Crew suppression: 0.90 → 1.15 pressure per turn.",
+                "rect": {
+                  "x": 349,
+                  "y": 379.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 379.09375,
+                  "right": 931,
+                  "bottom": 441.09375,
+                  "left": 349
+                },
+                "native_center_hit": true
+              },
+              {
+                "id": "precision",
+                "description": "Water removes 70% instead of 58% of current pressure.",
+                "rect": {
+                  "x": 349,
+                  "y": 449.09375,
+                  "width": 582,
+                  "height": 62,
+                  "top": 449.09375,
+                  "right": 931,
+                  "bottom": 511.09375,
+                  "left": 349
+                },
+                "native_center_hit": true
+              }
+            ]
+          },
+          "native_selection": true
+        }
+      ],
+      "gameplay_locators_auto_scroll": true,
+      "upgrade_selection_auto_scroll": false
+    }
+  ],
+  "errors": [],
+  "predictor_fits": 0,
+  "quantum_circuit_executions": 0,
+  "hardware_jobs": 0,
+  "scope": "Chromium, blocked remote fonts, one replayed season per size. Both milestone comparisons fit without dialog scrolling; native selection coordinates do not auto-scroll. Preparatory gameplay locators do. Not physical-device, human choice or enjoyment certification."
+}

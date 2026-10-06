@@ -1,0 +1,64 @@
+{
+  "purpose": "Training-era coarse context acquisition; no fitting or test-year download",
+  "budget": {
+    "files": 7,
+    "max_bytes_per_file": 20000000,
+    "parallel_requests": 3
+  },
+  "total_bytes": 86730789,
+  "records": [
+    {
+      "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1985_v2_20260119.tif.ovr",
+      "retrieved_utc": "2026-10-06T04:42:07.576388+00:00",
+      "bytes": 12241014,
+      "sha256": "8209d52e7de1a981080cafcb43dee2ec01fb1784ab8b006b3891006cdd1c10e9",
+      "role": "downsampled height context; not native 30m values"
+    },
+    {
+      "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1990_v2_20260119.tif.ovr",
+      "retrieved_utc": "2026-10-06T04:42:07.630372+00:00",
+      "bytes": 12158620,
+      "sha256": "06665eff8ed26e4805cd011ced598bd73f956d6784fbf44c846e9123874f6bd2",
+      "role": "downsampled height context; not native 30m values"
+    },
+    {
+      "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_1995_v2_20260119.tif.ovr",
+      "retrieved_utc": "2026-10-06T04:42:07.511236+00:00",
+      "bytes": 12254565,
+      "sha256": "5ac751cf12c5b1d8f87ed0dd78348bb838c0f6525b81d7979d38422f320e19e5",
+      "role": "downsampled height context; not native 30m values"
+    },
+    {
+      "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2000_v2_20260119.tif.ovr",
+      "retrieved_utc": "2026-10-06T04:42:08.890741+00:00",
+      "bytes": 12368146,
+      "sha256": "1f29057f955357c8daf74d5e527486a24eaecfd34f7bba0539f7f9c970f91fd4",
+      "role": "downsampled height context; not native 30m values"
+    },
+    {
+      "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2005_v2_20260119.tif.ovr",
+      "retrieved_utc": "2026-10-06T04:42:08.891011+00:00",
+      "bytes": 12431883,
+      "sha256": "4d764a00f589eefee1baa2fce5510ee08a0318863cf367ec3308e734597bcc76",
+      "role": "downsampled height context; not native 30m values"
+    },
+    {
+      "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2010_v2_20260119.tif.ovr",
+      "retrieved_utc": "2026-10-06T04:42:09.733313+00:00",
+      "bytes": 12547604,
+      "sha256": "09fd90691168773212043cca42d5235ffec9674a4cfd6665f4595ca9b8209bdf",
+      "role": "downsampled height context; not native 30m values"
+    },
+    {
+      "url": "https://ftp.maps.canada.ca/pub/nrcan_rncan/Forests_Foret/SCANFI/v2/SCANFI_att_height_2015_v2_20260119.tif.ovr",
+      "retrieved_utc": "2026-10-06T04:42:09.695616+00:00",
+      "bytes": 12728957,
+      "sha256": "c295699096a0efa561e3df8fb40a0afbc83632546a742dad614cb886f5492553",
+      "role": "downsampled height context; not native 30m values"
+    }
+  ],
+  "limitations": [
+    "Overview resampling/units/CRS must be audited before numerical use.",
+    "Retrospective reconstruction is not an as-of historical product."
+  ]
+}

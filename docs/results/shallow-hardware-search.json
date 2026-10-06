@@ -1,0 +1,13 @@
+{
+  "study": "shallow-hardware-search",
+  "bundle": "docs/data/shallow-hardware-search-evidence.zip",
+  "bundle_sha256": "2e1ce1e7549c898e76b3b6b4bb204b30f4b84f647ec3834d8d39765d8e63b59c",
+  "evidence_sha256": "d6d77e17bfff950d02b0b8056cda2636966cbd10cab229fc2ba521d15a0213e2",
+  "status": "complete",
+  "backend": "ibm_marrakesh",
+  "hardware_jobs": 3,
+  "physical_shots": 39936,
+  "charged_seconds": 18.0,
+  "final_test_accessed": false,
+  "limitation": "Training hardware grid selection; winner bias requires separate frozen confirmation. Conditional filtering is a diagnostic, not the selection criterion. Diagonal SQD cannot add unsampled states."
+}

@@ -1,0 +1,38 @@
+{
+  "checked_utc": "2026-10-06T11:46:21.003081+00:00",
+  "status": "passed",
+  "commit": "407fb361bacc4bf2c4fef5de6718c7bab6d4d51a",
+  "audit_revision": 2,
+  "auditor_sha256": "57fe40f5c90906ee96cfaefbafab034ef0a3f3d253b113b5075a410bab8f3765",
+  "public_requirements": 23,
+  "annual_public_artifacts": 6,
+  "annual_execution_code_files": 16,
+  "legacy_parent_availability": {
+    ".cache/wildfire/final-test/outcome.json": false,
+    ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8/features.csv": false,
+    "docs/results/policy-evolution.json": true
+  },
+  "project_manifests_match_frozen_execution": {
+    "uv.lock": false,
+    "pyproject.toml": false
+  },
+  "source_caches_present_before_audit": false,
+  "project_dependencies_installed": false,
+  "command": "uv run --no-project python scripts/audit_strategy.py",
+  "new_downloads": 0,
+  "new_predictor_fits": 0,
+  "hardware_jobs": 0,
+  "scope": "Owned local shallow Git clone with 30 commits and a cached Python interpreter; public static contracts pass without source caches, .env or project dependency installation. This is not a clean operating-system, public remote access or full scientific rerun check.",
+  "ordering_helper_sha256": "155262ec2290423b024b892bca090c6b17c9551497d5345757c01cfe7da7ee06",
+  "absent_private_and_project_paths": [
+    ".env",
+    ".venv",
+    "node_modules",
+    "web/demo/node_modules",
+    "data",
+    "results",
+    ".cache/context",
+    ".cache/wildfire"
+  ],
+  "audit_receipt_sha256": "60455497a7769b536c9e9bf1a872a063fa2fa129bb38f0fc02b4cafafa2868aa"
+}

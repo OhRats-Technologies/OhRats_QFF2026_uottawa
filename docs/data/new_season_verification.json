@@ -1,0 +1,399 @@
+{
+  "checked_utc": "2026-10-06T11:28:42.087509+00:00",
+  "status": "passed",
+  "commit": "5dbb2064fbaaa79852c09848a886d67c10daff82",
+  "source_sha256": {
+    "web/demo/strategy/next-season.js": "fb305b765c19295cd9ccfd13e0719e8af90800360ab9038433728db18179fcf5",
+    "web/demo/strategy/main.js": "7ca2468f03c133bd811df06031e51cca4ddc120e40ef9eadc553a9e710c6b752",
+    "web/demo/assets/strategy.js": "4a7d351e4430d10b51a090c1d5a4b4db21642df52790398e86e275ed88697249",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/strategy/random.js": "4f5bd543c959042f71edf506fd233316aa815d20b8d8ea2b7ee59769440a47da"
+  },
+  "seed_sequence": [
+    {
+      "season": 1,
+      "seed": 2,
+      "offers": [
+        "logistics",
+        "network",
+        "training"
+      ]
+    },
+    {
+      "season": 2,
+      "seed": 3024231355,
+      "offers": [
+        "logistics",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 3,
+      "seed": 2550523153,
+      "offers": [
+        "logistics",
+        "network",
+        "training"
+      ]
+    },
+    {
+      "season": 4,
+      "seed": 3606050888,
+      "offers": [
+        "logistics",
+        "network",
+        "training"
+      ]
+    },
+    {
+      "season": 5,
+      "seed": 3281369188,
+      "offers": [
+        "network",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 6,
+      "seed": 2699008410,
+      "offers": [
+        "logistics",
+        "network",
+        "training"
+      ]
+    },
+    {
+      "season": 7,
+      "seed": 1971359785,
+      "offers": [
+        "logistics",
+        "network",
+        "training"
+      ]
+    },
+    {
+      "season": 8,
+      "seed": 1918303552,
+      "offers": [
+        "logistics",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 9,
+      "seed": 3962210506,
+      "offers": [
+        "logistics",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 10,
+      "seed": 1176456454,
+      "offers": [
+        "logistics",
+        "network",
+        "precision"
+      ]
+    },
+    {
+      "season": 11,
+      "seed": 578473090,
+      "offers": [
+        "logistics",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 12,
+      "seed": 924228555,
+      "offers": [
+        "logistics",
+        "network",
+        "precision"
+      ]
+    },
+    {
+      "season": 13,
+      "seed": 1726381731,
+      "offers": [
+        "network",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 14,
+      "seed": 1694173361,
+      "offers": [
+        "network",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 15,
+      "seed": 1194335263,
+      "offers": [
+        "logistics",
+        "network",
+        "training"
+      ]
+    },
+    {
+      "season": 16,
+      "seed": 1759752004,
+      "offers": [
+        "logistics",
+        "network",
+        "precision"
+      ]
+    },
+    {
+      "season": 17,
+      "seed": 2287285051,
+      "offers": [
+        "network",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 18,
+      "seed": 3703410657,
+      "offers": [
+        "network",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 19,
+      "seed": 1935111408,
+      "offers": [
+        "logistics",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 20,
+      "seed": 2166006540,
+      "offers": [
+        "network",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 21,
+      "seed": 3841986320,
+      "offers": [
+        "logistics",
+        "network",
+        "precision"
+      ]
+    },
+    {
+      "season": 22,
+      "seed": 937571375,
+      "offers": [
+        "logistics",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 23,
+      "seed": 2820120051,
+      "offers": [
+        "logistics",
+        "network",
+        "training"
+      ]
+    },
+    {
+      "season": 24,
+      "seed": 1757444807,
+      "offers": [
+        "network",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 25,
+      "seed": 1362122740,
+      "offers": [
+        "logistics",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 26,
+      "seed": 2170082943,
+      "offers": [
+        "logistics",
+        "network",
+        "training"
+      ]
+    },
+    {
+      "season": 27,
+      "seed": 3736692071,
+      "offers": [
+        "network",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 28,
+      "seed": 3886197302,
+      "offers": [
+        "logistics",
+        "network",
+        "training"
+      ]
+    },
+    {
+      "season": 29,
+      "seed": 694644302,
+      "offers": [
+        "logistics",
+        "network",
+        "precision"
+      ]
+    },
+    {
+      "season": 30,
+      "seed": 4190579420,
+      "offers": [
+        "network",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 31,
+      "seed": 1406541712,
+      "offers": [
+        "network",
+        "precision",
+        "training"
+      ]
+    },
+    {
+      "season": 32,
+      "seed": 1182923746,
+      "offers": [
+        "logistics",
+        "precision",
+        "training"
+      ]
+    }
+  ],
+  "first_upgrade_offer_counts": [
+    [
+      "logistics,network,training",
+      9
+    ],
+    [
+      "logistics,precision,training",
+      8
+    ],
+    [
+      "network,precision,training",
+      10
+    ],
+    [
+      "logistics,network,precision",
+      5
+    ]
+  ],
+  "old_sequence": {
+    "start": 2,
+    "seasons": 32,
+    "step": 1,
+    "offer_sets": {
+      "logistics,network,training": 32
+    }
+  },
+  "fixed_vectors": {
+    "1": 2527132011,
+    "2": 3024231355,
+    "7": 588686121,
+    "4294967295": 920564995
+  },
+  "native_short_screen_cases": [
+    {
+      "width": 844,
+      "height": 390,
+      "input": "touch",
+      "initial_scroll": 0,
+      "initial_focus": "game-title",
+      "native_command_scroll": 91,
+      "exact_accepted_moves": [
+        {
+          "type": "advance"
+        }
+      ],
+      "returned_to_map_scroll": 0,
+      "guide_save_unchanged": true,
+      "continuation_moves_preserved": true,
+      "fresh_seed": 588686121,
+      "fresh_moves": [],
+      "locator_auto_scroll": false
+    },
+    {
+      "width": 1024,
+      "height": 600,
+      "input": "mouse/wheel",
+      "initial_scroll": 0,
+      "initial_focus": "game-title",
+      "native_command_scroll": 0,
+      "exact_accepted_moves": [
+        {
+          "type": "advance"
+        }
+      ],
+      "returned_to_map_scroll": 0,
+      "guide_save_unchanged": true,
+      "continuation_moves_preserved": true,
+      "fresh_seed": 588686121,
+      "fresh_moves": [],
+      "locator_auto_scroll": false
+    }
+  ],
+  "native_terminal_cases": 6,
+  "old_game_recipe_hashes_preserved": {
+    "web/demo/strategy/rules.js": true,
+    "web/demo/strategy/upgrades.js": true,
+    "web/demo/strategy/scenario.js": true,
+    "web/demo/strategy/calibrate.js": true
+  },
+  "unit_checks": {
+    "tests": 14,
+    "assertions": 177,
+    "failures": 0,
+    "scope": "Historical unchanged-rule verification: 14 tests / 177 assertions, not rerun for this display-only fix."
+  },
+  "current_interaction_receipt_sha256": "e06992de3563c485c4e87b492809f986880876300a76914d2d94b155f95e3d86",
+  "current_view_receipt_sha256": "dbc11c382d797000523369e4d4c6a3eb813efc1e7874cc091f96fde4a71a79e9",
+  "new_predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "scope": "New season selection only. Fixed seed scenarios, offer function, random generator and saved replay format are unchanged; Continue and Replay paths preserve moves/equipment in authoring cases. Thirty-two deterministic seasons from seed 2 now expose all four first-offer sets. This is not uniformity, cryptographic randomness, long-cycle, physical-device or human-enjoyment certification.",
+  "previous_receipt_sha256": "21fd9f748054fcd6fc7748da1088e79610b7fb2de7e49753f3d5023903a03670",
+  "recollection_scope": "Recomputed 32 seed/offer sequences and four fixed vectors with unchanged pure helpers; exact match. Current build native continuation/restart and six terminal cases rechecked. Refreshed current interaction/view bindings. Historical unit evidence remains explicitly historical; no calibration, balance search, predictor fit or circuit execution.",
+  "native_check_receipt_sha256": {
+    ".cache/judge-submission/short-viewport/receipt.json": "39a3cc9a2a4b19a788760aab892084897b6ae975a174a3b24e56adc736659514",
+    ".cache/judge-submission/end-menu/after.json": "9b2c870493c0948de4943bc2e59b7382886ff0c7e923e910d3af893fd1e9660e"
+  }
+}

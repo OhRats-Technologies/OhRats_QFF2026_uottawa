@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "id": "constant-ancilla-control-v1",
+  "purpose": "Explain the context pilot\u2019s constant-qubit architecture confound without predictors or new data",
+  "scope": "Labels-free post-hoc circuit/control audit on saved training angles only",
+  "already_inspected": "Before this plan, the saved three-fold matrices were compared with the derived cosine factor; maximum residual was 1.27e-11. This is not independent or pre-registered discovery.",
+  "source": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.circuit.library.zz_feature_map",
+  "recipe": {
+    "map": "Qiskit zz_feature_map",
+    "reps": 1,
+    "alpha": 2,
+    "entanglement": "linear",
+    "ancilla_angle": 0,
+    "encoding": "Original saved pi/32 * tanh(z/2) angles; no new normalization or scale choice"
+  },
+  "identity": "For one repetition and the appended linear edge only, K5zero(i,j) = K4(i,j) * cos(pi*(theta_last_i-theta_last_j))**2. Do not generalize to repeated layers.",
+  "new_control": "First eight fold-0 training inputs: compare the four-qubit map with exactly that circuit tensor one disconnected H/P(0) ancilla. Their fidelities must agree.",
+  "control_rows": 8,
+  "parents": [
+    {
+      "fold": 0,
+      "condition": "weather_four",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-0/weather_four/kernel/matrices.npz",
+      "sha256": "6569b615c971fda1607c6a40f559091e9b9af3ea2cfec7b5621c7905ea70edde"
+    },
+    {
+      "fold": 0,
+      "condition": "weather_plus_zero",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-0/weather_plus_zero/kernel/matrices.npz",
+      "sha256": "e04779a1c54baf97beeb0273bd7363df6d4f2d3d04b0928345168b4f4f09e7c2"
+    },
+    {
+      "fold": 1,
+      "condition": "weather_four",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-1/weather_four/kernel/matrices.npz",
+      "sha256": "fe5265ac2e2f0bdf6a6895db9a0e1bb67b97bb28ea4af99bbcf0e9ec075feaeb"
+    },
+    {
+      "fold": 1,
+      "condition": "weather_plus_zero",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-1/weather_plus_zero/kernel/matrices.npz",
+      "sha256": "7d34ac4c5a8c73e0dfa770dff8f63cd3c982bd0eb122256ee115f8ffbad0d533"
+    },
+    {
+      "fold": 2,
+      "condition": "weather_four",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-2/weather_four/kernel/matrices.npz",
+      "sha256": "3c0458e5557e63df90bc11f86212498a732db73bebd997c96f9724d785cb632e"
+    },
+    {
+      "fold": 2,
+      "condition": "weather_plus_zero",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-2/weather_plus_zero/kernel/matrices.npz",
+      "sha256": "ded7ef5981c11a8401e209135fc2ee27bddd792ebcaa98431a9cdfc9ba3ec060"
+    }
+  ],
+  "checks": [
+    "Verify every parent SHA and matching four input columns/zero fifth angle",
+    "Recompute the saved cosine-factor residuals on all three train matrices",
+    "Generate eight four-qubit and eight disconnected-five-qubit statevectors",
+    "Verify tensor factorization and equal Gram matrices; compare four-qubit reference against saved first-eight matrix",
+    "Save statevectors for a collector that uses only stored amplitudes and classical algebra"
+  ],
+  "tolerances": {
+    "saved_matrix_absolute": 1e-09,
+    "tensor_factorization_absolute": 1e-12,
+    "gram_equality_absolute": 1e-12
+  },
+  "budget": {
+    "new_statevectors_max": 16,
+    "sampler_pair_circuits": 0,
+    "shots": 0,
+    "predictor_fits": 0,
+    "hardware_jobs": 0,
+    "elapsed_soft_limit_seconds": 60
+  },
+  "output": ".cache/context/constant-ancilla-v1",
+  "restrictions": "Exclusive intent, preserve original parent matrices and scientific results; no labels, test years, tuning, predictor ranking, promotion or extra circuit variants.",
+  "interpretation": "A known feature-map identity and fixed tensor control can explain width sensitivity. Neither proves a novel algorithm, predictive improvement or quantum advantage."
+}

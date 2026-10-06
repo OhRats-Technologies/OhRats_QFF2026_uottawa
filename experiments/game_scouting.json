@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "purpose": "Game decision audit only, not wildfire prediction or human play validation",
+  "seed_start": 1001,
+  "seed_count": 500,
+  "policies": ["legacy_triage", "no_scouting", "decision_scouting", "free_perfect_fuel"],
+  "matched": "Same incident/location/weather seed, visible-pressure crew priority and upgrade preference",
+  "upgrade_preference": ["training", "logistics", "network", "precision", "survey"],
+  "water_threshold": 1.1,
+  "legacy_triage": "Existing size > 0.95 scouting rule, then water when forecast upper bound > 1.1",
+  "no_scouting": "Always use visible upper bound; never buy scouting",
+  "decision_scouting": "Buy scouting only when forecast bounds straddle 1.1 and at least five supplies remain; then use revealed forecast",
+  "free_perfect_fuel": "Unattainable free information control: every burning fire has known fuel before decisions",
+  "primary": "Paired final reserve difference versus no_scouting",
+  "secondary": ["win fraction", "spending", "scouting count", "water drops", "contained fires"],
+  "limits": "No physical rule changes, fitting, quantum states, hardware, scientific test access or automatic policy tuning. All four policies are fixed before new seeds run.",
+  "output": ".cache/judge-submission/game-scouting-v1"
+}

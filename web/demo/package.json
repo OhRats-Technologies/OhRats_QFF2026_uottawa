@@ -1,1 +1,13 @@
-{"name":"qsvr-arcade","private":true,"type":"module","scripts":{"build":"bun build game/main.js --outdir assets --minify --target browser","test":"bun test game/rules.test.js"},"dependencies":{"three":"0.186.1"}}
+{
+  "name": "fireline-ontario",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun build strategy/main.js --outfile assets/strategy.js --minify --target browser",
+    "test": "bun test strategy/*.test.js",
+    "balance": "bun strategy/calibrate.js"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  }
+}

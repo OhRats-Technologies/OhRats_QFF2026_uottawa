@@ -1,0 +1,105 @@
+{
+  "id": "constant-ancilla-control-v1",
+  "status": "passed",
+  "source_hashes": {
+    "experiments/constant_ancilla_control.json": "0cf76311cbff6472f07bb0704433f29006c8b566746dabe736cc4345067310d4",
+    "scripts/context/ancilla.py": "c2403e5703e5c405e37d9e63b0739a0e22ea715f1d5570025e6aa39bbb68abdc",
+    "uv.lock": "0ce47161596d8a6cba697ac2f106b3bcf7cd3f67538174ce397e33dd5d00378d"
+  },
+  "parents": [
+    {
+      "fold": 0,
+      "condition": "weather_four",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-0/weather_four/kernel/matrices.npz",
+      "sha256": "6569b615c971fda1607c6a40f559091e9b9af3ea2cfec7b5621c7905ea70edde"
+    },
+    {
+      "fold": 0,
+      "condition": "weather_plus_zero",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-0/weather_plus_zero/kernel/matrices.npz",
+      "sha256": "e04779a1c54baf97beeb0273bd7363df6d4f2d3d04b0928345168b4f4f09e7c2"
+    },
+    {
+      "fold": 1,
+      "condition": "weather_four",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-1/weather_four/kernel/matrices.npz",
+      "sha256": "fe5265ac2e2f0bdf6a6895db9a0e1bb67b97bb28ea4af99bbcf0e9ec075feaeb"
+    },
+    {
+      "fold": 1,
+      "condition": "weather_plus_zero",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-1/weather_plus_zero/kernel/matrices.npz",
+      "sha256": "7d34ac4c5a8c73e0dfa770dff8f63cd3c982bd0eb122256ee115f8ffbad0d533"
+    },
+    {
+      "fold": 2,
+      "condition": "weather_four",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-2/weather_four/kernel/matrices.npz",
+      "sha256": "3c0458e5557e63df90bc11f86212498a732db73bebd997c96f9724d785cb632e"
+    },
+    {
+      "fold": 2,
+      "condition": "weather_plus_zero",
+      "path": ".cache/wildfire/coarse-height-context-v1/fold-2/weather_plus_zero/kernel/matrices.npz",
+      "sha256": "ded7ef5981c11a8401e209135fc2ee27bddd792ebcaa98431a9cdfc9ba3ec060"
+    }
+  ],
+  "saved_identity": [
+    {
+      "fold": 0,
+      "training_rows": 19,
+      "matrix_entries": 361,
+      "maximum_width_change": 0.10922827554350079,
+      "maximum_cosine_factor_residual": 9.55158174775761e-12,
+      "maximum_classical_factor_gram_residual": 3.3306690738754696e-16,
+      "minimum_classical_factor_eigenvalue": -1.3296881780165775e-15
+    },
+    {
+      "fold": 1,
+      "training_rows": 23,
+      "matrix_entries": 529,
+      "maximum_width_change": 0.11566613336071896,
+      "maximum_cosine_factor_residual": 1.1217360373905194e-11,
+      "maximum_classical_factor_gram_residual": 4.440892098500626e-16,
+      "minimum_classical_factor_eigenvalue": -3.9986596517073634e-15
+    },
+    {
+      "fold": 2,
+      "training_rows": 27,
+      "matrix_entries": 729,
+      "maximum_width_change": 0.12137188243832497,
+      "maximum_cosine_factor_residual": 1.2643441849036208e-11,
+      "maximum_classical_factor_gram_residual": 3.3306690738754696e-16,
+      "minimum_classical_factor_eigenvalue": -3.492524029326911e-15
+    }
+  ],
+  "tensor_control": {
+    "rows": 8,
+    "maximum_tensor_factorization_residual": 0.0,
+    "maximum_disconnected_gram_residual": 6.661338147750939e-16,
+    "maximum_saved_reference_residual": 5.733746810676621e-12,
+    "maximum_state_normalization_residual": 8.881784197001252e-16
+  },
+  "statevectors_sha256": "b50a1efd467e66ea4ec054fb3e8abed4d938a51158b007215ec13d0c247833d3",
+  "resources": {
+    "new_statevectors": 16,
+    "qiskit_version": "2.5.2",
+    "base_operations": {
+      "p": 7,
+      "cx": 6,
+      "h": 4
+    },
+    "disconnected_operations": {
+      "p": 8,
+      "cx": 6,
+      "h": 5
+    },
+    "seconds": 0.0030526670161634684
+  },
+  "sampler_pair_circuits": 0,
+  "shots": 0,
+  "predictor_fits": 0,
+  "hardware_jobs": 0,
+  "interpretation": "A known feature-map identity and fixed tensor control can explain width sensitivity. Neither proves a novel algorithm, predictive improvement or quantum advantage.",
+  "discovery_status": "Before this plan, the saved three-fold matrices were compared with the derived cosine factor; maximum residual was 1.27e-11. This is not independent or pre-registered discovery."
+}

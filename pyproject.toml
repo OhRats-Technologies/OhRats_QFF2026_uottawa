@@ -10,7 +10,7 @@ dependencies = []
 package = false
 
 [dependency-groups]
-data = ["rasterio>=1.4,<2", "numpy==2.5.3"]
+data = ["rasterio>=1.4,<2", "numpy==2.5.3", "Pillow==12.3.0"]
 analysis = [
     "scipy==1.18.1",
     "scikit-learn==1.9.1",
@@ -23,4 +23,5 @@ quantum = [
     "qiskit-addon-sqd==0.13.1",
 ]
 hardware = ["qiskit-ibm-runtime==0.50.0", "python-dotenv>=1.2.4"]
+mitigation = ["qiskit-aer==0.17.2"]
 notebook = ["jupyterlab", "ipykernel"]

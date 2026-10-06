@@ -1,0 +1,59 @@
+{
+  "purpose": "Game balancing only; actual position pool, pressure-only priority and visible scouting forecasts. Fictional dynamics, no trained predictor or quantum simulation.",
+  "position_pool": 66,
+  "seeds": 500,
+  "policies": [
+    {
+      "id": "idle",
+      "win_rate": 0,
+      "mean_integrity": 22.135413034081363,
+      "mean_turns": 5.9,
+      "mean_contained": 0,
+      "mean_spent": 0,
+      "mean_score": 273.368
+    },
+    {
+      "id": "water_only",
+      "win_rate": 0,
+      "mean_integrity": 24.41197111140235,
+      "mean_turns": 8.052,
+      "mean_contained": 0,
+      "mean_spent": 32.056,
+      "mean_score": 245.808
+    },
+    {
+      "id": "crew_only",
+      "win_rate": 0.094,
+      "mean_integrity": 31.00273213462621,
+      "mean_turns": 9.756,
+      "mean_contained": 2.568,
+      "mean_spent": 20.58,
+      "mean_score": 389.89
+    },
+    {
+      "id": "random",
+      "win_rate": 0.004,
+      "mean_integrity": 26.498540506450812,
+      "mean_turns": 8.718,
+      "mean_contained": 2.458,
+      "mean_spent": 34.076,
+      "mean_score": 310.204
+    },
+    {
+      "id": "triage",
+      "win_rate": 0.748,
+      "mean_integrity": 62.15848730677219,
+      "mean_turns": 11.806,
+      "mean_contained": 7.49,
+      "mean_spent": 41.662,
+      "mean_score": 759.94
+    }
+  ],
+  "rules_sha256": {
+    "web/demo/strategy/rules.js": "e996926b338308d7ed77e206c47e6e8c2f10562c0d31ee181b8a334f9d65211e",
+    "web/demo/strategy/upgrades.js": "4c37a08165177b7e38f933d868ecf35e7ce8152aa3a5b530010edd30a7a29b68",
+    "web/demo/strategy/calibrate.js": "863a6583fb54ad251f0515e42ce3e43893f194c153db62d9f48bbff099fb09e4",
+    "web/demo/strategy/scenario.js": "770fc896a238a7450cb40046d176b5dfcb7818cef3af540ffa8452b0cf1ad487"
+  },
+  "history": "Earlier prototype used a synthetic position pool and exposure-based priority; this revision uses the actual 66-location pool and pressure-only priority visible to players."
+}

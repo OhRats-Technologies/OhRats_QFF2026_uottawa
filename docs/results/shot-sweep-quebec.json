@@ -1,0 +1,13 @@
+{
+  "study": "shot-sweep-quebec",
+  "bundle": "docs/data/shot-sweep-quebec-evidence.zip",
+  "bundle_sha256": "73bfd5d1edad36b1e9c0481daeef113a69b71ea683934cedc09c744a83101d39",
+  "evidence_sha256": "fa2309632bc79d343c1f8f739bc16994cd5b85ab5075818c84527bf5a82f8b36",
+  "status": "complete",
+  "backend": "ibm_quebec",
+  "hardware_jobs": 6,
+  "physical_shots": 150528,
+  "charged_seconds": 54.0,
+  "final_test_accessed": false,
+  "limitation": "One independent job per device/shot/arm, fixed staggered order; calibration drift remains confounded. Wilson intervals assume independent Bernoulli shots and do not cover drift/correlated execution errors. Compare full-shot and accepted-shot uniform feasible draws separately. Charge covers all selector/control/calibration PUBs in the job, not an individual circuit. Actual diagonal SQD only chooses among observed states. No predictor refit, error-correction claim, intrinsic device ranking or quantum advantage."
+}

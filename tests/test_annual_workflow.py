@@ -11,6 +11,15 @@ from wildfire_lab.annual_workflow import run
 
 
 class AnnualWorkflowTests(unittest.TestCase):
+    def test_search_and_collection_previews_launch_nothing(self):
+        with patch('wildfire_lab.annual_workflow.subprocess.run') as launch:
+            for operation in ['selector-search', 'expanded-tuning',
+                              'selector-search-collect', 'expanded-tuning-collect']:
+                result = run(Path('/repo'), operation, Path('/new'))
+                self.assertFalse(result['executes'])
+                self.assertEqual(result['command'][-2:], ['--output', '/new'])
+        launch.assert_not_called()
+
     def test_quantum_preview_preserves_dataset_and_width(self):
         with patch('wildfire_lab.annual_workflow.subprocess.run') as launch:
             result = run(Path('/repo'), 'quantum', Path('/new'), Path('/annual.csv'), 10)

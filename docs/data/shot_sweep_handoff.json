@@ -1,0 +1,87 @@
+{
+  "status": "complete_verified",
+  "checked_utc": "2026-10-06T18:45:20.849075+00:00",
+  "revision": "ef2d20d5d73b37ae16abc066d01238ef726d2310",
+  "hardware_jobs": 12,
+  "physical_shots": 301056,
+  "charged_seconds": 108,
+  "by_device": {
+    "marrakesh": {
+      "status": "passed",
+      "study": "shot-sweep-marrakesh",
+      "prediction_equations": 0,
+      "measured_count_rows": 54,
+      "physical_shots": 150528,
+      "charged_seconds": 54.0,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_samples": 0,
+      "hardware_jobs_submitted": 0
+    },
+    "quebec": {
+      "status": "passed",
+      "study": "shot-sweep-quebec",
+      "prediction_equations": 0,
+      "measured_count_rows": 54,
+      "physical_shots": 150528,
+      "charged_seconds": 54.0,
+      "predictor_fits": 0,
+      "new_quantum_states": 0,
+      "new_samples": 0,
+      "hardware_jobs_submitted": 0
+    }
+  },
+  "configured_caps_seconds_per_account": 102,
+  "actual_charge_seconds_per_account": 54,
+  "remaining_reservations_seconds": 0,
+  "pending_jobs": 0,
+  "test_count": 214,
+  "source_free_git_archive_replay": true,
+  "network_and_rng_blocked_during_replay": true,
+  "prepared_code_and_qpy_hashes_match": true,
+  "privacy_scan_current_tree_and_decompressed_zips": true,
+  "preserved_final_sha256": {
+    "experiments/annual_final.json": "4df95f26e963d7db8038dfb19c3ff512464e8471bff0fc35ba3316f046c633f1",
+    "docs/results/annual-final-training.json": "678e930d0397e0d1853d716501fee8899bdf9f7240345b3d07d75b1e0aeebc78",
+    "docs/results/annual-final.json": "dcf41e991b279e5837d57810c4652337a6ce8f2015ed7cb3d4a3332b2ea37432",
+    "docs/data/annual_final_bundle.json": "4e6e243de608e950ce6d08c6e2637cdb6e64cfd1c953dfaac3e87c71420d5b91",
+    "docs/data/annual_training.csv": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+    "docs/data/annual_reused_evaluation.csv": "6c1cc55f1f44990e249fadaafbed5a0baa37deb90a4843f539e52b0f9db28636"
+  },
+  "annual_execution_code_matches": {
+    "wildfire_lab/annual_data.py": true,
+    "wildfire_lab/annual_classical.py": true,
+    "wildfire_lab/annual_quantum.py": true,
+    "wildfire_lab/annual_matched.py": true,
+    "wildfire_lab/annual_selectors.py": true,
+    "wildfire_lab/annual_model_state.py": true,
+    "wildfire_lab/annual_final_kernel.py": true,
+    "wildfire_lab/annual_final_train.py": true,
+    "wildfire_lab/annual_final_evaluate.py": true,
+    "wildfire_lab/annual_final_protocol.py": true,
+    "wildfire_lab/nfdb.py": true,
+    "wildfire_lab/selection.py": true,
+    "wildfire_lab/qaoa.py": true,
+    "wildfire_lab/sqd_selection.py": true,
+    "wildfire_lab/library_kernel.py": true,
+    "scripts/run_annual_final.py": true
+  },
+  "account_usage_after": {
+    "marrakesh": {
+      "usage_consumed_seconds": 322,
+      "usage_limit_seconds": 600,
+      "usage_remaining_seconds": 278
+    },
+    "quebec": {
+      "usage_consumed_seconds": 20852,
+      "usage_remaining_seconds": 3148
+    }
+  },
+  "predictor_fits": 0,
+  "final_test_accessed": false,
+  "public_bundle_sha256": {
+    "marrakesh": "1e2b7434d12307b777edaed24094558309831057a86112cf15f282bb3c789dea",
+    "quebec": "73bfd5d1edad36b1e9c0481daeef113a69b71ea683934cedc09c744a83101d39"
+  },
+  "limitations": "One independent hardware job per device/arm/shot level; calibration drift and execution correlations unresolved. Wilson intervals assume IID shots. Full/accepted-budget controls answer different questions. No device ranking, prediction improvement, logical error correction or quantum advantage claim. PINQ is shared; account consumption change includes other activity. Existing dependency manifests differ from original final execution as disclosed previously."
+}

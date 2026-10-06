@@ -1,0 +1,1205 @@
+{
+  "study": "pipeline-mitigation-v1",
+  "wall_seconds": 31.355318333022296,
+  "train_years": [
+    1988,
+    1991,
+    1993,
+    1996,
+    1999,
+    2001,
+    2004,
+    2006
+  ],
+  "validation_years": [
+    2007,
+    2008,
+    2009,
+    2010
+  ],
+  "seeds": [
+    131,
+    137,
+    139
+  ],
+  "predictor_fits": 77,
+  "prediction_records": 78,
+  "collection": {
+    "prediction_records_checked": 76,
+    "measured_count_paths_checked": 3933,
+    "new_quantum_states": 0,
+    "predictor_fits": 0,
+    "hardware_jobs_submitted": 0,
+    "evidence_sha256": "57e3ba8b664df9962812a88ca5c7ed373dcffd82aab320bdfac455de11c9f7d7"
+  },
+  "control_checks": {
+    "all_prediction_metrics_checked": 78,
+    "training_mean_reconstructed": true,
+    "rbf_predictor_equation_reconstructed": false,
+    "limitation": "RBF control predictions/metrics are retained; its fitted coefficients were not saved."
+  },
+  "kernel_resources": {
+    "analytic_reference": {
+      "kernel_seconds": 0.05300762504339218,
+      "pair_circuits": 60,
+      "shots_per_pair": null,
+      "synthetic_shots": null,
+      "execution": "local analytic",
+      "hardware_jobs_submitted": 0
+    },
+    "pairs": 68,
+    "base_circuits_sha256": "2a62bdbee80758b395443d46298c600f889dc4132e3bff772f58c702b6b22272",
+    "forward_circuits": 3876,
+    "forward_shots": 2088960,
+    "compiled_max_cx": 10
+  },
+  "selector_resources": {
+    "exact_minimum": -0.47152456352075944,
+    "base_circuits_sha256": "d3e1727c3d5c411184f44187b78a0aef8d0e272c7f2b36c67a88b21ff63d7323",
+    "feasible_states": 210,
+    "compiled_gate_counts": {
+      "rz": 2052,
+      "sx": 1301,
+      "cx": 1123,
+      "x": 44
+    },
+    "compiled_depth": 4257,
+    "generic_state_preparation": true,
+    "forward_circuits": 45,
+    "forward_shots": 18432,
+    "auxiliary_classical_resamples": 3072
+  },
+  "summaries": [
+    {
+      "kind": "kernel",
+      "label": "ideal_fidelity",
+      "records": 1,
+      "mae_ha": {
+        "mean": 88.62326436224765,
+        "minimum": 88.62326436224765,
+        "maximum": 88.62326436224765
+      },
+      "rmse_ha": {
+        "mean": 103.11950758874387,
+        "minimum": 103.11950758874387,
+        "maximum": 103.11950758874387
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "shot_only",
+      "records": 3,
+      "mae_ha": {
+        "mean": 85.7460652497537,
+        "minimum": 78.68216815074545,
+        "maximum": 90.01824452483838
+      },
+      "rmse_ha": {
+        "mean": 100.73008908288284,
+        "minimum": 90.9258108420876,
+        "maximum": 107.16208154041605
+      },
+      "train_kernel_rmse": {
+        "mean": 0.012023185463857564,
+        "minimum": 0.010510267236348167,
+        "maximum": 0.014188105752277145
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.012796472056504188,
+        "minimum": 0.012189512370229909,
+        "maximum": 0.013323183302504885
+      },
+      "negative_spectral_mass": {
+        "mean": 0.008837230385522562,
+        "minimum": 0.003155165258252268,
+        "maximum": 0.016753317167738885
+      },
+      "effective_rank": {
+        "mean": 1.9914024910953927,
+        "minimum": 1.9758740804647308,
+        "maximum": 2.0055598014124834
+      },
+      "exact_alignment": {
+        "mean": 0.9998903318596891,
+        "minimum": 0.9998472452418682,
+        "maximum": 0.9999162967237892
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "readout_only",
+      "records": 3,
+      "mae_ha": {
+        "mean": 78.01679024047229,
+        "minimum": 73.57573304012442,
+        "maximum": 84.0970405252007
+      },
+      "rmse_ha": {
+        "mean": 88.43591737355132,
+        "minimum": 83.57400889615172,
+        "maximum": 96.62042105915094
+      },
+      "train_kernel_rmse": {
+        "mean": 0.2313207966613986,
+        "minimum": 0.23008631687662714,
+        "maximum": 0.232791098267937
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.2033118786406153,
+        "minimum": 0.20089684183359324,
+        "maximum": 0.20591553488922812
+      },
+      "negative_spectral_mass": {
+        "mean": 0.04070632446319656,
+        "minimum": 0.0351226068162198,
+        "maximum": 0.04354787154959777
+      },
+      "effective_rank": {
+        "mean": 1.9955080233581697,
+        "minimum": 1.9687500007042715,
+        "maximum": 2.010882233470744
+      },
+      "exact_alignment": {
+        "mean": 0.9997132014419812,
+        "minimum": 0.9996361538218778,
+        "maximum": 0.999775689979493
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "coherent_only",
+      "records": 3,
+      "mae_ha": {
+        "mean": 77.11602815110344,
+        "minimum": 74.06368984232287,
+        "maximum": 81.375080553943
+      },
+      "rmse_ha": {
+        "mean": 89.51957123547203,
+        "minimum": 83.40143014701823,
+        "maximum": 93.35831645386517
+      },
+      "train_kernel_rmse": {
+        "mean": 0.09544159268173902,
+        "minimum": 0.09284701125505063,
+        "maximum": 0.09698918664075659
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.10400401744918002,
+        "minimum": 0.1011277700120203,
+        "maximum": 0.10572173488956423
+      },
+      "negative_spectral_mass": {
+        "mean": 0.0,
+        "minimum": -0.0,
+        "maximum": -0.0
+      },
+      "effective_rank": {
+        "mean": 2.8566618215779394,
+        "minimum": 2.8300575163625563,
+        "maximum": 2.8767719903863944
+      },
+      "exact_alignment": {
+        "mean": 0.9981052647376146,
+        "minimum": 0.9980496603468648,
+        "maximum": 0.9982149160666226
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "amplitude_only",
+      "records": 3,
+      "mae_ha": {
+        "mean": 85.08938736517347,
+        "minimum": 79.24453511032112,
+        "maximum": 88.83460889261532
+      },
+      "rmse_ha": {
+        "mean": 99.97125396774184,
+        "minimum": 91.43162078264918,
+        "maximum": 106.0071253991781
+      },
+      "train_kernel_rmse": {
+        "mean": 0.012440155810934191,
+        "minimum": 0.011027786165291948,
+        "maximum": 0.014531334914780194
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.013074367580223784,
+        "minimum": 0.012058856788758733,
+        "maximum": 0.013696195210134482
+      },
+      "negative_spectral_mass": {
+        "mean": 0.00622038614745266,
+        "minimum": 1.9374971936392806e-05,
+        "maximum": 0.009692637463261159
+      },
+      "effective_rank": {
+        "mean": 2.0273404248199753,
+        "minimum": 2.010956449087794,
+        "maximum": 2.0488720282511146
+      },
+      "exact_alignment": {
+        "mean": 0.9998891416180361,
+        "minimum": 0.9998489896488351,
+        "maximum": 0.999910445230375
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "phase_only",
+      "records": 3,
+      "mae_ha": {
+        "mean": 85.36904623470065,
+        "minimum": 79.69235908552817,
+        "maximum": 89.17489936896919
+      },
+      "rmse_ha": {
+        "mean": 100.2574074919411,
+        "minimum": 92.02712913643303,
+        "maximum": 105.97292715641662
+      },
+      "train_kernel_rmse": {
+        "mean": 0.012315898592518968,
+        "minimum": 0.010964473729598216,
+        "maximum": 0.01436304679733783
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.012884776496220591,
+        "minimum": 0.011938247944183888,
+        "maximum": 0.013601151652221848
+      },
+      "negative_spectral_mass": {
+        "mean": 0.006023501461639005,
+        "minimum": 0.001013766873010802,
+        "maximum": 0.008784726241859003
+      },
+      "effective_rank": {
+        "mean": 2.0238440422287405,
+        "minimum": 2.0073952386682024,
+        "maximum": 2.0450247883669315
+      },
+      "exact_alignment": {
+        "mean": 0.9998902129806186,
+        "minimum": 0.9998512024001974,
+        "maximum": 0.999910667417377
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "raw",
+      "records": 3,
+      "mae_ha": {
+        "mean": 71.04245025027178,
+        "minimum": 68.0936007016372,
+        "maximum": 74.9344197441327
+      },
+      "rmse_ha": {
+        "mean": 79.8833873988968,
+        "minimum": 76.79171350677022,
+        "maximum": 85.33918744861549
+      },
+      "train_kernel_rmse": {
+        "mean": 0.2955249048033162,
+        "minimum": 0.2947821046148081,
+        "maximum": 0.2959611741390535
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.2790474342566862,
+        "minimum": 0.2770737104022883,
+        "maximum": 0.2823602921281574
+      },
+      "negative_spectral_mass": {
+        "mean": 0.0,
+        "minimum": -0.0,
+        "maximum": -0.0
+      },
+      "effective_rank": {
+        "mean": 2.8479567270687327,
+        "minimum": 2.8106358851701234,
+        "maximum": 2.897661032546943
+      },
+      "exact_alignment": {
+        "mean": 0.9979604252145742,
+        "minimum": 0.9977582256801963,
+        "maximum": 0.9981190259171967
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "raw_psd",
+      "records": 3,
+      "mae_ha": {
+        "mean": 71.0424502502718,
+        "minimum": 68.0936007016372,
+        "maximum": 74.93441974413273
+      },
+      "rmse_ha": {
+        "mean": 79.8833873988968,
+        "minimum": 76.79171350677022,
+        "maximum": 85.3391874486155
+      },
+      "train_kernel_rmse": {
+        "mean": 0.29552490480331645,
+        "minimum": 0.2947821046148088,
+        "maximum": 0.2959611741390534
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.2790474342566865,
+        "minimum": 0.2770737104022883,
+        "maximum": 0.2823602921281579
+      },
+      "negative_spectral_mass": {
+        "mean": 0.0,
+        "minimum": -0.0,
+        "maximum": -0.0
+      },
+      "effective_rank": {
+        "mean": 2.8479567270687336,
+        "minimum": 2.810635885170127,
+        "maximum": 2.8976610325469445
+      },
+      "exact_alignment": {
+        "mean": 0.9979604252145742,
+        "minimum": 0.9977582256801963,
+        "maximum": 0.9981190259171969
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "raw_rank4",
+      "records": 3,
+      "mae_ha": {
+        "mean": 83.00555960339626,
+        "minimum": 78.55567555547573,
+        "maximum": 87.6698442748877
+      },
+      "rmse_ha": {
+        "mean": 91.02248842484126,
+        "minimum": 85.21589875946576,
+        "maximum": 95.30851998307399
+      },
+      "train_kernel_rmse": {
+        "mean": 0.2950750050362965,
+        "minimum": 0.29450242404330396,
+        "maximum": 0.2955690215840274
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.2792978810199506,
+        "minimum": 0.2774282531237703,
+        "maximum": 0.2826758370146763
+      },
+      "negative_spectral_mass": {
+        "mean": 4.506162859343558e-16,
+        "minimum": 2.038879476547987e-16,
+        "maximum": 8.271790006376836e-16
+      },
+      "effective_rank": {
+        "mean": 2.14001395529495,
+        "minimum": 2.103193009008542,
+        "maximum": 2.181002185807847
+      },
+      "exact_alignment": {
+        "mean": 0.9987023198029514,
+        "minimum": 0.9986539864819001,
+        "maximum": 0.9987584575949231
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "dd",
+      "records": 3,
+      "mae_ha": {
+        "mean": 76.67778014954727,
+        "minimum": 69.64424161430566,
+        "maximum": 85.11555620976813
+      },
+      "rmse_ha": {
+        "mean": 86.65134747822192,
+        "minimum": 78.90662189176204,
+        "maximum": 97.2376865824946
+      },
+      "train_kernel_rmse": {
+        "mean": 0.2396082948341465,
+        "minimum": 0.23853287068132734,
+        "maximum": 0.2413167983212984
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.2153050785552639,
+        "minimum": 0.21384582028653357,
+        "maximum": 0.21710196681545743
+      },
+      "negative_spectral_mass": {
+        "mean": 0.030477114513626318,
+        "minimum": 0.017486912538645965,
+        "maximum": 0.0525264661676917
+      },
+      "effective_rank": {
+        "mean": 2.0827699375268582,
+        "minimum": 2.0460413900188654,
+        "maximum": 2.1316941893916352
+      },
+      "exact_alignment": {
+        "mean": 0.9995268597971544,
+        "minimum": 0.9994755853947197,
+        "maximum": 0.9995628855068529
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "gate_twirl",
+      "records": 3,
+      "mae_ha": {
+        "mean": 74.81315715969258,
+        "minimum": 73.19741796199514,
+        "maximum": 75.83944082421291
+      },
+      "rmse_ha": {
+        "mean": 82.99671502640739,
+        "minimum": 81.71247096161134,
+        "maximum": 84.1255912286789
+      },
+      "train_kernel_rmse": {
+        "mean": 0.2918890050912912,
+        "minimum": 0.28817404319533546,
+        "maximum": 0.29480896621397235
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.275230572665272,
+        "minimum": 0.273728107559656,
+        "maximum": 0.27629061145436695
+      },
+      "negative_spectral_mass": {
+        "mean": 0.0,
+        "minimum": -0.0,
+        "maximum": -0.0
+      },
+      "effective_rank": {
+        "mean": 2.784446696132855,
+        "minimum": 2.765310431970981,
+        "maximum": 2.817045320863844
+      },
+      "exact_alignment": {
+        "mean": 0.9976690598054062,
+        "minimum": 0.9975708578399135,
+        "maximum": 0.9977674461534514
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "dd_gate_twirl",
+      "records": 3,
+      "mae_ha": {
+        "mean": 82.67807977179093,
+        "minimum": 78.98682790878475,
+        "maximum": 84.71440000031573
+      },
+      "rmse_ha": {
+        "mean": 91.76326174319964,
+        "minimum": 87.60705697181531,
+        "maximum": 94.80172776032623
+      },
+      "train_kernel_rmse": {
+        "mean": 0.23875178076528245,
+        "minimum": 0.2363153954834254,
+        "maximum": 0.24308594577324194
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.21256199304244575,
+        "minimum": 0.2107303211957029,
+        "maximum": 0.21372466351408265
+      },
+      "negative_spectral_mass": {
+        "mean": 0.009586889198034158,
+        "minimum": 0.00856670700782204,
+        "maximum": 0.010331034491487267
+      },
+      "effective_rank": {
+        "mean": 2.065482179989672,
+        "minimum": 2.0465224211954136,
+        "maximum": 2.0945193480975153
+      },
+      "exact_alignment": {
+        "mean": 0.9996331736981308,
+        "minimum": 0.9994937596469803,
+        "maximum": 0.9997762072021615
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "dd_gate_measurement_twirl",
+      "records": 3,
+      "mae_ha": {
+        "mean": 88.16904561773015,
+        "minimum": 78.55515546399627,
+        "maximum": 96.54080121193542
+      },
+      "rmse_ha": {
+        "mean": 100.41324966576182,
+        "minimum": 91.27429671572894,
+        "maximum": 107.25134821097113
+      },
+      "train_kernel_rmse": {
+        "mean": 0.16924621832743217,
+        "minimum": 0.16609585786540526,
+        "maximum": 0.17367621304115338
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.1511374307994182,
+        "minimum": 0.15017977081216077,
+        "maximum": 0.15173731475559724
+      },
+      "negative_spectral_mass": {
+        "mean": 0.02424827939330212,
+        "minimum": 0.01848456478268211,
+        "maximum": 0.03218856435614456
+      },
+      "effective_rank": {
+        "mean": 2.0864110483501626,
+        "minimum": 2.0500049674633782,
+        "maximum": 2.109148865510602
+      },
+      "exact_alignment": {
+        "mean": 0.9996332744374516,
+        "minimum": 0.9994980649404109,
+        "maximum": 0.9997504953827436
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "readout_corrected",
+      "records": 3,
+      "mae_ha": {
+        "mean": 93.79600682147507,
+        "minimum": 81.33360077351641,
+        "maximum": 104.7474155418435
+      },
+      "rmse_ha": {
+        "mean": 110.4567583828793,
+        "minimum": 98.55547041830513,
+        "maximum": 119.63302852831569
+      },
+      "train_kernel_rmse": {
+        "mean": 0.02521483038539787,
+        "minimum": 0.02044476636951333,
+        "maximum": 0.03128326153082014
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.02261973437328919,
+        "minimum": 0.020792013458310128,
+        "maximum": 0.025637721392847337
+      },
+      "negative_spectral_mass": {
+        "mean": 0.0332706540793622,
+        "minimum": 0.023996618099191534,
+        "maximum": 0.045318944641606775
+      },
+      "effective_rank": {
+        "mean": 2.095515251908505,
+        "minimum": 2.054026998829034,
+        "maximum": 2.119003843911657
+      },
+      "exact_alignment": {
+        "mean": 0.9995999142272942,
+        "minimum": 0.999453266509563,
+        "maximum": 0.9997383755147314
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "readout_psd",
+      "records": 3,
+      "mae_ha": {
+        "mean": 88.23490153547574,
+        "minimum": 83.11569920119298,
+        "maximum": 94.27654290493619
+      },
+      "rmse_ha": {
+        "mean": 105.45250609792045,
+        "minimum": 101.46335002361177,
+        "maximum": 109.83264432609563
+      },
+      "train_kernel_rmse": {
+        "mean": 0.024509414611023374,
+        "minimum": 0.01988514427059444,
+        "maximum": 0.030829792969331395
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.023007484235131548,
+        "minimum": 0.022397037680903148,
+        "maximum": 0.02416779249151869
+      },
+      "negative_spectral_mass": {
+        "mean": 1.7284577306667775e-16,
+        "minimum": -0.0,
+        "maximum": 4.746525902981574e-16
+      },
+      "effective_rank": {
+        "mean": 2.095515251908504,
+        "minimum": 2.0540269988290336,
+        "maximum": 2.119003843911655
+      },
+      "exact_alignment": {
+        "mean": 0.9996263129735982,
+        "minimum": 0.9994753222547036,
+        "maximum": 0.9997557709297946
+      }
+    },
+    {
+      "kind": "kernel",
+      "label": "readout_rank4",
+      "records": 3,
+      "mae_ha": {
+        "mean": 90.17433243436501,
+        "minimum": 87.5565826335131,
+        "maximum": 92.34096855283806
+      },
+      "rmse_ha": {
+        "mean": 103.11971986729975,
+        "minimum": 100.97629647182234,
+        "maximum": 104.60623965598603
+      },
+      "train_kernel_rmse": {
+        "mean": 0.024959220774266228,
+        "minimum": 0.021362865668054978,
+        "maximum": 0.03057503463219978
+      },
+      "cross_kernel_rmse": {
+        "mean": 0.0269274892460387,
+        "minimum": 0.025663012389861586,
+        "maximum": 0.02822733609076584
+      },
+      "negative_spectral_mass": {
+        "mean": 5.348624327569178e-16,
+        "minimum": 3.090696746720698e-16,
+        "maximum": 8.014868140606685e-16
+      },
+      "effective_rank": {
+        "mean": 1.9227848766867834,
+        "minimum": 1.9175449087970802,
+        "maximum": 1.9309464923135138
+      },
+      "exact_alignment": {
+        "mean": 0.999614447463684,
+        "minimum": 0.9994894559274481,
+        "maximum": 0.999709710727509
+      }
+    },
+    {
+      "kind": "selector",
+      "label": "uniform_all",
+      "records": 3,
+      "mae_ha": {
+        "mean": 84.9227162840592,
+        "minimum": 40.239522210847255,
+        "maximum": 107.26431332066518
+      },
+      "rmse_ha": {
+        "mean": 112.72735707940869,
+        "minimum": 42.937240250774984,
+        "maximum": 147.62241549372553
+      },
+      "feasible_fraction": {
+        "mean": 0.208984375,
+        "minimum": 0.203125,
+        "maximum": 0.2119140625
+      },
+      "gap_to_exact": {
+        "mean": 0.023969368932906115,
+        "minimum": 4.551914400963142e-15,
+        "maximum": 0.0719081067987089
+      },
+      "selected_subsets": [
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "kind": "selector",
+      "label": "uniform_feasible",
+      "records": 3,
+      "mae_ha": {
+        "mean": 107.26431332066518,
+        "minimum": 107.26431332066518,
+        "maximum": 107.26431332066518
+      },
+      "rmse_ha": {
+        "mean": 147.62241549372553,
+        "minimum": 147.62241549372553,
+        "maximum": 147.62241549372553
+      },
+      "feasible_fraction": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "gap_to_exact": {
+        "mean": 3.793262000802618e-15,
+        "minimum": 3.497202527569243e-15,
+        "maximum": 3.941291737419306e-15
+      },
+      "selected_subsets": [
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "kind": "selector",
+      "label": "exact_210",
+      "records": 3,
+      "mae_ha": {
+        "mean": 107.26431332066518,
+        "minimum": 107.26431332066518,
+        "maximum": 107.26431332066518
+      },
+      "rmse_ha": {
+        "mean": 147.62241549372553,
+        "minimum": 147.62241549372553,
+        "maximum": 147.62241549372553
+      },
+      "feasible_fraction": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "gap_to_exact": {
+        "mean": 5.995204332975845e-15,
+        "minimum": 5.995204332975845e-15,
+        "maximum": 5.995204332975845e-15
+      },
+      "selected_subsets": [
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "kind": "selector",
+      "label": "ideal",
+      "records": 3,
+      "mae_ha": {
+        "mean": 84.9227162840592,
+        "minimum": 40.239522210847255,
+        "maximum": 107.26431332066518
+      },
+      "rmse_ha": {
+        "mean": 112.72735707940869,
+        "minimum": 42.937240250774984,
+        "maximum": 147.62241549372553
+      },
+      "feasible_fraction": {
+        "mean": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0
+      },
+      "logical_feasible_probability": {
+        "mean": 0.9999999999999994,
+        "minimum": 0.9999999999999994,
+        "maximum": 0.9999999999999994
+      },
+      "gap_to_exact": {
+        "mean": 0.023969368932905095,
+        "minimum": 3.774758283725532e-15,
+        "maximum": 0.07190810679870713
+      },
+      "selected_subsets": [
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "kind": "selector",
+      "label": "raw",
+      "records": 3,
+      "mae_ha": {
+        "mean": 107.26431332066518,
+        "minimum": 107.26431332066518,
+        "maximum": 107.26431332066518
+      },
+      "rmse_ha": {
+        "mean": 147.62241549372553,
+        "minimum": 147.62241549372553,
+        "maximum": 147.62241549372553
+      },
+      "feasible_fraction": {
+        "mean": 0.4768880208333333,
+        "minimum": 0.4599609375,
+        "maximum": 0.5029296875
+      },
+      "logical_feasible_probability": {
+        "mean": 0.7698961322184132,
+        "minimum": 0.7698961322184132,
+        "maximum": 0.7698961322184132
+      },
+      "gap_to_exact": {
+        "mean": 4.977499893736119e-15,
+        "minimum": 4.6074255521944e-15,
+        "maximum": 5.440092820663267e-15
+      },
+      "selected_subsets": [
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "kind": "selector",
+      "label": "dd",
+      "records": 3,
+      "mae_ha": {
+        "mean": 107.26431332066518,
+        "minimum": 107.26431332066518,
+        "maximum": 107.26431332066518
+      },
+      "rmse_ha": {
+        "mean": 147.62241549372553,
+        "minimum": 147.62241549372553,
+        "maximum": 147.62241549372553
+      },
+      "feasible_fraction": {
+        "mean": 0.5250651041666666,
+        "minimum": 0.5166015625,
+        "maximum": 0.53515625
+      },
+      "logical_feasible_probability": {
+        "mean": 0.909466802960469,
+        "minimum": 0.909466802960469,
+        "maximum": 0.909466802960469
+      },
+      "gap_to_exact": {
+        "mean": 5.10702591327572e-15,
+        "minimum": 4.274358644806853e-15,
+        "maximum": 6.050715484207103e-15
+      },
+      "selected_subsets": [
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "kind": "selector",
+      "label": "gate_twirl",
+      "records": 3,
+      "mae_ha": {
+        "mean": 107.26431332066518,
+        "minimum": 107.26431332066518,
+        "maximum": 107.26431332066518
+      },
+      "rmse_ha": {
+        "mean": 147.62241549372553,
+        "minimum": 147.62241549372553,
+        "maximum": 147.62241549372553
+      },
+      "feasible_fraction": {
+        "mean": 0.4641927083333333,
+        "minimum": 0.4443359375,
+        "maximum": 0.4765625
+      },
+      "logical_feasible_probability": {
+        "mean": 0.7650848312252335,
+        "minimum": 0.7625764084332622,
+        "maximum": 0.7678506164228844
+      },
+      "gap_to_exact": {
+        "mean": 5.828670879282072e-15,
+        "minimum": 4.773959005888173e-15,
+        "maximum": 6.661338147750939e-15
+      },
+      "selected_subsets": [
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "kind": "selector",
+      "label": "dd_gate_twirl",
+      "records": 3,
+      "mae_ha": {
+        "mean": 84.9227162840592,
+        "minimum": 40.239522210847255,
+        "maximum": 107.26431332066518
+      },
+      "rmse_ha": {
+        "mean": 112.72735707940869,
+        "minimum": 42.937240250774984,
+        "maximum": 147.62241549372553
+      },
+      "feasible_fraction": {
+        "mean": 0.5172526041666666,
+        "minimum": 0.5087890625,
+        "maximum": 0.52734375
+      },
+      "logical_feasible_probability": {
+        "mean": 0.8824462867047308,
+        "minimum": 0.8780936628791963,
+        "maximum": 0.8859727306413478
+      },
+      "gap_to_exact": {
+        "mean": 0.023969368932906503,
+        "minimum": 5.662137425588298e-15,
+        "maximum": 0.07190810679870807
+      },
+      "selected_subsets": [
+        [
+          1,
+          2,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "kind": "selector",
+      "label": "dd_gate_measurement_twirl",
+      "records": 3,
+      "mae_ha": {
+        "mean": 62.58111924745324,
+        "minimum": 40.239522210847255,
+        "maximum": 107.26431332066518
+      },
+      "rmse_ha": {
+        "mean": 77.83229866509184,
+        "minimum": 42.937240250774984,
+        "maximum": 147.62241549372553
+      },
+      "feasible_fraction": {
+        "mean": 0.5498046875,
+        "minimum": 0.544921875,
+        "maximum": 0.5595703125
+      },
+      "logical_feasible_probability": {
+        "mean": 0.8824462867047308,
+        "minimum": 0.8780936628791963,
+        "maximum": 0.8859727306413478
+      },
+      "gap_to_exact": {
+        "mean": 0.047938737865807025,
+        "minimum": 3.774758283725532e-15,
+        "maximum": 0.07190810679870879
+      },
+      "selected_subsets": [
+        [
+          1,
+          2,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "kind": "selector",
+      "label": "readout_corrected",
+      "records": 3,
+      "mae_ha": {
+        "mean": 62.58111924745324,
+        "minimum": 40.239522210847255,
+        "maximum": 107.26431332066518
+      },
+      "rmse_ha": {
+        "mean": 77.83229866509184,
+        "minimum": 42.937240250774984,
+        "maximum": 147.62241549372553
+      },
+      "feasible_fraction": {
+        "mean": 0.6588541666666666,
+        "minimum": 0.63671875,
+        "maximum": 0.693359375
+      },
+      "gap_to_exact": {
+        "mean": 0.047938737865807414,
+        "minimum": 4.218847493575595e-15,
+        "maximum": 0.07190810679870929
+      },
+      "selected_subsets": [
+        [
+          1,
+          2,
+          6,
+          7
+        ],
+        [
+          1,
+          2,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "kind": "control",
+      "label": "classical_rbf",
+      "records": 1,
+      "mae_ha": {
+        "mean": 117.01070550847118,
+        "minimum": 117.01070550847118,
+        "maximum": 117.01070550847118
+      },
+      "rmse_ha": {
+        "mean": 148.2315384495409,
+        "minimum": 148.2315384495409,
+        "maximum": 148.2315384495409
+      }
+    },
+    {
+      "kind": "control",
+      "label": "training_mean",
+      "records": 1,
+      "mae_ha": {
+        "mean": 117.42902345966033,
+        "minimum": 117.42902345966033,
+        "maximum": 117.42902345966033
+      },
+      "rmse_ha": {
+        "mean": 118.96201519783682,
+        "minimum": 118.96201519783682,
+        "maximum": 118.96201519783682
+      }
+    }
+  ],
+  "bundle": "docs/data/pipeline_mitigation_evidence.zip",
+  "bundle_sha256": "c6c3254ced578a59a0659dd970e6125282522c96ce2f539c70a6b483fb824719",
+  "bundle_bytes": 1349564,
+  "hardware_jobs_submitted": 0,
+  "final_test_accessed": false,
+  "total_local_shots": 2156544
+}

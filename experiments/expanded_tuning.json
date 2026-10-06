@@ -1,0 +1,229 @@
+{
+  "study": "expanded-tuning-v1",
+  "dataset": "docs/data/forest_selector_scaling_training.csv",
+  "input_sha256": {
+    "docs/data/forest_selector_scaling_training.csv": "acdf25db5d77510af958abc33aceceb870374208740f3a57d37e4758ac29e105",
+    "docs/data/forest_expansion_training.csv": "2b5f52acc0b2409ae72ad65b06b070085f2e32acbf8a30bb3cfec418872c7805",
+    "docs/data/forest_feature_summary.json": "84ce3d7e7669260eae881843ff43ab874e3a3fce6a3f0bd06c7bc150b91653c9"
+  },
+  "folds": [
+    [
+      1988,
+      2006,
+      2007,
+      2010
+    ],
+    [
+      1988,
+      2010,
+      2011,
+      2014
+    ],
+    [
+      1988,
+      2014,
+      2015,
+      2018
+    ]
+  ],
+  "candidate_features": [
+    "annual_mean_temp_c",
+    "summer_mean_temp_c",
+    "annual_precip_mm",
+    "summer_precip_mm",
+    "forest_closure",
+    "forest_biomass",
+    "forest_age",
+    "spruce_pine_share_of_three_species",
+    "lag_reported_fire_area_ha",
+    "prior_epoch_biomass_change_per_year",
+    "spring_precip_mm",
+    "annual_snowfall_cm",
+    "annual_highest_max_temp_c",
+    "annual_lowest_min_temp_c",
+    "annual_heating_degree_days",
+    "annual_cooling_degree_days",
+    "broadleaf_crown_closure",
+    "black_spruce_crown_closure",
+    "jack_pine_crown_closure",
+    "lag_recorded_incidents"
+  ],
+  "panels": {
+    "weather4": [
+      "annual_mean_temp_c",
+      "summer_mean_temp_c",
+      "annual_precip_mm",
+      "summer_precip_mm"
+    ],
+    "mi4": [],
+    "interleaved8": [
+      "annual_mean_temp_c",
+      "forest_closure",
+      "summer_mean_temp_c",
+      "forest_biomass",
+      "annual_precip_mm",
+      "forest_age",
+      "summer_precip_mm",
+      "spruce_pine_share_of_three_species"
+    ]
+  },
+  "svr": {
+    "C": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "epsilon": [
+      0.05,
+      0.2,
+      0.5
+    ]
+  },
+  "quantum": {
+    "amplitudes": {
+      "pi64": 0.04908738521234052,
+      "pi32": 0.09817477042468103,
+      "pi16": 0.19634954084936207,
+      "pi8": 0.39269908169872414,
+      "first_half_wide": [
+        0.19634954084936207,
+        0.09817477042468103
+      ],
+      "second_half_wide": [
+        0.09817477042468103,
+        0.19634954084936207
+      ]
+    },
+    "depths": [
+      1,
+      2
+    ],
+    "topologies": [
+      "product",
+      "linear",
+      "ring"
+    ],
+    "orders": [
+      "canonical",
+      "reversed"
+    ]
+  },
+  "rbf_multipliers": [
+    0.001,
+    0.001214806318867293,
+    0.0014757543923599032,
+    0.0017927557609349744,
+    0.0021778510265695493,
+    0.002645667188628309,
+    0.0032139732183655394,
+    0.003904354974340707,
+    0.004743035093930039,
+    0.0057618690027155355,
+    0.00699955487298442,
+    0.008503103488959834,
+    0.010329623848370932,
+    0.012548492322523292,
+    0.015243987765659016,
+    0.01851849266245829,
+    0.02249638190225193,
+    0.02732874688650746,
+    0.033199134404454135,
+    0.040330518255455444,
+    0.04899376841991999,
+    0.059517939461639635,
+    0.07230276894396087,
+    0.08783386058472559,
+    0.10670112884883351,
+    0.12962120555583614,
+    0.157464659568426,
+    0.19128906344201127,
+    0.23237916299956177,
+    0.28229567558496027,
+    0.34293457048952153,
+    0.4165990831887118,
+    0.5060871986919682,
+    0.6147979268688502,
+    0.7468604063867911,
+    0.907290740990469,
+    1.1021825252050101,
+    1.3389382961641558,
+    1.626550702753625,
+    1.9759440716631398,
+    2.4003893439847492,
+    2.91600814281439,
+    3.5423851177594003,
+    4.303311824915584,
+    5.2276903969637925,
+    6.350631327313483,
+    7.714787065217011,
+    9.371972075541283,
+    11.385130897615369,
+    13.830728955554406,
+    16.801656929748326,
+    20.410759005698708,
+    24.7951190130003,
+    30.12126725405938,
+    36.59150579252181,
+    44.45159245362465,
+    54.0000753963769,
+    65.5996328108289,
+    79.69084845396914,
+    96.80894625777756,
+    117.60411963683259,
+    142.86622765964933,
+    173.55479611367522,
+    210.83546298861737,
+    256.1242526798837,
+    311.1413605706859,
+    377.976490882236,
+    459.16822950702607,
+    557.8004666282427,
+    677.6195315271151,
+    823.1764886870343,
+    1000.0
+  ],
+  "ridge_alpha": [
+    0.0001,
+    0.00046415888336127773,
+    0.002154434690031882,
+    0.01,
+    0.046415888336127774,
+    0.21544346900318823,
+    1.0,
+    4.641588833612772,
+    21.54434690031882,
+    100.0,
+    464.1588833612773,
+    2154.4346900318824,
+    10000.0
+  ],
+  "fixed_qsvr": {
+    "model": "qsvr",
+    "circuit": {
+      "amplitude": "pi32",
+      "reps": 1,
+      "topology": "linear",
+      "order": "canonical"
+    },
+    "C": 1.0,
+    "epsilon": 0.2
+  },
+  "budget": {
+    "model_fits": 35379,
+    "elapsed_soft_limit_seconds": 3600,
+    "hardware_jobs": 0
+  },
+  "code_paths": [
+    "wildfire_lab/expanded_tuning.py",
+    "wildfire_lab/nested_search.py",
+    "wildfire_lab/search_kernels.py",
+    "wildfire_lab/forest_models.py",
+    "wildfire_lab/forest_run.py",
+    "wildfire_lab/annual_classical.py",
+    "wildfire_lab/library_kernel.py"
+  ],
+  "selection_policy": "Three expanding chronological inner folds for each outer fold/panel. Refit MI selection, median/scale and target log1p scale inside every split; refit on outer training after choosing by pooled inner MAE in hectares/fire. Ties choose first declared candidate. Outer validation never chooses C/epsilon/circuit/MI. Same train labels for each classical/quantum panel.",
+  "candidate_policy": "72 circuit candidates x9 C/epsilon =648 QSVR;72 logspace RBF gamma multipliers x9 same C/epsilon =648 RBF;13 ridge. Candidate equality is not compute equality. Product canonical/reversed is an intentional permutation null control and duplicates are retained/disclosed. Two amplitude block weights attach to original panel identity before reverse. Interleaved8 ordering follows previously inspected exploratory evidence; no independent confirmation claimed.",
+  "kernel_policy": "Exact FidelityStatevectorKernel with counting Statevector and cached simulations for broad screening;24 labels-free circuit-family/width parity checks use actual analytic FidelityQuantumKernel ComputeUncompute. No finite-shot or hardware training claimed. Selected fits save coefficients/matrices for arithmetic replay.",
+  "information_policy": "Only pinned1988\u20132018 province-year table. Three reused development folds, retrospective SCANFI future-imagery reconstruction and source limits preserved. No original2019\u20132024 files accessed or changed. New exclusive output, no rerun/retry."
+}

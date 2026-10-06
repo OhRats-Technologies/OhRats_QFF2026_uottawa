@@ -1,0 +1,54 @@
+{
+  "views": [
+    {
+      "width": 1280,
+      "height": 720,
+      "visible": true,
+      "scroll": 0,
+      "horizontalOverflow": false,
+      "matrixLayout": {
+        "cellsContained": true,
+        "separated": true,
+        "densePreview": true,
+        "cells": 64
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "visible": true,
+      "scroll": 0,
+      "horizontalOverflow": false,
+      "matrixLayout": {
+        "cellsContained": true,
+        "separated": true,
+        "densePreview": true,
+        "cells": 64
+      }
+    },
+    {
+      "width": 1440,
+      "height": 820,
+      "visible": true,
+      "scroll": 0,
+      "horizontalOverflow": false,
+      "matrixLayout": {
+        "cellsContained": true,
+        "separated": true,
+        "densePreview": true,
+        "cells": 64
+      }
+    }
+  ],
+  "errors": [],
+  "source_sha256": {
+    "web/demo/strategy/bench.js": "963c8038ca1b4a170265583bc4f15baafbe5326308b030dd687d92529bd2f530",
+    "web/demo/strategy/styles/bench-detail.css": "3f22973a4758d68d984637c900186dfb07d6c3ac57fe1cd8ca63fd6a69d36202",
+    "web/demo/strategy/compact-check.mjs": "93b23506cab45098bb49cb0f29b34b9752387f967f528117b2b45a50a2a0a536",
+    "web/demo/assets/strategy.js": "5e9c8d8cece86d281a31e46b1fd6ea3f4e2c8b81f77ac15c14258aaf99f929f5"
+  },
+  "scope": "Actual laptop controls after two sample actions: all 64 preview cells stay inside the matrix, separated from the cost readout. Exact costs remain in the inspector. No scientific arithmetic changed.",
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0
+}

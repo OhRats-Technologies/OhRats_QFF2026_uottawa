@@ -1,0 +1,106 @@
+{
+  "checked_utc": "2026-10-06T06:54:49.661Z",
+  "status": "passed",
+  "source_sha256": {
+    "web/demo/strategy/sound.js": "c841272db004f81b81cbe1a4be63898375b1fad9e9cb788fb73b3dd5234df70d",
+    "web/demo/strategy/main.js": "ed95067d799bf889f67e5290bde0545667682d159de85dcd1b586f84f446cb4a",
+    "web/demo/strategy/audio-check.mjs": "9bd2b8e2f1294e6717622e580e476b98bbf666e79afb9775921d29a66f3cedda",
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/assets/strategy.js": "7ccc7c84b23851ba146a38a35076ead8207725acbb30c38f65d3ea7c30c30153"
+  },
+  "old_commit": "f2c86e2",
+  "old_source_sha256": "629779fe79202f18e6058949b34c6d5b324a77fda67e8d1d49c30d42c59b16ad",
+  "offline": {
+    "cues": [
+      {
+        "kind": "crew",
+        "peak": 0.06247416138648987,
+        "rms": 0.006841199427574039,
+        "finite": true,
+        "tail_peak": 0
+      },
+      {
+        "kind": "water",
+        "peak": 0.04660799354314804,
+        "rms": 0.004085581104547365,
+        "finite": true,
+        "tail_peak": 0
+      },
+      {
+        "kind": "inspect",
+        "peak": 0.062455132603645325,
+        "rms": 0.006628338018718536,
+        "finite": true,
+        "tail_peak": 0
+      },
+      {
+        "kind": "advance",
+        "peak": 0.033049214631319046,
+        "rms": 0.0023132213320433493,
+        "finite": true,
+        "tail_peak": 0
+      },
+      {
+        "kind": "upgrade",
+        "peak": 0.09044179320335388,
+        "rms": 0.011338834249231199,
+        "finite": true,
+        "tail_peak": 0
+      },
+      {
+        "kind": "won",
+        "peak": 0.06670059263706207,
+        "rms": 0.01210616743001527,
+        "finite": true,
+        "tail_peak": 0
+      },
+      {
+        "kind": "lost",
+        "peak": 0.059345267713069916,
+        "rms": 0.008991503367239407,
+        "finite": true,
+        "tail_peak": 0
+      }
+    ],
+    "old_mute": {
+      "peak": 0.06670059263706207,
+      "rms": 0.014826966472119096,
+      "finite": true
+    },
+    "mute": {
+      "peak": 0,
+      "rms": 0,
+      "finite": true
+    },
+    "hidden": {
+      "peak": 0,
+      "rms": 0,
+      "finite": true
+    }
+  },
+  "no_context_before_opt_in": true,
+  "mute_stops_scheduled_sources": true,
+  "hidden_stops_sources_and_prevents_cues": true,
+  "returning_does_not_replay": true,
+  "sound_toggle_preserves_save": true,
+  "fallback": [
+    {
+      "failure": "constructor",
+      "gameplay_continues": true,
+      "no_horizontal_overflow": true
+    },
+    {
+      "failure": "resume",
+      "gameplay_continues": true,
+      "no_horizontal_overflow": true
+    }
+  ],
+  "errors": [],
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "scope": "Offline waveform and browser control/failure-injection checks. Browser output muted during authoring; not a speaker/listening trial, measured loudness certification or OS visibility test."
+}

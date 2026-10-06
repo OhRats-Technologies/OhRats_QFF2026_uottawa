@@ -1,0 +1,329 @@
+{
+  "status": "verified",
+  "source_layers_checked": 42,
+  "rows": [
+    {
+      "layer": "closure",
+      "epoch": 1985,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 33.022277926176095
+    },
+    {
+      "layer": "closure",
+      "epoch": 1990,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 32.661683265247724
+    },
+    {
+      "layer": "closure",
+      "epoch": 1995,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 32.98701817711326
+    },
+    {
+      "layer": "closure",
+      "epoch": 2000,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 32.96718797677774
+    },
+    {
+      "layer": "closure",
+      "epoch": 2005,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 33.259069016330386
+    },
+    {
+      "layer": "closure",
+      "epoch": 2010,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 34.09289391141997
+    },
+    {
+      "layer": "closure",
+      "epoch": 2015,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 34.827931232284016
+    },
+    {
+      "layer": "biomass",
+      "epoch": 1985,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 35.86937520947861
+    },
+    {
+      "layer": "biomass",
+      "epoch": 1990,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 35.81274433651527
+    },
+    {
+      "layer": "biomass",
+      "epoch": 1995,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 36.1636282424198
+    },
+    {
+      "layer": "biomass",
+      "epoch": 2000,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 35.70587856047402
+    },
+    {
+      "layer": "biomass",
+      "epoch": 2005,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 35.351145326380376
+    },
+    {
+      "layer": "biomass",
+      "epoch": 2010,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 35.98648319247392
+    },
+    {
+      "layer": "biomass",
+      "epoch": 2015,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 36.60909535709286
+    },
+    {
+      "layer": "age",
+      "epoch": 1985,
+      "model_eligible": true,
+      "valid_samples": 825063,
+      "mean": 45.890042336160995
+    },
+    {
+      "layer": "age",
+      "epoch": 1990,
+      "model_eligible": true,
+      "valid_samples": 824974,
+      "mean": 48.907074647201
+    },
+    {
+      "layer": "age",
+      "epoch": 1995,
+      "model_eligible": true,
+      "valid_samples": 824849,
+      "mean": 51.69210607032318
+    },
+    {
+      "layer": "age",
+      "epoch": 2000,
+      "model_eligible": true,
+      "valid_samples": 824759,
+      "mean": 54.381646032356116
+    },
+    {
+      "layer": "age",
+      "epoch": 2005,
+      "model_eligible": false,
+      "valid_samples": 824694,
+      "mean": 57.423484346921406
+    },
+    {
+      "layer": "age",
+      "epoch": 2010,
+      "model_eligible": false,
+      "valid_samples": 824648,
+      "mean": 61.48676647490808
+    },
+    {
+      "layer": "age",
+      "epoch": 2015,
+      "model_eligible": false,
+      "valid_samples": 824544,
+      "mean": 65.14087544145613
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 1985,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 9.136737702087522
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 1990,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 9.05762908408775
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 1995,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 9.437657619545773
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 2000,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 9.515109396962135
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 2005,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 9.89201634231245
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 2010,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 10.338175205592632
+    },
+    {
+      "layer": "broadleaf",
+      "epoch": 2015,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 10.76563786816901
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 1985,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 15.499615155498816
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 1990,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 15.53961204671478
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 1995,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 15.334207752441875
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 2000,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 15.119552838509708
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 2005,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 14.803058089661041
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 2010,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 14.874381720703132
+    },
+    {
+      "layer": "black_spruce",
+      "epoch": 2015,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 14.522890851210681
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 1985,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 2.9377790564222224
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 1990,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 2.7735955162855683
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 1995,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 2.7443705175992945
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 2000,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 2.719343702129031
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 2005,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 2.813280425126217
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 2010,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 3.059178839425564
+    },
+    {
+      "layer": "jack_pine",
+      "epoch": 2015,
+      "model_eligible": true,
+      "valid_samples": 4529102,
+      "mean": 3.534987951253913
+    }
+  ],
+  "city_controls": [
+    {
+      "city": "Toronto",
+      "inside_ontario": true,
+      "roundtrip_error_degrees": 0.0
+    },
+    {
+      "city": "Windsor",
+      "inside_ontario": true,
+      "roundtrip_error_degrees": 7.105427357601002e-15
+    },
+    {
+      "city": "Ottawa",
+      "inside_ontario": true,
+      "roundtrip_error_degrees": 7.105427357601002e-15
+    },
+    {
+      "city": "Thunder Bay",
+      "inside_ontario": true,
+      "roundtrip_error_degrees": 1.4210854715202004e-14
+    }
+  ],
+  "source_bytes": 556056461,
+  "source_sha256": "8771d7bae11cae8a81f97e0932d2251587f8deff37858ead1d0418fa5016d6da",
+  "summary_sha256": "84ce3d7e7669260eae881843ff43ab874e3a3fce6a3f0bd06c7bc150b91653c9",
+  "new_downloads": 0,
+  "new_predictor_fits": 0,
+  "new_quantum_evaluations": 0,
+  "limitation": "Checks saved compressed/header bytes and decoded-array hashes/masks/statistics. Does not independently re-decode all source pixels, certify native30m inventories or establish historical availability of reconstructed imagery."
+}

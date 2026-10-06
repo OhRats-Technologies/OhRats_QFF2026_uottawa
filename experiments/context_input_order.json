@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "id": "context-input-order-v1",
+  "purpose": "Fixed input-only control for architecture versus data effects in the context encoding lesson",
+  "already_inspected": "The earlier height and constant-ancilla outcomes motivate this probe. No matrices, states or order outcomes from this diagnostic were inspected before freezing it. This is an expected symmetry/design diagnostic, not independent algorithm discovery.",
+  "input": "docs/data/annual_training.csv",
+  "features": [
+    "annual_mean_temp_c",
+    "summer_mean_temp_c",
+    "annual_precip_mm",
+    "summer_precip_mm"
+  ],
+  "years": [
+    1988,
+    2018
+  ],
+  "observation_unit": "Ontario province-year inputs; no outcomes used",
+  "preprocessing": "Read only year and four climate columns. Median impute and StandardScaler on all 31 training rows; global training-input geometry, not cross-validation or a predictive recipe. Permute after preprocessing.",
+  "orders": [
+    {
+      "name": "identity",
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "name": "reverse",
+      "indices": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "middle_swap",
+      "indices": [
+        0,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "name": "rotate_left",
+      "indices": [
+        1,
+        2,
+        3,
+        0
+      ]
+    }
+  ],
+  "graphs": [
+    "linear",
+    "full"
+  ],
+  "amplitude_pi_denominators": [
+    4,
+    32
+  ],
+  "map": {
+    "function": "qiskit.circuit.library.zz_feature_map",
+    "qubits": 4,
+    "reps": 1,
+    "alpha": 2,
+    "angles": "pi / denominator * tanh(z / 2)",
+    "states": "Exact Qiskit Statevector; no sampler or compute-uncompute job"
+  },
+  "source": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.circuit.library.zz_feature_map",
+  "controls": [
+    "Classical RBF on standardized inputs; gamma is inverse median positive squared pair distance and is held fixed under permutations",
+    "Full graph is invariant under input/qubit relabelling; linear reversal is a graph automorphism",
+    "Saved statevector relabelling using Qiskit little-endian basis indices must match these symmetries",
+    "Other linear permutations can change graph edges; no ordering is ranked or promoted"
+  ],
+  "metrics": [
+    "Maximum entry change from same-graph/scale identity order",
+    "Relative Frobenius change, off-diagonal mean, effective rank and minimum eigenvalue",
+    "State relabelling residual and classical RBF invariance",
+    "Untranspiled gate counts; not routed hardware cost"
+  ],
+  "source_sha256": {
+    "docs/data/annual_training.csv": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+    "scripts/context/ordering.py": "4e8924ab76405364e6635bf27f8e6155d817df4a81e3fd4f1985587f1894d0e7",
+    "scripts/context/ordering_math.py": "0808b6d410b32bfbc0fdade5b458ed44ea2f5ab592d310ec218e297b9df24878",
+    "scripts/context/ordering_collect.py": "9f46a23f7bae6b597186631a1d6d31662fadee7ab2a5a5deba27a1f48c1540ed",
+    "pyproject.toml": "a1d3886e050b83e8dbcb12222575303fdf4cb4b19a30e4a0e4e8512469ff2136",
+    "uv.lock": "0ce47161596d8a6cba697ac2f106b3bcf7cd3f67538174ce397e33dd5d00378d"
+  },
+  "software": {
+    "qiskit": "2.5.2",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1"
+  },
+  "tolerance": 1e-10,
+  "budget": {
+    "statevector_preparations": 496,
+    "kernel_matrices": 16,
+    "gram_entries": 15376,
+    "preprocessing_fits": 2,
+    "predictor_fits": 0,
+    "sampler_pair_circuits": 0,
+    "shots": 0,
+    "hardware_jobs": 0,
+    "soft_seconds": 240
+  },
+  "output": ".cache/context/input-order-v1",
+  "collection": "Recompute from saved raw inputs, states and matrices without Qiskit calls or new preprocessing/model fits. Collection code is frozen with the plan.",
+  "interpretation": "Known graph-symmetry and feature-order checks on reused training inputs. No labels or 2019\u20132024 inputs, prediction scores, optimal-order selection, noise mitigation, hardware, novel algorithm, architectural breakthrough or quantum-advantage claim. Preserve the submitted annual models/results and all prior namespaces."
+}

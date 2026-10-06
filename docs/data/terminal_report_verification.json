@@ -1,0 +1,102 @@
+{
+  "checked_utc": "2026-10-06T06:35:18.419Z",
+  "status": "passed",
+  "source_sha256": {
+    "web/demo/strategy/rules.js": "0c2016a097a63d9e3beb2d035999cd37b2982e5263104fa8503fe8581fe35023",
+    "web/demo/strategy/scenario.js": "0445d57368b4d38c2748e979477bf0fa1dd17376b35be36bae78afbe30828ae8",
+    "web/demo/strategy/upgrades.js": "c7ef00e8e48c773903d4822aa9c476485336b73e7117a0b2482df25321e4da2b",
+    "web/demo/strategy/session.js": "189e4834fa398b8d602c71270138d20603402f908683c4c58737061ad3f8ef8c",
+    "web/demo/strategy/ui.js": "eff5bdde7134ab9d8779de6188964f06d5e638525721cb5fd892e2674ce3a2d3",
+    "web/demo/strategy/main.js": "0c7355425a36e4b1e1c68f38faf90d7ed1162b610b0f6fc6093827cddedc0b2a",
+    "web/demo/strategy/terminal-check.mjs": "f2aba53622312c8ccb97edf9d2fcf4cb0408aef6b96e3026bed88b8aaa8c47f1",
+    "web/demo/assets/strategy.js": "ae56e59b7975be1c1fd25449dbdca0d06b87d360e3e43333af61ef750202afb3"
+  },
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "seed": 2,
+      "status": "won",
+      "completed_fronts": 12,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "new_seed"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "seed": 7,
+      "status": "lost",
+      "completed_fronts": 5,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "same_seed"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "seed": 2,
+      "status": "won",
+      "completed_fronts": 12,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "new_seed"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "seed": 7,
+      "status": "lost",
+      "completed_fronts": 5,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "same_seed"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "seed": 2,
+      "status": "won",
+      "completed_fronts": 12,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "new_seed"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "seed": 7,
+      "status": "lost",
+      "completed_fronts": 5,
+      "inspected_without_reopening": true,
+      "keyboard_report": true,
+      "resume_report": true,
+      "report_preserves_moves": true,
+      "restart": "same_seed"
+    }
+  ],
+  "errors": [],
+  "game_rule_changes": false,
+  "predictor_fits": 0,
+  "qiskit_statevector_executions": 0,
+  "hardware_jobs": 0,
+  "scope": "Actual control-driven endings at three viewports with reduced motion and blocked external fonts. No new balance estimate, human enjoyment trial or real fire-response validation.",
+  "before_fix": {
+    "title": "The line broke.",
+    "debriefOpen": false,
+    "advanceDisabled": true,
+    "replayVisible": false,
+    "newSeasonVisible": false
+  },
+  "probe_note": "The initial probe omitted the mandatory fourth-front upgrade; the corrected probe confirmed the terminal-menu defect before the fix."
+}

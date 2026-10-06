@@ -4,7 +4,11 @@ Qiskit Fall Fest **open challenge · Quantum Machine Learning / Sustainability**
 
 **Finding:** RBF leads development. None of eleven main models beats the training mean on the six reused evaluation years. More qubits do not automatically yield useful similarities; encoding scale changes concentration and conditioning. We demonstrate no quantum or hardware advantage.
 
-[Judge guide](docs/JUDGES.md) · [Presentation](web/presentation/README.md) · [Interactive QSVR demo](web/demo/README.md) · [Report](docs/REPORT.md) · [Frozen evidence](docs/ANNUAL_FINAL.md)
+[Judge guide](docs/JUDGES.md) · [Presentation](web/presentation/README.md) · [Fireline + QSVR walkthrough](web/demo/README.md) · [Report](docs/REPORT.md) · [Frozen evidence](docs/ANNUAL_FINAL.md)
+
+**Comprehensive followup:** [goal receipt](GOAL.md), [coverage](docs/RESEARCH_COVERAGE.md) and [new findings](docs/RESEARCH_FINDINGS.md). Six local followups and nine new IBM jobs are measured (82 charged QPU seconds). Broader tuning and mitigation give mixed results; all ten saved studies replay from a clean tracked tree and209 tests pass. These followups preserve the frozen evaluation above.
+
+**Measurement-count followup:** [512/1,024/2,048 shots on Marrakesh and Quebec](docs/SHOT_SWEEP.md). All 12 real jobs completed: 301,056 shots, 108 charged QPU seconds. More shots collect candidates but do not repair low feasible yield; measured subset quality and classical controls are reported.
 
 ## Data and design
 
@@ -39,9 +43,21 @@ MAE in **ha/fire**, lower is better. Development is the mean of three chronologi
 | RBF-SVR | **77.02** | 299.81 |
 | QSVR | 86.64 | 280.68 |
 
-QSVR beating RBF on reused years does not establish useful prediction: both lose to the constant. Annual extremes remain poorly predicted. Ten-qubit cross-year fidelity averages 0.000899 and predictions remain close to the fitted intercept. A later **input-only** scale diagnostic changes ten-qubit training similarity from 0.000805 to 0.538897, but narrower angles can produce poor conditioning. **No new scale was selected or tested for prediction.** [Annual errors and all models](docs/ANNUAL_FINAL.md) · [Bandwidth evidence](docs/ANNUAL_BANDWIDTH_GEOMETRY.md).
+QSVR beating RBF on reused years does not establish useful prediction: both lose to the constant. Annual extremes remain poorly predicted. Ten-qubit cross-year fidelity averages 0.000899 and predictions remain close to the fitted intercept. A later **input-only** scale diagnostic changes ten-qubit training similarity from 0.000805 to 0.538897, but narrower angles can produce poor conditioning. **This diagnostic fitted no predictor or replacement for the frozen final model.** [Annual errors and all models](docs/ANNUAL_FINAL.md) · [Bandwidth evidence](docs/ANNUAL_BANDWIDTH_GEOMETRY.md).
+
+## View the presentation and demo
+
+```sh
+bun run web/presentation/serve.ts
+```
+
+[Presentation](http://127.0.0.1:8790/web/presentation/) · [Fireline](http://127.0.0.1:8790/web/demo/) · [QSVR walkthrough](http://127.0.0.1:8790/web/demo/lab.html). Viewing uses committed assets and Bun. The [current clean-tree check](docs/data/current_view_portability.json) verifies slides, context and game controls with external requests blocked, separately from scientific reproduction.
 
 ## Reproduce the result
+
+The separate [pipeline mitigation study](docs/PIPELINE_MITIGATION.md) applies DD/twirling, calibrated readout and kernel repair to actual QSVR/QAOA/SQD circuits. The [Fez/Marrakesh/Quebec comparison](docs/IBM_PIPELINE_MITIGATION.md) returned 224,256 physical shots across six jobs, using **75 charged QPU seconds**. Geometry repair and predictive error do not consistently improve together.
+
+Later, separately frozen development work adds [six numerical forest families](docs/FOREST_CONTEXT.md), [10/16/20-candidate selection](docs/SELECTOR_SCALING.md) and [actual expanded hardware selection/QSVR](docs/SELECTOR_HARDWARE.md). Forest inputs and graph-matched controls reveal retrospective associations. Optimized two-layer QAOA improves ideal20-feature objective sampling, but that subset predicts worse with QSVR; deep hardware preparation sharply reduces feasible yield. These development results do not replace the original final-year evidence or demonstrate quantum advantage. Public collectors replay saved counts and prediction equations without fits, states, draws, credentials or downloads. Game instruments remain separate.
 
 Use Python **3.12** and [uv](https://docs.astral.sh/uv/). Versions are locked: Qiskit 2.5.2, Qiskit Machine Learning 0.9.1, scikit-learn 1.9.1 and qiskit-addon-sqd 0.13.1.
 
@@ -55,6 +71,8 @@ The 267 kB public bundle reproduces **83 predictions and 24 matrix pairs** witho
 Final training/evaluation took **93.75/9.63 seconds**, excluding environment installation: 36/12 quantum matrices and 12,092/2,232 analytic fidelity-pair circuits. There were 80 final sklearn/QSVR fits, plus a polynomial trend; evaluation performed zero fits. The separate geometry diagnostic used ten matrices/4,650 analytic pair circuits in 48.89 seconds. **No hardware jobs were submitted for this annual study.** [Resource receipts](docs/ANNUAL_FINAL.md).
 
 Historical scientific verification passes **145 tests / 69 CLI help paths** at `870abe2`; presentation verification is recorded separately. Fresh-clone setup and evidence replay pass in a new isolated environment on this Mac, using uv's shared package cache. Collection took 35.57 seconds. [QA receipt](docs/data/annual_bandwidth_repository_checks.json) · [Fresh-clone receipt](docs/data/judge_portability_receipt.json).
+
+The later forest/hardware extension passes **185 tests /81 CLI paths** and public replay from a source-free tracked clone using the existing locked environment. [Current scoped completion and verification](docs/data/forest_hardware_handoff.json) preserves the earlier receipts and records the actual hardware charges, failures and remaining monthly allowance.
 
 ## Interpretation and credits
 
