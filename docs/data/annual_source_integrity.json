@@ -1,0 +1,1902 @@
+{
+  "status": "passed",
+  "source_commit_before_document_closeout": "7cb2e1d",
+  "nfdb_weather_boundary_and_31_raster_bodies_match": true,
+  "pinned_local_sources": {
+    "data/raw/nfdb-audit/source.zip": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+    ".cache/wildfire/processed/weather/52f047eb76b948cf66d5/weather_months.csv": "859c5153616f0b23b2af518d609590648ee56734582826bbf7545eb666dde8a4",
+    "data/raw/boundaries/ontario-2021.geojson": "d5af8d3e98aa9209f24bbab28e05b95f8685e1e36ae4df8f868108f5916fbfd3",
+    "data/raw/woodland/woodland-1987.tif": "a0903f07c49f00e7a62760bde2b666ff1319880754188c74bad37850afe4f0ff",
+    "data/raw/woodland/woodland-1988.tif": "fffd2ba0f7c68aaec0ff9825fe77a8902157df39a1c56f106e52d565e32eda5a",
+    "data/raw/woodland/woodland-1989.tif": "9263145de2ddc3719ba6d809fda58082f8c16334ce9238e57e81619c8a19b7ca",
+    "data/raw/woodland/woodland-1990.tif": "bcd35b5c30275e2e06a758e327aa13c3de0a115e999e1e546e4949cabf386cfa",
+    "data/raw/woodland/woodland-1991.tif": "05591af0b3de7bfacba3d89d06ddf605bdd993ad30c7a5a0ca8e046161d77c0e",
+    "data/raw/woodland/woodland-1992.tif": "a26f97ad00eb0c456d8f1d269437c1814a94d6725b7773b21ddb073cf43ecb9f",
+    "data/raw/woodland/woodland-1993.tif": "7cfd7f6ad9b65ec4d4e0b76ac33caaa78ced471b55f68ad2ee5c8efc68238770",
+    "data/raw/woodland/woodland-1994.tif": "b85d2c2d8ed9e94f4714b4ed2bfcd376b0efb3098369641362667b8e0ae7a1de",
+    "data/raw/woodland/woodland-1995.tif": "470120b88194ba41fa9f9b10831e74f126533efd4b4eeb0f86dfde8383d34cc3",
+    "data/raw/woodland/woodland-1996.tif": "a866495ff68cf26208c9f2dfc22e6e72a52df90e7ce070d193db41c47cda9c49",
+    "data/raw/woodland/woodland-1997.tif": "b44a35d7a5d6d06e297f512431f6b3a735ef7602b8014efed056d036395a7e9d",
+    "data/raw/woodland/woodland-1998.tif": "ec8b310b47bbd26fb768570f4eac8763466b3887b898c6ec0848a55164e669be",
+    "data/raw/woodland/woodland-1999.tif": "5567ae3910ffe8510f43606178665c55faccd70f34815448a3a7c9817bc293fd",
+    "data/raw/woodland/woodland-2000.tif": "b70e41971978eae8889822a248ac7cdd4cec88927c71f25f7a1f0d6259ea47ff",
+    "data/raw/woodland/woodland-2001.tif": "877d28b94780c0b22507a328d2458d6c60876181b3afac7924150d30d123c6c5",
+    "data/raw/woodland/woodland-2002.tif": "bbfa19b96122a03d1cbb7638b57b7b615380d29822ce3708ff8b32b94cd6733d",
+    "data/raw/woodland/woodland-2003.tif": "6a9f16bb8324f50df2e5bde37bcbb921664393387a534fb34c62380b81622a65",
+    "data/raw/woodland/woodland-2004.tif": "02c4af3ca7983dfabcf7c12396a8d297e8eaef196e579249734bcdf12f9d42fc",
+    "data/raw/woodland/woodland-2005.tif": "997a4cbf4ccbc66ff5ededa545c9138ef999eaedd32772a77bf41700e90fd545",
+    "data/raw/woodland/woodland-2006.tif": "545a47f324da4f1e1ec7b36ca6fee37395205c4b028401ace260b2f6f9d5060e",
+    "data/raw/woodland/woodland-2007.tif": "610db0669adb862dc1a3eb408f2ce92dd4b9a886c6965359473964298c1741ab",
+    "data/raw/woodland/woodland-2008.tif": "723c1b03e565c37daecc7b93455ddb72628b80bc6e8c5b8ac9b087d7d63b0d9a",
+    "data/raw/woodland/woodland-2009.tif": "6ed3e73e717e5d3080e6433cf97c5384d42fd3fad54e94466eac8ff8df47d599",
+    "data/raw/woodland/woodland-2010.tif": "b7bc6dcef0834d87c462136096cf9a6939c273b161002bd8223d465b8faa0b24",
+    "data/raw/woodland/woodland-2011.tif": "0ecd518255446ec9ad343506f4355e983430bafe29ca0e62252aa062923f68a0",
+    "data/raw/woodland/woodland-2012.tif": "cf6c93ba8c601738ecad699e7eca23abb5744e414f1728e85997a87f9654e682",
+    "data/raw/woodland/woodland-2013.tif": "4c145829391c99876f7fef0df4388544ce9f925f9d4edb483d3392d2ee034c94",
+    "data/raw/woodland/woodland-2014.tif": "243e90c07c931965355b4869662ef40870a49bbf63460d8ea8eb2af9f4cf8a98",
+    "data/raw/woodland/woodland-2015.tif": "2195f0c84c4db82a53b6da4f074fe17a65f5821dd7f4c7087f4847661030eb14",
+    "data/raw/woodland/woodland-2016.tif": "62614e48e5f49fdb6bf2dd6e5130be6735405d17bc16c9daeec9116eec88ed9d",
+    "data/raw/woodland/woodland-2017.tif": "603f9d2fbeb610aaa58eb82e2bb3c2e1c09aebbe6614c7ffdcfbb9c6d357ca51"
+  },
+  "raw_weather_months": 456,
+  "weather_years": [
+    1987,
+    2024
+  ],
+  "weather_files_sha256": [
+    {
+      "file": "data/raw/weather/ON-1987-01.csv",
+      "sha256": "8e5b271fab880040c9baf17d996285e292c79f0a639c41cd8c48e46fd965a0b2"
+    },
+    {
+      "file": "data/raw/weather/ON-1987-02.csv",
+      "sha256": "7f5bfc49e6759324c5d1fc86589294a30e3260e37fafa1f204897a12f95ce9d1"
+    },
+    {
+      "file": "data/raw/weather/ON-1987-03.csv",
+      "sha256": "6b0811646b3a356b815060a66682c1e32eb34a85380fe9308095a96e923b32d0"
+    },
+    {
+      "file": "data/raw/weather/ON-1987-04.csv",
+      "sha256": "627193e7f4701cdb1888d3051fe30483a4d8dde46fb87bd8d83b235fe0279ef4"
+    },
+    {
+      "file": "data/raw/weather/ON-1987-05.csv",
+      "sha256": "5970ffebe795fd3e16675a0f526bb461d2083d7663afa312d0c6b366c60e9d8f"
+    },
+    {
+      "file": "data/raw/weather/ON-1987-06.csv",
+      "sha256": "2061405ea953246f1666138751b1021504978b15560c359e4807b446ce4ece13"
+    },
+    {
+      "file": "data/raw/weather/ON-1987-07.csv",
+      "sha256": "6e54fedc2d62dfeb7c823721fc171bdc61f0e183f5538f61ee827b0be4606ce7"
+    },
+    {
+      "file": "data/raw/weather/ON-1987-08.csv",
+      "sha256": "d09e95c8bd8e305f001218a7f99a8f06e7ee4b0982576a5b53c87ae1ec6de5ee"
+    },
+    {
+      "file": "data/raw/weather/ON-1987-09.csv",
+      "sha256": "a66f5c09e5d379d6682bb83b5b35f8adb08a6006547ba0c3876e844706447921"
+    },
+    {
+      "file": "data/raw/weather/ON-1987-10.csv",
+      "sha256": "f8499cd44b348697fd7411e2fba5d431d0b7ef65ef9d81d350b7b518fee76d71"
+    },
+    {
+      "file": "data/raw/weather/ON-1987-11.csv",
+      "sha256": "f6116f179e4d32fcaf1645ac6f5d302635065598eebcbc420271f9c81bf30e97"
+    },
+    {
+      "file": "data/raw/weather/ON-1987-12.csv",
+      "sha256": "a35d1ddc954f49b3be0337e41676916c0d517ff2dd6d22328535068b0f874619"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-01.csv",
+      "sha256": "312262e680573429f1ed1e3b4edcf58e9381af15578086b3d7fdccf06e48ef64"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-02.csv",
+      "sha256": "1915d8fe4ac209a5a5dea092828dfb23d9a81c6b5b809493bbc8aa1fb0db227d"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-03.csv",
+      "sha256": "3794fcef30b39b2cb710f829fb31b494799efc8c611c626673d67693acdf9334"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-04.csv",
+      "sha256": "e87aee10fc5414db80b8a35fc4beffb3e7b85626ab2dd90e594ab0ab280d49a1"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-05.csv",
+      "sha256": "b348098a23d1fa082d1e42ef1d6a114373cea46d70c10e5793929bff2a1b1379"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-06.csv",
+      "sha256": "3c212c02b1848cc3e9b743c3df6d8a3ae509148c2470edef8b43e042fd44c494"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-07.csv",
+      "sha256": "3e14514ed8a4f107d1df161b7291fa1a06f1f95fc2205f90b726df076ff1adb9"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-08.csv",
+      "sha256": "858b0135ecf809c5dbc03680c0ac53ccf11b8eaf7288e7c401fc6470f44980fb"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-09.csv",
+      "sha256": "adbdd45fba83629fc24724e53dcdc3f0139de7492c9dfdee037d619f16413a36"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-10.csv",
+      "sha256": "8d357ac524c012b80e54796615816e3177911405ee2c940eaed2c0d85cdb3fa9"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-11.csv",
+      "sha256": "9af06b3ffebf7ced20b90c20e9cec48096c0fe2fb6ea783b412eeb1a16d35b13"
+    },
+    {
+      "file": "data/raw/weather/ON-1988-12.csv",
+      "sha256": "c011b87569c7f7c6e03b0f47caf47b454851ec1fe2f05e768490fa0269af91b7"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-01.csv",
+      "sha256": "42392bd0bdcc97883785de7cae4df5217b6fdd85ea6f08566272a4e76f5ee668"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-02.csv",
+      "sha256": "69ad2aaa5e48c5828e878579fb6cfb1e0cee2f6efb79ae7e114a5aec972e7437"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-03.csv",
+      "sha256": "27653ece1864ec8c92e4408ec046ed86f79ac411f0facbfa85861f6989fb7a93"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-04.csv",
+      "sha256": "b7a68d0c0b038963cb4efcab09e91e8377c775b73fd78889a7b231bdda140007"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-05.csv",
+      "sha256": "fdff29c5aa7e2625b25b557303ddf6df9f02519d18f567b9e0f4f283b24982aa"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-06.csv",
+      "sha256": "285c220e84bb6e5daabd7475994b836e1876b2afdca92afa0d3bbf55e493bee2"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-07.csv",
+      "sha256": "fc0f567468b993505db95404631982c44af9fc72e925be0391638551f907cd82"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-08.csv",
+      "sha256": "0c2460f7ba03f5c3b9aa1b91e35e083f7dcbfff9b4beea01f0099b2e936a0f12"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-09.csv",
+      "sha256": "16ae2bfa6f3d33616173dc6d95871d9ea221c20b15d89c4d5eef2cfe368bc581"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-10.csv",
+      "sha256": "709634504331abc64a50d8c75d8f546c3782799118fac271a190732d9ff7cef5"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-11.csv",
+      "sha256": "2cecfd983fc455d1679f41dbf4a72d10cf59eeab0e1f570b9ab553d13d5d7404"
+    },
+    {
+      "file": "data/raw/weather/ON-1989-12.csv",
+      "sha256": "ea6a097adc2379a0798fc8a1da1c73b6f199e7c912894247c333a55f9464de82"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-01.csv",
+      "sha256": "c51338dbb338543ab0a847e799e872c389c1d9f51cb7395ad0f5be0d2c52e55c"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-02.csv",
+      "sha256": "0a135bcf092cf31dbdc44c4dca329598e8491c84b321c8aa29f41513cf099d61"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-03.csv",
+      "sha256": "14c3e24d6e93c9874b70b843da8deefa3a0bb408d3cfa8022b6cd02413d8a75f"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-04.csv",
+      "sha256": "d55cb8ff3f4795c8c69d5611995a346484f4164c2504c38b9da1e72251441b82"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-05.csv",
+      "sha256": "28851416435f0acad0f3752cde2d825db8738029301c7cdd98fd228baf7467b9"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-06.csv",
+      "sha256": "97055ef4b41df3f98e65baeaeb0c4b13b3a52528f8ba768099ced94f505e0106"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-07.csv",
+      "sha256": "bb009ebd16eb8c5fcbc2664276ec47011a531bd1940ad1bc5bf0a5784de169c6"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-08.csv",
+      "sha256": "f24d169d0226a363e77341481f999477afbdd549071e28d03509b0b5f0424e69"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-09.csv",
+      "sha256": "b60cf89541be632d86933a0235939a31bb7a3b5f522c998046352a584611ff2e"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-10.csv",
+      "sha256": "2710ca2a113fd8a359539a27ce7ccccb29ef48c5ee4fbe38dedb3ef5aed7e18c"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-11.csv",
+      "sha256": "da04653f0a32d65a18cae0c022d86d002188db2a0c89f7bc6c937f0f6af43afc"
+    },
+    {
+      "file": "data/raw/weather/ON-1990-12.csv",
+      "sha256": "12dae6dff9df99f09dd71add6327025ee43b2eabee06b79283d1fbbee4e1ca4a"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-01.csv",
+      "sha256": "32fd5b306092f13e0604836b56a95d37f12d14a95014ba90f137a2d814b9336c"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-02.csv",
+      "sha256": "b68deb6ced395d0b5b322ae3b6f827bbd6653f9308d8319fa8af60e643b96630"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-03.csv",
+      "sha256": "19b84482b105c55ffc2d1db71ab2b99827f0286d613b87d3a40787019118d6c7"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-04.csv",
+      "sha256": "7933298ebe600af8cced767eb3cea3c03bac6be945a7b56225d8c0b3d651c684"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-05.csv",
+      "sha256": "d042e4d60372cb17465188876dbb8d53e2f6f46212b3c467fbee9c0270687a85"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-06.csv",
+      "sha256": "c02a0fb2e754decbbdd775ed9c5c7f4a877e3b5156f5292f371655de05c07d3d"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-07.csv",
+      "sha256": "ed0c286fa9f95266d9f88d221cb8bf2032be92c1711edf079663b0e8b5830aa9"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-08.csv",
+      "sha256": "337fb8d2554687b8fb8f21b8affb8d282370b394151806478945fe9050d353fe"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-09.csv",
+      "sha256": "42e63c46d4670b6b1d5952d5215b7d611bfda6dba40fd11980748143f0587cc0"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-10.csv",
+      "sha256": "7454d21d8fd4f6e1512557a5f9322293cd8194964dc317c1cb254f3c5a5bd9fc"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-11.csv",
+      "sha256": "b7704d8010f5635c706b614c29ad95c9f2ef9ab76f0068791e81bfc950d4c7e5"
+    },
+    {
+      "file": "data/raw/weather/ON-1991-12.csv",
+      "sha256": "a8970c46883f0333738eccf8a63d2d253938c62aab7cc6ba53f2f3ef5ffded4b"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-01.csv",
+      "sha256": "f93653578ff5b13a193b287a3d59dc43caae079f1730e3ac42fe4470bbb07817"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-02.csv",
+      "sha256": "eff2cefcdc2c73c6ee1e6d94ce1864232ccd1a55abd5b2a392dbf83baca24c01"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-03.csv",
+      "sha256": "679ab13a7d41849ba7b4cf00513247f27dc345a02860daf6e575a9d4f6f8642f"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-04.csv",
+      "sha256": "54cd33a51055a1dfbd470f9f76abbeb05139f691e6a8b675ff567cab0c44c380"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-05.csv",
+      "sha256": "0e4b3c6ca0d37d81c0aa68c81a73ed17526a781aa2fdeb78391b884823acfc71"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-06.csv",
+      "sha256": "59eb164311b3015cf8487666cc3442759d291fd3a734a40382fd895d03736d04"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-07.csv",
+      "sha256": "739a90be3d1595c8e95d67e1b8e897e3abc4ef53cb3c175b6b630a758bcaad4f"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-08.csv",
+      "sha256": "6ea233b6feba19ee9d29b022f521ef54b82b8387541b9c8e461ea157ff0254c1"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-09.csv",
+      "sha256": "3c0b027dae75233bfff64a23092c2652e226f0c0459cc74bfefce00ddeae789c"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-10.csv",
+      "sha256": "bc843934bf4b9434f442f4380da2eeaa486ace81b1f8a3fe20f12a7018dbd95f"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-11.csv",
+      "sha256": "e348b1fc5e2bf5bbb87e4278ef6619f0933f35d444edafbe45651cca081e68ab"
+    },
+    {
+      "file": "data/raw/weather/ON-1992-12.csv",
+      "sha256": "94c92b8df9af2709f42435ee95c8edd248a7daba518888d76a77d5e1e58aa75d"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-01.csv",
+      "sha256": "b3e55c0e0aed6d12491c484d1c13e00bce48de4a7fbed9e454f8027d59294b6f"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-02.csv",
+      "sha256": "94345e8c8db16f5845269543c2ca9e3b875efb1641a650bff02d8c41acad17db"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-03.csv",
+      "sha256": "480cbed6b044ba4d5e1b07610a39bb490452960cb552329ffb8cfb1be7782728"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-04.csv",
+      "sha256": "2620cb4331e00285bad761c3bcfc7f2ac4884aef89e1d4bb465754ba5afc35d3"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-05.csv",
+      "sha256": "471ad2f0a4ac6b3ab22820add80fefd2525317b4b4402f0896f0a7248d62ea11"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-06.csv",
+      "sha256": "4ed0cb08da542408612313f745111e3e5c78d5049358ea19bc9ff38f7915dfeb"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-07.csv",
+      "sha256": "d6cca220f1a3ef6c39c76d09d6d82f4ef6a07a7106a6fcada9f2087cf7e9e205"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-08.csv",
+      "sha256": "c6e189b6b44f1668fc0bfa02cb3b56e1e05c51ea48d9bf22e9a285fa7d4de28e"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-09.csv",
+      "sha256": "8e7ecab23822f4eb1995e4a73dd69c61d418d33d1d6e5ad7508384bccef8db24"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-10.csv",
+      "sha256": "e08c10cc49ed64c3e4fa1c05069ab2cdac0a1f64c418f0029d7af8ac26ef3fa2"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-11.csv",
+      "sha256": "ba2d44874f10f8d1106a65f317fee54442102e99f1cef01c0d2b5742209878a1"
+    },
+    {
+      "file": "data/raw/weather/ON-1993-12.csv",
+      "sha256": "2e4342199690d43d3cd6b9d900d7b3179413890bc188e0e6df96f5b6eb29284c"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-01.csv",
+      "sha256": "3538447f40a09b207a64c6e513030a1fb74a95761ae96ecd3e617cdb7624a576"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-02.csv",
+      "sha256": "f82ac720b0baa1d1b53347f6ca7c4ca3b9678d77323f51b760ede4c879cf3272"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-03.csv",
+      "sha256": "e93ad06174e60922b5f54e2ae6af8263513aff23d6ba95cc18d32b8de27ff0d7"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-04.csv",
+      "sha256": "8f989a50f3806e6178139671e13bff935027691044380ff9da9f3696cea44113"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-05.csv",
+      "sha256": "9853b9ee4dcdf298ac4483323ab06141b99994c449cab38f10a16ffc692c4a47"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-06.csv",
+      "sha256": "17fac8e9d54487d6097c961894c002d67ef7d606c392357f364d163eac9d9dfc"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-07.csv",
+      "sha256": "751476af0ce95fc310f6abb6059febb970ef4796bf1d6db8a9e9c858b5a5f554"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-08.csv",
+      "sha256": "518ed3f0fec1c919914a7c5092e8b4441e8b56006dd83b6afb13d14963cbbeae"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-09.csv",
+      "sha256": "7bd8a58762152015b6c5ec1010f3544990131c6588039183eb9f4ec43543c59c"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-10.csv",
+      "sha256": "ca27251ab48bd4e9ff2ee00016bc729afbe4621639b48884725e931f1da9a452"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-11.csv",
+      "sha256": "caf90384d72a974337f2c546bf17c3cb2ee34fad5d093397fc6429b2aff6a965"
+    },
+    {
+      "file": "data/raw/weather/ON-1994-12.csv",
+      "sha256": "a584e0728bbbb5ee6dbf0497d131593a589d701f4a49b24a1c981b9052021934"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-01.csv",
+      "sha256": "40a98f1d88c1f46e592bbc268fb3f456a8e51a092d5d4897a91771eb2aeb4508"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-02.csv",
+      "sha256": "617ccf3e75f7e6072304c46dc9b13819b3865d98145956bda78486ec48d9c731"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-03.csv",
+      "sha256": "060c3aa4da529c4e9d651babc121121106372cbbdcb2e9bbd4928a858220854e"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-04.csv",
+      "sha256": "5d539a5b535904b1fe0519b6c4c86fb27d3fe2280d06ad8243e4c252a76631d8"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-05.csv",
+      "sha256": "d4221b421d57deeae2eb40e046b8d28c58d41f6789630671f21016c2145d323e"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-06.csv",
+      "sha256": "38ccbbcecfa63d70fd4fd2dc9cbe2b8e365f28f544574d310a68e3cd72fefea0"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-07.csv",
+      "sha256": "748a5eee98e860c0caa27cefbcfa1524f9bc8412b09e8b2e30b060b0037b9d89"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-08.csv",
+      "sha256": "0cc8628dd9150091e02ed206a0a64a10333214e313f5f8c3090b9a66619346a9"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-09.csv",
+      "sha256": "9b3a435b5ea8f09e6cdae66be99aed9ec10abae263c67d09d67ce2928a684143"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-10.csv",
+      "sha256": "c7362ed1015b786a5a3e8bd7270a49e7254157c0d21d56aefda1adf9d8743151"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-11.csv",
+      "sha256": "3a95432ed5e78de362d82006d9bcdd861b0b97ced37b43ba68b3ceaca3eff04d"
+    },
+    {
+      "file": "data/raw/weather/ON-1995-12.csv",
+      "sha256": "608d4347d01d4848653e22f2894b71d87b672f3159dd48f4bab94ba7768e6b7d"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-01.csv",
+      "sha256": "ce91509e478f33749679aec50f8808dfea464c02992e0611f346045b513a40e0"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-02.csv",
+      "sha256": "428398eaeb6c4e48db7ad97bc692f533191547c2f3dc9bef7555491f23dc32a7"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-03.csv",
+      "sha256": "50e5b14a0f409e0c029dbe96feb98c8c2092190d740c63e823209ac686520a0e"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-04.csv",
+      "sha256": "a42fc515d27da411bf0921c597d388dd3949cbac4cc69cad8c543e213b2f684e"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-05.csv",
+      "sha256": "31f751fc77f34289a73fe93940597606fe1f6f46919f38a308ae0325773458b9"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-06.csv",
+      "sha256": "c7c0a34c46f396c8fcacbeb337a670e30c1d40462659166b2cfe66744cceb33a"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-07.csv",
+      "sha256": "cbc752680dff974fa50080ddd5b50702e468266338890c4da088b4646726a5a5"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-08.csv",
+      "sha256": "9913f8c14cb6e0082019316275333b9f68ac53fd3e9896ea15dd80e5faecf9ab"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-09.csv",
+      "sha256": "e562f6d59a2b60a99afc456c357aec66b5b4d84a1901db33c03c6bfbb601bbf1"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-10.csv",
+      "sha256": "8b5ae5b726784a9166790a3a94a267cd9771a47b6904519247f1e32428c5db9a"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-11.csv",
+      "sha256": "dfa8d03a7ba1a46435289630025d7f7675cc38ae2a2a301acfa92a425a25c587"
+    },
+    {
+      "file": "data/raw/weather/ON-1996-12.csv",
+      "sha256": "d8d71f2a2e263881631cd079304400185a75cab00bb0b4ef435db50528aefc64"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-01.csv",
+      "sha256": "7a7358a25aed29d9dc1110e08b46690ac721f037520705b891a21ddf323b7f84"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-02.csv",
+      "sha256": "56041162e4ce709a91f91e7cb943848fa28dec0bd1f89aae3ee7a2c34867b359"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-03.csv",
+      "sha256": "8f7f86c7e26f45fafc073a4938160252bc5627325c87166385799bf36f35325e"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-04.csv",
+      "sha256": "c48fca95c5ca6745161754fd0f78e7b37461be3233bbff0f6c76e30b8becf0f0"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-05.csv",
+      "sha256": "30fd50b99d5b7a661bf6c6f55aaa1b819b67e561640c257aedc55b52e0cb507c"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-06.csv",
+      "sha256": "f2ff3f0adf182d9a1e41b4fb996eb72d4f36a6c145a1e5a85ca9aa2fa3190f8d"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-07.csv",
+      "sha256": "8f63daeeefbfbeeaefe51ecd825c082e1548868cc298f3fdb941e73cf0cac67b"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-08.csv",
+      "sha256": "b7c15c780f9c7327aae9d15db329a195acdf323f9de2181a85b852959ef69058"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-09.csv",
+      "sha256": "402721d6cbd420b63943bf723fb75e72cab5f9a3d24f8cfbd154bf3edcc4f28a"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-10.csv",
+      "sha256": "72f76f654d8871cb1ba5de32e30fbd3ad9927dca5beea2fac1d63d3cd692ed58"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-11.csv",
+      "sha256": "d2d93ed9843332124abe5aa208c35a79442dbec86bd45999d676b5c4ea3dcb21"
+    },
+    {
+      "file": "data/raw/weather/ON-1997-12.csv",
+      "sha256": "70c008c7d648e344bc24100e797e36d075751008403520a559352fc0bccf32a2"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-01.csv",
+      "sha256": "d97bd277457dab29eac6493ca36eeb10480d1376b7d82b2d18d1eeed0e2175e2"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-02.csv",
+      "sha256": "83b0279880c5e4ef234776568f772f80ed2281fd1eda69ae0f40ea993c6d11cd"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-03.csv",
+      "sha256": "0c895922a9268cc90efa5a2550ed8c3c8fefd9a100391e4e0e75652a318aef45"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-04.csv",
+      "sha256": "cbeed1a4cd7568e37bb6e5967f17b5f89053fb707f04224e655e1e7d0e539fdc"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-05.csv",
+      "sha256": "47e4b5a2cff9e30c8a0394802921413b7a42d284bf3fb7d0c834bd8a51bdcdd7"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-06.csv",
+      "sha256": "c5327e82b972a553e21f0033efffe69de3fa96e12a4f28405cbc55a9637990f3"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-07.csv",
+      "sha256": "a567babdf2cd24a36b740e13c9fbd03ff97841796b9c2bded2b435b2de0dc072"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-08.csv",
+      "sha256": "9085950168f099105a1246c656d3ca4e672bf01ec806cabfdb2870c67da2bfae"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-09.csv",
+      "sha256": "e25ef560bbc2937fbd94a396a2a924789e1f6ea377f11834073cb53b1f1c5c4f"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-10.csv",
+      "sha256": "a426a9320f946333dbb601811dbb6c9397dbb22c60e73eae50ef7b293e09dc0a"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-11.csv",
+      "sha256": "a2a0adc4ee922aecd6c9978d19bc2d93ebb57cdab089ba93921d932c477eda4e"
+    },
+    {
+      "file": "data/raw/weather/ON-1998-12.csv",
+      "sha256": "092b4855b2a6587dabfa0e0d3a3682c646e1128b67a5a53449993ca4d05e534d"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-01.csv",
+      "sha256": "6bf4505a63c8dc99de5cb6a2bdd3fd612fa2e36f1dd2d1963821394b12228eac"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-02.csv",
+      "sha256": "60a72ad3aa4affb5b86400c362ad465bc0fc20523663407d6d3ffef640c1d726"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-03.csv",
+      "sha256": "8bc280399efc2f202087a09a1328843692e07198bb863dad643772c76d24d2d7"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-04.csv",
+      "sha256": "44aea8c39d01c27a99f2e0890380573a707223aef77cefd865538dbc8c73458d"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-05.csv",
+      "sha256": "b635f8b33b6317fa797a0642cfc86adc540dd604327f6cb4faa1a9f0c9a148b8"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-06.csv",
+      "sha256": "682f1c8bdd256f541363471a4b0b77173ce89e198ebfe432a6eff8e35efebb64"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-07.csv",
+      "sha256": "205e13de22543a7e69ff3180fb211c1cc9e352fc9772bb4186a488b0a7185a7d"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-08.csv",
+      "sha256": "c8d07fb1d8f883fe095e5b60d5383e29c13de9e92fc4315099cf9ef5c59b0f67"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-09.csv",
+      "sha256": "be497c65f7c9dc5b407d3066f6286b7764c7f46ba9e215d808803259fce1757b"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-10.csv",
+      "sha256": "4489cc931ed64d06ed817c04e7fb07e8d58b9a9685c467c016955d1bb379de40"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-11.csv",
+      "sha256": "e5c2de2a0cb2e56b6979206891d9233c8aa23c579e1b58c113ebb6aad42e054d"
+    },
+    {
+      "file": "data/raw/weather/ON-1999-12.csv",
+      "sha256": "2f15edb7bd86c893346d4b0bdcc466f4fa0a8cf141399d72fb4f3745f24fe32b"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-01.csv",
+      "sha256": "db18515ccf7a6abb0ccf177f1324798fac08caa582d3e365d186565662b657b4"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-02.csv",
+      "sha256": "054a8fa630e2d6d2da1db8892c28f47123c025f241179557a3dc466185b58fc1"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-03.csv",
+      "sha256": "c7e51f8e81bd03816ac40b153aba96ff12d444e597e17f6aca0b8e6ee8835ca2"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-04.csv",
+      "sha256": "f7fda06ef4219565fc4a1cb23a5bf6c624d9e033390d5a2d86f45e2b478ad3f7"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-05.csv",
+      "sha256": "2939beea94349ad84bb34ab20819269025aa545ea41bf38f8ad05cd2014a2a3b"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-06.csv",
+      "sha256": "840f2bda6b4bdc2495a9f29b639c18557d0619ae20725e9afad8ef5d39fe28eb"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-07.csv",
+      "sha256": "1fdb4c86023acec0d0b0d5cd7fd031479e4cda1fc5e53904327c8edaf18bd883"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-08.csv",
+      "sha256": "e7746547abf4e930c00c180767822331fe08e512b3ee7fe844189f3ed83932bd"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-09.csv",
+      "sha256": "0c7c1fad4e9de8681cb41610ba32fb55c34f5d1b166fda61f66184c8b9c8d68f"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-10.csv",
+      "sha256": "d5c18fbb3e24a92389bdd1a760019adb817de7656e9c83fa4e1c7adb2d16754c"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-11.csv",
+      "sha256": "c541bf0e1bde59ca036f448a31f4af4fe3636484ae7b9f1245d6c1c4dcd6cc80"
+    },
+    {
+      "file": "data/raw/weather/ON-2000-12.csv",
+      "sha256": "19666cdcd9cd9d98ddbca6df50539a9da33905e323919c495112a075f01a50f1"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-01.csv",
+      "sha256": "8859580bf8581ff04b6c08e659016b4ae0a861ee84ffd7be18d9193b0ac2285c"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-02.csv",
+      "sha256": "a2957e8abfe50bb9f69fabe170ed72d748097c2aaca6c1c0882785deb956006d"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-03.csv",
+      "sha256": "41f720fc121de98f8e0c5578cbb79aad57580c4d500fa7a15db62a5a48a22481"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-04.csv",
+      "sha256": "99dabc628eb0717052038733337bb7844a03767021354c95df0b614ad93ac303"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-05.csv",
+      "sha256": "44909cdb7353163c71862e50add36ade1e15ce59c0f3fbd1fa7d74360c437708"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-06.csv",
+      "sha256": "2a8a6e7590939a5f5a5a82976519bc3511f5a290006bb22f738d5a05280f5774"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-07.csv",
+      "sha256": "2f0e23778d98367894c808e2ec2582d7dfb0d1e50b8c653c9f6057f93409b697"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-08.csv",
+      "sha256": "bdf65a8c231a0c2bbf2d8f9c32cab18f2a008c5a16757765f6c4de459f008e03"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-09.csv",
+      "sha256": "10f9b13d2c0b709368706812e8b603a65c309381a732dd4761d03dba1decfd8c"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-10.csv",
+      "sha256": "fff803c4877d35b9d484638605f3f30a626f36fba1190121230bab3627cfa6b1"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-11.csv",
+      "sha256": "24216747c5c6919e3c3e23ec019a4614909206b7c6fc77a3530e06cd8193098d"
+    },
+    {
+      "file": "data/raw/weather/ON-2001-12.csv",
+      "sha256": "e998f48fe4a252d6a991b1df7ad8cdfbe90a40b1acf728bfce524458f14cf44f"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-01.csv",
+      "sha256": "dbdbc0e03d00e35e4f7247cbf09e494503d41f9f00a4aae253614301d618fad5"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-02.csv",
+      "sha256": "5f2586eb46d35f3a4706f137fe6c3d6de4151fa4fd7760d2036c7d44130af8d5"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-03.csv",
+      "sha256": "c3bdcdc08a0e0b423151a810f3af25e2e49798875028c2bdb01d41c5caf8cf6a"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-04.csv",
+      "sha256": "b6909c9da2d26304c2d4f6ad8551ebff855eb55d0bdfd60382bb0ee642e6ebde"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-05.csv",
+      "sha256": "85f55508b0342c91b4414b8476f0af08e6d7d7c9bb17ebd045965c041cbb1b7a"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-06.csv",
+      "sha256": "9835fa4764d1bddd5a2e6de54f137d0becb1c38720d06821d44eb95a1304961e"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-07.csv",
+      "sha256": "8979942255b1ff07f1a286e2d2f06a3c7fcb416f5875f68fca3939a7f7046c74"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-08.csv",
+      "sha256": "9802720c0ce44bf99b0425106cce3d680d2119727995e5f2e5ff8fa7c020766a"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-09.csv",
+      "sha256": "5737e34e17baeb711d2a8f72cc9271b5e6c8029cdaf64a879e866cf66ff267f3"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-10.csv",
+      "sha256": "62c17e48cc904d4d44b2c443ae5e615b71792379042821dfc2e571ae56b71cd2"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-11.csv",
+      "sha256": "de95c243f588e9f4fb54c970a714d784b8027fe4fee584909ae7df4ae2cb0710"
+    },
+    {
+      "file": "data/raw/weather/ON-2002-12.csv",
+      "sha256": "d6885f660cf32fa3769a8836cccb7355a594e04c247b494f83ac9d19cccca67c"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-01.csv",
+      "sha256": "6b093f7fcd760ca68c01bbaad8c81086d3c7e4096f1bfc8bb39fec6d850b84c3"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-02.csv",
+      "sha256": "ff0fc30909bed350c87dcebf8b8c97c87b2f40f9e246d09dc23a7ee4f3fffd8e"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-03.csv",
+      "sha256": "b4bd324da1de8dd1610fd8f1665cda6462820780d681a2043bb2894a5430f509"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-04.csv",
+      "sha256": "71e872a44a227f161ec55e903c4557d032c0221a8c53cdf8ae65597cd0f09fdc"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-05.csv",
+      "sha256": "f14fb286ce84d8224dcf632003385360070371dd5ef0280646eb59771de4fe6f"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-06.csv",
+      "sha256": "668094c9a472c1e599e7a4d3384f7c878c164792a6ac3276086b0a7726f0f7ad"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-07.csv",
+      "sha256": "8b83e2bd13caa0f74ef217f44700a5c56e69719469d3ffad6f8c4aeba06613b9"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-08.csv",
+      "sha256": "2880ebc9c32e6eed296381bb72e6afdf651b693c646410165b7e51cea90ad3fd"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-09.csv",
+      "sha256": "038a2ae83c497d6631dd44c59acd36a6a727c9b814129a9b3ba38adc6b1044ab"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-10.csv",
+      "sha256": "c28d7f77c98959c0bb9a56f3aa2cf05c17a2e30ef605ffa4a8a44662dff1e00f"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-11.csv",
+      "sha256": "1b0a0202171c9b8a3fa41ee6db8476cb8f6dcc835b75357ddad2bcf58ef0b699"
+    },
+    {
+      "file": "data/raw/weather/ON-2003-12.csv",
+      "sha256": "aa25f8afb9c23d82364f02707d14dec14cd2c2a2410ad2df631c6fcbd4dde1a6"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-01.csv",
+      "sha256": "03aa26c718ec8e1a890620a76e98d4916cfabeb14602a7940d04f5ccd8ffeb8a"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-02.csv",
+      "sha256": "fa900a2c11b3f4d41ca0524857e9ba2b763080adfd26265f6d5c50def5ef4e09"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-03.csv",
+      "sha256": "d9a6e74c0bdd05a62c0d22df1d79d56b88dda63a1be761cdf3040b51b65f1256"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-04.csv",
+      "sha256": "89a81e4f67e99cedef43f564e629b999f2d5fa00215841bd3fe1e25ae202ae41"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-05.csv",
+      "sha256": "b3ac2769f1b7c27b7acfe2f2c21f282293ecafc5d752074e9ba5944968ccf32c"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-06.csv",
+      "sha256": "3807ae4989de8ac9d169b45213b278b376c708552ee75c36ba435b33057a29cd"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-07.csv",
+      "sha256": "c8554820e8f42da36765da3e982566511f04c61a0f8b92a7018ffd5657fcac68"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-08.csv",
+      "sha256": "e6515a670985af0ad8a2ef4d7a49f1795cd2f74c889c2eec39e5903066c44b36"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-09.csv",
+      "sha256": "8b8453bff069b11125d333001b7c35e7fccf995e8d9bca57e9f2a1fe04b699b4"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-10.csv",
+      "sha256": "4f5cda773c36a9b8a0c2b9236ece45c822a2a4de17902a683a8b96e2e35f2c65"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-11.csv",
+      "sha256": "dca8e3337edb3577a210f3db3841e0cb23e7c940aa4bb65cb5fea433d2250ff2"
+    },
+    {
+      "file": "data/raw/weather/ON-2004-12.csv",
+      "sha256": "f4b8e759ff8624579faffbb8de9110ee584d697d500a9ef24cee2ddfecdd8dbe"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-01.csv",
+      "sha256": "11626c593c7a047385ba8f8b3db955d8d84b65441dc32c114e031b2a8f2635a2"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-02.csv",
+      "sha256": "0f91a68d1cebf2578b86179e4eb751726fa035ebb07518d23ed598cc880729b9"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-03.csv",
+      "sha256": "12854090f550569d6584d9a5a900c62bd727efea65568b18067a7d23deb29e27"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-04.csv",
+      "sha256": "1ac87ff5049c1a513c73530af0782fe378741e606776de7394634cbe42c6192c"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-05.csv",
+      "sha256": "2ff9cd914b3b48b5229d49f72f4cb72f34540857f50d8566368050a712a6e02f"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-06.csv",
+      "sha256": "0d111eeca2da85f6c1fc602b7753fde587276d12bacd56a735a93f680518165d"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-07.csv",
+      "sha256": "e6eae4a64aa90a75c1f5200e9e4df5caf50ccb5ff9ae8584d336710589e61172"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-08.csv",
+      "sha256": "71547d7fc2fd03f606976316266c9d3beace6076274e688ee280f4fe73bce8d4"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-09.csv",
+      "sha256": "99ba1baf97b90ffc4a4db4d2cafc680bd82326db5e814736983424e1106d0e5c"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-10.csv",
+      "sha256": "00cc2b8d302281d96f15365bcfcf66dc5bc80ccb65645e1996449f7c376a8ba7"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-11.csv",
+      "sha256": "507261c720490f7e4278bef097e3105f7fe465d889302b8fc40e2d6c1414be9d"
+    },
+    {
+      "file": "data/raw/weather/ON-2005-12.csv",
+      "sha256": "851a372fb2b8fa4430ec562dd248728e372ca14ba255852efec114c2e0cc1099"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-01.csv",
+      "sha256": "2c6cf75bb18fa463d93357ff32ea1bdbb8a5ff14d6de0ba4c9547bd0fad2876e"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-02.csv",
+      "sha256": "05384ab6ffcf1da00ad37f3a27cb438fb651bf25d19983b933c7f4a378bdc74b"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-03.csv",
+      "sha256": "822bc77e857e286b6c3aed0094f93c947da9c298515bfcd1b18bbdd16890f34b"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-04.csv",
+      "sha256": "d58186a95c18e4062ffb41afcf8fda48b66ca0d6e464f2af0237dbc32ee017f3"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-05.csv",
+      "sha256": "034f70d86fb57e7148935014e75f42d4e4383d3f5fc7cfa5d2389b935a2fd031"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-06.csv",
+      "sha256": "cb3c547cec62f0d48ac129caa5669a0f4a1a7b1636804312e4fb0b5d9c5b07b0"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-07.csv",
+      "sha256": "92d0b6c280171e335ae42ea9ff23cebe050c75b44c5d27c635273773202ed50b"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-08.csv",
+      "sha256": "1538d97d57a85782f99fe00f05c5c9ac23b97bee5ae6a16bec8dd59cfaf16013"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-09.csv",
+      "sha256": "3c048a0ca146920ca85b445ecff03fc891d885515843533590e20954c3b7bca1"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-10.csv",
+      "sha256": "40f30856c8c4a9a2e30b37c018ab14e55162cf39a5eaefc96a919d3c520406b0"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-11.csv",
+      "sha256": "e50590d457be858cd9394f5b32c3984df2978bb1673cce57eac89551f260fb85"
+    },
+    {
+      "file": "data/raw/weather/ON-2006-12.csv",
+      "sha256": "8f7c3f78976b55d65df33b22ffc4839dc133a472915124bbc1248fb2d111bef8"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-01.csv",
+      "sha256": "0d6377ec7d7f2a6f02ac461debf150a051c846668ed4a8515cf0cf09dacefa94"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-02.csv",
+      "sha256": "3efc65e4942a70639340264467b0a6e654782c3a0139599cc129b20336fd009a"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-03.csv",
+      "sha256": "93e02f2c0993366df37140a91378363cb4685e3989032406c12022a8ced0a5ea"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-04.csv",
+      "sha256": "1072446614cecc6bef4ef8c32b41bc1bc480f460fcc5b6bb04b3d94eded94f1f"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-05.csv",
+      "sha256": "2049e54b06d2c18a4eb886b8b2b78702ce1777d15cc2ae49783aecb5fc048a37"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-06.csv",
+      "sha256": "e26b821e38c7748c02ef7fe0da5e53e1b5238afa4ea0143941d40f933cd91937"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-07.csv",
+      "sha256": "7a92cf70530f1e2a098df3700c10fca8169edaeb659e4011f57afa8f5f720bf3"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-08.csv",
+      "sha256": "eab49c3f33725b6fcca2ae4f4093fb3c45f8f526b9311621d08aa36efb894562"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-09.csv",
+      "sha256": "75a3898f4fd3aa89a2a95ecf14f6ff027a05a98e8ac1306245056e4d362dc67a"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-10.csv",
+      "sha256": "556059f0311d05f14ee88937b55846e22c002bdbfbe28144f98efd208a2087df"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-11.csv",
+      "sha256": "649aadd0ff9c55090e6b79fbc913916eb3151de6d3e4dff94b9ddf2f6885ba6c"
+    },
+    {
+      "file": "data/raw/weather/ON-2007-12.csv",
+      "sha256": "27a15b31f6aac27f142f8484d65beadec50e5dc3e1a11dd4de98fb8ca2567b18"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-01.csv",
+      "sha256": "ad303f93775fc625e9108cef82a31879308d4bc7eb5bf20f3731d38881e6a3af"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-02.csv",
+      "sha256": "b402f36d17f8c405e48d543404260c4fb851035547d51522bab1c87d3edb73a4"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-03.csv",
+      "sha256": "59cd4720345a3ad493cffd884af50305432903d9744e5960f1ef9304385aa0ec"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-04.csv",
+      "sha256": "e117ddbeb721668ac54395a73ed9973f522377de73dbb7daa1a7ed2947d4efac"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-05.csv",
+      "sha256": "8908bd65c64c330c431ed7e623c1bac1e7b6090c19498ccefe332a3c7b558fc5"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-06.csv",
+      "sha256": "df32dd0517012f84dbf3f617b3742656da13f02ace1ea294cc15573a58c08915"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-07.csv",
+      "sha256": "d433bb893f94e93423d23919727dadb7b420f67324318dea10553ed90d0be202"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-08.csv",
+      "sha256": "1ac1ef5ab5c662c922bd9a1adfd8fee2f33c044da94fad5442dd5c58d0fb244d"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-09.csv",
+      "sha256": "a632fa5f482bbf4ed131bfe5b62e676e317456729876f83467a3f80ab5cd8fc8"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-10.csv",
+      "sha256": "280b70a313475bc913cf4b7dff2b552463abd54614f6188cb41f2c79ec81e608"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-11.csv",
+      "sha256": "fe86cdb48dc110461b70b6884430bba0b3d8afdc2863521fe9fff120609aeb99"
+    },
+    {
+      "file": "data/raw/weather/ON-2008-12.csv",
+      "sha256": "695fa054a5130e55612ce7e290dc4735fe49970fca85cbc2d0adf95bd00d2169"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-01.csv",
+      "sha256": "b3c5a37304cabdbc8f9984fce2ab9e41bf0cb710b9ee6f2aabce71c3d7bb4366"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-02.csv",
+      "sha256": "79acdba37664185148f1d3ab3e81a565f08aad17856ebac4fd22b5b42ddb8d47"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-03.csv",
+      "sha256": "4056a14688ba7b1c67cf021b266521cb3bfe70b3c5d04d658869a93bd400cebb"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-04.csv",
+      "sha256": "a7ffbb0ee9e33a35645316ca9cab1c79805b2196865cee079c376bb29842617f"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-05.csv",
+      "sha256": "e2a1077629b2695d56927b47afa1f32d3a8b2e098214c32ee15560e9be36443d"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-06.csv",
+      "sha256": "71110981ab5c1570a63c63c9454f512ff64332bf49442ce2931eb5f3806262f2"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-07.csv",
+      "sha256": "fcf6b567902efe67778f8e4ee54b26aff8e415dcf041298d13626d10d34ce2b9"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-08.csv",
+      "sha256": "9658384b97868bd5bfb779ac602340d724bb2954af231948ef9157282de73cfa"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-09.csv",
+      "sha256": "a78c40735d29f2dde9c4c35734ea20adadb97353af4a7e336ccc6db7263d4a06"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-10.csv",
+      "sha256": "31eb6e59b83ed62a8d4da0f07d9e0f1d8ad44f4f37b4f6e1c29c2baf9663ed65"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-11.csv",
+      "sha256": "53ca0a6bac14cd3aedd4548eacc5428281520f42f3464b014e9cb0775c4d5463"
+    },
+    {
+      "file": "data/raw/weather/ON-2009-12.csv",
+      "sha256": "89d839cef48e5eab821c8a2937edc61747f7cea1d6652ce7ceef9f22d721eded"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-01.csv",
+      "sha256": "605f096e23bb155bf2e134f191e60b1e83aeda7e80772451c63aef6b86f048bc"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-02.csv",
+      "sha256": "83099c16792fcbc287c460310bec785568ac678007e392c4a518bf8408e62811"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-03.csv",
+      "sha256": "2be9183d1b6b21f0429518f4f5b5a713512d3bbc09e27e6f9780470d8e5f1bff"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-04.csv",
+      "sha256": "708b9807d4b6b3b8fd92e18542ab95506dc31e5a1e731a7781fe5de41903e366"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-05.csv",
+      "sha256": "0aab6ce1deafb17b15e477b089d3fa4cb5b9c7e450e94d3a259c1d5ce0189dc6"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-06.csv",
+      "sha256": "cda3a98dd6c696d5d91883873e6723d4fcfec547f57f8341d3711677c904f0e9"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-07.csv",
+      "sha256": "7abfdbb615780a8e163b4bdfafef2b6ee80ab299e756bd9d7c53bf8f9ffbb7e6"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-08.csv",
+      "sha256": "555504ce3feb12f90fb899b63af313ffee1535ac58f63ce8bad10db859b0d3f7"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-09.csv",
+      "sha256": "89fd25f2b1ad91448b3a7deaf39d8cb1bb5d3a004c8251e1c82046896922f0ec"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-10.csv",
+      "sha256": "167924e53a577ab2051e8ba4e2117e41f553570dd3574d302912f2884ba416df"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-11.csv",
+      "sha256": "5cf3f6372e3e624b85f8c5fb2e2a4a63d271d5e29b8e241838ca44acac11469e"
+    },
+    {
+      "file": "data/raw/weather/ON-2010-12.csv",
+      "sha256": "027e320da2b57a5a07c0a51418a1273f619904541e67cbc0102897cafa9060fc"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-01.csv",
+      "sha256": "13a67e7d17e191a3a7dba527b7a3a114383bb262ac6e98ff8d4fa81a33387aad"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-02.csv",
+      "sha256": "3950139841aa8dfae2eda6bc950dba4daf5079694f20e1064edfa5a91416e34b"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-03.csv",
+      "sha256": "cf7b6515223037f111de9d81f14d7bcfe020e8e38996ba611d2942531e35407a"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-04.csv",
+      "sha256": "b7054c676cacec6b51b5210a543c2820b7e16add4c84c9357e97b5210ef6f16c"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-05.csv",
+      "sha256": "6b302d9da4765ca8d9c87b7389be2e3cd99569c59570b064aed3af2b24e96e23"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-06.csv",
+      "sha256": "582c5227ab5d6405d331b110c709583caaa814fd0c4c2da3afdaa2134d24fd75"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-07.csv",
+      "sha256": "1f42f2aaa2504f4906c444d163ee8ea49dfb8213cdea4f99d30eb6b9f17631d8"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-08.csv",
+      "sha256": "0409c8627ff40ffb38b3d8acb1126015fa58f605d4a35831b930b88fd6e64cdc"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-09.csv",
+      "sha256": "69b824b4ffdb3ec1600997df9f2a782ded8d4c48db6aad2e9cb7419b64955f52"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-10.csv",
+      "sha256": "437878c8e31e8259ee2e0c32bd7ebe021205ba6ec17f7ee564acca4c6c36762d"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-11.csv",
+      "sha256": "2ffbb6de615212bd76c09b1b6001ba8649fc3ee86c1225cab13b3fa9cc0d3823"
+    },
+    {
+      "file": "data/raw/weather/ON-2011-12.csv",
+      "sha256": "febdcfa318f9a2f72852dc50a67ff598d453d6a9f548915c0910af67b2f6e55a"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-01.csv",
+      "sha256": "d9e85a54d02e082a7b22eb2cb031561e2e8a6c80e2edb8dd8da3ca6f410720eb"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-02.csv",
+      "sha256": "e0a6337dc2bc981626d738589b6d0e6f89b8c7f12f487d0d0e8732ea0136ee93"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-03.csv",
+      "sha256": "70024a9df033e2ffb1054861905c4305078d8da3d3dfc64c733dc67ece825edd"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-04.csv",
+      "sha256": "cb5d26f34d3b8d5d6fa48867235def62f917f3455fdcf55d107f65287da8c5c6"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-05.csv",
+      "sha256": "11cd77e707065ad9ae134b4b87b0291a40f8940d62cfcf23ae5d004898d68a43"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-06.csv",
+      "sha256": "df6d44746cc0356026a4b4bd39db66104db0324826b3dfd2ae0221377a08cecc"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-07.csv",
+      "sha256": "05067694c17672bee7e96060651e2c078b2e2fa2e782b124c82cf8b285b27eb1"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-08.csv",
+      "sha256": "699a143bc512aef5bf00d8b6e805a18c2eba26adc68a95c3511637ceb591231d"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-09.csv",
+      "sha256": "f41dd278527b897f9935b2205264e1a494db2b14330ba1bb456ddc71a8f23faf"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-10.csv",
+      "sha256": "8ba2a4b56142bf2d3bf679ddac03ffee2cc342be9b8cf528c552a363c1ba97c5"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-11.csv",
+      "sha256": "bc03ddf89a118f3f92dae95520236303aaf66bff338603097578b9001cec0a71"
+    },
+    {
+      "file": "data/raw/weather/ON-2012-12.csv",
+      "sha256": "5c98f33e73097ec2cd3ead3cedcf60fb5ec5dbe5f9a2419824567917500a5958"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-01.csv",
+      "sha256": "704993aacd1b0e41ce80b9bb1fca431afd300436de9502f48e36968cee379519"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-02.csv",
+      "sha256": "1489557b9de5c1cd01b4b7518818f60def7b9e824dbb9554c4f10925412595ab"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-03.csv",
+      "sha256": "c3437e251a93032053818a59b43861745311d85fe7b4f6d3d0b2af07044fef81"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-04.csv",
+      "sha256": "5bdf3aa27c90b1e06b568a394b1d589fc3591a521807032310ebe10946ff5cec"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-05.csv",
+      "sha256": "b7abb99e56e5181a51384206c242008f9b504b84011376504f839c347e4129c5"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-06.csv",
+      "sha256": "b5c9c8f379be781995a1cf11a37cc926976578a639cdd8a7ee37aec52371dbae"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-07.csv",
+      "sha256": "b4cf2c29623c10570fcfe31e7c8073f514d808db6537c12bd9c69cc755cf6b2a"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-08.csv",
+      "sha256": "57bb87de59de55832fd222d4d1525456ff061b5b867101422cf3b2556ade657f"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-09.csv",
+      "sha256": "10044f78d9d70fb9d86913740be2284212df69bad5088a37c9749f61f0c97e3e"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-10.csv",
+      "sha256": "2a445158f5f24ba3019c65eed141ca0bc74a7d353c73933e235979b929441d29"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-11.csv",
+      "sha256": "516f3a37d89f4a28cac12f1d4b32f4fe79cebcedf0fb022e48ddd35207921f23"
+    },
+    {
+      "file": "data/raw/weather/ON-2013-12.csv",
+      "sha256": "2bb6064ee1caafca5130645713f5a8055d119770874e74f47c6318e954b6a887"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-01.csv",
+      "sha256": "78933fd995dd6a5f88d0307839f74b783d089f4343a62e5f44f68e281bef0e3a"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-02.csv",
+      "sha256": "3cf589170d5893866bf6d941062c2204a8e24f4af7bbda1b70d0954cebc9170e"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-03.csv",
+      "sha256": "e09ee77bffa0158cf7796e3def92458340b9ed217ec5d1a792f38f4bb56d9c4f"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-04.csv",
+      "sha256": "32a8006c11b8d0143103065053393f01a90da3aab98ae45329f288fe048e11bb"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-05.csv",
+      "sha256": "a26ebb8bfebff908cbeb72da17bb49962ddd026a4c42054f46d3853bb338c5ad"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-06.csv",
+      "sha256": "1ed38ef0a8756af08770f083132917e6c9e2113eaac8bc6018932bde43fcdcf5"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-07.csv",
+      "sha256": "ab3ed21b6f742fc1f66dfa34aa6598de30ec080eb15bedeb0faaabf32a7083f6"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-08.csv",
+      "sha256": "d002b4c08fd38639395382680e556d6a751aea1f63abcd8d37ff3b8aa9477c10"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-09.csv",
+      "sha256": "9ae5aa13928d42b4b2eec37d5136c9b82c275c358fb6a8b382991c13d68b594e"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-10.csv",
+      "sha256": "15186eabf432fc62a8e722ab2df83475be53e5816ee87cc8b48cf81ef34a5ff5"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-11.csv",
+      "sha256": "33803db7a18b537ddab071c5eb24cf0ee121595cf97b13ea3b7cbf103ff8a088"
+    },
+    {
+      "file": "data/raw/weather/ON-2014-12.csv",
+      "sha256": "97cbfdb8e74c77f6aea63b05a449b9a4d06bc6be27bed79ba391612c91cb978e"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-01.csv",
+      "sha256": "9e90dcf19d50e397a748f0ab09bf18dc197a0c51e9761e49b45176d7202352ba"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-02.csv",
+      "sha256": "59e2a89b05cf6ba99fe36dc10c17f5dadccf9c48d6f4f291a26440d0eeb98798"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-03.csv",
+      "sha256": "5df630e67f48a997df0b30c7c1a6e15d003f5b60725ffbfe54cd05e3288a32d7"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-04.csv",
+      "sha256": "2564276c1e41ba8b6f1ce89cd1208387411a3d0579d92f3056789e20c14876a1"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-05.csv",
+      "sha256": "c890bdd422c351edfdf9045e49b1e267f8a947bdee49068aa7f60a366c612675"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-06.csv",
+      "sha256": "64cbd5ce88d97d0c5f9b675456f0e34c7af33c9c13bcd16b6f7959282efc9538"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-07.csv",
+      "sha256": "d4c3264f28449b1aaacf5b879affd94f59f7d7d43a075d23fbf68defb0c18b6b"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-08.csv",
+      "sha256": "b86d6976f0a5b4fb167d254be020ad15da0e7be5b0dd07007f308665f5a30c5b"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-09.csv",
+      "sha256": "8178fbc5f76da98eafab2a3e2482559a6c7200fd74919167d43c20bf17caa896"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-10.csv",
+      "sha256": "a23bd555504ea83c983a32c1a3a9f93395d63397185a582db84636ed7f22bf81"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-11.csv",
+      "sha256": "98372747381a29335aeec8f388eb0d0a4af348af8a23039ae68ccb9735842f04"
+    },
+    {
+      "file": "data/raw/weather/ON-2015-12.csv",
+      "sha256": "19a107022572c7b47ee0ef3569408c139613451eb157ae738e2188eef54b21c8"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-01.csv",
+      "sha256": "3818b3c731a9d113857de480f3c0191e56ba79335dad124560bb0734273b41a0"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-02.csv",
+      "sha256": "e4133e00630a79cf41bd78cc384a34c1c162cea8a1cb5fdefacfa09dbafe3806"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-03.csv",
+      "sha256": "1e6ce0d84da9668aee335ec149e0ba94ca29174125f03f3b18eca6891137b17a"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-04.csv",
+      "sha256": "28c10af7ce88778c88de9ccee443d66f201ea47117076f440baa8b072bc4de89"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-05.csv",
+      "sha256": "8e8cc2ee265411d9d1f23bda454cdaa64b854db929805fc5eafdd58d6ae13870"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-06.csv",
+      "sha256": "dde01fbb4e4a9aa1ea980e099a504b6bdb6b013b4d65b599152d67e2a7500892"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-07.csv",
+      "sha256": "83fcc6c048cd4f3b67ce0002bdda6b6c7860c5e55d4755f950c5f4e1ce00c379"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-08.csv",
+      "sha256": "da0b11e468fae9f0dc5cca00eba21f89130cfae7872593c8c212f43e0650ee96"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-09.csv",
+      "sha256": "4f5cf00aa5f09c84616246428a2e884e36c1326506172a3ba64acbd230d113e6"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-10.csv",
+      "sha256": "16ee941e917a82efb2fe006ce0f5591a1aac7de51d30d304746d46805a25aae8"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-11.csv",
+      "sha256": "f26d131b52b4b704a78eb4a6d720ddc231fc245bfa7f14cb8d01a5661d7380e4"
+    },
+    {
+      "file": "data/raw/weather/ON-2016-12.csv",
+      "sha256": "367768c77da9dc495e0bc23883ceefb6d26993b67579d28b7b1723ac5a01c44f"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-01.csv",
+      "sha256": "a0eea2e691ebff2e9b10322fb043e8170abae7e832a270fed8728f0991499ccb"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-02.csv",
+      "sha256": "63eb02732e3b24535323e74deeafa75dcf459f9d76278a8ac5d2007f8c082d8a"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-03.csv",
+      "sha256": "39cbec0e6367ed7c035428ae486494ee55e1172a25eaa7a212ca131516b16f55"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-04.csv",
+      "sha256": "b0ab0d7caef1d20f3ff9044c13d68dcb6e3d3e20efc6607cd94d3780202e9933"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-05.csv",
+      "sha256": "342b64716cd65908afaa3bf1fe52be0378900b99fe61bb25220aa22e0848dee6"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-06.csv",
+      "sha256": "ecc0f870c262d3c0e0811a06116050213b6b0ac46609e6dcca95131e562c5741"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-07.csv",
+      "sha256": "a8f9cc204f5b64f8f74ecc45c0e43e2539105204ffd159ff342017e182e1debc"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-08.csv",
+      "sha256": "0e1b93d9ec16fcec02cc5676afa00dee78af22245bb3e5b6a1fb2f6b0879a76f"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-09.csv",
+      "sha256": "d3a5843c05d74083f14ca655b489635c6f54fc10e232267894ef58624bfdd69d"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-10.csv",
+      "sha256": "4101630f5542cab15fff8eaf40e674ad61e256343f965f46cac35df73126212a"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-11.csv",
+      "sha256": "063dc382695a902fa3cec5adc08de34d9cc0aea92ebc35a5294e8a5a4a4b6065"
+    },
+    {
+      "file": "data/raw/weather/ON-2017-12.csv",
+      "sha256": "9b4ee847f99e23d7de79569bfa91f17dea6f3dae145018b0028134ae867afe5c"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-01.csv",
+      "sha256": "6fca2a6ad7ba7d61d8a97431ca29e2f3676cfb664cf16a74c45b19a54845127f"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-02.csv",
+      "sha256": "5e586a5022ced312b9550be84adcd5097fe39cc6f000b9f7dd12afccdfc38651"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-03.csv",
+      "sha256": "c09f34ce4602543166cec3b034843682cc8d0665691c85dd208cf37da70d1679"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-04.csv",
+      "sha256": "8df700746a164ac4dee67abb8ac3ea4275b84b20cc19b723e0713b529389e365"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-05.csv",
+      "sha256": "5b7e7040c20ccfde41360b324b136fa506cb3e9b3f1e59649cc3615d551965fb"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-06.csv",
+      "sha256": "419d4c6b80a3bbc1c4d84dd141d413e3bba9052b1f5a307735d353161e205291"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-07.csv",
+      "sha256": "b77e451177f32584dba3c3d2929ae32a00e82223c887211e2131a177e8ccf2b2"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-08.csv",
+      "sha256": "82bca7f9ec71bdfd497a06307c6a4d9e0bfabf7352dbc3212e91a20a35631ee5"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-09.csv",
+      "sha256": "36d0d330a51db3adc55c6f3afd25b39aff8a9ee0b0b75c4ab01f34d6bd461acf"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-10.csv",
+      "sha256": "d6a9cc8196b6cda59a3143a1ea1cf3add9643d04baaadcca303b438ec9e5c8e5"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-11.csv",
+      "sha256": "97626cd3ff2dd06c1e35de1a6d161ecfc79919e522472ea6866bebaaf8c545ce"
+    },
+    {
+      "file": "data/raw/weather/ON-2018-12.csv",
+      "sha256": "785d9af4dde1cbd89b64bafbb239f5081c3904e185f6118ad9f2a1c5c0493141"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-01.csv",
+      "sha256": "c17c3921e2e11feb4fafe7d45c7575e848b7569027eeb9f08b45d0ab5f0ec3af"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-02.csv",
+      "sha256": "8b5a09fcbd93bada274382c35c866ec5715e947adfafcb85e102f4ef13c7c9f4"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-03.csv",
+      "sha256": "894383d453a9ed625f4e05b4aaf2fceebc479be84d7f3f7b845bae606f1215cf"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-04.csv",
+      "sha256": "25d087001d0f4cdd69e443c023e29ef93264c473ff4ed6b49f45178af79b57d4"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-05.csv",
+      "sha256": "39e72a8d84f634d307f74b820ea26a0579f4305fcf32b9c1c2f01d69558cb2bf"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-06.csv",
+      "sha256": "705af8d5ff65d257e66314fb87c1cfdc72aea60a5168f9def7b4a7cb226f467a"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-07.csv",
+      "sha256": "708f68f8116e784204132ef9fee05dac74c519f72f70a97001b20a66f60efd89"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-08.csv",
+      "sha256": "3d7d01509cff1f01c7b497ef725f8b1fb07f11a0bb36fdbb4ff16556946a87c1"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-09.csv",
+      "sha256": "8e97bfeb016533e90a9371abbf140cc373382671dd344a542fee7cc1305f7205"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-10.csv",
+      "sha256": "528372f336892fe492e48947568e1b74f8e7f995818dd289aef95606e0760c7b"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-11.csv",
+      "sha256": "04f42466ddfc01320972c1b47dcd9f69af0fc45ac367f632fbabf050556d2625"
+    },
+    {
+      "file": "data/raw/weather/ON-2019-12.csv",
+      "sha256": "e6e225e069f220b9dad35dd9cad783445237e1f47422e86a5ce6edab74b86cf3"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-01.csv",
+      "sha256": "97e48dbd96490580ea94a2fcae1edf189b91a94454f5a185645d33fe000cafca"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-02.csv",
+      "sha256": "944525a81ea95bdf4bd19cf2bda80d0a9aa9fe1f3d856eeaa6623f964e451330"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-03.csv",
+      "sha256": "0478f2ac0eb990ec01f09136e2a6d5b45486d690ece050a0f64f096ffe0ed393"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-04.csv",
+      "sha256": "e637509de00a7777f2d2415cfc5c42c491391c26d41cfad36a91d69545ba1840"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-05.csv",
+      "sha256": "6745ae122f30e77484e72ebe0aaae612548c99f27b771c7a2a1e7b5eea13f512"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-06.csv",
+      "sha256": "0a0e227e3fb42a11d12b0300525cb3a01d9fa125a63172ec359893231293e65d"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-07.csv",
+      "sha256": "1b4670a65c6873c5902d5302d730bf64543717899f858d68a6ce068bbbf7b813"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-08.csv",
+      "sha256": "03cfe14b9157e3bfdb3b19f2e72588048530dc2cac4c1090c452219c0dff5164"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-09.csv",
+      "sha256": "fd962bdaa9729611984d88b92b76dacd8cf29984e20d16b48854734def8915d8"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-10.csv",
+      "sha256": "1276cb7c7f6ece546cb63dc495918dc450294eaf3d6b76ccf30046f7ded02fe5"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-11.csv",
+      "sha256": "4f2b8a643a4e1a06b51ffaeaada4001492c10ff2c8a6dc126955a8b124822c46"
+    },
+    {
+      "file": "data/raw/weather/ON-2020-12.csv",
+      "sha256": "00632bcbde484ce8f069f2636153121a907df4aa826d9184c6c03f9ffcc1fd5d"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-01.csv",
+      "sha256": "7ad3b321b9e7e543051128e7cce450c719dbd6152c430af70661efe9498331e0"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-02.csv",
+      "sha256": "76542715d76894844a4ae411f3ea1c0dcb5c1c4843f8191910557e35612921c4"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-03.csv",
+      "sha256": "eca22fe59fae765dc886bc85e39ef1dcbd878a9397039fe1f4f260a4b0d26d6a"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-04.csv",
+      "sha256": "31446b91bb8cec990c4a8618c481f5dbb5ad1458893b01b173cc355123b77aa4"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-05.csv",
+      "sha256": "f158162038b8bf4bb889e25f92051f693c56109f634ef1a4f76c8e061126ced4"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-06.csv",
+      "sha256": "60c6827bef7eea6b12ddac9aadbe25569a15a58096944a0119581df6d37d5a16"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-07.csv",
+      "sha256": "e3619a4018d0ce055d273a4cda76bdec2c0c24e2b7eff81754a71f1a86905e09"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-08.csv",
+      "sha256": "4d36fedfcf58470e43908e0f7078c553a856d717b21571aa86c96341204631ee"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-09.csv",
+      "sha256": "7c4aac62cd195fa481824dac8ccb57344b9a374df454212ead2c58a7202880ef"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-10.csv",
+      "sha256": "de3c8beb32ae27af7b75e751f014601e09da7f5c5da32174b486c51a94b7afdd"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-11.csv",
+      "sha256": "12336c19cdcf43978703f5c8b176c441c314832590bbe3bd445fd24ffdce6ece"
+    },
+    {
+      "file": "data/raw/weather/ON-2021-12.csv",
+      "sha256": "2035198457012a5a355e3661805d5b44e31f200da2ba144e8ebc2f05a144fe8d"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-01.csv",
+      "sha256": "0b7b75a45a5de340504bf3106b1c2986877d6ce0eeffdf3482a71d5a2b80055b"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-02.csv",
+      "sha256": "e9b14530977fcedd549233c07a50146a33255abdb9fd223756bf9f0c3d966c98"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-03.csv",
+      "sha256": "48be2ccf7d3f0d935f0f2dfcfb2326ffc1f00e725c236c45b95d95c555c09f12"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-04.csv",
+      "sha256": "ab348f49e6480e97cfe252a6eedc676f753a4d8ad378805a47aa7795b6b6ae5c"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-05.csv",
+      "sha256": "640460e2a9e06a59f5add107c32d1414648932cafc3360725cd217e3c5f20334"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-06.csv",
+      "sha256": "e0a029927102b87a700b57907c04fd1985eaa882ee1defba4daa2b112975f69d"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-07.csv",
+      "sha256": "5906c741e4402bbb3430a8993314542843f680c40bf4206144e616e8f64921d6"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-08.csv",
+      "sha256": "45431b0557842b81c11920e8074698ec94c7e0a766f24c4d7ca50fc4c61d9dec"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-09.csv",
+      "sha256": "fa4565849408722d286a861a42356605acfe24baf49557a953e7db55348d6318"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-10.csv",
+      "sha256": "fd9720f08dc6fa761eb954e88080248cc28c9c499efa8b7571539ab103f8fe0e"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-11.csv",
+      "sha256": "e0a34d996c774e9333623cccdb65229f356a683bf0f8945e45ba6547cc05168d"
+    },
+    {
+      "file": "data/raw/weather/ON-2022-12.csv",
+      "sha256": "074cd080756edba258d59f57e9e0c1107faddb42d18d5f8d9913fae2fe41c16d"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-01.csv",
+      "sha256": "b407f21d8ee21014343b342da4c8e6aec539a75eeedeb65e15338b0f3adbcfa8"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-02.csv",
+      "sha256": "734d6ad6e84eada3f82ebea1dc3a196fc1e0c8fe15968d6906de47979bfbf6d1"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-03.csv",
+      "sha256": "db412924c7ea3d7a67ee17c76108723bfc6b012eacc2c06eaf3b5ed979d32489"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-04.csv",
+      "sha256": "32de09df3926341c3b7059ad05aeed6309b645820c7b3041a53731e1c7ab47a3"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-05.csv",
+      "sha256": "e29fab6f5b924ba13a5812f3a8041e4992f7dbe59e6a5f2c710a65758de25d67"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-06.csv",
+      "sha256": "c9ddc4d46dedb99873aafaa3a022cb9a54c1afa9c20433ea8646cd34148e1df6"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-07.csv",
+      "sha256": "dadda2144d3ba7d22e94caf26dca8923402a93f7a9b4739ea49b2ed99ad984e3"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-08.csv",
+      "sha256": "e46c515fa7b3b5084d3c4c0085d0e529f0d18bb662de6cc7c7e8685aab63cf49"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-09.csv",
+      "sha256": "ff5e9b256679f742c4fb9c66ae42877dc3ea2439ef9cec9c56ac6f696cfa24e9"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-10.csv",
+      "sha256": "e5e0ab5e45b16a7409bde7557b21d8b6e3697f40a7b6ecd48cc2f3deda53650c"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-11.csv",
+      "sha256": "f900998177d86c489a6631efcd95f39493c076569bcd2685d4b90c50e13b1f0a"
+    },
+    {
+      "file": "data/raw/weather/ON-2023-12.csv",
+      "sha256": "86da1f71bf2afb866b2abb638df2bd67f0d6c4344e012c08d3dc72a2491d3053"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-01.csv",
+      "sha256": "d7d57aa4256f7b2db22201e7b64d5828af57bba85c80e64f907ccc37b62aee36"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-02.csv",
+      "sha256": "0950569ec4ea7d631d7d9379fde0b0f56e3edc26dd3d607bd596bba55f6b0ec5"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-03.csv",
+      "sha256": "72e29908f2e94555106a4fed14bbb7a42f7a4a5c4d7b8acac576ac3687f56ada"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-04.csv",
+      "sha256": "3e339109e69decdfeeb3ee6b5aa8abdf78e19147a9efe5f52d7865494cece2ad"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-05.csv",
+      "sha256": "4701dd4514ca2a6f3cfa83462f3f079826274661aa9458cf7f6cfdbf517cbec1"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-06.csv",
+      "sha256": "60cb1f68dd5491701ced1ab6d05c58c4f62acecba2ffa4f19c6850540f4f1db9"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-07.csv",
+      "sha256": "e5ac4281a8583e846a5fdf6363f1e931e8cec54163c37d32079039076975f233"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-08.csv",
+      "sha256": "8ba4a7620f4800fc531cd939ae4681a02482f4033e3e0ad2fbe031c1f2f22ec8"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-09.csv",
+      "sha256": "76bb524561d511a98b6ee6497b628e16625701eed0d4d871cb0ad6f6556a9070"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-10.csv",
+      "sha256": "0155414039ff2fbe4f9a35031057ed0cab1ffe297a8fce16c14e94c4e0b8b600"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-11.csv",
+      "sha256": "b36dd5d89ad4d4580c970ab59ed40513b19c2900aaa4a3bd851c44d76a9d85ec"
+    },
+    {
+      "file": "data/raw/weather/ON-2024-12.csv",
+      "sha256": "16dedd226efe89f05bedadf02f2fd3599c239a7024d359119478ded6b7dc39f7"
+    }
+  ],
+  "protected_scientific_sha256": {
+    ".cache/wildfire/final-test/outcome.json": "e0d4fc03bc736e52cacddfab6e75f08cfb896b0e9713a9413aada9ca0645bbff",
+    ".cache/wildfire/features/historical-woodland/f8a46f515b5b90b753a8/features.csv": "b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8",
+    "docs/results/policy-evolution.json": "91d5213873c228402c1ab5d0f2929cd48a9528c391182015cb12a32a3565c2ea"
+  },
+  "figure_files_sha256": {
+    "docs/figures/annual-final/annual-reused-errors.svg": "c9cdae13049a8325c040966223d985347f6e72637f7943a5f2e48fd1ac8c964f",
+    "docs/figures/annual-final/annual-reused-errors.png": "1406528c2486e3e25df79cd55542d1c72478b708969daf2f975b6fe011d35753",
+    "docs/figures/annual-final/annual-reused-predictions.svg": "cbe6c0bf96b5bf4b87dd7dfeed755ebad53149aacfc373d1d92928651499674d",
+    "docs/figures/annual-final/annual-final-crossover.svg": "41d6f2b94f3fb4f5575194f4385881bf143556acede59cfa07e53b1a797d58bc",
+    "docs/figures/annual-final/annual-final-kernels.png": "06b34676cd30cd5b376b02199e22f4e13a562afd90495960319b61d96a32ec55",
+    "docs/figures/annual-final/annual-final-kernels.svg": "4e0138610de141bc7b69968dbe51faa497480148c4c5db0d1f2407f38dac4836",
+    "docs/figures/annual-final/annual-reused-predictions.png": "4ded98a662405302cc48c10df03bdb43d5d8b54c992745433049786a0685bb3e",
+    "docs/figures/annual-final/annual-final-crossover.png": "479af94d721b33813328b12d29e0dfe9dd8927b8cb8694d71173dadd191c7da3",
+    "docs/figures/annual-development/annual-matched.png": "69d0510ebff295b2bd7031ed603ec69a4e48c35b56888f0465b02ac381b84e59",
+    "docs/figures/annual-development/annual-matched.svg": "cfab250d73ecdd88c325c6b1d111086d5a8cc18fd51458f1e1df55df6e87d1ab",
+    "docs/figures/annual-development/annual-development.png": "059b63cf2b02bb05920f04d15882d22f7ab88dc0fb7e03647e4aa0dd358d64e0",
+    "docs/figures/annual-development/annual-kernel-similarity.svg": "8b21aca646f9761c76dafdd7621e8c0e4bb5c09f0fc215783759282f8499306d",
+    "docs/figures/annual-development/annual-kernel-similarity.png": "9bd89e166cc14804a04adda0327046e403fe1016814d4436eeb7f8523ecf00fa",
+    "docs/figures/annual-development/annual-development.svg": "52903d2e3ba9560af38094adca2622ac27c29da43e37b1907a67a45e4c633ea5"
+  },
+  "figures_visually_reviewed": 7,
+  "visual_review_scope": "Labels, axes/units, legends, clipping/overlap, shared-year disclosure and full observed response range checked from current seven PNG files",
+  "local_body_bytes_verified": 9836400443,
+  "seconds": 3.993265208089724,
+  "source_network_refetch": false,
+  "predictor_fits": 0,
+  "quantum_states": 0,
+  "hardware_jobs": 0,
+  "goal_complete": false
+}

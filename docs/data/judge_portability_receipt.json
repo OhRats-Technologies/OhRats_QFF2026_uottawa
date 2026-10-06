@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "commit": "155dc776f00d8c4f92b12fafdd658c4d6de9adb9",
+  "clone": "GitHub HTTPS shallow clone, authorized account because repository private",
+  "initial_env_cache_and_dotenv_absent": true,
+  "credential_env_removed": true,
+  "dependency_install": "New isolated .venv; uv system package cache reused. Not an empty-download-cache or cross-platform test.",
+  "steps": [
+    {
+      "command": [
+        "uv",
+        "sync",
+        "--locked",
+        "--group",
+        "data",
+        "--group",
+        "analysis",
+        "--group",
+        "quantum"
+      ],
+      "seconds": 0.37,
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "--no-sync",
+        "python",
+        "scripts/pipeline.py",
+        "annual",
+        "collect",
+        "--output",
+        ".cache/wildfire/annual-public",
+        "--execute"
+      ],
+      "seconds": 35.57,
+      "exit_code": 0
+    }
+  ],
+  "total_seconds": 37.33,
+  "prediction_records_checked": 83,
+  "inner_candidates_checked": 168,
+  "kernel_records_checked": 24,
+  "tracked_changes_after": "",
+  "fits_states_hardware": "None; public frozen collection only."
+}

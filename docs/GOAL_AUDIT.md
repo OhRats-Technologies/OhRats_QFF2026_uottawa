@@ -11,12 +11,14 @@ The earlier scope assessment below describes the 1 PM run. The owner authorized 
 | Provincial woodland context | Complete for training: fixed Ontario polygon, coarse equal-area samples, resolution/coverage gate |
 | Classical and actual fidelity-QSVR baselines | Complete development: nested chronological tuning at four/ten inputs |
 | Equal kernel exploration budgets | Complete: [36-candidate comparison](results/annual-matched.json) |
-| Continuous-target classical/quantum selection and SQD applicability | Complete development with fixed ridge; final crossed predictors pending |
-| Reused-year evaluation with frozen choices | **Pending:** [two-phase final plan](../experiments/annual_final.json) |
-| Evidence/QA and figures | Current table/prediction audit and 130/64 source checks; final verification pending |
-| Final report, talk outline and handoff | Development documents published; final results and whole-goal completion pending |
+| Continuous-target classical/quantum selection and SQD applicability | Complete: fixed-ridge development, 72 final selector/predictor records; diagonal SQD adds no optimization beyond the best sampled subset |
+| Reused-year evaluation with frozen choices | Complete: learned states published at `fd18c5e` before evaluation; eleven main models and 72 crossover records; no evaluation fits |
+| Evidence/QA and figures | Complete scientific audit: 83 predictions and 24 kernel pairs reproduce; 142 tests / 68 CLI paths at `3fae875`, expanded to [145/69](data/annual_bandwidth_repository_checks.json) at `870abe2` for the later input-only probe; seven PNG/SVG figures |
+| Final report, talk outline and handoff | Verified annual report, 304 rounded values, seven figures and six-beat 300-second outline; [handoff receipt](data/annual_goal_handoff.json) complete, deadline board review closed at 21:00 UTC |
 
-Code QA cannot substitute for pending evaluation. No annual test targets or hardware were accessed during development. [Current report](REPORT.md) · [Active handoff](HANDOFF.md).
+None of the eleven main models beats the training-mean baseline on the six reused years. Four-qubit QSVR has lower MAE than its matched RBF comparator there, but that pairwise difference does not establish useful prediction or quantum advantage. Same-year climate supports retrospective estimation. No hardware was used; annual test targets were accessed only after final training states were frozen and published.
+
+[Source reaggregation](data/annual_table_reaggregation.json) reproduces both annual CSVs byte-for-byte. [Reporting audit](data/annual_reporting_audit.json) checks 304 rounded table values. [Source/figure integrity](data/annual_source_integrity.json) verifies local bodies and protected legacy hashes; [document checks](data/annual_document_checks.json) verify links, code fences and GitHub math recognition. The [requirement audit](data/annual_requirement_audit.json) checks the actual annual tables, source denominators, budgets, saved prediction equations, protected legacy evidence and module sizes. The [portable receipt](data/annual_portability_receipt.json) records reproduction in a clean GitHub clone with an existing locked venv; it is not a fresh dependency-installation test. The preferred public collector is `scripts/pipeline.py annual collect --output <new-directory> --execute`; no raw downloads, credentials, fits or quantum states are required. [Current report](REPORT.md) · [Completed handoff](HANDOFF.md).
 
 ## Earlier 1 PM audit · preserved scope correction
 

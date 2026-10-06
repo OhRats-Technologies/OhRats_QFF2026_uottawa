@@ -1,0 +1,6 @@
+{
+  "bundle": "docs/data/annual_final_evidence.zip",
+  "sha256": "99f6b8b74d6ed4bcf3c23c117ce93bc52dbc716d4a8f0baf31324c5e28e472e5",
+  "members": 103,
+  "interpretation": "Portable frozen annual evidence; collection only, no predictor fits or quantum execution"
+}

@@ -1,0 +1,17 @@
+{
+  "study": "annual-bandwidth-geometry",
+  "parent": "experiments/annual_qsvr.json",
+  "parent_sha256": "63c8700998901fa4126ad044056a3d6be71e93a7f467239335ed03e55b3f06b5",
+  "dataset": "docs/data/annual_training.csv",
+  "dataset_sha256": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+  "years": [1988, 2018],
+  "widths": [4, 10],
+  "amplitudes_pi_denominator": [32, 16, 8, 4, 2],
+  "repetitions": 1,
+  "encoding": "Training-input-only mean/std; theta = amplitude * tanh(z / 2); canonical physical-four/all-ten feature order",
+  "budget": {"matrices": 10, "pair_circuits": 4650, "predictor_fits": 0, "shots": 0, "hardware_jobs": 0, "execution_seconds": 300},
+  "chronology": "Post-final diagnostic after inspected 2019-2024 results; separate namespace; does not change final models or select a scale",
+  "data_rule": "Read only year and training input columns, never a target column or test rows. No alignment/forecast metric is measured.",
+  "purpose": "Test the guide's bandwidth/concentration mechanism on fixed training inputs, not predictive superiority",
+  "pruning": "Preserve partial records on timeout/failure. No reset, extra levels, depth, predictor fit or test prediction. Keep main negative comparison unchanged."
+}

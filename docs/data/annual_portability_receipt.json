@@ -1,0 +1,14 @@
+{
+  "source_commit": "f4e5973cf8c28803e43f5c2c15010022e2fed452",
+  "development_records_reproduced": 12,
+  "final_predictions_reproduced": 83,
+  "final_kernel_records_checked": 24,
+  "final_collection_fits": 0,
+  "final_collection_quantum_states": 0,
+  "credentials_copied": false,
+  "environment": "Existing locked venv reused; fresh GitHub clone code/data, not a fresh dependency installation",
+  "front_door_source_commit": "3fae8750217ce37c6ee7d0008531dc4a052145f8",
+  "one_command_collection_passed": true,
+  "saved_signal_records_reproduced": 4,
+  "additional_gram_diagnostics_reproduced": 24
+}

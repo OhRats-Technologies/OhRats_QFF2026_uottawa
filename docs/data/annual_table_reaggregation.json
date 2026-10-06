@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "datasets": [
+    {
+      "file": "docs/data/annual_training.csv",
+      "years": [
+        1988,
+        2018
+      ],
+      "rows": 31,
+      "size_observed_incidents": 39616,
+      "unknown_sizes": 0,
+      "identity_exclusions": 768,
+      "sha256": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+      "source_reaggregation_byte_identical": true,
+      "exclusions": {
+        "blank_or_duplicate_identity": 768,
+        "prescribed_code": 15
+      }
+    },
+    {
+      "file": "docs/data/annual_reused_evaluation.csv",
+      "years": [
+        2019,
+        2024
+      ],
+      "rows": 6,
+      "size_observed_incidents": 3828,
+      "unknown_sizes": 0,
+      "identity_exclusions": 34,
+      "sha256": "6c1cc55f1f44990e249fadaafbed5a0baa37deb90a4843f539e52b0f9db28636",
+      "source_reaggregation_byte_identical": true,
+      "exclusions": {
+        "blank_or_duplicate_identity": 34
+      }
+    }
+  ],
+  "method": "Current frozen fire_years and climate_years reaggregate unchanged source snapshots; no classifier subset used",
+  "predictor_fits": 0,
+  "new_quantum_states": 0,
+  "new_test_opening": false,
+  "interpretation": "Post-final source/table consistency check, not another predictive validation"
+}

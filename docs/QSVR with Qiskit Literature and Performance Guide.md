@@ -10,9 +10,9 @@ There is no strong evidence that deeper circuits or more qubits are generally be
 
 Qiskit Machine Learning provides `FidelityQuantumKernel`, `TrainableFidelityQuantumKernel`, `QuantumKernelTrainer`, and `QSVR`. The library’s fidelity kernel computes
 
-\[
+$$
 K(x,x')=|\langle\phi(x)|\phi(x')\rangle|^2,
-\]
+$$
 
 then passes that kernel to a classical support-vector optimizer; `QSVR` extends scikit-learn’s `SVR` rather than replacing its convex optimization stage.[^4][^1]
 
@@ -57,7 +57,7 @@ Precomputation is preferable during model selection because the expensive quantu
 | 4 | **Zhou et al., “Quantum kernel estimation-based quantum support vector regression”** (Quantum Information Processing, 2024) | QSVR-specific trainable-kernel paper. It proposes quantum-kernel alignment for regression and then inserts the trained kernel into classical SVR.[^7] |
 | 5 | **Sahin et al., “Qiskit Machine Learning: an open-source library…”** (2025) | Current architectural overview of Qiskit ML, including QSVR, fidelity kernels, trainable kernels, primitives, simulators, and hardware execution.[^4] |
 | 6 | **Wang et al., “Quantum Kernel Learning for Small Dataset Modeling in Semiconductor Fabrication”** (Advanced Science, 2025) | Concrete small-data QKAR example: shallow Pauli-Z feature map plus trainable alignment layer. Its ablation found the shallow aligned map better than more entangled alternatives on that task.[^8] |
-| 7 | **Tscharke et al., “Semisupervised Anomaly Detection using Support Vector Regression with Quantum Kernel”** (2024) | Useful application study and cautionary hardware result. Simulated QSVR was competitive, but early hardware runs without substantial mitigation fell to chance-level AUC on two datasets.[^9] |
+| 7 | **Tscharke et al., “Semisupervised Anomaly Detection using Support Vector Regression with Quantum Kernel”** (2024) | Useful application study and cautionary hardware result. Simulated QSVR was competitive, but early hardware runs without substantial mitigation fell to chance-level AUC on two datasets.[^15] |
 | 8 | **Stühler, Pranjić & Tutschku, “Evaluating Quantum Support Vector Regression Methods for Price Forecasting Applications”** (ICAART 2024) | Compares fidelity/projected QSVR, entanglement, re-uploading, categorical encoding, and autoencoder compression. It shows architecture and dimensionality reduction effects are dataset-dependent. |
 | 9 | **Djehiche & Löfdahl, “Quantum support vector regression for disability insurance”** (2021) | Early QSVR hardware application with a domain-designed two-qubit map and weighted SVR. It is a good example of encoding known structure rather than choosing a generic feature map.[^9] |
 | 10 | **Park et al., “Practical application improvement to Quantum SVM: theory to practice”** (2020) | Classification-focused but highly transferable: use shallow tunable transformations and regularization rather than assuming a fixed highly expressive map will work.[^10] |
@@ -108,16 +108,16 @@ Do not select a circuit on training error or kernel expressibility alone. Highly
 
 For regression, the useful target kernel is based on centered continuous targets rather than class labels. Given centered `y`, a basic target Gram matrix is
 
-\[
+$$
 K_y = yy^T,
-\]
+$$
 
 and centered kernel-target alignment can be optimized as
 
-\[
+$$
 A_c(K,K_y)=\frac{\langle HKH,HK_yH\rangle_F}{\|HKH\|_F\,\|HK_yH\|_F},
 \qquad H=I-\frac{1}{n}\mathbf{1}\mathbf{1}^T.
-\]
+$$
 
 Optimize alignment only on the inner-training fold, then freeze the circuit before validation. Zhou et al. explicitly propose regression-oriented quantum-kernel alignment, and later small-data QKAR work reports gains from adding a shallow trainable alignment layer.[^8][^7]
 
@@ -222,7 +222,7 @@ This staged design avoids the common mistake of spending the quantum budget on c
 - **Prediction gain is not quantum advantage.** The quantum kernel must also be hard to reproduce classically, and tuned fidelity kernels often become classically approximable.[^11][^13]
 - **Tiny datasets inflate variance.** Report repeated splits and confidence intervals, not the best split.
 - **PCA and scaling must be fitted inside each fold.** Several application papers use aggressive dimensionality reduction because qubits are scarce; reproductions should avoid preprocessing on the full dataset.
-- **Simulation success may not transfer.** Anomaly-detection QSVR studies found competitive simulation results but large early-hardware degradation without sufficient mitigation.[^9]
+- **Simulation success may not transfer.** Anomaly-detection QSVR studies found competitive simulation results but large early-hardware degradation without sufficient mitigation.[^15]
 - **Noise is not reliable regularization.** Hardware noise can occasionally improve a dataset by chance, but QSVR studies also show strong sensitivity to amplitude damping, calibration errors, and adversarial perturbations.
 - **Domain-aware encoding is more defensible than generic depth.** The disability-insurance work designed a two-qubit map around age and sex structure, illustrating how inductive bias can be built into the circuit rather than discovered through brute-force depth.[^9]
 
@@ -236,31 +236,33 @@ The strongest current evidence supports QSVR as a useful experimental kernel-lea
 
 ## References
 
-1. [QSVR - Qiskit Machine Learning 0.9.1 - GitHub Pages](https://qiskit-community.github.io/qiskit-machine-learning/stubs/qiskit_machine_learning.algorithms.QSVR.html)
+[^1]: [QSVR - Qiskit Machine Learning 0.9.1 - GitHub Pages](https://qiskit-community.github.io/qiskit-machine-learning/stubs/qiskit_machine_learning.algorithms.QSVR.html)
 
-2. [Bandwidth Enables Generalization in Quantum Kernel ...](https://arxiv.org/html/2206.06686v3)
+[^2]: [Bandwidth Enables Generalization in Quantum Kernel ...](https://arxiv.org/html/2206.06686v3)
 
-3. [Quantum Kernel Methods under Scrutiny: A Benchmarking Study](https://arxiv.org/html/2409.04406)
+[^3]: [Quantum Kernel Methods under Scrutiny: A Benchmarking Study](https://arxiv.org/html/2409.04406)
 
-4. [Qiskit Machine Learning: an open-source library for quantum ...](https://arxiv.org/pdf/2505.17756.pdf)
+[^4]: [Qiskit Machine Learning: an open-source library for quantum ...](https://arxiv.org/pdf/2505.17756.pdf)
 
-5. [FidelityQuantumKernel - Qiskit Machine Learning 0.7.1](https://qiskit-community.github.io/qiskit-machine-learning/locale/es_UN/stubs/qiskit_machine_learning.kernels.FidelityQuantumKernel.html)
+[^5]: [FidelityQuantumKernel - Qiskit Machine Learning 0.9.1](https://qiskit-community.github.io/qiskit-machine-learning/stubs/qiskit_machine_learning.kernels.FidelityQuantumKernel.html)
 
-6. [Quantum support vector machines for classification and ...](https://arxiv.org/abs/2307.02091) - Quantum machine learning is a rapidly growing field at the intersection of quantum computing and mac...
+[^6]: [Quantum support vector machines for classification and ...](https://arxiv.org/abs/2307.02091) - Quantum machine learning is a rapidly growing field at the intersection of quantum computing and mac...
 
-7. [Quantum kernel estimation-based quantum support vector regression](https://link.springer.com/article/10.1007/s11128-023-04231-7) - Quantum machine learning endeavors to exploit quantum mechanical effects like superposition, entangl...
+[^7]: [Quantum kernel estimation-based quantum support vector regression](https://link.springer.com/article/10.1007/s11128-023-04231-7) - Quantum machine learning endeavors to exploit quantum mechanical effects like superposition, entangl...
 
-8. [Quantum Kernel Learning for Small Dataset Modeling in ...](https://pmc.ncbi.nlm.nih.gov/articles/PMC12462921/) - Modeling complex semiconductor fabrication processes such as Ohmic contact formation remains challen...
+[^8]: [Quantum Kernel Learning for Small Dataset Modeling in ...](https://pmc.ncbi.nlm.nih.gov/articles/PMC12462921/) - Modeling complex semiconductor fabrication processes such as Ohmic contact formation remains challen...
 
-9. [Quantum support vector regression for disability insurance](https://arxiv.org/abs/2109.01570) - We propose a hybrid classical-quantum approach for modeling transition probabilities in health and d...
+[^9]: [Quantum support vector regression for disability insurance](https://arxiv.org/abs/2109.01570) - We propose a hybrid classical-quantum approach for modeling transition probabilities in health and d...
 
-10. [Practical application improvement to Quantum SVM](https://arxiv.org/pdf/2012.07725.pdf) - by JE Park · 2020 · Cited by 88 — QSVM could include improved analytical performance (e.g., improved...
+[^10]: [Practical application improvement to Quantum SVM](https://arxiv.org/pdf/2012.07725.pdf) - by JE Park · 2020 · Cited by 88 — QSVM could include improved analytical performance (e.g., improved...
 
-11. [Numerical evidence against advantage with quantum fidelity kernels on classical data](https://arxiv.org/html/2211.16551v1)
+[^11]: [Numerical evidence against advantage with quantum fidelity kernels on classical data](https://arxiv.org/html/2211.16551v1)
 
-12. [Importance of Kernel Bandwidth in Quantum Machine Learning](https://www.arxiv.org/pdf/2111.05451.pdf)
+[^12]: [Importance of Kernel Bandwidth in Quantum Machine Learning](https://www.arxiv.org/pdf/2111.05451.pdf)
 
-13. [On the similarity of bandwidth-tuned quantum kernels and ...](https://arxiv.org/html/2503.05602v1)
+[^13]: [On the similarity of bandwidth-tuned quantum kernels and ...](https://arxiv.org/html/2503.05602v1)
 
-14. [QuantumKernelTrainer#](https://qiskit-community.github.io/qiskit-machine-learning/locale/hi_IN/stubs/qiskit_machine_learning.kernels.algorithms.QuantumKernelTrainer.html)
+[^14]: [QuantumKernelTrainer#](https://qiskit-community.github.io/qiskit-machine-learning/locale/hi_IN/stubs/qiskit_machine_learning.kernels.algorithms.QuantumKernelTrainer.html)
 
+
+[^15]: [Semisupervised Anomaly Detection using Support Vector Regression with Quantum Kernel](https://arxiv.org/abs/2308.00583) — Kilian Tscharke, Sebastian Issel and Pascal Debus (2023 preprint).

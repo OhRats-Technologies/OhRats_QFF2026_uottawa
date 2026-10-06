@@ -37,7 +37,8 @@ def gram_diagnostic(entry, gram, cross):
     positive = probabilities[probabilities > 0]
     off_diagonal = gram[~np.eye(len(gram), dtype=bool)]
     return dict(id=entry['id'], kind=entry['kind'], inputs=len(entry['features']),
-                params=entry['params'], minimum_eigenvalue=float(eigenvalues.min()),
+                params=entry['params'], eigenvalues=eigenvalues.tolist(),
+                minimum_eigenvalue=float(eigenvalues.min()),
                 maximum_eigenvalue=float(eigenvalues.max()),
                 condition_number=float(np.linalg.cond(gram)),
                 effective_rank=float(np.exp(-np.sum(positive * np.log(positive)))),

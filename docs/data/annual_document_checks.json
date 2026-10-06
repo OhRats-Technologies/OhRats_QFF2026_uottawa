@@ -1,0 +1,29 @@
+{
+  "tracked_markdown_files": 37,
+  "relative_file_links_checked": 450,
+  "markdown_heading_fragments_checked": 9,
+  "broken_relative_file_links": [],
+  "unbalanced_code_fences": [],
+  "unexpected_controls": [],
+  "rendered_documents": {
+    "docs/REPORT.md": {
+      "source_sha256": "9268c385ab9f57297d11bdb76fb075257e111c5e98f8aa9e400bb20bc4f9dd3b",
+      "html_sha256": "f97580bf78c836e8f2256e5a0408b94d0e2caad1e0a6e74fa1ef5e856941e008",
+      "table_count": 4,
+      "math_recognized_by_github": true,
+      "scope": "GitHub GFM API output inspected; not a browser pixel-layout review"
+    },
+    "docs/ANNUAL_FINAL.md": {
+      "source_sha256": "aab516bb4730b1b025cc3b92990c3209eed2cf6a221249d8caf771ad34826755",
+      "html_sha256": "f44d75f6143bc9e9602f8b919bce4dca8f1fbf2367b7b524cf5b580d043fe675",
+      "table_count": 6,
+      "math_recognized_by_github": false,
+      "scope": "GitHub GFM API output inspected; not a browser pixel-layout review"
+    }
+  },
+  "limitations": [
+    "External URL responses are not certified by the local-link scan",
+    "Heading fragments use a local GFM-style slug check; GitHub API recognition does not certify browser pixels"
+  ],
+  "goal_complete": true
+}

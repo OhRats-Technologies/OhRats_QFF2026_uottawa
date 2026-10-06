@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quantum kernels for annual Ontario wildfire estimation: evidence, encoding and limits.">
+  <title>Quantum kernels · Ontario wildfire estimation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="motion.css">
+</head>
+<body>
+  <main id="deck" aria-label="Ontario wildfire presentation"></main>
+  <nav class="controls" aria-label="Presentation controls">
+    <button id="previous" aria-label="Previous slide">←</button>
+    <span id="position" aria-live="polite"></span>
+    <button id="next" aria-label="Next slide">→</button>
+    <button id="notes" title="Presenter notes (N)" aria-label="Presenter notes">N</button>
+    <button id="overview" title="Slide index (O)" aria-label="Slide index">☰</button>
+    <a href="../demo/" target="_blank" rel="noopener" title="QSVR arcade and evidence walkthrough">Demo ↗</a>
+    <button id="fullscreen" title="Fullscreen (F)" aria-label="Fullscreen">⛶</button>
+  </nav>
+  <div class="progress" aria-hidden="true"><i></i></div>
+  <dialog id="panel"><button class="close" aria-label="Close panel">×</button><div id="panel-content"></div></dialog>
+  <p class="sr-only" id="announcement" aria-live="polite"></p>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

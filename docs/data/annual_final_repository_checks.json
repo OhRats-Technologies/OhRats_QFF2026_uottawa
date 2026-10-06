@@ -1,8 +1,8 @@
 {
-  "source_commit": "b650e64",
-  "tests": 136,
-  "cli_help_paths": 65,
+  "source_commit": "3fae875",
+  "tests": 142,
+  "cli_help_paths": 68,
   "status": "passed",
   "annual_goal_complete": false,
-  "meaning": "Final train/evaluate implementation fixture and CLI verification; production final evaluation and collector remain pending"
+  "meaning": "142 tests/68 CLI passed at unchanged execution source; annual scientific/reporting requirements separately audited, deadline board review remains open"
 }

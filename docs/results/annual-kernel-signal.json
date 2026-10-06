@@ -1,0 +1,523 @@
+{
+  "study": "annual-saved-kernel-signal",
+  "status": "audited_descriptive",
+  "outcome_sha256": "dcf41e991b279e5837d57810c4652337a6ce8f2015ed7cb3d4a3332b2ea37432",
+  "training_sha256": "678e930d0397e0d1853d716501fee8899bdf9f7240345b3d07d75b1e0aeebc78",
+  "kernel_diagnostics": [
+    {
+      "id": "kernel-000",
+      "kind": "rbf",
+      "inputs": 4,
+      "symmetry_relative_error": 1.2482721014182183e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 30.098707671529507,
+      "off_diagonal_median": 1.1253517471925931e-07,
+      "off_diagonal_iqr": [
+        6.111061982705119e-13,
+        0.00011899468194514504
+      ],
+      "fraction_off_diagonal_below_001": 0.9096774193548387,
+      "centered_log_target_alignment": 0.182489921923197
+    },
+    {
+      "id": "kernel-001",
+      "kind": "quantum",
+      "inputs": 4,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 19.62036988508593,
+      "off_diagonal_median": 0.06053884613356786,
+      "off_diagonal_iqr": [
+        0.023743570380247547,
+        0.1317619575493154
+      ],
+      "fraction_off_diagonal_below_001": 0.13333333333333333,
+      "centered_log_target_alignment": 0.15909136843620078
+    },
+    {
+      "id": "kernel-002",
+      "kind": "rbf",
+      "inputs": 10,
+      "symmetry_relative_error": 2.4063241356385518e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 22.10847026307486,
+      "off_diagonal_median": 0.01831563888873418,
+      "off_diagonal_iqr": [
+        0.0014277279349634558,
+        0.08430627759973774
+      ],
+      "fraction_off_diagonal_below_001": 0.43010752688172044,
+      "centered_log_target_alignment": 0.1862157092161519
+    },
+    {
+      "id": "kernel-003",
+      "kind": "quantum",
+      "inputs": 10,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 30.996054682617714,
+      "off_diagonal_median": 0.00018677454136195593,
+      "off_diagonal_iqr": [
+        2.9083861591061577e-05,
+        0.0006809175629314268
+      ],
+      "fraction_off_diagonal_below_001": 0.9870967741935484,
+      "centered_log_target_alignment": 0.18316020014943565
+    },
+    {
+      "id": "kernel-004",
+      "kind": "rbf",
+      "inputs": 4,
+      "symmetry_relative_error": 5.0735176745628284e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 4.299526214647566,
+      "off_diagonal_median": 0.3678794411714424,
+      "off_diagonal_iqr": [
+        0.17243772839169894,
+        0.5684869138944807
+      ],
+      "fraction_off_diagonal_below_001": 0.015053763440860216,
+      "centered_log_target_alignment": 0.11171280204584734
+    },
+    {
+      "id": "kernel-005",
+      "kind": "quantum",
+      "inputs": 4,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 24.248314713104023,
+      "off_diagonal_median": 0.03416965886390244,
+      "off_diagonal_iqr": [
+        0.009701152086563525,
+        0.07590538863587426
+      ],
+      "fraction_off_diagonal_below_001": 0.25161290322580643,
+      "centered_log_target_alignment": 0.18258884763026634
+    },
+    {
+      "id": "kernel-006",
+      "kind": "rbf",
+      "inputs": 10,
+      "symmetry_relative_error": 4.6589923609764404e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 4.789810358870864,
+      "off_diagonal_median": 0.36787944117144233,
+      "off_diagonal_iqr": [
+        0.19438438024115465,
+        0.5388463911161553
+      ],
+      "fraction_off_diagonal_below_001": 0.002150537634408602,
+      "centered_log_target_alignment": 0.1253999598411762
+    },
+    {
+      "id": "kernel-007",
+      "kind": "quantum",
+      "inputs": 10,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 30.99351334482417,
+      "off_diagonal_median": 0.00018879850904340856,
+      "off_diagonal_iqr": [
+        4.630847251974046e-05,
+        0.0007390943665086525
+      ],
+      "fraction_off_diagonal_below_001": 0.9870967741935484,
+      "centered_log_target_alignment": 0.1828963512453051
+    },
+    {
+      "id": "kernel-008",
+      "kind": "rbf",
+      "inputs": 4,
+      "symmetry_relative_error": 6.025937599178228e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 4.33407707196489,
+      "off_diagonal_median": 0.3678794411714424,
+      "off_diagonal_iqr": [
+        0.17161854361866669,
+        0.5605720556191249
+      ],
+      "fraction_off_diagonal_below_001": 0.010752688172043012,
+      "centered_log_target_alignment": 0.1082390809272218
+    },
+    {
+      "id": "kernel-009",
+      "kind": "quantum",
+      "inputs": 4,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 24.12143546055711,
+      "off_diagonal_median": 0.030067992622207385,
+      "off_diagonal_iqr": [
+        0.008959391439930187,
+        0.07817942041037895
+      ],
+      "fraction_off_diagonal_below_001": 0.26666666666666666,
+      "centered_log_target_alignment": 0.20705934112745086
+    },
+    {
+      "id": "kernel-010",
+      "kind": "rbf",
+      "inputs": 4,
+      "symmetry_relative_error": 4.820152150037786e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 4.300579545763069,
+      "off_diagonal_median": 0.3678794411714423,
+      "off_diagonal_iqr": [
+        0.14637531051144367,
+        0.579789399976533
+      ],
+      "fraction_off_diagonal_below_001": 0.021505376344086023,
+      "centered_log_target_alignment": 0.09613504138008937
+    },
+    {
+      "id": "kernel-011",
+      "kind": "quantum",
+      "inputs": 4,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 23.35446015290696,
+      "off_diagonal_median": 0.03255921770505665,
+      "off_diagonal_iqr": [
+        0.010049021271697711,
+        0.08073469029477565
+      ],
+      "fraction_off_diagonal_below_001": 0.24946236559139784,
+      "centered_log_target_alignment": 0.17116703485599455
+    },
+    {
+      "id": "kernel-012",
+      "kind": "rbf",
+      "inputs": 4,
+      "symmetry_relative_error": 4.561226017495105e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 4.1632904977687915,
+      "off_diagonal_median": 0.3678794411714422,
+      "off_diagonal_iqr": [
+        0.206183828135465,
+        0.5616184878915694
+      ],
+      "fraction_off_diagonal_below_001": 0.0064516129032258064,
+      "centered_log_target_alignment": 0.0801811576300534
+    },
+    {
+      "id": "kernel-013",
+      "kind": "quantum",
+      "inputs": 4,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 24.20414790066465,
+      "off_diagonal_median": 0.03513777985426714,
+      "off_diagonal_iqr": [
+        0.011189162481969106,
+        0.07723383984739485
+      ],
+      "fraction_off_diagonal_below_001": 0.23440860215053763,
+      "centered_log_target_alignment": 0.1753053766489376
+    },
+    {
+      "id": "kernel-014",
+      "kind": "rbf",
+      "inputs": 4,
+      "symmetry_relative_error": 4.7178671170525193e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 4.458397543133285,
+      "off_diagonal_median": 0.3678794411714424,
+      "off_diagonal_iqr": [
+        0.1669775832747038,
+        0.5474685609034229
+      ],
+      "fraction_off_diagonal_below_001": 0.008602150537634409,
+      "centered_log_target_alignment": 0.15427879348477125
+    },
+    {
+      "id": "kernel-015",
+      "kind": "quantum",
+      "inputs": 4,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 23.585075138695426,
+      "off_diagonal_median": 0.03275995337025961,
+      "off_diagonal_iqr": [
+        0.010646964014085825,
+        0.07625136825299705
+      ],
+      "fraction_off_diagonal_below_001": 0.24731182795698925,
+      "centered_log_target_alignment": 0.17684861662392448
+    },
+    {
+      "id": "kernel-016",
+      "kind": "rbf",
+      "inputs": 4,
+      "symmetry_relative_error": 4.222736017294547e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 4.247534824804514,
+      "off_diagonal_median": 0.36787944117144233,
+      "off_diagonal_iqr": [
+        0.14975332261634822,
+        0.577964517958211
+      ],
+      "fraction_off_diagonal_below_001": 0.012903225806451613,
+      "centered_log_target_alignment": 0.14671759116708308
+    },
+    {
+      "id": "kernel-017",
+      "kind": "quantum",
+      "inputs": 4,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 22.933181944866014,
+      "off_diagonal_median": 0.036403691961822915,
+      "off_diagonal_iqr": [
+        0.00920999232585018,
+        0.08888018528705288
+      ],
+      "fraction_off_diagonal_below_001": 0.2645161290322581,
+      "centered_log_target_alignment": 0.1369530271484587
+    },
+    {
+      "id": "kernel-018",
+      "kind": "rbf",
+      "inputs": 4,
+      "symmetry_relative_error": 4.763307254748532e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 4.268199417379644,
+      "off_diagonal_median": 0.36787944117144233,
+      "off_diagonal_iqr": [
+        0.19173612402073179,
+        0.5844735969462156
+      ],
+      "fraction_off_diagonal_below_001": 0.0064516129032258064,
+      "centered_log_target_alignment": 0.14375947811939102
+    },
+    {
+      "id": "kernel-019",
+      "kind": "quantum",
+      "inputs": 4,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 23.647988352833327,
+      "off_diagonal_median": 0.03389395335034351,
+      "off_diagonal_iqr": [
+        0.011585808202653425,
+        0.08613884544320172
+      ],
+      "fraction_off_diagonal_below_001": 0.22365591397849463,
+      "centered_log_target_alignment": 0.17346261062001594
+    },
+    {
+      "id": "kernel-020",
+      "kind": "rbf",
+      "inputs": 4,
+      "symmetry_relative_error": 4.5910569290066975e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 4.120833292955244,
+      "off_diagonal_median": 0.36787944117144245,
+      "off_diagonal_iqr": [
+        0.19777339739825478,
+        0.5904379651647687
+      ],
+      "fraction_off_diagonal_below_001": 0.002150537634408602,
+      "centered_log_target_alignment": 0.0936484469807835
+    },
+    {
+      "id": "kernel-021",
+      "kind": "quantum",
+      "inputs": 4,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 25.285942242315006,
+      "off_diagonal_median": 0.029906340214438387,
+      "off_diagonal_iqr": [
+        0.010707571795137483,
+        0.0735982151072676
+      ],
+      "fraction_off_diagonal_below_001": 0.24516129032258063,
+      "centered_log_target_alignment": 0.1504643519326576
+    },
+    {
+      "id": "kernel-022",
+      "kind": "rbf",
+      "inputs": 4,
+      "symmetry_relative_error": 4.950389728826033e-17,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 3.979068890736635,
+      "off_diagonal_median": 0.36787944117144233,
+      "off_diagonal_iqr": [
+        0.2092479296885168,
+        0.5939739935254601
+      ],
+      "fraction_off_diagonal_below_001": 0.0,
+      "centered_log_target_alignment": 0.06268293908429108
+    },
+    {
+      "id": "kernel-023",
+      "kind": "quantum",
+      "inputs": 4,
+      "symmetry_relative_error": 0.0,
+      "maximum_diagonal_deviation": 0.0,
+      "negative_eigenvalue_mass": -0.0,
+      "participation_ratio": 23.163482023641222,
+      "off_diagonal_median": 0.03025369544593559,
+      "off_diagonal_iqr": [
+        0.008666871401146636,
+        0.0802549157433532
+      ],
+      "fraction_off_diagonal_below_001": 0.26881720430107525,
+      "centered_log_target_alignment": 0.18397042878843317
+    }
+  ],
+  "main_kernel_signals": [
+    {
+      "model": "matched_rbf_svr_4",
+      "kernel": "kernel-000",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "zero_cross_prediction_ha": 57.5067836486667,
+      "scaled_log_kernel_contribution": [
+        -0.004748500321015543,
+        0.013519107376201519,
+        0.0358146410098466,
+        0.0006816574175594005,
+        -2.5614610792966723e-05,
+        -0.07182430174315275
+      ],
+      "hectare_difference_from_zero_cross": [
+        -0.3490058273425376,
+        1.005140847181309,
+        2.700668373213425,
+        0.050272149112387865,
+        -0.0018882327327816029,
+        -5.062242408950446
+      ],
+      "support_count": 22,
+      "support_fraction": 0.7096774193548387
+    },
+    {
+      "model": "matched_fidelity_svr_4",
+      "kernel": "kernel-001",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "zero_cross_prediction_ha": 60.188673587968474,
+      "scaled_log_kernel_contribution": [
+        0.1937281359312032,
+        0.14511796188900597,
+        0.3649055388640006,
+        -0.11932583269505287,
+        0.5421640820281489,
+        -0.04254983236239169
+      ],
+      "hectare_difference_from_zero_cross": [
+        16.91666633553026,
+        12.276384292325936,
+        35.71728041204751,
+        -8.54151635086589,
+        59.96814133097606,
+        -3.194093557501958
+      ],
+      "support_count": 23,
+      "support_fraction": 0.7419354838709677
+    },
+    {
+      "model": "matched_rbf_svr_10",
+      "kernel": "kernel-002",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "zero_cross_prediction_ha": 55.24968058784782,
+      "scaled_log_kernel_contribution": [
+        -0.1538422323938897,
+        0.5171977398225476,
+        0.14745876968331498,
+        0.055833291991268436,
+        0.06632165267669733,
+        -0.09919687483735985
+      ],
+      "hectare_difference_from_zero_cross": [
+        -9.911787919856586,
+        51.678554207774155,
+        11.484948477784172,
+        4.09965791984262,
+        4.9024840393348015,
+        -6.608890530330541
+      ],
+      "support_count": 30,
+      "support_fraction": 0.967741935483871
+    },
+    {
+      "model": "matched_fidelity_svr_10",
+      "kernel": "kernel-003",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "zero_cross_prediction_ha": 59.009678020891705,
+      "scaled_log_kernel_contribution": [
+        -0.00041009764041961545,
+        0.0025679261786362064,
+        -0.01376949094352138,
+        0.007803308662747736,
+        0.0012132418951548113,
+        -0.0011218049769103518
+      ],
+      "hectare_difference_from_zero_cross": [
+        -0.031000229747185415,
+        0.1944800964904161,
+        -1.0321570463341843,
+        0.5929326907144983,
+        0.09180561215799798,
+        -0.08476182708211866
+      ],
+      "support_count": 23,
+      "support_fraction": 0.7419354838709677
+    }
+  ],
+  "model_fits": 0,
+  "optimizer_calls": 0,
+  "new_quantum_states": 0,
+  "hardware_jobs": 0,
+  "interpretation": "Post-final reporting from frozen matrices/states. Alignment uses training targets only; no model/map/rank choice follows. Zero-cross output is an algebraic intercept diagnostic, not a newly selected predictor."
+}

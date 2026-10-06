@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the annual Ontario wildfire QSVR pipeline: source data, SQD feature selection, phase encoding, saved kernels and predictions.">
+  <title>Inside QSVR · Ontario wildfire study</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="data.css">
+  <link rel="stylesheet" href="quantum.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <a class="skip" href="#scene">Skip to explanation</a>
+  <nav id="steps" aria-label="Pipeline sections"></nav>
+  <main id="scene" tabindex="-1"><p class="loading">Opening the saved experiment…</p></main>
+  <div class="transport"><button id="previous" aria-label="Previous section">←</button><span id="position"></span><button id="next" aria-label="Next section">→</button><a href="index.html" title="Signal Run arcade">Play ↗</a><a href="../presentation/" title="Five-minute presentation">Talk ↗</a><button id="details" aria-label="Evidence and explanation">?</button></div>
+  <dialog id="notes"><button class="close" aria-label="Close explanation">×</button><div id="note-content"></div></dialog>
+  <div id="announce" class="sr-only" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

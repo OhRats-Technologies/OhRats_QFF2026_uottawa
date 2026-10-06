@@ -1,0 +1,26 @@
+{
+  "unit": "Ontario province-year",
+  "years": [
+    2019,
+    2024
+  ],
+  "rows": 6,
+  "primary_target": "mean_reported_size_ha",
+  "fire_exclusions": {
+    "blank_or_duplicate_identity": 34
+  },
+  "source_sha256": {
+    "nfdb": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+    "weather": "859c5153616f0b23b2af518d609590648ee56734582826bbf7545eb666dde8a4"
+  },
+  "recipe_sha256": "9d1fea55b4663e0e9c6c2ebd7d43cceddfed165c48fb7d7b0db4afec489b57f5",
+  "plan_sha256": "4df95f26e963d7db8038dfb19c3ff512464e8471bff0fc35ba3316f046c633f1",
+  "table_sha256": "6c1cc55f1f44990e249fadaafbed5a0baa37deb90a4843f539e52b0f9db28636",
+  "information": "Same-year climate; retrospective annual estimation",
+  "weather_policy": "Equal eligible station weight; thresholds in frozen plan",
+  "limitations": [
+    "Station network varies; equal station weight is not area weight",
+    "Reported fires and sizes are not a complete final-area census",
+    "Monthly measurements can contain partial-day coverage"
+  ]
+}

@@ -2,7 +2,16 @@
 
 ## Current annual study
 
-The public annual training table allows quick classical, quantum and selector development without raw downloads. Use the locked environment and a new output for each command:
+For the shortest check, collect all 83 frozen annual predictions and 24 kernel diagnostics from the public evidence package, without fitting or new quantum states:
+
+```sh
+uv sync --locked --group data --group analysis --group quantum
+uv run --no-sync python scripts/pipeline.py annual collect --output .cache/wildfire/annual-public --execute
+```
+
+The output directory must be new. The [judge portability receipt](data/judge_portability_receipt.json) verifies both commands in a fresh GitHub clone at `155dc77`, with no `.env`, project cache or environment initially present. Locked installation created a new isolated environment in 0.37 seconds using uv's shared package cache; collection checked 83 predictions, 168 inner candidates and 24 matrix pairs in 35.57 seconds. It removed credential environment variables and performed no fitting, quantum-state execution or hardware calls. This is a same-Mac check, not an empty-download-cache or cross-platform test. The [earlier receipt](data/annual_portability_receipt.json) retains its original existing-environment scope.
+
+The public annual training table also allows quick classical, quantum and selector development without raw downloads. Use a new output for each command:
 
 ```sh
 uv sync --locked --group data --group analysis --group quantum
@@ -11,7 +20,7 @@ uv run --no-sync python scripts/pipeline.py annual matched --output .cache/wildf
 uv run --no-sync python scripts/pipeline.py annual quantum --qubits 4 --output .cache/wildfire/annual-qsvr/new-quantum-replay --execute
 ```
 
-Prepared CSV replay uses parsed floats; the original raw classical run consumed pre-serialization floats. Preserve this distinction when checking exact predictions. To reconstruct the annual table from sources, omit `--dataset`; the runner verifies/prepares weather automatically, then aggregates NFDB incidents. Context accepts an explicit prepared weather CSV through its specialist script. Woodland requires yearly crops and the pinned boundary, acquired with `scripts/download_ontario_boundary.py`. [Annual recipes, figures and evidence](ANNUAL_QSVR.md). The final reused-year opening remains pending.
+Prepared CSV replay uses parsed floats; the original raw classical run consumed pre-serialization floats. Preserve this distinction when checking exact predictions. To reconstruct the annual table from sources, omit `--dataset`; the runner verifies/prepares weather automatically, then aggregates NFDB incidents. Context accepts an explicit prepared weather CSV through its specialist script. Woodland requires yearly crops and the pinned boundary, acquired with `scripts/download_ontario_boundary.py`. [Annual recipes, figures and evidence](ANNUAL_QSVR.md). The final reused-year evaluation is complete; preserve its original intent. Specialist collection commands remain documented in the [portable notes](ANNUAL_FINAL.md#portable-collection).
 
 ## Preserved incident recipe
 

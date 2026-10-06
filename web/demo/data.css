@@ -1,0 +1,186 @@
+.world {
+  height:460px; position:relative;
+  padding-bottom:50px; grid-row:1 / span 2;
+  grid-column:2;
+}
+.province-map {
+  position:relative; width:100%;
+  height:100%; animation:land-rise 1.3s both;
+}
+.province-map img,.province-map svg {
+  position:absolute; width:100%;
+  height:100%; object-fit:contain;
+}
+.province-map svg {
+  fill:#ed9857; opacity:.9;
+}
+.pixel-land {
+  width:100%; height:350px;
+  object-fit:cover; animation:land-rise .9s both;
+}
+.world-caption {
+  position:absolute; right:0;
+  bottom:53px; font-size:11px;
+  line-height:1.6; color:var(--muted);
+  text-align:right; max-width:270px;
+}
+.world>.choices {
+  position:absolute; bottom:5px;
+  right:0;
+}
+.data-readout {
+  grid-column:1 / -1; margin-top:22px;
+}
+.arithmetic {
+  display:flex; align-items:center;
+  gap:28px; margin-top:22px;
+}
+.arithmetic strong {
+  display:block; font-weight:400;
+  font-size:39px; letter-spacing:-.04em;
+}
+.arithmetic span {
+  display:block; font-size:12px;
+  margin-top:10px; color:var(--muted);
+}
+.arithmetic b {
+  color:#546e62; font-size:25px;
+  font-weight:400;
+}
+.arithmetic .answer strong {
+  color:var(--accent); font-size:52px;
+}
+.dataset-line {
+  display:flex; gap:38px;
+  margin-top:35px; border-top:1px solid var(--line);
+  padding-top:19px; color:var(--muted);
+  font-size:12px;
+}
+.dataset-line i {
+  display:inline-block; width:6px;
+  height:6px; background:var(--green);
+  margin-right:10px;
+}
+.dataset-line span+span i {
+  background:var(--accent);
+}
+.feature-stage {
+  grid-column:2; grid-row:1 / span 2;
+}
+.feature-list {
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:0 30px; margin-top:22px;
+}
+.feature {
+  display:flex; align-items:center;
+  gap:12px; padding:13px 0;
+  font-size:12px; color:#607c6c;
+  border-bottom:1px solid #243d35; transition:color .3s;
+}
+.feature-bit {
+  width:25px; height:25px;
+  display:grid; place-items:center;
+  border:1px solid #29473c; border-radius:50%;
+}
+.feature.selected {
+  color:var(--ink);
+}
+.feature.selected .feature-bit {
+  background:var(--green); border-color:var(--green);
+  color:var(--bg);
+}
+.feature-explanation {
+  grid-column:1 / -1; margin-top:38px;
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:0 40px;
+}
+.four-nodes {
+  display:flex; gap:32px;
+}
+.four-nodes>div {
+  display:grid; place-items:center;
+  gap:10px;
+}
+.four-nodes span {
+  font-size:12px; color:var(--muted);
+}
+.four-nodes i {
+  width:36px; height:36px;
+  border-radius:50%; border:1px solid var(--green);
+  box-shadow:inset 0 0 18px #83b39830; animation:node-in .8s both;
+}
+.four-nodes small {
+  color:var(--muted); font-size:10px;
+}
+.comparison-line {
+  display:grid; align-content:center;
+  gap:20px; padding-left:40px;
+  font-size:20px; color:var(--green);
+}
+.feature-explanation>.projection-caption {
+  max-width:630px; grid-column:1 / -1;
+}
+.sqd-controls {
+  grid-column:1 / -1; display:flex;
+  gap:28px;
+}
+.projection {
+  grid-column:1; margin-top:17px;
+}
+.projection svg {
+  width:100%; height:auto;
+}
+.projection svg text {
+  font-size:12px; fill:var(--muted);
+}
+.projection svg .projection-energy {
+  fill:var(--accent); font-size:21px;
+}
+.candidate {
+  fill:#36594b;
+}
+.sample {
+  fill:var(--accent); animation:node-in .8s both;
+  animation-delay:var(--delay);
+}
+.zero {
+  fill:#0c2729;
+}
+.diagonal {
+  fill:#547f64;
+}
+.diagonal.minimum {
+  fill:var(--accent);
+}
+.projection-caption {
+  grid-column:2; grid-row:auto;
+  align-self:center;
+}
+.feature-explanation:has(.projection)>.projection-caption {
+  grid-column:2; grid-row:2;
+}
+.sqd-receipt {
+  grid-column:2; font-size:12px;
+  color:var(--muted); margin-top:10px;
+}
+.sqd-receipt strong {
+  display:block; font-weight:400;
+  font-size:31px; color:var(--green);
+  margin:10px 0;
+}
+.sqd-narration {
+  grid-column:2; grid-row:2;
+  align-self:center;
+}
+.sqd-narration>.projection-caption {
+  margin:0;
+}
+.sqd-narration .sqd-receipt {
+  margin-top:28px;
+}
+.projection svg .diagonal+text {
+  fill:#071c21; font-size:16px;
+}
+.projection svg .zero+text {
+  font-size:15px;
+}

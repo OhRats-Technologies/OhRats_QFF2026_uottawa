@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "checked_rounded_table_values": 304,
+  "documents": [
+    "docs/REPORT.md",
+    "docs/ANNUAL_FINAL.md"
+  ],
+  "units": "hectares per size-observed incident; kernel values dimensionless",
+  "numeric_scope": "All four report metric tables and final notes main-model, annual denominator, crossover and 24-kernel tables",
+  "presentation_seconds": 300,
+  "training_state_publication_commit": "fd18c5e",
+  "training_state_commit_time_utc": "2026-10-05T19:15:30+00:00",
+  "evaluation_intent_created_utc": "2026-10-05T19:15:55.069333+00:00",
+  "frozen_execution_code_hashes_match": true,
+  "artifact_sha256": {
+    "docs/REPORT.md": "9268c385ab9f57297d11bdb76fb075257e111c5e98f8aa9e400bb20bc4f9dd3b",
+    "docs/ANNUAL_FINAL.md": "aab516bb4730b1b025cc3b92990c3209eed2cf6a221249d8caf771ad34826755",
+    "web/presentation/README.md": "bd9938c6444ce3dec6f53518d539d3352d06b8e2db330c1dad5d734b22659807",
+    "docs/results/annual-classical.json": "68304df5660c0817eee27d97d4c98588fed84da1d770662a737650ef183fb8c7",
+    "docs/results/annual-matched.json": "f0e5ed102399f976c38234af147be81767bbaa0245d6379ea7bff974c3107b61",
+    "docs/results/annual-selectors.json": "56159e2840930b67324431d53b178d0275df161a35a40e56d62fb112f1c23b28",
+    "docs/results/annual-context.json": "4f96b6f49955d368d10af983cf9834d273ab49a19a73b2f99bd14e5dca81762d",
+    "docs/results/annual-final.json": "dcf41e991b279e5837d57810c4652337a6ce8f2015ed7cb3d4a3332b2ea37432",
+    "docs/results/annual-final-audit.json": "b89d055ca305ea016ee70cb43f2c6e9663e16c502934d45f52a53803f1f0dc4b",
+    "docs/results/annual-final-training.json": "678e930d0397e0d1853d716501fee8899bdf9f7240345b3d07d75b1e0aeebc78",
+    "docs/data/annual_final_training_receipt.json": "5d1f648ffd16ac905da1b0bfef326ce6b9f3d1173f9ca98e36d3ffb3d1f4a7f0",
+    "docs/data/annual_reused_evaluation.csv": "6c1cc55f1f44990e249fadaafbed5a0baa37deb90a4843f539e52b0f9db28636"
+  },
+  "predictor_fits": 0,
+  "new_quantum_states": 0,
+  "hardware_jobs": 0,
+  "limitations": [
+    "The chronological commit time proves the learned-state commit preceded the intent; it is not a cryptographic attestation of remote push timing",
+    "Prose, causal interpretations, external citations and figure pixels require separate review"
+  ],
+  "goal_complete": true
+}

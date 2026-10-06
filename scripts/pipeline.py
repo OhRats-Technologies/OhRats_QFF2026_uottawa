@@ -18,7 +18,7 @@ from wildfire_lab import annual_workflow
 def parser():
     cli = argparse.ArgumentParser(description=__doc__)
     stages = cli.add_subparsers(dest="stage", required=True)
-    annual = stages.add_parser("annual", help="Preview/execute annual macro development")
+    annual = stages.add_parser("annual", help="Annual macro development or frozen public collection")
     annual.add_argument("operation", choices=list(annual_workflow.OPERATIONS))
     annual.add_argument("--output", type=Path, required=True)
     annual.add_argument("--dataset", type=Path)

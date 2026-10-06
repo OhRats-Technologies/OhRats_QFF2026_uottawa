@@ -1,0 +1,155 @@
+{
+  "status": "complete_verified",
+  "prepared_utc": "2026-10-05T20:05:13.964669+00:00",
+  "deadline_utc": "2026-10-05T21:00:00Z",
+  "scientific_requirements": [
+    {
+      "id": 1,
+      "requirement": "Source-level annual climate/fire table and area-weighted provincial woodland context",
+      "status": "verified",
+      "evidence": [
+        "docs/data/annual_training.csv",
+        "docs/data/annual_reused_evaluation.csv",
+        "docs/data/annual_table_reaggregation.json",
+        "docs/results/annual-woodland.json",
+        "docs/data/annual_source_integrity.json"
+      ],
+      "scope": "31 training and six reused annual rows; woodland is previous-map, coarse equal-area classified fraction for training only; final predictors exclude woodland"
+    },
+    {
+      "id": 2,
+      "requirement": "Primary annual mean-size outcome; separate count/hectare denominators and horizon",
+      "status": "verified",
+      "evidence": [
+        "experiments/annual_qsvr.json",
+        "docs/REPORT.md",
+        "docs/ANNUAL_FINAL.md"
+      ],
+      "scope": "Hectares per size-observed NFDB incident; same-year climate is retrospective annual estimation, not advance forecasting"
+    },
+    {
+      "id": 3,
+      "requirement": "Small classical chronological annual baselines before optional search",
+      "status": "verified",
+      "evidence": [
+        "docs/results/annual-classical.json",
+        "docs/results/annual-matched.json"
+      ],
+      "scope": "Mean, median, year trend, ridge, linear and RBF-SVR; git publication abe0c84/562bcb3 precedes quantum screens and four optional frozen plans"
+    },
+    {
+      "id": 4,
+      "requirement": "Classical/quantum selectors and matched FidelityQuantumKernel/QSVR comparison, meaningful SQD applicability",
+      "status": "verified",
+      "evidence": [
+        "docs/results/annual-selectors.json",
+        "docs/results/annual-final-training.json",
+        "docs/results/annual-final.json",
+        "docs/results/annual-final-audit.json"
+      ],
+      "scope": "Actual Qiskit fidelity/QSVR at four/ten inputs; 36 candidates/family; eight selectors with fixed ridge then 72 crossed records. Diagonal SQD equals best sampled energy; no advantage claim"
+    },
+    {
+      "id": 5,
+      "requirement": "Training-only validation, bounded preregistered variants, frozen reused evaluation, preserved evidence and cost",
+      "status": "verified",
+      "evidence": [
+        "experiments/annual_final.json",
+        "docs/data/annual_final_training_receipt.json",
+        "docs/data/annual_reporting_audit.json",
+        "docs/data/annual_requirement_audit.json",
+        "docs/data/annual_source_integrity.json"
+      ],
+      "scope": "Three chronological outer and inner folds; four optional plans; exact saved states committed before test intent; 83 predictions/24 kernels checked, no evaluation fits or hardware; old evidence hashes preserved"
+    },
+    {
+      "id": 6,
+      "requirement": "Measured report, figures, five-minute presentation outline and maintainable reproducible handoff",
+      "status": "verified",
+      "evidence": [
+        "docs/REPORT.md",
+        "docs/HANDOFF.md",
+        "web/presentation/README.md",
+        "docs/data/annual_reporting_audit.json",
+        "docs/data/annual_portability_receipt.json",
+        "docs/data/annual_final_repository_checks.json",
+        "docs/data/annual_bandwidth_repository_checks.json"
+      ],
+      "scope": "Seven reviewed PNG/SVG figures, 300-second outline; latest code QA 145 tests/69 CLI at 870abe2; 208 Python files, maximum 250 lines. Clean GitHub clone collection uses existing locked venv, not a fresh installation; no browser presentation player claimed"
+    }
+  ],
+  "missing_scientific_or_reporting_requirements": [],
+  "remaining_work": [],
+  "board_claim": "repo-agent-20261005T180056Z-e02f1d5d",
+  "verified_execution_source_commit": "3fae875",
+  "current_python_dependency_bytes_match_qa": true,
+  "artifact_sha256": {
+    "AGENTS.md": "73cb975617ba114cdf357290be4e3b64ae5c876b2805320633bc965bc5e53164",
+    "GOAL.md": "73f2d333f9111355cedb0765e16d377665f9db2a5154911d109504f5a6790089",
+    "README.md": "8e7cfade660eb342062494ef389bf673283ae0f5f1dd23feabbc6e6b5acb5105",
+    "docs/ANNUAL_FINAL.md": "aab516bb4730b1b025cc3b92990c3209eed2cf6a221249d8caf771ad34826755",
+    "docs/GOAL_AUDIT.md": "3771c295e3cab6f70dcda54723f31093e31c285960907083be82ff31d0dac897",
+    "docs/HANDOFF.md": "929c3066ffdb89fcbb45f0b8b291ab3f81ff45f89c1b43d1db9cb4e8507c2c9e",
+    "docs/REPORT.md": "9268c385ab9f57297d11bdb76fb075257e111c5e98f8aa9e400bb20bc4f9dd3b",
+    "docs/data/annual_document_checks.json": "83c3465277b944ad6e89842753dccca39c2847331d2049551ae898825f2789ab",
+    "docs/data/annual_final_bundle.json": "4e6e243de608e950ce6d08c6e2637cdb6e64cfd1c953dfaac3e87c71420d5b91",
+    "docs/data/annual_final_repository_checks.json": "7578739f48641ed6836b6bbf463339d56f1636dcdb0a56111c838c414403e4a2",
+    "docs/data/annual_final_training_receipt.json": "5d1f648ffd16ac905da1b0bfef326ce6b9f3d1173f9ca98e36d3ffb3d1f4a7f0",
+    "docs/data/annual_portability_receipt.json": "0bccb8790245c281f49cb38eb4d125416324856c80aaba1b318c45951ee58e48",
+    "docs/data/annual_reporting_audit.json": "8189a055f7dd841d178dd0dde26ed42dcd7ddf97bb6a77583efd2b72e94c2480",
+    "docs/data/annual_requirement_audit.json": "2b330248bdad9abf8f0cc3be0c05ae2840fb433dd345e0f33b27b6ace0e0e2df",
+    "docs/data/annual_reused_evaluation.csv": "6c1cc55f1f44990e249fadaafbed5a0baa37deb90a4843f539e52b0f9db28636",
+    "docs/data/annual_source_integrity.json": "99baa8b1ba5b4decb6e846cc0e5e12bb852b45a7048a4085a9c6d2097d37b8e7",
+    "docs/data/annual_table_reaggregation.json": "7dd9bac58e7146a6462f8d0a35be91a070d3ba9324344064d3e39fbd48dd81fb",
+    "docs/data/annual_training.csv": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+    "docs/results/annual-classical.json": "68304df5660c0817eee27d97d4c98588fed84da1d770662a737650ef183fb8c7",
+    "docs/results/annual-final-audit.json": "b89d055ca305ea016ee70cb43f2c6e9663e16c502934d45f52a53803f1f0dc4b",
+    "docs/results/annual-final-training.json": "678e930d0397e0d1853d716501fee8899bdf9f7240345b3d07d75b1e0aeebc78",
+    "docs/results/annual-final.json": "dcf41e991b279e5837d57810c4652337a6ce8f2015ed7cb3d4a3332b2ea37432",
+    "docs/results/annual-matched.json": "f0e5ed102399f976c38234af147be81767bbaa0245d6379ea7bff974c3107b61",
+    "docs/results/annual-selectors.json": "56159e2840930b67324431d53b178d0275df161a35a40e56d62fb112f1c23b28",
+    "docs/results/annual-woodland.json": "b96b190d9e02de95be8616c7e5a6ba95008bed41f59c346ef294d739645611b9",
+    "experiments/annual_final.json": "4df95f26e963d7db8038dfb19c3ff512464e8471bff0fc35ba3316f046c633f1",
+    "experiments/annual_qsvr.json": "63c8700998901fa4126ad044056a3d6be71e93a7f467239335ed03e55b3f06b5",
+    "web/presentation/README.md": "bd9938c6444ce3dec6f53518d539d3352d06b8e2db330c1dad5d734b22659807",
+    "experiments/annual_bandwidth_geometry.json": "7e1607c3341255b76bcd6ccfba9e9ba5bc33688ce21fe29df42ee22bc4d6bc94",
+    "docs/ANNUAL_BANDWIDTH_GEOMETRY.md": "0dcb320a2f526a6db5ffe43844194a15c1ad29dbf4ca61ac88da30343ce2610a",
+    "docs/results/annual-bandwidth-geometry.json": "2b79b98947be9da369ed2895fe4c52df12a885c7be5e8d70af1229bfeb4c5139",
+    "docs/data/annual_bandwidth_audit.json": "fe751aea89519f56f58dff1a327b497301895ed49650a8ce961f9911fece773e",
+    "docs/data/annual_bandwidth_repository_checks.json": "cf3493d946ad744d8035e432eaf384b1fe58f60772cf3c4270de15cdfcaa239d"
+  },
+  "collection_command": "uv run --no-sync python scripts/pipeline.py annual collect --output <new-directory> --execute",
+  "new_hardware_jobs": 0,
+  "evaluation_restarted": false,
+  "goal_complete": true,
+  "limitations": [
+    "Six reused annual evaluation years and 31 training observations",
+    "No main model beats training-mean MAE",
+    "Same-year climate and retrospective source construction",
+    "Equal station weights and incomplete reporting cannot certify provincial census or operational availability",
+    "Woodland cutoff 2022; coarse prior-year training context only",
+    "Ideal simulation, synthetic selector draws; no device speedup/advantage",
+    "Fresh GitHub clone reused existing locked venv; no fresh dependency installation claimed"
+  ],
+  "post_final_input_only_diagnostic": {
+    "plan": "experiments/annual_bandwidth_geometry.json",
+    "outcome": "docs/results/annual-bandwidth-geometry.json",
+    "audit": "docs/data/annual_bandwidth_audit.json",
+    "matrices": 10,
+    "analytic_pair_circuits": 4650,
+    "seconds": 48.885460459045134,
+    "targets_read": false,
+    "test_rows_read": false,
+    "predictor_fits": 0,
+    "scale_selected": false,
+    "main_models_revised": false
+  },
+  "latest_repository_verification_source_commit": "870abe2ab67efbf3e01ba05a654e05037740501e",
+  "latest_tests": 145,
+  "latest_cli_help_paths": 69,
+  "completed_utc": "2026-10-05T21:06:03.477456+00:00",
+  "review_window_closed_utc": "2026-10-05T21:00:00.005450+00:00",
+  "scientific_deliverables_published_before_deadline": true,
+  "administrative_closeout_after_review_window": true,
+  "publication_parent_commit": "ba7783e654b639d0391fbb69ba4887d1c1919b13"
+}

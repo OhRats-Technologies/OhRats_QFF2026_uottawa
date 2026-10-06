@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Signal Run: a playable arcade metaphor for the wildfire QSVR pipeline, with an evidence-backed SQD explanation.">
+<title>Signal Run · QSVR arcade</title><link rel="stylesheet" href="game.css">
+</head>
+<body>
+<canvas id="world" tabindex="0" aria-label="Signal Run: steer with left/right arrows or A/D. Collect mint rings, avoid orange cubes. Space activates a charged SQD pulse."></canvas>
+<div class="vignette" aria-hidden="true"></div><div id="hit" aria-hidden="true"></div>
+<div id="hud" hidden>
+  <div class="mission"><span id="stage">COLLECT / FEATURE SUBSETS</span><strong id="counter">0 <small>/ 12</small></strong></div>
+  <div class="remaining"><strong id="time">55</strong><small>seconds</small></div>
+  <div class="integrity"><span>Integrity</span><div role="meter" aria-label="Integrity" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" id="integrity"><i></i></div></div>
+</div>
+<div class="utility"><button id="sound" aria-pressed="false">Sound off</button><button id="pause" hidden>Pause</button><a href="lab.html">Inside QSVR ↗</a><a href="../presentation/">Talk ↗</a></div>
+<section id="intro" class="overlay" aria-labelledby="title">
+  <div class="intro-copy"><p class="eyebrow">A wildfire-research arcade</p><h1 id="title">Signal<br><em>Run.</em></h1>
+    <p class="objective">Deliver 12 clean packets.<br>55 seconds. Three hits ends the run.</p>
+    <div class="item-key"><span><i class="mint">◎</i> Collect</span><span><i class="orange">◇</i> Avoid</span></div>
+    <div class="start-actions"><button id="start" class="primary">Launch run <b>→</b></button><button id="practice">Practice</button></div>
+    <p class="control-help">← → or A / D · drag to steer<br>Four packets charge a <kbd>Space</kbd> SQD pulse.</p>
+    <p class="boundary">Arcade metaphor, not a fire forecast. <a href="lab.html#features">How SQD works ↗</a></p>
+  </div>
+  <div class="intro-map"><img src="../presentation/assets/ontario-cover.png" alt="Full Ontario boundary including Toronto/GTA; grey is unmapped woodland"><span>Ontario · actual 2021 cover / boundary</span></div>
+</section>
+<section id="result" class="overlay" hidden aria-labelledby="result-title"><div class="result-copy">
+  <p id="result-kicker" class="eyebrow"></p><h2 id="result-title"></h2><p id="result-summary"></p>
+  <div id="study"></div><div class="start-actions"><button id="retry" class="primary">Fly again <b>→</b></button><a href="lab.html#prediction">Study results ↗</a></div>
+  <p class="boundary">Game success does not imply quantum advantage.</p>
+</div></section>
+<section id="paused" class="overlay" hidden aria-labelledby="pause-title"><div class="result-copy"><p class="eyebrow">Signal held</p><h2 id="pause-title">Take a breath.</h2><button id="resume" class="primary">Resume →</button><button id="restart">Restart</button></div></section>
+<div id="projection" hidden><span>H → sampled subspace</span><div id="diagonal"></div><strong id="minimum"></strong><small>Diagonal SQD = lowest sampled cost.<br>The shield is a game reward.</small></div>
+<div id="bottom" hidden><span id="steer-help">← → steer</span><button id="pulse" disabled>◎ SQD pulse <span id="charge">0%</span></button><span class="game-label">Arcade metaphor</span></div>
+<div id="message" aria-live="polite" class="sr-only"></div>
+<script type="module" src="assets/main.js"></script>
+</body></html>

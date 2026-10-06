@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "geometry_collection": {
+    "status": "passed",
+    "records": 10,
+    "outcome_sha256": "2b79b98947be9da369ed2895fe4c52df12a885c7be5e8d70af1229bfeb4c5139",
+    "predictor_fits": 0,
+    "new_quantum_states": 0,
+    "target_columns_read": false,
+    "test_rows_read": false
+  },
+  "fixed_ten_qubit_control_matches_frozen_training_gram": true,
+  "maximum_control_difference": 0.0,
+  "main_final_no_fit_audit_byte_equivalent": true,
+  "main_predictions_checked": 83,
+  "main_kernel_pairs_checked": 24,
+  "frozen_models_revised": false,
+  "new_predictor_fits": 0,
+  "new_test_predictions": 0,
+  "hardware_jobs": 0,
+  "rounded_geometry_table_values_checked": 40,
+  "source_qa_matches_current_bytes": true
+}

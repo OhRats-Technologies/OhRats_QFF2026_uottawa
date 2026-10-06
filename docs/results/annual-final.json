@@ -1,0 +1,5323 @@
+{
+  "study": "annual-final",
+  "stage": "evaluated",
+  "plan_sha256": "4df95f26e963d7db8038dfb19c3ff512464e8471bff0fc35ba3316f046c633f1",
+  "training_receipt": {
+    "training_sha256": "678e930d0397e0d1853d716501fee8899bdf9f7240345b3d07d75b1e0aeebc78",
+    "code_sha256": {
+      "wildfire_lab/annual_data.py": "9d1fea55b4663e0e9c6c2ebd7d43cceddfed165c48fb7d7b0db4afec489b57f5",
+      "wildfire_lab/annual_classical.py": "d43735f826ac40e2660d13f7f9e95e12bf13281467da895f5acf62ed8d145182",
+      "wildfire_lab/annual_quantum.py": "b8bc74bcb73d5a2944b7b7c2a25dadd7367ebda7393c0441c6d6efe292a68b10",
+      "wildfire_lab/annual_matched.py": "93dc1cb40e70e58402d1cd09c354399da39f7a6aa79cd8c63e65332a569d7088",
+      "wildfire_lab/annual_selectors.py": "4a2289f19ec5ecd58393e8984a3f55c6e3e6fb9c1164b88d2ce89d02bd34034e",
+      "wildfire_lab/annual_model_state.py": "963c6d637bd588047840223a03de5eb331e8d15bb559caef88e70daefbe7eb23",
+      "wildfire_lab/annual_final_kernel.py": "5eb043eaf9d2bd1f6052624a22c19f4a9a4a451f44b0799741f9944d04def2f9",
+      "wildfire_lab/annual_final_train.py": "5919f1f619ef6c68c98086c27b3fb1048099f11351134b5611e440e08b013374",
+      "wildfire_lab/annual_final_evaluate.py": "9d4ffce0aaa072b63a94f0d3ef95d163be1b2085f955efbb4aa6ddd7e76c6b8b",
+      "wildfire_lab/annual_final_protocol.py": "03fc5c240cb88c424e1128b8e57303e6fb53e0527439d99c0d70de9d48345b85",
+      "wildfire_lab/nfdb.py": "2aa64aa77815f45d0b0e9f8c00bbb8636581de64f95824e599a747270e54600c",
+      "wildfire_lab/selection.py": "36544d742a333a75512c7358ba3912c6466e32e3ee0088ea2d2c1fddb349efb1",
+      "wildfire_lab/qaoa.py": "8b07efe49aeecd4bb2500ba715539409ea0fab88259d69ae2c286ffd5619dc0c",
+      "wildfire_lab/sqd_selection.py": "d80ad9026b0a72db0d4a58ec50f350a0fadebb6378ee7c180127c49547ffda57",
+      "wildfire_lab/library_kernel.py": "905a9e3048542adb9bf6ece8f886adcfc43275f92ccec61950d09ab59509443c",
+      "scripts/run_annual_final.py": "d26c203193b882ac637cda20b6d05d847653f330cd62d8cb05c8a4eaffc5ad8c",
+      "uv.lock": "279bcaf11186bf36bf4375da28308a14ab9789b99a783b7dcd6ebb7a40b1c15f",
+      "pyproject.toml": "387b6f8daa143e7e8be05a0fd612c33c3c0e5ca97bd72d8b4f7ef84ead6c00de"
+    },
+    "plan_sha256": "4df95f26e963d7db8038dfb19c3ff512464e8471bff0fc35ba3316f046c633f1"
+  },
+  "dataset_manifest": {
+    "unit": "Ontario province-year",
+    "years": [
+      2019,
+      2024
+    ],
+    "rows": 6,
+    "primary_target": "mean_reported_size_ha",
+    "fire_exclusions": {
+      "blank_or_duplicate_identity": 34
+    },
+    "source_sha256": {
+      "nfdb": "9eb4773dfc60cfcfe7d76efa0f2470cdd341f4967fbec8084041f3fab87f8be3",
+      "weather": "859c5153616f0b23b2af518d609590648ee56734582826bbf7545eb666dde8a4"
+    },
+    "recipe_sha256": "9d1fea55b4663e0e9c6c2ebd7d43cceddfed165c48fb7d7b0db4afec489b57f5",
+    "plan_sha256": "4df95f26e963d7db8038dfb19c3ff512464e8471bff0fc35ba3316f046c633f1",
+    "table_sha256": "6c1cc55f1f44990e249fadaafbed5a0baa37deb90a4843f539e52b0f9db28636",
+    "information": "Same-year climate; retrospective annual estimation",
+    "weather_policy": "Equal eligible station weight; thresholds in frozen plan",
+    "limitations": [
+      "Station network varies; equal station weight is not area weight",
+      "Reported fires and sizes are not a complete final-area census",
+      "Monthly measurements can contain partial-day coverage"
+    ]
+  },
+  "main_results": [
+    {
+      "id": "training_mean",
+      "kind": "constant",
+      "prediction_ha": 124.62824807267737,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        124.62824807267737,
+        124.62824807267737,
+        124.62824807267737,
+        124.62824807267737,
+        124.62824807267737,
+        124.62824807267737
+      ],
+      "absolute_errors_ha": [
+        378.42007199539705,
+        99.1135371982991,
+        532.3625383284746,
+        115.28481759197544,
+        473.5716164259676,
+        62.092541948112626
+      ],
+      "mae_ha": 276.8075205813711,
+      "rmse_ha": 336.1178526394161,
+      "bias_ha": -205.34140231794626
+    },
+    {
+      "id": "training_median",
+      "kind": "constant",
+      "prediction_ha": 93.96956075364076,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        93.96956075364076,
+        93.96956075364076,
+        93.96956075364076,
+        93.96956075364076,
+        93.96956075364076,
+        93.96956075364076
+      ],
+      "absolute_errors_ha": [
+        409.0787593144337,
+        68.4548498792625,
+        563.0212256475112,
+        84.62613027293884,
+        504.2303037450042,
+        92.75122926714923
+      ],
+      "mae_ha": 287.0270830210499,
+      "rmse_ha": 355.67704686371815,
+      "bias_ha": -236.00008963698284
+    },
+    {
+      "id": "linear_year_trend",
+      "kind": "trend",
+      "coefficients": [
+        -1.5038453434032033,
+        3136.8304709092945
+      ],
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        100.5667225782272,
+        99.06287723482365,
+        97.55903189142055,
+        96.05518654801745,
+        94.55134120461435,
+        93.04749586121079
+      ],
+      "absolute_errors_ha": [
+        402.4815974898472,
+        73.54816636044538,
+        559.4317545097314,
+        86.71175606731552,
+        503.6485232940306,
+        93.6732941595792
+      ],
+      "mae_ha": 286.58251531349157,
+      "rmse_ha": 353.62883242698643,
+      "bias_ha": -233.16254117090457
+    },
+    {
+      "id": "ridge_4",
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "params": {
+        "alpha": 10.0
+      },
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        81.32902477322106,
+        69.24497478297296,
+        64.88159595430899,
+        60.55897702783136,
+        41.694880862797426,
+        45.50613298463377
+      ],
+      "absolute_errors_ha": [
+        421.71929529485334,
+        43.730263908594694,
+        592.109190446843,
+        51.21554654712943,
+        556.5049836358476,
+        141.2146570361562
+      ],
+      "mae_ha": 301.0823228115707,
+      "rmse_ha": 379.1690919626348,
+      "bias_ha": -269.43371932632937
+    },
+    {
+      "id": "linear_svr_4",
+      "kind": "linear",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "params": {
+        "C": 0.1,
+        "epsilon": 0.5
+      },
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        88.74858597175123,
+        55.385169465960765,
+        51.95210466765159,
+        49.01104491442479,
+        34.22984699186107,
+        40.30481797796133
+      ],
+      "absolute_errors_ha": [
+        414.29973409632316,
+        29.870458591582494,
+        605.0386817335003,
+        39.667614433722854,
+        563.9700175067838,
+        146.41597204282866
+      ],
+      "mae_ha": 299.8770797341236,
+      "rmse_ha": 382.9015664443623,
+      "bias_ha": -276.6977220590217
+    },
+    {
+      "id": "matched_rbf_svr_4",
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "params": {
+        "C": 10.0,
+        "epsilon": 0.5,
+        "gamma_multiplier": 16.0
+      },
+      "kernel_id": "kernel-000",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        57.15777782132416,
+        58.51192449584801,
+        60.20745202188012,
+        57.557055797779086,
+        57.504895415933916,
+        52.44454123971625
+      ],
+      "absolute_errors_ha": [
+        445.8905422467503,
+        32.99721362146974,
+        596.7833343792718,
+        48.21362531707715,
+        540.694969082711,
+        134.27624878107375
+      ],
+      "mae_ha": 299.80932223805894,
+      "rmse_ha": 380.5179045741496,
+      "bias_ha": -272.7390425918766
+    },
+    {
+      "id": "matched_fidelity_svr_4",
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "params": {
+        "C": 10.0,
+        "epsilon": 0.5
+      },
+      "reps": 2,
+      "amplitude": 1.5707963267948966,
+      "kernel_id": "kernel-001",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        77.10533992349873,
+        72.46505788029441,
+        95.90595400001598,
+        51.64715723710258,
+        120.15681491894453,
+        56.994580030466516
+      ],
+      "absolute_errors_ha": [
+        425.9429801445757,
+        46.95034700591614,
+        561.0848324011359,
+        42.30372675640065,
+        478.04304957970044,
+        129.72620999032347
+      ],
+      "mae_ha": 280.6751909796754,
+      "rmse_ha": 352.51278905320646,
+      "bias_ha": -250.92383305890314
+    },
+    {
+      "id": "ridge_10",
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "params": {
+        "alpha": 10.0
+      },
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        85.07900796853673,
+        77.53312115837882,
+        75.08122618777911,
+        58.442469384567836,
+        52.5187285340809,
+        63.52170371741525
+      ],
+      "absolute_errors_ha": [
+        417.96931209953766,
+        52.01841028400055,
+        581.9095602133729,
+        49.0990389038659,
+        545.6811359645641,
+        123.19908630337474
+      ],
+      "mae_ha": 294.9794239614526,
+      "rmse_ha": 372.2408785020803,
+      "bias_ha": -261.2736075654971
+    },
+    {
+      "id": "linear_svr_10",
+      "kind": "linear",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "params": {
+        "C": 0.1,
+        "epsilon": 0.2
+      },
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        110.32797234158781,
+        82.83682036235103,
+        69.36343338155686,
+        65.77158603673573,
+        47.22482566808779,
+        64.81782577624104
+      ],
+      "absolute_errors_ha": [
+        392.7203477264866,
+        57.32210948797277,
+        587.627353019595,
+        56.42815555603379,
+        550.9750388305572,
+        121.90296424454895
+      ],
+      "mae_ha": 294.4959948108657,
+      "rmse_ha": 370.68381958590555,
+      "bias_ha": -256.5792397961969
+    },
+    {
+      "id": "matched_rbf_svr_10",
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "params": {
+        "C": 10.0,
+        "epsilon": 0.05,
+        "gamma_multiplier": 4.0
+      },
+      "kernel_id": "kernel-002",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        45.337892667991234,
+        106.92823479562198,
+        66.73462906563199,
+        59.34933850769044,
+        60.15216462718262,
+        48.64079005751728
+      ],
+      "absolute_errors_ha": [
+        457.7104274000832,
+        81.41352392124371,
+        590.2561573355199,
+        50.00590802698851,
+        538.0476998714623,
+        138.0799999632727
+      ],
+      "mae_ha": 309.2522860864284,
+      "rmse_ha": 382.0103255727014,
+      "bias_ha": -265.445808770351
+    },
+    {
+      "id": "matched_fidelity_svr_10",
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "params": {
+        "C": 10.0,
+        "epsilon": 0.5
+      },
+      "reps": 1,
+      "amplitude": 0.7853981633974483,
+      "kernel_id": "kernel-003",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        58.97867779114452,
+        59.20415811738212,
+        57.97752097455752,
+        59.602610711606204,
+        59.1014836330497,
+        58.92491619380959
+      ],
+      "absolute_errors_ha": [
+        444.0696422769299,
+        33.689447243003855,
+        599.0132654265944,
+        50.25918023090427,
+        539.0983808655952,
+        127.7958738269804
+      ],
+      "mae_ha": 298.98763164500133,
+      "rmse_ha": 380.051433585228,
+      "bias_ha": -271.0047558203653
+    }
+  ],
+  "crossed_results": [
+    {
+      "id": "physical_four-seed-7-ridge",
+      "selector": "physical_four",
+      "seed": 7,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": 0.16195638876581597,
+      "objective_gap": 0.49764598874804733,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        92.53569545445129,
+        66.71617551146316,
+        58.385483675538,
+        56.656448048519536,
+        31.454401558257462,
+        35.24628173776412
+      ],
+      "absolute_errors_ha": [
+        410.51262461362313,
+        41.2014646370849,
+        598.6053027256139,
+        47.3130175678176,
+        566.7454629403875,
+        151.47450828302587
+      ],
+      "mae_ha": 302.64206346125883,
+      "rmse_ha": 381.86602191543165,
+      "bias_ha": -273.1372360596246
+    },
+    {
+      "id": "physical_four-seed-7-rbf",
+      "selector": "physical_four",
+      "seed": 7,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 0.16195638876581597,
+      "objective_gap": 0.49764598874804733,
+      "kernel_id": "kernel-004",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        69.03862622924815,
+        91.8702299285184,
+        89.05863973926272,
+        59.320476664688684,
+        50.148156154265685,
+        49.969105330044975
+      ],
+      "absolute_errors_ha": [
+        434.00969383882625,
+        66.35551905414013,
+        567.9321466618892,
+        49.97704618398675,
+        548.0517083443792,
+        136.751684690745
+      ],
+      "mae_ha": 300.5129664623277,
+      "rmse_ha": 373.4688286629428,
+      "bias_ha": -261.7354447162855
+    },
+    {
+      "id": "physical_four-seed-7-quantum",
+      "selector": "physical_four",
+      "seed": 7,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 0.16195638876581597,
+      "objective_gap": 0.49764598874804733,
+      "kernel_id": "kernel-005",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        75.81363593151879,
+        46.62986044177678,
+        69.8439543273638,
+        112.0032738835141,
+        74.09039017175479,
+        77.83227260185124
+      ],
+      "absolute_errors_ha": [
+        427.23468413655564,
+        21.115149567398507,
+        587.1468320737881,
+        102.65984340281217,
+        524.1094743268902,
+        108.88851741893875
+      ],
+      "mae_ha": 295.1924168210639,
+      "rmse_ha": 370.76569893424494,
+      "bias_ha": -253.9340858309937
+    },
+    {
+      "id": "all_ten-seed-7-ridge",
+      "selector": "all_ten",
+      "seed": 7,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": 73.12855878224232,
+      "objective_gap": null,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        118.34847294383385,
+        70.04886243423593,
+        80.94198774343995,
+        47.58103716531184,
+        31.08496950055154,
+        50.64178574424968
+      ],
+      "absolute_errors_ha": [
+        384.6998471242406,
+        44.53415155985766,
+        576.0487986577119,
+        38.23760668460991,
+        567.1148949980934,
+        136.0790042765403
+      ],
+      "mae_ha": 291.11905055017564,
+      "rmse_ha": 370.4520651776069,
+      "bias_ha": -263.5284644686864
+    },
+    {
+      "id": "all_ten-seed-7-rbf",
+      "selector": "all_ten",
+      "seed": 7,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 73.12855878224232,
+      "objective_gap": null,
+      "kernel_id": "kernel-006",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        52.59095802839346,
+        103.92490963177288,
+        82.20613076399727,
+        54.853006735025104,
+        63.459945647710605,
+        76.2074621303716
+      ],
+      "absolute_errors_ha": [
+        450.45736203968096,
+        78.41019875739461,
+        574.7846556371546,
+        45.50957625432317,
+        534.7399188509344,
+        110.5133278904184
+      ],
+      "mae_ha": 299.06917323831766,
+      "rmse_ha": 374.0918988309806,
+      "bias_ha": -257.7625815677451
+    },
+    {
+      "id": "all_ten-seed-7-quantum",
+      "selector": "all_ten",
+      "seed": 7,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 73.12855878224232,
+      "objective_gap": null,
+      "kernel_id": "kernel-007",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        76.19342120648398,
+        74.91111715612526,
+        75.33567220018304,
+        74.98906684054211,
+        75.3360613713171,
+        75.5244934013954
+      ],
+      "absolute_errors_ha": [
+        426.8548988615904,
+        49.39640628174699,
+        581.6551142009689,
+        65.64563635984018,
+        522.8638031273279,
+        111.19629661939459
+      ],
+      "mae_ha": 292.9353592418115,
+      "rmse_ha": 368.10965397273543,
+      "bias_ha": -254.5880116946158
+    },
+    {
+      "id": "lasso_ranking-seed-7-ridge",
+      "selector": "lasso_ranking",
+      "seed": 7,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        9
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.11633812476989647,
+      "objective_gap": 0.2193514752123349,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        76.96053444722723,
+        107.26939211020097,
+        101.78990900921686,
+        49.213927211373935,
+        40.862504173246016,
+        65.85277890224911
+      ],
+      "absolute_errors_ha": [
+        426.08778562084717,
+        81.7546812358227,
+        555.200877391935,
+        39.870496730672,
+        557.3373603253989,
+        120.86801111854088
+      ],
+      "mae_ha": 296.8532020705361,
+      "rmse_ha": 370.42910006545293,
+      "bias_ha": -256.31147608170454
+    },
+    {
+      "id": "lasso_ranking-seed-7-rbf",
+      "selector": "lasso_ranking",
+      "seed": 7,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.11633812476989647,
+      "objective_gap": 0.2193514752123349,
+      "kernel_id": "kernel-008",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        42.452080828552866,
+        115.14361446303903,
+        75.77899902563254,
+        52.365913185640096,
+        54.16055802045753,
+        61.5762595345232
+      ],
+      "absolute_errors_ha": [
+        460.59623923952154,
+        89.62890358866076,
+        581.2117873755194,
+        43.02248270493816,
+        544.0393064781874,
+        125.14453048626679
+      ],
+      "mae_ha": 307.273874978849,
+      "rmse_ha": 381.1124576522294,
+      "bias_ha": -263.05674621431604
+    },
+    {
+      "id": "lasso_ranking-seed-7-quantum",
+      "selector": "lasso_ranking",
+      "seed": 7,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.11633812476989647,
+      "objective_gap": 0.2193514752123349,
+      "kernel_id": "kernel-009",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        67.30315131815283,
+        55.97050932522444,
+        77.33767433588443,
+        75.53851010410415,
+        89.53717995927245,
+        63.56762871801543
+      ],
+      "absolute_errors_ha": [
+        435.7451687499216,
+        30.45579845084617,
+        579.6531120652675,
+        66.19507962340222,
+        508.6626845393725,
+        123.15316130277456
+      ],
+      "mae_ha": 290.6441674552641,
+      "rmse_ha": 366.3071012195329,
+      "bias_ha": -258.42720809718134
+    },
+    {
+      "id": "mutual_information-seed-7-ridge",
+      "selector": "mutual_information",
+      "seed": 7,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.27088245495035324,
+      "objective_gap": 0.06480714503187812,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        71.93518868610157,
+        76.6289581479252,
+        108.5703387495074,
+        67.66571895847454,
+        106.40260762773455,
+        107.46121728651502
+      ],
+      "absolute_errors_ha": [
+        431.11313138197283,
+        51.11424727354694,
+        548.4204476516445,
+        58.32228847777261,
+        491.7972568709104,
+        79.25957273427497
+      ],
+      "mae_ha": 276.6711573983537,
+      "rmse_ha": 351.37451453679216,
+      "bias_ha": -240.19231214791387
+    },
+    {
+      "id": "mutual_information-seed-7-rbf",
+      "selector": "mutual_information",
+      "seed": 7,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.27088245495035324,
+      "objective_gap": 0.06480714503187812,
+      "kernel_id": "kernel-010",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        25.109392247404873,
+        134.58609721109585,
+        99.45982340988961,
+        52.784703658516534,
+        116.6161926663927,
+        72.72761973215172
+      ],
+      "absolute_errors_ha": [
+        477.93892782066956,
+        109.07138633671758,
+        557.5309629912623,
+        43.4412731778146,
+        481.58367183225226,
+        113.99317028863827
+      ],
+      "mae_ha": 297.25989874122575,
+      "rmse_ha": 364.6841968975686,
+      "bias_ha": -246.42234556971505
+    },
+    {
+      "id": "mutual_information-seed-7-quantum",
+      "selector": "mutual_information",
+      "seed": 7,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.27088245495035324,
+      "objective_gap": 0.06480714503187812,
+      "kernel_id": "kernel-011",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        66.40958833522667,
+        42.244661562408496,
+        101.80851273675461,
+        87.48714067111547,
+        111.49843629473516,
+        39.92500834139967
+      ],
+      "absolute_errors_ha": [
+        436.63873173284776,
+        16.729950688030225,
+        555.1822736643974,
+        78.14371019041354,
+        486.7014282039098,
+        146.79578167939033
+      ],
+      "mae_ha": 286.6986460264981,
+      "rmse_ha": 356.7665790278418,
+      "bias_ha": -255.07409240035022
+    },
+    {
+      "id": "exact_same_qubo-seed-7-ridge",
+      "selector": "exact_same_qubo",
+      "seed": 7,
+      "kind": "ridge",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        63.08881560960939,
+        63.470477548062945,
+        90.36187224971155,
+        60.60164645744137,
+        107.28461951358123,
+        110.13392123247478
+      ],
+      "absolute_errors_ha": [
+        439.959504458465,
+        37.95576667368468,
+        566.6289141514403,
+        51.258215976739436,
+        490.91524498506374,
+        76.58686878831521
+      ],
+      "mae_ha": 277.21741917228474,
+      "rmse_ha": 357.20303821828173,
+      "bias_ha": -247.47942495547673
+    },
+    {
+      "id": "exact_same_qubo-seed-7-rbf",
+      "selector": "exact_same_qubo",
+      "seed": 7,
+      "kind": "rbf",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-012",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        45.29511529552127,
+        112.94882361578287,
+        82.73882155078292,
+        77.96356341569604,
+        113.12166186288519,
+        101.7154836261989
+      ],
+      "absolute_errors_ha": [
+        457.75320477255315,
+        87.4341127414046,
+        574.251964850369,
+        68.62013293499412,
+        485.0782026357598,
+        85.00530639459109
+      ],
+      "mae_ha": 293.0238207216119,
+      "rmse_ha": 363.81852782134,
+      "bias_ha": -241.00573882947904
+    },
+    {
+      "id": "exact_same_qubo-seed-7-quantum",
+      "selector": "exact_same_qubo",
+      "seed": 7,
+      "kind": "quantum",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-013",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        73.95261552202341,
+        78.5551338035283,
+        83.73554207085455,
+        89.66577567829476,
+        70.34672242980903,
+        55.48572770665849
+      ],
+      "absolute_errors_ha": [
+        429.095704546051,
+        53.04042292915004,
+        573.2552443302974,
+        80.32234519759284,
+        527.853142068836,
+        131.2350623141315
+      ],
+      "mae_ha": 299.1336535643431,
+      "rmse_ha": 369.2021229595748,
+      "bias_ha": -254.67939752209546
+    },
+    {
+      "id": "qaoa_same_qubo-seed-7-ridge",
+      "selector": "qaoa_same_qubo",
+      "seed": 7,
+      "kind": "ridge",
+      "features": [
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.3259882654120787,
+      "objective_gap": 0.009701334570152653,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        50.46166984710663,
+        70.64945075782826,
+        101.9712168371673,
+        41.227214338182065,
+        61.503908020252766,
+        68.70112567658903
+      ],
+      "absolute_errors_ha": [
+        452.5866502209678,
+        45.134739883449996,
+        555.0195695639846,
+        31.883783857480132,
+        536.6959564783922,
+        118.01966434420096
+      ],
+      "mae_ha": 289.890060724746,
+      "rmse_ha": 369.21229436166277,
+      "bias_ha": -264.2172194777692
+    },
+    {
+      "id": "qaoa_same_qubo-seed-7-rbf",
+      "selector": "qaoa_same_qubo",
+      "seed": 7,
+      "kind": "rbf",
+      "features": [
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.3259882654120787,
+      "objective_gap": 0.009701334570152653,
+      "kernel_id": "kernel-014",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        45.313504409775874,
+        110.43757323602183,
+        87.16812935463192,
+        57.611887939976754,
+        73.16423362422675,
+        60.697656755557254
+      ],
+      "absolute_errors_ha": [
+        457.73481565829854,
+        84.92286236164357,
+        569.82265704652,
+        48.26845745927482,
+        525.0356308744182,
+        126.02313326523273
+      ],
+      "mae_ha": 301.96792611089796,
+      "rmse_ha": 373.1186143601366,
+      "bias_ha": -257.5708195039252
+    },
+    {
+      "id": "qaoa_same_qubo-seed-7-quantum",
+      "selector": "qaoa_same_qubo",
+      "seed": 7,
+      "kind": "quantum",
+      "features": [
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.3259882654120787,
+      "objective_gap": 0.009701334570152653,
+      "kernel_id": "kernel-015",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        74.52804415589821,
+        101.57697239965289,
+        85.97440270373347,
+        58.34778536300539,
+        67.91414034859977,
+        53.8107067595195
+      ],
+      "absolute_errors_ha": [
+        428.5202759121762,
+        76.06226152527462,
+        571.0163836974184,
+        49.00435488230346,
+        530.2857241500452,
+        132.9100832612705
+      ],
+      "mae_ha": 297.96651390474807,
+      "rmse_ha": 368.9499223504347,
+      "bias_ha": -256.2776417688887
+    },
+    {
+      "id": "uniform_bitstring_budget-seed-7-ridge",
+      "selector": "uniform_bitstring_budget",
+      "seed": 7,
+      "kind": "ridge",
+      "features": [
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.3259882654120787,
+      "objective_gap": 0.009701334570152653,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        50.46166984710663,
+        70.64945075782826,
+        101.9712168371673,
+        41.227214338182065,
+        61.503908020252766,
+        68.70112567658903
+      ],
+      "absolute_errors_ha": [
+        452.5866502209678,
+        45.134739883449996,
+        555.0195695639846,
+        31.883783857480132,
+        536.6959564783922,
+        118.01966434420096
+      ],
+      "mae_ha": 289.890060724746,
+      "rmse_ha": 369.21229436166277,
+      "bias_ha": -264.2172194777692
+    },
+    {
+      "id": "uniform_bitstring_budget-seed-7-rbf",
+      "selector": "uniform_bitstring_budget",
+      "seed": 7,
+      "kind": "rbf",
+      "features": [
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.3259882654120787,
+      "objective_gap": 0.009701334570152653,
+      "kernel_id": "kernel-014",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        45.313504409775874,
+        110.43757323602183,
+        87.16812935463192,
+        57.611887939976754,
+        73.16423362422675,
+        60.697656755557254
+      ],
+      "absolute_errors_ha": [
+        457.73481565829854,
+        84.92286236164357,
+        569.82265704652,
+        48.26845745927482,
+        525.0356308744182,
+        126.02313326523273
+      ],
+      "mae_ha": 301.96792611089796,
+      "rmse_ha": 373.1186143601366,
+      "bias_ha": -257.5708195039252
+    },
+    {
+      "id": "uniform_bitstring_budget-seed-7-quantum",
+      "selector": "uniform_bitstring_budget",
+      "seed": 7,
+      "kind": "quantum",
+      "features": [
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.3259882654120787,
+      "objective_gap": 0.009701334570152653,
+      "kernel_id": "kernel-015",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        74.52804415589821,
+        101.57697239965289,
+        85.97440270373347,
+        58.34778536300539,
+        67.91414034859977,
+        53.8107067595195
+      ],
+      "absolute_errors_ha": [
+        428.5202759121762,
+        76.06226152527462,
+        571.0163836974184,
+        49.00435488230346,
+        530.2857241500452,
+        132.9100832612705
+      ],
+      "mae_ha": 297.96651390474807,
+      "rmse_ha": 368.9499223504347,
+      "bias_ha": -256.2776417688887
+    },
+    {
+      "id": "random_four-seed-7-ridge",
+      "selector": "random_four",
+      "seed": 7,
+      "kind": "ridge",
+      "features": [
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.03361883606261529,
+      "objective_gap": 0.30207076391961607,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        80.56272684304788,
+        144.15302819208807,
+        137.65303368929474,
+        84.30990312200869,
+        86.21815731695014,
+        89.56790575778233
+      ],
+      "absolute_errors_ha": [
+        422.48559322502655,
+        118.6383173177098,
+        519.3377527118572,
+        74.96647264130677,
+        511.9817071816948,
+        97.15288426300766
+      ],
+      "mae_ha": 290.7604545567672,
+      "rmse_ha": 351.06142663833685,
+      "bias_ha": -226.2255245704283
+    },
+    {
+      "id": "random_four-seed-7-rbf",
+      "selector": "random_four",
+      "seed": 7,
+      "kind": "rbf",
+      "features": [
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.03361883606261529,
+      "objective_gap": 0.30207076391961607,
+      "kernel_id": "kernel-016",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        52.14080665956056,
+        152.24749825799026,
+        87.34016196516504,
+        97.94761199088236,
+        77.99451156341996,
+        71.60146579804515
+      ],
+      "absolute_errors_ha": [
+        450.90751340851386,
+        126.73278738361199,
+        569.6506244359869,
+        88.60418151018044,
+        520.2053529352249,
+        115.11932422274484
+      ],
+      "mae_ha": 311.8699639827105,
+      "rmse_ha": 373.18391086693237,
+      "bias_ha": -240.09097435144633
+    },
+    {
+      "id": "random_four-seed-7-quantum",
+      "selector": "random_four",
+      "seed": 7,
+      "kind": "quantum",
+      "features": [
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.03361883606261529,
+      "objective_gap": 0.30207076391961607,
+      "kernel_id": "kernel-017",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        94.51144379710348,
+        71.52582621677921,
+        81.83381901283857,
+        117.53734618534436,
+        89.961247817446,
+        81.69899913170092
+      ],
+      "absolute_errors_ha": [
+        408.53687627097094,
+        46.01111534240094,
+        575.1569673883133,
+        108.19391570464244,
+        508.23861668119895,
+        105.02179088908908
+      ],
+      "mae_ha": 291.85988037943594,
+      "rmse_ha": 360.7554413049301,
+      "bias_ha": -240.45820336375482
+    },
+    {
+      "id": "physical_four-seed-19-ridge",
+      "selector": "physical_four",
+      "seed": 19,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": 0.16195638876581597,
+      "objective_gap": 0.49764598874804733,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        92.53569545445129,
+        66.71617551146316,
+        58.385483675538,
+        56.656448048519536,
+        31.454401558257462,
+        35.24628173776412
+      ],
+      "absolute_errors_ha": [
+        410.51262461362313,
+        41.2014646370849,
+        598.6053027256139,
+        47.3130175678176,
+        566.7454629403875,
+        151.47450828302587
+      ],
+      "mae_ha": 302.64206346125883,
+      "rmse_ha": 381.86602191543165,
+      "bias_ha": -273.1372360596246
+    },
+    {
+      "id": "physical_four-seed-19-rbf",
+      "selector": "physical_four",
+      "seed": 19,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 0.16195638876581597,
+      "objective_gap": 0.49764598874804733,
+      "kernel_id": "kernel-004",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        69.03862622924815,
+        91.8702299285184,
+        89.05863973926272,
+        59.320476664688684,
+        50.148156154265685,
+        49.969105330044975
+      ],
+      "absolute_errors_ha": [
+        434.00969383882625,
+        66.35551905414013,
+        567.9321466618892,
+        49.97704618398675,
+        548.0517083443792,
+        136.751684690745
+      ],
+      "mae_ha": 300.5129664623277,
+      "rmse_ha": 373.4688286629428,
+      "bias_ha": -261.7354447162855
+    },
+    {
+      "id": "physical_four-seed-19-quantum",
+      "selector": "physical_four",
+      "seed": 19,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 0.16195638876581597,
+      "objective_gap": 0.49764598874804733,
+      "kernel_id": "kernel-005",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        75.81363593151879,
+        46.62986044177678,
+        69.8439543273638,
+        112.0032738835141,
+        74.09039017175479,
+        77.83227260185124
+      ],
+      "absolute_errors_ha": [
+        427.23468413655564,
+        21.115149567398507,
+        587.1468320737881,
+        102.65984340281217,
+        524.1094743268902,
+        108.88851741893875
+      ],
+      "mae_ha": 295.1924168210639,
+      "rmse_ha": 370.76569893424494,
+      "bias_ha": -253.9340858309937
+    },
+    {
+      "id": "all_ten-seed-19-ridge",
+      "selector": "all_ten",
+      "seed": 19,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": 73.12855878224232,
+      "objective_gap": null,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        118.34847294383385,
+        70.04886243423593,
+        80.94198774343995,
+        47.58103716531184,
+        31.08496950055154,
+        50.64178574424968
+      ],
+      "absolute_errors_ha": [
+        384.6998471242406,
+        44.53415155985766,
+        576.0487986577119,
+        38.23760668460991,
+        567.1148949980934,
+        136.0790042765403
+      ],
+      "mae_ha": 291.11905055017564,
+      "rmse_ha": 370.4520651776069,
+      "bias_ha": -263.5284644686864
+    },
+    {
+      "id": "all_ten-seed-19-rbf",
+      "selector": "all_ten",
+      "seed": 19,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 73.12855878224232,
+      "objective_gap": null,
+      "kernel_id": "kernel-006",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        52.59095802839346,
+        103.92490963177288,
+        82.20613076399727,
+        54.853006735025104,
+        63.459945647710605,
+        76.2074621303716
+      ],
+      "absolute_errors_ha": [
+        450.45736203968096,
+        78.41019875739461,
+        574.7846556371546,
+        45.50957625432317,
+        534.7399188509344,
+        110.5133278904184
+      ],
+      "mae_ha": 299.06917323831766,
+      "rmse_ha": 374.0918988309806,
+      "bias_ha": -257.7625815677451
+    },
+    {
+      "id": "all_ten-seed-19-quantum",
+      "selector": "all_ten",
+      "seed": 19,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 73.12855878224232,
+      "objective_gap": null,
+      "kernel_id": "kernel-007",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        76.19342120648398,
+        74.91111715612526,
+        75.33567220018304,
+        74.98906684054211,
+        75.3360613713171,
+        75.5244934013954
+      ],
+      "absolute_errors_ha": [
+        426.8548988615904,
+        49.39640628174699,
+        581.6551142009689,
+        65.64563635984018,
+        522.8638031273279,
+        111.19629661939459
+      ],
+      "mae_ha": 292.9353592418115,
+      "rmse_ha": 368.10965397273543,
+      "bias_ha": -254.5880116946158
+    },
+    {
+      "id": "lasso_ranking-seed-19-ridge",
+      "selector": "lasso_ranking",
+      "seed": 19,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        9
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.11633812476989647,
+      "objective_gap": 0.2193514752123349,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        76.96053444722723,
+        107.26939211020097,
+        101.78990900921686,
+        49.213927211373935,
+        40.862504173246016,
+        65.85277890224911
+      ],
+      "absolute_errors_ha": [
+        426.08778562084717,
+        81.7546812358227,
+        555.200877391935,
+        39.870496730672,
+        557.3373603253989,
+        120.86801111854088
+      ],
+      "mae_ha": 296.8532020705361,
+      "rmse_ha": 370.42910006545293,
+      "bias_ha": -256.31147608170454
+    },
+    {
+      "id": "lasso_ranking-seed-19-rbf",
+      "selector": "lasso_ranking",
+      "seed": 19,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.11633812476989647,
+      "objective_gap": 0.2193514752123349,
+      "kernel_id": "kernel-008",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        42.452080828552866,
+        115.14361446303903,
+        75.77899902563254,
+        52.365913185640096,
+        54.16055802045753,
+        61.5762595345232
+      ],
+      "absolute_errors_ha": [
+        460.59623923952154,
+        89.62890358866076,
+        581.2117873755194,
+        43.02248270493816,
+        544.0393064781874,
+        125.14453048626679
+      ],
+      "mae_ha": 307.273874978849,
+      "rmse_ha": 381.1124576522294,
+      "bias_ha": -263.05674621431604
+    },
+    {
+      "id": "lasso_ranking-seed-19-quantum",
+      "selector": "lasso_ranking",
+      "seed": 19,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.11633812476989647,
+      "objective_gap": 0.2193514752123349,
+      "kernel_id": "kernel-009",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        67.30315131815283,
+        55.97050932522444,
+        77.33767433588443,
+        75.53851010410415,
+        89.53717995927245,
+        63.56762871801543
+      ],
+      "absolute_errors_ha": [
+        435.7451687499216,
+        30.45579845084617,
+        579.6531120652675,
+        66.19507962340222,
+        508.6626845393725,
+        123.15316130277456
+      ],
+      "mae_ha": 290.6441674552641,
+      "rmse_ha": 366.3071012195329,
+      "bias_ha": -258.42720809718134
+    },
+    {
+      "id": "mutual_information-seed-19-ridge",
+      "selector": "mutual_information",
+      "seed": 19,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.27088245495035324,
+      "objective_gap": 0.06480714503187812,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        71.93518868610157,
+        76.6289581479252,
+        108.5703387495074,
+        67.66571895847454,
+        106.40260762773455,
+        107.46121728651502
+      ],
+      "absolute_errors_ha": [
+        431.11313138197283,
+        51.11424727354694,
+        548.4204476516445,
+        58.32228847777261,
+        491.7972568709104,
+        79.25957273427497
+      ],
+      "mae_ha": 276.6711573983537,
+      "rmse_ha": 351.37451453679216,
+      "bias_ha": -240.19231214791387
+    },
+    {
+      "id": "mutual_information-seed-19-rbf",
+      "selector": "mutual_information",
+      "seed": 19,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.27088245495035324,
+      "objective_gap": 0.06480714503187812,
+      "kernel_id": "kernel-010",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        25.109392247404873,
+        134.58609721109585,
+        99.45982340988961,
+        52.784703658516534,
+        116.6161926663927,
+        72.72761973215172
+      ],
+      "absolute_errors_ha": [
+        477.93892782066956,
+        109.07138633671758,
+        557.5309629912623,
+        43.4412731778146,
+        481.58367183225226,
+        113.99317028863827
+      ],
+      "mae_ha": 297.25989874122575,
+      "rmse_ha": 364.6841968975686,
+      "bias_ha": -246.42234556971505
+    },
+    {
+      "id": "mutual_information-seed-19-quantum",
+      "selector": "mutual_information",
+      "seed": 19,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.27088245495035324,
+      "objective_gap": 0.06480714503187812,
+      "kernel_id": "kernel-011",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        66.40958833522667,
+        42.244661562408496,
+        101.80851273675461,
+        87.48714067111547,
+        111.49843629473516,
+        39.92500834139967
+      ],
+      "absolute_errors_ha": [
+        436.63873173284776,
+        16.729950688030225,
+        555.1822736643974,
+        78.14371019041354,
+        486.7014282039098,
+        146.79578167939033
+      ],
+      "mae_ha": 286.6986460264981,
+      "rmse_ha": 356.7665790278418,
+      "bias_ha": -255.07409240035022
+    },
+    {
+      "id": "exact_same_qubo-seed-19-ridge",
+      "selector": "exact_same_qubo",
+      "seed": 19,
+      "kind": "ridge",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        63.08881560960939,
+        63.470477548062945,
+        90.36187224971155,
+        60.60164645744137,
+        107.28461951358123,
+        110.13392123247478
+      ],
+      "absolute_errors_ha": [
+        439.959504458465,
+        37.95576667368468,
+        566.6289141514403,
+        51.258215976739436,
+        490.91524498506374,
+        76.58686878831521
+      ],
+      "mae_ha": 277.21741917228474,
+      "rmse_ha": 357.20303821828173,
+      "bias_ha": -247.47942495547673
+    },
+    {
+      "id": "exact_same_qubo-seed-19-rbf",
+      "selector": "exact_same_qubo",
+      "seed": 19,
+      "kind": "rbf",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-012",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        45.29511529552127,
+        112.94882361578287,
+        82.73882155078292,
+        77.96356341569604,
+        113.12166186288519,
+        101.7154836261989
+      ],
+      "absolute_errors_ha": [
+        457.75320477255315,
+        87.4341127414046,
+        574.251964850369,
+        68.62013293499412,
+        485.0782026357598,
+        85.00530639459109
+      ],
+      "mae_ha": 293.0238207216119,
+      "rmse_ha": 363.81852782134,
+      "bias_ha": -241.00573882947904
+    },
+    {
+      "id": "exact_same_qubo-seed-19-quantum",
+      "selector": "exact_same_qubo",
+      "seed": 19,
+      "kind": "quantum",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-013",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        73.95261552202341,
+        78.5551338035283,
+        83.73554207085455,
+        89.66577567829476,
+        70.34672242980903,
+        55.48572770665849
+      ],
+      "absolute_errors_ha": [
+        429.095704546051,
+        53.04042292915004,
+        573.2552443302974,
+        80.32234519759284,
+        527.853142068836,
+        131.2350623141315
+      ],
+      "mae_ha": 299.1336535643431,
+      "rmse_ha": 369.2021229595748,
+      "bias_ha": -254.67939752209546
+    },
+    {
+      "id": "qaoa_same_qubo-seed-19-ridge",
+      "selector": "qaoa_same_qubo",
+      "seed": 19,
+      "kind": "ridge",
+      "features": [
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.32713769240161383,
+      "objective_gap": 0.008551907580617524,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        53.859852247288096,
+        73.3904226905972,
+        75.0691733874639,
+        46.2884874451299,
+        79.25529487584903,
+        61.903904054558595
+      ],
+      "absolute_errors_ha": [
+        449.18846782078634,
+        47.87571181621894,
+        581.921613013688,
+        36.94505696442797,
+        518.9445696227959,
+        124.8168859662314
+      ],
+      "mae_ha": 293.2820508673581,
+      "rmse_ha": 371.6949434000389,
+      "bias_ha": -265.00846127380913
+    },
+    {
+      "id": "qaoa_same_qubo-seed-19-rbf",
+      "selector": "qaoa_same_qubo",
+      "seed": 19,
+      "kind": "rbf",
+      "features": [
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.32713769240161383,
+      "objective_gap": 0.008551907580617524,
+      "kernel_id": "kernel-018",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        50.56372094149621,
+        123.46521940421006,
+        85.41144912981737,
+        73.83084464087095,
+        88.69454373473789,
+        61.41141582679365
+      ],
+      "absolute_errors_ha": [
+        452.4845991265782,
+        97.9505085298318,
+        571.5793372713346,
+        64.48741416016902,
+        509.5053207639071,
+        125.30937419399635
+      ],
+      "mae_ha": 303.55275900763615,
+      "rmse_ha": 369.7964059443653,
+      "bias_ha": -249.40678477763592
+    },
+    {
+      "id": "qaoa_same_qubo-seed-19-quantum",
+      "selector": "qaoa_same_qubo",
+      "seed": 19,
+      "kind": "quantum",
+      "features": [
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        5,
+        6,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.32713769240161383,
+      "objective_gap": 0.008551907580617524,
+      "kernel_id": "kernel-019",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        86.2511582346439,
+        103.47716582363275,
+        95.80869660300797,
+        102.79419191399836,
+        75.3476957254181,
+        85.59367206444702
+      ],
+      "absolute_errors_ha": [
+        416.79716183343055,
+        77.96245494925448,
+        561.1820897981439,
+        93.45076143329644,
+        522.8521687732268,
+        101.12711795634297
+      ],
+      "mae_ha": 295.5619591239492,
+      "rmse_ha": 362.182616367723,
+      "bias_ha": -238.42422032976557
+    },
+    {
+      "id": "uniform_bitstring_budget-seed-19-ridge",
+      "selector": "uniform_bitstring_budget",
+      "seed": 19,
+      "kind": "ridge",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        63.08881560960939,
+        63.470477548062945,
+        90.36187224971155,
+        60.60164645744137,
+        107.28461951358123,
+        110.13392123247478
+      ],
+      "absolute_errors_ha": [
+        439.959504458465,
+        37.95576667368468,
+        566.6289141514403,
+        51.258215976739436,
+        490.91524498506374,
+        76.58686878831521
+      ],
+      "mae_ha": 277.21741917228474,
+      "rmse_ha": 357.20303821828173,
+      "bias_ha": -247.47942495547673
+    },
+    {
+      "id": "uniform_bitstring_budget-seed-19-rbf",
+      "selector": "uniform_bitstring_budget",
+      "seed": 19,
+      "kind": "rbf",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-012",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        45.29511529552127,
+        112.94882361578287,
+        82.73882155078292,
+        77.96356341569604,
+        113.12166186288519,
+        101.7154836261989
+      ],
+      "absolute_errors_ha": [
+        457.75320477255315,
+        87.4341127414046,
+        574.251964850369,
+        68.62013293499412,
+        485.0782026357598,
+        85.00530639459109
+      ],
+      "mae_ha": 293.0238207216119,
+      "rmse_ha": 363.81852782134,
+      "bias_ha": -241.00573882947904
+    },
+    {
+      "id": "uniform_bitstring_budget-seed-19-quantum",
+      "selector": "uniform_bitstring_budget",
+      "seed": 19,
+      "kind": "quantum",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-013",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        73.95261552202341,
+        78.5551338035283,
+        83.73554207085455,
+        89.66577567829476,
+        70.34672242980903,
+        55.48572770665849
+      ],
+      "absolute_errors_ha": [
+        429.095704546051,
+        53.04042292915004,
+        573.2552443302974,
+        80.32234519759284,
+        527.853142068836,
+        131.2350623141315
+      ],
+      "mae_ha": 299.1336535643431,
+      "rmse_ha": 369.2021229595748,
+      "bias_ha": -254.67939752209546
+    },
+    {
+      "id": "random_four-seed-19-ridge",
+      "selector": "random_four",
+      "seed": 19,
+      "kind": "ridge",
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": 0.17315572662398537,
+      "objective_gap": 0.5088453266062167,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        78.51711453418528,
+        73.02526611714165,
+        54.06487324748423,
+        65.3591383726753,
+        43.25608306478362,
+        57.59403625410102
+      ],
+      "absolute_errors_ha": [
+        424.53120553388914,
+        47.51055524276339,
+        602.9259131536677,
+        56.01570789197337,
+        554.9437814338613,
+        129.12675376668898
+      ],
+      "mae_ha": 302.508986170474,
+      "rmse_ha": 381.6144941134513,
+      "bias_ha": -268.00023179222836
+    },
+    {
+      "id": "random_four-seed-19-rbf",
+      "selector": "random_four",
+      "seed": 19,
+      "kind": "rbf",
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 0.17315572662398537,
+      "objective_gap": 0.5088453266062167,
+      "kernel_id": "kernel-020",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        74.48218703835346,
+        129.344418054597,
+        80.86711125951844,
+        102.36926926603512,
+        58.71767425928129,
+        87.34231799403027
+      ],
+      "absolute_errors_ha": [
+        428.56613302972096,
+        103.82970718021875,
+        576.1236751416335,
+        93.02583878533319,
+        539.4821902393637,
+        99.37847202675972
+      ],
+      "mae_ha": 306.7343360671717,
+      "rmse_ha": 373.26017478907613,
+      "bias_ha": -241.115820745321
+    },
+    {
+      "id": "random_four-seed-19-quantum",
+      "selector": "random_four",
+      "seed": 19,
+      "kind": "quantum",
+      "features": [
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        3,
+        4,
+        8,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 0.17315572662398537,
+      "objective_gap": 0.5088453266062167,
+      "kernel_id": "kernel-021",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        101.10550113138294,
+        38.86125124822174,
+        141.7849437203902,
+        127.00966699304735,
+        25.01427209720161,
+        59.93760513169511
+      ],
+      "absolute_errors_ha": [
+        401.9428189366915,
+        13.346540373843471,
+        515.2058426807617,
+        117.66623651234542,
+        573.1855924014434,
+        126.78318488909488
+      ],
+      "mae_ha": 291.3550359656967,
+      "rmse_ha": 361.8550038089183,
+      "bias_ha": -247.68411033696705
+    },
+    {
+      "id": "physical_four-seed-31-ridge",
+      "selector": "physical_four",
+      "seed": 31,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": 0.16195638876581597,
+      "objective_gap": 0.49764598874804733,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        92.53569545445129,
+        66.71617551146316,
+        58.385483675538,
+        56.656448048519536,
+        31.454401558257462,
+        35.24628173776412
+      ],
+      "absolute_errors_ha": [
+        410.51262461362313,
+        41.2014646370849,
+        598.6053027256139,
+        47.3130175678176,
+        566.7454629403875,
+        151.47450828302587
+      ],
+      "mae_ha": 302.64206346125883,
+      "rmse_ha": 381.86602191543165,
+      "bias_ha": -273.1372360596246
+    },
+    {
+      "id": "physical_four-seed-31-rbf",
+      "selector": "physical_four",
+      "seed": 31,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 0.16195638876581597,
+      "objective_gap": 0.49764598874804733,
+      "kernel_id": "kernel-004",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        69.03862622924815,
+        91.8702299285184,
+        89.05863973926272,
+        59.320476664688684,
+        50.148156154265685,
+        49.969105330044975
+      ],
+      "absolute_errors_ha": [
+        434.00969383882625,
+        66.35551905414013,
+        567.9321466618892,
+        49.97704618398675,
+        548.0517083443792,
+        136.751684690745
+      ],
+      "mae_ha": 300.5129664623277,
+      "rmse_ha": 373.4688286629428,
+      "bias_ha": -261.7354447162855
+    },
+    {
+      "id": "physical_four-seed-31-quantum",
+      "selector": "physical_four",
+      "seed": 31,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 0.16195638876581597,
+      "objective_gap": 0.49764598874804733,
+      "kernel_id": "kernel-005",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        75.81363593151879,
+        46.62986044177678,
+        69.8439543273638,
+        112.0032738835141,
+        74.09039017175479,
+        77.83227260185124
+      ],
+      "absolute_errors_ha": [
+        427.23468413655564,
+        21.115149567398507,
+        587.1468320737881,
+        102.65984340281217,
+        524.1094743268902,
+        108.88851741893875
+      ],
+      "mae_ha": 295.1924168210639,
+      "rmse_ha": 370.76569893424494,
+      "bias_ha": -253.9340858309937
+    },
+    {
+      "id": "all_ten-seed-31-ridge",
+      "selector": "all_ten",
+      "seed": 31,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": 73.12855878224232,
+      "objective_gap": null,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        118.34847294383385,
+        70.04886243423593,
+        80.94198774343995,
+        47.58103716531184,
+        31.08496950055154,
+        50.64178574424968
+      ],
+      "absolute_errors_ha": [
+        384.6998471242406,
+        44.53415155985766,
+        576.0487986577119,
+        38.23760668460991,
+        567.1148949980934,
+        136.0790042765403
+      ],
+      "mae_ha": 291.11905055017564,
+      "rmse_ha": 370.4520651776069,
+      "bias_ha": -263.5284644686864
+    },
+    {
+      "id": "all_ten-seed-31-rbf",
+      "selector": "all_ten",
+      "seed": 31,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 73.12855878224232,
+      "objective_gap": null,
+      "kernel_id": "kernel-006",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        52.59095802839346,
+        103.92490963177288,
+        82.20613076399727,
+        54.853006735025104,
+        63.459945647710605,
+        76.2074621303716
+      ],
+      "absolute_errors_ha": [
+        450.45736203968096,
+        78.41019875739461,
+        574.7846556371546,
+        45.50957625432317,
+        534.7399188509344,
+        110.5133278904184
+      ],
+      "mae_ha": 299.06917323831766,
+      "rmse_ha": 374.0918988309806,
+      "bias_ha": -257.7625815677451
+    },
+    {
+      "id": "all_ten-seed-31-quantum",
+      "selector": "all_ten",
+      "seed": 31,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_mean_temp_c",
+        "annual_precip_mm",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_highest_max_temp_c",
+        "annual_lowest_min_temp_c",
+        "annual_heating_degree_days",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 73.12855878224232,
+      "objective_gap": null,
+      "kernel_id": "kernel-007",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        76.19342120648398,
+        74.91111715612526,
+        75.33567220018304,
+        74.98906684054211,
+        75.3360613713171,
+        75.5244934013954
+      ],
+      "absolute_errors_ha": [
+        426.8548988615904,
+        49.39640628174699,
+        581.6551142009689,
+        65.64563635984018,
+        522.8638031273279,
+        111.19629661939459
+      ],
+      "mae_ha": 292.9353592418115,
+      "rmse_ha": 368.10965397273543,
+      "bias_ha": -254.5880116946158
+    },
+    {
+      "id": "lasso_ranking-seed-31-ridge",
+      "selector": "lasso_ranking",
+      "seed": 31,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        9
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.11633812476989647,
+      "objective_gap": 0.2193514752123349,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        76.96053444722723,
+        107.26939211020097,
+        101.78990900921686,
+        49.213927211373935,
+        40.862504173246016,
+        65.85277890224911
+      ],
+      "absolute_errors_ha": [
+        426.08778562084717,
+        81.7546812358227,
+        555.200877391935,
+        39.870496730672,
+        557.3373603253989,
+        120.86801111854088
+      ],
+      "mae_ha": 296.8532020705361,
+      "rmse_ha": 370.42910006545293,
+      "bias_ha": -256.31147608170454
+    },
+    {
+      "id": "lasso_ranking-seed-31-rbf",
+      "selector": "lasso_ranking",
+      "seed": 31,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.11633812476989647,
+      "objective_gap": 0.2193514752123349,
+      "kernel_id": "kernel-008",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        42.452080828552866,
+        115.14361446303903,
+        75.77899902563254,
+        52.365913185640096,
+        54.16055802045753,
+        61.5762595345232
+      ],
+      "absolute_errors_ha": [
+        460.59623923952154,
+        89.62890358866076,
+        581.2117873755194,
+        43.02248270493816,
+        544.0393064781874,
+        125.14453048626679
+      ],
+      "mae_ha": 307.273874978849,
+      "rmse_ha": 381.1124576522294,
+      "bias_ha": -263.05674621431604
+    },
+    {
+      "id": "lasso_ranking-seed-31-quantum",
+      "selector": "lasso_ranking",
+      "seed": 31,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_cooling_degree_days"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        9
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.11633812476989647,
+      "objective_gap": 0.2193514752123349,
+      "kernel_id": "kernel-009",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        67.30315131815283,
+        55.97050932522444,
+        77.33767433588443,
+        75.53851010410415,
+        89.53717995927245,
+        63.56762871801543
+      ],
+      "absolute_errors_ha": [
+        435.7451687499216,
+        30.45579845084617,
+        579.6531120652675,
+        66.19507962340222,
+        508.6626845393725,
+        123.15316130277456
+      ],
+      "mae_ha": 290.6441674552641,
+      "rmse_ha": 366.3071012195329,
+      "bias_ha": -258.42720809718134
+    },
+    {
+      "id": "mutual_information-seed-31-ridge",
+      "selector": "mutual_information",
+      "seed": 31,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.27088245495035324,
+      "objective_gap": 0.06480714503187812,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        71.93518868610157,
+        76.6289581479252,
+        108.5703387495074,
+        67.66571895847454,
+        106.40260762773455,
+        107.46121728651502
+      ],
+      "absolute_errors_ha": [
+        431.11313138197283,
+        51.11424727354694,
+        548.4204476516445,
+        58.32228847777261,
+        491.7972568709104,
+        79.25957273427497
+      ],
+      "mae_ha": 276.6711573983537,
+      "rmse_ha": 351.37451453679216,
+      "bias_ha": -240.19231214791387
+    },
+    {
+      "id": "mutual_information-seed-31-rbf",
+      "selector": "mutual_information",
+      "seed": 31,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.27088245495035324,
+      "objective_gap": 0.06480714503187812,
+      "kernel_id": "kernel-010",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        25.109392247404873,
+        134.58609721109585,
+        99.45982340988961,
+        52.784703658516534,
+        116.6161926663927,
+        72.72761973215172
+      ],
+      "absolute_errors_ha": [
+        477.93892782066956,
+        109.07138633671758,
+        557.5309629912623,
+        43.4412731778146,
+        481.58367183225226,
+        113.99317028863827
+      ],
+      "mae_ha": 297.25989874122575,
+      "rmse_ha": 364.6841968975686,
+      "bias_ha": -246.42234556971505
+    },
+    {
+      "id": "mutual_information-seed-31-quantum",
+      "selector": "mutual_information",
+      "seed": 31,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "annual_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.27088245495035324,
+      "objective_gap": 0.06480714503187812,
+      "kernel_id": "kernel-011",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        66.40958833522667,
+        42.244661562408496,
+        101.80851273675461,
+        87.48714067111547,
+        111.49843629473516,
+        39.92500834139967
+      ],
+      "absolute_errors_ha": [
+        436.63873173284776,
+        16.729950688030225,
+        555.1822736643974,
+        78.14371019041354,
+        486.7014282039098,
+        146.79578167939033
+      ],
+      "mae_ha": 286.6986460264981,
+      "rmse_ha": 356.7665790278418,
+      "bias_ha": -255.07409240035022
+    },
+    {
+      "id": "exact_same_qubo-seed-31-ridge",
+      "selector": "exact_same_qubo",
+      "seed": 31,
+      "kind": "ridge",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        63.08881560960939,
+        63.470477548062945,
+        90.36187224971155,
+        60.60164645744137,
+        107.28461951358123,
+        110.13392123247478
+      ],
+      "absolute_errors_ha": [
+        439.959504458465,
+        37.95576667368468,
+        566.6289141514403,
+        51.258215976739436,
+        490.91524498506374,
+        76.58686878831521
+      ],
+      "mae_ha": 277.21741917228474,
+      "rmse_ha": 357.20303821828173,
+      "bias_ha": -247.47942495547673
+    },
+    {
+      "id": "exact_same_qubo-seed-31-rbf",
+      "selector": "exact_same_qubo",
+      "seed": 31,
+      "kind": "rbf",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-012",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        45.29511529552127,
+        112.94882361578287,
+        82.73882155078292,
+        77.96356341569604,
+        113.12166186288519,
+        101.7154836261989
+      ],
+      "absolute_errors_ha": [
+        457.75320477255315,
+        87.4341127414046,
+        574.251964850369,
+        68.62013293499412,
+        485.0782026357598,
+        85.00530639459109
+      ],
+      "mae_ha": 293.0238207216119,
+      "rmse_ha": 363.81852782134,
+      "bias_ha": -241.00573882947904
+    },
+    {
+      "id": "exact_same_qubo-seed-31-quantum",
+      "selector": "exact_same_qubo",
+      "seed": 31,
+      "kind": "quantum",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-013",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        73.95261552202341,
+        78.5551338035283,
+        83.73554207085455,
+        89.66577567829476,
+        70.34672242980903,
+        55.48572770665849
+      ],
+      "absolute_errors_ha": [
+        429.095704546051,
+        53.04042292915004,
+        573.2552443302974,
+        80.32234519759284,
+        527.853142068836,
+        131.2350623141315
+      ],
+      "mae_ha": 299.1336535643431,
+      "rmse_ha": 369.2021229595748,
+      "bias_ha": -254.67939752209546
+    },
+    {
+      "id": "qaoa_same_qubo-seed-31-ridge",
+      "selector": "qaoa_same_qubo",
+      "seed": 31,
+      "kind": "ridge",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        63.08881560960939,
+        63.470477548062945,
+        90.36187224971155,
+        60.60164645744137,
+        107.28461951358123,
+        110.13392123247478
+      ],
+      "absolute_errors_ha": [
+        439.959504458465,
+        37.95576667368468,
+        566.6289141514403,
+        51.258215976739436,
+        490.91524498506374,
+        76.58686878831521
+      ],
+      "mae_ha": 277.21741917228474,
+      "rmse_ha": 357.20303821828173,
+      "bias_ha": -247.47942495547673
+    },
+    {
+      "id": "qaoa_same_qubo-seed-31-rbf",
+      "selector": "qaoa_same_qubo",
+      "seed": 31,
+      "kind": "rbf",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-012",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        45.29511529552127,
+        112.94882361578287,
+        82.73882155078292,
+        77.96356341569604,
+        113.12166186288519,
+        101.7154836261989
+      ],
+      "absolute_errors_ha": [
+        457.75320477255315,
+        87.4341127414046,
+        574.251964850369,
+        68.62013293499412,
+        485.0782026357598,
+        85.00530639459109
+      ],
+      "mae_ha": 293.0238207216119,
+      "rmse_ha": 363.81852782134,
+      "bias_ha": -241.00573882947904
+    },
+    {
+      "id": "qaoa_same_qubo-seed-31-quantum",
+      "selector": "qaoa_same_qubo",
+      "seed": 31,
+      "kind": "quantum",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-013",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        73.95261552202341,
+        78.5551338035283,
+        83.73554207085455,
+        89.66577567829476,
+        70.34672242980903,
+        55.48572770665849
+      ],
+      "absolute_errors_ha": [
+        429.095704546051,
+        53.04042292915004,
+        573.2552443302974,
+        80.32234519759284,
+        527.853142068836,
+        131.2350623141315
+      ],
+      "mae_ha": 299.1336535643431,
+      "rmse_ha": 369.2021229595748,
+      "bias_ha": -254.67939752209546
+    },
+    {
+      "id": "uniform_bitstring_budget-seed-31-ridge",
+      "selector": "uniform_bitstring_budget",
+      "seed": 31,
+      "kind": "ridge",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        63.08881560960939,
+        63.470477548062945,
+        90.36187224971155,
+        60.60164645744137,
+        107.28461951358123,
+        110.13392123247478
+      ],
+      "absolute_errors_ha": [
+        439.959504458465,
+        37.95576667368468,
+        566.6289141514403,
+        51.258215976739436,
+        490.91524498506374,
+        76.58686878831521
+      ],
+      "mae_ha": 277.21741917228474,
+      "rmse_ha": 357.20303821828173,
+      "bias_ha": -247.47942495547673
+    },
+    {
+      "id": "uniform_bitstring_budget-seed-31-rbf",
+      "selector": "uniform_bitstring_budget",
+      "seed": 31,
+      "kind": "rbf",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-012",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        45.29511529552127,
+        112.94882361578287,
+        82.73882155078292,
+        77.96356341569604,
+        113.12166186288519,
+        101.7154836261989
+      ],
+      "absolute_errors_ha": [
+        457.75320477255315,
+        87.4341127414046,
+        574.251964850369,
+        68.62013293499412,
+        485.0782026357598,
+        85.00530639459109
+      ],
+      "mae_ha": 293.0238207216119,
+      "rmse_ha": 363.81852782134,
+      "bias_ha": -241.00573882947904
+    },
+    {
+      "id": "uniform_bitstring_budget-seed-31-quantum",
+      "selector": "uniform_bitstring_budget",
+      "seed": 31,
+      "kind": "quantum",
+      "features": [
+        "annual_precip_mm",
+        "spring_precip_mm",
+        "annual_snowfall_cm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        2,
+        4,
+        5,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": -0.33568959998223136,
+      "objective_gap": 0.0,
+      "kernel_id": "kernel-013",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        73.95261552202341,
+        78.5551338035283,
+        83.73554207085455,
+        89.66577567829476,
+        70.34672242980903,
+        55.48572770665849
+      ],
+      "absolute_errors_ha": [
+        429.095704546051,
+        53.04042292915004,
+        573.2552443302974,
+        80.32234519759284,
+        527.853142068836,
+        131.2350623141315
+      ],
+      "mae_ha": 299.1336535643431,
+      "rmse_ha": 369.2021229595748,
+      "bias_ha": -254.67939752209546
+    },
+    {
+      "id": "random_four-seed-31-ridge",
+      "selector": "random_four",
+      "seed": 31,
+      "kind": "ridge",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "params": {
+        "alpha": 1.0
+      },
+      "status": "complete",
+      "objective": 0.018804523665302497,
+      "objective_gap": 0.35449412364753385,
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        105.34578463947499,
+        57.75315274305386,
+        57.19068905957729,
+        78.38386665212157,
+        56.77150286154478,
+        46.41939144013929
+      ],
+      "absolute_errors_ha": [
+        397.70253542859945,
+        32.238441868675594,
+        599.8000973415747,
+        69.04043617141964,
+        541.4283616371001,
+        140.3013985806507
+      ],
+      "mae_ha": 296.75187850467,
+      "rmse_ha": 373.39936521256516,
+      "bias_ha": -262.99225249130495
+    },
+    {
+      "id": "random_four-seed-31-rbf",
+      "selector": "random_four",
+      "seed": 31,
+      "kind": "rbf",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 0.018804523665302497,
+      "objective_gap": 0.35449412364753385,
+      "kernel_id": "kernel-022",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        89.65775350121046,
+        81.5735157246676,
+        66.0740002371441,
+        107.66937430609592,
+        88.32623646509515,
+        58.1614749928874
+      ],
+      "absolute_errors_ha": [
+        413.390566566864,
+        56.058804850289334,
+        590.9167861640078,
+        98.32594382539399,
+        509.87362803354983,
+        128.55931502790258
+      ],
+      "mae_ha": 299.5208407446679,
+      "rmse_ha": 367.2836332617722,
+      "bias_ha": -248.05925785277347
+    },
+    {
+      "id": "random_four-seed-31-quantum",
+      "selector": "random_four",
+      "seed": 31,
+      "kind": "quantum",
+      "features": [
+        "annual_mean_temp_c",
+        "summer_precip_mm",
+        "spring_precip_mm",
+        "annual_lowest_min_temp_c"
+      ],
+      "feature_indices": [
+        0,
+        3,
+        4,
+        7
+      ],
+      "params": {
+        "C": 1.0,
+        "epsilon": 0.2
+      },
+      "status": "complete",
+      "objective": 0.018804523665302497,
+      "objective_gap": 0.35449412364753385,
+      "kernel_id": "kernel-023",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "actual_ha": [
+        503.0483200680744,
+        25.51471087437827,
+        656.9907864011519,
+        9.343430480701931,
+        598.199864498645,
+        186.72079002079
+      ],
+      "predicted_ha": [
+        97.81949574198713,
+        88.55905293299786,
+        66.59779480076487,
+        116.83809636696692,
+        93.4167261373418,
+        50.6636018575778
+      ],
+      "absolute_errors_ha": [
+        405.2288243260873,
+        63.04434205861959,
+        590.3929916003871,
+        107.494665886265,
+        504.78313836130314,
+        136.05718816321217
+      ],
+      "mae_ha": 301.1668583993124,
+      "rmse_ha": 365.51825127252033,
+      "bias_ha": -244.3205224176842
+    }
+  ],
+  "cross_resources": [
+    {
+      "id": "kernel-000",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "b1084d534c3891c82b56ada93d2765228f12fe08feb6f9f5a5ce2f8a0d8e54fe",
+      "kernel_seconds": 0.00040316605009138584,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-001",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "858207739318ee43a8953cac4ba753c929319ed3fbc8c49a960858d3ae664660",
+      "kernel_seconds": 0.23139879200607538,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    },
+    {
+      "id": "kernel-002",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "b5e4283a9771d3e40aeef40e83457a73380ed51e07d5aa63a975da0caaf019f0",
+      "kernel_seconds": 0.0003487500362098217,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-003",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "0b949b0f94c16db731e6e9723ed7b1b72afc5e00007ad80cbdb9fdb257232da8",
+      "kernel_seconds": 3.497882666066289,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    },
+    {
+      "id": "kernel-004",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "30e24c5bed86b6f76e2b3f873e10102b110cda575943ffab54a173fa797e4199",
+      "kernel_seconds": 0.0003714580088853836,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-005",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "1c77b3ba183eca4871e8839b6cfb1b19b43d783584e5611eb34940abda42f0e8",
+      "kernel_seconds": 0.14902416698168963,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    },
+    {
+      "id": "kernel-006",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "6eb12310887840ebd9474f427bcf13496ba7abfffbf54bcf33b5eeae23b74448",
+      "kernel_seconds": 0.0003530000103637576,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-007",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "b9b8de3ae6237495ef9e6ba107662d99b1b34beb303452b6ecc6b3b74805b9df",
+      "kernel_seconds": 3.5304915830492973,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    },
+    {
+      "id": "kernel-008",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "cfc71724814aa099173a967d0bb3ddc7510a11150f80c5bd6339a72b0a2b42d5",
+      "kernel_seconds": 0.0003523749765008688,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-009",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "45d9220920e5250237740d001f528fc68aa1d8ea46668e4a46e2e75f9f65e716",
+      "kernel_seconds": 0.14992479200009257,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    },
+    {
+      "id": "kernel-010",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "b7f0184e62be6bb02a536fdecbba881384deb984132ac63f9d2c774dc4e6f9ef",
+      "kernel_seconds": 0.00032466696575284004,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-011",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "930c9c16b395e04ebd578a4afd46444faede0aa8250925a914b949d74c75936d",
+      "kernel_seconds": 0.14770858304109424,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    },
+    {
+      "id": "kernel-012",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "1f6d619b353256b4ba9e56d734b346aec6dd4035631aaabe12e8eb2e0385194b",
+      "kernel_seconds": 0.0003410420613363385,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-013",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "2e56f598de39ffdfb6b73405da177de93f82dd3669f2b8c9fe038e2a77b4aca0",
+      "kernel_seconds": 0.14696379203815013,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    },
+    {
+      "id": "kernel-014",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "543ef116822f6f61347b45c2e8142f8ea7599959132d28e54bd9bca7933fea5b",
+      "kernel_seconds": 0.00034495803993195295,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-015",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "42831403f9aeaa95c423073d2590012c6f9a6fbb6c62928e6fb2e291bf334425",
+      "kernel_seconds": 0.14640491688624024,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    },
+    {
+      "id": "kernel-016",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "a389f414ca6b27e68f9680bd1765af2dc107b5c60aff6f640a2cea9652623bbb",
+      "kernel_seconds": 0.0003464589826762676,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-017",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "fe4077f1fc608618e6e08719237642df2802bd3e9e293d4c8782cff805b343bb",
+      "kernel_seconds": 0.14915070799179375,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    },
+    {
+      "id": "kernel-018",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "e5dce3acf56514a1e6dab91591e6803d40911670cadea9e1efb3758bf04337b8",
+      "kernel_seconds": 0.0003832080401480198,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-019",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "afff7d61fb3a2228ea6d9521da0ad2ace51672f0e80238690fdb5d768d6f3cc9",
+      "kernel_seconds": 0.15003866597544402,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    },
+    {
+      "id": "kernel-020",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "6a137f1325a8a7d13e6c1cfe5319cd50f92da752bd39322fcb949f7dba79539a",
+      "kernel_seconds": 0.00034720893017947674,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-021",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "64b870116ddd706cefb0a9d73d180027424d754ba29367e52cb9b6d63bbe4c38",
+      "kernel_seconds": 0.14936287503223866,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    },
+    {
+      "id": "kernel-022",
+      "kind": "rbf",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "2285b22ac39c069f6bedfba90685ac07d143d2869caf52a6b1458fc08fcbf088",
+      "kernel_seconds": 0.0003628340782597661,
+      "hardware_jobs_submitted": 0,
+      "execution": "classical"
+    },
+    {
+      "id": "kernel-023",
+      "kind": "quantum",
+      "validation_rows": 6,
+      "train_rows": 31,
+      "matrix_sha256": "663f03f05575afbb98b87a9c1679556ef4e6fa405291cdedb47c82569e94f0d3",
+      "kernel_seconds": 0.15125454193912446,
+      "hardware_jobs_submitted": 0,
+      "pair_circuits": 186,
+      "execution": "local analytic"
+    }
+  ],
+  "wall_seconds": 9.62876862497069,
+  "predictor_fits": 0,
+  "reused_test_years": true,
+  "hardware_jobs_submitted": 0,
+  "limitations": [
+    "Six reused evaluation years overlap a previously inspected incident study; not a pristine holdout",
+    "31 training observations and historical station/reporting changes",
+    "Retrospective sources and missing availability prevent operational forecast claims",
+    "Exact local simulation; no device advantage",
+    "No confidence/significance claim from three seeds or six years"
+  ]
+}

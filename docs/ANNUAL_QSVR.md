@@ -115,8 +115,8 @@ Actual qiskit-addon-sqd projection/diagonalization returned the minimum sampled 
 | Climate condition | Ridge MAE | RBF MAE | QSVR MAE |
 |---|---:|---:|---:|
 | Same-year measured-month control | 89.78 | 85.19 | 90.39 |
-| Same-year zero missing-day counts | 79.56 | 76.52 | 79.62 |
-| Prior-year climate | 88.18 | 89.76 | 82.51 |
+| Same-year zero missing-day counts | 79.56 | 76.51 | 79.62 |
+| Prior-year climate | 88.19 | 89.76 | 82.51 |
 | Same-year training-only station roster | 84.62 | 85.56 | 83.48 |
 
 Errors are mean outer-fold hectares per fire. A zero missing-day count is required for the sensitivity, including exclusion of unknown counts. It improves all three fixed models here, but is not a comprehensive source quality certificate. Training-only roster sizes are 98, 67 and 55 stations; eligible-year coverage changes even within these rosters. All condition tables have every predictor in every training year. Previous-year inputs change the information horizon; historical source products still do not establish real-time availability.
@@ -162,4 +162,4 @@ Across twelve outer matrices per width, mean validation/training fidelity is **0
 
 ![Kernel similarities](figures/annual-development/annual-kernel-similarity.png)
 
-Figures use saved development evidence only. SVG counterparts are available alongside each PNG. Final reused-test comparison and its report remain pending.
+Figures use saved development evidence only. SVG counterparts are available alongside each PNG. The frozen reused-year comparison is complete; see [final notes](ANNUAL_FINAL.md) for results, all selected Gram diagnostics and the literature-guide adoption table. Final repository/document checks and handoff remain in progress.

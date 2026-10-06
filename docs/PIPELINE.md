@@ -2,7 +2,9 @@
 
 The earlier scope assessment below describes the 1 PM run. The owner authorized a new annual study through 5 PM; [current annual implementation and measured progress](ANNUAL_QSVR.md) supersede its unrun status as milestones finish.
 
-**Annual front door:** `pipeline.py annual <classical|quantum|matched|selectors|context> --output <new-directory>` previews the implemented macro stages; add `--execute` to run. The commands further below describe the preserved incident branch. [Scope correction](SCOPE_CORRECTION.md) · [planned annual schema](DATA_SCHEMA.md).
+**Annual front door:** `pipeline.py annual <classical|quantum|matched|selectors|context|woodland|collect> --output <new-directory>` previews the implemented macro stages; add `--execute` to run. The commands further below describe the preserved incident branch. [Scope correction](SCOPE_CORRECTION.md) · [implemented annual schema](DATA_SCHEMA.md).
+
+For a fresh clone, `uv run python scripts/pipeline.py annual collect --output .cache/wildfire/annual-public --execute` verifies/extracts the checksum-pinned public bundle and collects 83 saved predictions without raw downloads, fitting or quantum execution. It refuses an existing output directory. [Final collection](ANNUAL_FINAL.md#portable-collection).
 
 Use `scripts/pipeline.py` as the front door. Specialist scripts remain available for individual studies and pinned historical reproduction.
 
