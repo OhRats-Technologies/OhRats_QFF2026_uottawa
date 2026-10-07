@@ -1,6 +1,6 @@
 # Five-minute narration
 
-Use this as the spoken outline. The browser's **N** notes contain methods and source links for questions. Keep the two appendices outside the main talk. Timings include the short visual demonstrations below, not just reading time.
+Use this as the spoken outline. In the browser presentation, Field Guide Beatrice ("Betty" the firefighter beaver from the Fireline game) presents concise on-screen briefings accompanying each slide (toggle with **B**). The browser's **N** notes contain methods and source links for questions. Keep the two appendices outside the main talk. Timings include the short visual demonstrations below, not just reading time.
 
 ## 1. Annual wildfire question · 30 seconds
 

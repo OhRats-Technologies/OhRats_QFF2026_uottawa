@@ -10,7 +10,7 @@
 
 An optional `--port=8791` selects another local port; `--port=0` chooses an available one. The server stays bound to localhost.
 
-Use arrows or Space to navigate, **N** for speaker notes, **O** for the index, **F** for fullscreen. Home/End select the first/last main slide; appendices follow the main slides. The bandwidth view switches among five measured settings; it does not simulate or select a better model. The opening uses actual 2021 Ontario cover pixels and raw recorded fire locations. The dataset view switches between Algonquin-area pixels, recorded locations and an actual annual row with four climate measurements. Angle controls smoothly rotate illustrative phase states while the heatmap switches among saved measured matrices. These diagrams are explanatory; dots are not predicted hotspots, and the circles are not full entangled states. The browser honors reduced motion and adapts to portrait screens. Print saves all slides, not just the current slide.
+Use arrows or Space to navigate, **B** to toggle Field Guide Betty, **N** for speaker notes, **O** for the index, **F** for fullscreen. Home/End select the first/last main slide; appendices follow the main slides. The slideshow shares the Fireline quantum engineering workbench aesthetic, with Beatrice ("Betty" the code-drawn firefighter beaver) presenting live commentary across all slides. The bandwidth view switches among five measured settings; it does not simulate or select a better model. The opening uses actual 2021 Ontario cover pixels and raw recorded fire locations. The dataset view switches between Algonquin-area pixels, recorded locations and an actual annual row with four climate measurements. Angle controls smoothly rotate illustrative phase states while the heatmap switches among saved measured matrices. These diagrams are explanatory; dots are not predicted hotspots, and the circles are not full entangled states. The browser honors reduced motion and adapts to portrait screens. Print saves all slides, not just the current slide.
 
 | Main slide | Planned seconds |
 |---|---:|
@@ -26,7 +26,7 @@ Total **300 seconds**. Appendix: a visual circuit explanation and compute receip
 
 [Five-minute spoken outline](talk.md) follows these seven timings, with two short visual interactions. Use the richer speaker notes for questions rather than reading them during the talk. Rehearsal determines the actual delivery time.
 
-The optional [canvas Fireline game](../demo/README.md) runs on the same server at **http://127.0.0.1:8790/web/demo/**. It is demonstration material, not an extra main slide or new experiment.
+The interactive [canvas Fireline game](../demo/README.md) runs on the same server at **http://127.0.0.1:8790/web/demo/**. The presentation shares its CRT engineering palette, live pixel-art guide Beatrice, and component styling.
 
 ## Evidence and authoring
 

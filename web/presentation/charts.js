@@ -1,4 +1,4 @@
-export const colors = { actual:'#c46242', mean:'#7c8988', q:'#18747c', rbf:'#a4b6b0' };
+export const colors = { actual:'#ce6733', mean:'#53706e', q:'#38b2ac', rbf:'#aed6b6' };
 const fmt = value => value.toFixed(2);
 const svg = (width,height,body,label) => `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="${label}">${body}</svg>`;
 const text = (x,y,label,cls='',anchor='start') => `<text x="${x}" y="${y}" class="${cls}" text-anchor="${anchor}">${label}</text>`;
@@ -71,8 +71,9 @@ export function developmentBars(evidence) {
 export function heatmap(row) {
   let body='';const cell=10;
   row.matrix.forEach((line,y)=>line.forEach((v,x)=>{
-    const color=[244-220*v,246-135*v,240-115*v].map(Math.round);
-    body+=`<rect x="${x*cell}" y="${y*cell}" width="10.02" height="10.02" fill="rgb(${color.join(',')})"/>`;
+    const hue = 26;
+    const lightness = (7 + v * 57).toFixed(1);
+    body+=`<rect x="${x*cell}" y="${y*cell}" width="10.02" height="10.02" fill="hsl(${hue}, 75%, ${lightness}%)"/>`;
   }));
   return svg(310,310,body,`Ten-qubit training fidelity matrix, amplitude pi/${row.amplitude_pi_denominator}, 31 by 31`);
 }

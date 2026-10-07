@@ -1,5 +1,6 @@
 import { makeSlides } from "./slides.js";
 import { geometryScene } from "./scenes.js";
+import { BettyPresenter } from "./presenter.js";
 const evidence = await fetch("evidence.json").then((response) => {
   if (!response.ok)
     throw new Error("Frozen evidence could not be loaded");
@@ -15,6 +16,8 @@ const sections = [...deck.children], panel = document.querySelector("#panel");
 const content = document.querySelector("#panel-content");
 const reduced = matchMedia("(prefers-reduced-motion: reduce)");
 let index = 0, idle, angleScale = 4;
+const bettyDock = document.querySelector("#betty-dock");
+const betty = new BettyPresenter(bettyDock, notes);
 
 function fit() {
   document.documentElement.style.setProperty("--scale", Math.min(innerWidth / 1280, innerHeight / 720));
@@ -42,13 +45,14 @@ function show(next, update = true) {
   document.querySelector("#next").disabled = index === slides.length - 1;
   document.querySelector(".progress i").style.width = `${Math.min(index + 1, 7) / 7 * 100}%`;
   document.querySelector("#announcement").textContent = slides[index].title;
+  betty.update(slides[index], index);
   if (update)
     history.replaceState(null, "", `#${slides[index].id}`);
   wake();
 }
 
 function notes() {
-  content.innerHTML = `<h2>${slides[index].title}</h2><p>${slides[index].notes}</p><p class="caption" style="margin-top:22px">${slides[index].seconds ? `Planned ${slides[index].seconds} seconds` : "Question appendix"} · Arrow keys / Space: next · N: notes · O: index · F: fullscreen</p>`;
+  content.innerHTML = `<div class="notes-header"><span class="betty-tag">🦫 BETTY · FIELD GUIDE NOTES</span><h2>${slides[index].title}</h2></div><div class="notes-body"><p>${slides[index].notes}</p></div><p class="caption" style="margin-top:22px">${slides[index].seconds ? `Planned ${slides[index].seconds} seconds` : "Question appendix"} · Arrow keys / Space: next · B: guide · N: notes · O: index · F: fullscreen</p>`;
   panel.showModal();
 }
 
@@ -60,6 +64,7 @@ document.querySelector("#next").onclick = () => show(index + 1);
 document.querySelector("#previous").onclick = () => show(index - 1);
 document.querySelector("#notes").onclick = notes;
 document.querySelector("#overview").onclick = overview;
+document.querySelector("#betty-toggle").onclick = () => betty.toggle();
 document.querySelector("#fullscreen").onclick = () => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
 document.querySelector(".close").onclick = () => panel.close();
 
@@ -125,6 +130,8 @@ addEventListener("keydown", (event) => {
     show(0);
   if (event.key === "End")
     show(6);
+  if (event.key.toLowerCase() === "b")
+    betty.toggle();
   if (event.key.toLowerCase() === "n")
     notes();
   if (event.key.toLowerCase() === "o")

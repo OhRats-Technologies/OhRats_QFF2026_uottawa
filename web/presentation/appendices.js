@@ -21,11 +21,11 @@ export function resourcesAppendix(e) {
 }
 
 function shotSweep(s) {
-  const styles=[['raw','Raw','#c46242'],['dd_twirl','DD + twirling','#18747c']];
+  const styles=[['raw','Raw','#ce6733'],['dd_twirl','DD + twirling','#38b2ac']];
   const groups=['marrakesh','quebec'].map(device=>{
     const left=48,top=68,width=342,height=248;
     const x=i=>left+width*i/2,y=f=>top+height*(1-f/.2);
-    const grid=[0,.05,.1,.15,.2].map(f=>`<path d="M${left} ${y(f)}h${width}" stroke="#d8dfda"/><text x="${left-9}" y="${y(f)+5}" text-anchor="end" font-size="14">${(f*100).toFixed(0)}</text>`).join('');
+    const grid=[0,.05,.1,.15,.2].map(f=>`<path d="M${left} ${y(f)}h${width}" stroke="#1f4444"/><text x="${left-9}" y="${y(f)+5}" text-anchor="end" font-size="14">${(f*100).toFixed(0)}</text>`).join('');
     const curves=styles.map(([arm,label,color])=>{
       const rows=s.rows.filter(r=>r.device===device&&r.arm===arm).sort((a,b)=>a.shots-b.shots);
       const points=rows.map((r,i)=>`${x(i)},${y(r.fraction)}`).join(' ');
@@ -33,7 +33,7 @@ function shotSweep(s) {
       return `<polyline points="${points}" fill="none" stroke="${color}" stroke-width="3"/>${bars}`;
     }).join('');
     const counts=s.rows.filter(r=>r.device===device&&r.arm==='raw').sort((a,b)=>a.shots-b.shots).map(r=>r.valid).join(' → ');
-    return `<svg class="shot-chart" viewBox="0 0 430 435" role="img" aria-label="${device}: measured usable four-feature yield at512,1024 and2048 shots, not prediction accuracy."><text x="48" y="57" font-size="14">Valid selections · %</text><g><text x="${left}" y="31" class="label" font-size="24">${device==='marrakesh'?'Marrakesh':'Quebec'}</text>${grid}${curves}${[512,1024,2048].map((n,i)=>`<text x="${x(i)}" y="${top+height+27}" text-anchor="middle" font-size="16">${n.toLocaleString('en-US')}</text>`).join('')}<text x="${left}" y="${top+height+57}" font-size="15">Raw valid counts: ${counts}</text></g><path d="M48 410h24" stroke="#c46242" stroke-width="3"/><text x="80" y="416" font-size="16">Raw</text><path d="M170 410h24" stroke="#18747c" stroke-width="3"/><text x="202" y="416" font-size="16">DD + twirling</text><text x="210" y="390" font-size="14" text-anchor="middle">Shots per circuit</text></svg>`;
+    return `<svg class="shot-chart" viewBox="0 0 430 435" role="img" aria-label="${device}: measured usable four-feature yield at512,1024 and2048 shots, not prediction accuracy."><text x="48" y="57" font-size="14" fill="#aed6b6">Valid selections · %</text><g><text x="${left}" y="31" class="label" font-size="24">${device==='marrakesh'?'Marrakesh':'Quebec'}</text>${grid}${curves}${[512,1024,2048].map((n,i)=>`<text x="${x(i)}" y="${top+height+27}" text-anchor="middle" font-size="16">${n.toLocaleString('en-US')}</text>`).join('')}<text x="${left}" y="${top+height+57}" font-size="15" fill="#749b92">Raw valid counts: ${counts}</text></g><path d="M48 410h24" stroke="#ce6733" stroke-width="3"/><text x="80" y="416" font-size="16" fill="#ce6733">Raw</text><path d="M170 410h24" stroke="#38b2ac" stroke-width="3"/><text x="202" y="416" font-size="16" fill="#38b2ac">DD + twirling</text><text x="210" y="390" font-size="14" text-anchor="middle" fill="#749b92">Shots per circuit</text></svg>`;
   }).join('');
   return `<div class="shot-comparison">${groups}</div>`;
 }

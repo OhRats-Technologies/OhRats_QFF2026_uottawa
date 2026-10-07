@@ -10,13 +10,27 @@
 </head>
 <body>
   <main id="deck" aria-label="Ontario wildfire presentation"></main>
+  <aside id="betty-dock" class="betty-dock" aria-label="Betty field guide commentary">
+    <div class="betty-avatar-wrap" title="Betty the firefighter beaver · Field Guide">
+      <canvas id="betty-canvas" width="64" height="64" aria-label="Betty pixel portrait"></canvas>
+    </div>
+    <div class="betty-bubble" role="region" aria-live="polite">
+      <div class="betty-bubble-header">
+        <span class="betty-name">BETTY</span>
+        <span class="betty-role">FIELD GUIDE</span>
+        <button id="betty-close" title="Toggle briefing (B)" aria-label="Toggle briefing">_</button>
+      </div>
+      <p class="betty-text"></p>
+    </div>
+  </aside>
   <nav class="controls" aria-label="Presentation controls">
     <button id="previous" aria-label="Previous slide">←</button>
     <span id="position" aria-live="polite"></span>
     <button id="next" aria-label="Next slide">→</button>
+    <button id="betty-toggle" title="Field guide briefing (B)" aria-label="Field guide briefing">🦫 Guide</button>
     <button id="notes" title="Presenter notes (N)" aria-label="Presenter notes">N</button>
     <button id="overview" title="Slide index (O)" aria-label="Slide index">☰</button>
-    <a href="../demo/" target="_blank" rel="noopener" title="Ontario strategy game and QSVR evidence walkthrough">Demo ↗</a>
+    <a href="../demo/" target="_blank" rel="noopener" title="Play Fireline: interactive quantum engineering workbench">Fireline Game ↗</a>
     <button id="fullscreen" title="Fullscreen (F)" aria-label="Fullscreen">⛶</button>
   </nav>
   <div class="progress" aria-hidden="true"><i></i></div>
