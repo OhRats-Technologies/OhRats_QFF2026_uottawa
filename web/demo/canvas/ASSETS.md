@@ -10,4 +10,4 @@ Frames, metal grain, bevels, screws, vents, pipes, phosphor scans, bitmap title 
 
 **Beatrice** is an original code-drawn pixel-art firefighter beaver (`beatrice.js`): copper helmet, reflective jacket, broad crosshatched tail, teeth and clipboard, with occasional blinking. She is a fictional Fireline character; no agency logo or affiliation is claimed. Her lessons and controls render on the same canvas as the game.
 
-The guide now uses the short name **Betty**, with small speech bubbles attached to highlighted workbench controls. The original Beatrice sprite is retained.
+The guide now uses the short name **Betty**, with small speech bubbles attached to highlighted workbench controls. The original Beatrice sprite is retained, now with code-driven idle motion, a hop on Next and a drip torch on fire-related steps.

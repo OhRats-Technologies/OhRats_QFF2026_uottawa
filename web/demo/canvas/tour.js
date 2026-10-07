@@ -2,7 +2,7 @@ import { color } from "./paint.js";
 import { drawWorkbench } from "./workbench.js";
 import { foundry } from "./overlays.js";
 import { sampleCandidates } from "./foundry.js";
-import { beatrice } from "./beatrice.js";
+import { beatrice, bettyCue } from "./beatrice.js";
 export const tour = [
   {
     name: "ONTARIO",
@@ -174,7 +174,14 @@ export function spotlight(p, s, on, W, H, time, zones) {
     "#83aaa0",
     1,
   );
-  beatrice(p, bx + 10, by + 8, 46, time);
+  beatrice(
+    p,
+    bx + 10,
+    by + 8,
+    46,
+    time,
+    bettyCue("tour", step, time, lesson.text),
+  );
   p.text(
     `BETTY · ${step + 1}/${tour.length}`,
     bx + 67,

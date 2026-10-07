@@ -47,7 +47,7 @@ export function mapPanel(p, box, assets, time, hover) {
 export function matrixPanel(p, box, result, time, hover) {
   const { x, y, w, h } = box;
   p.frame(x, y, w, h, "KERNEL ENGINE");
-  const side = Math.min(w - 58, h - 100),
+  const side = Math.min(w - 58, h - (result ? 125 : 100)),
     sx = x + (w - side) / 2,
     sy = y + 55;
   p.screen(sx - 7, sy - 7, side + 14, side + 14);
@@ -87,17 +87,41 @@ export function matrixPanel(p, box, result, time, hover) {
         color.amber,
         "center",
       );
-    } else
+    } else {
       p.text(
-        `SIMILARITY  ${result.similarity.toFixed(3)}     0 ── 1`,
-        x + w / 2,
+        `AVG ${result.similarity.toFixed(3)}`,
+        sx,
         y + h - 34,
-        12,
+        11,
         color.dim,
-        "center",
       );
+      p.rect(sx + side - 9, y + h - 35, 9, 3, color.mint);
+      p.text(
+        side < 170 ? "SUPPORT" : "SUPPORT YEAR",
+        sx + side - 14,
+        y + h - 34,
+        11,
+        color.dim,
+        "right",
+      );
+    }
     for (const i of result.support)
       p.rect(sx + i * u, sy - 12, u - 0.7, 3, color.mint);
+    // Colour key: the same ramp as the cells, from unlike to identical years.
+    const ly = sy + side + 22,
+      wide = side >= 170,
+      bx = sx + (wide ? 80 : 14),
+      bw = side - (wide ? 80 + 50 : 28);
+    p.text(wide ? "0 DIFFERENT" : "0", sx, ly, 10, color.dim);
+    p.text(wide ? "SAME 1" : "1", sx + side, ly, 10, color.dim, "right");
+    for (let k = 0; k < 24; k++)
+      p.rect(
+        bx + (k * bw) / 24,
+        ly - 4,
+        bw / 24 + 0.5,
+        8,
+        `hsl(26 75% ${7 + (k / 23) * 57}%)`,
+      );
   } else {
     for (let i = 0; i < 16; i++)
       for (let j = 0; j < 16; j++)

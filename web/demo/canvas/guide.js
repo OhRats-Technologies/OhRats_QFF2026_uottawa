@@ -1,5 +1,5 @@
 import { color } from "./paint.js";
-import { beatrice } from "./beatrice.js";
+import { beatrice, bettyCue } from "./beatrice.js";
 import { lessons } from "./guide-lessons.js";
 import { lessonVisual } from "./guide-visuals.js";
 export { lessons } from "./guide-lessons.js";
@@ -71,7 +71,14 @@ export function drawGuide(p, s, on, W, H, time, assets) {
     left = x + 25,
     textW = mobile ? w - 50 : w * 0.45 - 35,
     portrait = short ? 32 : 72;
-  beatrice(p, left, top, portrait, time);
+  beatrice(
+    p,
+    left,
+    top,
+    portrait,
+    time,
+    bettyCue("guide", step, time, `${lesson.title} ${lesson.text}`),
+  );
   p.text(
     "BETTY",
     left + portrait + 15,
