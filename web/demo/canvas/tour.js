@@ -143,7 +143,8 @@ export function spotlight(p, s, on, W, H, time, zones) {
     by + 8,
     46,
     time,
-    bettyCue("tour", step, time, text),
+    // One cue index per bubble: every advance hops; only the first greets.
+    bettyCue("tour", step * 10 + (s.guidePage || 0), time, text),
   );
   p.c.save();
   p.c.globalAlpha = shown.fade;

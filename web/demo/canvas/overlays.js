@@ -118,7 +118,15 @@ export function foundry(p, s, data, on, W, H) {
     ),
   );
   const compact = h < 500,
-    note = foundryNote(p, s.sample?.method, x + 24, y + 100, w - 48, compact);
+    note = foundryNote(
+      p,
+      s.sample?.method,
+      x + 24,
+      y + 100,
+      w - 48,
+      compact,
+      Object.keys(data.rounds[s.round].objective).length,
+    );
   if (!s.sample) {
     p.text(
       "CHOOSE A CARTRIDGE",

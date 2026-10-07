@@ -19,8 +19,10 @@ export function sectorState(objective, qubits = 20, method = "qaoa") {
         s = Math.sin(0.35);
       for (let i = 0; i < n; i++)
         if ((masks[i] >> bit) & 1 && !((masks[i] >> next) & 1)) {
-          const j = index.get(masks[i] ^ (1 << bit) ^ (1 << next)),
-            a = re[i],
+          const j = index.get(masks[i] ^ (1 << bit) ^ (1 << next));
+          // Seasons with unavailable signals keep the mixer on available subsets.
+          if (j === undefined) continue;
+          const a = re[i],
             b = im[i],
             d = re[j],
             e = im[j];

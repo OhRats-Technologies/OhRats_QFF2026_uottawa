@@ -25,7 +25,8 @@ export function rack(p, b, s, data, on) {
     perPage = slots * 2,
     pages = Math.ceil(20 / perPage),
     page = paged ? (s.rackPage || 0) % pages : 0;
-  const top = y + 92,
+  const open = data.rounds[s.round]?.available,
+    top = y + 92,
     row = Math.min(37, (h - 135) / slots),
     col = (w - 58) / 2;
   data.features
@@ -43,7 +44,7 @@ export function rack(p, b, s, data, on) {
         col,
         row - 5,
         () => on("feature", i),
-        { active, disabled: false },
+        { active, disabled: !!open && !open.includes(i) },
       );
       p.circle(bx + 7, by + (row - 5) / 2, 2, active ? color.amber : "#627e6b");
     });

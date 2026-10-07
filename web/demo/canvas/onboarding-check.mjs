@@ -53,7 +53,11 @@ for (const [width, height] of [
       );
     else
       await page.mouse.click((h.x + h.w / 2) * scale, (h.y + h.h / 2) * scale);
-    await page.waitForTimeout(40);
+    // Wait for two painted frames so controls reflect the new state.
+    await page.evaluate(
+      () =>
+        new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))),
+    );
   };
   await click("continue");
   assert.equal(

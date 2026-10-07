@@ -232,11 +232,29 @@ export function results(p, box, s, on) {
   const growth = s.runAt
     ? Math.min(1, Math.max(0, (performance.now() - s.runAt) / 650))
     : 1;
-  const step = cw / 4;
+  const step = cw / r.years.length;
   r.actual.forEach((v, i) => {
     const px = left + step * (i + 0.5),
       bw = Math.min(22, step * 0.18),
-      base = top + ch;
+      base = top + ch,
+      picked = i === s.selectedYear;
+    // The selected year gets a column wash and value labels.
+    if (picked)
+      p.rect(px - step / 2 + 4, top - 18, step - 8, ch + 18, "#aed6b60d");
+    if (picked && growth === 1)
+      [
+        [v, px - bw / 2 - 3, color.amber],
+        [r.predicted[i], px + bw / 2 + 3, color.mint],
+      ].forEach(([n, lx, tone]) =>
+        p.text(
+          n.toFixed(0),
+          lx,
+          Math.max(top - 8, base - (ch * n) / max - 9),
+          10,
+          tone,
+          "center",
+        ),
+      );
     p.rect(
       px - bw - 3,
       base - ((ch * v) / max) * growth,

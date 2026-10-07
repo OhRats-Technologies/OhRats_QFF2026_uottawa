@@ -102,6 +102,11 @@ async function action(type, value) {
     s.foundry = !s.foundry;
     s.candidate = 0;
   }
+  const open = data.rounds[s.round]?.available;
+  if (type === "feature" && open && !open.includes(value)) {
+    toast("Forest signals end in 2018. Use weather or fire memory.");
+    return;
+  }
   if (type === "feature") {
     if (!s.features.includes(value) && s.features.length === s.width) {
       const old = s.features.shift();
@@ -148,12 +153,25 @@ async function action(type, value) {
   }
   if (type === "next") {
     if (!assessment(s).won || !currentResult(s)) return;
-    if (s.round < 2) {
+    if (s.round < data.rounds.length - 1) {
       s.round++;
       s.result = null;
       s.previous = null;
       s.sample = null;
-      toast("Next season. Build your starting engine.");
+      const open = data.rounds[s.round].available;
+      if (open) {
+        // Keep only signals this season provides, then refill the build.
+        s.width = Math.min(s.width, open.length);
+        s.features = s.features.filter((j) => open.includes(j));
+        for (const j of open)
+          if (s.features.length < s.width && !s.features.includes(j))
+            s.features.push(j);
+      }
+      toast(
+        open
+          ? "Season 4: 2019–2024. Weather and fire-memory signals only."
+          : "Next season. Build your starting engine.",
+      );
     } else {
       s.finished = true;
       s.menu = true;
@@ -228,6 +246,7 @@ async function action(type, value) {
   }
 }
 action.audio = audio;
+action.rounds = data.rounds.length;
 function draw(timestamp) {
   const dpr = Math.min(2, devicePixelRatio);
   ctx.setTransform(dpr * scale, 0, 0, dpr * scale, 0, 0);

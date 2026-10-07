@@ -3,6 +3,7 @@ import { color } from "./paint.js";
 import { evaluation } from "./evaluation.js";
 import { currentResult } from "./auto-test.js";
 import { assessment } from "./session.js";
+import { scoreHorizontal } from "./runlog.js";
 import { mapPanel, matrixPanel, results } from "./instruments.js";
 import { rack, controls, controlsCompact } from "./rack.js";
 export function drawWorkbench(
@@ -34,14 +35,21 @@ export function drawWorkbench(
     { active: on.audio.enabled },
   );
   p.button("help", "?", W - 48, 13, 34, 30, () => on("help"));
-  if (!mobile) p.text(`SEASON ${s.round + 1} / 3`, 240, 30, 12, color.dim);
+  if (!mobile)
+    p.text(
+      `SEASON ${s.round + 1} / ${on.rounds || 3}${s.round === 3 ? " · 2019–24" : ""}`,
+      240,
+      30,
+      12,
+      color.dim,
+    );
   const bottom = H - 65;
   p.frame(12, bottom, W - 24, 53);
   const ready = !s.evaluating && !s.running && currentResult(s) && assessment(s).won;
   zones.execution = { x: W - 220, y: bottom + 8, w: 196, h: 37 };
   if (s.evaluating) evaluation(p, W - 200, bottom + 10, 170, time);
   else if (ready) p.button(
-    "next", s.round === 2 ? "FINISH ▶" : "NEXT SEASON ▶",
+    "next", s.round === (on.rounds || 3) - 1 ? "FINISH ▶" : "NEXT SEASON ▶",
     W - 220, bottom + 10, 196, 33, () => on("next"), { tone: "hot" });
   else if (currentResult(s)) p.text(
     `${s.result.mae.toFixed(1)} ha/fire MAE`, W - 34, bottom + 27,
@@ -162,65 +170,19 @@ export function drawWorkbench(
       time,
     );
   if (s.toast) {
-    p.rect(W * 0.2, header + 4, W * 0.6, 30, "#061f24f0");
+    // Desktop messages sit in the free top-bar gap, never over panel titles.
+    const tx = mobile ? W * 0.2 : 430,
+      tw = mobile ? W * 0.6 : Math.min(460, W * 0.69 - 445),
+      ty = mobile ? header + 4 : 13;
+    p.rect(tx, ty, tw, 30, "#061f24f0");
     p.text(
       s.toast,
-      W / 2,
-      header + 19,
-      Math.min(12, (W * 0.6) / (s.toast.length * 0.62)),
+      tx + tw / 2,
+      ty + 15,
+      Math.min(12, tw / (s.toast.length * 0.62)),
       color.amber,
       "center",
     );
   }
   return zones;
-}
-function scoreHorizontal(p, b, s, on) {
-  const { x, y, w, h } = b;
-  p.frame(x, y, w, h, "RUN LOG");
-  const a = assessment(s),
-    r = s.result;
-  if (h < 210) {
-    p.text(r ? r.mae.toFixed(1) : "—", x + 26, y + 65, 28, color.amber);
-    p.text("ha/fire MAE", x + 26, y + 90, 11, color.dim);
-    if (r) {
-      p.text(`RBF ${r.rbfMAE.toFixed(1)}`, x + w * 0.55, y + 60, 11);
-      p.text(
-        `MEAN ${r.meanMAE.toFixed(1)}`,
-        x + w * 0.55,
-        y + 82,
-        11,
-        color.dim,
-      );
-      p.text(`${r.effort} QUBIT·PAIRS`, x + 26, y + 113, 10, color.dim);
-    }
-    p.text(
-      a.won ? "CONTRACT COMPLETE" : "−5% error / −25% effort",
-      x + 26,
-      y + h - 24,
-      10,
-      a.won ? color.amber : color.dim,
-    );
-    return;
-  }
-  p.text(r ? r.mae.toFixed(1) : "—", x + 26, y + 81, 38, color.amber);
-  p.text("ha/fire MAE", x + 26, y + 113, 12, color.dim);
-  if (r) {
-    p.text(`RBF ${r.rbfMAE.toFixed(1)}`, x + w * 0.55, y + 62, 12);
-    p.text(`MEAN ${r.meanMAE.toFixed(1)}`, x + w * 0.55, y + 89, 12, color.dim);
-    p.text(
-      `${r.effort} QUBIT·PAIRS`,
-      h < 210 ? x + w * 0.55 : x + 26,
-      y + (h < 210 ? 120 : 148),
-      11,
-      color.dim,
-    );
-  }
-  p.text(
-    a.won ? "CONTRACT COMPLETE" : "−5% error OR −25% effort",
-    x + 26,
-    y + h - 39,
-    12,
-    a.won ? color.amber : color.dim,
-  );
-
 }

@@ -42,7 +42,7 @@ export function load() {
       !angles.includes(s.angle) ||
       ![0.3, 1, 3, 10].includes(s.C) ||
       ![0.05, 0.2, 0.5].includes(s.epsilon) ||
-      ![0, 1, 2].includes(s.round)
+      ![0, 1, 2, 3].includes(s.round)
     )
       return fresh();
     return {

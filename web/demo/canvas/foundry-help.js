@@ -11,7 +11,7 @@ const notes = {
   ],
   exact: [
     "EXACT",
-    "Search all 4,845 combinations and pick the lowest-cost subset.",
+    "Search all {n} combinations and pick the lowest-cost subset.",
   ],
   qaoa: [
     "QAOA + SQD",
@@ -37,8 +37,9 @@ function wrap(c, line, width, size) {
   return out;
 }
 // Draws the note for `method` and returns the height it used.
-export function foundryNote(p, method, x, y, w, compact) {
-  const [label, text] = notes[method] || notes.none,
+export function foundryNote(p, method, x, y, w, compact, count = 4845) {
+  const [label, raw] = notes[method] || notes.none,
+    text = raw.replace("{n}", count.toLocaleString("en-US")),
     size = compact ? 11 : 12,
     lead = size * 1.35,
     body = wrap(p.c, `${label} — ${text}`, w - 24, size),

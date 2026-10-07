@@ -15,7 +15,13 @@ export function bettyCue(view, step, time, text) {
     last.step = step;
   }
   seen.set(view, last);
-  return { jumpAt: last.jumpAt, fire: fiery.test(text), fireAt: last.fireAt };
+  // The opening step greets: a wave first, then the torch.
+  return {
+    jumpAt: last.jumpAt,
+    fire: fiery.test(text),
+    fireAt: last.fireAt,
+    greet: step === 0,
+  };
 }
 
 export function beatrice(p, x, y, size, time = 0, cue = {}) {
@@ -38,8 +44,10 @@ export function beatrice(p, x, y, size, time = 0, cue = {}) {
     thump = within(t, 9, 4, 0.5) ? (Math.floor(t * 8) % 2 ? -2 : 0) : 0,
     blink = within(t, 4.3, 0, 0.14) || within(t, 12.9, 8.88, 0.12),
     twitch = within(t, 5.7, 2.1, 0.22) ? -1 : 0,
-    torch = !!cue.fire,
-    waving = torch || within(t, 7.5, 1, 1.5),
+    lead = cue.greet ? 1.6 : 0,
+    greeting = !!(cue.greet && t && t - cue.fireAt < lead),
+    torch = !!cue.fire && !greeting,
+    waving = greeting || torch || within(t, 7.5, 1, 1.5),
     wave = !torch && waving && Math.floor(t * 6) % 2 ? 1 : 0,
     glint = within(t, 6.2, 3, 0.7) ? ((t % 6.2) - 3) / 0.7 : -1,
     tap = within(t, 3.4, 1.8, 0.6) && Math.floor(t * 10) % 2 ? 1 : 0;
@@ -108,7 +116,9 @@ export function beatrice(p, x, y, size, time = 0, cue = {}) {
   c.translate(0, -breath);
   if (torch) {
     // Drip-torch wand held up; the flame grows in, then flickers.
-    const grow = t ? Math.min(1, Math.max(0, (t - cue.fireAt) / 0.4)) : 1,
+    const grow = t
+        ? Math.min(1, Math.max(0, (t - cue.fireAt - lead) / 0.4))
+        : 1,
       f = t ? Math.floor(t * 9) % 3 : 0,
       fh = Math.round(11 * grow),
       top = 6 - fh;

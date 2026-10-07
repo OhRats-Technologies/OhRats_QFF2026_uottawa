@@ -4,6 +4,8 @@ import hashlib
 import json
 from pathlib import Path
 
+from canvas_final_season import final_season
+
 ROOT = Path(__file__).resolve().parents[1]
 source = ROOT / 'docs/data/forest_selector_scaling_training.csv'
 saved = json.loads((ROOT / 'web/demo/console/evidence.json').read_text())
@@ -20,9 +22,16 @@ output = {
                                     if f['id'] == name) for name in m['features']]
                               for m in r['models'] if m['id'] in ['mi', 'exact', 'optimized1', 'uniform']}}
                for r in saved['rounds']],
-    'source': str(source.relative_to(ROOT)),
+    'source': source.relative_to(ROOT).as_posix(),
     'sha256': hashlib.sha256(source.read_bytes()).hexdigest(),
-    'scope': 'Browser teaching sandbox; inspected 1988–2018 development data. No research promotion or QPU calls.'
+    'scope': 'Browser teaching sandbox; seasons 1-3 use inspected 1988–2018 development data. '
+             'Season 4 replays the reused 2019–2024 years for teaching only. No research promotion or QPU calls.'
 }
-(ROOT / 'web/demo/canvas/data.json').write_text(json.dumps(output, separators=(',', ':')) + '\n')
-print('Exported 31 public development rows, 20 inputs and three saved objectives.')
+# Owner-requested fourth season on the reused years; see canvas_final_season.py.
+final_rows, final_round = final_season(features)
+output['rows'] += final_rows
+output['rounds'].append(final_round)
+(ROOT / 'web/demo/canvas/data.json').write_text(json.dumps(output, separators=(',', ':')) + '\n',
+                                               newline='\n')
+print('Exported 31 development + 6 reused rows, 20 inputs, three saved objectives '
+      'and one rebuilt final-season objective.')

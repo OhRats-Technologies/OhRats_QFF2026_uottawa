@@ -1,7 +1,7 @@
 export const lessons = [
   {
     tab: "MISSION",
-    title: "I'm Betty. Here's your workshop.",
+    title: "Hi, I'm Betty! Here's your workshop.",
     kind: "mission",
     text: "Ontario's fire seasons are hard to read. We'll build an engine from weather and forest signals, test it, then repair it together.",
     tip: "Three seasons. Beat your first build, not a perfect score.",
