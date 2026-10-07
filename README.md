@@ -223,7 +223,7 @@ Eight feature selectors are compared with fixed ridge, then crossed with ridge/R
 
 ## Active Hardware Extension
 
-[Restricted repetition-code overlap benchmark](docs/REPETITION_MICROKERNEL.md): four accepted IBM jobs, two blocks each on Marrakesh and Quebec, comparing physical, encoded and dynamic-corrected overlaps. Results are pending; this study is separate from the completed 39-job campaign and the frozen wildfire predictions.
+[Restricted repetition-code overlap benchmark](docs/REPETITION_MICROKERNEL.md): four accepted IBM jobs, two blocks each on Marrakesh and Quebec, comparing physical, encoded and dynamic-corrected overlaps. Marrakesh has returned 737,280 validated shots: the unencoded overlap wins the no-injection controls; Quebec remains queued. This study is separate from the completed 39-job campaign and the frozen wildfire predictions.
 
 ## Quick Reproduction Commands
 

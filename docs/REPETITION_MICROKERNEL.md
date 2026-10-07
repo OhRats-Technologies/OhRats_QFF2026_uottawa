@@ -23,8 +23,23 @@ uv run --no-sync python -m unittest tests.test_repetition_kernel -v
 uv run --no-sync --env-file .env python scripts/run_repetition_microkernel.py collect
 ```
 
-Local exact-state tests verify the single-X correction mapping, no-fault overlap and uncorrected phase-flip response. Device-native circuits have been prepared on both requested devices. Hardware results remain pending until validated returned counts exist. Private intents, identifiers and acquisition metrics stay under ignored `results/repetition-microkernel-v1`; submission is exclusive per block and ambiguous submissions are never retried.
+Local exact-state tests verify the single-X correction mapping, no-fault overlap and uncorrected phase-flip response. Device-native circuits have been prepared on both requested devices. Both Marrakesh blocks are collected and validated; both Quebec blocks remain queued at the latest check. Private intents, identifiers and acquisition metrics stay under ignored `results/repetition-microkernel-v1`; submission is exclusive per block and ambiguous submissions are never retried.
 
 The public report will include every cell/block, overlap errors and shot uncertainty, syndrome frequencies, compiled resources and charged time. Neither postselection nor new predictive fitting is part of this study; 2019–2024 data are not read.
 
 Method reference: [IBM repetition-code tutorial](https://quantum.cloud.ibm.com/docs/en/tutorials/repetition-codes). The tutorial teaches dynamic correction of bit flips; this extension tests coherent phase-overlap readout rather than only classical basis-state memory.
+
+## Measured results so far
+
+Two Marrakesh blocks return 737,280 validated shots and consume 208 charged QPU seconds. No injected fault, overlap RMSE across three phases:
+
+| Delay | Physical (blocks 0 / 1) | Encoded | Dynamically corrected |
+|---|---:|---:|---:|
+| 0 μs | 0.0105 / 0.0099 | 0.1118 / 0.1095 | 0.2321 / 0.2064 |
+| 20 μs | 0.1516 / 0.1566 | 0.3995 / 0.4023 | 0.3860 / 0.4071 |
+
+Conditional correction reduces injected-single-X overlap error relative to the uncorrected encoded arm. However, neither encoded arm beats the physical overlap on the no-fault cells, and correction does not consistently improve the delayed encoded circuit. This is evidence of mechanism recovery with substantial overhead, not a predictive improvement. Z remains uncorrected. Two adjacent blocks do not resolve calibration stability.
+
+[Every measured cell, raw overlap and syndrome counts, resources and usage](results/repetition-microkernel.json). Quebec results are explicitly absent, rather than simulated or inferred.
+
+![No-injection hardware overlap RMSE; dots show blocks](figures/repetition-microkernel.png)
