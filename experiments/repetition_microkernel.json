@@ -1,0 +1,18 @@
+{
+  "study": "repetition-microkernel-v1",
+  "authorization": "October 7 Fernando authorizes acting on the board QEC steer with unlimited-ish QPU budget; no scientific holdout change.",
+  "deltas": [0.0, 0.7853981633974483, 1.5707963267948966],
+  "idle_us": [0, 20],
+  "faults": ["none", "X0", "X1", "X2", "Z0"],
+  "arms": ["physical", "encoded", "corrected"],
+  "shots": 4096,
+  "blocks": 2,
+  "devices": [
+    {"backend": "ibm_marrakesh", "credential": "IBM_QUANTUM_API_TOKEN", "instance": "IBM_QUANTUM_INSTANCE"},
+    {"backend": "ibm_quebec", "credential": "PINQ_API_TOKEN", "instance": "PINQ_QUANTUM_INSTANCE"}
+  ],
+  "max_execution_time": 600,
+  "analysis": "Publish every cell and block, physical vs encoded vs dynamic-corrected overlap errors, syndrome frequencies, shot standard errors and charged time. Intentional X/Z faults test mechanism, not naturally occurring error rates. Physical X0/X1/X2 are duplicated matched-reference circuits. Two same-time blocks do not establish calibration-day replication. No QSVR fitting, postselection, holdout reads or advantage claim.",
+  "operation": "Restricted logical phase map, logical RZ on one data qubit, one parity-check round and conditional single-X correction before coherent decoding. Code corrects one X; does not correct Z. Compare equal logical input/idle/shot counts; report extra qubits/gates/duration rather than claiming equal gate cost.",
+  "execution": "Prepare and validate code/circuit/plan hashes before submit. Exclusive intent per device/block before API call; collect existing jobs only. Never retry an ambiguous submission. Device unavailable is recorded, not silently replaced. Each block submits all 90 circuits as one job."
+}

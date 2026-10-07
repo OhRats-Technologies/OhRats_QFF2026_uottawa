@@ -9,8 +9,8 @@ This project investigates whether quantum machine learning—specifically Quantu
 > On the frozen 2019–2024 holdout evaluation, classical RBF-SVR leads development, and **no tested climate model beats the historical training-mean baseline**. Across **39 IBM Quantum hardware executions** (1.1M shots on Heron and Eagle processors), we show that:
 > 1. Scaling shots buys candidate coverage but **does not increase feasible yield** on deep circuits (~1,000 CZs).
 > 2. Classical uniform feasible sampling **outperforms 11 of 12 measured hardware minima**.
-> 3. Readout error mitigation lowers Gram matrix RMSE but **consistently degrades downstream regression prediction**.
-> 4. Classical station-reporting coverage (MAE 83.08) and calendar trends (MAE 88.61) explain the bulk of macro wildfire variance (baseline 92.00 ha/fire).
+> 3. Readout error mitigation lowers Gram matrix RMSE but **can worsen downstream regression despite lower matrix error**.
+> 4. Classical station-reporting coverage (MAE 83.08) and calendar trends (MAE 88.61) provide competitive development controls alongside weather models (baseline 92.00 ha/fire).
 >
 > We report this as a rigorous, fully reproducible **empirical benchmark and diagnostic post-mortem on NISQ machine learning**, with zero hype and no claimed quantum advantage.
 
@@ -59,7 +59,7 @@ All 50 documentation files in this folder are organized into seven logical categ
 
 | Document | Description |
 | :--- | :--- |
-| **[`SHOT_SWEEP.md`](SHOT_SWEEP.md)** | **Two-device physical shot sweep** (512, 1024, 2048 shots on Marrakesh & Quebec; 12 jobs, 301k shots). Proves shots buy candidate coverage rather than feasible yield, while classical sampling beats 11/12 QPU minima. |
+| **[`SHOT_SWEEP.md`](SHOT_SWEEP.md)** | **Two-device physical shot sweep** (512, 1024, 2048 shots on Marrakesh & Quebec; 12 jobs, 301k shots). Shows increased candidate coverage without a consistent increase in feasible yield, while classical sampling beats 11/12 QPU minima. |
 | **[`IBM_PIPELINE_MITIGATION.md`](IBM_PIPELINE_MITIGATION.md)** | **Three-device pipeline comparison** (`ibm_fez`, `ibm_marrakesh`, `ibm_quebec`; 6 jobs, 75s QPU). Evaluates DD, twirling, and readout mitigation across QPUs. |
 | **[`SELECTOR_HARDWARE.md`](SELECTOR_HARDWARE.md)** | **Hardware selector execution** on `ibm_marrakesh` for 10/16/20 feature pools, Dicke state preparation depth, and 10-shard recovery from scheduler error 1520. |
 | **[`SELECTOR_SCALING.md`](SELECTOR_SCALING.md)** | Ideal vs noisy QAOA/SQD selection across 10, 16, and 20 candidate pools; details why better QUBO sampling does not improve regression. |
@@ -163,7 +163,7 @@ All 50 documentation files in this folder are organized into seven logical categ
 | **Calendar Trend Alone** *(Confounder Control)* | 1 | **88.61** | — |
 | **Weather + Calendar Ridge** *(Confounder Control)* | 11 | **67.97** | — |
 
-*Takeaway:* While 4-input QSVR edges out RBF on the holdout, neither beats the simple training mean baseline. Simple station coverage and calendar trends explain more development variance than complex models.
+*Takeaway:* While 4-input QSVR edges out RBF on the holdout, neither beats the simple training mean baseline. Station-coverage and calendar-only controls warrant checking whether weather gains reflect reporting or time effects; these errors do not establish causation.
 
 ![Annual holdout predictions and actual observed fire size across models](figures/annual-final/annual-reused-predictions.png)
 
@@ -180,7 +180,7 @@ All 50 documentation files in this folder are organized into seven logical categ
 | **Quebec** | DD + Twirling | 4 (0.78%) | 6 (0.59%) | 12 (0.59%) | 0.3027 |
 | **Classical Uniform** | 100 MC Trials | 512 (100.0%) | 1,024 (100.0%) | 2,048 (100.0%) | **0.0432** (mean) |
 
-*Takeaway:* Valid feasible fraction stays completely flat as shots quadruple. Classical uniform random sampling at the same physical budget consistently beats quantum optimization minima.
+*Takeaway:* Feasible fractions do not increase consistently as shots quadruple. Classical uniform feasible sampling achieves a lower minimum cost than 11 of the 12 measured QPU runs at matched draw counts.
 
 ![Measured feasible yield across shot counts on Heron and Eagle processors](figures/shot-sweep-both-yield.png)
 
@@ -188,15 +188,19 @@ All 50 documentation files in this folder are organized into seven logical categ
 
 ---
 
+## Active Hardware Extension
+
+[Restricted repetition-code overlap benchmark](REPETITION_MICROKERNEL.md): four accepted IBM jobs, two blocks each on Marrakesh and Quebec, comparing physical, encoded and dynamic-corrected overlaps. Results are pending; this study is separate from the completed 39-job campaign and the frozen wildfire predictions.
+
 ## Quick Reproduction Commands
 
-All results can be reproduced or verified offline in seconds using [uv](https://docs.astral.sh/uv/) and Python 3.12:
+Saved public evidence can be replayed and verified offline using [uv](https://docs.astral.sh/uv/) and Python 3.12:
 
 ```sh
 # 1. Replay annual scientific evaluation (no network, no credentials)
 uv run python scripts/pipeline.py annual collect --output .cache/wildfire/annual-public --execute
 
-# 2. Replay all real QPU hardware searches and shot sweeps
+# 2. Replay the listed saved QPU searches and shot sweeps (no new jobs)
 uv run python scripts/collect_hardware_search.py shot-sweep-marrakesh
 uv run python scripts/collect_hardware_search.py shot-sweep-quebec
 uv run python scripts/collect_hardware_search.py shallow-hardware-search
