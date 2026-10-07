@@ -157,16 +157,6 @@ export class Paint {
     this.rect(x, y, w, h, gradient);
     this.line(
       [
-        [x + 4, y + h - 4],
-        [x + 4, y + 4],
-        [x + w - 4, y + 4],
-      ],
-      "#ffffff12",
-    );
-    if (active || tone === "hot")
-      this.rect(x + 5, y + 5, 3, h - 10, "#ffcd7277");
-    this.line(
-      [
         [x, y + h],
         [x, y],
         [x + w, y],
@@ -186,11 +176,11 @@ export class Paint {
     if (focused)
       this.line(
         [
-          [x + 3, y + 3],
-          [x + w - 3, y + 3],
-          [x + w - 3, y + h - 3],
-          [x + 3, y + h - 3],
-          [x + 3, y + 3],
+          [x, y],
+          [x + w, y],
+          [x + w, y + h],
+          [x, y + h],
+          [x, y],
         ],
         color.amber,
       );
