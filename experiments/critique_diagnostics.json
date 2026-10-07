@@ -1,0 +1,29 @@
+{
+  "study": "critique-diagnostics-v1",
+  "prediction_studies": [
+    "expanded-tuning",
+    "expanded-tuning-distinct",
+    "expanded-proxy-controls"
+  ],
+  "input_sha256": {
+    "docs/data/expanded-tuning-evidence.zip": "6cee6733658ba15f65fd0feafde8592c40226148a344480b1b66db5d4672a9a0",
+    "docs/data/expanded-tuning-distinct-evidence.zip": "e45d2a685207b8cd77b26503a98e8fb1489d51d5e4dec3f7a8e98f6c6641f99f",
+    "docs/data/expanded-proxy-controls-evidence.zip": "7b7174e0795193931d7abc420e32a794b0f63dd8e6249e137da3f5cae4f4d4d5",
+    "docs/data/selector-multistart-evidence.zip": "1a919e3be33a741ed05720c215638bb9e5747bcd7977730bf4b9dcf4d11441a4",
+    "docs/data/tuned-kernel-hardware-evidence.zip": "4a238d95684977d750012be84e0f6c46d77bada5c7a97e91a28904437709a318",
+    "docs/data/shot-sweep-marrakesh-evidence.zip": "1e2b7434d12307b777edaed24094558309831057a86112cf15f282bb3c789dea"
+  },
+  "timing_repetitions": 31,
+  "code_paths": [
+    "wildfire_lab/critique_diagnostics.py",
+    "wildfire_lab/critique_stability.py",
+    "wildfire_lab/critique_geometry.py",
+    "wildfire_lab/saved_shot_sweep.py"
+  ],
+  "budget": {
+    "predictor_fits": 0,
+    "new_quantum_states": 0,
+    "hardware_jobs": 0
+  },
+  "interpretation_policy": "Saved development evidence only. Delete validation-score weights from cached predictions without retraining; this is neither leave-one-out CV nor an independent test. Year/fold sensitivity ranges are descriptive, not confidence intervals or significance tests. No selection/promotion of a replacement model or repair from inspected outcomes. Warm timing includes feasible-state construction, cost evaluation and argmin, excludes MI/objective/predictor fitting and imports. Classical spectral changes preserve hardware-derived geometry but change the effective kernel. Fixed final artifacts and all old intents remain untouched; no extra hardware."
+}

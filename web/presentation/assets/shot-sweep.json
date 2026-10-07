@@ -1,0 +1,145 @@
+{
+  "rows": [
+    {
+      "device": "marrakesh",
+      "arm": "raw",
+      "shots": 1024,
+      "valid": 129,
+      "fraction": 0.1259765625,
+      "wilson95": [
+        0.10704056553775043,
+        0.1477083128749972
+      ]
+    },
+    {
+      "device": "marrakesh",
+      "arm": "dd_twirl",
+      "shots": 1024,
+      "valid": 35,
+      "fraction": 0.0341796875,
+      "wilson95": [
+        0.024677514391777646,
+        0.04716377804394195
+      ]
+    },
+    {
+      "device": "marrakesh",
+      "arm": "dd_twirl",
+      "shots": 512,
+      "valid": 13,
+      "fraction": 0.025390625,
+      "wilson95": [
+        0.014897398253755443,
+        0.04295266073319966
+      ]
+    },
+    {
+      "device": "marrakesh",
+      "arm": "raw",
+      "shots": 512,
+      "valid": 74,
+      "fraction": 0.14453125,
+      "wilson95": [
+        0.11671916196909964,
+        0.17763767233388728
+      ]
+    },
+    {
+      "device": "marrakesh",
+      "arm": "raw",
+      "shots": 2048,
+      "valid": 259,
+      "fraction": 0.12646484375,
+      "wilson95": [
+        0.11276577897438776,
+        0.14156257401669808
+      ]
+    },
+    {
+      "device": "marrakesh",
+      "arm": "dd_twirl",
+      "shots": 2048,
+      "valid": 75,
+      "fraction": 0.03662109375,
+      "wilson95": [
+        0.029315270418060993,
+        0.04566199361924686
+      ]
+    },
+    {
+      "device": "quebec",
+      "arm": "raw",
+      "shots": 2048,
+      "valid": 19,
+      "fraction": 0.00927734375,
+      "wilson95": [
+        0.005947313176687884,
+        0.014444836831209269
+      ]
+    },
+    {
+      "device": "quebec",
+      "arm": "dd_twirl",
+      "shots": 2048,
+      "valid": 12,
+      "fraction": 0.005859375,
+      "wilson95": [
+        0.0033549988924723487,
+        0.010214011861748466
+      ]
+    },
+    {
+      "device": "quebec",
+      "arm": "dd_twirl",
+      "shots": 512,
+      "valid": 4,
+      "fraction": 0.0078125,
+      "wilson95": [
+        0.003042201929655798,
+        0.0199134147975569
+      ]
+    },
+    {
+      "device": "quebec",
+      "arm": "raw",
+      "shots": 512,
+      "valid": 2,
+      "fraction": 0.00390625,
+      "wilson95": [
+        0.0010718890803936704,
+        0.014129407144654047
+      ]
+    },
+    {
+      "device": "quebec",
+      "arm": "raw",
+      "shots": 1024,
+      "valid": 10,
+      "fraction": 0.009765625,
+      "wilson95": [
+        0.005313035304722443,
+        0.01788262256263864
+      ]
+    },
+    {
+      "device": "quebec",
+      "arm": "dd_twirl",
+      "shots": 1024,
+      "valid": 6,
+      "fraction": 0.005859375,
+      "wilson95": [
+        0.002688088875029842,
+        0.01272426746139388
+      ]
+    }
+  ],
+  "jobs": 12,
+  "charged_seconds": 108.0,
+  "physical_shots": 301056,
+  "source": "docs/SHOT_SWEEP.md",
+  "source_sha256": {
+    "docs/data/shot-sweep-marrakesh-evidence.zip": "1e2b7434d12307b777edaed24094558309831057a86112cf15f282bb3c789dea",
+    "docs/data/shot-sweep-quebec-evidence.zip": "73bfd5d1edad36b1e9c0481daeef113a69b71ea683934cedc09c744a83101d39"
+  },
+  "scope": "20-candidate/four-selected circuits; one execution per condition; percentages are not prediction accuracy"
+}

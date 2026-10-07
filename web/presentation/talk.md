@@ -52,6 +52,6 @@ Narrower encoding changes the measured effective rank from about 31 to 5.2 and r
 
 ## 7. Findings and limits · 30 seconds
 
-We built an audited annual dataset, tested actual Qiskit kernels and SQD, and measured a concrete encoding failure regime. The classical kernel leads development. Later extremes defeat every main model, including the quantum one.
+This is an applied diagnostic benchmark. Encoding changes similarity, but useful prediction needs evidence. Better QAOA objective sampling did not improve our fixed regressor. More hardware shots collected candidates without repairing low valid yield, and mitigation must be checked against downstream error.
 
-The next scientific step needs a prospective target and new evaluation evidence. Fireline is an optional strategy demo. Its simulated outcomes remain separate from these results.
+Only31 annual training years and reused evaluation limit our conclusions. Simple classical and reporting/time controls remain essential. We demonstrate Qiskit and SQD with measured limitations, not an advantage or operational forecast. New prospective observations are the next scientific step.

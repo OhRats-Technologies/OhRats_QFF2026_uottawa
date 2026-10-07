@@ -1,3 +1,20 @@
+# Completed: canvas Fireline
+
+Owner-authorized full-window engineering game. Build/run/inspect/repair with executable browser QSVR constructions, canvas art, original music and final gameplay/UI QA. Completion gates: [docs/FIRELINE_CANVAS.md](docs/FIRELINE_CANVAS.md). Scientific results are preserved. Published executable canvas game, original art/music, repair/replay, numerical goldens and final UI/input/audio/clean-export verification. Eight tests/849 assertions and six viewport checks pass; see the linked receipt. No scientific fits or hardware ran for this goal.
+
+# Completed goal: respond to scientific critique
+
+Owner request, October 6: adopt the latest board suggestions in [the scientific critique](docs/SCIENTIFIC_CRITIQUE_20261006.md) and [work synthesis](docs/WORK_ANALYSIS_20261006.md). Scope is measured NISQ diagnostics and a clearer hackathon story, with no advantage claim. No new deadline was supplied.
+
+1. Audit the review's holdout, job totals, timing, repair chronology and source claims; publish a sourced response without rewriting peer records.
+2. Run [frozen diagnostics](experiments/critique_diagnostics.json): saved year/fold prediction sensitivity, cached inner-score winner sensitivity, exact classical enumeration timing, QUBO/prediction mismatch and measured-kernel repair changes. No new fits, states or hardware.
+3. Revise README, judge guide, report and the browser talk/appendix around the useful measured findings and explicit limitations. Keep seven main slides and the five-minute budget; exported files retain their declared historical snapshot.
+4. Verify arithmetic replay, actual benchmark receipt, unchanged final artifacts, focused tests and browser rendering; publish results and close the board claim only after every theme is addressed.
+
+**Completed October 6:** [Sourced response](docs/CRITIQUE_RESPONSE.md) addresses all six themes. [Completion receipt](docs/data/critique_response_handoff.json): 219 tests, eleven prediction panels, 99 cached-choice diagnostics, eight repair diagnostics, source-free replay and nine-slide browser QA. No new scientific fits/states/hardware; six final artifacts and sixteen execution files preserved. The browser main talk remains 300 seconds; PDF/PPTX retain their explicitly earlier snapshot.
+
+Commit/push coherent milestones, check current board steers and acknowledge relevant feedback. Preserve all final-year evidence, raw counts and acquisition intents. Do not respond to small-sample instability by expanding the tuning grid.
+
 # Completed owner followup: measurement-count sweep
 
 The owner requests the512→1,024→2,048 shot comparison on IBM Marrakesh and Quebec. [Marrakesh plan](experiments/shot_sweep_marrakesh.json) and [Quebec plan](experiments/shot_sweep_quebec.json) freeze the existing10/16/20-pool circuits, raw/combined arms, fresh512 calibration block and classical feasible-sampling controls. Six jobs per device reserve102 seconds per account,204 total, subject to live checks. Preserve all previous research/final artifacts and submission intents. Report useful yield, best-subset quality and full-job charge; more shots alone are not error correction or prediction improvement. Both devices are collected: 12 jobs, 301,056 shots, 108 charged QPU seconds. [Report](docs/SHOT_SWEEP.md) and [closeout receipt](docs/data/shot_sweep_handoff.json) retain every condition and matched classical draw. No predictor refit or final-year access. All reservations are released; no jobs pending.
@@ -72,13 +89,7 @@ Work on independent tasks during downloads; record inaccessible sources rather t
 | Accessible play | [Current interaction review](docs/data/current_interaction_verification.json): fourteen authoring runs, 67 enumerated cases and thirteen inspected screenshots, with current source pins. Touch/short-screen checks distinguish native gestures from authoring auto-scroll; win/loss, replay, instruments and forced rendering/audio failures pass in their scoped cases. Physical devices and human enjoyment remain untested. |
 | Presentation and viewing | [Nine-slide deck / seven-slide main talk](web/presentation/README.md), [judge guide](docs/JUDGES.md): 300-second plan and concise spoken outline. [Current tracked-tree viewing](docs/data/current_view_portability.json) opens slides/evidence/context and newer controls without project install or ignored inputs. PDF/PPTX bytes are preserved; all checks retain source pins. |
 
-The [consolidated handoff](docs/HANDOFF.md#later-democontext-handoff--october-6-completed) connects the playable demo, catalogue/context findings and reproduction paths without adding another report. The [scoped artifact review](docs/data/strategy_requirement_audit.json) checks the full scope and labels historical receipts separately from current source pins. Its corrected annual freeze check preserves six public artifacts and 16 execution-code hashes. The [local clone check](docs/data/strategy_clone_verification.json) passes without source caches or project dependencies. Recheck public artifacts in a Git checkout:
-
-```sh
-uv run --no-project python scripts/audit_strategy.py
-```
-
-Optional `--catalogue-proof` / `--context-proof` accept completed offline source-check receipts; the public check alone does not validate unavailable original caches. Current dependency manifests add Pillow for context rendering and differ from the frozen annual execution environment; the audit does not certify that environment. The separate completion record reviews the full owner objective, including the final handoff and coordination. The reusable static checker remains a scoped artifact audit; it does not automatically complete goals.
+The [consolidated handoff](docs/HANDOFF.md#later-democontext-handoff--october-6-completed) connects the playable demo, catalogue/context findings and reproduction paths without adding another report. The [scoped artifact review](docs/data/strategy_requirement_audit.json) checks the full scope and labels historical receipts separately from current source pins. Its corrected annual freeze check preserves six public artifacts and 16 execution-code hashes. The [local clone check](docs/data/strategy_clone_verification.json) passes without source caches or project dependencies. The strategy-specific audit script was removed with the obsolete field game; these receipts describe the historical snapshot. Current viewer verification uses `web/presentation/portable-check.mjs`. The context and annual scientific evidence remain available.
 
 ## Closeout
 

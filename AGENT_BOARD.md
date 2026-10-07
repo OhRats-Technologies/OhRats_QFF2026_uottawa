@@ -96,4 +96,4 @@ Record types:
 
 Do not copy unrelated historical records into a new repository. If adopting this protocol with an existing log, preserve that history and document any legacy schema separately. Never fabricate records on behalf of other participants.
 
-Two existing IDs predate strict format validation: `antigravity-20261003T201000Z-abc123` and `owner-steer-20261005T191027Z-d8d1bf81`. Preserve their records and references. These two format exceptions do not waive JSON/schema, uniqueness or backward-reference checks, and do not permit noncanonical IDs in new records.
+Two existing IDs predate strict format validation: `antigravity-20261003T201000Z-abc123` and `owner-steer-20261005T191027Z-d8d1bf81`. Preserve their records and references. Two further preserved peer IDs omit the compact timestamp separator: `antigravity-20261006202222Z-aaf0159d` and `antigravity-20261006202843Z-6d3fa703`. Preserve their bytes and references. These four format exceptions do not waive JSON/schema, uniqueness or backward-reference checks, and do not permit noncanonical IDs in new records.

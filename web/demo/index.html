@@ -2,264 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#0a171b" />
-    <title>Fireline · Ontario</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap"
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
     />
-    <link rel="stylesheet" href="strategy.css" />
+    <title>Fireline</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #081b1c;
+      }
+      canvas {
+        display: block;
+        touch-action: none;
+      }
+      #controls,
+      #status {
+        position: fixed;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+      }
+      #controls button {
+        position: relative;
+      }
+      noscript {
+        color: #aed6b6;
+        font: 16px monospace;
+      }
+    </style>
   </head>
   <body>
-    <main
-      id="game"
-      aria-label="Fireline, a fictional Ontario wildfire strategy game"
-    >
-      <section class="map-panel" aria-label="Ontario incident map">
-        <div class="map-heading">
-          <div>
-            <span class="eyebrow">Ontario / fictional season</span>
-            <h1 id="game-title" tabindex="-1">Fireline<span>01</span></h1>
-          </div>
-          <div class="utility">
-            <button id="sound" aria-pressed="false">Sound off</button
-            ><button id="guide-open">Field guide</button
-            ><a href="../presentation/">Talk ↗</a>
-          </div>
-        </div>
-        <div class="map-stage">
-          <div id="map-frame">
-            <img
-              id="map-image"
-              src="../presentation/assets/ontario-cover.png"
-              alt="Full Ontario forest cover raster, 2021; grey areas have no mapped woodland class."
-            /><canvas id="map-effects" aria-hidden="true"></canvas>
-            <div id="cities"></div>
-            <div id="markers"></div>
-          </div>
-        </div>
-        <div class="map-caption">
-          <span id="layer-caption">Forest cover · 2021</span
-          ><span>Historical locations / simulated incidents</span>
-        </div>
-        <div class="map-tools">
-          <label class="sr-only" for="layer">Map context layer</label
-          ><select id="layer">
-            <option value="cover">Forest cover ’21</option>
-            <option value="canopy">Canopy height ’15</option>
-            <option value="lorey">Lorey’s height ’15</option>
-            <option value="recovery">Recovery ’17</option>
-            <option value="water">Water ’22</option>
-            <option value="fuel">Fuel types ’26</option></select
-          ><button id="legend-toggle" aria-expanded="false">Legend</button>
-          <div id="map-legend" hidden></div>
-          <span class="map-hint">Select a fire to respond</span>
-        </div>
-        <div
-          id="incident-list"
-          aria-label="Active fires"
-          class="incident-list"
-        ></div>
-      </section>
-      <aside class="operations" aria-label="Operations">
-        <section class="front-panel">
-          <div class="section-heading">
-            <span class="eyebrow">Weather front</span
-            ><span id="front-number"></span>
-          </div>
-          <h2 id="front-name"></h2>
-          <p id="front-detail"></p>
-          <div id="weather-meters"></div>
-        </section>
-        <section class="incident-panel" aria-labelledby="incident-name">
-          <div class="section-heading">
-            <span class="eyebrow">Incident response</span
-            ><span id="crew-status"></span>
-          </div>
-          <h2 id="incident-name">Select a fire</h2>
-          <div id="incident-readout" role="group" aria-label="Pressure and reserve projection"></div>
-          <div class="actions">
-            <button data-action="crew" aria-keyshortcuts="1">
-              <span>Dispatch crew</span><b>−2</b
-              ><small>Suppression over 2 fronts</small></button
-            ><button data-action="water" aria-keyshortcuts="2">
-              <span>Water drop</span><b>−4</b
-              ><small>Reduce pressure immediately</small>
-            </button>
-          </div>
-          <p id="action-feedback" role="status"></p>
-        </section>
-        <section class="instrument-panel">
-          <div class="section-heading">
-            <span class="eyebrow">Quantum lens</span
-            ><button id="lens-toggle" aria-expanded="false" aria-controls="lens-controls">Inspect ↗</button>
-          </div>
-          <div
-            id="sphere"
-            aria-label="Illustrative single-qubit Bloch sphere"
-          ></div>
-          <div class="lens-caption">
-            <span id="angle-readout">θ 0°</span
-            ><span>One-qubit illustration</span>
-          </div>
-          <div id="lens-controls" hidden>
-            <label
-              >Idle + gate drift
-              <input id="coherent-noise" type="checkbox" /></label
-            ><label class="noise-parameter"
-              >Amplitude damping
-              <input
-                id="damping"
-                type="range"
-                min="0"
-                max="1"
-                step="0.01"
-                value="0" /></label
-            ><label class="noise-parameter"
-              >Dephasing
-              <input
-                id="dephasing"
-                type="range"
-                min="0"
-                max="1"
-                step="0.01"
-                value="0"
-            /></label>
-            <p>
-              The selected fire sets an illustrative angle. Noise contracts the
-              vector; it changes neither the fire nor the QSVR model.
-            </p>
-          </div>
-        </section>
-        <section class="matrix-panel">
-          <div class="section-heading">
-            <span class="eyebrow">Sampled feature space</span
-            ><button id="sample">Sample +4</button>
-          </div>
-          <div class="matrix-body">
-            <div id="matrix" aria-label="Feature redundancy matrix"></div>
-            <div class="matrix-readout">
-              <strong id="sample-count">4</strong><span>subsets sampled</span
-              ><b id="energy"></b><span>lowest sampled cost</span>
-            </div>
-          </div>
-          <div id="feature-subset"></div>
-          <p class="instrument-note">
-            Diagonal SQD finds the lowest sampled cost. Same minimum as
-            classical search.
-          </p>
-        </section>
-      </aside>
-      <footer class="command">
-        <div class="reserve">
-          <span class="eyebrow">Season reserve</span>
-          <div><strong id="integrity">100</strong><span>/100</span></div>
-          <div class="reserve-track">
-            <i id="integrity-bar"></i><b title="Season lost at 40"></b>
-          </div>
-        </div>
-        <div class="resource">
-          <strong id="supplies">18</strong><span>supplies</span>
-        </div>
-        <div class="resource">
-          <strong id="crews">2/2</strong><span>crews ready</span>
-        </div>
-        <div class="resource">
-          <strong id="contained">0</strong><span>contained</span>
-        </div>
-        <div id="upgrade-track" class="upgrade-track"></div>
-        <button id="advance" class="advance" aria-keyshortcuts="N">
-          <span>Advance front</span><b>→</b><small>N</small>
-        </button>
-      </footer>
-    </main>
-    <dialog id="welcome" aria-labelledby="welcome-title">
-      <div class="dialog-kicker">12 fronts · 2 crews · one province</div>
-      <h2 id="welcome-title">Hold the<br /><em>season.</em></h2>
-      <p>
-        Choose a fire. Send crews or drop water. Advance the weather when you’re
-        ready. Keep the reserve above 40.
-      </p>
-      <div class="intro-rule">
-        <span>Crews take time.</span><span>Water costs supplies.</span
-        ><span>Weather keeps changing.</span>
-      </div>
-      <button id="start" class="advance">Take command <b>→</b></button
-      ><button id="fresh" hidden>New season instead</button
-      ><small
-        >Fictional strategy game. Real map context. No live forecast.</small
-      >
-    </dialog>
-    <dialog id="upgrade" aria-labelledby="upgrade-title">
-      <span class="eyebrow">Your operation evolves</span>
-      <h2 id="upgrade-title">Choose an edge.</h2>
-      <p>One upgrade. Lasts for the rest of this season.</p>
-      <div id="upgrade-options"></div>
-    </dialog>
-    <dialog id="debrief" aria-labelledby="debrief-title">
-      <span id="debrief-kicker" class="eyebrow"></span>
-      <h2 id="debrief-title" tabindex="-1" autofocus></h2>
-      <div id="debrief-chart"></div>
-      <div id="debrief-stats"></div>
-      <p id="debrief-peak"></p>
-      <section id="debrief-impact"></section>
-      <p id="debrief-thought"></p>
-      <div class="debrief-actions">
-        <button id="retry">Replay seed</button
-        ><button id="new-season" class="advance">New season →</button>
-      </div>
-      <small
-        >Game outcomes are simulated; they do not establish prediction accuracy
-        or quantum advantage.</small
-      >
-    </dialog>
-    <dialog id="guide" aria-labelledby="guide-title">
-      <button id="guide-close" class="close" aria-label="Close field guide">
-        ×</button
-      ><span class="eyebrow">Field guide</span>
-      <h2 id="guide-title">Decisions, not reflexes.</h2>
-      <p>
-        Every front grows active fires. Crews subtract pressure for two fronts;
-        smoke delays new dispatches to three. Water reduces pressure now. Toy
-        pressure and this fire’s next-front reserve loss are visible. Fuel and exposure are in the readout description. Hover or focus a response to see its reserve and supplies after the current front.
-      </p>
-      <p>
-        Pressure, reserve and supplies are game units. Pressure ≤0.16 means
-        containment; reserve ≤40 ends the season. Upgrades arrive after fronts 4
-        and 8. Map checkmarks show containment; corner numbers count fronts until
-        a crew returns. There is no real-time clock.
-      </p>
-      <h3>What is real?</h3>
-      <p>
-        The Ontario boundary, 2021 land-cover raster and historical
-        fire-position seeds. Dated canopy, recovery, water and 2026 fuel images
-        come from official Canadian map services. They are context images, not
-        validated game predictors. Grey cover pixels mean no mapped woodland
-        class, not no vegetation.
-      </p>
-      <h3>Where is the quantum part?</h3>
-      <p>
-        The sphere illustrates angle encoding and single-qubit noise. The
-        feature bench uses the project’s saved relevance/redundancy
-        coefficients. Its diagonal projected matrix can be solved by taking the
-        lowest sampled cost; classical enumeration of all 210 four-feature
-        subsets is also trivial. Neither instrument boosts your crews.
-      </p>
-      <p>
-        Our research used a fidelity quantum kernel with support-vector
-        regression for annual mean hectares per recorded Ontario fire. No tested
-        final model beat the training-mean baseline. This game is a separate
-        teaching experience.
-      </p>
-      <div class="guide-links">
-        <button id="guide-progress">Your season build ↗</button>
-        <a href="lab.html#prediction">Measured results ↗</a
-        ><a href="../presentation/">Five-minute presentation ↗</a>
-      </div>
-      <p class="keyboard">N advances · 1 crew · 2 water · Tab navigates</p>
-    </dialog>
-    <div id="announcement" class="sr-only" aria-live="polite"></div>
-    <script type="module" src="assets/strategy.js"></script>
+    <canvas
+      aria-label="Fireline quantum engineering workbench"
+      role="img"
+    ></canvas>
+    <nav id="controls" aria-label="Game controls"></nav>
+    <div id="status" role="status" aria-live="polite"></div>
+    <noscript>Fireline needs JavaScript.</noscript>
+    <script type="module" src="canvas/main.js"></script>
   </body>
 </html>

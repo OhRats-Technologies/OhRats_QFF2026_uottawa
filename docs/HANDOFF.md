@@ -1,3 +1,13 @@
+## October 6 canvas Fireline update
+
+The primary demo is the full-window [canvas engineering game](FIRELINE_CANVAS.md). Open-ended 2/4/6/10-input builds execute in a separate browser teaching sandbox; published research remains unchanged. Live kernel/encoding, QAOA/SQD samples, repair/replay, original art/music and responsive controls are implemented. Replaced console code is deleted, with its evidence retained. See the [verification receipt](data/fireline_canvas_verification.json). The obsolete field strategy route, engine, bundle, dependencies and dedicated checks are deleted. Shared forest context and historical receipts remain. The earlier console and strategy updates below are historical.
+
+## October 6 modeller-console update
+
+The main demo route now opens **QSVR: Fireline**, the saved-model console. The fictional field strategy was subsequently removed at the owner’s request. [Current design and verification](QSVR_GAME.md).
+
+The public annual collector now discloses unrelated manifest drift rather than blocking saved arithmetic replay. Scientific code/plan/state checks and original execution guards remain strict. A current focused replay reconstructs 83 predictions and 24 kernel records; 221 unittest checks pass. Earlier environment-reproduction requirements remain relevant for rerunning training, not browsing or collecting saved evidence.
+
 # Annual study · completed handoff
 
 **October6 extension:** numerical closure/biomass/age/species and lagged-proxy panels, matched width/order controls,10/16/20-candidate local selection, and actual IBM selection/QSVR acquisitions are separate development evidence. See [forest findings](FOREST_CONTEXT.md), [scaling](SELECTOR_SCALING.md) and [hardware counts/predictions](SELECTOR_HARDWARE.md). Preserve the documented1520 scheduler failures and their declared sharded correction. Historical no-hardware/deadline statements below describe the original annual run, not these later owner-authorized experiments.
@@ -53,7 +63,7 @@ Open the committed presentation, game and evidence views without Python, credent
 bun run web/presentation/serve.ts
 ```
 
-[Present](http://127.0.0.1:8790/web/presentation/) · [Play Fireline](http://127.0.0.1:8790/web/demo/) · [Explore QSVR](http://127.0.0.1:8790/web/demo/lab.html). Start or continue a season, select a fire and compare crew/water responses before advancing. The map's **Legend** explains its source colours; **Field guide** opens the season build and evidence. Returning through **Play → Continue** preserves the season. [Controls/build instructions](../web/demo/README.md).
+[Present](http://127.0.0.1:8790/web/presentation/) · [Play Fireline](http://127.0.0.1:8790/web/demo/). Start or continue a season, select a fire and compare crew/water responses before advancing. The map's **Legend** explains its source colours; **Field guide** opens the season build and evidence. Returning through **Play → Continue** preserves the season. [Controls/build instructions](../web/demo/README.md).
 
 | Deliverable | Finding and evidence |
 |---|---|
@@ -66,6 +76,6 @@ bun run web/presentation/serve.ts
 
 **Current verification:** [fourteen interaction runs / 67 enumerated cases](data/current_interaction_verification.json), thirteen inspected screenshots and [tracked-tree viewing](data/current_view_portability.json) cover the current build. The viewer exercises nine slides, five evidence views, eight context choices and the evidence-to-game return without ignored inputs. PDF/PPTX bytes are preserved. Older receipts remain historical rather than being relabelled as current.
 
-The [scoped artifact audit](data/strategy_requirement_audit.json) checks 25 scoped requirements with completed offline source receipts. The [owned local clone](data/strategy_clone_verification.json) passes 23 public checks without source caches or project dependencies. Recheck public artifacts with `uv run --no-project python scripts/audit_strategy.py`; this does not install or run the scientific pipeline. The current manifests add Pillow and differ from the frozen annual execution environment; six annual public artifacts and sixteen execution-code files remain unchanged.
+The [scoped artifact audit](data/strategy_requirement_audit.json) checks 25 scoped requirements with completed offline source receipts. The [owned local clone](data/strategy_clone_verification.json) passes 23 public checks without source caches or project dependencies. The old strategy audit script was subsequently removed with that game; its published receipts describe the historical snapshot. Current viewer checks use `web/presentation/portable-check.mjs`. The current manifests add Pillow and differ from the frozen annual execution environment; six annual public artifacts and sixteen execution-code files remain unchanged.
 
 **Still unmeasured:** human enjoyment, physical-device input/audio, actual five-minute rehearsal, native PowerPoint rendering and broad platform/assistive-device behavior. Source completeness, retrospective processing and reused annual test years limit scientific inference. The [completion record](data/strategy_goal_handoff.json) retains the requirement-by-requirement findings and the board records close the work. Public access and submission remain separate team actions.

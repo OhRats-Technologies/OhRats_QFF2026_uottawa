@@ -71,6 +71,18 @@ assert.deepEqual(bars.filter(r=>r.series==='Recorded').map(r=>r.value),actual.ac
 assert.deepEqual(bars.filter(r=>r.series==='Recorded').map(r=>r.year),actual.years);
 assert.equal(await page.locator('#evaluation path.series').count(),0);
 assert.match(await page.locator('#evaluation svg').getAttribute('aria-label'),/hectares per fire/);
+await page.evaluate(()=>presentation.show(8));
+const yieldPoints=await page.locator('#resources circle[data-device]').evaluateAll(nodes=>nodes.map(n=>({device:n.dataset.device,arm:n.dataset.arm,shots:Number(n.dataset.shots),valid:Number(n.dataset.valid),fraction:Number(n.dataset.fraction)})));
+const sortRows=rows=>rows.sort((a,b)=>`${a.device}-${a.arm}-${a.shots}`.localeCompare(`${b.device}-${b.arm}-${b.shots}`));
+const savedYield=await page.evaluate(()=>presentation.evidence.shot_sweep.rows.map(({device,arm,shots,valid,fraction})=>({device,arm,shots,valid,fraction})));
+assert.equal(yieldPoints.length,12);
+assert.deepEqual(sortRows(yieldPoints),sortRows(savedYield));
+assert.match(await page.locator('#resources').innerText(),/108/);
+assert.match(await page.locator('#resources').innerText(),/301,056/);
+assert.match(await page.locator('#resources').innerText(),/usable yield, not accuracy/);
+await page.evaluate(()=>presentation.show(6));
+for(const lesson of ['Encoding changes geometry.', 'Lower energy ≠ lower error.', 'More shots ≠ less circuit noise.'])
+  assert.ok((await page.locator('#conclusions').innerText()).includes(lesson));
 await page.keyboard.press('Home');assert.equal(await page.evaluate(()=>presentation.index),0);
 for(let i=0;i<9;i++){
   await page.evaluate(i=>presentation.show(i),i);
@@ -111,5 +123,5 @@ assert.equal((pdf.toString('latin1').match(/\/Type\s*\/Page\b/g)||[]).length,9,'
 assert.deepEqual(errors,[]);
 for(const name of published)
   assert.equal(hash(await fs.readFile(path.join(root,'web/presentation/slides',name))),before[name],name);
-await fs.writeFile(path.join(out,'checks.json'),JSON.stringify({status:'passed',slides:9,main_seconds:300,keyboard:true,notes:true,index:true,measured_scales:5,reduced_motion:true,portrait_width:390,wide_width:1920,private_paths_denied:true,page_errors:errors,qa_pdf_exported:true,published_artifacts_sha256:before,published_artifacts_preserved:true},null,2));
+await fs.writeFile(path.join(out,'checks.json'),JSON.stringify({status:'passed',slides:9,main_seconds:300,measured_yield_points:12,diagnostic_lessons:3,keyboard:true,notes:true,index:true,measured_scales:5,reduced_motion:true,portrait_width:390,wide_width:1920,private_paths_denied:true,page_errors:errors,qa_pdf_exported:true,published_artifacts_sha256:before,published_artifacts_preserved:true},null,2));
 await browser.close();console.log('Browser checks and cached QA PDF pass; published PDF/PPTX remain unchanged.');

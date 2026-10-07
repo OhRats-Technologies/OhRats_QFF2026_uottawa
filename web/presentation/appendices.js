@@ -15,5 +15,25 @@ export function encodingAppendix() {
 }
 
 export function resourcesAppendix(e) {
-  return `<h2>Useful shots matter.</h2><div class="research-resource"><img src="assets/research-hardware.png" alt="Actual valid four-feature subset yields on Marrakesh and Quebec: noise remains severe at sixteen and twenty selector qubits, with mixed DD and twirling outcomes."><div class="research-receipt"><span class="mini">New training followups</span><strong>9 <small>IBM jobs</small></strong><strong>82 <small>QPU seconds</small></strong><strong>219,648 <small>shots</small></strong><p>Frozen parameters.<br>All repairs reported.</p></div></div><p class="footnote">One raw / combined pair per device · not a device ranking<br>Original final comparison stays frozen. Separate measured-kernel outcomes are in the research report.</p>`;
+  if (!e.shot_sweep) return `<h2>Useful shots matter.</h2><p class="subtitle">Load the saved shot-sweep asset for the updated hardware appendix.</p>`;
+  const s=e.shot_sweep;
+  return `<h2>More shots. More candidates.</h2><div class="research-resource">${shotSweep(s)}<div class="research-receipt"><span class="mini">10 / 16 / 20 feature pools</span><strong>${s.jobs} <small>IBM jobs</small></strong><strong>${s.charged_seconds} <small>QPU seconds</small></strong><strong>${s.physical_shots.toLocaleString('en-US')} <small>returned shots</small></strong><p>Same circuits.<br>512 → 2,048 shots.</p></div></div><p class="footnote">Chart: four valid features from twenty candidates · percentages are usable yield, not accuracy<br>Wilson 95% shot intervals · one execution per condition · not a device ranking</p>`;
+}
+
+function shotSweep(s) {
+  const styles=[['raw','Raw','#c46242'],['dd_twirl','DD + twirling','#18747c']];
+  const groups=['marrakesh','quebec'].map(device=>{
+    const left=48,top=68,width=342,height=248;
+    const x=i=>left+width*i/2,y=f=>top+height*(1-f/.2);
+    const grid=[0,.05,.1,.15,.2].map(f=>`<path d="M${left} ${y(f)}h${width}" stroke="#d8dfda"/><text x="${left-9}" y="${y(f)+5}" text-anchor="end" font-size="14">${(f*100).toFixed(0)}</text>`).join('');
+    const curves=styles.map(([arm,label,color])=>{
+      const rows=s.rows.filter(r=>r.device===device&&r.arm===arm).sort((a,b)=>a.shots-b.shots);
+      const points=rows.map((r,i)=>`${x(i)},${y(r.fraction)}`).join(' ');
+      const bars=rows.map((r,i)=>`<path d="M${x(i)} ${y(r.wilson95[1])}V${y(r.wilson95[0])}" stroke="${color}" stroke-width="2"/><circle data-device="${device}" data-arm="${arm}" data-shots="${r.shots}" data-valid="${r.valid}" data-fraction="${r.fraction}" cx="${x(i)}" cy="${y(r.fraction)}" r="5" fill="${color}"><title>${device} ${label}: ${r.valid}/${r.shots} valid (${(r.fraction*100).toFixed(2)}%)</title></circle>`).join('');
+      return `<polyline points="${points}" fill="none" stroke="${color}" stroke-width="3"/>${bars}`;
+    }).join('');
+    const counts=s.rows.filter(r=>r.device===device&&r.arm==='raw').sort((a,b)=>a.shots-b.shots).map(r=>r.valid).join(' → ');
+    return `<svg class="shot-chart" viewBox="0 0 430 435" role="img" aria-label="${device}: measured usable four-feature yield at512,1024 and2048 shots, not prediction accuracy."><text x="48" y="57" font-size="14">Valid selections · %</text><g><text x="${left}" y="31" class="label" font-size="24">${device==='marrakesh'?'Marrakesh':'Quebec'}</text>${grid}${curves}${[512,1024,2048].map((n,i)=>`<text x="${x(i)}" y="${top+height+27}" text-anchor="middle" font-size="16">${n.toLocaleString('en-US')}</text>`).join('')}<text x="${left}" y="${top+height+57}" font-size="15">Raw valid counts: ${counts}</text></g><path d="M48 410h24" stroke="#c46242" stroke-width="3"/><text x="80" y="416" font-size="16">Raw</text><path d="M170 410h24" stroke="#18747c" stroke-width="3"/><text x="202" y="416" font-size="16">DD + twirling</text><text x="210" y="390" font-size="14" text-anchor="middle">Shots per circuit</text></svg>`;
+  }).join('');
+  return `<div class="shot-comparison">${groups}</div>`;
 }

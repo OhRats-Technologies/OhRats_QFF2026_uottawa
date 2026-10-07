@@ -6,7 +6,6 @@ import crypto from "node:crypto";
 import { execFileSync, spawn } from "node:child_process";
 import { once } from "node:events";
 import { createRequire } from "node:module";
-import { verifyGame } from "./portable-game.mjs";
 
 const root = process.cwd();
 const commit = execFileSync("git", ["rev-parse", "HEAD"], {
@@ -90,7 +89,11 @@ try {
     `${process.env.RUNTIME_NODE_MODULES}/../package.json`,
   );
   const { chromium } = require("playwright");
-  browser = await chromium.launch({ headless: true, channel: "chrome", args: ["--mute-audio"] });
+  browser = await chromium.launch({
+    headless: true,
+    channel: "chrome",
+    args: ["--mute-audio"],
+  });
   const page = await browser.newPage({
     viewport: { width: 1280, height: 720 },
     reducedMotion: "reduce",
@@ -136,6 +139,11 @@ try {
         .map((node) => node.textContent.slice(0, 60));
     });
     assert.deepEqual(clipped, [], `Fallback-font clipping on ${id}`);
+    if (id === "resources") {
+      assert.equal(await slide.locator("circle[data-device]").count(), 12);
+      assert.match(await slide.innerText(), /301,056/);
+      result.measuredYieldPoints = 12;
+    }
     result.slides.push(id);
     if (index === 1) {
       for (const stage of ["forest", "records", "annual"]) {
@@ -157,43 +165,73 @@ try {
   await page.locator("#notes").click();
   assert.ok(
     (await page.locator("#panel-content").textContent()).includes(
-      "Question appendix",
+      "This question appendix",
     ),
   );
   await page.locator("#panel .close").click();
 
-  await page.goto(`${base}/web/demo/lab.html`, {
-    waitUntil: "domcontentloaded",
+  execFileSync(
+    "bun",
+    [
+      "test",
+      "web/demo/canvas/engine.test.js",
+      "web/demo/canvas/mechanics.test.js",
+    ],
+    { cwd: tree },
+  );
+  execFileSync(process.execPath, ["web/demo/canvas/browser-check.mjs"], {
+    cwd: tree,
+    env: {
+      ...process.env,
+      FIRELINE_BASE: base,
+      FIRELINE_OUTPUT: `${output}/console`,
+    },
   });
-  await page.locator('#scene[data-section="data"]').waitFor();
-  for (let index = 0; index < 5; index++) {
-    await page.locator(`[data-section="${index}"]`).click();
-    result.sections.push(
-      await page.locator("#scene").getAttribute("data-section"),
-    );
-    await imagesReady();
-  }
-  assert.equal(new Set(result.sections).size, 5);
-  assert.equal(await page.locator(".prediction-chart .pred-bar").count(), 4);
-  for (const bar of await page.locator(".prediction-chart .pred-bar").all())
-    assert.equal(await bar.isVisible(), true);
-  result.visiblePredictionBars = 4;
-  await page.screenshot({ path: `${output}/prediction.png` });
-
-  Object.assign(result, await verifyGame(page, base, output, imagesReady));
+  execFileSync(process.execPath, ["web/demo/canvas/interaction-check.mjs"], {
+    cwd: tree,
+    env: {
+      ...process.env,
+      FIRELINE_BASE: base,
+      FIRELINE_OUTPUT: `${output}/console`,
+    },
+  });
+  execFileSync(process.execPath, ["web/demo/canvas/onboarding-check.mjs"], {
+    cwd: tree,
+    env: {
+      ...process.env,
+      FIRELINE_BASE: base,
+      FIRELINE_OUTPUT: `${output}/onboarding`,
+    },
+    stdio: "pipe",
+  });
+  result.onboarding = JSON.parse(
+    await fs.readFile(`${output}/onboarding/receipt.json`, "utf8"),
+  );
+  result.canvasInteractions = JSON.parse(
+    await fs.readFile(`${output}/console/interaction-receipt.json`, "utf8"),
+  );
+  result.canvasGame = JSON.parse(
+    await fs.readFile(`${output}/console/receipt.json`, "utf8"),
+  );
   assert.deepEqual(errors, []);
   assert.deepEqual([...failedLocal], []);
 
-  const preservedDownloads = JSON.parse(await fs.readFile(
-    path.join(tree, "docs/data/static_view_portability.json"), "utf8",
-  )).downloads;
+  const preservedDownloads = JSON.parse(
+    await fs.readFile(
+      path.join(tree, "docs/data/static_view_portability.json"),
+      "utf8",
+    ),
+  ).downloads;
   for (const name of ["ontario-wildfire.pdf", "ontario-wildfire.pptx"]) {
     const relative = `web/presentation/slides/${name}`;
     const response = await fetch(`${base}/${relative}`);
     assert.equal(response.status, 200);
     const bytes = Buffer.from(await response.arrayBuffer());
     assert.equal(sha(bytes), sha(await fs.readFile(path.join(tree, relative))));
-    assert.equal(sha(bytes), preservedDownloads.find(item => item.name === name).sha256);
+    assert.equal(
+      sha(bytes),
+      preservedDownloads.find((item) => item.name === name).sha256,
+    );
     result.downloads.push({
       name,
       bytes: bytes.length,
@@ -202,6 +240,9 @@ try {
     });
   }
   for (const route of [
+    "/web/demo/lab.html",
+    "/web/demo/field.html",
+    "/web/demo/assets/strategy.js",
     "/.env",
     "/.git/config",
     "/.cache/context/run.json",
@@ -231,10 +272,19 @@ result.status = "passed";
 result.checked_utc = new Date().toISOString();
 result.archive_sha256 = sha(await fs.readFile(`${output}/tree.tar`));
 result.verificationSources = {};
-for (const name of ["portable-check.mjs", "portable-game.mjs"])
-  result.verificationSources[name] = sha(await fs.readFile(path.join(tree, "web/presentation", name)));
-Object.assign(result, { predictor_fits: 0, qiskit_circuit_executions: 0,
-  hardware_jobs: 0, artifact_regenerations: 0, browser_toy_arithmetic: true });
+for (const name of ["portable-check.mjs"])
+  result.verificationSources[name] = sha(
+    await fs.readFile(path.join(tree, "web/presentation", name)),
+  );
+Object.assign(result, {
+  scientific_predictor_fits: 0,
+  browser_sandbox_fitting: true,
+  python_qiskit_circuit_executions: 0,
+  browser_ideal_quantum_calculations: true,
+  hardware_jobs: 0,
+  artifact_regenerations: 0,
+  browser_toy_arithmetic: true,
+});
 await fs.writeFile(
   `${output}/receipt.json`,
   JSON.stringify(result, null, 2) + "\n",

@@ -1,0 +1,235 @@
+{
+  "status": "complete_verified",
+  "checked_utc": "2026-10-06T20:56:58.060788+00:00",
+  "source_revision": "46d7ac0a2ae051fbc402c08e1c74732035e2b543",
+  "scope": "Six-theme peer critique response; saved development diagnostics and browser-deck revision, no fresh model search.",
+  "themes": [
+    "saved year/fold and cached inner-score sensitivity",
+    "measured exact feasible-subset enumeration cost",
+    "observational hardware and calibration limits",
+    "objective/prediction mismatch",
+    "classical spectral-repair dependence",
+    "station/calendar and source-reporting controls"
+  ],
+  "tests": {
+    "command": "uv run --group data --group analysis --group quantum --group hardware --group mitigation python -m unittest discover -s tests -q",
+    "passed": 219
+  },
+  "public_arithmetic_replay": {
+    "status": "passed",
+    "prediction_panels": 11,
+    "cached_choice_diagnostics": 99,
+    "measured_repair_diagnostics": 8,
+    "predictor_fits": 0,
+    "hardware_jobs": 0,
+    "new_samples": 0,
+    "timing_reruns": 0,
+    "source_revision": "46d7ac0a2ae051fbc402c08e1c74732035e2b543",
+    "clean_tracked_tree": true,
+    "network_and_rng_blocked": true,
+    "source_cache_or_credentials": false,
+    "measured_slide_yield_points": 12
+  },
+  "clean_tracked_tree_view": {
+    "commit": "46d7ac0a2ae051fbc402c08e1c74732035e2b543",
+    "cleanTrackedTree": true,
+    "noProjectInstall": true,
+    "noIgnoredInputs": true,
+    "bunVersion": "1.4.2",
+    "slides": [
+      "question",
+      "data",
+      "selection",
+      "development",
+      "evaluation",
+      "geometry",
+      "conclusions",
+      "encoding",
+      "resources"
+    ],
+    "sections": [
+      "data",
+      "features",
+      "encoding",
+      "kernel",
+      "prediction"
+    ],
+    "contextLayers": [
+      "cover",
+      "canopy",
+      "lorey",
+      "recovery",
+      "water",
+      "fuel",
+      "height",
+      "height-change"
+    ],
+    "heightEpochs": [
+      1985,
+      1990,
+      1995,
+      2000,
+      2005,
+      2010,
+      2015
+    ],
+    "downloads": [
+      {
+        "name": "ontario-wildfire.pdf",
+        "bytes": 1038182,
+        "sha256": "e8fa02088b7853459c998cee044c25036774202435338d39196a670102ae293e",
+        "contentType": "application/pdf"
+      },
+      {
+        "name": "ontario-wildfire.pptx",
+        "bytes": 588651,
+        "sha256": "4b2a0a42cc50c689f9dbe3ea41d2be2b5767c4e7b4456bdc0c359f275d805bfd",
+        "contentType": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+      }
+    ],
+    "deniedRoutes": [
+      {
+        "route": "/.env",
+        "status": 404
+      },
+      {
+        "route": "/.git/config",
+        "status": 404
+      },
+      {
+        "route": "/.cache/context/run.json",
+        "status": 404
+      },
+      {
+        "route": "/web/demo/../../.env",
+        "status": 404
+      }
+    ],
+    "measuredYieldPoints": 12,
+    "visiblePredictionBars": 4,
+    "gameControls": {
+      "completeCoverLegend": {
+        "groups": 13,
+        "gameSaveUnchanged": true
+      },
+      "advanceFromIncidentFocus": true,
+      "responseLedger": true,
+      "channelEffect": {
+        "before": 0.863,
+        "after": 0.987,
+        "gameMovesUnchanged": true
+      },
+      "optInAudioAndMute": true,
+      "mobileLedger": true,
+      "evidenceRoundTrip": {
+        "destination": "lab.html#prediction",
+        "visiblePredictionBars": 4,
+        "movesSelectionEquipmentPreserved": true,
+        "responseReadouts": {
+          "front-number": "2 / 12",
+          "integrity": "98",
+          "supplies": "16",
+          "crews": "2/2",
+          "contained": "0"
+        },
+        "continuesAtMap": true
+      }
+    },
+    "blockedExternalHosts": [
+      "fonts.googleapis.com"
+    ],
+    "failedLocal": [],
+    "errors": [],
+    "scope": "Clean tracked-file viewing on this Mac with installed Bun and isolated authoring browser tooling; not a remote clone, public-access audit, fresh scientific run or physical GPU-loss test.",
+    "isolatedServerStopped": true,
+    "status": "passed",
+    "checked_utc": "2026-10-06T20:55:07.585Z",
+    "archive_sha256": "ff1ae6c50dc2bd6c53171b4318717060c4d1dfe900c57cdac46c3354f8a2968a",
+    "verificationSources": {
+      "portable-check.mjs": "d262392c6c81437a75f0c637e3349a574a8a272cba7e249f77d694ad26686198",
+      "portable-game.mjs": "2c4d901c0595214ce22c6fee5eff9228d513c1b0082add835901b46121875e97"
+    },
+    "predictor_fits": 0,
+    "qiskit_circuit_executions": 0,
+    "hardware_jobs": 0,
+    "artifact_regenerations": 0,
+    "browser_toy_arithmetic": true
+  },
+  "browser": {
+    "status": "passed",
+    "slides": 9,
+    "main_seconds": 300,
+    "measured_yield_points": 12,
+    "diagnostic_lessons": 3,
+    "keyboard": true,
+    "notes": true,
+    "index": true,
+    "measured_scales": 5,
+    "reduced_motion": true,
+    "portrait_width": 390,
+    "wide_width": 1920,
+    "private_paths_denied": true,
+    "page_errors": [],
+    "qa_pdf_exported": true,
+    "published_artifacts_sha256": {
+      "ontario-wildfire.pdf": "e8fa02088b7853459c998cee044c25036774202435338d39196a670102ae293e",
+      "ontario-wildfire.pptx": "4b2a0a42cc50c689f9dbe3ea41d2be2b5767c4e7b4456bdc0c359f275d805bfd"
+    },
+    "published_artifacts_preserved": true
+  },
+  "verification": {
+    "final_artifacts_preserved": 6,
+    "execution_code_pins_preserved": 16,
+    "dependency_manifests_unchanged_during_goal": {
+      "uv.lock": true,
+      "pyproject.toml": true
+    },
+    "dependency_manifests_differ_from_original_training": [
+      "uv.lock",
+      "pyproject.toml"
+    ],
+    "public_blobs_scanned_for_environment_values": 1027,
+    "new_and_judge_doc_links_checked": 122,
+    "private_env_ignored": true
+  },
+  "scientific_predictor_fits": 0,
+  "scientific_new_quantum_states": 0,
+  "new_hardware_jobs": 0,
+  "hardware_charge_added_seconds": 0,
+  "preserved_final_sha256": {
+    "experiments/annual_final.json": "4df95f26e963d7db8038dfb19c3ff512464e8471bff0fc35ba3316f046c633f1",
+    "docs/results/annual-final-training.json": "678e930d0397e0d1853d716501fee8899bdf9f7240345b3d07d75b1e0aeebc78",
+    "docs/results/annual-final.json": "dcf41e991b279e5837d57810c4652337a6ce8f2015ed7cb3d4a3332b2ea37432",
+    "docs/data/annual_final_bundle.json": "4e6e243de608e950ce6d08c6e2637cdb6e64cfd1c953dfaac3e87c71420d5b91",
+    "docs/data/annual_training.csv": "7f7dfc2aec3dc961487bffbcc0bfd61dbeab843799946fffa7aef55b423aa5f7",
+    "docs/data/annual_reused_evaluation.csv": "6c1cc55f1f44990e249fadaafbed5a0baa37deb90a4843f539e52b0f9db28636"
+  },
+  "annual_execution_code_matches": {
+    "wildfire_lab/annual_data.py": true,
+    "wildfire_lab/annual_classical.py": true,
+    "wildfire_lab/annual_quantum.py": true,
+    "wildfire_lab/annual_matched.py": true,
+    "wildfire_lab/annual_selectors.py": true,
+    "wildfire_lab/annual_model_state.py": true,
+    "wildfire_lab/annual_final_kernel.py": true,
+    "wildfire_lab/annual_final_train.py": true,
+    "wildfire_lab/annual_final_evaluate.py": true,
+    "wildfire_lab/annual_final_protocol.py": true,
+    "wildfire_lab/nfdb.py": true,
+    "wildfire_lab/selection.py": true,
+    "wildfire_lab/qaoa.py": true,
+    "wildfire_lab/sqd_selection.py": true,
+    "wildfire_lab/library_kernel.py": true,
+    "scripts/run_annual_final.py": true
+  },
+  "exported_pdf_pptx_scope": "Preserved earlier original-study snapshot. Browser conclusion/resources include later diagnostics; native export layouts require updating before a later offline deck is regenerated.",
+  "limitations": [
+    "No new independent observations or prospective prediction confirmation.",
+    "Score-weight deletion does not refit models and does not create confidence intervals.",
+    "Hardware snapshots and Wilson shot intervals do not establish a causal device ranking.",
+    "Classical low-rank predictive ablation remains unrun; matrix norms do not identify the cause of prediction gains.",
+    "Historical dependency manifests differ from original training; they are unchanged during this goal.",
+    "Arithmetic replay checks saved equations, not independent fits or CPU-clock authentication."
+  ],
+  "closeout_document_links_checked": 124
+}

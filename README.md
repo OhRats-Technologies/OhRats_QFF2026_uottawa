@@ -2,13 +2,15 @@
 
 Qiskit Fall Fest **open challenge · Quantum Machine Learning / Sustainability**. Can classical and quantum models estimate **annual mean reported wildfire size in Ontario**, measured in **hectares per size-observed fire**? This is retrospective estimation using the same year's climate, not an advance forecast or an individual-fire classifier. Success means lower chronological MAE than a training-mean baseline, at a documented computation budget.
 
-**Finding:** RBF leads development. None of eleven main models beats the training mean on the six reused evaluation years. More qubits do not automatically yield useful similarities; encoding scale changes concentration and conditioning. We demonstrate no quantum or hardware advantage.
+**Frozen matched comparison:** RBF leads development. None of eleven main models beats the training mean on the six reused evaluation years. More qubits do not automatically yield useful similarities; encoding scale changes concentration and conditioning. We demonstrate no quantum or hardware advantage.
 
-[Judge guide](docs/JUDGES.md) · [Presentation](web/presentation/README.md) · [Fireline + QSVR walkthrough](web/demo/README.md) · [Report](docs/REPORT.md) · [Frozen evidence](docs/ANNUAL_FINAL.md)
+[Judge guide](docs/JUDGES.md) · [Presentation](web/presentation/README.md) · [Fireline canvas game](web/demo/README.md) · [Report](docs/REPORT.md) · [Frozen evidence](docs/ANNUAL_FINAL.md)
 
 **Comprehensive followup:** [goal receipt](GOAL.md), [coverage](docs/RESEARCH_COVERAGE.md) and [new findings](docs/RESEARCH_FINDINGS.md). Six local followups and nine new IBM jobs are measured (82 charged QPU seconds). Broader tuning and mitigation give mixed results; all ten saved studies replay from a clean tracked tree and209 tests pass. These followups preserve the frozen evaluation above.
 
 **Measurement-count followup:** [512/1,024/2,048 shots on Marrakesh and Quebec](docs/SHOT_SWEEP.md). All 12 real jobs completed: 301,056 shots, 108 charged QPU seconds. More shots collect candidates but do not repair low feasible yield; measured subset quality and classical controls are reported.
+
+**Scientific review response:** [measured sensitivity and factual audit](docs/CRITIQUE_RESPONSE.md). Exact four-of-twenty QUBO enumeration takes 3.07 ms median on this Mac. Saved tuning choices are sensitive to validation weights, and classical repair can sharply change downstream error while retaining dominant measured geometry. These are development diagnostics, not predictive confirmation.
 
 ## Data and design
 
@@ -51,7 +53,7 @@ QSVR beating RBF on reused years does not establish useful prediction: both lose
 bun run web/presentation/serve.ts
 ```
 
-[Presentation](http://127.0.0.1:8790/web/presentation/) · [Fireline](http://127.0.0.1:8790/web/demo/) · [QSVR walkthrough](http://127.0.0.1:8790/web/demo/lab.html). Viewing uses committed assets and Bun. The [current clean-tree check](docs/data/current_view_portability.json) verifies slides, context and game controls with external requests blocked, separately from scientific reproduction.
+[Presentation](http://127.0.0.1:8790/web/presentation/) · [Fireline](http://127.0.0.1:8790/web/demo/). Viewing uses committed assets and Bun. The [latest clean-tree verification](docs/data/fireline_canvas_verification.json) verifies slides, context and game controls with external requests blocked, separately from scientific reproduction.
 
 ## Reproduce the result
 
@@ -65,6 +67,10 @@ Use Python **3.12** and [uv](https://docs.astral.sh/uv/). Versions are locked: Q
 uv sync --locked --group data --group analysis --group quantum
 uv run --no-sync python scripts/pipeline.py annual collect --output .cache/wildfire/annual-public --execute
 ```
+
+The later scientific critique replays separately with `uv run --no-sync python scripts/collect_critique.py`: eleven saved prediction panels, 99 cached-choice diagnostics and eight matrix-repair diagnostics, without fits, new measurements or timing reruns.
+
+Offline collection checks scientific code, plans, learned states, matrices and predictions. Later dependency-manifest changes are disclosed rather than blocking arithmetic replay; training/evaluation still enforce their original complete environment guards.
 
 The 267 kB public bundle reproduces **83 predictions and 24 matrix pairs** without raw data, credentials, fitting or quantum execution. Use a new output directory. Preview by omitting `--execute`. For fresh training-only reproduction, use the fixed plans and commands in [reproduction](docs/REPRODUCIBILITY.md); some preparation stages require ignored source files. The simulator is analytic, with no physical shots; selector sensitivity seeds are 7/19/31.
 

@@ -1,5 +1,7 @@
 # Ontario annual wildfire regression
 
+**Scientific review update:** [The critique response](CRITIQUE_RESPONSE.md) quantifies saved year/fold and tuning-weight sensitivity, exact classical enumeration and measured-kernel spectral changes. The main comparison below stays frozen. Later hardware/tuning is diagnostic evidence with reused development, classical postprocessing and no causal device-ranking or advantage claim.
+
 Development and frozen reused-year findings · October 5, 2026 · Qiskit Fall Fest open challenge. Scientific deliverables were published before **5 PM Toronto**; the deadline review is closed. Models use **1988–2018 training** and **2019–2024 reused evaluation**.
 
 **No main climate model beats the training-mean baseline on the six reused years.** Four-input QSVR beats matched RBF there, but both miss the large annual swings; ten-qubit predictions are nearly constant. RBF leads chronological development. Quantum feature selection supplies no consistent benefit across predictors. The contribution is an audited macro dataset and a reproducible negative comparison, not demonstrated forecasting skill or quantum advantage.

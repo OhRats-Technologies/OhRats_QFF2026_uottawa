@@ -51,6 +51,7 @@ def collect_bundle(root, output):
     (output / 'audit.json').write_text(json.dumps(receipt, indent=2) + '\n')
     return dict(prediction_records_checked=receipt['prediction_records_checked'],
                 kernel_records_checked=receipt['kernel_records_checked'],
+                replay_provenance=receipt.get('replay_provenance', {}),
                 predictor_fits=0, new_quantum_states=0)
 
 

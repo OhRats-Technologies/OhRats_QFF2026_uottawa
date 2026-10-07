@@ -1,0 +1,328 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-07T00:58:08.221Z",
+  "numerical": {
+    "tests": 8,
+    "assertions": 849,
+    "ZZ_amplitude_tolerance": 1e-10,
+    "fidelity_tolerance": 1e-10,
+    "SVR_max_allowed_difference_ha": 0.1,
+    "QAOA_XY_amplitude_tolerance": 1e-10
+  },
+  "browser": {
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 41,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 1280,
+        "height": 640,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 32,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 41,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 14,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "height": 568,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 14,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 844,
+        "height": 390,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 14,
+        "overflow": 0,
+        "errors": []
+      }
+    ]
+  },
+  "interaction": {
+    "dragRouting": true,
+    "keyboardPatch": true,
+    "tenInputRun": true,
+    "previousBuildRestore": true,
+    "optInMusicMute": true,
+    "simulatedVisibilitySuspendResume": true,
+    "touchPatch": true,
+    "corruptAndBlockedStorage": true,
+    "music": {
+      "peak": 0.04805740341544151,
+      "rms": 0.006520790141283704,
+      "seconds": 8
+    },
+    "errors": []
+  },
+  "scope": "Canvas browser teaching sandbox on inspected development data. No scientific promotion, hardware or research-file changes.",
+  "review": [
+    "Menu/art hierarchy",
+    "Build bank and capacity replacement",
+    "Live encoding/kernel response",
+    "QAOA/SQD candidates and sampled diagonal",
+    "Observed/model/mean/previous chart legend",
+    "Run/repair/restore affordances",
+    "Portrait, short desktop and landscape layout",
+    "Minimal copy; help only on request"
+  ],
+  "source_sha256": {
+    "web/demo/canvas/session.js": "20c7fd266431b2d127eceb1b358d1c7e0c80b4ce25675c0fde6e93d834e049a3",
+    "web/demo/canvas/paint.js": "a93f259f0af51d29b64e75b3e38941915cbc91993be339bda960ae09879a022b",
+    "web/demo/canvas/mechanics.test.js": "d89c36d3dcdc72b6ec78cf51833ee555e2554180a2f8337be45756356581587b",
+    "web/demo/canvas/rack.js": "765421b25bf57a080bf1a7f6f39b02af9ae60b292cf76d210fb1630c5ee6e461",
+    "web/demo/canvas/preview.js": "b5b6fff1fad860f3e46cfd64a31a93523a95c5f1203301f517abde13440b7241",
+    "web/demo/canvas/kernel.js": "9823db883b291af7310c55cd01ddbeee2f8f3fc7830525ceb585efeaa86ac155",
+    "web/demo/canvas/svr.js": "62897492641f03e56293cb1d35b0a285227d43dac45e36896a647313decd660a",
+    "web/demo/canvas/main.js": "f9afb4c8d4cab3e34a972eee2ed49527e79615fdf0534dedb50ebe96a8f66c9b",
+    "web/demo/canvas/accessibility.js": "b4b9869c4f4034d4d6bd01ef83216cbdfe5f5918237c874309edd7e99a8c1f4f",
+    "web/demo/canvas/audio.js": "400354810996ab93ccba74ee6d49416bc3093a9530edcd17dd20fa7646174222",
+    "web/demo/canvas/chrome.js": "b6b9256e374288c77999b049624b81538b340ecfec7506b715b14c87093ad27d",
+    "web/demo/canvas/foundry.js": "e238e2d1f0d3afd33fc465495087001278307f46447b8e833b2bdaf08a1ab567",
+    "web/demo/canvas/overlays.js": "b852d6a180d3cf88a13598459b61e13d738abb89d6e583335990f53ad1b42eb0",
+    "web/demo/canvas/engine.js": "6ec797e3110e619be0bfa2133145a0e6cd3f493f48bd3fbd1f50445c4d552a74",
+    "web/demo/canvas/instruments.js": "f12caea710fd3d7188b633fa9f76c48787c79a84ce12061e2bc329820b655b17",
+    "web/demo/canvas/workbench.js": "33ba4f8e55bb1ce5a102cacfb08a340a953326f2d211032071f677b07ed61281",
+    "web/demo/canvas/engine.test.js": "6114d5fc63c2f17e636c5bcf880695814f572f0d21e5f6cd4c7a6b524b8eb63a",
+    "web/demo/canvas/input.js": "8296127fff5f8f6453d3b549648b656bd7e82936d75dd336169accf6c5f89f03",
+    "web/demo/canvas/assets.js": "ddb05a77caf323a77936633b3bcc8cf7a7569d8815bf7be17ce70dd1cfab56d4"
+  },
+  "human_playtest": false,
+  "tracked_export": {
+    "commit": "0c65d070ddf8ecab9ae4791cd9013076ad9df139",
+    "cleanTrackedTree": true,
+    "noProjectInstall": true,
+    "noIgnoredInputs": true,
+    "bunVersion": "1.4.2",
+    "slides": [
+      "question",
+      "data",
+      "selection",
+      "development",
+      "evaluation",
+      "geometry",
+      "conclusions",
+      "encoding",
+      "resources"
+    ],
+    "sections": [],
+    "contextLayers": [
+      "cover",
+      "canopy",
+      "lorey",
+      "recovery",
+      "water",
+      "fuel",
+      "height",
+      "height-change"
+    ],
+    "heightEpochs": [
+      1985,
+      1990,
+      1995,
+      2000,
+      2005,
+      2010,
+      2015
+    ],
+    "downloads": [
+      {
+        "name": "ontario-wildfire.pdf",
+        "bytes": 1038182,
+        "sha256": "e8fa02088b7853459c998cee044c25036774202435338d39196a670102ae293e",
+        "contentType": "application/pdf"
+      },
+      {
+        "name": "ontario-wildfire.pptx",
+        "bytes": 588651,
+        "sha256": "4b2a0a42cc50c689f9dbe3ea41d2be2b5767c4e7b4456bdc0c359f275d805bfd",
+        "contentType": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+      }
+    ],
+    "deniedRoutes": [
+      {
+        "route": "/web/demo/lab.html",
+        "status": 404
+      },
+      {
+        "route": "/.env",
+        "status": 404
+      },
+      {
+        "route": "/.git/config",
+        "status": 404
+      },
+      {
+        "route": "/.cache/context/run.json",
+        "status": 404
+      },
+      {
+        "route": "/web/demo/../../.env",
+        "status": 404
+      }
+    ],
+    "measuredYieldPoints": 12,
+    "gameControls": {
+      "completeCoverLegend": {
+        "groups": 13,
+        "gameSaveUnchanged": true
+      },
+      "advanceFromIncidentFocus": true,
+      "responseLedger": true,
+      "channelEffect": {
+        "before": 0.863,
+        "after": 0.987,
+        "gameMovesUnchanged": true
+      },
+      "optInAudioAndMute": true,
+      "mobileLedger": true,
+      "consoleRoundTrip": {
+        "destination": "index.html",
+        "movesSelectionEquipmentPreserved": true,
+        "responseReadouts": {
+          "front-number": "2 / 12",
+          "integrity": "98",
+          "supplies": "16",
+          "crews": "2/2",
+          "contained": "0"
+        },
+        "continuesAtMap": true
+      }
+    },
+    "canvasInteractions": {
+      "dragRouting": true,
+      "keyboardPatch": true,
+      "tenInputRun": true,
+      "previousBuildRestore": true,
+      "optInMusicMute": true,
+      "simulatedVisibilitySuspendResume": true,
+      "touchPatch": true,
+      "corruptAndBlockedStorage": true,
+      "music": {
+        "peak": 0.04805740341544151,
+        "rms": 0.006520790141283704,
+        "seconds": 8
+      },
+      "errors": []
+    },
+    "canvasGame": {
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 900,
+          "attempts": 2,
+          "mae": 69.9255930382353,
+          "focused": "menu",
+          "controls": 41,
+          "overflow": 0,
+          "errors": []
+        },
+        {
+          "width": 1280,
+          "height": 640,
+          "attempts": 2,
+          "mae": 69.9255930382353,
+          "focused": "menu",
+          "controls": 32,
+          "overflow": 0,
+          "errors": []
+        },
+        {
+          "width": 1920,
+          "height": 1080,
+          "attempts": 2,
+          "mae": 69.9255930382353,
+          "focused": "menu",
+          "controls": 41,
+          "overflow": 0,
+          "errors": []
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "attempts": 2,
+          "mae": 69.9255930382353,
+          "focused": "menu",
+          "controls": 14,
+          "overflow": 0,
+          "errors": []
+        },
+        {
+          "width": 320,
+          "height": 568,
+          "attempts": 2,
+          "mae": 69.9255930382353,
+          "focused": "menu",
+          "controls": 14,
+          "overflow": 0,
+          "errors": []
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "attempts": 2,
+          "mae": 69.9255930382353,
+          "focused": "menu",
+          "controls": 14,
+          "overflow": 0,
+          "errors": []
+        }
+      ]
+    },
+    "blockedExternalHosts": [
+      "fonts.googleapis.com"
+    ],
+    "failedLocal": [],
+    "errors": [],
+    "scope": "Clean tracked-file viewing on this Mac with installed Bun and isolated authoring browser tooling; not a remote clone, public-access audit, fresh scientific run or physical GPU-loss test.",
+    "isolatedServerStopped": true,
+    "status": "passed",
+    "checked_utc": "2026-10-07T00:58:08.221Z",
+    "archive_sha256": "e1ab01ac3afd216fab0e3f496bdec3de298d51a7280d3fc1a6e37808c9680a43",
+    "verificationSources": {
+      "portable-check.mjs": "6b79686aacf829e70b6ca30f21a8f4cfb163a18c6d588291e6de73e085e020a0",
+      "portable-game.mjs": "d3026a175066738821d86dc758ef937b7ec65942ed32df045566d97406d0c9e3"
+    },
+    "scientific_predictor_fits": 0,
+    "browser_sandbox_fitting": true,
+    "python_qiskit_circuit_executions": 0,
+    "browser_ideal_quantum_calculations": true,
+    "hardware_jobs": 0,
+    "artifact_regenerations": 0,
+    "browser_toy_arithmetic": true
+  }
+}

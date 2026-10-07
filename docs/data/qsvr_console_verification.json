@@ -1,0 +1,264 @@
+{
+  "screens": 6,
+  "uiReview": {
+    "viewports": [
+      [
+        1280,
+        600
+      ],
+      [
+        1024,
+        768
+      ],
+      [
+        820,
+        600
+      ],
+      [
+        768,
+        1024
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        320,
+        640
+      ]
+    ],
+    "correctIntercept": true,
+    "honestPreset": true,
+    "keyboardFocus": true,
+    "innerScrollReset": true
+  },
+  "viewportFilling": true,
+  "removedLabReturns404": true,
+  "blocks": 3,
+  "predictions": 120,
+  "blockResults": [
+    "QSVR 71.4RBF 33.5MEAN 106.3",
+    "QSVR 93.4RBF 116.3MEAN 127.1",
+    "QSVR 81.6RBF 81MEAN 42.6"
+  ],
+  "geometryInspections": 10,
+  "keyboard": true,
+  "mobile": true,
+  "persistence": true,
+  "directLockedModelResume": true,
+  "latestStepPreserved": true,
+  "progressiveComparisonChart": true,
+  "conciseScreenCopy": true,
+  "noStorageOrCanvas": true,
+  "noFits": true,
+  "noQpu": true,
+  "errors": [],
+  "failed": [],
+  "status": "passed",
+  "scope": "Browser emulation against public assets; numerical replay and tracked-file portability.",
+  "title": "FIRELINE",
+  "status_strip_removed": true,
+  "block_selection_location": "Chapters",
+  "source_commit": "780b2a89022268045f343db6a518b9416ce7cd5a",
+  "sources_sha256": {
+    "web/demo/console/analysis.css": "80eec1b2889c47eac5264983933696b02713c4c636a6a6b1b886ea2e651efc9a",
+    "web/demo/console/app.js": "e51763bcb5207d46c376fe43baab54f2e73a7734ee804b24a0e872d6c2ec1e0c",
+    "web/demo/console/browser-check.mjs": "185ccfe548a72da2f5004aa5dcccbb10d40f4838c2a1c5bf315b318895a3afc5",
+    "web/demo/console/chassis.css": "20d85365274ee105eab186876f427bd3303120b4f0c94803b546667389c13d20",
+    "web/demo/console/check.mjs": "b56f39ea607dd85f38c75c5610d1e712e84801dced71041c65b11313a98e4b70",
+    "web/demo/console/dialogs.css": "87b9bbbd15e7d36a47b4f80548e1bb8776da2970bcfd1c3ddc61028813fe8d24",
+    "web/demo/console/evidence.json": "7cc5ce4f80da84bb995d7d86f8a8f59910d99ee8e41cbcde86b63a0058bc7001",
+    "web/demo/console/forest.js": "c2d8ad014795b0d7edf72bf92648a6bf402b245a8a5ce1360aa9613206cd2c0c",
+    "web/demo/console/graphics.js": "30ab4a7555812da55efa567bddfa141989cc94411d01e9754caba08cda753e20",
+    "web/demo/console/instruments.css": "56bfca48a85fa77916954914e1c5f66db538c798c33355c199d45fc02a9ec4c2",
+    "web/demo/console/layout.css": "95c483a237f3552533d2be4c77080758d4ada1c83de0649b9de0476d47194e49",
+    "web/demo/console/mobile.css": "a713a31db941262ab7fa3dd12cf9d5e4085da923feb7179662ee5eec156f6f7d",
+    "web/demo/console/ontario.svg": "86ef0ec6eee3b313b8929b6fce2e425188857ad6c4d0228bd5c0c2ffb07f054a",
+    "web/demo/console/panels.css": "f1bcd0e0ff58e0f2ec57ef4ee9ba4e2b0a606317110d75f0679004465209ae1f",
+    "web/demo/console/patchbay.css": "a7cf2b52545c91540dc34f6f2eb30c0481c2d349b11a427058dddeaf0af841f2",
+    "web/demo/console/results-chart.js": "e9f93896d97337b74115e0ded2cc3e7249a305f6d3290166ad1ded2edfa3dcf1",
+    "web/demo/console/results.css": "e25438eed849b18a7f9d0237e718031b0b6db7ab6323d84cc088696252579325",
+    "web/demo/console/screens.js": "cead96625d3558b63336bfaa90e24b1a7df11a009c38787bca223eaf2a6e3722",
+    "web/demo/console/state.js": "cce30de83362274550b5cff27658dfb3404ca1cc949e20c28c69fa1cf62f2802",
+    "web/demo/console/tablet.css": "ced4ab46c53d900b71985e32d25be9c538cc4d5d62a67f91499fda23ecf6f87c",
+    "web/demo/console/ui-check.mjs": "005b65d21e4c17a5eaf6be6f799975fbb7ef31a86fe70a270e30556ffc55be80"
+  },
+  "clean_tracked_viewer": {
+    "commit": "780b2a89022268045f343db6a518b9416ce7cd5a",
+    "cleanTrackedTree": true,
+    "noProjectInstall": true,
+    "noIgnoredInputs": true,
+    "bunVersion": "1.4.2",
+    "slides": [
+      "question",
+      "data",
+      "selection",
+      "development",
+      "evaluation",
+      "geometry",
+      "conclusions",
+      "encoding",
+      "resources"
+    ],
+    "sections": [],
+    "contextLayers": [
+      "cover",
+      "canopy",
+      "lorey",
+      "recovery",
+      "water",
+      "fuel",
+      "height",
+      "height-change"
+    ],
+    "heightEpochs": [
+      1985,
+      1990,
+      1995,
+      2000,
+      2005,
+      2010,
+      2015
+    ],
+    "downloads": [
+      {
+        "name": "ontario-wildfire.pdf",
+        "bytes": 1038182,
+        "sha256": "e8fa02088b7853459c998cee044c25036774202435338d39196a670102ae293e",
+        "contentType": "application/pdf"
+      },
+      {
+        "name": "ontario-wildfire.pptx",
+        "bytes": 588651,
+        "sha256": "4b2a0a42cc50c689f9dbe3ea41d2be2b5767c4e7b4456bdc0c359f275d805bfd",
+        "contentType": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+      }
+    ],
+    "deniedRoutes": [
+      {
+        "route": "/web/demo/lab.html",
+        "status": 404
+      },
+      {
+        "route": "/.env",
+        "status": 404
+      },
+      {
+        "route": "/.git/config",
+        "status": 404
+      },
+      {
+        "route": "/.cache/context/run.json",
+        "status": 404
+      },
+      {
+        "route": "/web/demo/../../.env",
+        "status": 404
+      }
+    ],
+    "measuredYieldPoints": 12,
+    "gameControls": {
+      "completeCoverLegend": {
+        "groups": 13,
+        "gameSaveUnchanged": true
+      },
+      "advanceFromIncidentFocus": true,
+      "responseLedger": true,
+      "channelEffect": {
+        "before": 0.863,
+        "after": 0.987,
+        "gameMovesUnchanged": true
+      },
+      "optInAudioAndMute": true,
+      "mobileLedger": true,
+      "consoleRoundTrip": {
+        "destination": "index.html",
+        "movesSelectionEquipmentPreserved": true,
+        "responseReadouts": {
+          "front-number": "2 / 12",
+          "integrity": "98",
+          "supplies": "16",
+          "crews": "2/2",
+          "contained": "0"
+        },
+        "continuesAtMap": true
+      }
+    },
+    "modelConsole": {
+      "screens": 6,
+      "uiReview": {
+        "viewports": [
+          [
+            1280,
+            600
+          ],
+          [
+            1024,
+            768
+          ],
+          [
+            820,
+            600
+          ],
+          [
+            768,
+            1024
+          ],
+          [
+            390,
+            844
+          ],
+          [
+            320,
+            640
+          ]
+        ],
+        "correctIntercept": true,
+        "honestPreset": true,
+        "keyboardFocus": true,
+        "innerScrollReset": true
+      },
+      "viewportFilling": true,
+      "removedLabReturns404": true,
+      "blocks": 3,
+      "predictions": 120,
+      "blockResults": [
+        "QSVR 71.4RBF 33.5MEAN 106.3",
+        "QSVR 93.4RBF 116.3MEAN 127.1",
+        "QSVR 81.6RBF 81MEAN 42.6"
+      ],
+      "geometryInspections": 10,
+      "keyboard": true,
+      "mobile": true,
+      "persistence": true,
+      "directLockedModelResume": true,
+      "latestStepPreserved": true,
+      "progressiveComparisonChart": true,
+      "conciseScreenCopy": true,
+      "noStorageOrCanvas": true,
+      "noFits": true,
+      "noQpu": true,
+      "errors": [],
+      "failed": []
+    },
+    "blockedExternalHosts": [
+      "fonts.googleapis.com"
+    ],
+    "failedLocal": [],
+    "errors": [],
+    "scope": "Clean tracked-file viewing on this Mac with installed Bun and isolated authoring browser tooling; not a remote clone, public-access audit, fresh scientific run or physical GPU-loss test.",
+    "isolatedServerStopped": true,
+    "status": "passed",
+    "checked_utc": "2026-10-07T00:14:09.727Z",
+    "archive_sha256": "7220d42ffe87b451351f2d74c8af52024d511fc4d3cad5563fac937d99822c78",
+    "verificationSources": {
+      "portable-check.mjs": "2e663894c43e564311b84ac12ae49b01663ca94e8c08966bf6f091a15391e380",
+      "portable-game.mjs": "c658a15c9ccaaafab72996325e5168863978359023e02a70b7dd11bb1c2ee17d"
+    },
+    "predictor_fits": 0,
+    "qiskit_circuit_executions": 0,
+    "hardware_jobs": 0,
+    "artifact_regenerations": 0,
+    "browser_toy_arithmetic": true
+  }
+}

@@ -8,6 +8,7 @@ from sklearn.metrics.pairwise import rbf_kernel
 
 from wildfire_lab.annual_data import digest
 from wildfire_lab.annual_final_protocol import current_code
+from wildfire_lab.annual_replay_provenance import check_replay_code
 
 
 def read(path):
@@ -48,8 +49,9 @@ def gram_diagnostic(entry, gram, cross):
 
 def collect(root, run, plan_path):
     plan, receipt = read(plan_path), read(run / 'training_receipt.json')
-    if digest(plan_path) != receipt['plan_sha256'] or current_code(root) != receipt['code_sha256']:
-        raise ValueError('Final code/plan changed after frozen training')
+    if digest(plan_path) != receipt['plan_sha256']:
+        raise ValueError('Final plan changed after frozen training')
+    provenance = check_replay_code(current_code(root), receipt['code_sha256'])
     if digest(run / 'training.json') != receipt['training_sha256']:
         raise ValueError('Frozen learned states changed')
     training, outcome = read(run / 'training.json'), read(run / 'evaluation/outcome.json')
@@ -133,4 +135,4 @@ def collect(root, run, plan_path):
                 prediction_records_checked=checked, inner_candidates_checked=tuning_records,
                 kernel_records_checked=len(diagnostics), kernel_diagnostics=diagnostics,
                 collection_predictor_fits=0, new_quantum_states=0, hardware_jobs=0,
-                reused_evaluation_years=True)
+                reused_evaluation_years=True, replay_provenance=provenance)

@@ -1,0 +1,58 @@
+export const lessons = [
+  {
+    tab: "MISSION",
+    title: "I'm Betty. Here's your workshop.",
+    kind: "mission",
+    text: "Ontario's fire seasons are hard to read. We'll build an engine from weather and forest signals, test it, then repair it together.",
+    tip: "Three seasons. Beat your first build, not a perfect score.",
+  },
+  {
+    tab: "SIGNALS",
+    title: "Pick what your engine sees.",
+    kind: "signals",
+    text: "A signal is one input: summer heat, rainfall or forest cover. Each row describes one Ontario year. Our target is average reported hectares per fire.",
+    tip: "Start with a few signals. More inputs also cost more work.",
+  },
+  {
+    tab: "ANGLE",
+    title: "Numbers become rotations.",
+    kind: "angle",
+    text: "We scale each signal and turn it into circuit angles. The circuit makes a quantum state; state overlap measures how alike two years look. Change the angle range to change those similarities.",
+    tip: "Try the range switch. A wider range isn't always better.",
+  },
+  {
+    tab: "C",
+    title: "How hard should we fit?",
+    kind: "strength",
+    text: "C sets how strongly the classical SVR penalizes errors outside its tolerance band. Higher C pushes harder to fit training rows; lower C favors a simpler fit. Neither guarantees better unseen-year estimates.",
+    tip: "Try both settings. Compare errors after a real run.",
+  },
+  {
+    tab: "EPSILON",
+    title: "Give small errors some room.",
+    kind: "epsilon",
+    text: "Epsilon is the width of SVR's no-penalty band. Errors inside it incur no fitting penalty. A wider band tolerates more deviations; a narrower one asks the model to follow them more closely.",
+    tip: "This band uses scaled log targets, not raw hectares.",
+  },
+  {
+    tab: "QAOA",
+    title: "Search for a signal subset.",
+    kind: "qaoa",
+    text: "QAOA means Quantum Approximate Optimization Algorithm. It alternates cost and mixing operations to reshape sampling probabilities. Classical tuning normally adjusts its angles. Our foundry uses a fixed circuit to sample four-signal candidates.",
+    tip: "It's a sampler, not a promise of the best prediction.",
+  },
+  {
+    tab: "SQD",
+    title: "Sort the samples into a shortlist.",
+    kind: "sqd",
+    text: "Sample-based Quantum Diagonalization solves a smaller Hamiltonian matrix built from sampled basis states. Our subset Hamiltonian is diagonal: SQD simply keeps the lowest-cost sampled subset. It can't add a candidate that wasn't sampled.",
+    tip: "Selection cost ranks subsets. Only a model run tests prediction.",
+  },
+  {
+    tab: "PLAY",
+    title: "Your first build sets the challenge.",
+    kind: "repair",
+    text: "Run once to set your baseline. Change signals or settings and run again. Clear a season by cutting error by 5%, or by cutting effort by 25% while keeping error within 5% of your first build.",
+    tip: "The ? guide stays with you. Previous Build restores your last engine.",
+  },
+];

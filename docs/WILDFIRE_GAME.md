@@ -1,6 +1,6 @@
 # Fireline: Ontario wildfire strategy
 
-A playable twelve-front strategy prototype: respond to fires on the full Ontario map, ration crews and supplies, and build a seeded response loadout. The reflex runner is removed. [Play](../web/demo/index.html) · [Explore the separate QSVR evidence](../web/demo/lab.html).
+Historical design and results for the removed twelve-front strategy prototype. Its route, implementation and dedicated checks are deleted. The current game is [canvas Fireline](FIRELINE_CANVAS.md); the measurements below describe the earlier snapshot.
 
 **Historical positions and dated forest imagery provide context. Weather, pressure, fuel, exposure and suppression are fictional game quantities. Neither game score nor instrument fidelity measures forecast skill or quantum advantage.**
 

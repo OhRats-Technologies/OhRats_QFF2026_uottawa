@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-10-06T20:39:42.806460+00:00",
+  "backends": {
+    "marrakesh": {
+      "name": "ibm_marrakesh",
+      "processor_type": {
+        "family": "Heron",
+        "revision": "2"
+      },
+      "num_qubits": 156
+    },
+    "quebec": {
+      "name": "ibm_quebec",
+      "processor_type": {
+        "family": "Heron",
+        "revision": "2"
+      },
+      "num_qubits": 156
+    }
+  }
+}

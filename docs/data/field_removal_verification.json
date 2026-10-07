@@ -1,0 +1,162 @@
+{
+  "commit": "57a1f802327feac2eabef95565ff52efcfcf4046",
+  "cleanTrackedTree": true,
+  "noProjectInstall": true,
+  "noIgnoredInputs": true,
+  "bunVersion": "1.4.2",
+  "slides": [
+    "question",
+    "data",
+    "selection",
+    "development",
+    "evaluation",
+    "geometry",
+    "conclusions",
+    "encoding",
+    "resources"
+  ],
+  "downloads": [
+    {
+      "name": "ontario-wildfire.pdf",
+      "bytes": 1038182,
+      "sha256": "e8fa02088b7853459c998cee044c25036774202435338d39196a670102ae293e",
+      "contentType": "application/pdf"
+    },
+    {
+      "name": "ontario-wildfire.pptx",
+      "bytes": 588651,
+      "sha256": "4b2a0a42cc50c689f9dbe3ea41d2be2b5767c4e7b4456bdc0c359f275d805bfd",
+      "contentType": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    }
+  ],
+  "deniedRoutes": [
+    {
+      "route": "/web/demo/lab.html",
+      "status": 404
+    },
+    {
+      "route": "/web/demo/field.html",
+      "status": 404
+    },
+    {
+      "route": "/web/demo/assets/strategy.js",
+      "status": 404
+    },
+    {
+      "route": "/.env",
+      "status": 404
+    },
+    {
+      "route": "/.git/config",
+      "status": 404
+    },
+    {
+      "route": "/.cache/context/run.json",
+      "status": 404
+    },
+    {
+      "route": "/web/demo/../../.env",
+      "status": 404
+    }
+  ],
+  "measuredYieldPoints": 12,
+  "canvasInteractions": {
+    "dragRouting": true,
+    "keyboardPatch": true,
+    "tenInputRun": true,
+    "previousBuildRestore": true,
+    "optInMusicMute": true,
+    "simulatedVisibilitySuspendResume": true,
+    "touchPatch": true,
+    "corruptAndBlockedStorage": true,
+    "music": {
+      "peak": 0.04805740714073181,
+      "rms": 0.006520790138593976,
+      "seconds": 8
+    },
+    "errors": []
+  },
+  "canvasGame": {
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 41,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 1280,
+        "height": 640,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 32,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 41,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 14,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "height": 568,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 14,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 844,
+        "height": 390,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 14,
+        "overflow": 0,
+        "errors": []
+      }
+    ]
+  },
+  "blockedExternalHosts": [],
+  "failedLocal": [],
+  "errors": [],
+  "scope": "Clean tracked-file viewing on this Mac with installed Bun and isolated authoring browser tooling; not a remote clone, public-access audit, fresh scientific run or physical GPU-loss test.",
+  "isolatedServerStopped": true,
+  "status": "passed",
+  "checked_utc": "2026-10-07T01:06:37.051Z",
+  "archive_sha256": "fdd77f0075b3d187e5edd1c2018200106db588a2c2bdb86bfb9e935b9a95ff67",
+  "verificationSources": {
+    "portable-check.mjs": "588baf828b6ddceb21e0bc112fd7f7924f2399e16653b5b67e706ea267db37e9"
+  },
+  "scientific_predictor_fits": 0,
+  "browser_sandbox_fitting": true,
+  "python_qiskit_circuit_executions": 0,
+  "browser_ideal_quantum_calculations": true,
+  "hardware_jobs": 0,
+  "artifact_regenerations": 0,
+  "browser_toy_arithmetic": true,
+  "change": "Removed obsolete field strategy route, dedicated engine/bundle/dependencies and navigation; preserved current canvas game and shared context/scientific assets."
+}

@@ -5,6 +5,9 @@ const evidence = await fetch("evidence.json").then((response) => {
     throw new Error("Frozen evidence could not be loaded");
   return response.json();
 });
+const sweepResponse = await fetch("assets/shot-sweep.json");
+if (!sweepResponse.ok) throw new Error("Saved shot-sweep evidence could not be loaded");
+evidence.shot_sweep = await sweepResponse.json();
 const slides = makeSlides(evidence);
 const deck = document.querySelector("#deck");
 deck.innerHTML = slides.map((s, i) => `<section class="slide ${i === 0 ? "cover" : ""}" id="${s.id}" data-index="${i}" aria-label="${s.title}" hidden>${s.html}</section>`).join("");
