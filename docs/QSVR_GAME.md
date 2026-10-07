@@ -44,7 +44,7 @@ bun run web/presentation/serve.ts
 bun web/demo/console/check.mjs
 ```
 
-Open `/web/demo/`. No credentials, Python, fitting or QPU jobs are needed to play. The original fictional field strategy is retained at `/web/demo/field.html`. The obsolete model-lab walkthrough and its dedicated implementation have been deleted at the owner’s request.
+Open `/web/demo/`. No credentials, Python, fitting or QPU jobs are needed to play. The original fictional field strategy (`field.html`) and the console's `check.mjs` have since been deleted at the owner’s request, as has the obsolete model-lab walkthrough; the current check is `bun test web/demo/canvas/*.test.js`.
 
 `console/check.mjs` verifies all 120 coefficient reconstructions, progressive MAE, lock/reveal invariants and corrupt-save handling. `console/browser-check.mjs` checks six screens, three rounds, matrix inspections, keyboard/mobile interactions, reload persistence, opt-in sound and storage/canvas fallback using optional Playwright authoring tools. `web/presentation/portable-check.mjs` verifies the complete viewer from a tracked-file export. The latest receipt and contact sheet are `docs/data/qsvr_console_verification.json` and `docs/figures/qsvr-console.png`.
 

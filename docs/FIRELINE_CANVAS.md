@@ -38,7 +38,7 @@ Visual assets and the composed opt-in music theme are documented in [ASSETS.md](
 | --- | --- |
 | Fully canvas visible UI | One canvas paints menus, controls, panels, instruments and notes. HTML contains only the canvas and hidden accessibility semantics. |
 | Executable construction | Arbitrary 2/4/6/10-input builds execute; current matrices change on edits. Width/angle/C/epsilon are independent controls. |
-| Meaningful challenge | Accuracy/effort contracts, three chronological seasons, previous-build restore and ghost comparison. Mechanic tests find at least two useful repairs in each season. No compulsory puzzle, reflex runner or timer. |
+| Meaningful challenge | Accuracy/effort contracts, three chronological development seasons plus a fourth reused-year teaching season (see below), previous-build restore and ghost comparison. Mechanic tests find at least two useful repairs in each season. No compulsory puzzle, reflex runner or timer. |
 | Correct quantum teaching | Qiskit amplitude/Gram goldens; sklearn SVR controls across all widths; independent Qiskit XY-mixer comparison. Diagonal SQD chooses an observed candidate. |
 | Visual identity and assets | Original forest environment, code-native metal/CRT/cable details, actual full Ontario raster, computed matrices and reduced Bloch vector. |
 | Music | Original opt-in Ember Relay theme; patch/run/win cues, mute and hidden-page suspension. Offline render is audible and unclipped. |

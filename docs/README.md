@@ -18,7 +18,7 @@ This project investigates whether quantum machine learning—specifically Quantu
 
 ## Curated Reading Pathways
 
-With 50 detailed technical documents in this directory, choose your reading pathway below based on your role and interest:
+With 51 detailed technical documents in this directory, choose your reading pathway below based on your role and interest:
 
 ```mermaid
 flowchart TD
@@ -39,7 +39,7 @@ flowchart TD
 
 ## Master Thematic Document Directory
 
-All 50 documentation files in this folder are organized into seven logical categories below:
+All 51 documentation files in this folder are organized into seven logical categories below:
 
 ### 1. Core Reports and Official Submission Gateways
 *Start here to understand the core research question, experimental methodology, and final results.*
@@ -100,7 +100,7 @@ All 50 documentation files in this folder are organized into seven logical categ
 | Document | Description |
 | :--- | :--- |
 | **[`QSVR_QEC_ERROR_STUDY.md`](QSVR_QEC_ERROR_STUDY.md)** | **Deep 50KB technical monograph** on QSVR mathematics, hardware noise channels, Pauli twirling, and error mitigation theory. |
-| **[`QSVR with Qiskit Literature and Performance Guide.md`](QSVR%20with%20Qiskit%20Literature%20and%20Performance%20Guide.md)** | Comprehensive literature review and performance guide for implementing QSVR in Qiskit. |
+| **[`QSVR with Qiskit Literature and Performance Guide.md`](<QSVR with Qiskit Literature and Performance Guide.md>)** | Comprehensive literature review and performance guide for implementing QSVR in Qiskit. |
 | **[`PIPELINE_MITIGATION.md`](PIPELINE_MITIGATION.md)** | Specification of pipeline error-mitigation techniques (DD, twirling, readout calibration, PSD/rank repair). |
 | **[`PROXY_ALIGNMENT.md`](PROXY_ALIGNMENT.md)** | Empirical study evaluating whether minimizing QAOA QUBO energy aligns with lower regression error. |
 | **[`ANNUAL_BANDWIDTH_GEOMETRY.md`](ANNUAL_BANDWIDTH_GEOMETRY.md)** | Investigation of input encoding bandwidth ($\theta = a \tanh(z/2)$) and its impact on kernel conditioning and concentration. |
@@ -155,12 +155,12 @@ All 50 documentation files in this folder are organized into seven logical categ
 | Model | Width | Chronological Development MAE | Reused 2019–2024 Holdout MAE |
 | :--- | :---: | :---: | :---: |
 | **Training Mean Baseline** | 0 | 92.00 | **276.81** |
-| **Linear Year Trend** | 0 | 88.91 | 321.12 |
-| **Tuned Ridge Regression** | 10 | 81.21 | 305.42 |
+| **Linear Year Trend** | 0 | 88.91 | 286.58 |
+| **Tuned Ridge Regression** | 10 | 81.21 | 294.98 |
 | **Matched Classical RBF-SVR** | 4 | **77.02** | 299.81 |
 | **Matched Quantum QSVR** | 4 | 86.64 | 280.68 |
-| **Station Count Alone** *(Confounder Control)* | 1 | **83.08** | — |
-| **Calendar Trend Alone** *(Confounder Control)* | 1 | **88.61** | — |
+| **Station Count Alone, QSVR** *(Confounder Control)* | 1 | **83.08** | — |
+| **Calendar Trend Alone, QSVR** *(Confounder Control)* | 1 | **88.61** | — |
 | **Weather + Calendar Ridge** *(Confounder Control)* | 11 | **67.97** | — |
 
 *Takeaway:* While 4-input QSVR edges out RBF on the holdout, neither beats the simple training mean baseline. Station-coverage and calendar-only controls warrant checking whether weather gains reflect reporting or time effects; these errors do not establish causation.
@@ -209,7 +209,7 @@ uv run python scripts/collect_hardware_search.py tuned-kernel-hardware
 # 3. Replay scientific critique and sensitivity diagnostics
 uv run python scripts/collect_critique.py
 
-# 4. Run the entire unit test suite (214 tests in ~8 seconds)
+# 4. Run the entire unit test suite (224 tests in ~9 seconds)
 uv run python -m unittest discover -s tests -v
 
 # 5. Launch the local presentation and Fireline demo server

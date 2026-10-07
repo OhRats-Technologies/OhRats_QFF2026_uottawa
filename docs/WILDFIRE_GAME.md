@@ -45,7 +45,7 @@ The 66 spatially thinned game locations come from raw 2021 historical fire point
 
 Five additional official WMS windows show mean canopy height (2015), Lorey height (2015), recovery observed through 2017, water (2022) and fuel types (2026). Water is reprojected from its advertised Mercator service to the EPSG:3978 display. Styled colours remain visual context, not numerical predictors. Seven SCANFI height epochs, 1985–2015, use verified nearest 480 m samples and a fixed 0–30+ m display scale; source numbers are not clipped. Native SCANFI uses its own custom LCC, not the display CRS. Changing layers/epochs changes only the view. An optional 2015-minus-1985 height map shows offsetting estimated differences on a fixed ±10 m colour scale; it does not identify growth or fire effects.
 
-[Scenario provenance](../web/demo/assets/context/scenario.json) · [Layer manifest](../web/demo/assets/context/layers.json) · [Complete catalogue audit](FIRE_FEATURE_SPACE.md) · [Acquisition, CRS and height study](FOREST_CONTEXT.md).
+Scenario provenance (`scenario.json`, deleted with the field game in `73536ad`) · [Layer manifest](../web/demo/assets/context/layers.json) · [Complete catalogue audit](FIRE_FEATURE_SPACE.md) · [Acquisition, CRS and height study](FOREST_CONTEXT.md).
 
 ## Quantum instruments: accepted peer steers
 

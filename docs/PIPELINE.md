@@ -68,7 +68,7 @@ The output directory must not exist. Existing scientific outcomes, submission in
 | Experiment | `.cache/wildfire/experiments/<plan-hash>` and exclusive study namespaces | Frozen budgets, actual outcomes, provenance and preserved failures. |
 | Report | `docs/`, `web/presentation/` | Compact audited evidence and the five-minute findings plan. |
 
-Recipe/raw/config hashes define cache versions. Historical preparation now depends directly on `weather_preparation.py`, rather than CLI/status code. New provenance namespaces can contain identical tables; that is **not a predictive replication**. Old scored datasets and manifests remain intact. Preparation records the committed recipe and checks the final table hash.
+Recipe/raw/config hashes define cache versions. Historical preparation now depends directly on `wildfire_lab/weather_preparation.py`, rather than CLI/status code. New provenance namespaces can contain identical tables; that is **not a predictive replication**. Old scored datasets and manifests remain intact. Preparation records the committed recipe and checks the final table hash.
 
 The implemented incident target is reported size ≥10 ha **conditional on eligible recorded incidents**, not ignition or a complete census. Approximate coordinates are not snapped; annual classes are not tree density; monthly observations are not daily weather. Retrospective map processing and unknown publication latency limit forecasting claims. [Schema](DATA_SCHEMA.md) · [source assumptions](SOURCE_ASSUMPTIONS.md) · [label/geography audit](LABEL_QUALITY.md).
 
