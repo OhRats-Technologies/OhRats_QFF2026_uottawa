@@ -23,6 +23,7 @@ import { run } from "./engine.js";
 import { preview } from "./preview.js";
 import { automaticTests, currentResult } from "./auto-test.js";
 import { sampleCandidates } from "./foundry.js";
+import { contractLocked, choiceAction } from "./contract-lock.js";
 import { celebration } from "./celebrate.js";
 const canvas = document.querySelector("canvas"),
   ctx = canvas.getContext("2d"),
@@ -76,6 +77,7 @@ async function action(type, value) {
     if (auto.pending) status.textContent = "Evaluating the current build.";
     return;
   }
+  if (contractLocked(s) && choiceAction(type)) return;
   if (type === "start") {
     s.menu = false;
     if (!s.onboarded && !s.attempts) {
@@ -256,6 +258,7 @@ function draw(timestamp) {
   const dpr = Math.min(2, devicePixelRatio);
   ctx.setTransform(dpr * scale, 0, 0, dpr * scale, 0, 0);
   p.hits = [];
+  p.choiceLocked = !s.help && contractLocked(s);
   const time = reduce ? 0 : timestamp / 1000;
   tourReceipt = null;
   if (s.help && s.guideIntro) {

@@ -1,3 +1,4 @@
+import { choiceControl } from "./contract-lock.js";
 export const color = {
   ink: "#081b1c",
   panel: "#163637",
@@ -136,6 +137,7 @@ export class Paint {
     action,
     { active = false, disabled = false, tone = "normal" } = {},
   ) {
+    disabled ||= this.choiceLocked && choiceControl(id);
     const backward = /[◀←↔]/.test(label), forward = /[▶→↔]/.test(label);
     label = label.replace(/[◀←▶→↔]/g, "").trim();
     const focused = this.focus === id || this.hover === id;
