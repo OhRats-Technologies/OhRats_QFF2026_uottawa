@@ -6,7 +6,8 @@
 **Date:** October 6, 2026  
 **Time Horizon Analyzed:** 08:00 EDT (12:00 UTC) to 16:15 EDT (20:15 UTC)  
 **Repository:** [OhRats_QFF2026_uottawa](https://github.com/OhRats-Technologies/OhRats_QFF2026_uottawa)  
-**Status:** All authorized research tracks closed, verified, and replayable offline; 2019–2024 final holdout evidence strictly frozen and untouched.
+**Status:** All authorized research tracks closed, verified, and replayable offline; 2019–2024 final holdout evidence strictly frozen and untouched.  
+**Navigation:** [Documentation Index](README.md) · [Scientific Critique](SCIENTIFIC_CRITIQUE_20261006.md) · [Critique Response](CRITIQUE_RESPONSE.md)
 
 ---
 

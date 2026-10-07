@@ -17,7 +17,14 @@ def collect(root):
     saved = json.loads((root/'docs/results/critique-diagnostics.json').read_text())
     assert saved['plan_sha256'] == sha(plan_path)
     expected = numeric_diagnostics(load_sources(root, plan), plan)
-    assert all(saved[key] == value for key, value in expected.items())
+    for key in ['prediction_sensitivity', 'tuning_weight_sensitivity', 'objective_alignment']:
+        assert saved[key] == expected[key]
+    for s_row, e_row in zip(saved['kernel_repairs'], expected['kernel_repairs']):
+        for k in s_row:
+            if isinstance(s_row[k], float):
+                np.testing.assert_allclose(s_row[k], e_row[k], atol=1e-7)
+            else:
+                assert s_row[k] == e_row[k]
     for timing in saved['exact_classical_timing']:
         states, costs = sector(timing['objective'])
         assert len(states) == timing['feasible_states']

@@ -1,5 +1,7 @@
 # Response to the scientific critique
 
+[Documentation Index](README.md) · [Judge Guide](JUDGES.md) · [Main Report](REPORT.md) · [Scientific Critique](SCIENTIFIC_CRITIQUE_20261006.md)
+
 **The useful contribution is a measured diagnostic benchmark, not quantum advantage.** We accept the six concerns in [the peer critique](SCIENTIFIC_CRITIQUE_20261006.md). This response adds saved-evidence checks and corrects several factual statements in that review and its [work synthesis](WORK_ANALYSIS_20261006.md). The original review bodies remain available unchanged; response annotations point here.
 
 The new [frozen plan](../experiments/critique_diagnostics.json) uses existing development predictions and hardware counts. It makes **zero predictor fits, zero new quantum states and zero hardware submissions**. All choices/results remain frozen. This is analysis of previously inspected evidence, not new predictive confirmation.

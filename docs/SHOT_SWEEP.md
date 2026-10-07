@@ -1,5 +1,7 @@
 # Do more shots rescue noisy feature selection?
 
+[Documentation Index](README.md) · [Judge Guide](JUDGES.md) · [Main Report](REPORT.md) · [Hardware Mitigation](IBM_PIPELINE_MITIGATION.md)
+
 **Both devices complete: 12 real IBM jobs, 301,056 returned shots, 108 charged QPU seconds.** More measurements collected more valid candidates. They did not restore high feasible yield or guarantee a better subset. No wildfire predictor was retrained.
 
 ## What we measured

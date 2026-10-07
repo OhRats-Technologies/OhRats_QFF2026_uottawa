@@ -6,7 +6,7 @@
 **Date:** October 6, 2026  
 **Subject:** Rigorous Peer Review of October 6 Research & Hardware Campaign (08:00–16:15 EDT)  
 **Repository:** [OhRats_QFF2026_uottawa](https://github.com/OhRats-Technologies/OhRats_QFF2026_uottawa)  
-**Companion Analysis:** [docs/WORK_ANALYSIS_20261006.md](WORK_ANALYSIS_20261006.md)
+**Navigation:** [Documentation Index](README.md) · [Critique Response](CRITIQUE_RESPONSE.md) · [Work Analysis](WORK_ANALYSIS_20261006.md)
 
 ---
 

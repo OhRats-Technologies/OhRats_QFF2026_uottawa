@@ -14,6 +14,7 @@ The later [real-device mitigation comparison](IBM_PIPELINE_MITIGATION.md) and [1
 2. [Slides and browser presentation](../web/presentation/README.md): main talk and question appendix. Optional [Fireline](../web/demo/README.md) is a canvas engineering game: build a 2–10-input QSVR engine, inspect similarities and errors, then repair it. Its adaptive browser sandbox uses inspected development data; it does not change the scientific conclusions. The obsolete walkthrough is deleted.
 3. [Report](REPORT.md): controlled comparisons, source assumptions, selection and negative results.
 4. [Frozen final evidence](ANNUAL_FINAL.md): every annual error, spectra, recipes and public replay package.
+5. [Documentation Index](README.md): thematic navigation portal and reading pathways across all 50 supporting documents.
 
 The main story is annual estimation. [Earlier incident work](FINAL_EVALUATION.md), policy evolution and shot/tangent studies are supplemental; they do not supply independent annual evidence. Dataset construction and classical/QAOA/SQD selection are in the main talk. SQD is a diagonal-objective demonstration with no added optimization benefit. See the [independent raw-source audit](DATA_REVIEW.md) for annual totals, denominators and the large-fire explanation.
 
