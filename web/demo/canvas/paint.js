@@ -83,10 +83,6 @@ export class Paint {
       ],
       "#061f2377",
     );
-    for (const a of [x + 20, x + w - 20]) {
-      this.rect(a, y + h * 0.5 - 10, 3, 20, "#061d21");
-      this.rect(a + 1, y + h * 0.5 - 9, 1, 17, "#73958d");
-    }
     this.line(
       [
         [x, y + h],

@@ -35,14 +35,13 @@ export function drawWorkbench(
     { active: on.audio.enabled },
   );
   p.button("help", "?", W - 48, 13, 34, 30, () => on("help"));
-  if (!mobile)
-    p.text(
-      `SEASON ${s.round + 1} / ${on.rounds || 3}${s.round === 3 ? " · 2019–24" : ""}`,
-      240,
-      30,
-      12,
-      color.dim,
-    );
+  p.button(
+    "season-display",
+    `SEASON ${s.round + 1} / ${on.rounds || 3}`,
+    18, 12, 154, 32, () => {},
+  );
+  // Reuse the metal plaque treatment without adding an inert control.
+  p.hits.pop();
   const bottom = H - 65;
   p.frame(12, bottom, W - 24, 53);
   const ready = !s.evaluating && !s.running && currentResult(s) && assessment(s).won;
