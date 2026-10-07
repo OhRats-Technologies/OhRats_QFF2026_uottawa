@@ -24,7 +24,7 @@ This project investigates whether quantum machine learning—specifically Quantu
 
 ## Curated Reading Pathways
 
-With 50 detailed technical documents across this repository, choose your reading pathway below based on your role and interest:
+With 51 detailed technical documents across this repository, choose your reading pathway below based on your role and interest:
 
 ```mermaid
 flowchart TD
@@ -45,7 +45,7 @@ flowchart TD
 
 ## Master Thematic Document Directory
 
-All 50 technical documentation files are organized into seven logical categories below:
+All 51 technical documentation files are organized into seven logical categories below:
 
 ### 1. Core Reports and Official Submission Gateways
 *Start here to understand the core research question, experimental methodology, and final results.*
@@ -161,12 +161,12 @@ All 50 technical documentation files are organized into seven logical categories
 | Model | Width | Chronological Development MAE | Reused 2019–2024 Holdout MAE |
 | :--- | :---: | :---: | :---: |
 | **Training Mean Baseline** | 0 | 92.00 | **276.81** |
-| **Linear Year Trend** | 0 | 88.91 | 321.12 |
-| **Tuned Ridge Regression** | 10 | 81.21 | 305.42 |
+| **Linear Year Trend** | 0 | 88.91 | 286.58 |
+| **Tuned Ridge Regression** | 10 | 81.21 | 294.98 |
 | **Matched Classical RBF-SVR** | 4 | **77.02** | 299.81 |
 | **Matched Quantum QSVR** | 4 | 86.64 | 280.68 |
-| **Station Count Alone** *(Confounder Control)* | 1 | **83.08** | — |
-| **Calendar Trend Alone** *(Confounder Control)* | 1 | **88.61** | — |
+| **Station Count Alone, QSVR** *(Confounder Control)* | 1 | **83.08** | — |
+| **Calendar Trend Alone, QSVR** *(Confounder Control)* | 1 | **88.61** | — |
 | **Weather + Calendar Ridge** *(Confounder Control)* | 11 | **67.97** | — |
 
 *Takeaway:* While 4-input QSVR edges out RBF on the holdout, neither beats the simple training mean baseline. Station-coverage and calendar-only controls warrant checking whether weather gains reflect reporting or time effects; these errors do not establish causation.
@@ -245,7 +245,7 @@ uv run --no-sync python scripts/collect_hardware_search.py tuned-kernel-hardware
 # 4. Replay scientific critique and sensitivity diagnostics
 uv run --no-sync python scripts/collect_critique.py
 
-# 5. Run the entire unit test suite (221 tests in ~9 seconds)
+# 5. Run the entire unit test suite (224 tests in ~9 seconds)
 uv run python -m unittest discover -s tests -v
 
 # 6. Launch the local slide presentation and Fireline interactive simulator

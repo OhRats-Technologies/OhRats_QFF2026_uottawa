@@ -10,7 +10,7 @@ bun run web/presentation/serve.ts
 
 [Play](http://127.0.0.1:8790/web/demo/) · [Design and verification](../../docs/FIRELINE_CANVAS.md)
 
-Twenty public Ontario features and three chronological 1988–2018 development seasons drive local browser calculations. QAOA/SQD explores sampled four-feature subsets. Published research and IBM evidence are unchanged; playing requires no Python, credentials or hardware access.
+Twenty public Ontario features and three chronological 1988–2018 development seasons, plus a fourth teaching season replaying the reused 2019–2024 years (weather and fire-memory signals only; never research evidence), drive local browser calculations. QAOA/SQD explores sampled four-feature subsets. Published research and IBM evidence are unchanged; playing requires no Python, credentials or hardware access.
 
 All visible UI renders on Canvas2D; semantic controls are hidden for keyboard/screen-reader access. Original forest art, metalwork, wiring, CRT effects and **Ember Relay** music are documented in [assets](canvas/ASSETS.md). Music is opt-in.
 

@@ -42,9 +42,9 @@ flowchart TD
 ### Stream 1: Pipeline Error Mitigation on Real IBM QPUs (08:42–10:00 EDT)
 - **Commits:** `f8cdf6c` through `0802d02`
 - **Scope:** `task:pipeline-mitigation`, `task:pipeline-mitigation-hardware`, `task:multi-device-mitigation`
-- **Docs:** [docs/PIPELINE_MITIGATION.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/PIPELINE_MITIGATION.md), [docs/IBM_PIPELINE_MITIGATION.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/IBM_PIPELINE_MITIGATION.md)
+- **Docs:** [docs/PIPELINE_MITIGATION.md](PIPELINE_MITIGATION.md), [docs/IBM_PIPELINE_MITIGATION.md](IBM_PIPELINE_MITIGATION.md)
 
-Following peer steers and owner authorization, error-management protocols originally drafted in educational/game tools were translated directly into the core scientific pipeline (`wildfire_lab/mitigation.py`, `scripts/pipeline_mitigation.py`):
+Following peer steers and owner authorization, error-management protocols originally drafted in educational/game tools were translated directly into the core scientific pipeline (`wildfire_lab/mitigation_*.py`, `scripts/run_pipeline_mitigation.py`):
 - **Implemented Mechanisms:** Scheduled XpXm Dynamical Decoupling (DD), Runtime gate & measurement twirling, assignment-matrix readout inversion with clipping, feasible-cardinality acceptance, and PSD/rank-4 kernel projection.
 - **Cross-Device Hardware Benchmark:** Executed 6 matched jobs across three physical QPUs:
   - `ibm_fez` (Heron r1.0): 2 jobs, 25 charged QPU seconds, 74,752 physical shots.
@@ -62,7 +62,7 @@ Following peer steers and owner authorization, error-management protocols origin
 ### Stream 2: Numerical Forest Raster Expansion & Data Audits (10:00–11:00 EDT)
 - **Commits:** `c024b1a` through `41660f5`
 - **Scope:** `task:forest-feature-expansion`
-- **Docs:** [docs/FOREST_CONTEXT.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/FOREST_CONTEXT.md), [docs/DATA_SCHEMA.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/DATA_SCHEMA.md)
+- **Docs:** [docs/FOREST_CONTEXT.md](FOREST_CONTEXT.md), [docs/DATA_SCHEMA.md](DATA_SCHEMA.md)
 
 To test whether richer environmental predictors enhance quantum and classical models, the team integrated open Canadian spatial forestry data:
 - **Acquisition:** Extracted 42 coarse raster layers (556.1 MB, 111.5s parse time) spanning 6 continuous attributes across Ontario (1988–2022): canopy height, crown closure, aboveground biomass, stem volume, stand age, and forest land cover.
@@ -77,7 +77,7 @@ To test whether richer environmental predictors enhance quantum and classical mo
 ### Stream 3: Cardinality Selector Scaling & Workload Sharding (11:00–12:30 EDT)
 - **Commits:** `dc15ddd` through `2ba526c`
 - **Scope:** `task:selector-scaling`
-- **Docs:** [docs/SELECTOR_SCALING.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/SELECTOR_SCALING.md), [docs/SELECTOR_HARDWARE.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/SELECTOR_HARDWARE.md)
+- **Docs:** [docs/SELECTOR_SCALING.md](SELECTOR_SCALING.md), [docs/SELECTOR_HARDWARE.md](SELECTOR_HARDWARE.md)
 
 The team scaled the QAOA/SQD cardinality selector ($k=4$) across expanded feature pools:
 - **Pool Sizes:** 10, 16, and 20 candidate features.
@@ -95,7 +95,7 @@ The team scaled the QAOA/SQD cardinality selector ($k=4$) across expanded featur
 ### Stream 4: Comprehensive Tuning, Multi-Start QAOA & Confounder Controls (12:50–14:00 EDT)
 - **Commits:** `397614c` through `6f0e5ae`
 - **Scope:** `task:comprehensive-findings`
-- **Docs:** [docs/RESEARCH_FINDINGS.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/RESEARCH_FINDINGS.md), [docs/RESEARCH_COVERAGE.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/RESEARCH_COVERAGE.md)
+- **Docs:** [docs/RESEARCH_FINDINGS.md](RESEARCH_FINDINGS.md), [docs/RESEARCH_COVERAGE.md](RESEARCH_COVERAGE.md)
 
 When the owner reopened research to investigate whether deeper search or hyperparameter tuning could salvage performance, the team launched extensive local simulations and confirmatory hardware acquisitions:
 - **Multi-Start QAOA (Depths $p=1$ to $4$):**
@@ -116,7 +116,7 @@ When the owner reopened research to investigate whether deeper search or hyperpa
 ### Stream 5: Two-Device Physical Shot Sweep (`ibm_marrakesh` vs `ibm_quebec`) (14:24–15:00 EDT)
 - **Commits:** `9febe4f` through `e6d2a39`
 - **Scope:** `task:shot-sweep`
-- **Docs:** [docs/SHOT_SWEEP.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/SHOT_SWEEP.md)
+- **Docs:** [docs/SHOT_SWEEP.md](SHOT_SWEEP.md)
 
 To address the hypothesis that increasing shot budget could overcome noise and rescue feature selection, the team executed a controlled, matched shot sweep across two quantum computers:
 - **Experimental Design:** 12 independent QPU jobs (6 on `ibm_marrakesh` [Heron], 6 on `ibm_quebec` [Eagle]), evaluating 10, 16, and 20 feature pools at **512, 1,024, and 2,048 shots**, raw vs DD+twirling.
@@ -227,7 +227,7 @@ All artifacts produced during this campaign adhere to the highest standards of r
   uv run python scripts/collect_hardware_search.py shot-sweep-quebec
   ```
 - **Privacy & Security Audit:** All API tokens and credentials remain strictly contained in ignored `.env` files. Both working tree and uncompressed evidence ZIP bundles passed automated secret audits with zero leaks.
-- **Handoff Receipts:** Immutable verification hashes and receipts are documented in [docs/data/comprehensive_handoff.json](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/data/comprehensive_handoff.json) and [docs/data/shot_sweep_handoff.json](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/data/shot_sweep_handoff.json).
+- **Handoff Receipts:** Immutable verification hashes and receipts are documented in [docs/data/comprehensive_handoff.json](data/comprehensive_handoff.json) and [docs/data/shot_sweep_handoff.json](data/shot_sweep_handoff.json).
 
 ---
 
@@ -236,8 +236,8 @@ All artifacts produced during this campaign adhere to the highest standards of r
 All research tracks authorized by the owner are complete. When presenting or reviewing this project:
 1. **Highlight the rigor of the negative results:** The value of this submission is not in claiming illusory quantum advantage, but in demonstrating world-class, matched benchmarking, hardware execution, and deep diagnostic analysis.
 2. **Point reviewers to primary evidence:**
-   - Shot sweep analysis: [docs/SHOT_SWEEP.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/SHOT_SWEEP.md)
-   - Comprehensive tuning & controls: [docs/RESEARCH_FINDINGS.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/RESEARCH_FINDINGS.md)
-   - Three-device hardware comparison: [docs/IBM_PIPELINE_MITIGATION.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/IBM_PIPELINE_MITIGATION.md)
-   - Synthesized full-day analysis: [docs/WORK_ANALYSIS_20261006.md](file:///home/user/Documents/OhRats_QFF2026_uottawa/docs/WORK_ANALYSIS_20261006.md)
+   - Shot sweep analysis: [docs/SHOT_SWEEP.md](SHOT_SWEEP.md)
+   - Comprehensive tuning & controls: [docs/RESEARCH_FINDINGS.md](RESEARCH_FINDINGS.md)
+   - Three-device hardware comparison: [docs/IBM_PIPELINE_MITIGATION.md](IBM_PIPELINE_MITIGATION.md)
+   - Synthesized full-day analysis: [docs/WORK_ANALYSIS_20261006.md](WORK_ANALYSIS_20261006.md)
 3. **Do not reopen closed runs or final test splits:** Retain the frozen 2019–2024 evaluations and do not launch additional QPU jobs without explicit owner instruction.
