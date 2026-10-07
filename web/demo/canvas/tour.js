@@ -47,9 +47,11 @@ export function spotlight(p, s, on, W, H, time, zones) {
     lesson = tour[step],
     text = tourText(s),
     key = `${step}:${s.guidePage || 0}`,
+    zone = lesson.pageZones?.[s.guidePage || 0] || lesson.zone,
+    topic = zone === "kernel" ? "KERNEL ENGINE" : lesson.name,
     hits = p.hits;
-  let target = lesson.zone
-    ? zones[lesson.zone]
+  let target = zone
+    ? zones[zone]
     : union(hits.filter((h) => lesson.ids?.includes(h.id)));
   if (lesson.foundry)
     target = union(hits.filter((h) => h.id.startsWith("candidate-")));
@@ -63,7 +65,7 @@ export function spotlight(p, s, on, W, H, time, zones) {
   target.w = Math.min(target.w, W - target.x - 7);
   target.h = Math.min(target.h, H - target.y - 7);
   const { x, y, w, h } = target;
-  const protectedAreas = step >= 2 && step <= 4 && zones.encoder
+  const protectedAreas = lesson.ids && !zone && zones.encoder
     ? [{ ...zones.encoder, h: 43 }]
     : [];
   // The bubble's width follows its text, so steps resize it as they change.
@@ -155,7 +157,7 @@ export function spotlight(p, s, on, W, H, time, zones) {
     11,
     color.amber,
   );
-  p.text(lesson.name, bx + 67, by + 42, 12, color.mint);
+  p.text(topic, bx + 67, by + 42, 12, color.mint);
   const speech = dialogue.read(key, text, time);
   if (speech.voice) on.audio?.voice(text, speech.count);
   let remaining = speech.text.length;
@@ -179,7 +181,7 @@ export function spotlight(p, s, on, W, H, time, zones) {
   dialogueArrow(p, bx + cw - 35, buttonY + 12, time, 1, !speech.typing);
   p.hits.push({ id: "guide-dialogue", label: "Continue Betty dialogue",
     x: bx, y: by, w: cw, h: ch - 43, action: next });
-  return { target: shown.target, bubble: shown.box, topic: lesson.name,
+  return { target: shown.target, bubble: shown.box, topic,
     text, visible: speech.text, typing: speech.typing, page: s.guidePage || 0 };
 
 }

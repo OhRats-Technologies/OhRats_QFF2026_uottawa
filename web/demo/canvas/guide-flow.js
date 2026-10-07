@@ -3,7 +3,9 @@ import { dialogue } from "./dialogue.js";
 import { lessons } from "./guide-lessons.js";
 export function announceLesson(s, status) {
   const lesson = (s.guideIntro ? tour : lessons)[s.guideStep || 0];
-  status.textContent = `Betty: ${lesson.title || lesson.name} ${s.guideIntro ? tourText(s) : lesson.text} ${lesson.tip || ""}`;
+  const title = s.guideIntro && lesson.pageZones?.[s.guidePage || 0] === "kernel"
+    ? "Kernel engine" : lesson.title || lesson.name;
+  status.textContent = `Betty: ${title} ${s.guideIntro ? tourText(s) : lesson.text} ${lesson.tip || ""}`;
 }
 export function openBriefing(s, status) {
   s.help = true;

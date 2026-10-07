@@ -38,47 +38,32 @@ export function menu(p, s, assets, on, W, H, time) {
   const bx = mobile ? 24 : W * 0.71,
     by = mobile ? yy + fh + 22 : H * (H < 500 ? 0.12 : 0.24),
     bw = mobile ? W - 48 : W * 0.23;
-  const heading = s.finished ? "WORKSHOP COMPLETE" : "BUILD. TEST. REPAIR.";
-  p.text(
-    heading,
-    bx,
-    by,
-    Math.min(19, bw / (heading.length * 0.62)),
-    color.amber,
-  );
-  p.text(
-    s.finished ? "Three seasons. Better engines." : "Beat your first engine.",
-    bx,
-    by + 33,
-    13,
-    color.mint,
-  );
   p.button(
     "continue",
     s.attempts ? "CONTINUE ▶" : "START ENGINE ▶",
     bx,
-    by + 74,
+    by,
     bw,
     54,
     () => on("start"),
     { tone: "hot" },
   );
-  p.button("new", "NEW RUN", bx, by + 142, bw, 45, () => on("new"));
+  p.button("new", "NEW RUN", bx, by + 68, bw, 45, () => on("new"));
   p.button(
     "menu-sound",
     on.audio.enabled ? "MUSIC ON ♫" : "MUSIC OFF ♪",
     bx,
-    by + 201,
+    by + 127,
     bw,
     45,
     () => on("sound"),
     { active: on.audio.enabled },
   );
-  p.button("menu-help", "BETTY’S GUIDE", bx, by + 260, bw, 40, () =>
+  p.button("menu-help", "BETTY’S GUIDE", bx, by + 186, bw, 40, () =>
     on("help"),
   );
   if (!mobile) {
-    const top = by + 320,
+    const top = by + 246,
       available = H - 22 - top,
       radius = Math.min(52, (available - 40) / 2, bw / 2 - 18);
     if (radius >= 24) {

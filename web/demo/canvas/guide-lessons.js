@@ -17,8 +17,8 @@ export const lessons = [
     tab: "ANGLE",
     title: "Numbers become rotations.",
     kind: "angle",
-    text: "We scale each signal and turn it into circuit angles. The circuit makes a quantum state; state overlap measures how alike two years look. Change the angle range to change those similarities.",
-    tip: "Try the range switch. A wider range isn't always better.",
+    text: "Signals become circuit rotations. The kernel grid compares years: bright cells mean similar encoded conditions; dark cells mean different conditions.",
+    tip: "SVR combines these similarities with known fire sizes to estimate another year's average size. The grid shows similarity, not fire risk.",
   },
   {
     tab: "C",

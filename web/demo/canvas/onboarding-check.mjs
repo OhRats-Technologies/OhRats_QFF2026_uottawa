@@ -1,3 +1,4 @@
+import { tour as topics } from "./tour-lessons.js";
 import { createRequire } from "node:module";
 import { mkdirSync, writeFileSync } from "node:fs";
 import assert from "node:assert/strict";
@@ -65,8 +66,9 @@ for (const [width, height] of [
     true,
   );
   const initial = await page.evaluate(() => window.fireline.snapshot());
-  for (let beat = 0; beat < 16; beat++) {
-    const step = Math.floor(beat / 2), dialoguePage = beat % 2;
+  const beats = topics.flatMap((topic, step) => topic.pages.map((text, dialoguePage) => ({ step, dialoguePage })));
+  for (let beat = 0; beat < beats.length; beat++) {
+    const { step, dialoguePage } = beats[beat];
     assert.equal(
       await page.evaluate(() => window.fireline.snapshot().guideStep),
       step,
@@ -119,7 +121,7 @@ for (const [width, height] of [
       0,
     );
     await page.screenshot({ path: `${out}/lesson-${width}-${step}-${dialoguePage}.png` });
-    if (beat < 15) await click("guide-next");
+    if (beat < beats.length - 1) await click("guide-next");
   }
   const before = await page.evaluate(() => window.fireline.snapshot());
   for (const key of [
@@ -200,7 +202,7 @@ for (const [width, height] of [
     width,
     height,
     lessons: 8,
-    bubbles: 16,
+    bubbles: beats.length,
     automaticStart: true,
     isolatedDemo: true,
     realUIHighlights: true,

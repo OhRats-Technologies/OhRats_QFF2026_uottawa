@@ -15,9 +15,14 @@ export const tour = [
   },
   {
     name: "ANGLE", tab: "kernel", ids: ["angle-down", "angle-up"],
+    pageZones: [null, null, "kernel", "kernel", "kernel", "kernel"],
     pages: [
       "These buttons change the angle range. We scale each signal, then encode it as rotations in a quantum circuit.",
       "The resulting states overlap to form this similarity grid. Changing the angle range changes those similarities. Wider isn't always better!",
+      "Each row and column is a year. A cell compares that pair of years; the diagonal compares each year with itself.",
+      "Brighter cells mean more similar encoded conditions; darker cells mean less similar. After the tour, point at a cell to compare its years.",
+      "The regression learns from these similarities and known fire sizes to estimate another year's average size. Similarity isn't a fire-risk score.",
+      "Changing signals or angles changes which years look alike. If every pair looks identical or unrelated, the regression has little structure to learn.",
     ],
   },
   {
