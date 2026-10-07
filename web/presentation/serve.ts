@@ -34,6 +34,7 @@ const server = Bun.serve({
         ".pptx",
         ".png",
         ".svg",
+        ".wav",
       ].includes(extname(path));
     if (!allowed) return new Response("Not found", { status: 404 });
     const file = Bun.file(path);

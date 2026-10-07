@@ -12,4 +12,4 @@ Frames, metal grain, bevels, screws, vents, pipes, phosphor scans, bitmap title 
 
 The guide now uses the short name **Betty**, with small speech bubbles attached to highlighted workbench controls. The original Beatrice sprite is retained, now with code-driven idle motion, a hop on Next and a drip torch on fire-related steps.
 
-**Pixel Firefront (Relaxed Cover)** is an original recorded cover track added to `web/demo/assets/music/Pixel Firefront (Relaxed Cover).wav` (33 MB WAV audio asset), available for Fireline workbench and presentation background audio integration alongside the procedural Web Audio theme.
+**Pixel Firefront (Relaxed Cover)** is an original recorded cover track added to `web/demo/assets/music/Pixel Firefront (Relaxed Cover).wav` (33 MB WAV audio asset), played in Fireline as the looped MUSIC ON track after opt-in; the procedural Web Audio theme is its fallback.

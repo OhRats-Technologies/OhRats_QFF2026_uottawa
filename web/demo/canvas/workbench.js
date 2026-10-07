@@ -163,15 +163,6 @@ export function drawWorkbench(
       s,
       on,
     );
-    // Routed signals cross the mechanical seam, with pulses during calculation.
-    for (let j = 0; j < Math.min(s.features.length, 10); j++)
-      p.cable(
-        rackBox.x + rackW - 6,
-        y + 93 + j * 13,
-        kernel.x + 7,
-        y + 93 + j * 13,
-        s.running ? time : 0,
-      );
   }
   trim(p, W, H, time, s.running);
   if (s.running)

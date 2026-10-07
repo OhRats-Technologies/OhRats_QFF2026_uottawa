@@ -83,3 +83,11 @@ Clean tracked export at `7ca7ec3` passes: eight tour steps on five viewports wit
 ## Betty motion and kernel colour key
 
 Betty idles on whole sprite pixels: breathing, tail sway/thump, blinks, ear twitch, a periodic wave, helmet glint and pencil taps. A forward Next in the tour or topic guide starts a half-second hop; Back does not. When a step's text mentions fire, she raises a lit drip torch. Reduced motion holds the clock at zero, so she stays static. The kernel engine adds a 0 DIFFERENT → SAME 1 ramp using the cell colours, average off-diagonal similarity and a support-year key. Onboarding and gameplay layout checks pass on all five/six viewports with no browser errors.
+
+## Tour glide, rack footer and cartridge notes
+
+Tour Next eases the highlight and bubble to their new place and size over 0.42 s (`glide.js`); text fades in once the bubble settles, and reduced motion snaps. Bubble width follows its text (300–420 px). Rack rows now end above the footer buttons and page when cramped, fixing the wide-screen overlap of the last signal row with Subset Foundry; narrow paged racks shorten it to FOUNDRY. A sweep from 320 px to 2560×1440 finds no foundry overlaps. The foundry keeps a permanent note under its cartridges (`foundry-help.js`) that explains MI, EXACT (all 4,845 four-signal sets), QAOA + SQD or UNIFORM, changing with the loaded cartridge; candidate rows fit below it. Onboarding, layout and interaction checks pass with no browser errors.
+
+## Music track, saved charts and removed links
+
+MUSIC ON now streams the looped Pixel Firefront cover (`assets/music`) through the existing opt-in Web Audio lifecycle: nothing downloads before opt-in, hidden tabs pause it and the toggle mutes it. Ember Relay remains the procedural fallback when the file cannot load. `serve.ts` serves `.wav`. Restored saves no longer carry a stale run-animation clock, which had drawn season bars partial or inverted after Continue. The rack-to-engine and footer cables and the drag-to-link gesture are removed; signals patch by click, keyboard or touch, and the interaction check asserts that a drag does not link.

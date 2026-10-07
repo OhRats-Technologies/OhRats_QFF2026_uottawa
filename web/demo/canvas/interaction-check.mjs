@@ -39,11 +39,15 @@ async function click(id) {
 await click("continue");
 if (await page.evaluate(() => window.fireline.snapshot().guideIntro))
   await click("guide-skip");
+// Dragging a signal onto the engine must not patch it; a click does.
 const source = await target("signal-5");
 await page.mouse.move(source.x, source.y);
 await page.mouse.down();
 await page.mouse.move(900, 210, { steps: 10 });
 await page.mouse.up();
+await page.waitForTimeout(200);
+assert.ok(!(await page.evaluate(() => window.fireline.snapshot().features)).includes(5));
+await click("signal-5");
 await page.waitForFunction(() =>
   window.fireline.snapshot().features.includes(5),
 );
@@ -93,7 +97,7 @@ await page.evaluate(() => {
 await page.waitForFunction(
   () =>
     window.fireline.audio().state === "suspended" &&
-    !window.fireline.audio().timer,
+    !window.fireline.audio().playing,
 );
 await page.evaluate(() => {
   Object.defineProperty(document, "hidden", {
@@ -105,7 +109,7 @@ await page.evaluate(() => {
 await page.waitForFunction(
   () =>
     window.fireline.audio().state === "running" &&
-    window.fireline.audio().timer,
+    window.fireline.audio().playing,
 );
 await click("sound");
 await page.waitForFunction(
@@ -184,7 +188,7 @@ const music = await page.evaluate(async () => {
 assert.ok(music.peak < 0.98 && music.rms > 0.001);
 assert.deepEqual(errors, []);
 const receipt = {
-  dragRouting: true,
+  dragDoesNotLink: true,
   keyboardPatch: true,
   tenInputRun: true,
   previousBuildRestore: true,

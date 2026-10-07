@@ -32,17 +32,8 @@ export function connectInput(canvas, p, get, on, dirty) {
     const d = localDrag,
       pos = point(e);
     localDrag = null;
-    const moved = Math.hypot(pos.x - d.start.x, pos.y - d.start.y) > 16;
-    if (moved && d.hit.id.startsWith("signal-")) {
-      const target = p.hits.find((h) => inside(h, pos));
-      if (
-        (get().W >= 920 && pos.x > get().W * 0.5 && pos.x < get().W * 0.83) ||
-        target?.id === "run"
-      ) {
-        const j = Number(d.hit.id.slice(7));
-        if (!get().state.features.includes(j)) on("feature", j);
-      }
-    } else if (inside(d.hit, pos)) d.hit.action();
+    // Controls act on release over the pressed control; dragging never links.
+    if (inside(d.hit, pos)) d.hit.action();
   });
   canvas.addEventListener("pointercancel", () => (localDrag = null));
   document.addEventListener("keydown", (e) => {

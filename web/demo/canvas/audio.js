@@ -1,4 +1,10 @@
-// Original theme: Ember Relay, D Dorian, 78 BPM, 16-step repeating harmonic cycle.
+// Music: the Pixel Firefront cover track, looped and streamed only after the
+// player opts in. Ember Relay (D Dorian, 78 BPM, 16-step cycle) is the
+// procedural fallback when the track cannot load or play.
+const track = new URL(
+  "../assets/music/Pixel Firefront (Relaxed Cover).wav",
+  import.meta.url,
+).href;
 export class Audio {
   constructor() {
     this.enabled = false;
@@ -32,20 +38,56 @@ export class Audio {
       this.master = this.ctx.createGain();
       this.master.gain.value = 0.5;
       this.master.connect(this.ctx.destination);
+      this.loadTrack();
     }
     this.enabled = !this.enabled;
     if (this.enabled) {
       await this.ctx.resume();
       this.start();
     } else {
-      clearInterval(this.timer);
-      this.timer = null;
+      this.stop();
       await this.ctx.suspend();
     }
     return this.enabled;
   }
+  loadTrack() {
+    try {
+      const el = document.createElement("audio"),
+        gain = this.ctx.createGain();
+      el.src = track;
+      el.loop = true;
+      el.preload = "none";
+      gain.gain.value = 0.8;
+      this.ctx.createMediaElementSource(el).connect(gain);
+      gain.connect(this.master);
+      el.addEventListener("error", () => this.fallback());
+      this.music = el;
+    } catch {
+      this.music = null;
+    }
+  }
+  fallback() {
+    this.music = null;
+    if (this.enabled && !document.hidden) this.start();
+  }
+  get playing() {
+    return !!this.timer || !!(this.music && !this.music.paused);
+  }
+  stop() {
+    clearInterval(this.timer);
+    this.timer = null;
+    this.music?.pause();
+  }
   start() {
     clearInterval(this.timer);
+    this.timer = null;
+    if (this.music) {
+      this.music.play().catch((e) => {
+        // A pause racing play() is not a failure; anything else falls back.
+        if (e?.name !== "AbortError") this.fallback();
+      });
+      return;
+    }
     const notes = [
       62, 69, 72, 76, 74, 69, 67, 65, 62, 69, 71, 76, 74, 72, 69, 67,
     ];
@@ -84,8 +126,7 @@ export class Audio {
   async visibility() {
     if (!this.ctx || !this.enabled) return;
     if (document.hidden) {
-      clearInterval(this.timer);
-      this.timer = null;
+      this.stop();
       await this.ctx.suspend();
     } else {
       await this.ctx.resume();

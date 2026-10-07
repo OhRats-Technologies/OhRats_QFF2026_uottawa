@@ -1,5 +1,6 @@
 import { color, pixelTitle } from "./paint.js";
 import { sphere } from "./instruments.js";
+import { foundryNote } from "./foundry-help.js";
 export function menu(p, s, assets, on, W, H, time) {
   p.rect(0, 0, W, H, p.c.createPattern(assets.metal, "repeat"));
   p.frame(6, 6, W - 12, H - 12);
@@ -108,21 +109,27 @@ export function foundry(p, s, data, on, W, H) {
       { active: s.sample?.method === id },
     ),
   );
+  const compact = h < 500,
+    note = foundryNote(p, s.sample?.method, x + 24, y + 100, w - 48, compact);
   if (!s.sample) {
     p.text(
       "CHOOSE A CARTRIDGE",
       x + w / 2,
-      y + h / 2,
+      y + 100 + note + (h - 100 - note) / 2,
       18,
       color.amber,
       "center",
     );
     return;
   }
-  const compact = h < 500,
-    rows = s.sample.candidates.slice(0, compact ? 2 : 4),
-    listW = mobile ? w - 48 : w * 0.44,
-    top = y + 112;
+  // Candidate rows fill the space between the note and the signal names.
+  const top = y + 112 + note,
+    first = compact ? 24 : 32,
+    step = compact ? 38 : 49,
+    room = y + h - (compact ? 147 : 156) - 12 - (top + first),
+    fit = Math.max(1, Math.min(compact ? 2 : 4, Math.floor(room / step) + 1)),
+    rows = s.sample.candidates.slice(0, fit),
+    listW = mobile ? w - 48 : w * 0.44;
   p.text(
     s.sample.shots
       ? `${s.sample.shots} SHOTS · ${s.sample.candidates.length} UNIQUE`
@@ -133,7 +140,7 @@ export function foundry(p, s, data, on, W, H) {
     color.dim,
   );
   rows.forEach((r, i) => {
-    const py = top + (compact ? 24 : 32) + i * (compact ? 38 : 49);
+    const py = top + first + i * step;
     p.button(
       `candidate-${i}`,
       `${i === 0 ? "★" : "○"} ${r.features.map((j) => j + 1).join(" / ")}   ${r.energy.toFixed(3)}`,
@@ -145,7 +152,7 @@ export function foundry(p, s, data, on, W, H) {
       { active: s.candidate === i },
     );
   });
-  const selected = rows[s.candidate || 0];
+  const selected = rows[Math.min(s.candidate || 0, rows.length - 1)];
   if (!mobile) {
     const sx = x + w * 0.53,
       sy = top + 25,

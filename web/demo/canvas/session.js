@@ -54,6 +54,8 @@ export function load() {
       history: (s.history || []).slice(-18),
       toast: "",
       running: false,
+      // performance.now() restarts per page load; a saved run starts settled.
+      runAt: 0,
     };
   } catch {
     return fresh();

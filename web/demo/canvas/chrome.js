@@ -41,10 +41,6 @@ export function trim(p, W, H, time, running) {
       "#071c20",
     );
   }
-  const y = H - 66;
-  p.cable(W * 0.48, y - 1, W * 0.67, y - 1, running ? time : 0);
-  for (let j = 0; j < 3; j++)
-    p.rect(W * 0.48 + 18 + j * 12, y - 5, 5, 8, "#4e7770");
 }
 export function relay(p, box, time) {
   const { x, y, w, h } = box,

@@ -224,7 +224,9 @@ export function results(p, box, s, on) {
     );
     p.text(((max * j) / 2).toFixed(0), left - 8, py, 10, color.dim, "right");
   }
-  const growth = s.runAt ? Math.min(1, (performance.now() - s.runAt) / 650) : 1;
+  const growth = s.runAt
+    ? Math.min(1, Math.max(0, (performance.now() - s.runAt) / 650))
+    : 1;
   const step = cw / 4;
   r.actual.forEach((v, i) => {
     const px = left + step * (i + 0.5),

@@ -232,16 +232,10 @@ function draw(timestamp) {
       drawGuide(p, s, action, W, H, time, assets);
     }
   }
-  const drag = currentDrag();
-  if (
-    drag &&
-    Math.hypot(drag.point.x - drag.start.x, drag.point.y - drag.start.y) > 16
-  )
-    p.cable(drag.start.x, drag.start.y, drag.point.x, drag.point.y, time);
   mirror();
   requestAnimationFrame(draw);
 }
-const currentDrag = connectInput(
+connectInput(
   canvas,
   p,
   () => ({ scale, W, state: s, point: () => hover, hover: (v) => (hover = v) }),
@@ -273,5 +267,7 @@ window.fireline = {
     enabled: audio.enabled,
     state: audio.ctx?.state,
     timer: !!audio.timer,
+    playing: audio.playing,
+    track: !!audio.music,
   }),
 };

@@ -19,13 +19,14 @@ export function rack(p, b, s, data, on) {
       { active: s.width === n },
     ),
   );
-  const paged = h < 410,
+  // Signal rows end above the footer buttons; page once rows get cramped.
+  const paged = (h - 135) / 10 < 30,
     slots = paged ? Math.max(1, Math.floor((h - 135) / 35)) : 10,
     perPage = slots * 2,
     pages = Math.ceil(20 / perPage),
     page = paged ? (s.rackPage || 0) % pages : 0;
   const top = y + 92,
-    row = Math.min(37, (h - 126) / slots),
+    row = Math.min(37, (h - 135) / slots),
     col = (w - 58) / 2;
   data.features
     .slice(page * perPage, page * perPage + perPage)
@@ -64,8 +65,16 @@ export function rack(p, b, s, data, on) {
       11,
       color.dim,
     );
-  p.button("foundry", "SUBSET FOUNDRY", x + w - 173, y + h - 40, 148, 28, () =>
-    on("foundry"),
+  // Narrow paged racks shrink the foundry button beside the page control.
+  const fw = paged ? Math.min(148, w - 24 - 94 - 8 - 25) : 148;
+  p.button(
+    "foundry",
+    fw < 140 ? "FOUNDRY" : "SUBSET FOUNDRY",
+    x + w - 25 - fw,
+    y + h - 40,
+    fw,
+    28,
+    () => on("foundry"),
   );
 }
 export function controls(p, b, s, on, time, bloch) {
