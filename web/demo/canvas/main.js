@@ -23,6 +23,7 @@ import { run } from "./engine.js";
 import { preview } from "./preview.js";
 import { automaticTests, currentResult } from "./auto-test.js";
 import { sampleCandidates } from "./foundry.js";
+import { celebration } from "./celebrate.js";
 const canvas = document.querySelector("canvas"),
   ctx = canvas.getContext("2d"),
   p = new Paint(ctx),
@@ -174,10 +175,14 @@ async function action(type, value) {
       );
     } else {
       s.finished = true;
-      s.menu = true;
-      location.hash = "main-menu";
-      toast("All seasons complete.");
+      s.celebrate = true;
+      audio.effect("win");
     }
+  }
+  if (type === "celebrate-done") {
+    s.celebrate = false;
+    s.menu = true;
+    location.hash = "main-menu";
   }
   if (type === "sample" || type === "more-shots") {
     const method = type === "more-shots" ? s.sample?.method || "qaoa" : value;
@@ -267,6 +272,7 @@ function draw(timestamp) {
       p.hits = [];
       drawGuide(p, s, action, W, H, time, assets);
     }
+    if (s.celebrate) celebration(p, s, action, W, H, time);
   }
   mirror();
   requestAnimationFrame(draw);

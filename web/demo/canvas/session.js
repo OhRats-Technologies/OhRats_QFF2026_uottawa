@@ -52,6 +52,7 @@ export function load() {
       foundry: false,
       help: false,
       guideIntro: false,
+      celebrate: false,
       history: (s.history || []).slice(-18),
       toast: "",
       running: false,

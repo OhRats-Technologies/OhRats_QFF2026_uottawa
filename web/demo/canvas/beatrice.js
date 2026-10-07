@@ -28,7 +28,14 @@ export function beatrice(p, x, y, size, time = 0, cue = {}) {
   const c = p.c,
     t = time,
     hop = t && cue.jumpAt >= 0 ? (t - cue.jumpAt) / 0.5 : 1,
-    lift = hop >= 0 && hop < 1 ? Math.round(Math.sin(Math.PI * hop) * 12) : 0;
+    // Cheering bounces continuously; otherwise a single hop after Next.
+    lift = cue.cheer
+      ? t
+        ? Math.round(Math.abs(Math.sin((Math.PI * t) / 0.62)) * 14)
+        : 6
+      : hop >= 0 && hop < 1
+        ? Math.round(Math.sin(Math.PI * hop) * 12)
+        : 0;
   c.save();
   c.translate(x, y);
   c.scale(size / 52, size / 52);
@@ -47,8 +54,9 @@ export function beatrice(p, x, y, size, time = 0, cue = {}) {
     lead = cue.greet ? 1.6 : 0,
     greeting = !!(cue.greet && t && t - cue.fireAt < lead),
     torch = !!cue.fire && !greeting,
-    waving = greeting || torch || within(t, 7.5, 1, 1.5),
-    wave = !torch && waving && Math.floor(t * 6) % 2 ? 1 : 0,
+    waving = cue.cheer || greeting || torch || within(t, 7.5, 1, 1.5),
+    wave =
+      !torch && waving && Math.floor(t * (cue.cheer ? 10 : 6)) % 2 ? 1 : 0,
     glint = within(t, 6.2, 3, 0.7) ? ((t % 6.2) - 3) / 0.7 : -1,
     tap = within(t, 3.4, 1.8, 0.6) && Math.floor(t * 10) % 2 ? 1 : 0;
   // Broad, crosshatched tail behind the jacket; it sways and thumps.
@@ -88,9 +96,18 @@ export function beatrice(p, x, y, size, time = 0, cue = {}) {
   block(14, 26, 22, 5, light);
   block(16, 20, 18, 8, light);
   block(22, 20, 7, 4, ink);
-  block(16, 16, 4, blink ? 1 : 4, ink);
-  block(31, 16, 4, blink ? 1 : 4, ink);
-  if (!blink) {
+  if (cue.cheer) {
+    // Happy closed eyes: small upturned arcs.
+    for (const ex of [16, 31]) {
+      block(ex, 17, 1, 2, ink);
+      block(ex + 1, 16, 2, 1, ink);
+      block(ex + 3, 17, 1, 2, ink);
+    }
+  } else {
+    block(16, 16, 4, blink ? 1 : 4, ink);
+    block(31, 16, 4, blink ? 1 : 4, ink);
+  }
+  if (!blink && !cue.cheer) {
     block(17, 16, 1, 1, "#f6e9c7");
     block(32, 16, 1, 1, "#f6e9c7");
   }
