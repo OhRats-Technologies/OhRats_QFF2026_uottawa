@@ -26,10 +26,11 @@ export async function loadAssets() {
     await img.decode();
     return img;
   };
-  const [cover, map, forest] = await Promise.all([
+  const [cover, map, forest, logo] = await Promise.all([
     image("../presentation/assets/ontario-cover.png"),
     fetch("../presentation/assets/map.json").then((r) => r.json()),
     image("./canvas/forest.png"),
+    image("./assets/fireline-logo.png"),
   ]);
-  return { ...art, cover, map, forest };
+  return { ...art, cover, map, forest, logo };
 }

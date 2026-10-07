@@ -23,23 +23,25 @@ uv run --no-sync python -m unittest tests.test_repetition_kernel -v
 uv run --no-sync --env-file .env python scripts/run_repetition_microkernel.py collect
 ```
 
-Local exact-state tests verify the single-X correction mapping, no-fault overlap and uncorrected phase-flip response. Device-native circuits have been prepared on both requested devices. Both Marrakesh blocks are collected and validated; both Quebec blocks remain queued at the latest check. Private intents, identifiers and acquisition metrics stay under ignored `results/repetition-microkernel-v1`; submission is exclusive per block and ambiguous submissions are never retried.
+Local exact-state tests verify the single-X correction mapping, no-fault overlap and uncorrected phase-flip response. Device-native circuits have been prepared on both requested devices. All four blocks are collected and validated: 90 circuits per block, 4,096 returned shots per circuit, 1,474,560 shots total. Private intents, identifiers and acquisition metrics stay under ignored `results/repetition-microkernel-v1`; submission is exclusive per block and ambiguous submissions are never retried.
 
 The public report will include every cell/block, overlap errors and shot uncertainty, syndrome frequencies, compiled resources and charged time. Neither postselection nor new predictive fitting is part of this study; 2019–2024 data are not read.
 
 Method reference: [IBM repetition-code tutorial](https://quantum.cloud.ibm.com/docs/en/tutorials/repetition-codes). The tutorial teaches dynamic correction of bit flips; this extension tests coherent phase-overlap readout rather than only classical basis-state memory.
 
-## Measured results so far
+## Completed hardware results
 
-Two Marrakesh blocks return 737,280 validated shots and consume 208 charged QPU seconds. No injected fault, overlap RMSE across three phases:
+Marrakesh returns 737,280 shots and consumes 208 charged QPU seconds; Quebec returns 737,280 shots and consumes 206 seconds. Total charged usage is 414 seconds (6 minutes 54 seconds). No injected fault, overlap RMSE across three phases:
 
-| Delay | Physical (blocks 0 / 1) | Encoded | Dynamically corrected |
+| Device / delay | Physical (blocks 0 / 1) | Encoded | Dynamically corrected |
 |---|---:|---:|---:|
-| 0 μs | 0.0105 / 0.0099 | 0.1118 / 0.1095 | 0.2321 / 0.2064 |
-| 20 μs | 0.1516 / 0.1566 | 0.3995 / 0.4023 | 0.3860 / 0.4071 |
+| Marrakesh / 0 μs | 0.0105 / 0.0099 | 0.1118 / 0.1095 | 0.2321 / 0.2064 |
+| Marrakesh / 20 μs | 0.1516 / 0.1566 | 0.3995 / 0.4023 | 0.3860 / 0.4071 |
+| Quebec / 0 μs | 0.0142 / 0.0034 | 0.0332 / 0.0270 | 0.0708 / 0.0710 |
+| Quebec / 20 μs | 0.2541 / 0.2580 | 0.4635 / 0.4394 | 0.4037 / 0.3869 |
 
-Conditional correction reduces injected-single-X overlap error relative to the uncorrected encoded arm. However, neither encoded arm beats the physical overlap on the no-fault cells, and correction does not consistently improve the delayed encoded circuit. This is evidence of mechanism recovery with substantial overhead, not a predictive improvement. Z remains uncorrected. Two adjacent blocks do not resolve calibration stability.
+Conditional correction reduces injected-single-X overlap error relative to the uncorrected encoded arm. Neither encoded arm beats the physical overlap on any no-fault device/block/delay cell. Quebec correction improves delayed overlap relative to uncorrected encoding in both blocks, while Marrakesh improves in one of two blocks. At zero delay, correction worsens encoding on both devices. This is evidence of mechanism recovery with substantial overhead, not a predictive improvement. Z remains uncorrected. Two adjacent blocks do not resolve calibration stability.
 
-[Every measured cell, raw overlap and syndrome counts, resources and usage](results/repetition-microkernel.json). Quebec results are explicitly absent, rather than simulated or inferred.
+[Every measured cell, raw overlap and syndrome counts, resources and usage](results/repetition-microkernel.json). All four measured blocks are included. Device differences are descriptive: different native compilation, layout and calibration times prevent attributing them to processor architecture alone.
 
 ![No-injection hardware overlap RMSE; dots show blocks](figures/repetition-microkernel.png)

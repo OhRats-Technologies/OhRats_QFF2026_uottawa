@@ -123,6 +123,15 @@ export class Audio {
       );
     } else this.tone(name === "remove" ? 180 : 330, t, 0.065, 0.08, "sine");
   }
+  voice(text, index) {
+    if (!this.enabled || document.hidden || this.ctx?.state !== "running") return;
+    const t = this.ctx.currentTime;
+    if (t - (this.lastVoice || 0) < 0.085 || !/[a-z]/i.test(text[index - 1] || "")) return;
+    this.lastVoice = t;
+    const notes = [60, 64, 67, 69, 72, 67];
+    const note = notes[text.charCodeAt(index - 1) % notes.length];
+    this.tone(440 * 2 ** ((note - 69) / 12), t + 0.005, 0.055, 0.025, "triangle");
+  }
   async visibility() {
     if (!this.ctx || !this.enabled) return;
     if (document.hidden) {

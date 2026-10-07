@@ -17,6 +17,7 @@ export const fresh = () => ({
   help: false,
   onboarded: false,
   guideStep: 0,
+  guidePage: 0,
   guideValue: 0,
   guideIntro: false,
   selectedYear: 0,
@@ -113,7 +114,7 @@ export function assessment(s) {
     status: won
       ? "CONTRACT COMPLETE"
       : rows.length === 1
-        ? "REPAIR & RUN AGAIN"
+        ? "TRY ANOTHER BUILD"
         : "KEEP TUNING",
     gain,
     cost,

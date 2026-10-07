@@ -131,8 +131,8 @@ export function controlsCompact(p, b, s, on, time, bloch) {
     sphere(
       p,
       x + w * 0.23,
-      y + h / 2,
-      Math.min(39, w * 0.18),
+      y + 44 + (h - 58) / 2,
+      Math.max(12, Math.min(39, w * 0.18, (h - 78) / 2)),
       s.angle,
       0,
       bloch,

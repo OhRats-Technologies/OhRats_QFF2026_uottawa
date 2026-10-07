@@ -1,4 +1,4 @@
-import { color, pixelTitle } from "./paint.js";
+import { color } from "./paint.js";
 import { sphere } from "./instruments.js";
 import { foundryNote } from "./foundry-help.js";
 export function menu(p, s, assets, on, W, H, time) {
@@ -17,15 +17,16 @@ export function menu(p, s, assets, on, W, H, time) {
   c.rect(xx + 15, yy + 15, fw - 30, fh - 30);
   c.clip();
   c.drawImage(assets.forest, xx + 15, yy + 15, fw - 30, fh - 30);
-  const scale = Math.min(mobile ? 7 : 12, (fw - 60) / 40);
-  pixelTitle(p, "FIRELINE", xx + 30, yy + 40, scale);
-  p.text(
-    "AN ONTARIO QUANTUM WORKSHOP",
-    xx + 33,
-    yy + 50 + scale * 7,
-    mobile ? 10 : 13,
-    color.mint,
-  );
+  // Original transparent PNG is retained. Its outer padding is excluded from
+  // the canvas source rectangle, leaving the plaque's bevel and shadow intact.
+  const logoW = Math.min(fw * 0.5, (fh - 48) * 2078 / 510),
+    logoH = logoW * 510 / 2078,
+    logoX = xx + (fw - logoW) / 2,
+    logoY = yy + 22;
+  c.imageSmoothingEnabled = false;
+  c.drawImage(assets.logo, 46, 102, 2078, 510,
+    Math.round(logoX), Math.round(logoY), Math.round(logoW), Math.round(logoH));
+  c.imageSmoothingEnabled = true;
   p.scan(xx + 15, yy + 15, fw - 30, fh - 30);
   if (time)
     for (let j = 0; j < 30; j++) {
@@ -37,11 +38,12 @@ export function menu(p, s, assets, on, W, H, time) {
   const bx = mobile ? 24 : W * 0.71,
     by = mobile ? yy + fh + 22 : H * (H < 500 ? 0.12 : 0.24),
     bw = mobile ? W - 48 : W * 0.23;
+  const heading = s.finished ? "WORKSHOP COMPLETE" : "BUILD. TEST. REPAIR.";
   p.text(
-    s.finished ? "WORKSHOP COMPLETE" : "BUILD. TEST. REPAIR.",
+    heading,
     bx,
     by,
-    19,
+    Math.min(19, bw / (heading.length * 0.62)),
     color.amber,
   );
   p.text(
@@ -76,8 +78,14 @@ export function menu(p, s, assets, on, W, H, time) {
     on("help"),
   );
   if (!mobile) {
-    sphere(p, bx + bw / 2, H * 0.78, 52, 0.6, time);
-    p.text("EMBER RELAY", bx + bw / 2, H * 0.88, 10, color.dim, "center");
+    const top = by + 320,
+      available = H - 22 - top,
+      radius = Math.min(52, (available - 40) / 2, bw / 2 - 18);
+    if (radius >= 24) {
+      const cy = top + radius + 10;
+      sphere(p, bx + bw / 2, cy, radius, 0.6, time);
+      p.text("EMBER RELAY", bx + bw / 2, cy + radius + 23, 10, color.dim, "center");
+    }
   }
 }
 export function foundry(p, s, data, on, W, H) {

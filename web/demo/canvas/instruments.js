@@ -47,9 +47,11 @@ export function mapPanel(p, box, assets, time, hover) {
 export function matrixPanel(p, box, result, time, hover) {
   const { x, y, w, h } = box;
   p.frame(x, y, w, h, "KERNEL ENGINE");
-  const side = Math.min(w - 58, h - (result ? 125 : 100)),
+  const compact = h < 190,
+    footerY = y + h - (compact ? 20 : 28),
+    side = Math.max(8, Math.min(w - 58, h - (compact ? 76 : result ? 125 : 100))),
     sx = x + (w - side) / 2,
-    sy = y + 55;
+    sy = y + (compact ? 42 : 55);
   p.screen(sx - 7, sy - 7, side + 14, side + 14);
   if (result) {
     const n = result.gram.length,
@@ -82,7 +84,7 @@ export function matrixPanel(p, box, result, time, hover) {
       p.text(
         `${result.trainYears[b]} × ${result.trainYears[a]}   ${result.gram[b][a].toFixed(3)}`,
         x + w / 2,
-        y + h - 34,
+        footerY,
         12,
         color.amber,
         "center",
@@ -90,16 +92,16 @@ export function matrixPanel(p, box, result, time, hover) {
     } else {
       p.text(
         `AVG ${result.similarity.toFixed(3)}`,
-        sx,
-        y + h - 34,
+        x + 24,
+        footerY,
         11,
         color.dim,
       );
-      p.rect(sx + side - 9, y + h - 35, 9, 3, color.mint);
+      p.rect(x + w - 33, footerY - 1, 9, 3, color.mint);
       p.text(
-        side < 170 ? "SUPPORT" : "SUPPORT YEAR",
-        sx + side - 14,
-        y + h - 34,
+        "SUPPORT YEARS",
+        x + w - 40,
+        footerY,
         11,
         color.dim,
         "right",
@@ -107,21 +109,24 @@ export function matrixPanel(p, box, result, time, hover) {
     }
     for (const i of result.support)
       p.rect(sx + i * u, sy - 12, u - 0.7, 3, color.mint);
-    // Colour key: the same ramp as the cells, from unlike to identical years.
-    const ly = sy + side + 22,
-      wide = side >= 170,
-      bx = sx + (wide ? 80 : 14),
-      bw = side - (wide ? 80 + 50 : 28);
-    p.text(wide ? "0 DIFFERENT" : "0", sx, ly, 10, color.dim);
-    p.text(wide ? "SAME 1" : "1", sx + side, ly, 10, color.dim, "right");
-    for (let k = 0; k < 24; k++)
-      p.rect(
-        bx + (k * bw) / 24,
-        ly - 4,
-        bw / 24 + 0.5,
-        8,
-        `hsl(26 75% ${7 + (k / 23) * 57}%)`,
-      );
+    // Short landscape panels retain the matrix and stats without a squeezed ramp.
+    if (!compact) {
+      // Colour key: the same ramp as the cells, from unlike to identical years.
+      const ly = sy + side + 22,
+        wide = side >= 170,
+        bx = sx + (wide ? 80 : 14),
+        bw = side - (wide ? 80 + 50 : 28);
+      p.text(wide ? "0 DIFFERENT" : "0", sx, ly, 10, color.dim);
+      p.text(wide ? "SAME 1" : "1", sx + side, ly, 10, color.dim, "right");
+      for (let k = 0; k < 24; k++)
+        p.rect(
+          bx + (k * bw) / 24,
+          ly - 4,
+          bw / 24 + 0.5,
+          8,
+          `hsl(26 75% ${7 + (k / 23) * 57}%)`,
+        );
+    }
   } else {
     for (let i = 0; i < 16; i++)
       for (let j = 0; j < 16; j++)
@@ -193,7 +198,7 @@ export function results(p, box, s, on) {
   const r = s.result;
   if (!r) {
     p.text(
-      "BUILD → RUN → REPAIR",
+      s.running ? "TESTING…" : "CHOOSE YOUR SIGNALS",
       x + w / 2,
       y + h / 2,
       20,

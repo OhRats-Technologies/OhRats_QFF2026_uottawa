@@ -3,23 +3,23 @@ import { color } from "./paint.js";
 const notes = {
   none: [
     "SELECTOR CARTRIDGES",
-    "Each cartridge applies a different feature-selection method to choose four of the twenty input signals. Select a cartridge to view its method.",
+    "Pick a cartridge to find four signals for your engine.",
   ],
   mi: [
     "MI · MUTUAL INFORMATION",
-    "Classical filter method. Signals are ranked by mutual information with the fire-size target; the four highest are retained. Redundancy between signals is not considered.",
+    "Pick the four signals most related to fire size.",
   ],
   exact: [
     "EXACT",
-    "Classical exhaustive search. All 4,845 four-signal subsets are evaluated; the subset with the minimum selection cost (relevance penalized by redundancy) is returned.",
+    "Search all 4,845 combinations and pick the lowest-cost subset.",
   ],
   qaoa: [
     "QAOA + SQD",
-    "Simulated quantum heuristic. A QAOA circuit raises the probability of low-cost subsets and is sampled; SQD returns the lowest-cost sampled subset. Optimality is not guaranteed.",
+    "QAOA samples signal combinations. SQD picks the lowest-cost sample.",
   ],
   uniform: [
     "UNIFORM",
-    "Random-sampling baseline. Subsets are drawn with equal probability and the lowest-cost sample is returned, providing a control for QAOA sampling.",
+    "Sample random combinations and keep the lowest-cost subset.",
   ],
 };
 function wrap(c, line, width, size) {

@@ -4,56 +4,9 @@ import { foundry } from "./overlays.js";
 import { sampleCandidates } from "./foundry.js";
 import { beatrice, bettyCue } from "./beatrice.js";
 import { settle } from "./glide.js";
-export const tour = [
-  {
-    name: "ONTARIO",
-    tab: "map",
-    zone: "map",
-    text: "I'm Betty. This is your workshop. These are recorded Ontario fires and forest cover. Our engine estimates the average hectares per fire for a year.",
-  },
-  {
-    name: "SIGNAL RACK",
-    tab: "rack",
-    zone: "rack",
-    text: "Choose your inputs here: heat, rain or forest signals. Lit buttons are connected. Start with a few; more signals mean more computation.",
-  },
-  {
-    name: "ANGLE",
-    tab: "kernel",
-    ids: ["angle-down", "angle-up"],
-    text: "These buttons change the encoding angle range. Scaled signals become quantum rotations; their state overlaps form the similarity grid. Wider isn't always better.",
-  },
-  {
-    name: "C",
-    tab: "kernel",
-    ids: ["strength-down", "strength-up"],
-    text: "C controls how strongly SVR penalizes errors outside its tolerance band. Higher C pushes harder to fit training rows; lower C favors a simpler fit.",
-  },
-  {
-    name: "EPSILON",
-    tab: "kernel",
-    ids: ["epsilon-down", "epsilon-up"],
-    text: "Epsilon sets the no-penalty band. Wider tolerates more small deviations; narrower asks for a closer fit. Its units are scaled log targets, not hectares.",
-  },
-  {
-    name: "SUBSET FOUNDRY",
-    tab: "rack",
-    ids: ["foundry"],
-    text: "This opens the subset foundry. QAOA—the Quantum Approximate Optimization Algorithm—alternates cost and mixing operations to reshape which four-signal subsets get sampled.",
-  },
-  {
-    name: "SQD SHORTLIST",
-    tab: "rack",
-    foundry: true,
-    text: "SQD means Sample-based Quantum Diagonalization: solve a smaller matrix formed from sampled states. Here it is diagonal, so the starred row is the cheapest sampled subset. Patch it, then test its prediction.",
-  },
-  {
-    name: "RUN YOUR ENGINE",
-    tab: "rack",
-    ids: ["run"],
-    text: "Run once to set your starting score. Change something and run again. Win by cutting error 5%, or effort 25% with at most 5% extra error. You're ready—start here.",
-  },
-];
+import { tour, tourText } from "./tour-lessons.js";
+import { dialogue, dialogueArrow } from "./dialogue.js";
+export { tour } from "./tour-lessons.js";
 export function tourView(s) {
   const lesson = tour[s.guideStep || 0];
   return { ...s, menu: false, tab: lesson.tab, toast: "", foundry: false };
@@ -78,9 +31,9 @@ function union(hits) {
     y = Math.min(...hits.map((h) => h.y));
   return {
     x: x - 7,
-    y: y - 18,
+    y: y - 28,
     w: Math.max(...hits.map((h) => h.x + h.w)) - x + 14,
-    h: Math.max(...hits.map((h) => h.y + h.h)) - y + 25,
+    h: Math.max(...hits.map((h) => h.y + h.h)) - y + 38,
   };
 }
 function overlap(a, b) {
@@ -92,6 +45,8 @@ function overlap(a, b) {
 export function spotlight(p, s, on, W, H, time, zones) {
   const step = s.guideStep || 0,
     lesson = tour[step],
+    text = tourText(s),
+    key = `${step}:${s.guidePage || 0}`,
     hits = p.hits;
   let target = lesson.zone
     ? zones[lesson.zone]
@@ -108,15 +63,19 @@ export function spotlight(p, s, on, W, H, time, zones) {
   target.w = Math.min(target.w, W - target.x - 7);
   target.h = Math.min(target.h, H - target.y - 7);
   const { x, y, w, h } = target;
+  const protectedAreas = step >= 2 && step <= 4 && zones.encoder
+    ? [{ ...zones.encoder, h: 43 }]
+    : [];
   // The bubble's width follows its text, so steps resize it as they change.
   const font = W < 500 ? 12 : 13,
-    bw = Math.min(W - 28, Math.max(300, Math.min(420, lesson.text.length * 2))),
+    bw = Math.min(W - 28, Math.max(300, Math.min(420, text.length * 2))),
     textW = bw - 34,
-    body = lines(p.c, lesson.text, textW, font),
+    body = lines(p.c, text, textW, font),
     bh = 68 + body.length * font * 1.4 + 43,
     clampX = (v) => Math.max(14, Math.min(W - bw - 14, v)),
     clampY = (v) => Math.max(12, Math.min(H - bh - 12, v));
   const candidates = [
+    ...protectedAreas.map((a) => [x, a.y - bh - 18]),
     [x + w + 20, y],
     [x - bw - 20, y],
     [x, y + h + 18],
@@ -127,14 +86,14 @@ export function spotlight(p, s, on, W, H, time, zones) {
     [W - bw - 14, 70],
   ].map(([xx, yy]) => ({ x: clampX(xx), y: clampY(yy), w: bw, h: bh }));
   const score = (b) =>
-    overlap(b, target) * 100 +
+    [target, ...protectedAreas].reduce((sum, a) => sum + overlap(b, a), 0) * 100 +
     Math.hypot(b.x + bw / 2 - (x + w / 2), b.y + bh / 2 - (y + h / 2));
   const landscape = W >= 650 && W < 920 && H < 500;
   const box = landscape
     ? { x: W - bw - 14, y: clampY(y), w: bw, h: bh }
     : candidates.sort((a, b) => score(a) - score(b))[0];
-  // Draw the eased highlight and bubble; the final layout is still returned.
-  const shown = settle(step, target, box, time),
+  // Return rendered bounds so QA also checks intermediate animation frames.
+  const shown = settle(key, target, box, time, { w: W, h: H }, protectedAreas),
     { x: sx, y: sy, w: sw, h: sh } = shown.target,
     { x: bx, y: by, w: cw, h: ch } = shown.box,
     veil = "#031218b8";
@@ -184,54 +143,51 @@ export function spotlight(p, s, on, W, H, time, zones) {
     by + 8,
     46,
     time,
-    bettyCue("tour", step, time, lesson.text),
+    bettyCue("tour", step, time, text),
   );
   p.c.save();
   p.c.globalAlpha = shown.fade;
   p.text(
-    `BETTY · ${step + 1}/${tour.length}`,
+    "BETTY",
     bx + 67,
     by + 20,
     11,
     color.amber,
   );
   p.text(lesson.name, bx + 67, by + 42, 12, color.mint);
-  body.forEach((line, i) =>
-    p.text(line, bx + 17, by + 70 + i * font * 1.4, font),
-  );
+  const speech = dialogue.read(key, text, time);
+  if (speech.voice) on.audio?.voice(text, speech.count);
+  let remaining = speech.text.length;
+  body.forEach((line, i) => {
+    p.text(line.slice(0, Math.max(0, remaining)), bx + 17,
+      by + 70 + i * font * 1.4, font);
+    remaining -= line.length + 1;
+  });
   p.c.restore();
   p.hits = [];
-  p.button(
-    "guide-back",
-    "◀",
-    bx + 16,
-    by + ch - 36,
-    35,
-    25,
-    () => on("guide-step", -1),
-    { disabled: step === 0 },
-  );
-  p.button("guide-skip", "SKIP", bx + 61, by + ch - 36, 58, 25, () =>
-    on("guide-play"),
-  );
-  p.button(
-    "guide-next",
-    step === 7 ? "LET'S BUILD ▶" : "NEXT ▶",
-    bx + cw - 145,
-    by + ch - 36,
-    129,
-    25,
-    () => on(step === 7 ? "guide-play" : "guide-step", 1),
-    { tone: "hot" },
-  );
-  return { target, bubble: box, topic: lesson.name };
+  const next = () => on("guide-next"),
+    backX = bx + 16, buttonY = by + ch - 36;
+  p.button("guide-back", "", backX, buttonY, 35, 25,
+    () => on("guide-step", -1), { disabled: step === 0 && !s.guidePage });
+  p.hits.at(-1).label = "Previous dialogue";
+  dialogueArrow(p, backX + 19, buttonY + 12, 0, -1, step > 0 || !!s.guidePage);
+  p.button("guide-skip", "SKIP", bx + 61, buttonY, 58, 25,
+    () => on("guide-play"));
+  p.button("guide-next", "", bx + cw - 65, buttonY, 49, 25, next);
+  p.hits.at(-1).label = speech.typing ? "Show full dialogue" : "Continue dialogue";
+  dialogueArrow(p, bx + cw - 35, buttonY + 12, time, 1, !speech.typing);
+  p.hits.push({ id: "guide-dialogue", label: "Continue Betty dialogue",
+    x: bx, y: by, w: cw, h: ch - 43, action: next });
+  return { target: shown.target, bubble: shown.box, topic: lesson.name,
+    text, visible: speech.text, typing: speech.typing, page: s.guidePage || 0 };
+
 }
 
 const tutorialSamples = new Map();
 export function drawTour(p, s, data, assets, on, W, H, time, geometry) {
   const view = tourView(s),
     tourW = W >= 650 && W < 920 && H < 500 ? W / 2 : W,
-    tourH = W < 650 ? H - 235 : H;
+    tourH = W < 920 && tourW === W ? H - 235 : H;
   p.rect(0, 0, W, H, color.ink);
   const zones = drawWorkbench(
     p,

@@ -39,6 +39,7 @@ async function click(id) {
 await click("continue");
 if (await page.evaluate(() => window.fireline.snapshot().guideIntro))
   await click("guide-skip");
+await page.waitForFunction(() => window.fireline.snapshot().attempts === 1 && !window.fireline.snapshot().running);
 // Dragging a signal onto the engine must not patch it; a click does.
 const source = await target("signal-5");
 await page.mouse.move(source.x, source.y);
@@ -66,7 +67,6 @@ for (const id of [
   "signal-12",
 ])
   await click(id);
-await click("run");
 await page.waitForFunction(
   () =>
     window.fireline.snapshot().result?.build.features.length === 10 &&
@@ -74,10 +74,9 @@ await page.waitForFunction(
 );
 const first = await page.evaluate(() => window.fireline.snapshot().result);
 await click("angle-up");
-await click("run");
 await page.waitForFunction(
   () =>
-    window.fireline.snapshot().attempts === 2 &&
+    window.fireline.snapshot().attempts === 3 &&
     !window.fireline.snapshot().running,
 );
 await click("undo");
@@ -145,7 +144,6 @@ await page.reload();
 await page.waitForFunction(() => window.fireline);
 await click("continue");
 await click("guide-skip");
-await click("run");
 await page.waitForFunction(
   () =>
     window.fireline.snapshot().attempts === 1 &&

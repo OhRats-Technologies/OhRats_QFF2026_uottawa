@@ -1,0 +1,163 @@
+{
+  "automatic": {
+    "openingResultsRuns": true,
+    "changedBuildRecalculates": true,
+    "unchangedAndRestoredDoNotRepeat": true,
+    "preservedBaseline": true,
+    "drawnButtonArrows": true,
+    "errors": []
+  },
+  "gameplay": {
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 41,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 1280,
+        "height": 640,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 32,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 41,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 14,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "height": 568,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 14,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 844,
+        "height": 390,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "menu",
+        "controls": 14,
+        "overflow": 0,
+        "errors": []
+      }
+    ]
+  },
+  "onboarding": {
+    "status": "passed",
+    "checks": [
+      {
+        "width": 1440,
+        "height": 900,
+        "lessons": 8,
+        "bubbles": 16,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": false,
+        "errors": []
+      },
+      {
+        "width": 1280,
+        "height": 640,
+        "lessons": 8,
+        "bubbles": 16,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": false,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "lessons": 8,
+        "bubbles": 16,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": true,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "height": 568,
+        "lessons": 8,
+        "bubbles": 16,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": true,
+        "errors": []
+      },
+      {
+        "width": 844,
+        "height": 390,
+        "lessons": 8,
+        "bubbles": 16,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": false,
+        "errors": []
+      }
+    ]
+  },
+  "tests": {
+    "passed": 16,
+    "assertions": 943
+  }
+}

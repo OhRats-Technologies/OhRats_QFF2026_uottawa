@@ -1,5 +1,7 @@
 import { trim, relay } from "./chrome.js";
-import { color, pixelTitle } from "./paint.js";
+import { color } from "./paint.js";
+import { evaluation } from "./evaluation.js";
+import { currentResult } from "./auto-test.js";
 import { assessment } from "./session.js";
 import { mapPanel, matrixPanel, results } from "./instruments.js";
 import { rack, controls, controlsCompact } from "./rack.js";
@@ -19,7 +21,6 @@ export function drawWorkbench(
     zones = {};
   p.rect(0, 0, W, H, p.c.createPattern(assets.metal, "repeat"));
   p.frame(4, 4, W - 8, H - 8);
-  pixelTitle(p, "FIRELINE", 20, 20, mobile ? 2 : 3);
   const header = mobile ? 48 : 56;
   p.button("menu", "≡", W - 136, 13, 34, 30, () => on("menu"));
   p.button(
@@ -36,16 +37,15 @@ export function drawWorkbench(
   if (!mobile) p.text(`SEASON ${s.round + 1} / 3`, 240, 30, 12, color.dim);
   const bottom = H - 65;
   p.frame(12, bottom, W - 24, 53);
-  p.button(
-    "run",
-    s.running ? "RUNNING…" : s.result ? "REPAIR & RUN ▶" : "RUN ENGINE ▶",
-    W - 220,
-    bottom + 10,
-    196,
-    33,
-    () => on("run"),
-    { tone: "hot", disabled: s.running || s.features.length !== s.width },
-  );
+  const ready = !s.evaluating && !s.running && currentResult(s) && assessment(s).won;
+  zones.execution = { x: W - 220, y: bottom + 8, w: 196, h: 37 };
+  if (s.evaluating) evaluation(p, W - 200, bottom + 10, 170, time);
+  else if (ready) p.button(
+    "next", s.round === 2 ? "FINISH ▶" : "NEXT SEASON ▶",
+    W - 220, bottom + 10, 196, 33, () => on("next"), { tone: "hot" });
+  else if (currentResult(s)) p.text(
+    `${s.result.mae.toFixed(1)} ha/fire MAE`, W - 34, bottom + 27,
+    11, color.dim, "right");
   p.button(
     "undo",
     "PREVIOUS BUILD",
@@ -56,16 +56,6 @@ export function drawWorkbench(
     () => on("restore"),
     { disabled: !s.previous },
   );
-  if (!mobile && s.result) {
-    const i = s.selectedYear;
-    p.text(
-      `${s.result.years[i]}  OBSERVED ${s.result.actual[i].toFixed(1)}  /  MODEL ${s.result.predicted[i].toFixed(1)} ha/fire`,
-      224,
-      bottom + 27,
-      12,
-      color.dim,
-    );
-  }
   if (mobile) {
     const tabs = [
       ["rack", "BUILD"],
@@ -210,17 +200,6 @@ function scoreHorizontal(p, b, s, on) {
       10,
       a.won ? color.amber : color.dim,
     );
-    if (a.won)
-      p.button(
-        "next",
-        s.round === 2 ? "FINISH →" : "NEXT →",
-        x + w - 110,
-        y + h - 43,
-        85,
-        29,
-        () => on("next"),
-        { tone: "hot" },
-      );
     return;
   }
   p.text(r ? r.mae.toFixed(1) : "—", x + 26, y + 81, 38, color.amber);
@@ -243,15 +222,5 @@ function scoreHorizontal(p, b, s, on) {
     12,
     a.won ? color.amber : color.dim,
   );
-  if (a.won)
-    p.button(
-      "next",
-      s.round === 2 ? "FINISH →" : "NEXT →",
-      x + w - 114,
-      y + h - 53,
-      88,
-      30,
-      () => on("next"),
-      { tone: "hot" },
-    );
+
 }

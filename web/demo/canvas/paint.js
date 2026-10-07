@@ -140,6 +140,8 @@ export class Paint {
     action,
     { active = false, disabled = false, tone = "normal" } = {},
   ) {
+    const backward = /[◀←↔]/.test(label), forward = /[▶→↔]/.test(label);
+    label = label.replace(/[◀←▶→↔]/g, "").trim();
     const focused = this.focus === id || this.hover === id;
     const fill = disabled
       ? "#203c3b"
@@ -198,12 +200,21 @@ export class Paint {
       );
     this.text(
       label,
-      x + w / 2,
+      x + w / 2 + (backward ? 10 : 0) - (forward ? 10 : 0),
       y + h / 2,
-      Math.max(10, Math.min(14, (w - 16) / (label.length * 0.62))),
+      Math.max(10, Math.min(14, (w - 16 - (forward || backward ? 24 : 0)) / (label.length * 0.62))),
       disabled ? "#758b83" : active || tone === "hot" ? "#151c1c" : color.mint,
       "center",
     );
+    const arrow = (cx, direction) => {
+      const cy = y + h / 2, tint = disabled ? color.dim : color.amber;
+      this.line([[cx - direction * 12, cy + 2], [cx + direction * 3, cy + 2]], "#041719", 4);
+      this.line([[cx - direction * 12, cy], [cx + direction * 2, cy]], color.mint, 2);
+      this.line([[cx - direction * 5, cy - 6], [cx + direction * 3, cy],
+        [cx - direction * 5, cy + 6]], tint, 3);
+    };
+    if (forward) arrow(x + w - 17, 1);
+    if (backward) arrow(x + 19, -1);
     this.hits.push({ id, label, x, y, w, h, action, disabled });
   }
   cable(x, y, tx, ty, t = 0) {

@@ -44,6 +44,7 @@ for (const [width, height] of [
   await click("continue");
   if (await page.evaluate(() => window.fireline.snapshot().guideIntro))
     await click("guide-skip");
+  await page.waitForFunction(() => window.fireline.snapshot().attempts === 1 && !window.fireline.snapshot().running);
   await page.screenshot({ path: `${out}/build-${width}.png` });
   await click("signal-0");
   while (
@@ -53,10 +54,9 @@ for (const [width, height] of [
   )
     await click("rack-page");
   await click("signal-5");
-  await click("run");
   await page.waitForFunction(
     () =>
-      window.fireline.snapshot().attempts === 1 &&
+      window.fireline.snapshot().attempts === 2 &&
       !window.fireline.snapshot().running,
   );
   if (width < 920) await click("tab-kernel");
@@ -66,10 +66,9 @@ for (const [width, height] of [
   await click("method-qaoa");
   await page.screenshot({ path: `${out}/foundry-${width}.png` });
   await click("apply");
-  await click("run");
   await page.waitForFunction(
     () =>
-      window.fireline.snapshot().attempts === 2 &&
+      window.fireline.snapshot().attempts === 3 &&
       !window.fireline.snapshot().running,
   );
   await page.screenshot({ path: `${out}/results-${width}.png` });
@@ -80,7 +79,7 @@ for (const [width, height] of [
   await page.reload();
   await page.waitForFunction(() => window.fireline);
   const after = await page.evaluate(() => window.fireline.snapshot());
-  if (after.attempts !== 2 || after.result.mae !== before.result.mae)
+  if (after.attempts !== 3 || after.result.mae !== before.result.mae)
     throw new Error("Persistence lost");
   await click("continue");
   await page.keyboard.press("Tab");

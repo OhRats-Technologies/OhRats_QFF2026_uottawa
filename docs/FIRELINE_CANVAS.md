@@ -91,3 +91,33 @@ Tour Next eases the highlight and bubble to their new place and size over 0.42 s
 ## Music track, saved charts and removed links
 
 MUSIC ON now streams the looped Pixel Firefront cover (`assets/music`) through the existing opt-in Web Audio lifecycle: nothing downloads before opt-in, hidden tabs pause it and the toggle mutes it. Ember Relay remains the procedural fallback when the file cannot load. `serve.ts` serves `.wav`. Restored saves no longer carry a stale run-animation clock, which had drawn season bars partial or inverted after Continue. The rack-to-engine and footer cables and the drag-to-link gesture are removed; signals patch by click, keyboard or touch, and the interaction check asserts that a drag does not link.
+
+## Layout reliability
+
+Menu artwork, title and sphere now fit their actual content areas. The decorative sphere sits below the button stack and disappears when a short viewport has no room. Encoder spheres use their panel's interior height. Tour highlights contain the complete control labels; dialogue retains its final text dimensions while moving, stays inside the viewport and avoids the active control and encoder heading. Reduced motion displays dialogue immediately. Saved builds and glide transitions remain intact.
+
+Verification: 11 Bun tests / 889 assertions; eight onboarding steps across five layouts with both animated and reduced motion; six gameplay layouts with no overflow or browser errors. Checks inspect rendered animation bounds, not only destination rectangles. [Layout receipt](data/fireline_layout_verification.json) · [Angle walkthrough](figures/fireline-layout-angle.png).
+
+## Short Betty dialogue
+
+The in-place tour now has sixteen 10–25-word bubbles across eight topics. Text types at 38 characters/second; a click completes the line, and the next click advances. Click Betty's bubble or the drawn continue arrow. Back and Skip remain available; the page counter is removed. The arrow bounces only when the line is ready, and reduced motion displays text immediately. Short synthesized chirps follow the letters when sound is enabled; mute and hidden tabs silence them. No recorded character voices are used.
+
+Verification: 16 tests / 943 assertions; sixteen bubbles on five layouts in animated and reduced-motion modes; browser checks of natural typing, click-to-complete, bubble progression, synthesized audio and mute. [Dialogue receipt](data/fireline_dialogue_verification.json) · [Betty](figures/fireline-betty-dialogue.png).
+
+## Automatic season test
+
+Opening Results tests a complete new or changed build automatically. Reopening an unchanged or restored result does not add a run. The footer now opens Results, and Betty describes that flow. The Build/Run/Repair placeholder is removed. Button arrows use shared canvas strokes with shadow, mint shaft and amber chevron instead of font glyphs.
+
+Verification covers automatic calculation, changed-build evaluation, duplicate prevention, unchanged first-run challenge and reload; six gameplay layouts, five sixteen-bubble tours, input/restore/audio lifecycle and 16 tests / 943 assertions pass. [Automatic test receipt](data/fireline_automatic_test_verification.json).
+
+## Live build testing
+
+Complete input edits now test automatically after a 420 ms pause. Rapid changes coalesce; incomplete builds, open guides/foundries and unchanged saved results do not calculate. Automatic runs leave the editor visible. The initial and next-season starting builds also test automatically. Next replaces the footer action only when the current evaluated build meets the existing error/resource contract; editing hides stale victories immediately. Betty's instructions match this flow.
+
+Verification: 18 tests / 951 assertions; live browser checks of automatic baseline, edit evaluation, staying in the editor, win gating, stale-victory removal and next-season baseline; six gameplay layouts, five sixteen-bubble tours and input/restore/audio lifecycle checks. [Live-test receipt](data/fireline_live_test_verification.json) · [Winning build](figures/fireline-live-win.png).
+
+## Evaluation feedback and navigation
+
+Results is view navigation only; its duplicate footer action is removed. The footer shows the current MAE when idle, an amber evaluating instrument during debounce/calculation, or Next Season/Finish for a current winning build. Progress lights sweep without claiming a percentage; reduced motion uses a static strip. Evaluating state is transient and announced to assistive technology, not saved as unfinished work.
+
+Verification: 19 tests / 960 assertions; pending-state lifecycle and bounded animation checks; six gameplay layouts, five sixteen-bubble tours, live win/edit/next-season checks and visible evaluating-state verification. [Feedback receipt](data/fireline_evaluation_verification.json).

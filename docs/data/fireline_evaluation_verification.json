@@ -1,0 +1,181 @@
+{
+  "live_reduced": {
+    "automaticBaseline": true,
+    "inputChangeTestsWithoutNavigation": true,
+    "staysInEditor": true,
+    "coalescedEdits": true,
+    "winningBuildShowsNext": true,
+    "staleVictoryHiddenOnEdit": true,
+    "nextSeasonAutomaticallyTests": true,
+    "noDuplicateRuns": true,
+    "visibleEvaluatingState": true,
+    "noDuplicateResultsAction": true,
+    "errors": []
+  },
+  "live_animated": {
+    "automaticBaseline": true,
+    "inputChangeTestsWithoutNavigation": true,
+    "staysInEditor": true,
+    "coalescedEdits": true,
+    "winningBuildShowsNext": true,
+    "staleVictoryHiddenOnEdit": true,
+    "nextSeasonAutomaticallyTests": true,
+    "noDuplicateRuns": true,
+    "visibleEvaluatingState": true,
+    "noDuplicateResultsAction": true,
+    "errors": []
+  },
+  "gameplay": {
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900,
+        "attempts": 3,
+        "mae": 44.5711801432187,
+        "focused": "menu",
+        "controls": 40,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 1280,
+        "height": 640,
+        "attempts": 3,
+        "mae": 44.5711801432187,
+        "focused": "menu",
+        "controls": 31,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "attempts": 3,
+        "mae": 44.5711801432187,
+        "focused": "menu",
+        "controls": 40,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "attempts": 3,
+        "mae": 44.5711801432187,
+        "focused": "menu",
+        "controls": 34,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "height": 568,
+        "attempts": 3,
+        "mae": 44.5711801432187,
+        "focused": "menu",
+        "controls": 34,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 844,
+        "height": 390,
+        "attempts": 3,
+        "mae": 44.5711801432187,
+        "focused": "menu",
+        "controls": 19,
+        "overflow": 0,
+        "errors": []
+      }
+    ]
+  },
+  "onboarding": {
+    "status": "passed",
+    "checks": [
+      {
+        "width": 1440,
+        "height": 900,
+        "lessons": 8,
+        "bubbles": 16,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": false,
+        "errors": []
+      },
+      {
+        "width": 1280,
+        "height": 640,
+        "lessons": 8,
+        "bubbles": 16,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": false,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "lessons": 8,
+        "bubbles": 16,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": true,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "height": 568,
+        "lessons": 8,
+        "bubbles": 16,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": true,
+        "errors": []
+      },
+      {
+        "width": 844,
+        "height": 390,
+        "lessons": 8,
+        "bubbles": 16,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": false,
+        "errors": []
+      }
+    ]
+  },
+  "bun": {
+    "tests": 19,
+    "assertions": 960
+  }
+}

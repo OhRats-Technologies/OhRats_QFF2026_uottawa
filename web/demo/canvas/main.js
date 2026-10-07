@@ -21,6 +21,7 @@ import { drawTour } from "./tour.js";
 import { openBriefing, guideAction } from "./guide-flow.js";
 import { run } from "./engine.js";
 import { preview } from "./preview.js";
+import { automaticTests, currentResult } from "./auto-test.js";
 import { sampleCandidates } from "./foundry.js";
 const canvas = document.querySelector("canvas"),
   ctx = canvas.getContext("2d"),
@@ -38,6 +39,7 @@ let s = load(),
   tourReceipt = null;
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 let geometry = preview(data, build(s), s.round);
+const auto = automaticTests(() => s, () => action("auto-test"));
 const a11y = document.querySelector("#controls"),
   status = document.querySelector("#status");
 const mirror = controlMirror(p, a11y, audio, () => s);
@@ -69,6 +71,8 @@ async function action(type, value) {
     return;
   if (guideAction(s, type, value, status)) {
     dirty();
+    auto.schedule();
+    if (auto.pending) status.textContent = "Evaluating the current build.";
     return;
   }
   if (type === "start") {
@@ -88,7 +92,11 @@ async function action(type, value) {
     s.menu = true;
     location.hash = "main-menu";
   }
-  if (type === "tab") s.tab = value;
+  if (type === "tab") {
+    s.tab = value;
+    if (value === "results" && s.features.length === s.width &&
+      !currentResult(s)) type = "run";
+  }
   if (type === "rack-page") s.rackPage = ((s.rackPage || 0) + 1) % value;
   if (type === "foundry") {
     s.foundry = !s.foundry;
@@ -139,6 +147,7 @@ async function action(type, value) {
     toast("Previous build restored. Run to compare.");
   }
   if (type === "next") {
+    if (!assessment(s).won || !currentResult(s)) return;
     if (s.round < 2) {
       s.round++;
       s.result = null;
@@ -179,17 +188,20 @@ async function action(type, value) {
     s.features = [...s.sample.candidates[s.candidate || 0].features];
     s.width = 4;
     s.foundry = false;
-    toast("Subset patched. Run it against your last build.");
+    toast("Subset patched. Open Results to compare.");
   }
-  if (type === "run" && !s.help && s.features.length === s.width) {
+  if ((type === "run" || type === "auto-test") && !s.help && s.features.length === s.width) {
+    auto.cancel();
+    const automatic = type === "auto-test";
+    if (currentResult(s)) return;
     const spec = build(s),
       round = s.round,
       token = ++runningToken;
     s.running = true;
-    audio.effect("run");
+    if (!automatic) audio.effect("run");
     status.textContent = "Calculating quantum similarities and fitting SVR.";
     // Give the canvas time to show the relay before the small local calculation.
-    await new Promise((resolve) => setTimeout(resolve, reduce ? 20 : 500));
+    await new Promise((resolve) => setTimeout(resolve, automatic || reduce ? 20 : 500));
     try {
       const start = performance.now(),
         result = run(data, spec, round);
@@ -197,11 +209,11 @@ async function action(type, value) {
       result.elapsedMs = performance.now() - start;
       record(s, result);
       s.runAt = reduce ? 0 : performance.now();
-      s.tab = "results";
+      if (!automatic) s.tab = "results";
       const a = assessment(s);
-      toast(a.won ? "CONTRACT COMPLETE" : "RUN SAVED");
-      status.textContent = `Run saved: ${result.mae.toFixed(1)} hectares per fire MAE. RBF ${result.rbfMAE.toFixed(1)}; mean ${result.meanMAE.toFixed(1)}. ${a.won ? "Contract complete." : "Repair and run again."}`;
-      audio.effect(a.won ? "win" : "patch");
+      if (a.won || !automatic) toast(a.won ? "CONTRACT COMPLETE" : "RUN SAVED");
+      status.textContent = `Run saved: ${result.mae.toFixed(1)} hectares per fire MAE. RBF ${result.rbfMAE.toFixed(1)}; mean ${result.meanMAE.toFixed(1)}. ${a.won ? "Contract complete." : "Try another build."}`;
+      if (a.won || !automatic) audio.effect(a.won ? "win" : "patch");
     } catch (error) {
       console.error(error);
       toast("Run could not finish. Your build is preserved.");
@@ -210,6 +222,10 @@ async function action(type, value) {
   }
   geometry = preview(data, build(s), s.round);
   dirty();
+  if (["start", "new", "feature", "width", "angle", "strength", "epsilon", "apply", "restore", "next"].includes(type)) {
+    auto.schedule();
+    if (auto.pending) status.textContent = "Evaluating the current build.";
+  }
 }
 action.audio = audio;
 function draw(timestamp) {
@@ -222,7 +238,8 @@ function draw(timestamp) {
     tourReceipt = drawTour(p, s, data, assets, action, W, H, time, geometry);
   } else {
     if (s.menu) menu(p, s, assets, action, W, H, time);
-    else drawWorkbench(p, s, data, assets, action, W, H, time, hover, geometry);
+    else drawWorkbench(p, { ...s, evaluating: auto.pending || s.running },
+      data, assets, action, W, H, time, hover, geometry);
     if (s.foundry) {
       p.hits = [];
       foundry(p, s, data, action, W, H);
@@ -251,7 +268,7 @@ resize();
 requestAnimationFrame(draw);
 // Read-only state/geometry receipt for browser checks; no hidden gameplay actions.
 window.fireline = {
-  snapshot: () => structuredClone({ ...s, running: !!s.running }),
+  snapshot: () => structuredClone({ ...s, running: !!s.running, evaluating: auto.pending || !!s.running }),
   tour: () => structuredClone(tourReceipt),
   controls: () =>
     p.hits.map(({ id, label, x, y, w, h, disabled }) => ({

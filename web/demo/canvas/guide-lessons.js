@@ -52,7 +52,7 @@ export const lessons = [
     tab: "PLAY",
     title: "Your first build sets the challenge.",
     kind: "repair",
-    text: "Run once to set your baseline. Change signals or settings and run again. Clear a season by cutting error by 5%, or by cutting effort by 25% while keeping error within 5% of your first build.",
+    text: "Your first complete build sets the baseline automatically. Change signals or settings; each valid edit updates the score after a short pause. Clear a season by cutting error by 5%, or by cutting effort by 25% while keeping error within 5% of your first build.",
     tip: "The ? guide stays with you. Previous Build restores your last engine.",
   },
 ];

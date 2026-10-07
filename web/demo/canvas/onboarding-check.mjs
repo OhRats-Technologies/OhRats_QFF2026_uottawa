@@ -16,7 +16,7 @@ for (const [width, height] of [
 ]) {
   const context = await browser.newContext({
     viewport: { width, height },
-    reducedMotion: "reduce",
+    reducedMotion: process.env.FIRELINE_MOTION === "animate" ? "no-preference" : "reduce",
     hasTouch: width < 500,
   });
   const page = await context.newPage(),
@@ -27,11 +27,20 @@ for (const [width, height] of [
   );
   await page.waitForFunction(() => window.fireline);
   const click = async (id) => {
+    // Hitboxes travel with the bubble. Click after arrival, then inspect the
+    // next step during motion rather than clicking stale animated coordinates.
+    if (process.env.FIRELINE_MOTION === "animate") await page.waitForTimeout(480);
     await page.waitForFunction(
       (id) =>
         window.fireline.controls().some((h) => h.id === id && !h.disabled),
       id,
     );
+    if (id === "guide-next" && await page.evaluate(() => window.fireline.tour()?.typing)) {
+      await page.locator('[data-id="guide-next"]').evaluate((button) => button.click());
+      await page.waitForTimeout(40);
+      const speech = await page.evaluate(() => window.fireline.tour());
+      assert.equal(speech.visible, speech.text, "First click completes typing");
+    }
     const h = await page.evaluate(
       (id) => window.fireline.controls().find((h) => h.id === id),
       id,
@@ -52,12 +61,15 @@ for (const [width, height] of [
     true,
   );
   const initial = await page.evaluate(() => window.fireline.snapshot());
-  for (let step = 0; step < 8; step++) {
+  for (let beat = 0; beat < 16; beat++) {
+    const step = Math.floor(beat / 2), dialoguePage = beat % 2;
     assert.equal(
       await page.evaluate(() => window.fireline.snapshot().guideStep),
       step,
     );
+    assert.equal(await page.evaluate(() => window.fireline.snapshot().guidePage), dialoguePage);
     const hits = await page.evaluate(() => window.fireline.controls());
+    assert.ok(hits.every((h) => !/[▶◀]/.test(h.label)), "Dialogue arrows must be drawn");
     assert.ok(
       hits.every((h) => h.id.startsWith("guide-")),
       "Workbench must not remain active under onboarding",
@@ -70,6 +82,8 @@ for (const [width, height] of [
       ),
     );
     const tour = await page.evaluate(() => window.fireline.tour());
+    const words = tour.text.split(/\s+/).length;
+    assert.ok(words >= 10 && words <= 25);
     assert.ok(tour.target.w > 0 && tour.target.h > 0);
     assert.ok(
       tour.bubble.w * tour.bubble.h < W * H * 0.42,
@@ -100,8 +114,8 @@ for (const [width, height] of [
       await page.evaluate(() => window.fireline.snapshot().attempts),
       0,
     );
-    await page.screenshot({ path: `${out}/lesson-${width}-${step}.png` });
-    if (step < 7) await click("guide-next");
+    await page.screenshot({ path: `${out}/lesson-${width}-${step}-${dialoguePage}.png` });
+    if (beat < 15) await click("guide-next");
   }
   const before = await page.evaluate(() => window.fireline.snapshot());
   for (const key of [
@@ -182,6 +196,7 @@ for (const [width, height] of [
     width,
     height,
     lessons: 8,
+    bubbles: 16,
     automaticStart: true,
     isolatedDemo: true,
     realUIHighlights: true,
