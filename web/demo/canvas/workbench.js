@@ -6,6 +6,7 @@ import { assessment } from "./session.js";
 import { scoreHorizontal } from "./runlog.js";
 import { mapPanel, matrixPanel, results } from "./instruments.js";
 import { rack, controls, controlsCompact } from "./rack.js";
+import { hintButton } from "./hint-button.js";
 export function drawWorkbench(
   p,
   s,
@@ -23,6 +24,7 @@ export function drawWorkbench(
   p.rect(0, 0, W, H, p.c.createPattern(assets.metal, "repeat"));
   p.frame(4, 4, W - 8, H - 8);
   const header = mobile ? 48 : 56;
+  hintButton(p, on, W - 180, 13);
   p.button("menu", "≡", W - 136, 13, 34, 30, () => on("menu"));
   p.button(
     "sound",

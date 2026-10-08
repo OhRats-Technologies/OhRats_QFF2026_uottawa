@@ -109,66 +109,19 @@ try {
     blockedExternal.add(url.hostname);
     return route.abort();
   });
-  const imagesReady = () =>
-    page.waitForFunction(() =>
-      [...document.images].every(
-        (image) => image.complete && image.naturalWidth > 0,
-      ),
-    );
-
-  await page.goto(`${base}/web/presentation/`, {
-    waitUntil: "domcontentloaded",
+  execFileSync(process.execPath, ["web/presentation/check.mjs"], {
+    cwd: tree,
+    env: {...process.env, PRESENTATION_BASE: base,
+      PRESENTATION_OUTPUT: `${output}/presentation`},
+    stdio: "pipe",
   });
-  await page.locator("#question:not([hidden])").waitFor();
-  await imagesReady();
-  for (let index = 0; index < 9; index++) {
-    const slide = page.locator(".slide:not([hidden])");
-    const id = await slide.getAttribute("id");
-    assert.ok(await slide.locator("h1,h2").count());
-    const clipped = await slide.evaluate((element) => {
-      const bounds = element.getBoundingClientRect();
-      return [...element.querySelectorAll("h1,h2,p,table")]
-        .filter((node) => {
-          const box = node.getBoundingClientRect();
-          return (
-            box.left < bounds.left - 1 ||
-            box.right > bounds.right + 1 ||
-            box.bottom > bounds.bottom + 1
-          );
-        })
-        .map((node) => node.textContent.slice(0, 60));
-    });
-    assert.deepEqual(clipped, [], `Fallback-font clipping on ${id}`);
-    if (id === "resources") {
-      assert.equal(await slide.locator("circle[data-device]").count(), 12);
-      assert.match(await slide.innerText(), /301,056/);
-      result.measuredYieldPoints = 12;
-    }
-    result.slides.push(id);
-    if (index === 1) {
-      for (const stage of ["forest", "records", "annual"]) {
-        await page.locator(`[data-map-stage="${stage}"]`).click();
-        assert.equal(await slide.getAttribute("data-stage"), stage);
-      }
-    }
-    if (index === 5) {
-      await page.locator('[data-scale="32"]').click();
-      assert.equal(
-        await page.locator('[data-scale="32"]').getAttribute("aria-pressed"),
-        "true",
-      );
-    }
-    if (index === 0) await page.screenshot({ path: `${output}/question.png` });
-    if (index < 8) await page.locator("#next").click();
-  }
-  assert.equal(await page.locator("#next").isDisabled(), true);
-  await page.locator("#notes").click();
-  assert.ok(
-    (await page.locator("#panel-content").textContent()).includes(
-      "This question appendix",
-    ),
+  const canvasPresentation = JSON.parse(
+    await fs.readFile(`${output}/presentation/receipt.json`, "utf8"),
   );
-  await page.locator("#panel .close").click();
+  result.slides = canvasPresentation.slides.map(slide => slide.id);
+  result.presentationRenderer = canvasPresentation.renderer;
+  result.measuredYieldPoints = 12;
+  result.presentationViewports = canvasPresentation.viewports;
 
   execFileSync(
     "bun",

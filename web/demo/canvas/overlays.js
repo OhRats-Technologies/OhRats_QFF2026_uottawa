@@ -1,6 +1,7 @@
 import { color } from "./paint.js";
 import { sphere } from "./instruments.js";
 import { foundryNote } from "./foundry-help.js";
+import { hintButton } from "./hint-button.js";
 export function menu(p, s, assets, on, W, H, time) {
   p.rect(0, 0, W, H, p.c.createPattern(assets.metal, "repeat"));
   p.frame(6, 6, W - 12, H - 12);
@@ -81,6 +82,7 @@ export function foundry(p, s, data, on, W, H) {
     x = (W - w) / 2,
     y = (H - h) / 2;
   p.frame(x, y, w, h, "SUBSET FOUNDRY");
+  hintButton(p, on, x + w - 103, y + 14);
   p.button("close-foundry", "×", x + w - 59, y + 14, 34, 30, () =>
     on("foundry"),
   );

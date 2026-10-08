@@ -139,10 +139,11 @@ export class Paint {
     { active = false, disabled = false, tone = "normal" } = {},
   ) {
     disabled ||= this.choiceLocked && choiceControl(id);
+    const dimmed = disabled && !(active && id.startsWith("signal-"));
     const backward = /[◀←↔]/.test(label), forward = /[▶→↔]/.test(label);
     label = label.replace(/[◀←▶→↔]/g, "").trim();
     const focused = this.focus === id || this.hover === id;
-    const fill = disabled
+    const fill = dimmed
       ? "#203c3b"
       : active || tone === "hot"
         ? "#bb682b"
@@ -155,17 +156,17 @@ export class Paint {
     gradient.addColorStop(0.55, fill);
     gradient.addColorStop(
       1,
-      disabled ? "#193332" : active || tone === "hot" ? "#9b4924" : "#1b393c",
+      dimmed ? "#193332" : active || tone === "hot" ? "#9b4924" : "#1b393c",
     );
     this.rect(x, y, w, h, gradient);
-    buttonSurface(this.c, x, y, w, h, disabled);
+    buttonSurface(this.c, x, y, w, h, dimmed);
     this.line(
       [
         [x, y + h],
         [x, y],
         [x + w, y],
       ],
-      disabled ? "#4d6962" : active || tone === "hot" ? "#ffd080" : "#87ac9d",
+      dimmed ? "#4d6962" : active || tone === "hot" ? "#ffd080" : "#87ac9d",
       2,
     );
     this.line(
@@ -193,7 +194,7 @@ export class Paint {
       x + w / 2 + (backward ? 10 : 0) - (forward ? 10 : 0),
       y + h / 2,
       Math.max(10, Math.min(14, (w - 16 - (forward || backward ? 24 : 0)) / (label.length * 0.62))),
-      disabled ? "#758b83" : active || tone === "hot" ? "#151c1c" : color.mint,
+      dimmed ? "#758b83" : active || tone === "hot" ? "#151c1c" : color.mint,
       "center",
     );
     const arrow = (cx, direction) => {

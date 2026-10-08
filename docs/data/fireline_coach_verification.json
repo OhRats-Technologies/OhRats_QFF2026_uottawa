@@ -1,0 +1,384 @@
+{
+  "scope": "Local game coaching only; game scores are not research results",
+  "unit": {
+    "command": "bun test web/demo/canvas/*.test.js",
+    "tests": 27,
+    "assertions": 1429,
+    "failed": 0
+  },
+  "coach": {
+    "receipts": [
+      {
+        "width": 1440,
+        "round": 0,
+        "checked": 2,
+        "mae": 18.596160513986707,
+        "inputs": [
+          7,
+          11,
+          16,
+          17
+        ],
+        "won": true
+      },
+      {
+        "width": 1440,
+        "round": 1,
+        "checked": 6,
+        "mae": 124.77685254509217,
+        "inputs": [
+          9,
+          11,
+          16,
+          19
+        ],
+        "won": true
+      },
+      {
+        "width": 1440,
+        "round": 2,
+        "checked": 2,
+        "mae": 66.16610468857823,
+        "inputs": [
+          7,
+          11,
+          16,
+          17
+        ],
+        "won": true
+      },
+      {
+        "width": 1440,
+        "round": 3,
+        "checked": 5,
+        "mae": 266.5949309786873,
+        "inputs": [
+          3,
+          11,
+          13,
+          19
+        ],
+        "won": true
+      },
+      {
+        "width": 390,
+        "round": 0,
+        "checked": 2,
+        "mae": 18.596160513986707,
+        "inputs": [
+          7,
+          11,
+          16,
+          17
+        ],
+        "won": true
+      },
+      {
+        "width": 390,
+        "round": 1,
+        "checked": 6,
+        "mae": 124.77685254509217,
+        "inputs": [
+          9,
+          11,
+          16,
+          19
+        ],
+        "won": true
+      },
+      {
+        "width": 390,
+        "round": 2,
+        "checked": 2,
+        "mae": 66.16610468857823,
+        "inputs": [
+          7,
+          11,
+          16,
+          17
+        ],
+        "won": true
+      },
+      {
+        "width": 390,
+        "round": 3,
+        "checked": 5,
+        "mae": 266.5949309786873,
+        "inputs": [
+          3,
+          11,
+          13,
+          19
+        ],
+        "won": true
+      },
+      {
+        "width": 844,
+        "arbitrary": true,
+        "round": 0,
+        "checked": 1,
+        "mae": 52.52613034755629,
+        "inputs": [
+          7,
+          11,
+          16,
+          17
+        ],
+        "won": true
+      },
+      {
+        "width": 844,
+        "arbitrary": true,
+        "round": 1,
+        "checked": 9,
+        "mae": 47.75523899458106,
+        "inputs": [
+          7,
+          19
+        ],
+        "won": true
+      },
+      {
+        "width": 844,
+        "arbitrary": true,
+        "round": 2,
+        "checked": 3,
+        "mae": 65.00250738561121,
+        "inputs": [
+          5,
+          7,
+          11,
+          19
+        ],
+        "won": true
+      },
+      {
+        "width": 844,
+        "arbitrary": true,
+        "round": 3,
+        "checked": 8,
+        "mae": 290.7569454738544,
+        "inputs": [
+          2,
+          13
+        ],
+        "won": true
+      }
+    ],
+    "rapidClickOffer": true,
+    "foundryHint": true,
+    "contractPreserved": true,
+    "gradualHints": true,
+    "savedHintProgress": true,
+    "fullHelpAfterRequests": 5,
+    "noExternalRequests": true
+  },
+  "animatedCursor": {
+    "viewports": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ]
+    ],
+    "realTargets": true,
+    "cancelSafe": true,
+    "completedLock": true,
+    "errors": []
+  },
+  "gameplay": {
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 900,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "hint",
+        "controls": 41,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 1280,
+        "height": 640,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "hint",
+        "controls": 32,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 1920,
+        "height": 1080,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "hint",
+        "controls": 41,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "hint",
+        "controls": 35,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "height": 568,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "hint",
+        "controls": 35,
+        "overflow": 0,
+        "errors": []
+      },
+      {
+        "width": 844,
+        "height": 390,
+        "attempts": 2,
+        "mae": 69.9255930382353,
+        "focused": "hint",
+        "controls": 20,
+        "overflow": 0,
+        "errors": []
+      }
+    ]
+  },
+  "onboarding": {
+    "status": "passed",
+    "checks": [
+      {
+        "width": 1440,
+        "height": 900,
+        "lessons": 8,
+        "bubbles": 20,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": false,
+        "errors": []
+      },
+      {
+        "width": 1280,
+        "height": 640,
+        "lessons": 8,
+        "bubbles": 20,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": false,
+        "errors": []
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "lessons": 8,
+        "bubbles": 20,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": true,
+        "errors": []
+      },
+      {
+        "width": 320,
+        "height": 568,
+        "lessons": 8,
+        "bubbles": 20,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": true,
+        "errors": []
+      },
+      {
+        "width": 844,
+        "height": 390,
+        "lessons": 8,
+        "bubbles": 20,
+        "automaticStart": true,
+        "isolatedDemo": true,
+        "realUIHighlights": true,
+        "compactUnobstructedBubble": true,
+        "guideTabs": true,
+        "keyboard": true,
+        "newRun": true,
+        "resume": true,
+        "touch": false,
+        "errors": []
+      }
+    ]
+  },
+  "interaction": {
+    "dragDoesNotLink": true,
+    "keyboardPatch": true,
+    "tenInputRun": true,
+    "rapidClickHintDismissal": true,
+    "previousBuildRestore": true,
+    "optInMusicMute": true,
+    "simulatedVisibilitySuspendResume": true,
+    "touchPatch": true,
+    "corruptAndBlockedStorage": true,
+    "music": {
+      "peak": 0.04805740341544151,
+      "rms": 0.006520790139219424,
+      "seconds": 8
+    },
+    "errors": []
+  },
+  "sourceHashes": {
+    "web/demo/canvas/auto-test.js": "7df75d0a5b75b0c7a9179159ea104993204943404dc7300fd1236c2bf46227d8",
+    "web/demo/canvas/input.js": "edd38a031d1d700eff0e1f4a1a4d4cdf97d1d50fd3cce74ee325176adfb30f57",
+    "web/demo/canvas/interaction-check.mjs": "5ede419d2e86a3fbac323106182ee983df3ed1dc84f95289636962be5c2a3920",
+    "web/demo/canvas/main.js": "3cbd568c4cf9e6dcb7bd393ffd811c56df441ca4b14d1cfcb341f9dce5f13ca6",
+    "web/demo/canvas/overlays.js": "161ba88bbf00f338a12043535b327093bcb98bbc066ef43e348f7c35a1f0b410",
+    "web/demo/canvas/session.js": "593987e3c7956ae1c58f5af2bb97e79e8eed4ed448f19db49c11f917d0565f7f",
+    "web/demo/canvas/workbench.js": "6f90ac0d87b1a84aad9d7eb7325388975d8f65c4a5dea6f764f14fc891b8db63",
+    "web/demo/canvas/coach-check.mjs": "245075a50fa4953230b27aa27cfb374567e6d609cd1a2d349b2ac0674f74553a",
+    "web/demo/canvas/coach-copy.js": "fc6a699796b1650316082a5a21740b721963b5f5baa6a7215de358f388aa8177",
+    "web/demo/canvas/coach-motion-check.mjs": "dc4d95b558aa055987853a20bcaecc10dd9ccba7b9bed16fe3b6bb1089d624da",
+    "web/demo/canvas/coach-plan.js": "b729c97b9738c5351129e5c18ec1f732e1d0711535bfc14565190681e0098f6e",
+    "web/demo/canvas/coach-plan.test.js": "f6aa7c5be0ca8a75db06fa358d09778747d92bf8c376e9070fee1db4098410dd",
+    "web/demo/canvas/coach-setup.js": "a86caa153b6862c28388ad995aa806c7486127c636eeb8e4891d6754872be6a9",
+    "web/demo/canvas/coach-view.js": "aa571af0851e507e4d2de6ce8ff0fca8eb37905c70f0fee7e04a992111d68ee4",
+    "web/demo/canvas/coach-worker.js": "9337171dd1ffa6f0774de0f1b08a474d945f39897e7af87a274df5de2fc2f54f",
+    "web/demo/canvas/coach.js": "4ffe25dd5e2b0e824f9de7e16e01574de2d3496932b82c0bdbb62e12b1f90902",
+    "web/demo/canvas/foundry-actions.js": "ddfaa7eae4bb094b89e65c071a24da143df12abd0fabfb8b8bbfb640f995abae",
+    "web/demo/canvas/game-receipt.js": "8d38bcfe6d35b56785a0cec2049b1c0ae7d5fb23ee0895fb3bed066cd8cbceb0",
+    "web/demo/README.md": "60c86d97edf97bcfdffd02d9ab859942fcad92d4c49f1bdaa6879e3c3051f1a9",
+    "docs/FIRELINE_CANVAS.md": "d73b7711a8585322615a79f71ab1570ff002a7b86c6aba80be7ed317aa5bd7aa"
+  }
+}

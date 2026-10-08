@@ -40,6 +40,7 @@ export function connectInput(canvas, p, get, on, dirty) {
     if (e.key === "Escape") {
       if (get().state.help) on("guide-close");
       get().state.foundry = false;
+      on("coach-close");
       dirty();
     }
     if (e.code === "Space" && e.target === document.body) {

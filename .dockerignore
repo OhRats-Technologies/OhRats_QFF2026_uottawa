@@ -1,0 +1,16 @@
+**
+!Dockerfile
+!deploy/
+!deploy/fireline/
+!deploy/fireline/nginx.conf
+!web/
+!web/demo/
+!web/demo/**
+!web/presentation/
+!web/presentation/**
+**/*.md
+**/*.py
+**/*.mjs
+**/*.test.js
+**/package.json
+**/.*

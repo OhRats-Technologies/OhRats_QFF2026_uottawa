@@ -1,6 +1,6 @@
 # Five-minute narration
 
-Use this as the spoken outline. In the browser presentation, Field Guide Beatrice ("Betty" the firefighter beaver from the Fireline game) presents concise on-screen briefings accompanying each slide (toggle with **B**). The browser's **N** notes contain methods and source links for questions. Keep the two appendices outside the main talk. Timings include the short visual demonstrations below, not just reading time.
+Use this as the spoken outline. The browser deck renders on canvas with Fireline panels. Betty’s optional **B** panel explains the controls. The browser's **N** notes contain methods and source links for questions. Keep the two appendices outside the main talk. Timings include the short visual demonstrations below, not just reading time.
 
 ## 1. Annual wildfire question · 30 seconds
 
@@ -14,7 +14,7 @@ We built one row per Ontario year. NRCan's historical fire records supply report
 
 ECCC monthly station measurements supply temperature and precipitation. Coverage checks precede annual and seasonal aggregation, then we join by year.
 
-*Click Annual row to show the actual four climate inputs.*
+*Click Annual row to reveal the source arithmetic; the four climate measurements stay visible alongside it.*
 
 We have 31 training years, 1988 through 2018, and six later years. Those later years were previously inspected, so we disclose them as reused evaluation. Forest cover provides context and separate ablations; the main predictors use climate.
 
@@ -36,7 +36,7 @@ RBF leads development: about 77 hectares per fire in mean absolute error, compar
 
 ## 5. Later-year extremes · 55 seconds
 
-Each group here is a separate Ontario year. Orange shows recorded average hectares per fire. Grey is the constant training-year mean. The other bars show QSVR and RBF estimates.
+Each group here is a separate Ontario year. Orange shows recorded average hectares per fire. The dashed line is the constant training-year mean of 124.6 hectares per fire. The other bars show QSVR and RBF estimates.
 
 The high years remain badly underestimated. In 2021, the average reaches 657 hectares per fire. In 2020, it is only 26. The estimates miss this variation.
 
@@ -48,10 +48,10 @@ At the broader angle setting, the ten-qubit matrix is nearly the identity. Diffe
 
 *Switch from π/4 to π/32 and pause for the matrix transition.*
 
-Narrower encoding changes the measured effective rank from about 31 to 5.2 and raises similarity. But narrow kernels can also become poorly conditioned. This training-input diagnostic fits no predictor and leaves the final model unchanged. The phase circles illustrate encoding; they are not full entangled states.
+Narrower encoding changes the measured effective rank from about 31 to 5.2 and raises similarity. But narrow kernels can also become poorly conditioned. This training-input diagnostic fits no predictor and leaves the final model unchanged. The phase sphere illustrates one qubit; they are not full entangled states.
 
 ## 7. Findings and limits · 30 seconds
 
 This is an applied diagnostic benchmark. Encoding changes similarity, but useful prediction needs evidence. Better QAOA objective sampling did not improve our fixed regressor. More hardware shots collected candidates without repairing low valid yield, and mitigation must be checked against downstream error.
 
-Only31 annual training years and reused evaluation limit our conclusions. Simple classical and reporting/time controls remain essential. We demonstrate Qiskit and SQD with measured limitations, not an advantage or operational forecast. New prospective observations are the next scientific step.
+Only 31 annual training years and reused evaluation limit our conclusions. Simple classical and reporting/time controls remain essential. We demonstrate Qiskit and SQD with measured limitations, not an advantage or operational forecast. New prospective observations are the next scientific step.

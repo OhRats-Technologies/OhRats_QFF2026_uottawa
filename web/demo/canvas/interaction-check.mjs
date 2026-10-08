@@ -17,6 +17,15 @@ await page.goto(
   `${process.env.FIRELINE_BASE || "http://127.0.0.1:8790"}/web/demo/`,
 );
 await page.waitForFunction(() => window.fireline);
+// A strong first engine keeps later ten-input trials below the contract, so
+// restoration is exercised before choices lock. Completed locks have their own check.
+await page.evaluate(async () => {
+  const { fresh } = await import("./canvas/session.js"), s = fresh();
+  s.features = [7, 11, 16, 17];
+  localStorage.setItem("fireline-canvas-v2", JSON.stringify(s));
+});
+await page.reload();
+await page.waitForFunction(() => window.fireline);
 async function target(id) {
   await page.waitForFunction(
     (id) => window.fireline.controls().some((h) => h.id === id && !h.disabled),
@@ -52,10 +61,10 @@ await click("signal-5");
 await page.waitForFunction(() =>
   window.fireline.snapshot().features.includes(5),
 );
-await page.locator('[data-id="signal-11"]').focus();
+await page.locator('[data-id="signal-12"]').focus();
 await page.keyboard.press("Enter");
 await page.waitForFunction(() =>
-  window.fireline.snapshot().features.includes(11),
+  window.fireline.snapshot().features.includes(12),
 );
 await click("width-10");
 for (const id of [
@@ -64,7 +73,7 @@ for (const id of [
   "signal-6",
   "signal-8",
   "signal-10",
-  "signal-12",
+  "signal-11",
 ])
   await click(id);
 await page.waitForFunction(
@@ -73,6 +82,9 @@ await page.waitForFunction(
     !window.fireline.snapshot().running,
 );
 const first = await page.evaluate(() => window.fireline.snapshot().result);
+// Rapid patching now offers Betty help once; dismiss it before continuing the input audit.
+await page.waitForFunction(() => window.fireline.coach().open);
+await click("coach-close");
 await click("angle-up");
 await page.waitForFunction(
   () =>
@@ -189,6 +201,7 @@ const receipt = {
   dragDoesNotLink: true,
   keyboardPatch: true,
   tenInputRun: true,
+  rapidClickHintDismissal: true,
   previousBuildRestore: true,
   optInMusicMute: true,
   simulatedVisibilitySuspendResume: true,

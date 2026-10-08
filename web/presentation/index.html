@@ -3,39 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Quantum kernels for annual Ontario wildfire estimation: evidence, encoding and limits.">
-  <title>Quantum kernels · Ontario wildfire estimation</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="motion.css">
+  <meta name="description" content="Fireline: an audited Ontario wildfire benchmark, quantum kernels and measured limits.">
+  <title>Fireline · Ontario wildfire research</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #081b1c; }
+    canvas { display: block; width: 100%; height: 100%; touch-action: none; outline: none; }
+    .semantic { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  </style>
 </head>
 <body>
-  <main id="deck" aria-label="Ontario wildfire presentation"></main>
-  <aside id="betty-dock" class="betty-dock" aria-label="Betty field guide commentary">
-    <div class="betty-avatar-wrap" title="Betty the firefighter beaver · Field Guide">
-      <canvas id="betty-canvas" width="64" height="64" aria-label="Betty pixel portrait"></canvas>
+  <main aria-label="Fireline research presentation">
+    <canvas id="stage" tabindex="0" role="img" aria-describedby="description"></canvas>
+    <div class="semantic">
+      <h1 id="description"></h1>
+      <p id="announcement" aria-live="polite"></p>
+      <nav id="accessible-controls" aria-label="Presentation controls"></nav>
+      <article id="accessible-notes"></article>
     </div>
-    <div class="betty-bubble" role="region" aria-live="polite">
-      <div class="betty-bubble-header">
-        <span class="betty-name">BETTY</span>
-        <span class="betty-role">FIELD GUIDE</span>
-        <button id="betty-close" title="Toggle briefing (B)" aria-label="Toggle briefing">_</button>
-      </div>
-      <p class="betty-text"></p>
-    </div>
-  </aside>
-  <nav class="controls" aria-label="Presentation controls">
-    <button id="previous" aria-label="Previous slide">←</button>
-    <span id="position" aria-live="polite"></span>
-    <button id="next" aria-label="Next slide">→</button>
-    <button id="betty-toggle" title="Field guide briefing (B)" aria-label="Field guide briefing">🦫 Guide</button>
-    <button id="notes" title="Presenter notes (N)" aria-label="Presenter notes">N</button>
-    <button id="overview" title="Slide index (O)" aria-label="Slide index">☰</button>
-    <a href="../demo/" target="_blank" rel="noopener" title="Play Fireline: interactive quantum engineering workbench">Fireline Game ↗</a>
-    <button id="fullscreen" title="Fullscreen (F)" aria-label="Fullscreen">⛶</button>
-  </nav>
-  <div class="progress" aria-hidden="true"><i></i></div>
-  <dialog id="panel"><button class="close" aria-label="Close panel">×</button><div id="panel-content"></div></dialog>
-  <p class="sr-only" id="announcement" aria-live="polite"></p>
+  </main>
   <script type="module" src="app.js"></script>
 </body>
 </html>

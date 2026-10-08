@@ -27,14 +27,15 @@ export function trim(p, W, H, time, running) {
     );
   }
   if (W < 920) return;
-  const vx = W * 0.69;
+  const indicatorsX = W - 244,
+    vx = Math.min(W * 0.69, indicatorsX - 140);
   for (let i = 0; i < 15; i++) {
     p.rect(vx + i * 8, 17, 4, 18, "#092427");
     p.rect(vx + i * 8 + 1, 18, 1, 16, "#79998a44");
   }
   for (let i = 0; i < 3; i++) {
     p.circle(
-      W - 220 + i * 17,
+      indicatorsX + i * 17,
       29,
       4,
       running ? ["#ffc871", "#ed9d48", "#b78953"][i] : "#4e7366",

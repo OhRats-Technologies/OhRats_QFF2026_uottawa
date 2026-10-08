@@ -4,6 +4,8 @@ A full-window canvas engineering game. Patch 2–10 signals, tune the encoding, 
 
 Betty, the pixel-art firefighter beaver, walks you through the actual workbench before first play. One UI region is highlighted at a time; her small speech bubble explains it beside the controls. Gameplay is locked until you finish or skip. Next/Back covers signals, angle, C, epsilon, QAOA/SQD and Run. New Run repeats the tour; existing runs resume directly. The **?** guide retains direct topic tabs; **Show Me** replays the visual tour without resetting your build.
 
+Stuck on a season? **BETTY** gives short, specific hints checked against your current contract. She starts with the goal, then suggests one change at a time. After several help requests, **SHOW ME** lets her cursor connect a tested build for you. Rapid patching offers help once per season; Escape dismisses it. Hints use local browser calculations and never change your starting challenge.
+
 ```sh
 bun run web/presentation/serve.ts
 ```

@@ -4,7 +4,7 @@ export const currentResult = (s) => !!s.result && s.result.round === s.round &&
 export function automaticTests(state, evaluate, delay = 420) {
   let timer, pending = false;
   const eligible = (s) => !s.menu && !s.help && !s.foundry && !s.running &&
-    !s.finished && s.features.length === s.width && !currentResult(s);
+    !s.finished && !s.coaching && s.features.length === s.width && !currentResult(s);
   const cancel = () => { clearTimeout(timer); pending = false; };
   const schedule = () => {
     cancel();

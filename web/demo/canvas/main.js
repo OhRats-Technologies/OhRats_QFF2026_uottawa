@@ -22,10 +22,13 @@ import { openBriefing, guideAction } from "./guide-flow.js";
 import { run } from "./engine.js";
 import { preview } from "./preview.js";
 import { automaticTests, currentResult } from "./auto-test.js";
-import { sampleCandidates } from "./foundry.js";
+import { foundryAction } from "./foundry-actions.js";
+import { gameReceipt } from "./game-receipt.js";
 import { contractLocked, choiceAction } from "./contract-lock.js";
 import { celebration } from "./celebrate.js";
 import { SeasonMelt } from "./season-melt.js";
+import { setupCoach } from "./coach-setup.js";
+import { drawCoach } from "./coach-view.js";
 const canvas = document.querySelector("canvas"),
   ctx = canvas.getContext("2d"),
   p = new Paint(ctx),
@@ -47,6 +50,12 @@ const auto = automaticTests(() => s, () => action("auto-test"));
 const a11y = document.querySelector("#controls"),
   status = document.querySelector("#status");
 const mirror = controlMirror(p, a11y, audio, () => s);
+const coach = setupCoach({ state: () => s, data, audio, reduce,
+  status: (text) => { status.textContent = text; }, pending: () => auto.pending,
+  cancelTests: () => auto.cancel(), schedule: () => auto.schedule(),
+  patch: (patch) => { Object.assign(s, patch); geometry = preview(data, build(s), s.round); dirty(); },
+  evaluate: () => action("auto-test"), persist: dirty,
+});
 function resize() {
   melt.cancel();
   W = Math.max(390, innerWidth);
@@ -68,6 +77,9 @@ function dirty() {
 }
 async function action(type, value) {
   if (melt.active && !["sound", "auto-test"].includes(type)) return;
+  if (type === "hint") { coach.request(); return; }
+  if (type.startsWith("coach-")) { coach.handle(type); return; }
+  if (coach.blocks(type)) return;
   if (
     s.running &&
     type !== "sound" &&
@@ -82,6 +94,9 @@ async function action(type, value) {
     return;
   }
   if (contractLocked(s) && choiceAction(type)) return;
+  coach.note(type);
+  if (["new", "next", "menu"].includes(type)) coach.cancel();
+  if (type === "new") coach.offered.clear();
   if (type === "start") {
     s.menu = false;
     if (!s.onboarded && !s.attempts) {
@@ -191,35 +206,7 @@ async function action(type, value) {
     s.menu = true;
     location.hash = "main-menu";
   }
-  if (type === "sample" || type === "more-shots") {
-    const method = type === "more-shots" ? s.sample?.method || "qaoa" : value;
-    if (method === "mi" || method === "exact") {
-      const f = data.rounds[s.round].selectors[method],
-        mask = f.reduce((m, j) => m + (1 << j), 0);
-      s.sample = {
-        method,
-        shots: 0,
-        candidates: [
-          { features: f, energy: data.rounds[s.round].objective[mask] },
-        ],
-      };
-    } else
-      s.sample = sampleCandidates(
-        data.rounds[s.round].objective,
-        type === "more-shots" ? 256 : 64,
-        31 + s.attempts,
-        method,
-      );
-    s.candidate = 0;
-    audio.effect("run");
-  }
-  if (type === "candidate") s.candidate = value;
-  if (type === "apply" && s.sample) {
-    s.features = [...s.sample.candidates[s.candidate || 0].features];
-    s.width = 4;
-    s.foundry = false;
-    toast("Subset patched. Open Results to compare.");
-  }
+  foundryAction(s, data, audio, toast, type, value);
   if ((type === "run" || type === "auto-test") && !s.help && s.features.length === s.width) {
     auto.cancel();
     const automatic = type === "auto-test";
@@ -260,6 +247,7 @@ async function action(type, value) {
 action.audio = audio;
 action.rounds = data.rounds.length;
 function draw(timestamp) {
+  coach.tick(timestamp);
   const dpr = Math.min(2, devicePixelRatio);
   ctx.setTransform(dpr * scale, 0, 0, dpr * scale, 0, 0);
   p.hits = [];
@@ -281,6 +269,7 @@ function draw(timestamp) {
       drawGuide(p, s, action, W, H, time, assets);
     }
     if (s.celebrate) celebration(p, s, action, W, H, time);
+    if (!s.menu && !s.help && !s.celebrate) drawCoach(p, coach, action, W, H, time);
   }
   melt.draw(ctx, timestamp);
   if (melt.active) p.hits = [];
@@ -296,31 +285,10 @@ connectInput(
 );
 window.addEventListener("resize", resize);
 window.addEventListener("hashchange", () => {
-  if (location.hash === "#main-menu") s.menu = true;
+  if (location.hash === "#main-menu") { s.menu = true; coach.cancel(); }
   else if (location.hash === "#workbench") s.menu = false;
 });
 resize();
 requestAnimationFrame(draw);
-// Read-only state/geometry receipt for browser checks; no hidden gameplay actions.
-window.fireline = {
-  transition: () => ({ active: melt.active, reducedMotion: reduce }),
-  snapshot: () => structuredClone({ ...s, running: !!s.running, evaluating: auto.pending || !!s.running }),
-  tour: () => structuredClone(tourReceipt),
-  controls: () =>
-    p.hits.map(({ id, label, x, y, w, h, disabled }) => ({
-      id,
-      label,
-      x,
-      y,
-      w,
-      h,
-      disabled,
-    })),
-  audio: () => ({
-    enabled: audio.enabled,
-    state: audio.ctx?.state,
-    timer: !!audio.timer,
-    playing: audio.playing,
-    track: !!audio.music,
-  }),
-};
+gameReceipt({ state: () => s, pending: () => auto.pending, coach, melt, reduce,
+  tour: () => tourReceipt, paint: p, audio });

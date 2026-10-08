@@ -1,52 +1,60 @@
-# Presentation
+# Fireline presentation
 
-**Seven main slides · five-minute plan · two question appendices.** Official live duration is organizer-announced. The story is annual Ontario estimation, unsuccessful reused-year prediction, and a measured encoding-scale diagnosis. Dataset construction and classical/QAOA/SQD selection are in the main talk. Diagonal SQD adds no optimization benefit.
+The live talk uses one Canvas2D surface for every visible slide, chart, panel, control and overlay. It shares Fireline’s copper materials, teal enclosure, custom arrows and Betty sprite. Seven main slides total five minutes; two appendices support questions.
 
-## Open or submit
+From the repository root:
 
-- [PDF slides](slides/ontario-wildfire.pdf): offline, fixed layout, all nine slides.
-- [Editable PowerPoint](slides/ontario-wildfire.pptx): native charts/tables and source-linked speaker notes; motion is in the browser version.
-- Browser presentation: from the repository root, run `bun run web/presentation/serve.ts`, then open **http://127.0.0.1:8790/web/presentation/**. Bun serves the committed assets; optional remote display fonts have system fallbacks.
+```sh
+bun run web/presentation/serve.ts
+```
 
-An optional `--port=8791` selects another local port; `--port=0` chooses an available one. The server stays bound to localhost.
+Open [the presentation](http://127.0.0.1:8790/web/presentation/). The same server serves [Fireline](http://127.0.0.1:8790/web/demo/).
 
-Use arrows or Space to navigate, **B** to toggle Field Guide Betty, **N** for speaker notes, **O** for the index, **F** for fullscreen. Home/End select the first/last main slide; appendices follow the main slides. The slideshow shares the Fireline quantum engineering workbench aesthetic, with Beatrice ("Betty" the code-drawn firefighter beaver) presenting live commentary across all slides. The bandwidth view switches among five measured settings; it does not simulate or select a better model. The opening uses actual 2021 Ontario cover pixels and raw recorded fire locations. The dataset view switches between Algonquin-area pixels, recorded locations and an actual annual row with four climate measurements. Angle controls smoothly rotate illustrative phase states while the heatmap switches among saved measured matrices. These diagrams are explanatory; dots are not predicted hotspots, and the circles are not full entangled states. The browser honors reduced motion and adapts to portrait screens. Print saves all slides, not just the current slide.
+## Presenting
 
-| Main slide | Planned seconds |
-|---|---:|
-| Annual wildfire question | 30 |
-| Dataset construction and reused evaluation | 55 |
-| Classical and QAOA/SQD feature selection | 45 |
-| Matched chronological development | 45 |
-| Missed later-year extremes | 55 |
-| Scale and kernel geometry | 40 |
-| Findings and limits | 30 |
+Use the arrow keys or Space to advance. **Home** returns to the opening; **End** goes to the conclusion. **N** opens notes and source links, **O** opens chapters, **B** opens Betty’s control briefing, **F** toggles fullscreen, and **Escape** closes overlays. On narrow screens, swipe or scroll through stacked panels. Hidden semantic buttons support keyboard and screen-reader access.
 
-Total **300 seconds**. Appendix: a visual circuit explanation and compute receipts.
+Two short demonstrations belong in the talk:
 
-[Five-minute spoken outline](talk.md) follows these seven timings, with two short visual interactions. Use the richer speaker notes for questions rather than reading them during the talk. Rehearsal determines the actual delivery time.
+- Dataset slide: switch between pixels, recorded fire locations and the annual label arithmetic.
+- Geometry slide: switch from π/4 to π/32 to show the saved change in fidelity geometry.
 
-The interactive [canvas Fireline game](../demo/README.md) runs on the same server at **http://127.0.0.1:8790/web/demo/**. The presentation shares its CRT engineering palette, live pixel-art guide Beatrice, and component styling.
+The [spoken outline](talk.md) follows the five-minute pacing. Detailed methods and source links remain in `slides.js`; they do not crowd the visible deck.
 
-## Evidence and authoring
+## Evidence and scope
 
-[README](../../README.md) · [Report](../../docs/REPORT.md) · [Final results](../../docs/ANNUAL_FINAL.md) · [Bandwidth diagnostic](../../docs/ANNUAL_BANDWIDTH_GEOMETRY.md).
+`evidence.json` supplies audited source arithmetic, development errors, final predictions and actual kernel matrices. `assets/shot-sweep.json` supplies the twelve hardware-yield measurements and their Wilson intervals. The browser only reads these assets. It does not fit models, request hardware or change experimental results.
 
-`evidence.json` is a published snapshot of six frozen result records, an independent raw-source audit, a public annual example row and ten saved training matrices. `evidence.py --check` compares it with the original local matrices without fitting or new states; rebuilding this snapshot requires the ignored geometry cache. Browser/PPTX charts are editable source representations, not flattened report screenshots. Heatmaps and PowerPoint chart values round to six decimals; quoted metrics use original records.
+The target is **annual mean reported hectares per fire**, using same-year climate. Prediction-error scores are separately labelled **ha/fire, lower is better**. The six 2019–2024 years are reused evaluation. Forest pixels provide map context; the original final predictors use climate. Hardware yield is the share of usable four-feature subsets, not prediction accuracy.
 
-The later [forest context study](../../docs/FOREST_CONTEXT.md) is separate from this frozen annual comparison and its input-only scale diagnostic. It fits fixed training-only recipes and includes a same-width zero control; it changes none of the six displayed final-year predictions. The speaker notes identify annual rows without assuming temporal independence and explain that the feature map has no learned variational parameters.
+The complete Ontario raster includes southern Ontario. Existing source/projection audits are preserved. Point glyphs show recorded locations, not fire perimeters or predicted hotspots. SQD samples and the circuit are labelled schematics; the phase sphere illustrates one qubit, not the full entangled state.
 
-[Map provenance](assets/map.json) pins the cropped raster, boundary and raw fire archive. `map_assets.py` reproduces descriptive assets from ignored inputs; nearest-neighbour display preserves class categories, not native 30 m display resolution. All 1,200 raw 2021 location markers are contextual and include identity-quarantined records; the annual target separately uses 1,194 accepted records. Woodland classes are not tree density or final climate predictors. The full official boundary and Toronto/GTA, Ottawa and Windsor remain visible independently of coverage. Grey means no mapped woodland class (0/255), not no vegetation. City control-point checks are in the map receipt and [display audit](../../docs/DATA_REVIEW.md#ontario-map-display-correction).
+## Rendering modules
 
-Public viewing needs bun; ordinary public evidence replay uses uv as documented in the root README. `check.mjs` and `export-slides.mjs` are authoring tools using the Codex-bundled Playwright/Presentations runtimes, not dependencies for viewing or evaluating the submitted artifacts. The browser build has no frontend packages to install. PDF captures the browser layout; PowerPoint uses static native layouts, a rank chart in place of the interactive heatmap and does not claim identical animations or a PowerPoint application test.
+| File | Responsibility |
+| --- | --- |
+| `app.js` | Canvas lifecycle, input, navigation and entrance motion |
+| `canvas/ui.js` | Shared Fireline paint, layout, text, maps and matrix textures |
+| `canvas/chapters.js` | Question, dataset and feature selection |
+| `canvas/comparisons.js` | Matched development and annual results |
+| `canvas/diagnostics.js` | Encoding geometry and both appendices |
+| `canvas/ending.js` | Findings and game handoff |
+| `canvas/panels.js` | Canvas notes, chapter index and Betty briefing |
 
-`check.mjs` writes its test PDF under ignored `.cache/judge-submission/browser` and verifies that published PDF/PPTX hashes stay unchanged. The native export layouts in `export-slides.mjs` also require content reconciliation before rebuilding a later submission snapshot.
+Reduced motion renders final values immediately. Other transitions fade the panels, grow comparison bars and crossfade between saved matrices. Displayed numbers always come from saved evidence.
 
-The [submission audit](../../docs/SUBMISSION_AUDIT.md) records artifact, content and browser checks separately from historical scientific tests. Submission itself remains a team action.
+## Browser verification
 
-Motion uses staged reveals and direct controls; reduced motion presents the same final values. Design reference: [Apple motion guidance](https://developer.apple.com/design/human-interface-guidelines/motion).
+`check.mjs` uses Playwright from `RUNTIME_NODE_MODULES`. With the server running:
 
-An [earlier clean tracked-tree viewing check](../../docs/data/current_view_portability.json) opens all nine slides, the five-view walkthrough, game controls/inspectors, eight context choices and seven height epochs with external requests blocked. The [older receipt](../../docs/data/static_view_portability.json) retains its original seven-choice snapshot. The exported tree contains no ignored caches, credentials or installed project packages; served PDF/PPTX bytes match the committed files. This verifies viewing on this Mac with installed Bun, not public GitHub access, remote cloning or fresh scientific training. The optional authoring checker is `portable-check.mjs`; it uses the isolated browser tooling and leaves a new ignored receipt/tree for each source commit.
+```sh
+node web/presentation/check.mjs
+```
 
-The browser conclusion connects the original annual comparison to three measured diagnostic lessons: encoding, objective/prediction mismatch and downstream mitigation. The resources appendix shows actual 20-feature shot-sweep counts at 512/1024/2048 on Marrakesh/Quebec, with Wilson intervals and 108 charged QPU seconds across 12 jobs ([shot sweep](../../docs/SHOT_SWEEP.md)). Seven main slides total 300 seconds.
+The check covers all nine slides at five viewport sizes, footer hitboxes, keyboard/hash navigation, map tabs, all five angle settings, notes scrolling, actual chart values, animation completion and absence of browser errors. Screenshots and the receipt go under ignored `.cache/presentation-canvas/verified/`. Evidence and published PDF/PPTX hashes must remain unchanged.
 
+`PRESENTATION_BASE` and `PRESENTATION_OUTPUT` can override the server and output directory. `portable-check.mjs` verifies a committed tracked-file export, including the game; run it after committing the intended snapshot.
+
+## Offline snapshots
+
+The existing [PDF](slides/ontario-wildfire.pdf) and [PowerPoint](slides/ontario-wildfire.pptx) retain their earlier design and scientific snapshot. This canvas redesign changes the live browser presentation. `export-slides.mjs` remains a separate native PowerPoint authoring tool; it does not export the new canvas artwork.
