@@ -26,7 +26,7 @@ Total **300 seconds**. Appendix: a visual circuit explanation and compute receip
 
 [Five-minute spoken outline](talk.md) follows these seven timings, with two short visual interactions. Use the richer speaker notes for questions rather than reading them during the talk. Rehearsal determines the actual delivery time.
 
-The interactive [canvas Fireline game](../demo/README.md) runs on the same server at **http://127.0.0.1:8790/web/demo/**. The presentation shares its CRT engineering palette, live pixel-art guide Beatrice, and component styling.
+The interactive [canvas Fireline game](../demo/README.md) runs on the same server at **http://127.0.0.1:8790/web/demo/**. The presentation shares its CRT engineering palette, live pixel-art guide Beatrice, and canvas panel frames with beveled gradient borders, scanlines, and corner screws rendered directly via `panels.js`.
 
 ## Evidence and authoring
 
