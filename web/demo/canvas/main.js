@@ -25,10 +25,12 @@ import { automaticTests, currentResult } from "./auto-test.js";
 import { sampleCandidates } from "./foundry.js";
 import { contractLocked, choiceAction } from "./contract-lock.js";
 import { celebration } from "./celebrate.js";
+import { SeasonMelt } from "./season-melt.js";
 const canvas = document.querySelector("canvas"),
   ctx = canvas.getContext("2d"),
   p = new Paint(ctx),
-  audio = new Audio();
+  audio = new Audio(),
+  melt = new SeasonMelt();
 const data = await fetch("./canvas/data.json").then((r) => r.json()),
   assets = await loadAssets();
 let s = load(),
@@ -46,6 +48,7 @@ const a11y = document.querySelector("#controls"),
   status = document.querySelector("#status");
 const mirror = controlMirror(p, a11y, audio, () => s);
 function resize() {
+  melt.cancel();
   W = Math.max(390, innerWidth);
   scale = innerWidth / W;
   H = innerHeight / scale;
@@ -64,6 +67,7 @@ function dirty() {
   save(s);
 }
 async function action(type, value) {
+  if (melt.active && !["sound", "auto-test"].includes(type)) return;
   if (
     s.running &&
     type !== "sound" &&
@@ -157,6 +161,7 @@ async function action(type, value) {
   if (type === "next") {
     if (!assessment(s).won || !currentResult(s)) return;
     if (s.round < data.rounds.length - 1) {
+      melt.start(canvas, reduce);
       s.round++;
       s.result = null;
       s.previous = null;
@@ -277,6 +282,8 @@ function draw(timestamp) {
     }
     if (s.celebrate) celebration(p, s, action, W, H, time);
   }
+  melt.draw(ctx, timestamp);
+  if (melt.active) p.hits = [];
   mirror();
   requestAnimationFrame(draw);
 }
@@ -296,6 +303,7 @@ resize();
 requestAnimationFrame(draw);
 // Read-only state/geometry receipt for browser checks; no hidden gameplay actions.
 window.fireline = {
+  transition: () => ({ active: melt.active, reducedMotion: reduce }),
   snapshot: () => structuredClone({ ...s, running: !!s.running, evaluating: auto.pending || !!s.running }),
   tour: () => structuredClone(tourReceipt),
   controls: () =>

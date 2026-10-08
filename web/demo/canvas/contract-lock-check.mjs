@@ -5,7 +5,8 @@ const require = createRequire(import.meta.url),
 const browser = await chromium.launch({ channel: "chrome", headless: true });
 try {
   for (const width of [1440, 390]) {
-    const page = await browser.newPage({ viewport: { width, height: 900 }, reducedMotion: "reduce" });
+    const page = await browser.newPage({ viewport: { width, height: 900 },
+      reducedMotion: process.env.FIRELINE_MOTION === "animate" ? "no-preference" : "reduce" });
     const errors = [];
     page.on("pageerror", (e) => errors.push(e.message));
     const click = async (id) => {
@@ -34,7 +35,15 @@ try {
     assert.equal(await page.evaluate(() => window.fireline.snapshot().angle), won.angle);
     await page.reload(); await page.waitForFunction(() => window.fireline); await click("continue");
     assert.ok(await page.locator('[data-id="angle-up"]').isDisabled());
-    await click("next"); await settled(3);
+    await click("next");
+    if (process.env.FIRELINE_MOTION === "animate") {
+      assert.ok(await page.evaluate(() => window.fireline.transition().active));
+      assert.equal((await page.evaluate(() => window.fireline.controls())).length, 0);
+      await page.waitForTimeout(400);
+      await page.screenshot({ path: `.cache/fireline-season-melt-${width}.png` });
+    }
+    await page.waitForFunction(() => !window.fireline.transition().active);
+    await settled(3);
     assert.equal(await page.evaluate(() => window.fireline.snapshot().round), 1);
     assert.ok(await page.locator('[data-id="angle-up"]').isEnabled());
     assert.deepEqual(errors, []);
