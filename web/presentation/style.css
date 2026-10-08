@@ -32,27 +32,14 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--amber); outline
   width: 1280px;
   height: 720px;
   padding: 58px 76px;
-  background: transparent;
-  border: none;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.85);
+  background: var(--paper);
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.7), inset 0 0 40px rgba(4,14,15,0.6);
   overflow: hidden;
   transform: scale(var(--scale, 1));
   transform-origin: center;
 }
 .slide[hidden] { display: none; }
-.slide-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1280px;
-  height: 720px;
-  pointer-events: none;
-  z-index: 0;
-}
-.slide > *:not(.slide-canvas) {
-  position: relative;
-  z-index: 1;
-}
 .eyebrow { font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--amber); margin: 0 0 16px; font-weight: 600; }
 h1, h2, h3, p { margin: 0; }
 h1 { font-size: 66px; line-height: 1.08; letter-spacing: -.03em; font-weight: 600; color: #f7f6f2; max-width: 900px; }
@@ -105,7 +92,7 @@ svg .label { fill: var(--mint); }
 .formula { font-size: 32px; margin-top: 68px; text-align: center; letter-spacing: -.02em; color: #f7f6f2; }
 .formula sub { font-size: .6em; }
 .geometry-layout { display: grid; grid-template-columns: 380px 1fr; gap: 65px; margin-top: 30px; }
-.heatmap { width: 310px; height: 310px; background: transparent; border: none; border-radius: 4px; padding: 2px; }
+.heatmap { width: 310px; height: 310px; background: #0c2324; border: 1px solid var(--panel-border); border-radius: 4px; padding: 2px; }
 .geometry-detail { padding-top: 12px; }
 .geometry-detail .stat { font-size: 68px; }
 .geometry-detail .caption { margin-top: 12px; }
@@ -335,7 +322,7 @@ dialog .close:hover { color: var(--mint); }
 .research-resource img { width: 860px; max-height: 430px; object-fit: contain; }
 .shot-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; }
 .research-resource .shot-chart { width: 100%; max-height: 430px; }
-.research-receipt { display: grid; gap: 22px; background: transparent; border: none; padding: 32px 16px 16px; }
+.research-receipt { display: grid; gap: 22px; background: #0c2324; border: 1px solid var(--panel-border); border-radius: 6px; padding: 20px; }
 .research-receipt strong { font-size: 34px; font-weight: 650; letter-spacing: -1px; color: var(--amber); }
 .research-receipt small { display: block; font-size: 15px; font-weight: 400; letter-spacing: 0; color: var(--dim); }
 .research-receipt p { font-size: 16px; line-height: 1.6; color: var(--ink); }

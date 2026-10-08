@@ -1,7 +1,6 @@
 import { makeSlides } from "./slides.js";
 import { geometryScene } from "./scenes.js";
 import { BettyPresenter } from "./presenter.js";
-import { drawSlidePanels } from "./panels.js";
 const evidence = await fetch("evidence.json").then((response) => {
   if (!response.ok)
     throw new Error("Frozen evidence could not be loaded");
@@ -12,13 +11,7 @@ if (!sweepResponse.ok) throw new Error("Saved shot-sweep evidence could not be l
 evidence.shot_sweep = await sweepResponse.json();
 const slides = makeSlides(evidence);
 const deck = document.querySelector("#deck");
-deck.innerHTML = slides.map((s, i) => `<section class="slide ${i === 0 ? "cover" : ""}" id="${s.id}" data-index="${i}" aria-label="${s.title}" hidden><canvas class="slide-canvas" width="1280" height="720" aria-hidden="true"></canvas>${s.html}</section>`).join("");
-document.querySelectorAll(".slide").forEach((slide) => {
-  const canvas = slide.querySelector(".slide-canvas");
-  if (canvas) {
-    drawSlidePanels(canvas, slide.id);
-  }
-});
+deck.innerHTML = slides.map((s, i) => `<section class="slide ${i === 0 ? "cover" : ""}" id="${s.id}" data-index="${i}" aria-label="${s.title}" hidden>${s.html}</section>`).join("");
 const sections = [...deck.children], panel = document.querySelector("#panel");
 const content = document.querySelector("#panel-content");
 const reduced = matchMedia("(prefers-reduced-motion: reduce)");
@@ -28,10 +21,6 @@ const betty = new BettyPresenter(bettyDock, notes);
 
 function fit() {
   document.documentElement.style.setProperty("--scale", Math.min(innerWidth / 1280, innerHeight / 720));
-  const activeCanvas = sections[index]?.querySelector(".slide-canvas");
-  if (activeCanvas) {
-    drawSlidePanels(activeCanvas, slides[index].id);
-  }
 }
 
 function wake() {
@@ -47,10 +36,6 @@ function show(next, update = true) {
     s.hidden = i !== index;
   });
   const current = sections[index];
-  const activeCanvas = current?.querySelector(".slide-canvas");
-  if (activeCanvas) {
-    drawSlidePanels(activeCanvas, slides[index].id);
-  }
   if (!reduced.matches && previous !== current) {
     const scale = matchMedia("(max-width:700px) and (orientation:portrait)").matches ? "" : "scale(var(--scale)) ";
     current.animate([{ opacity: 0, transform: `${scale}translateY(16px)` }, { opacity: 1, transform: `${scale}translateY(0)` }], { duration: 650, easing: "cubic-bezier(.22,1,.36,1)" });
