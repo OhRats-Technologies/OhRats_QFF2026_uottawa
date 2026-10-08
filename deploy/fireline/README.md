@@ -15,7 +15,9 @@ Coolify settings:
 - Domain: `https://fireline.ohrats.party`; Cloudflare proxy remains enabled.
 - Automatic deployment enabled for GitHub pushes. Health endpoint: `/healthz`.
 
-Only the public game and presentation enter the image. Private research outputs, repository metadata, environment files, tests and build scripts are excluded. The deck includes its committed public evidence and existing PDF/PowerPoint snapshots. Assets currently use stable names, so responses revalidate rather than claiming immutable caching.
+Only the public game and presentation enter the image. Private research outputs, repository metadata, environment files, tests and build scripts are excluded. The deck includes its committed public evidence and existing PDF/PowerPoint snapshots. Assets use stable names, so responses set `Cache-Control: no-store, max-age=0` and `Cloudflare-CDN-Cache-Control: no-store`. Cloudflare previously raised `max-age=0` to a four-hour browser lifetime; open tabs could keep old modules even after a successful deployment. An existing stale browser cache needs one hard refresh after this correction; game saves remain in local storage.
+
+After each rollout, compare public JS/JSON bytes with the deployed Git commit and confirm the returned cache headers. A healthy container alone does not establish that a browser has fetched the new assets. See [Cloudflare's Browser Cache TTL behavior](https://developers.cloudflare.com/cache/how-to/edge-browser-cache-ttl/) and [origin cache directives](https://developers.cloudflare.com/cache/concepts/cache-control/).
 
 Local container check:
 
