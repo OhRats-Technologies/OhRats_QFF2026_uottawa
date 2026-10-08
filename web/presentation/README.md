@@ -1,6 +1,10 @@
 # Fireline presentation
 
-The live talk uses one Canvas2D surface for every visible slide, chart, panel, control and overlay. It shares Fireline’s copper materials, teal enclosure, custom arrows and Betty sprite. Seven main slides total five minutes; two appendices support questions.
+[Open the presentation](https://fireline.ohrats.party/presentation/) · [Play Fireline](https://fireline.ohrats.party/)
+
+Seven main slides form the five-minute talk; two appendices support questions. Charts and controls share Fireline’s canvas artwork.
+
+## Run locally
 
 From the repository root:
 
@@ -8,7 +12,7 @@ From the repository root:
 bun run web/presentation/serve.ts
 ```
 
-Open [the presentation](http://127.0.0.1:8790/web/presentation/). The same server serves [Fireline](http://127.0.0.1:8790/web/demo/).
+Open `http://127.0.0.1:8790/web/presentation/`. The same server serves the game at `/web/demo/`.
 
 ## Presenting
 
@@ -24,6 +28,10 @@ The [spoken outline](talk.md) follows the five-minute pacing. Detailed methods a
 ## Evidence and scope
 
 `evidence.json` supplies audited source arithmetic, development errors, final predictions and actual kernel matrices. `assets/shot-sweep.json` supplies the twelve hardware-yield measurements and their Wilson intervals. The browser only reads these assets. It does not fit models, request hardware or change experimental results.
+
+The hardware appendix labels costs by study. `assets/hardware-costs.json` binds its shot-sweep and repetition-study totals to the [hardware ledger](../../docs/data/hardware_accounting.json). Charged QPU seconds are distinct from elapsed queue/service time; [the accounting](../../docs/SELECTOR_HARDWARE.md#hardware-cost-accounting) identifies both records near 400 elapsed seconds.
+
+Yield charts use labelled zero-based device-specific axes: Marrakesh 0–20%, Quebec 0–2.5%. Exact raw and DD/twirling percentages appear below each shot count. All Wilson intervals remain visible; compare printed values when comparing devices.
 
 The target is **annual mean reported hectares per fire**, using same-year climate. Prediction-error scores are separately labelled **ha/fire, lower is better**. The six 2019–2024 years are reused evaluation. Forest pixels provide map context; the original final predictors use climate. Hardware yield is the share of usable four-feature subsets, not prediction accuracy.
 

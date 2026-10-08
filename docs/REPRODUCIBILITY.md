@@ -1,5 +1,7 @@
 # Reproduction
 
+For browser viewing, open [Fireline](https://fireline.ohrats.party/) or the [presentation](https://fireline.ohrats.party/presentation/). No environment setup is required. The commands below verify or reconstruct research evidence.
+
 ## Current annual study
 
 For the shortest check, collect all 83 frozen annual predictions and 24 kernel diagnostics from the public evidence package, without fitting or new quantum states:
@@ -20,7 +22,7 @@ uv run --no-sync python scripts/pipeline.py annual matched --output .cache/wildf
 uv run --no-sync python scripts/pipeline.py annual quantum --qubits 4 --output .cache/wildfire/annual-qsvr/new-quantum-replay --execute
 ```
 
-Prepared CSV replay uses parsed floats; the original raw classical run consumed pre-serialization floats. Preserve this distinction when checking exact predictions. To reconstruct the annual table from sources, omit `--dataset`; the runner verifies/prepares weather automatically, then aggregates NFDB incidents. Context accepts an explicit prepared weather CSV through its specialist script. Woodland requires yearly crops and the pinned boundary, acquired with `scripts/download_ontario_boundary.py`. Annual recipes, figures and evidence. The final reused-year evaluation is complete; preserve its original intent. Specialist collection commands remain documented in the [portable notes](ANNUAL_FINAL.md#portable-collection).
+Prepared CSV replay uses parsed floats; the original raw classical run consumed pre-serialization floats. Preserve this distinction when checking exact predictions. To reconstruct the annual table from sources, omit `--dataset`; the runner verifies/prepares weather automatically, then aggregates NFDB incidents. Context accepts an explicit prepared weather CSV through its specialist script. Woodland requires yearly crops and the pinned boundary, acquired with `scripts/download_ontario_boundary.py`. The final reused-year evaluation is complete; preserve its original intent. Specialist collection commands remain documented in the [portable notes](ANNUAL_FINAL.md#portable-collection).
 
 ## Preserved incident recipe
 

@@ -1,35 +1,26 @@
 # Judge guide
 
-**Question:** Can quantum kernels improve retrospective annual Ontario wildfire-size estimation under a matched budget?
+[Presentation](https://fireline.ohrats.party/presentation/) · [Play Fireline](https://fireline.ohrats.party/) · [Repository overview](../README.md)
 
-**Answer:** No. Classical RBF leads matched development (MAE 77.02 ha/fire vs QSVR 86.64); on the 2019–2024 holdout, no tested climate model beats the historical training mean (276.81 ha/fire). The primary quantum finding is a concrete encoding-scale and conditioning trade-off rather than predictive advantage.
+**Question:** Can quantum kernels improve retrospective annual Ontario wildfire-size estimates under a matched tuning budget?
 
-**Hardware Reality (39 QPU jobs across Heron and Eagle):**
-- **Shot scaling:** Increasing shots expands candidate coverage, but does not increase feasible yield on deep circuits (~1,000 CZ gates). Classical uniform sampling outperforms 11 of 12 measured hardware minima ([shot sweep](SHOT_SWEEP.md)).
-- **Error mitigation:** Readout calibration and twirling lower Gram matrix RMSE, but downstream regression error often worsens despite lower matrix error ([pipeline mitigation](IBM_PIPELINE_MITIGATION.md)).
-- **Feature selection:** Higher QAOA/SQD objective coverage does not produce better downstream predictive accuracy, while classical subset enumeration is instantaneous ([selector hardware](SELECTOR_HARDWARE.md)).
+**Finding:** Classical RBF leads matched development: 77.02 ha/fire MAE versus QSVR’s 86.64. On the six reused 2019–2024 evaluation years, no main climate model beats the training mean’s 276.81 ha/fire. Four-input QSVR beats matched RBF there, but misses the annual extremes.
 
+## What the experiments contribute
 
-## Reading Order for Judges
+- **Annual dataset and comparison.** One Ontario year per row: 31 training years, ten climate summaries and an audited mean-size target. The frozen evaluation reads saved model states and performs no fitting.
+- **Encoding diagnosis.** Ten-qubit kernels make years almost unrelated. Smaller input angles restore similarity but can approach a nearly constant kernel. The result explains flat predictions rather than claiming quantum advantage.
+- **Real-device diagnostics.** [Mitigation on Fez, Marrakesh and Quebec](IBM_PIPELINE_MITIGATION.md) separates kernel accuracy from prediction error. [Shot sweeps](SHOT_SWEEP.md) show that more measurements collect more valid subsets without repairing their low yield. [Selector experiments](SELECTOR_HARDWARE.md) compare sampled costs with downstream regression.
+- **Playable teaching.** [Fireline](https://fireline.ohrats.party/) lets players choose features and tune angle, C and epsilon. Betty explains the controls and gives contextual hints. Its browser calculations are separate from research results.
 
-1. **[README](../README.md):** Quick overview of research questions, data pipeline, QPU benchmarks, and offline reproduction commands.
-2. **[Slide Deck](../web/presentation/README.md):** Hackathon presentation with interactive QPU benchmarks and speaker notes.
-3. **[Fireline Interactive Demo](../web/demo/README.md):** Browser workbench demonstrating feature selection, kernel Gram matrices, and error mitigation.
-4. **[Main Report](REPORT.md):** Controlled empirical study, methodology, mathematical formulations, and negative results.
-5. **[Frozen Evaluation](ANNUAL_FINAL.md):** Complete benchmark tables across all 11 models on 2019–2024 holdout.
+## Five-minute route
 
-## Measured Evidence Summary
+Start with the [presentation](https://fireline.ohrats.party/presentation/): seven main slides cover the question, dataset, selection, comparison, annual errors, encoding and conclusion. Two appendices cover hardware. Press **N** for notes and sources; **F** for fullscreen.
 
-- **Dataset:** 31 annual observations (1988–2018) for chronological training; 6 years (2019–2024) for evaluation.
-- **Features:** Audited NRCan National Fire Database (39,616 training fires) + ECCC Monthly Climate Summaries (10 summaries from 65–340 weather stations).
-- **QPU Execution:** 39 IBM Quantum hardware jobs across `ibm_fez`, `ibm_marrakesh` (Heron), and `ibm_quebec` (Eagle) with zero unrun claims.
+For the evidence, read the [main report](REPORT.md), [frozen evaluation](ANNUAL_FINAL.md) and [reproduction instructions](REPRODUCIBILITY.md). [Presentation controls and local setup](../web/presentation/README.md) and [game controls](../web/demo/README.md) are available separately.
 
-## Submission Checklist
+## What to keep in mind
 
-- [x] **Self-contained README:** Offline reproduction with `uv` and zero credentials required.
-- [x] **Slide Presentation:** 9-slide deck in `web/presentation/` with speaker notes.
-- [x] **Interactive Simulator:** Fireline canvas workbench in `web/demo/`.
-- [x] **Public Scientific Code:** Complete pipeline in `wildfire_lab/` and `scripts/`.
-- [x] **Unit & Verification Tests:** 224 automated test cases passing in CI / local test runner.
-- [x] **Challenge Deadline:** October 7, 2026, 11:59 PM ET.
+The target is annual mean reported hectares per fire, not total hectares burned. Same-year climate makes this retrospective estimation. Only 31 years are available for training, and the six evaluation years were previously inspected. Later hardware diagnostics do not replace the original simulated final comparison.
 
+The repository includes public code, tables, figures, saved prediction receipts and tests. The [recorded critique closeout](data/critique_response_handoff.json) reports its verification snapshot; current tests can be run using the README commands. The live browser deck is newer than the preserved PDF/PowerPoint downloads.

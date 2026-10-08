@@ -1,6 +1,8 @@
 # Fire catalogue: page-by-page screening
 
-Generated from the observed 46-page receipt and official CKAN metadata. All 455 search records are listed once; three extra owner-linked products appear only in the JSON inventory. Titles drive reproducible triage; detailed compatibility decisions are in [the source report](../FIRE_FEATURE_SPACE.md). No source is admitted into a model by this list.
+Links to retired reports below open their preserved GitHub snapshot; current docs are in the [documentation index](../README.md).
+
+Generated from the observed 46-page receipt and official CKAN metadata. All 455 search records are listed once; three extra owner-linked products appear only in the JSON inventory. Titles drive reproducible triage; detailed compatibility decisions are in [the source report](https://github.com/OhRats-Technologies/OhRats_QFF2026_uottawa/blob/21aab7a0389498085275dfb50d2475a224a25c61/docs/FIRE_FEATURE_SPACE.md). No source is admitted into a model by this list.
 
 ## Page 1
 

@@ -1,0 +1,119 @@
+{
+  "scope": "Published wildfire hardware studies, excluding unrelated chemistry and personal readiness jobs. Device summaries are counted once; returned shots exclude two failed jobs. Costs span accounts.",
+  "studies": [
+    {
+      "label": "Three-device mitigation",
+      "source": "docs/results/pipeline-mitigation-devices.json",
+      "source_sha256": "2ba7d38353470120a674566dbbb815fce868787642310b79d3597fa0e2fce7c0",
+      "jobs": 6,
+      "returned_shots": 224256,
+      "charged_qpu_seconds": 75
+    },
+    {
+      "label": "Expanded selector",
+      "source": "docs/results/selector-hardware.json",
+      "source_sha256": "ad49b0f1e2e6afbb62d0518f5c8b81e198422db7db5b60326c5e92eed6486f22",
+      "jobs": 2,
+      "returned_shots": 18432,
+      "charged_qpu_seconds": 11.0
+    },
+    {
+      "label": "Original failed kernel jobs",
+      "source": "docs/results/selector-hardware-kernels.json",
+      "source_sha256": "807768d1c7783ecf0ba8f7128a5cfc012673d0bc84791682ec46998460a15a60",
+      "jobs": 2,
+      "returned_shots": 0,
+      "charged_qpu_seconds": 4
+    },
+    {
+      "label": "Corrected kernel shards",
+      "source": "docs/results/selector-hardware-kernel-shards.json",
+      "source_sha256": "f86a8c757be2ace7003dd6d1f7d00c889c53563d076fc5d75fe7605ba88f738a",
+      "jobs": 10,
+      "returned_shots": 343040,
+      "charged_qpu_seconds": 125.0
+    },
+    {
+      "label": "Shallow selector search",
+      "source": "docs/results/shallow-hardware-search.json",
+      "source_sha256": "219e9c4e9d547e6f35bf4250c8d3787b2812731f4c1afe9db8776d38ca35b1fd",
+      "jobs": 3,
+      "returned_shots": 39936,
+      "charged_qpu_seconds": 18.0
+    },
+    {
+      "label": "Marrakesh basis confirmation",
+      "source": "docs/results/basis-confirmation-marrakesh.json",
+      "source_sha256": "5250916d2ea59174a2a7c8a9756f6e6b49f678d44bb9bcb0b64d0164787b13f7",
+      "jobs": 2,
+      "returned_shots": 21504,
+      "charged_qpu_seconds": 10.0
+    },
+    {
+      "label": "Quebec basis confirmation",
+      "source": "docs/results/basis-confirmation-quebec.json",
+      "source_sha256": "b74ed4546a212a7217aa49558c2d37731d11a1c310b5e4729619a0c982067e26",
+      "jobs": 2,
+      "returned_shots": 21504,
+      "charged_qpu_seconds": 10.0
+    },
+    {
+      "label": "Tuned kernel hardware",
+      "source": "docs/results/tuned-kernel-hardware.json",
+      "source_sha256": "155f88ec3cbd2ed957e8d08ac7a7feb64bdc76d6c6ae96cedee289d0deb1e6dc",
+      "jobs": 2,
+      "returned_shots": 136704,
+      "charged_qpu_seconds": 44.0
+    },
+    {
+      "label": "Marrakesh shot sweep",
+      "source": "docs/results/shot-sweep-marrakesh.json",
+      "source_sha256": "2c3ab335595a1a7434cfce48f52e83e0fe63900008e94742658b90d5f683b505",
+      "jobs": 6,
+      "returned_shots": 150528,
+      "charged_qpu_seconds": 54.0
+    },
+    {
+      "label": "Quebec shot sweep",
+      "source": "docs/results/shot-sweep-quebec.json",
+      "source_sha256": "a15dbe15fa91f87689bb14ab817bdaf9140450f3aa785735ed7d058215a21d19",
+      "jobs": 6,
+      "returned_shots": 150528,
+      "charged_qpu_seconds": 54.0
+    },
+    {
+      "label": "Repetition microkernel",
+      "source": "docs/results/repetition-microkernel.json",
+      "source_sha256": "36598e93fef93a25b41ca95b5c1d1dc50cdf06e16e285438cfcc3701adf3e14c",
+      "jobs": 4,
+      "returned_shots": 1474560,
+      "charged_qpu_seconds": 414
+    }
+  ],
+  "totals": {
+    "jobs": 45,
+    "returned_shots": 2580992,
+    "charged_qpu_seconds": 819.0
+  },
+  "near_400_second_records": [
+    {
+      "label": "Quebec repetition block 1",
+      "metrics_sha256": "944bf940a237b027f34bbac698e0e22e06ef50101a477185a3878135c37b5593",
+      "charged_qpu_seconds": 103,
+      "running_wall_seconds": 433.177292,
+      "created_to_finished_seconds": 6757.949472
+    },
+    {
+      "label": "Marrakesh DD/twirled basis confirmation",
+      "metrics_sha256": "699befc6de724738de9e0bc4c02ee696868ad441105ee49eaaad07e738c1c0f3",
+      "charged_qpu_seconds": 5,
+      "running_wall_seconds": 68.657235,
+      "created_to_finished_seconds": 400.841927
+    }
+  ],
+  "time_definitions": {
+    "charged_qpu_seconds": "Recorded Runtime usage.qpu_charge_time_seconds",
+    "running_wall_seconds": "finished minus running timestamp; includes service work",
+    "created_to_finished_seconds": "finished minus created timestamp; includes queue and service work"
+  }
+}

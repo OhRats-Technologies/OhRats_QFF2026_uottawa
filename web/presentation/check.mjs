@@ -11,7 +11,7 @@ const base=process.env.PRESENTATION_BASE||'http://127.0.0.1:8790';
 const out=process.env.PRESENTATION_OUTPUT||'.cache/presentation-canvas/verified';
 await fs.mkdir(out,{recursive:true});
 const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
-const preserved=await Promise.all(['evidence.json','assets/shot-sweep.json','slides/ontario-wildfire.pdf','slides/ontario-wildfire.pptx'].map(async file=>({file,sha:sha(await fs.readFile(`web/presentation/${file}`))})));
+const preserved=await Promise.all(['evidence.json','assets/shot-sweep.json','assets/hardware-costs.json','slides/ontario-wildfire.pdf','slides/ontario-wildfire.pptx'].map(async file=>({file,sha:sha(await fs.readFile(`web/presentation/${file}`))})));
 const browser=await chromium.launch({headless:true,channel:'chrome'});
 const page=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:'reduce'});
 const errors=[], failed=[], external=new Set();
@@ -80,6 +80,37 @@ try {
   await click('year-2');assert.ok((await snapshot()).labels.some(r=>r.text.includes('2021 · QSVR')));
   await page.evaluate(()=>presentation.show(8));
   assert.deepEqual((await snapshot()).receipt.hardware.rows,evidence.shot_sweep.rows);
+  const plots=(await snapshot()).receipt.hardware.plots;
+  assert.deepEqual(plots.map(r=>[r.device,r.min,r.max]),[['marrakesh',0,.2],['quebec',0,.025]]);
+  for(const plot of plots) {
+    assert.deepEqual(plot.rows,evidence.shot_sweep.rows.filter(r=>r.device===plot.device));
+    assert.ok(plot.rows.every(r=>r.wilson95[0]>=plot.min&&r.wilson95[1]<=plot.max),'All intervals fit the labelled axis');
+  }
+  const hardwareLabels=(await snapshot()).labels.map(r=>r.text);
+  assert.ok(hardwareLabels.includes('IBM MARRAKESH · 0–20%'));
+  assert.ok(hardwareLabels.includes('IBM QUEBEC · 0–2.5%'));
+  for(const row of evidence.shot_sweep.rows)
+    assert.ok(hardwareLabels.includes(`${(row.fraction*100).toFixed(2)}%`),'Every observed percentage is printed');
+  assert.deepEqual((await snapshot()).receipt.hardware.repetition,evidence.hardware_costs.repetition);
+  assert.equal(evidence.hardware_costs.shot_sweep.jobs,evidence.shot_sweep.jobs);
+  assert.equal(evidence.hardware_costs.shot_sweep.returned_shots,evidence.shot_sweep.physical_shots);
+  assert.equal(evidence.hardware_costs.shot_sweep.charged_qpu_seconds,evidence.shot_sweep.charged_seconds);
+  const ledger=JSON.parse(await fs.readFile('docs/data/hardware_accounting.json','utf8'));
+  assert.equal(sha(await fs.readFile('docs/data/hardware_accounting.json')),evidence.hardware_costs.source_sha256);
+  assert.deepEqual(evidence.hardware_costs.published_wildfire_totals,ledger.totals);
+  for(const item of ledger.studies) {
+    const bytes=await fs.readFile(item.source), saved=JSON.parse(bytes);
+    assert.equal(sha(bytes),item.source_sha256);
+    assert.equal(item.jobs,saved.hardware_jobs??saved.blocks.length);
+    assert.equal(item.returned_shots,saved.physical_shots??saved.returned_physical_shots??saved.shots);
+    assert.equal(item.charged_qpu_seconds,saved.charged_qpu_seconds??saved.charged_qpu_seconds_total??saved.quantum_seconds_total??saved.charged_seconds);
+  }
+  for(const key of ['jobs','returned_shots','charged_qpu_seconds'])
+    assert.equal(ledger.studies.reduce((sum,r)=>sum+r[key],0),ledger.totals[key]);
+  const costLabels=(await snapshot()).labels.map(r=>r.text);
+  assert.ok(costLabels.some(s=>s.includes('Shot sweep only')));
+  assert.ok(costLabels.some(s=>s.includes('Separate repetition study')));
+  assert.ok(costLabels.some(s=>s.includes('charged QPU')));
   await page.setViewportSize({width:390,height:844});
   await page.keyboard.press('n');assert.equal((await snapshot()).panel,'notes');
   await page.mouse.wheel(0,900);await page.waitForTimeout(60);assert.ok((await snapshot()).receipt.noteScrollMax>0);

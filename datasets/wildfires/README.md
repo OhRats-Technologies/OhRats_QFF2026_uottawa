@@ -1,10 +1,10 @@
 # Ontario fire sources
 
-The intended modelling unit is annual macro climate/fire data. The incident source and completed classifier described here are reusable supporting work; an annual modelling table and predictor have not been built. [Scope correction](../../docs/SCOPE_CORRECTION.md).
+The current annual study aggregates NRCan National Fire Database (NFDB) records into one Ontario row per year: 1988–2018 training and 2019–2024 reused evaluation. The target is mean reported hectares per size-observed fire. See the [annual report](../../docs/REPORT.md), [source rules](../../docs/DATA_SCHEMA.md) and [reproduction instructions](../../docs/REPRODUCIBILITY.md).
 
-**Selected historical labels:** NRCan National Fire Database (NFDB) incident points, audited for dates, identity, location and reported size. The study uses one eligible incident per row, training on 1988–2018 and testing on 2019–2024. Agency-associated dates and recorded sizes do not certify ignition dates or final fire sizes. Missing records are not negative labels. See [acquisition and coverage](../../docs/DATA_DOWNLOADS.md), [label audit](../../docs/LABEL_QUALITY.md) and [pinned reproduction](../../docs/REPRODUCIBILITY.md).
+The earlier individual-fire classifier is supporting historical work. Reported dates and sizes do not certify ignition dates or final burned area; missing records are not negative labels.
 
-**Separate operational diagnostic:** Agency Reported Wildfires contains report-history updates. It is retained for the earlier pilot and coverage checks; its rows are not the historical model's incident labels. The following instructions apply to this feed.
+Agency Reported Wildfires is a separate operational feed with report-history updates. It is used for coverage diagnostics, not as the annual study’s historical incident source. The instructions below apply to that feed.
 
 ## Operational update feed
 

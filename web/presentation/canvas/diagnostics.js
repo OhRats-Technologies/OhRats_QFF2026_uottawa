@@ -62,46 +62,55 @@ export function encoding(p,l,e,a,s) {
 }
 
 function hardwarePlot(p,box,device,rows,progress,mobile) {
-  const b=p.panel(box,device==='marrakesh'?'IBM MARRAKESH':'IBM QUEBEC');
+  const max=device==='quebec'?.025:.2;
+  const ticks=device==='quebec'?[0,.005,.01,.015,.02,.025]:[0,.05,.10,.15,.2];
+  const range=`0–${max*100}%`;
+  const b=p.panel(box,`${device==='marrakesh'?'IBM MARRAKESH':'IBM QUEBEC'} · ${range}`);
   p.fit('Usable 4-of-20 selections · %',b.x,b.y+8,b.w,18,color.dim);
-  const left=b.x+30,top=b.y+48,w=b.w-45,h=b.h-120;
-  const px=i=>left+w*i/2, py=v=>top+h*(1-v/.2);
-  for(const value of [0,.05,.10,.15,.2]) {
+  p.text('Raw',b.x,b.y+32,13,color.amber);
+  p.text('DD + twirling',b.x+62,b.y+32,13,color.blue);
+  const left=b.x+30,top=b.y+64,w=b.w-45,h=b.h-148;
+  const px=i=>left+w*i/2, py=v=>top+h*(1-v/max);
+  for(const value of ticks) {
     const y=py(value);p.line([[left,y],[left+w,y]],'#709d882a');
-    p.text(Math.round(value*100),left-8,y,12,color.dim,'right');
+    p.text(Number((value*100).toFixed(1)),left-8,y,12,color.dim,'right');
   }
   for(const [arm,tint] of [['raw',color.amber],['dd_twirl',color.blue]]) {
     const points=rows.filter(r=>r.device===device&&r.arm===arm).sort((a,b)=>a.shots-b.shots);
-    p.line(points.map((r,i)=>[px(i),py(r.fraction*progress)]),tint,2);
+    const offset=arm==='raw'?-4:4;
+    p.line(points.map((r,i)=>[px(i)+offset,py(r.fraction*progress)]),tint,2);
     points.forEach((r,i)=>{
-      const y0=py(r.wilson95[0]),y1=py(r.wilson95[1]),x=px(i);
+      const y0=py(r.wilson95[0]),y1=py(r.wilson95[1]),x=px(i)+offset;
       p.line([[x,y0],[x,y1]],tint,2);
       p.line([[x-5,y0],[x+5,y0]],tint,2);p.line([[x-5,y1],[x+5,y1]],tint,2);
       p.circle(x,py(r.fraction*progress),5,tint);
+      p.text(`${(r.fraction*100).toFixed(2)}%`,px(i),top+h+(arm==='raw'?46:68),mobile?13:15,tint,'center');
     });
   }
-  [512,1024,2048].forEach((shot,i)=>p.text(shot.toLocaleString('en-CA'),px(i),top+h+22,14,color.mint,'center'));
-  p.fit('shots per circuit',b.x+b.w/2,top+h+49,b.w,15,color.dim,'center');
-  return rows.filter(r=>r.device===device);
+  [512,1024,2048].forEach((shot,i)=>p.text(`${shot.toLocaleString('en-CA')} shots`,px(i),top+h+22,mobile?12:14,color.mint,'center'));
+  return {device,min:0,max,ticks,rows:rows.filter(r=>r.device===device)};
 }
 
 export function resources(p,l,e,a,s) {
-  const body={...l.box,h:l.box.h-(l.mobile?134:108)};
+  const body={...l.box,h:l.box.h-(l.mobile?194:108)};
   const [left,right]=split(body,l.mobile,.5,l.gap);
   const sweep=e.shot_sweep;
-  hardwarePlot(p,left,'marrakesh',sweep.rows,s.progress,l.mobile);
-  hardwarePlot(p,right,'quebec',sweep.rows,s.progress,l.mobile);
-  const y=l.box.y+l.box.h-(l.mobile?114:82), w=l.box.w;
+  const repetition=e.hardware_costs.repetition;
+  const plots=[hardwarePlot(p,left,'marrakesh',sweep.rows,s.progress,l.mobile),
+    hardwarePlot(p,right,'quebec',sweep.rows,s.progress,l.mobile)];
+  const y=l.box.y+l.box.h-(l.mobile?174:82), w=l.box.w;
   p.rect(l.box.x,y,w,2,'#6f9c8555');
   if(l.mobile) {
-    p.text('12 jobs · 108 QPU seconds',l.box.x,y+26,17,color.amber);
-    p.text('301,056 returned shots',l.box.x,y+54,17,color.mint);
-    p.text('Raw / DD + twirling · 95% Wilson bars',l.box.x,y+88,14,color.dim);
+    p.fit(`Shot sweep only · ${sweep.jobs} jobs`,l.box.x,y+18,w,17,color.amber);
+    p.fit(`${sweep.physical_shots.toLocaleString('en-CA')} shots · ${sweep.charged_seconds} charged QPU s`,l.box.x,y+43,w,16,color.mint);
+    p.fit(`Separate repetition study · ${repetition.jobs} jobs`,l.box.x,y+74,w,17,color.amber);
+    p.fit(`${repetition.returned_shots.toLocaleString('en-CA')} shots · ${repetition.charged_qpu_seconds} charged QPU s`,l.box.x,y+99,w,16,color.mint);
+    p.fit('Charged QPU time ≠ elapsed service time',l.box.x,y+132,w,13,color.dim);
+    p.fit('Device-specific axes · 95% Wilson bars',l.box.x,y+156,w,13,color.dim);
   } else {
-    p.text('12 real jobs',l.box.x,y+32,25,color.amber);
-    p.text('108 QPU seconds',l.box.x+w*.29,y+32,25,color.amber);
-    p.text('301,056 shots',l.box.x+w*.65,y+32,25,color.mint);
-    p.text('Orange: raw   Blue: DD + twirling   Bars: 95% Wilson shot intervals',l.box.x,y+68,16,color.dim);
+    p.fit(`Shot sweep only: ${sweep.jobs} jobs · ${sweep.physical_shots.toLocaleString('en-CA')} shots · ${sweep.charged_seconds} charged QPU s`,l.box.x,y+18,w,20,color.amber);
+    p.fit(`Separate repetition study: ${repetition.jobs} jobs · ${repetition.returned_shots.toLocaleString('en-CA')} shots · ${repetition.charged_qpu_seconds} charged QPU s`,l.box.x,y+46,w,18,color.mint);
+    p.fit('Charge ≠ elapsed time · Device-specific axes · Bars: 95% Wilson.',l.box.x,y+72,w,14,color.dim);
   }
-  p.receipt.hardware={rows:sweep.rows,jobs:sweep.jobs,chargedSeconds:sweep.charged_seconds,shots:sweep.physical_shots};
+  p.receipt.hardware={rows:sweep.rows,plots,jobs:sweep.jobs,chargedSeconds:sweep.charged_seconds,shots:sweep.physical_shots,repetition};
 }

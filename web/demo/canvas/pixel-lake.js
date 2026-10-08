@@ -1,6 +1,7 @@
 // Original code-drawn pixel version of the Fireline title painting: towering
 // spruce and mossy granite on the left, misty forested hills and a calm lake,
 // and a burning ridge with a smoke plume on the right. 320x180, crisp pixels.
+import { reflectLake } from "./pixel-reflection.js";
 const R = { w: 320, h: 180 };
 let cached = null;
 const seeded = (seed) => () => {
@@ -53,8 +54,8 @@ function paint() {
   const cv = document.createElement("canvas");
   cv.width = R.w;
   cv.height = R.h;
-  const rnd = seeded(29),
-    { px, spruce, boulder } = tools(cv.getContext("2d"), rnd);
+  const rnd = seeded(29);
+  let { px, spruce, boulder } = tools(cv.getContext("2d"), rnd);
   // Dark teal dusk sky with streaky stratus, warmer near the horizon.
   ["#223330", "#2a3b36", "#32443c", "#3a4b41", "#435244"].forEach((tone, i) => px(0, i * 12, R.w, 12, tone));
   for (let i = 0; i < 90; i++) {
@@ -105,15 +106,10 @@ function paint() {
   // Far shore treeline and the small forested island left of centre.
   for (let x = 90; x < 290; x += 3) spruce(x + rnd() * 2, 94, 6 + rnd() * 12, ["#13221f", "#1a2c28", "#24362f"]);
   for (const [x, y, rx, ry] of [[104, 94, 7, 2], [126, 95, 9, 2], [150, 94, 6, 2]]) boulder(x, y, rx, ry);
-  // Lake: teal bands, ripples, orange reflection and dark shore reflections.
-  for (let y = 95; y < R.h; y++) px(0, y, R.w, 1, y % 3 ? "#2e4447" : "#344c4f");
-  for (let y = 97; y < R.h; y += 2)
-    for (let x = (y * 11) % 17; x < R.w; x += 15 + (y % 6)) px(x, y, 3 + (y % 4), 1, "#465f60");
-  for (let x = 90; x < 290; x += 2) px(x, 96, 1, 3 + ((x * 7) % 9), "#1b2c2c");
-  for (let y = 96; y < 156; y += 2) {
-    const spread = 8 + (y - 96) * 0.45;
-    for (let x = 0; x < spread; x += 3 + (y % 3)) px(214 - spread / 2 + x + ((y * 7) % 5) - 2, y, 2 + ((x + y) % 3), 1, (x + y) % 4 ? "#c26a3a" : "#f0a258");
-  }
+  // Foreground stays separate: it masks the live reflection, never enters it.
+  const foreground = document.createElement("canvas");
+  foreground.width = R.w; foreground.height = R.h;
+  ({ px, spruce, boulder } = tools(foreground.getContext("2d"), rnd));
   // Right shore: granite under a stand of rim-lit spruce.
   for (const [x, h] of [[244, 24], [254, 34], [264, 22], [276, 40], [288, 30], [300, 44], [314, 34]])
     spruce(x, 99, h, ["#0e1a17", "#16271f", "#b8743e"]);
@@ -134,7 +130,9 @@ function paint() {
   for (let x = 0; x < 190; x += 2) if ((x * 13) % 7 < 3) px(x, 170 + (x % 7), 1, 5, (x % 4 ? "#3a5530" : "#6a5a32"));
   // Small spruce on the near shore, bottom centre.
   for (const [x, h] of [[198, 26], [210, 18], [234, 34], [246, 22]]) spruce(x, 182, h, ["#0e1a17", "#16271f", "#a9703c"]);
-  return cv;
+  const frame = document.createElement("canvas");
+  frame.width = R.w; frame.height = R.h;
+  return { scene: cv, foreground, frame, tick: -1 };
 }
 // Animated burn along the big hill's crown and a billowing plume.
 function burn(low, time) {
@@ -171,10 +169,24 @@ function burn(low, time) {
 // Draws the scene covering W x H, centred.
 export function pixelLake(p, W, H, time = 0) {
   cached ||= paint();
+  const tick = Math.floor(time * 24);
+  if (cached.tick !== tick) {
+    const c = cached.frame.getContext("2d", { willReadFrequently: true });
+    c.clearRect(0, 0, R.w, R.h);
+    c.drawImage(cached.scene, 0, 0);
+    burn((lx, ly, lw, lh, tone) => {
+      c.fillStyle = tone;
+      c.fillRect(Math.round(lx), Math.round(ly), Math.max(1, Math.round(lw)), Math.max(1, Math.round(lh)));
+    }, tick / 24);
+    reflectLake(c, tick / 24);
+    c.drawImage(cached.foreground, 0, 0);
+    cached.tick = tick;
+  }
   const k = Math.max(W / R.w, H / R.h),
     x = (W - R.w * k) / 2,
     y = (H - R.h * k) / 2;
+  p.c.save();
   p.c.imageSmoothingEnabled = false;
-  p.c.drawImage(cached, x, y, R.w * k, R.h * k);
-  burn((lx, ly, lw, lh, tone) => p.rect(x + lx * k, y + ly * k, lw * k, lh * k, tone), time);
+  p.c.drawImage(cached.frame, x, y, R.w * k, R.h * k);
+  p.c.restore();
 }

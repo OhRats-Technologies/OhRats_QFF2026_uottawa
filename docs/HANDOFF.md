@@ -1,3 +1,11 @@
+# Current handoff
+
+[Play Fireline](https://fireline.ohrats.party/) · [View the presentation](https://fireline.ohrats.party/presentation/) · [Judge guide](JUDGES.md)
+
+The current browser game is a canvas QSVR workbench with automatic testing, four seasons and Betty’s guided hints. The talk has seven main slides and two appendices. Both are deployed through Coolify from `main`; [hosting details](../deploy/fireline/README.md), [game controls](../web/demo/README.md) and [presentation controls](../web/presentation/README.md) cover operation.
+
+The entries below preserve earlier research and demo closeouts. Test counts, budgets, game mechanics and delivery claims belong to the snapshots named in each entry; they are not instructions for the current game.
+
 ## October 6 canvas Fireline update
 
 The primary demo is the full-window [canvas engineering game](FIRELINE_CANVAS.md). Open-ended 2/4/6/10-input builds execute in a separate browser teaching sandbox; published research remains unchanged. Live kernel/encoding, QAOA/SQD samples, repair/replay, original art/music and responsive controls are implemented. Replaced console code is deleted, with its evidence retained. See the [verification receipt](data/fireline_canvas_verification.json). The obsolete field strategy route, engine, bundle, dependencies and dedicated checks are deleted. Shared forest context and historical receipts remain. The earlier console and strategy updates below are historical.
@@ -63,7 +71,7 @@ Open the committed presentation, game and evidence views without Python, credent
 bun run web/presentation/serve.ts
 ```
 
-[Present](http://127.0.0.1:8790/web/presentation/) · [Play Fireline](http://127.0.0.1:8790/web/demo/). Start or continue a season, select a fire and compare crew/water responses before advancing. The map's **Legend** explains its source colours; **Field guide** opens the season build and evidence. Returning through **Play → Continue** preserves the season. [Controls/build instructions](../web/demo/README.md).
+[Present](https://fireline.ohrats.party/presentation/) · [Play Fireline](https://fireline.ohrats.party/). The crew/water strategy game described in this historical handoff was removed; the current canvas workbench is documented in the [game README](../web/demo/README.md).
 
 | Deliverable | Finding and evidence |
 |---|---|

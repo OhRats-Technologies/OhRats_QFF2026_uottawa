@@ -7,8 +7,9 @@ import {conclusions} from './canvas/ending.js';
 import {overlay,plainNotes} from './canvas/panels.js';
 
 const canvas=document.querySelector('#stage'), ctx=canvas.getContext('2d');
-const [evidence,sweep]=await Promise.all(['evidence.json','assets/shot-sweep.json'].map(url=>fetch(url).then(r=>r.json())));
+const [evidence,sweep,costs]=await Promise.all(['evidence.json','assets/shot-sweep.json','assets/hardware-costs.json'].map(url=>fetch(url).then(r=>r.json())));
 evidence.shot_sweep=sweep;
+evidence.hardware_costs=costs;
 const slides=makeSlides(evidence);
 const assets=Object.fromEntries(await Promise.all([['cover','assets/ontario-cover.png'],['forest','assets/algonquin-cover.png']].map(async([name,url])=>{
   const image=new Image();image.src=url;await image.decode();return [name,image];

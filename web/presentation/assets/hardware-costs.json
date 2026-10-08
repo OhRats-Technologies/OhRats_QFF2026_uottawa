@@ -1,0 +1,19 @@
+{
+  "shot_sweep": {
+    "jobs": 12,
+    "returned_shots": 301056,
+    "charged_qpu_seconds": 108
+  },
+  "repetition": {
+    "jobs": 4,
+    "returned_shots": 1474560,
+    "charged_qpu_seconds": 414
+  },
+  "published_wildfire_totals": {
+    "jobs": 45,
+    "returned_shots": 2580992,
+    "charged_qpu_seconds": 819.0
+  },
+  "source": "docs/data/hardware_accounting.json",
+  "source_sha256": "edc166bdd11d31663461da65882abc25703371eae7331adb9855ebbde2d6ead2"
+}

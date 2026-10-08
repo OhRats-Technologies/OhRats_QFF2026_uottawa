@@ -1,6 +1,6 @@
 # Five-minute narration
 
-Use this as the spoken outline. The browser deck renders on canvas with Fireline panels. Betty’s optional **B** panel explains the controls. The browser's **N** notes contain methods and source links for questions. Keep the two appendices outside the main talk. Timings include the short visual demonstrations below, not just reading time.
+[Open the live presentation](https://fireline.ohrats.party/presentation/). Use this as the spoken outline. The browser deck renders on canvas with Fireline panels. Betty’s optional **B** panel explains the controls. The browser's **N** notes contain methods and source links for questions. Keep the two appendices outside the main talk. Timings include the short visual demonstrations below, not just reading time.
 
 ## 1. Annual wildfire question · 30 seconds
 

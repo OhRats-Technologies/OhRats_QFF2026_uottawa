@@ -87,6 +87,30 @@ The corrected jobs return **343,040 shots** and support **60 fixed QSVR fits**, 
 
 Created→finished is service turnaround; running→finished is wall time, neither is charged QPU time. API roundtrip is submission overhead and polling delay is not part of these timestamp differences.
 
+## Hardware cost accounting
+
+The **12 jobs / 301,056 shots / 108 charged QPU seconds** in the presentation cover the shot-count sweep alone. It includes 21 selector/control/calibration circuits per job: 2 devices × 2 arms × 21 circuits × (512 + 1,024 + 2,048) shots = 301,056. Each plotted four-of-twenty yield uses one circuit's shots at that level. The separate repetition study adds 1,474,560 shots.
+
+| Published wildfire study | Jobs | Returned shots | Charged QPU seconds |
+| --- | ---: | ---: | ---: |
+| Three-device mitigation | 6 | 224,256 | 75 |
+| Expanded selector and kernel stages | 14 | 361,472 | 140 |
+| Later search, basis confirmation and tuned kernels | 9 | 219,648 | 82 |
+| Shot-count sweep | 12 | 301,056 | 108 |
+| Repetition microkernel | 4 | 1,474,560 | 414 |
+| **Total** | **45** | **2,580,992** | **819** |
+
+The 45 jobs include two failed kernel jobs with zero returned shots and four charged seconds; 43 jobs returned counts. Charges span multiple accounts. Device-level summaries and their underlying jobs are counted once. Unrelated chemistry and personal readiness jobs are outside this table. [Source ledger and hashes](data/hardware_accounting.json).
+
+**Elapsed time and charged time differ.** The records near 400 seconds are:
+
+| Job | Created → finished | Running → finished | Charged QPU time |
+| --- | ---: | ---: | ---: |
+| Quebec repetition block 1 | 6,757.95 s | 433.18 s | 103 s |
+| Marrakesh DD/twirled basis confirmation | 400.84 s | 68.66 s | 5 s |
+
+Charge is the recorded `usage.qpu_charge_time_seconds`, independently matched by saved `job.usage()` values of 103 and 5. Running status includes service work; creation-to-completion includes queueing. These two records show no 400-second charge. The repetition study's **414 seconds is the sum of four jobs**: Marrakesh 104 + 104, Quebec 103 + 103. Sanitized durations and source hashes are in the ledger; private job identifiers remain private.
+
 ## Replay and interpretation
 
 ```sh

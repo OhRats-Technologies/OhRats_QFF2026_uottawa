@@ -1,10 +1,12 @@
 # Fireline canvas game
 
-Completed implementation goal: replace the primary walkthrough with a full-window engineering workbench. Build → run → inspect → repair. Every legal 2–10-input build must execute, including combinations absent from the saved research recipes.
+[Play Fireline](https://fireline.ohrats.party/) · [Presentation](https://fireline.ohrats.party/presentation/) · [Controls and local setup](../web/demo/README.md)
+
+The canvas workbench runs arbitrary 2–10-input QSVR builds. Edits test automatically; meeting the current contract locks the choices and unlocks the next season. Betty’s tour and contextual hints introduce the controls. The dated sections below retain implementation and verification history.
 
 ## Sandbox boundary
 
-The browser uses public 1988–2018 development rows, fold-local median imputation/scaling, bounded angles, exact one-layer linear ZZ states, fidelity matrices and a classical epsilon-SVR dual solver. It never accesses credentials, hardware or the 2019–2024 research evaluation. Its adaptive play is a teaching sandbox, not additional predictive confirmation. Published scientific evidence stays unchanged.
+The browser uses fold-local imputation/scaling, bounded angles, exact one-layer linear ZZ states, fidelity matrices and a classical epsilon-SVR solver. Three seasons use public 1988–2018 development rows; the fourth reuses the 2019–2024 evaluation years for teaching with weather/fire-memory inputs. Playing accesses no credentials or hardware. Game scores are separate from frozen research evidence.
 
 The native JS gates are checked against Qiskit amplitudes and Gram matrices. The browser solver is checked against sklearn precomputed SVR on the same development fold. `bun test web/demo/canvas/engine.test.js` runs those checks; `uv run --no-sync python web/demo/canvas/validate.py` regenerates independent goldens. `scripts/build_canvas_data.py` exports public inputs and recorded selector objectives.
 
@@ -20,13 +22,13 @@ The native JS gates are checked against Qiskit amplitudes and Gram matrices. The
 - Persistence, audio visibility lifecycle, numerical checks and clean tracked-file viewing.
 - Final screen-by-screen audit removes redundant text and inert decoration masquerading as controls.
 
-Implementation and review receipts will be added before closing the goal. No human playtest or fun assessment is implied by automated QA.
+The sections below link dated verification receipts. Automated checks cover behavior and numerical agreement; they do not measure player enjoyment.
 
 ## Implemented workbench
 
-All visible controls are painted on canvas. A hidden semantic control mirror provides focus/activation and announces actions; it is not an HTML visual skin. Twenty signals can form legal 2/4/6/10-input builds. Clicking a new signal at capacity replaces the oldest connection; dragging into the engine routes it. Width, angle, C and epsilon really change the calculation. Live preview matrices update on edits; results remain the last executed build.
+All visible controls are painted on canvas. A hidden semantic control mirror provides focus/activation and announces actions; it is not an HTML visual skin. Twenty signals can form legal 2/4/6/10-input builds. Clicking a new signal at capacity replaces the oldest connection. Width, angle, C and epsilon change the calculation. Complete edits update matrices and predictions after a short debounce; current winning builds lock until the next season.
 
-Each season compares to the player's first engine: reduce MAE by 5%, or reduce qubit-pair effort by 25% within 5% extra error. This is a game contract, not a quantum-advantage criterion. The effort counter is input width times evaluated fidelity-pair count; it is not wall time or IBM usage. Runs preserve previous builds and a ghost prediction line. There are three inspected chronological development seasons and no punishing timer or puzzle gate.
+Each season compares to the player's first engine: reduce MAE by 5%, or reduce qubit-pair effort by 25% within 5% extra error. This is a game contract, not a quantum-advantage criterion. The effort counter is input width times evaluated fidelity-pair count; it is not wall time or IBM usage. Runs preserve previous builds and a ghost prediction line. There are three chronological development seasons and a fourth reused-year teaching season, with no timer.
 
 The foundry uses a fixed ideal one-layer QAOA on the four-excitation sector of twenty candidate bits: uniform feasible initial amplitudes, diagonal phase separator and sequential XY ring mixer. It is not an optimized or hardware QAOA experiment. Uniform sampling is matched by shot count. Diagonal SQD retains the minimum-energy sampled basis state; MI/exact cartridges use recorded training selectors. None of these scores is predictive accuracy.
 

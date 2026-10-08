@@ -1,8 +1,8 @@
 # Goal evidence audit
 
-The earlier scope assessment below describes the 1 PM run. The owner authorized a new annual study through 5 PM; current annual implementation and measured progress supersede its unrun status as milestones finish.
+This audit preserves the October 5 annual run and the earlier 1 PM scope failure. The annual study is complete; test counts and delivery claims below belong to their named snapshots. The current [presentation](https://fireline.ohrats.party/presentation/) and [game](https://fireline.ohrats.party/) are available online.
 
-## Current 5 PM goal coverage
+## October 5 annual goal coverage
 
 | Requirement | Status / evidence |
 |---|---|
@@ -38,7 +38,7 @@ Corrected after the owner identified scope drift on October 5, 2026. **The auton
 | Separate incident selection/prediction, then matched crossing | Discovery, [input/budget audit](data/experiment_audit.json), final matrix, [pure seasonal controls](results/seasonal-baseline.json) | Selectors use a common predictor/feature count; predictors use fixed inputs. The crossed matrix caps selection and prediction at the same labelled rows. Full-training trees are a different budget. The pure-season control gap is repaired on training years only. |
 | Bounded search, confirmation, one final opening | [Reviews](../experiments/reviews.jsonl), [final evidence](results/final-evaluation.json), library/replay | Failed fresh-seed confirmation and failed quality gates remain visible. Post-final studies use training years only and do not change final models. Old replay is over inspected panels. Independent policy evolution adds revised code, fresh trees and frozen confirmation; generator remains fixed. |
 | Report quality, feature stability and cost | [Concise report](REPORT.md), findings, [resource/stability receipts](data/goal_audit.json) | AP, Brier, year heterogeneity, paired seed variation and computational models are separate. The report's rounded final tables/design claims match saved evidence. No statistical independence, calibrated probability or speedup claim follows automatically. Cost coverage is incomplete outside recorded runners. |
-| Five-minute findings-driven browser presentation plan | [Outline](../web/presentation/README.md) | Six beats total 300 seconds; figures link measured evidence. A presentation player is not implemented or prioritized by this goal. |
+| Five-minute findings-driven browser presentation plan | [Outline](../web/presentation/README.md) | Six beats total 300 seconds; figures link measured evidence. The player was outside this earlier goal; the [current browser presentation](https://fireline.ohrats.party/presentation/) was implemented later. |
 | Maintainable organization and reproduction | [Pipeline](PIPELINE.md), [pinned reproduction](REPRODUCIBILITY.md), [current isolated QA](data/workflow_repository_checks.json) | All 162 Python files are under 300 lines. Pinned locked-environment QA records 115 tests/all 55 script help paths at `8998e2a`, with notebook/hardware tooling opt-in. Current Python/dependency bytes match that pin; earlier receipts are preserved. Public summaries do not include ignored per-example records required by collectors. |
 | Safe collaboration, pruning and deadline handoff | [Board](../AGENT_BOARD.jsonl), [protocol](../AGENT_BOARD.md), [reviews](../experiments/reviews.jsonl) | Frequent main/board commits preserve old logs and evidence. No new IBM submission is authorized. The 1 PM completion claim was wrong and is corrected on the board. Commits and QA do not satisfy missing macro modelling; suggestions cannot override owner scope or hardware restrictions. |
 

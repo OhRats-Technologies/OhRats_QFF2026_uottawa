@@ -2,22 +2,21 @@
 
 **OhRats — Qiskit Fall Fest 2026 Open Challenge**
 
-[![Test Suite](https://img.shields.io/badge/tests-224%20passed-brightgreen)](tests/)
 [![Python](https://img.shields.io/badge/python-3.12-blue)](pyproject.toml)
 [![Qiskit](https://img.shields.io/badge/Qiskit-2.5.2-purple)](https://qiskit.org/)
-[![Reproducibility](https://img.shields.io/badge/offline-reproducible-success)](docs/REPRODUCIBILITY.md)
+[Play Fireline](https://fireline.ohrats.party/) · [Watch the five-minute presentation](https://fireline.ohrats.party/presentation/) · [Judge guide](docs/JUDGES.md)
 
 ---
 
 ## 1. Problem and Goal
 
-Wildfire severity in Ontario, Canada exhibits extreme year-to-year volatility, heavily influenced by regional climate patterns and macro-meteorological drivers.
+We ask whether climate summaries and quantum kernels can estimate Ontario’s annual mean reported wildfire size. **No main climate model beats the training-mean baseline on the six evaluated years.** The experiments explain how encoding scale, feature selection and hardware noise affect the result.
 
 - **Open Challenge Theme:** Quantum Machine Learning / Environmental Sustainability.
-- **Research Question:** Can Quantum Support Vector Regression (QSVR) with parameterized entangling feature maps and QAOA/SQD feature selection improve retrospective macro estimation of annual wildfire burn severity across Ontario, Canada, compared to classical non-linear regressors (RBF-SVR, Ridge) under strictly matched computational and data budgets?
-- **Scope & Observation Unit:** Retrospective macro annual provincial estimation for Ontario, Canada. One observation per calendar year:
+- **Research Question:** Can QSVR and QAOA/SQD feature selection improve annual mean fire-size estimates over classical baselines, with matched inputs and tuning budgets?
+- **Scope & Observation Unit:** One Ontario calendar year per observation, using same-year climate:
   - **Training Window:** 1988–2018 (**31 annual observations**).
-  - **Frozen Holdout:** 2019–2024 (**6 reused years**, previously opened in a preliminary incident study).
+  - **Frozen Evaluation:** 2019–2024 (**6 reused years**, previously opened in a preliminary incident study).
 - **Primary Target & Metric:** Annual mean agency-reported wildfire size, expressed in **hectares per size-observed fire incident** (ha/fire).
 - **Success Metric:** Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) benchmarked against classical controls.
 
@@ -25,28 +24,28 @@ Wildfire severity in Ontario, Canada exhibits extreme year-to-year volatility, h
 
 ## 2. Data and Assumptions
 
-All datasets were extracted from official open Canadian federal records:
+The annual table combines public fire records and weather summaries. Forest layers support later development studies and the map:
 
 1. **National Fire Database (NRCan NFDB Point Snapshot):**
    - 39,616 size-observed fire incidents across Ontario during 1988–2018, and 3,828 incidents during 2019–2024.
    - Incidents with unknown or negative recorded sizes are excluded from the denominator.
 2. **Monthly Climate Summaries (Environment and Climate Change Canada - ECCC):**
-   - 456 monthly station records (1987–2024) across 65–340 active weather stations per year.
-   - 10 macro climate aggregates: mean temperature, total precipitation, snowfall, extreme temperatures, and seasonal heating/cooling degree days.
+   - 456 monthly source CSV files (1987–2024). Each eligible station-year is weighted equally; station counts vary from 65 to 340 by feature and year.
+   - 10 climate summaries: mean temperature, total precipitation, snowfall, extreme temperatures, and seasonal heating/cooling degree days.
 3. **Land Cover & Forestry (NRCan Forest Cover Rasters):**
-   - 42 coarse spatial layers sampled across Ontario's official polygon mask (1988–2022).
+   - Later forest studies used 42 source layers; the province boundary masks their spatial summaries. Forest features are separate from the original climate-only final comparison.
 4. **Data Sourcing & Reproduction:**
    - Raw Canadian federal data can be downloaded following the source specifications in [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md).
-   - For fast public evaluation, an audited, byte-pinned 31-row training table is bundled directly in [`docs/data/annual_training.csv`](docs/data/annual_training.csv).
+   - The public 31-row training table is bundled in [`docs/data/annual_training.csv`](docs/data/annual_training.csv).
 5. **Key Assumptions & Boundaries:**
-   - Retrospective climate estimation: Predictors use same-year weather averages; this evaluates retrospective explanatory skill rather than operational advance forecasting.
-   - Equal station weighting across Ontario weather stations without spatial interpolative kriging.
+   - Same-year climate supports retrospective estimates. It is unavailable at the start of the fire season.
+   - Equal station weighting is not provincial area weighting.
 
 ---
 
 ## 3. Approach
 
-Our pipeline benchmarks classical against quantum components under strictly matched chronological cross-validation:
+Every fold learns preprocessing from its training years. Expanding chronological folds compare classical and quantum models:
 
 - **Quantum Feature Map & Encoding:**
   Training features $z_j$ are standardized and mapped to bounded rotation angles:
@@ -55,7 +54,7 @@ Our pipeline benchmarks classical against quantum components under strictly matc
   $$k_q(x, y) = |\langle\phi(x)|\phi(y)\rangle|^2$$
 - **QSVR Regressor:** Overlap matrices computed via Qiskit's `FidelityQuantumKernel` feed an SVR dual optimization problem with $C \in \{0.1, 1.0, 10.0\}$ and $\epsilon \in \{0.05, 0.2, 0.5\}$.
 - **Quantum Feature Selection (QAOA & SQD):**
-  A continuous relevance/redundancy QUBO is mapped to an Ising Hamiltonian. QAOA generates candidate bitstrings, and `qiskit-addon-sqd` projects into the sampled subspace to isolate the minimum energy subset of 4 features from 10/16/20 candidate pools.
+  A QUBO scores feature relevance and redundancy, with a penalty for selecting anything other than four features. QAOA samples candidates from 10/16/20-feature pools. SQD diagonalizes the sampled subspace; for this diagonal objective, it returns the lowest-cost sampled subset.
 - **Matched Classical Controls:**
   - Training mean baseline ($y = \bar{y}_{\text{train}}$)
   - Linear calendar year trend
@@ -67,32 +66,34 @@ Our pipeline benchmarks classical against quantum components under strictly matc
 
 ## 4. Setup and Execution
 
-### Dependencies & Environment
+### Dependencies and environment
+
 - **Python:** 3.12 managed via [uv](https://docs.astral.sh/uv/)
 - **Core Packages:** `qiskit==2.5.2`, `qiskit-machine-learning==0.9.1`, `scikit-learn==1.9.1`, `qiskit-addon-sqd==0.13.1`
 - **Frontend / Demo:** [Bun](https://bun.sh/) for canvas demo serving and test suite.
 
-### Quick Offline Reproduction
+### Replay the saved annual evaluation
 
 ```sh
 # 1. Sync locked Python environment
 uv sync --locked --group data --group analysis --group quantum
 
-# 2. Replay annual scientific evaluation (no network, no credentials, <10s)
+# 2. Check saved predictions without fitting, credentials or hardware calls
 uv run --no-sync python scripts/pipeline.py annual collect --output .cache/wildfire/annual-public --execute
 
-# 3. Run the unit test suite (224 tests passing in ~9.2s)
+# 3. Run Python tests
 uv run python -m unittest discover -s tests -v
 
-# 4. Run the canvas demo test suite (22 tests passing in ~0.9s)
-export PATH="$HOME/.bun/bin:$PATH"
-bun test
+# 4. Run game tests
+bun test web/demo/canvas/*.test.js
 
 # 5. Launch local presentation and Fireline canvas workbench
 bun run web/presentation/serve.ts
 ```
 
-*Total reproduction time: <15 seconds.*
+Use a new output directory for each collection. Installation time depends on the machine and package cache. See [reproduction details](docs/REPRODUCIBILITY.md) for source acquisition and historical environments.
+
+The hosted [game](https://fireline.ohrats.party/) and [presentation](https://fireline.ohrats.party/presentation/) need no installation. For local authoring, the Bun command serves `/web/demo/` and `/web/presentation/` on port 8790.
 
 ---
 
@@ -103,24 +104,24 @@ We performed controlled experiments across local simulation and IBM Quantum phys
 1. **Matched Development Kernel Grid:**
    - 36 configurations per model width/fold: 4 kernel bandwidths/maps $\times$ 9 $(C, \epsilon)$ pairs.
    - Evaluated across 3 expanding chronological training/validation folds (2007–2010, 2011–2014, 2015–2018).
-2. **Frozen Holdout Opening (2019–2024):**
-   - Model parameters, weights, and scalers frozen and saved to disk prior to holdout evaluation (zero holdout fitting).
+2. **Frozen Reused-Year Evaluation (2019–2024):**
+   - Parameters, fitted states and scalers were published before evaluation. The evaluation stage performed no fitting; these years had already been inspected in the incident study.
 3. **Hardware Shot Sweep (Heron & Eagle):**
    - 12 real QPU jobs across `ibm_marrakesh` (Heron r2) and `ibm_quebec` (Eagle r3) testing 512, 1,024, and 2,048 shots across raw and combined dynamical decoupling (DD) + Pauli twirling arms.
 4. **Real QPU Error Mitigation Benchmark:**
    - 6 jobs / 75 charged QPU seconds across `ibm_fez`, `ibm_marrakesh`, and `ibm_quebec` comparing raw versus mitigated QSVR Gram matrices and downstream SVR error.
 5. **Unsuccessful / Negative Experiments:**
-   - *10-qubit entangling kernels:* Collapsed to near-identity matrices (mean off-diagonal fidelity 0.0010 vs 0.0758 for 4-qubit), resulting in predictions frozen near the training mean.
-   - *QAOA/SQD cardinality optimization:* Combinatorial search on 4-of-20 subsets achieved higher QUBO energy minimization on hardware, but produced worse downstream regression performance than classical uniform sampling.
+   - *10-qubit kernels:* Nearly identity-like matrices (mean validation/training fidelity 0.0010 vs 0.0758 at four qubits) left predictions near the fitted intercept.
+   - *Feature selection:* Better QUBO costs did not consistently improve prediction. The 4-of-20 search still has only 4,845 feasible subsets, making exact classical enumeration inexpensive.
 
 ---
 
 ## 6. Results
 
-### Annual Wildfire Regression (Holdout 2019–2024)
+### Annual wildfire regression (reused evaluation, 2019–2024)
 *Lower error is better. Values reported in hectares per fire.*
 
-| Model | Width | Chronological Dev MAE | 2019–2024 Holdout MAE | Holdout RMSE |
+| Model | Width | Chronological Dev MAE | 2019–2024 MAE | 2019–2024 RMSE |
 | :--- | :---: | :---: | :---: | :---: |
 | **Training Mean Baseline** | 0 | 92.00 | **276.81** | **336.12** |
 | **Linear Year Trend** | 0 | 88.91 | 286.58 | 353.63 |
@@ -131,7 +132,7 @@ We performed controlled experiments across local simulation and IBM Quantum phys
 | **Calendar Trend Alone, QSVR** *(Control)* | 1 | **88.61** | — | — |
 | **Weather + Calendar Ridge** *(Control)* | 11 | **67.97** | — | — |
 
-![Annual holdout predictions and actual observed fire size across models](docs/figures/annual-final/annual-reused-predictions.png)
+![Annual mean reported fire size and model predictions](docs/figures/annual-final/annual-reused-predictions.png)
 
 ### Real Hardware Shot Sweep Yield (20-Feature Selector)
 
@@ -143,33 +144,27 @@ We performed controlled experiments across local simulation and IBM Quantum phys
 | **ibm_quebec** | DD + Twirling | 4 (0.78%) | 6 (0.59%) | 12 (0.59%) | 0.3027 |
 | **Classical Uniform** | Monte Carlo | 512 (100.0%) | 1,024 (100.0%) | 2,048 (100.0%) | **0.0432** (mean) |
 
-*Compute Resource Costs:* 39 total IBM Quantum jobs, 1,474,560 physical shots, and 414 charged QPU seconds utilized.
+Resource costs are reported per study: the [shot sweep](docs/SELECTOR_HARDWARE.md#hardware-cost-accounting) used 12 jobs, 301,056 shots and 108 charged QPU seconds; the [three-device mitigation comparison](docs/IBM_PIPELINE_MITIGATION.md) used six jobs, 224,256 shots and 75 seconds. The separate [repetition microkernel study](docs/results/repetition-microkernel.json) used four blocks, 1,474,560 shots and 414 seconds. These figures describe different workloads, not one combined total.
 
 ---
 
 ## 7. Discussion and Limitations
 
-- **What Worked:**
-  - Strict matched budgeting and pre-registered holdout protocols ensured honest benchmarking with zero data leakage.
-  - 4-qubit QSVR demonstrated competitive interpolation on the holdout compared to classical SVR (280.68 vs 299.81 ha/fire).
-  - The interactive Fireline workbench in `web/demo/` translates the underlying quantum linear algebra into an intuitive educational canvas tool.
-- **What Did Not Work:**
-  - Neither quantum nor classical climate models outperformed the simple training mean baseline on the holdout years.
-  - Adding qubits from 4 to 10 severely degraded kernel condition numbers and caused exponential concentration around orthogonal states.
-  - Readout error mitigation improved matrix fidelity but did not consistently translate to lower downstream regression errors on hardware.
-- **Sources of Error & Limitations:**
-  - Small sample size ($N=31$ training years) limits statistical power.
-  - Ontario weather station density varied from 65 to 340 active stations over the observation period, creating temporal reporting bias.
+RBF leads matched development; four-input QSVR has lower error than matched RBF on the six reused evaluation years. Neither beats the training mean there. This gives us a reproducible comparison and a useful kernel diagnosis, without establishing predictive or quantum advantage.
+
+Ten-qubit encoding makes different years almost orthogonal. Narrowing the angle restores similarity, but can produce a nearly constant, poorly conditioned kernel. More qubits alone do not fix the information available to regression.
+
+Hardware readout correction lowers kernel error in the three-device diagnostic, yet increases prediction error in its corresponding comparisons. DD/twirling does not consistently help. Matrix quality, valid sample yield and downstream error are separate measurements.
+
+The main limitations are 31 training years, six reused evaluation years, changing station coverage and retrospective inputs. The original final comparison uses exact local simulation; later hardware studies are separate development diagnostics. Fireline runs educational calculations in the browser and does not generate research evidence.
 
 ---
 
 ## 8. Conclusions
 
-1. **Answer to Primary Question:** Quantum kernels do **not** provide a predictive advantage over classical models for annual Ontario wildfire estimation with the features available and in this specific problem solution formulation. Classical RBF-SVR leads training development, and a constant historical mean baseline outperforms all tested models on holdout evaluation.
-2. **Key Quantum Finding:** Scaling feature dimensions without careful angle scaling leads to severe kernel concentration. Error mitigation on Gram matrices does not guarantee improved downstream ML performance.
-3. **Recommended Next Steps:**
-   - Transition from province-wide annual aggregates to spatially resolved regional grids (e.g., ecozone-month).
-   - Investigate train-only input bandwidth tuning to prevent barren kernel spectra in high dimensions.
+The main climate models do not improve on the historical-mean baseline for annual Ontario fire size in this evaluation. Our contributions are the audited annual dataset, matched QSVR comparison, encoding-scale diagnosis, and real-device measurements showing why better subset costs or kernel accuracy need not improve prediction.
+
+Future work could use regional or ecozone-month observations and choose encoding scale within training folds. Those would be new studies; the published final models remain fixed.
 
 ---
 
@@ -192,10 +187,12 @@ We performed controlled experiments across local simulation and IBM Quantum phys
 
 ## Documentation Index
 
-- **[Judge Guide](docs/JUDGES.md):** Executive summary and evaluation criteria.
-- **[Main Report](docs/REPORT.md):** Complete scientific writeup and derivation.
-- **[Holdout Evaluation Receipts](docs/ANNUAL_FINAL.md):** Complete model parameters and holdout predictions.
-- **[Hardware Shot Sweep](docs/SHOT_SWEEP.md):** 12-job QPU scaling benchmark.
+- **[Live presentation](https://fireline.ohrats.party/presentation/):** Seven talk slides and two appendices.
+- **[Fireline](https://fireline.ohrats.party/):** Play with feature subsets, kernel angles and SVR settings.
+- **[Judge guide](docs/JUDGES.md):** Question, results and reading order.
+- **[Main report](docs/REPORT.md):** Methods, comparisons and limitations.
+- **[Frozen evaluation](docs/ANNUAL_FINAL.md):** Parameters and predictions for the reused years.
+- **[Hardware Shot Sweep](docs/SELECTOR_HARDWARE.md#hardware-cost-accounting):** 12-job QPU scaling benchmark.
 - **[Pipeline Mitigation](docs/IBM_PIPELINE_MITIGATION.md):** Error mitigation analysis across Fez, Marrakesh, and Quebec.
 - **[Hardware Feature Selector](docs/SELECTOR_HARDWARE.md):** Dicke state preparation and selection results.
 - **[Reproduction Instructions](docs/REPRODUCIBILITY.md):** Step-by-step verification guide.

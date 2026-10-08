@@ -1,6 +1,6 @@
 # Ontario annual wildfire regression
 
-[Documentation Index](README.md) · [Judge Guide](JUDGES.md) · [Hardware Shot Sweep](SHOT_SWEEP.md) · [Annual Final Results](ANNUAL_FINAL.md)
+[Live presentation](https://fireline.ohrats.party/presentation/) · [Play Fireline](https://fireline.ohrats.party/) · [Documentation Index](README.md) · [Judge Guide](JUDGES.md) · [Hardware Shot Sweep](SELECTOR_HARDWARE.md#hardware-cost-accounting) · [Annual Final Results](ANNUAL_FINAL.md)
 
 
 Development and frozen reused-year findings · October 5, 2026 · Qiskit Fall Fest open challenge. Scientific deliverables were published before **5 PM Toronto**; the deadline review is closed. Models use **1988–2018 training** and **2019–2024 reused evaluation**.

@@ -1,6 +1,10 @@
 # Fireline hosting
 
-Fireline is served at https://fireline.ohrats.party/ by a static Nginx container. The browser presentation is at https://fireline.ohrats.party/presentation/. Browser calculations, saves and audio need no backend, Python, credentials or QPU access. The root opens the game; `/web/demo/` and `/demo/` redirect to it. `/web/presentation/` redirects to the deck. Shared game drawing modules remain available below `/demo/canvas/` for the presentation's imports. The Ontario cover image and map metadata retain the relative paths used by the game asset loader.
+[Fireline](https://fireline.ohrats.party/) · [Presentation](https://fireline.ohrats.party/presentation/)
+
+A static Nginx container serves both from the same domain. Browser calculations, saves and audio need no server-side Python, credentials or QPU access.
+
+The homepage opens the game. `/web/demo/` and `/demo/` redirect there; `/web/presentation/` redirects to `/presentation/`. Shared drawing modules remain under `/demo/canvas/` for the deck’s imports, and map assets keep their relative paths.
 
 Coolify settings:
 
