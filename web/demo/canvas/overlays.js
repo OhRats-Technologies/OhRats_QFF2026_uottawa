@@ -2,6 +2,7 @@ import { color } from "./paint.js";
 import { sphere } from "./instruments.js";
 import { foundryNote } from "./foundry-help.js";
 import { hintButton } from "./hint-button.js";
+import { pixelLake } from "./pixel-lake.js";
 export function menu(p, s, assets, on, W, H, time) {
   p.rect(0, 0, W, H, p.c.createPattern(assets.metal, "repeat"));
   p.frame(6, 6, W - 12, H - 12);
@@ -17,7 +18,10 @@ export function menu(p, s, assets, on, W, H, time) {
   c.beginPath();
   c.rect(xx + 15, yy + 15, fw - 30, fh - 30);
   c.clip();
-  c.drawImage(assets.forest, xx + 15, yy + 15, fw - 30, fh - 30);
+  // Code-drawn pixel version of the original title painting.
+  c.translate(xx + 15, yy + 15);
+  pixelLake(p, fw - 30, fh - 30, time);
+  c.translate(-(xx + 15), -(yy + 15));
   // Original transparent PNG is retained. Its outer padding is excluded from
   // the canvas source rectangle, leaving the plaque's bevel and shadow intact.
   const logoW = Math.min(fw * 0.5, (fh - 48) * 2078 / 510),
