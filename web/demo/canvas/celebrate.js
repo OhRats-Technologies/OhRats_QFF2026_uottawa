@@ -1,6 +1,9 @@
 import { color } from "./paint.js";
 import { beatrice } from "./beatrice.js";
-// Finish screen: Betty cheers over pixel confetti; reduced motion stays still.
+import { animal } from "./animals.js";
+import { pixelForest } from "./pixel-forest.js";
+// Finish scene: Betty and a forest cast hop in a rolling wave on the forest
+// floor, like an ending cast roll. Reduced motion (time 0) stays still.
 const confettiColors = [
   color.amber,
   color.mint,
@@ -8,102 +11,96 @@ const confettiColors = [
   color.blue,
   "#f3c46a",
 ];
-function confetti(p, W, H, time) {
-  for (let i = 0; i < 90; i++) {
-    const speed = 38 + ((i * 37) % 50),
-      sway = Math.sin(time * 2 + i) * 6,
-      x = ((i * 97.3) % W) + sway,
-      y = ((time * speed + i * 71) % (H + 40)) - 20,
+function sparkles(p, W, top, time) {
+  for (let i = 0; i < 70; i++) {
+    const speed = 30 + ((i * 37) % 45),
+      x = ((i * 97.3) % W) + Math.sin(time * 2 + i) * 6,
+      y = ((time * speed + i * 71) % (top + 30)) - 20,
       size = 3 + (i % 3);
-    p.rect(
-      x,
-      y,
-      size,
-      size + (i % 2),
-      confettiColors[i % confettiColors.length],
-    );
+    p.rect(x, y, size, size, confettiColors[i % confettiColors.length]);
+  }
+  // Fireflies drift low over the forest floor.
+  for (let i = 0; i < 14; i++) {
+    const x = (i * 131.7 + Math.sin(time * 0.7 + i) * 30) % W,
+      y = top - 40 - ((i * 53) % 120) + Math.cos(time * 1.3 + i) * 8;
+    if (!time || Math.sin(time * 3 + i * 2) > -0.3)
+      p.rect(x, y, 3, 3, "#fff3a8");
   }
 }
+function shadow(p, x, y, rx) {
+  p.c.fillStyle = "#00000055";
+  p.c.beginPath();
+  p.c.ellipse(x, y, Math.max(2, rx), 4, 0, 0, Math.PI * 2);
+  p.c.fill();
+}
+// Rolling-wave hop: each member peaks a little after its neighbour.
+const hop = (time, phase, height) =>
+  time ? Math.abs(Math.sin(Math.PI * (time / 0.7 + phase))) * height : 0;
 export function celebration(p, s, on, W, H, time) {
-  p.rect(0, 0, W, H, "#031218d9");
-  confetti(p, W, H, time);
   const seasons = on.rounds || 3,
-    w = Math.min(W - 32, 470),
-    size = Math.min(130, (H - 24) * 0.34),
-    head = size * 0.3,
-    h = Math.min(H - 24, size + head + 200),
-    x = (W - w) / 2,
-    y = (H - h) / 2;
-  p.rect(x + 3, y + 4, w, h, "#00000066");
-  p.rect(x, y, w, h, "#102c2ff8");
-  p.line(
-    [
-      [x, y],
-      [x + w, y],
-      [x + w, y + h],
-      [x, y + h],
-      [x, y],
-    ],
-    color.amber,
-    2,
-  );
-  // Twinkling pixel stars around Betty while she cheers.
-  const spots = [
-    [-0.8, -0.1],
-    [0.8, -0.1],
-    [-0.6, -0.5],
-    [0.6, -0.5],
-    [-0.95, 0.3],
-    [0.95, 0.3],
-  ];
-  spots.forEach(([dx, dy], i) => {
-    if (time && Math.floor(time * 4 + i * 1.7) % 3 === 0) return;
-    const sx = x + w / 2 + dx * size,
-      sy = y + 24 + head + size / 2 + dy * size,
-      tone = i % 2 ? color.amber : "#fff3cf";
-    p.rect(sx - 1, sy - 4, 2, 8, tone);
-    p.rect(sx - 4, sy - 1, 8, 2, tone);
+    narrow = W < 640,
+    hero = Math.min(150, W * 0.27, H * 0.24);
+  // Code-drawn pixel forest; its grass line is where the cast stands.
+  const top = Math.round(pixelForest(p, W, H, time));
+  sparkles(p, W, top, time);
+  const lineup = narrow
+    ? [
+        ["fox", 0.12, 0.6],
+        ["hare", 0.27, 0.48],
+        ["bear", 0.76, 0.58],
+        ["owl", 0.91, 0.46],
+      ]
+    : [
+        ["moose", 0.13, 1.05],
+        ["fox", 0.27, 0.62],
+        ["hare", 0.39, 0.5],
+        ["owl", 0.62, 0.48],
+        ["bear", 0.74, 0.66],
+        ["hare", 0.87, 0.5],
+      ];
+  lineup.forEach(([kind, at, scale], i) => {
+    const size = hero * scale,
+      lift = hop(time, i * 0.14, size * 0.35),
+      x = W * at;
+    shadow(p, x, top + 2, size * 0.35 * (1 - lift / (size * 0.9)));
+    animal(p, kind, x, top - lift, size, at > 0.5);
   });
-  // Headroom above Betty keeps her bounce inside the panel.
-  const by = y + 24 + head;
-  beatrice(p, x + w / 2 - size / 2, by, size, time, { cheer: true });
-  const top = by + 6 + size;
-  p.text(
-    "CONGRATULATIONS!",
-    x + w / 2,
-    top,
-    W < 500 ? 18 : 22,
-    color.amber,
-    "center",
+  // Betty takes centre stage with her own cheering bounce.
+  shadow(p, W / 2, top + 2, hero * 0.32);
+  beatrice(p, W / 2 - hero / 2, top - hero * 1.02, hero, time, {
+    cheer: true,
+  });
+  // Title in the sky with hard pixel drop shadows instead of a dark band.
+  const ty = Math.max(40, H * 0.13),
+    say = (text, y, size, tone) => {
+      const d = Math.max(2, Math.round(size / 8));
+      p.text(text, W / 2 + d, y + d, size, "#0b1418", "center");
+      p.text(text, W / 2, y, size, tone, "center");
+    };
+  say("CONGRATULATIONS!", ty, narrow ? 22 : 34, color.amber);
+  say(
+    `You finished all ${seasons} seasons. The whole forest is cheering!`,
+    ty + (narrow ? 28 : 38),
+    narrow ? 11 : 15,
+    "#f4ead8",
   );
-  p.text(
-    `You finished all ${seasons} seasons. Great engineering!`,
-    x + w / 2,
-    top + 30,
-    W < 500 ? 11 : 13,
-    color.mint,
-    "center",
-  );
-  // Best recorded error per season from the saved run history.
   const best = Array.from({ length: seasons }, (_, round) => {
     const runs = (s.history || []).filter((r) => r.round === round);
     return runs.length ? Math.min(...runs.map((r) => r.mae)).toFixed(1) : "—";
   });
-  p.text(
+  say(
     `BEST MAE · ${best.map((v, i) => `S${i + 1} ${v}`).join("  ")}`,
-    x + w / 2,
-    top + 56,
-    W < 500 ? 10 : 11,
-    color.dim,
-    "center",
+    ty + (narrow ? 50 : 64),
+    narrow ? 10 : 12,
+    color.mint,
   );
   // Only the dismiss control is live over the finished workbench.
   p.hits = [];
   p.button(
     "celebrate-done",
     "BACK TO MENU",
-    x + w / 2 - 80,
-    y + h - 52,
+    W / 2 - 80,
+    Math.min(H - 44, top + (H - top) / 2 - 16),
     160,
     32,
     () => on("celebrate-done"),
