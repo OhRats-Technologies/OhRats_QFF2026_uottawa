@@ -1,5 +1,7 @@
-import { buttonSurface } from "./button-surface.js";
+import { frameMaterial, screwMaterial } from "./materials.js";
 import { choiceControl } from "./contract-lock.js";
+import { buttonSurface } from "./button-surface.js";
+
 export const color = {
   ink: "#081b1c",
   panel: "#163637",
@@ -50,14 +52,7 @@ export class Paint {
     }
   }
   screw(x, y) {
-    this.circle(x, y, 5, "#0c2326", "#496c68");
-    this.line(
-      [
-        [x - 2, y + 2],
-        [x + 2, y - 2],
-      ],
-      "#8bb1a2",
-    );
+    screwMaterial(this.c, x, y);
   }
   frame(x, y, w, h, title = "") {
     const c = this.c,
@@ -66,7 +61,11 @@ export class Paint {
     g.addColorStop(0.25, "#1c3c3d");
     g.addColorStop(1, "#112c2f");
     this.rect(x, y, w, h, g);
-    this.rect(x + 7, y + 7, w - 14, h - 14, color.panel);
+    const face = c.createLinearGradient(x, y, x + w * 0.8, y + h);
+    face.addColorStop(0, "#244546");
+    face.addColorStop(0.45, "#193b3d");
+    face.addColorStop(1, "#102c30");
+    this.rect(x + 7, y + 7, w - 14, h - 14, face);
     for (let i = 10; i < h - 10; i += 4)
       this.rect(x + 8, y + i, w - 16, 1, "#8bb9a104");
     this.line(
@@ -103,6 +102,7 @@ export class Paint {
       "#051416",
       3,
     );
+    frameMaterial(c, x, y, w, h);
     for (const [a, b] of [
       [x + 13, y + 13],
       [x + w - 13, y + 13],
