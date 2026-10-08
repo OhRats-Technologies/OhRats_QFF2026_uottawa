@@ -40,7 +40,7 @@ uv run --no-sync --env-file .env python scripts/collect_mitigation_hardware.py -
 
 Two real **ibm_fez** jobs completed on October 6, using **25 charged QPU seconds: 12 raw + 13 suppressed**, below the owner-authorized 120-second cap. Usage comes from Runtime 0.50's `qpu_charge_time_seconds`, independently matched to `job.usage()`; it is not running wall time.
 
-Each job returned all **73 outputs × 512 shots**, including 68 four-qubit QSVR overlaps, one ten-qubit QAOA/SQD-selection circuit and four assignment-calibration circuits. Total: **74,752 physical shots**. The second job used scheduled XpXm DD and Runtime gate/measurement twirling, four randomizations ×128 shots. Fixed layouts, preprocessing, features, parameters and development years match the [local pipeline study](PIPELINE_MITIGATION.md).
+Each job returned all **73 outputs × 512 shots**, including 68 four-qubit QSVR overlaps, one ten-qubit QAOA/SQD-selection circuit and four assignment-calibration circuits. Total: **74,752 physical shots**. The second job used scheduled XpXm DD and Runtime gate/measurement twirling, four randomizations ×128 shots. Fixed layouts, preprocessing, features, parameters and development years match the local pipeline study.
 
 [Plan](../experiments/annual_mitigation_ibm.json) · [Actual counts, fitted models, geometry and timing](results/pipeline-mitigation-ibm.json).
 

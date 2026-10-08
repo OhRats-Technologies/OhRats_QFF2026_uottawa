@@ -1,14 +1,14 @@
 # Data and processing pipeline
 
-The earlier scope assessment below describes the 1 PM run. The owner authorized a new annual study through 5 PM; [current annual implementation and measured progress](ANNUAL_QSVR.md) supersede its unrun status as milestones finish.
+The earlier scope assessment below describes the 1 PM run. The owner authorized a new annual study through 5 PM; current annual implementation and measured progress supersede its unrun status as milestones finish.
 
-**Annual front door:** `pipeline.py annual <classical|quantum|matched|selectors|context|woodland|collect> --output <new-directory>` previews the implemented macro stages; add `--execute` to run. The commands further below describe the preserved incident branch. [Scope correction](SCOPE_CORRECTION.md) · [implemented annual schema](DATA_SCHEMA.md).
+**Annual front door:** `pipeline.py annual <classical|quantum|matched|selectors|context|woodland|collect> --output <new-directory>` previews the implemented macro stages; add `--execute` to run. The commands further below describe the preserved incident branch. Scope correction · [implemented annual schema](DATA_SCHEMA.md).
 
 For a fresh clone, `uv run python scripts/pipeline.py annual collect --output .cache/wildfire/annual-public --execute` verifies/extracts the checksum-pinned public bundle and collects 83 saved predictions without raw downloads, fitting or quantum execution. It refuses an existing output directory. [Final collection](ANNUAL_FINAL.md#portable-collection).
 
 Use `scripts/pipeline.py` as the scientific front door. Specialist scripts remain available for individual studies and pinned historical reproduction.
 
-**Forest map context:** `uv run --only-group data --frozen python scripts/context/pipeline.py plan --include-wms` previews a separate bounded acquisition pipeline. Replace `plan` with `prepare` to fetch seven coarse height epochs and five optional dated display layers into ignored replica paths. Its `asset-manifest.json` indexes numeric arrays and display images separately, with relative paths, grids and checked hashes. It runs no predictors and preserves published scientific receipts. [Prepared schema](DATA_SCHEMA.md#prepared-forest-context-contract) · [units, budgets and reproduction limits](FOREST_CONTEXT.md#limits-and-reproduction).
+**Forest map context:** `uv run --only-group data --frozen python scripts/context/pipeline.py plan --include-wms` previews a separate bounded acquisition pipeline. Replace `plan` with `prepare` to fetch seven coarse height epochs and five optional dated display layers into ignored replica paths. Its `asset-manifest.json` indexes numeric arrays and display images separately, with relative paths, grids and checked hashes. It runs no predictors and preserves published scientific receipts. [Prepared schema](DATA_SCHEMA.md#prepared-forest-context-contract) · units, budgets and reproduction limits.
 
 ```sh
 uv sync --locked --group data --group analysis --group quantum
@@ -70,9 +70,9 @@ The output directory must not exist. Existing scientific outcomes, submission in
 
 Recipe/raw/config hashes define cache versions. Historical preparation now depends directly on `wildfire_lab/weather_preparation.py`, rather than CLI/status code. New provenance namespaces can contain identical tables; that is **not a predictive replication**. Old scored datasets and manifests remain intact. Preparation records the committed recipe and checks the final table hash.
 
-The implemented incident target is reported size ≥10 ha **conditional on eligible recorded incidents**, not ignition or a complete census. Approximate coordinates are not snapped; annual classes are not tree density; monthly observations are not daily weather. Retrospective map processing and unknown publication latency limit forecasting claims. [Schema](DATA_SCHEMA.md) · [source assumptions](SOURCE_ASSUMPTIONS.md) · [label/geography audit](LABEL_QUALITY.md).
+The implemented incident target is reported size ≥10 ha **conditional on eligible recorded incidents**, not ignition or a complete census. Approximate coordinates are not snapped; annual classes are not tree density; monthly observations are not daily weather. Retrospective map processing and unknown publication latency limit forecasting claims. [Schema](DATA_SCHEMA.md) · source assumptions · label/geography audit.
 
-The single 2019–2024 opening is complete. Saved-prediction collectors validate metrics, samples and recoverable historical recipes without refitting. [Final evidence](FINAL_EVALUATION.md) and [independent policy evolution](POLICY_EVOLUTION.md) remain separate. No new IBM jobs are authorized by these commands.
+The single 2019–2024 opening is complete. Saved-prediction collectors validate metrics, samples and recoverable historical recipes without refitting. Final evidence and independent policy evolution remain separate. No new IBM jobs are authorized by these commands.
 
 ## Verification
 
@@ -82,4 +82,4 @@ The [usability 113/55 receipt](data/workflow_usability_repository_checks.json), 
 
 ## Comprehensive followup replay
 
-The [comprehensive report](RESEARCH_FINDINGS.md) gives six local-study and four hardware-bundle names. `uv run python scripts/collect_search.py STUDY` and `uv run python scripts/collect_hardware_search.py STUDY` are read-only arithmetic collectors. They require no credentials, source caches, fitting, new states, sampling or submissions. Producer recipes remain pinned in each evidence bundle; hardware namespaces and intents are exclusive and cannot be restarted.
+The comprehensive report gives six local-study and four hardware-bundle names. `uv run python scripts/collect_search.py STUDY` and `uv run python scripts/collect_hardware_search.py STUDY` are read-only arithmetic collectors. They require no credentials, source caches, fitting, new states, sampling or submissions. Producer recipes remain pinned in each evidence bundle; hardware namespaces and intents are exclusive and cannot be restarted.

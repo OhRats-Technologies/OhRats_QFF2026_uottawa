@@ -33,7 +33,7 @@ These are the original execution commands. Existing training/evaluation intents 
 
 ## Literature steering
 
-The [QSVR guide](<QSVR with Qiskit Literature and Performance Guide.md>) supports the frozen train-only scaling, joint C/epsilon tuning, shallow maps and matched RBF budget. Condition number, eigenspectrum and concentration will be reported from saved matrices. Per-feature scale tuning and trainable alignment are future work: they would expand this frozen search without independent validation. Sampled PSD repair and duplicate-skipping apply to a future shot-based study; this exact simulation validates raw PSD and has no sampled-kernel repair. Six reused years support descriptive model gaps, not significance or quantum-advantage claims.
+The QSVR guide supports the frozen train-only scaling, joint C/epsilon tuning, shallow maps and matched RBF budget. Condition number, eigenspectrum and concentration will be reported from saved matrices. Per-feature scale tuning and trainable alignment are future work: they would expand this frozen search without independent validation. Sampled PSD repair and duplicate-skipping apply to a future shot-based study; this exact simulation validates raw PSD and has no sampled-kernel repair. Six reused years support descriptive model gaps, not significance or quantum-advantage claims.
 
 ## Reused-year results
 
@@ -128,12 +128,12 @@ Selected ten-qubit eigenvalues span 0.980–1.028, with condition number 1.049 a
 
 ## Guide adoption and deferral
 
-The full [QSVR guide](<QSVR with Qiskit Literature and Performance Guide.md>) was read. No evaluated predictor changed.
+The full QSVR guide was read. No evaluated predictor changed.
 
 | Guide section / recommendation | Status | Evidence or reason |
 |---|---|---|
 | Qiskit implementation: precompute kernels | Covered | Actual FidelityQuantumKernel/QSVR; reuse across C/epsilon and subsets |
-| Tune bandwidth first | Covered in bounded form | Fold-local scaling, common amplitudes pi/4 and pi/2; later [input-only scale probe](ANNUAL_BANDWIDTH_GEOMETRY.md), no per-feature predictive grid claimed |
+| Tune bandwidth first | Covered in bounded form | Fold-local scaling, common amplitudes pi/4 and pi/2; later input-only scale probe, no per-feature predictive grid claimed |
 | Tune SVR jointly | Covered | C/epsilon crossed with every map/bandwidth inside chronological CV |
 | Prefer shallow maps | Covered | Linear ZZ, reps 1/2; four/ten inputs |
 | Align to regression targets | Deferred | Extra optimization budget and independent validation needed |
@@ -176,4 +176,4 @@ The receipt also supplies training-only centered log-target alignment, participa
 
 ## Post-final input-only bandwidth mechanism
 
-The [separate frozen geometry probe](ANNUAL_BANDWIDTH_GEOMETRY.md) tests five global amplitudes on the unchanged 31 training-input rows at four/ten qubits. Ten-qubit rank moves from 30.998 (pi/4) to 5.187 (pi/32); similarity rises from .000805 to .538897. Four-qubit pi/32 conditioning deteriorates to 4.58e7. No targets, test rows, predictor fits or model selection: per-feature predictive scale tuning/alignment/shot repair remain deferred. This adds 4,650 analytic pair circuits in 48.89 s; main final states/predictions remain unchanged.
+The separate frozen geometry probe tests five global amplitudes on the unchanged 31 training-input rows at four/ten qubits. Ten-qubit rank moves from 30.998 (pi/4) to 5.187 (pi/32); similarity rises from .000805 to .538897. Four-qubit pi/32 conditioning deteriorates to 4.58e7. No targets, test rows, predictor fits or model selection: per-feature predictive scale tuning/alignment/shot repair remain deferred. This adds 4,650 analytic pair circuits in 48.89 s; main final states/predictions remain unchanged.

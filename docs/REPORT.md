@@ -1,8 +1,7 @@
 # Ontario annual wildfire regression
 
-[Documentation Index](README.md) · [Judge Guide](JUDGES.md) · [Hardware Shot Sweep](SHOT_SWEEP.md) · [Critique Response](CRITIQUE_RESPONSE.md)
+[Documentation Index](README.md) · [Judge Guide](JUDGES.md) · [Hardware Shot Sweep](SHOT_SWEEP.md) · [Annual Final Results](ANNUAL_FINAL.md)
 
-**Scientific review update:** [The critique response](CRITIQUE_RESPONSE.md) quantifies saved year/fold and tuning-weight sensitivity, exact classical enumeration and measured-kernel spectral changes. The main comparison below stays frozen. Later hardware/tuning is diagnostic evidence with reused development, classical postprocessing and no causal device-ranking or advantage claim.
 
 Development and frozen reused-year findings · October 5, 2026 · Qiskit Fall Fest open challenge. Scientific deliverables were published before **5 PM Toronto**; the deadline review is closed. Models use **1988–2018 training** and **2019–2024 reused evaluation**.
 
@@ -42,7 +41,7 @@ A four- or ten-qubit linear ZZ feature map uses single-feature and pairwise phas
 | Matched RBF-SVR | 10 | 81.00 | 115.26 |
 | Matched QSVR | 10 | 81.86 | 115.39 |
 
-The apparent best individual four-qubit map (74.57 MAE) is not a fair selected-family result. Inner validation selects another map; the equal-budget result favors RBF. Four-qubit QSVR wins the first outer fold and loses two; ten-qubit QSVR loses all three by small margins. The bandwidth refinement followed initial development inspection, so it is adaptive development, not independent confirmation. [All initial maps](ANNUAL_QSVR.md) · [matched receipt](results/annual-matched.json).
+The apparent best individual four-qubit map (74.57 MAE) is not a fair selected-family result. Inner validation selects another map; the equal-budget result favors RBF. Four-qubit QSVR wins the first outer fold and loses two; ten-qubit QSVR loses all three by small margins. The bandwidth refinement followed initial development inspection, so it is adaptive development, not independent confirmation. All initial maps · [matched receipt](results/annual-matched.json).
 
 ![Development predictions and annual denominators](figures/annual-development/annual-development.png)
 
@@ -114,7 +113,7 @@ The fixed **eight selectors × three predictors × three seeds** crossover is co
 
 Selected ten-qubit eigenvalues span **0.980–1.028**, condition number **1.049**, effective rank **30.998/31**, and cross-year fidelity **.000899**. Predictions span just **57.98–59.60** ha/fire. The matrix is stable but nearly identity: numerical conditioning alone cannot certify predictive usefulness. Its saved zero-cross intercept predicts 59.01 ha/fire; actual similarity-weighted contributions change this by just -1.03 to +0.59. Narrow-bandwidth RBF4 also stays near its 57.51 intercept (-5.06 to +2.70). [Audited algebraic decomposition](results/annual-kernel-signal.json). All 24 unique final kernel spectra and PSD/concentration checks are [published](results/annual-final-audit.json). The [guide adoption table and future protocols](ANNUAL_FINAL.md#guide-adoption-and-deferral) cover scale tuning, alignment and sampled repair; they are not unrun improvements disguised as results.
 
-A separately frozen **post-final input-only bandwidth probe** makes that caveat concrete. With the same ten input features and one ZZ repetition, pi/4 → pi/32 changes training mean fidelity .000805 → .538897 and effective rank 30.998 → 5.187. Four-input rank falls to 2.190, with condition number 4.58e7: eliminating identity-like similarity can instead approach a poorly conditioned, near-constant regime. No targets, test rows or predictors were used; no scale was selected. This supports the guide’s geometry mechanism, not improved regression. Ten matrices cost 4,650 additional analytic pair circuits / 48.89 s. The original 83 predictions/24 kernels still audit unchanged. [Diagnostic and replication commands](ANNUAL_BANDWIDTH_GEOMETRY.md) · [expanded 145-test/69-CLI QA](data/annual_bandwidth_repository_checks.json).
+A separately frozen **post-final input-only bandwidth probe** makes that caveat concrete. With the same ten input features and one ZZ repetition, pi/4 → pi/32 changes training mean fidelity .000805 → .538897 and effective rank 30.998 → 5.187. Four-input rank falls to 2.190, with condition number 4.58e7: eliminating identity-like similarity can instead approach a poorly conditioned, near-constant regime. No targets, test rows or predictors were used; no scale was selected. This supports the guide’s geometry mechanism, not improved regression. Ten matrices cost 4,650 additional analytic pair circuits / 48.89 s. The original 83 predictions/24 kernels still audit unchanged. Diagnostic and replication commands · [expanded 145-test/69-CLI QA](data/annual_bandwidth_repository_checks.json).
 
 ## Cost and verification
 
@@ -126,4 +125,4 @@ Four bounded annual follow-up plans are complete: matched bandwidth budgets, con
 
 Final training/evaluation took **93.75/9.63 s**, with 12,092/2,232 analytic fidelity-pair circuits respectively, 36 training quantum matrices, 80 final learned predictor fits and zero evaluation fits. Selector sampling is synthetic and its cost is separate. The 80 fit count covers sklearn/QSVR fits; the calendar trend adds one polynomial fit and two constants are deterministic summaries. The [final no-fit audit](results/annual-final-audit.json) reproduces 83 predictions and 24 matrix pairs. A [267 kB evidence package](data/annual_final_evidence.zip) supports collection without raw downloads or credentials. [Source/table checks](data/annual_table_reaggregation.json), [304 rounded table values](data/annual_reporting_audit.json), [local source and figure integrity](data/annual_source_integrity.json), and [GitHub/document checks](data/annual_document_checks.json) pass. The [handoff](HANDOFF.md) is complete; board review closed at 5 PM. Test reuse, small annual sample, network/reporting changes, retrospective sources, extreme-year error and ideal simulation remain explicit limitations.
 
-[Run commands and detailed evidence](ANNUAL_QSVR.md) · [current goal](../GOAL.md) · [earlier scope correction](SCOPE_CORRECTION.md) · [preserved incident findings](FINAL_EVALUATION.md).
+Run commands and detailed evidence · [current goal](../GOAL.md) · earlier scope correction · preserved incident findings.
