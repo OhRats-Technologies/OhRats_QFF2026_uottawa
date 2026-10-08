@@ -1,3 +1,4 @@
+import { buttonSurface } from "./button-surface.js";
 import { choiceControl } from "./contract-lock.js";
 export const color = {
   ink: "#081b1c",
@@ -157,6 +158,7 @@ export class Paint {
       disabled ? "#193332" : active || tone === "hot" ? "#9b4924" : "#1b393c",
     );
     this.rect(x, y, w, h, gradient);
+    buttonSurface(this.c, x, y, w, h, disabled);
     this.line(
       [
         [x, y + h],
