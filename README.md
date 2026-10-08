@@ -4,7 +4,7 @@
 
 [![Python](https://img.shields.io/badge/python-3.12-blue)](pyproject.toml)
 [![Qiskit](https://img.shields.io/badge/Qiskit-2.5.2-purple)](https://qiskit.org/)
-[Play Fireline](https://fireline.ohrats.party/) · [Watch the five-minute presentation](https://fireline.ohrats.party/presentation/) · [Judge guide](docs/JUDGES.md)
+[Play Fireline](https://fireline.ohrats.party/) · [Watch the five-minute presentation](https://fireline.ohrats.party/presentation/) · [Research report](docs/REPORT.md)
 
 ---
 
@@ -189,9 +189,9 @@ Future work could use regional or ecozone-month observations and choose encoding
 
 - **[Live presentation](https://fireline.ohrats.party/presentation/):** Seven talk slides and two appendices.
 - **[Fireline](https://fireline.ohrats.party/):** Play with feature subsets, kernel angles and SVR settings.
-- **[Judge guide](docs/JUDGES.md):** Question, results and reading order.
-- **[Main report](docs/REPORT.md):** Methods, comparisons and limitations.
-- **[Frozen evaluation](docs/ANNUAL_FINAL.md):** Parameters and predictions for the reused years.
+- **[Research report](docs/REPORT.md):** Question, results and reading order.
+- **[Research report](docs/REPORT.md):** Methods, comparisons, frozen evaluation and limitations.
+- **[Data and model methods](docs/DATA_SCHEMA.md):** Source contracts, aggregation, encoding and selection.
 - **[Hardware Shot Sweep](docs/SELECTOR_HARDWARE.md#hardware-cost-accounting):** 12-job QPU scaling benchmark.
 - **[Pipeline Mitigation](docs/IBM_PIPELINE_MITIGATION.md):** Error mitigation analysis across Fez, Marrakesh, and Quebec.
 - **[Hardware Feature Selector](docs/SELECTOR_HARDWARE.md):** Dicke state preparation and selection results.

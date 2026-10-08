@@ -1,25 +1,23 @@
-# Wildfire data schema and source mapping
+# Data and model methods
 
-The annual climate/fire comparison is complete. Measured annual results supersede the earlier unrun macro assessment; the incident tables below remain a supporting branch.
-
-Version 9 · 6 October 2026 · Ontario first. Annual climate/fire aggregation is implemented in `wildfire_lab/annual_data.py`, with [31-row training data](data/annual_training.csv) and measured regressions. The pipeline also implements station-month CSVs, a supporting NFDB incident-classification CSV and separate forest-context replicas with hash-linked manifests. Future update/availability relations below are not all materialized.
+The main study uses one Ontario year per row. `wildfire_lab/annual_data.py` builds the [31-row training table](data/annual_training.csv); the [report](REPORT.md) gives the measured comparison. Historical incident tables and operational updates below are separate source-audit branches.
 
 ## Sources and observation units
 
 | Source | One raw observation | Access and current status |
 |---|---|---|
 | [NRCan NFDB historical points](https://cwfis.cfs.nrcan.gc.ca/downloads/nfdb/fire_pnt/current_version/NFDB_point_txt.zip) | Agency-associated incident point with date and reported size | Selected historical label source, snapshot 20260811. Date/size/identity eligibility is audited before joining; not a daily status history or complete census. |
-| [ECCC Monthly Climate Summaries](https://climate.weather.gc.ca/prods_servs/cdn_climate_summary_e.html) | Weather station × month | CSV/XML, by province and month. All 444 requested Ontario months (1988–2024) downloaded; station/measurement completeness still requires QC. |
+| [ECCC Monthly Climate Summaries](https://climate.weather.gc.ca/prods_servs/cdn_climate_summary_e.html) | Weather station × month | CSV/XML, by province and month. 456 source months, 1987–2024, including the extra lag year; station completeness requires QC. |
 | [NRCan annual forest land cover](https://open.canada.ca/data/en/dataset/2785c103-9c2d-429b-9f3d-89f5cd9ea94d) | 30 m raster cell × year | Annual GeoTIFFs, 1984–2022. Downloaded 1984 file inspected: one categorical band, EPSG:3978, nodata 255. |
 | [Agency Reported Wildfires API](https://api.cwfif.nrcan.gc.ca/reported-fire-stats/docs) | Fire record valid at a requested time; summaries aggregate records | API field names differ from WFS. Full Ontario update history downloaded through WFS `public:cwfif_national_reportedfires`: 50,297 rows, 12,877 distinct fire IDs in the current snapshot. |
 
 Training: **1988–2018 inclusive (31 calendar years)**. Testing: **2019–2024**. Woodland cutoff **2022** is accepted. Historical fire aggregates exist before 2010. Incident/per-date records support source auditing and annual aggregation; they do not require an incident-level prediction target. Audited NFDB points are selected for historical incident labels; operational update history remains unresolved before 2010. Missing incident records are not evidence of zero fires. See coverage and acquisition.
 
-Keep raw files unchanged under ignored `data/`. Curated tables and training outputs also remain ignored. Commit schemas, import code, configurations and compact aggregate audits. The owner delegated historical source choice and subsequently authorized the forest-context acquisition below. This scope does not permit replacing frozen scientific inputs.
+Keep raw files unchanged under ignored `data/`. Curated tables and training outputs also remain ignored. Commit schemas, import code, configurations and compact aggregate audits. Frozen scientific inputs retain their original snapshots.
 
 ## Annual modelling contract · climate/fire implemented
 
-One modelling row is **Ontario × year**, giving 31 training and six reused test-year rows. Defined regions are a separate optional design, not additional independent years. The frozen primary outcome is annual mean reported size over size-observed incidents. Same-year climate gives retrospective annual estimation; prior-year context is an explicit sensitivity. The annual CSV retains counts, exclusions, total size, ten climate predictors and eligible station counts. Coarse provincial height summaries are prepared separately; native area-weighted annual cover fractions remain an optional unimplemented stage.
+One modelling row is **Ontario × year**, giving 31 training and six reused test-year rows. Defined regions are a separate optional design, not additional independent years. The frozen primary outcome is annual mean reported size over size-observed incidents. Same-year climate gives retrospective annual estimation; prior-year context is an explicit sensitivity. The annual CSV retains counts, exclusions, total size, ten climate predictors and eligible station counts. Coarse provincial height summaries are prepared separately; province-masked coarse cover fractions are prepared separately and tested in development.
 
 | Field group | Required meaning |
 |---|---|
@@ -29,7 +27,21 @@ One modelling row is **Ontario × year**, giving 31 training and six reused test
 | Woodland predictors | Declared area-weighted class fractions and map year; explicit policy for the 2022 cutoff and retrospective processing |
 | Timing | Predictor availability/horizon; same-year full climate summaries imply retrospective analysis, not an advance annual forecast |
 
-Build annual labels from audited source incidents under macro-specific rules. Coordinate, weather-distance and buffer filters needed by incident joins must not silently remove fire contributions from province totals. Missing size is not zero size; missing reporting is not zero activity. Preserve prescribed-fire/identity policies with explicit annual denominators. Scope correction · required experiment.
+Build annual labels from audited source incidents under macro-specific rules. Coordinate, weather-distance and buffer filters needed by incident joins must not silently remove fire contributions from province totals. Missing size is not zero size; missing reporting is not zero activity. Preserve prescribed-fire/identity policies with explicit annual denominators.
+
+## Quantum model
+
+Training-fold medians fill missing inputs, then training-fold means and standard deviations scale them. Each selected climate value becomes a bounded angle:
+
+$$\theta_j=a\tanh(z_j/2),\qquad k_q(x,y)=|\langle\phi(x)|\phi(y)\rangle|^2.$$
+
+A shallow linear ZZ feature map applies single-feature phases and neighbor interactions. Qiskit’s `FidelityQuantumKernel` computes the squared overlap between two encoded states; QSVR uses that similarity matrix with a classical SVR optimizer. This is angle-controlled phase encoding, not direct amplitude loading or learned quantum weights.
+
+The original annual comparison uses four or ten inputs, one/two circuit repetitions and angle amplitudes π/4 or π/2. Inner chronological validation selects the map together with C and epsilon; RBF receives the same 36-candidate budget. Epsilon is measured in standardized log-target space. Preprocessing and `log1p` target scaling use only training years; inverse predictions are clipped to nonnegative hectares.
+
+For selection, a QUBO rewards training-target relevance, penalizes correlated inputs and enforces four selected features. QAOA samples bitstrings; SQD diagonalizes their projected Hamiltonian. This cost is diagonal, so SQD returns the lowest-cost sampled subset and cannot discover an unsampled one. Four-of-ten has 210 feasible subsets; four-of-twenty has 4,845. Exact enumeration and uniform feasible sampling are the controls.
+
+The original final kernels use exact local simulation. [Hardware diagnostics](IBM_PIPELINE_MITIGATION.md) use actual IBM counts separately. Selector widths of 10/16/20 refer to candidate inclusion bits; downstream QSVR still uses four selected inputs.
 
 ## Numerical forest predictors and selector pools
 
@@ -58,7 +70,7 @@ Optional `--include-change` adds `change/height-change.npz`: signed int16 metres
 
 SCANFI's native CRS has latitude of origin **0°**; it is **not EPSG:3978**. Use the saved WKT/affine for numeric sampling and explicitly reproject into the display CRS. The standalone overview omits georeferencing; its validated native-header relationship is retained in `layouts.json`. Longitude/latitude inputs use explicit x/y order. Boundary/city controls and source hashes are in the [extraction receipt](data/scanfi_height_context.json); the [fresh replica verification](data/context_replica_verification.json) compares arrays, grids and rendered outputs.
 
-For the separate training-only height pilot, join Ontario years to the latest epoch **strictly before** that year and retain the chosen epoch. Do not interpolate unobserved yearly maps or fill nodata with zero. Full-series reconstruction and common masking use later observations, so a prior map year is not proof of historical availability. The coarse pilot neither improves the main claim nor replaces the frozen annual tables. Game weather, fuel pressure and interventions are synthetic game units; these dated display layers do not drive simulated fire growth.
+For the separate training-only height pilot, join Ontario years to the latest epoch **strictly before** that year and retain the chosen epoch. Do not interpolate unobserved yearly maps or fill nodata with zero. Full-series reconstruction and common masking use later observations, so a prior map year is not proof of historical availability. The coarse pilot neither improves the main claim nor replaces the frozen annual tables. The current game uses these images as map context, not a fire-growth model.
 
 ## Implemented supporting incident branch
 
@@ -151,16 +163,11 @@ The inspected ZIP legend defines: `0` unclassified; `20` water; `31` snow/ice; `
 
 For a configured buffer around a location, derive `cover_fraction_<class>` = area mapped to that class / valid classified area. Include water in that denominator; exclude `0` and `255` and report their fraction separately. The complete class vector sums to one when classified area exists; otherwise return null. The current model stores only conifer/broadleaf/mixed/water fractions, so their sum can be below one; other classes remain in the raster. Record `map_year`, buffer radius, CRS, pixel inclusion/edge rule and valid-area fraction. Use equal-area or area-weighted calculations for provincial totals; 900 m² is projected pixel area, not an exact ground-area guarantee in Lambert Conformal Conic.
 
-## Spatial and temporal join policy
+## Spatial and temporal joins
 
-The selected NFDB branch uses its incident date, antecedent station-month matching and explicitly static cover as mapped above. Rules about latest available operational updates and `prediction_time` describe a future forecasting branch, not implemented as-of evidence for the current retrospective classification.
+The supporting incident branch joins audited NFDB dates to antecedent station-month measurements and explicitly static 1984 cover. Station IDs, distances, source dates and map years remain in each row. Approximate fire coordinates are not snapped to land. Provincial annual labels use their own rules, so missing coordinates or a distant station do not remove a fire from annual totals.
 
-1. Select the latest fire update available at `prediction_time`, retaining its recorded coordinate and quality flags. Reconstructed availability from `record_start` is an assumption to audit, not an established publication timestamp.
-2. Choose a weather station with adequate observations in the eligible month. Compute geodesic distance, save the station ID and distance, and set a maximum-distance/quality threshold in configuration before evaluation. Keep unmatched observations explicitly missing. Do not join by province alone or station name.
-3. For forecasting, use only completed weather months published before prediction time. Same-month final summaries belong to retrospective description, not within-month prediction. This source does not provide daily wind, humidity or fire-weather conditions; do not invent those by repeating/interpolating monthly values.
-4. Transform fire locations into EPSG:3978 for raster sampling. Use longitude/latitude order explicitly and check transformations against a second reference. Flag water/out-of-coverage locations; do not snap fires to land automatically. A 1984 NFDB demonstration exposed this problem; historical points now enter modelling only after explicit date/size/identity audits.
-5. Select a pre-fire land-cover year under a documented lag/availability policy. Annual maps are retrospective, disturbance-informed and temporally smoothed; an earlier map year alone does not guarantee freedom from future information. State this limitation in any prediction claim.
-6. Join features using their observation keys and snapshot IDs. Preserve unmatched records and reasons. Current overlap with annual cover ends in 2022; never silently carry the 2022 map into 2023–2026 or present a fixed 1984 context as event-year vegetation. The current explicitly labelled static 1984 branch tests geographic cover context across all eligible years, with no annual-vegetation or deployment-availability claim.
+Source dates and retrospective forest processing do not establish historical publication times. The study does not materialize an as-of `prediction_time` relation or forecast daily conditions from monthly summaries. Same-year climate and retrospective maps support retrospective estimates. The 2022 cover cutoff is explicit; later years do not receive fabricated maps.
 
 ## Quality gates before training
 
@@ -178,3 +185,30 @@ Current feature-join quality is quantified in [feature_quality.json](data/featur
 The label-quality audit verifies the frozen training target against source sizes and traces class-dependent cohort retention. Weather matching removes proportionally more ≥10 ha incidents; the cohort is selected rather than a representative sample of all Ontario fires. Exact boundary values and numeric multiples are descriptive, not measured label error or an alternative target.
 
 The source-method audit confirms forward–backward processing of the forest maps. Static/prior-year map choice does not establish historical information availability; frame the measured cover gain as retrospective association.
+
+## Operational update feed
+
+[Catalogue](https://cwfis.cfs.nrcan.gc.ca/en/catalogue/results/937eb7be-83fd-4b94-a122-9cc0385f3bf7) · [Statistics API documentation](https://api.cwfif.nrcan.gc.ca/reported-fire-stats/docs)
+
+The raw source is the GeoServer WFS layer `public:cwfif_national_reportedfires`. The downloader filters `agency_code='ON'`, sorts by `id`, and retrieves every page (10,000 rows per request). Use a fresh output directory for each snapshot:
+
+```sh
+uv run --no-sync python scripts/download_wildfires.py --output data/wildfires/ontario-new-snapshot
+```
+
+Outputs: `reports.csv` and `metadata.json` with exact query URLs, timestamps, SHA-256 and annual coverage. Public incident/update identifiers are retained; no API key is needed. Files stay under ignored `data/`.
+
+### Interpretation
+
+- `national_fire_id` identifies a fire; `id` identifies a report-history row. Repeated fire IDs describe updates and must not become independent training examples split across train/test.
+- `situation_report_date` is a report date; `record_start`/`record_end` describe history validity. A report may enter the feed later than its report date. Distinguish `fire_year` from `status_year`.
+- Individual WFS update history starts in 2010 in our snapshot, with partial first-year ingestion; historical agency-level totals are available earlier through `/ytd/by-agency?date=YYYY-MM-DD`. Earlier **detailed-record acquisition remains unresolved**: empty `/fire-list` responses do not prove no fires or that older source data never existed. Annual totals are not the chosen replacement. The current year is incomplete. Fewer report dates do not by themselves establish missing daily observations.
+- The earlier Ontario audit found suspicious 2013–2014 coverage differences versus NFDB. That comparison is a coverage warning, not an event-matched missing-fire count. NFDB supplies the separate historical incident branch; the two sources are not interchangeable.
+- Response types describe full, modified or monitored management. Blank historical categories have no documented interpretation; retain them as unspecified.
+- Missing feed records do not establish fire absence. Reporting frequency, agency practices and revisions can affect both labels and apparent changes in size.
+
+WFS paging is not an atomic snapshot. The downloader rejects duplicate row IDs and changing schemas, but a concurrent update can still change coverage; metadata records the retrieval interval. For modelling, freeze a dated snapshot, audit coverage, and use time-aware splits and information-availability rules.
+
+`/fire-list?datetime=...` returns each fire's entry valid at that requested time within the year, not every update on that date. Use the WFS history for update intervals; daily snapshots repeat still-valid entries. Neither grain is an independent daily ignition observation.
+
+The [catalogue inventory](data/fire_catalogue_inventory.json) retains all 455 screened records and three additional linked products. It replaces the repetitive page-by-page Markdown listing; screening metadata does not establish model eligibility.

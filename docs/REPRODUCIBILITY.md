@@ -22,7 +22,25 @@ uv run --no-sync python scripts/pipeline.py annual matched --output .cache/wildf
 uv run --no-sync python scripts/pipeline.py annual quantum --qubits 4 --output .cache/wildfire/annual-qsvr/new-quantum-replay --execute
 ```
 
-Prepared CSV replay uses parsed floats; the original raw classical run consumed pre-serialization floats. Preserve this distinction when checking exact predictions. To reconstruct the annual table from sources, omit `--dataset`; the runner verifies/prepares weather automatically, then aggregates NFDB incidents. Context accepts an explicit prepared weather CSV through its specialist script. Woodland requires yearly crops and the pinned boundary, acquired with `scripts/download_ontario_boundary.py`. The final reused-year evaluation is complete; preserve its original intent. Specialist collection commands remain documented in the [portable notes](ANNUAL_FINAL.md#portable-collection).
+Prepared CSV replay uses parsed floats; the original raw classical run consumed pre-serialization floats. Preserve this distinction when checking exact predictions. To reconstruct the annual table from sources, omit `--dataset`; the runner verifies/prepares weather automatically, then aggregates NFDB incidents. Context accepts an explicit prepared weather CSV through its specialist script. Woodland requires yearly crops and the pinned boundary, acquired with `scripts/download_ontario_boundary.py`. The final reused-year evaluation is complete; preserve its original intent. The [report](REPORT.md#training-freeze-and-saved-evidence) links the saved states and numerical audits.
+
+## Pipeline commands
+
+`scripts/pipeline.py annual <stage> --output <new-directory>` previews the annual stage; add `--execute` to run it. Every subcommand supports `--help`.
+
+| Stage | Purpose |
+| --- | --- |
+| `classical` | Mean/median, trend, ridge and SVR development controls |
+| `quantum` / `matched` | Qiskit QSVR or matched RBF/QSVR comparison |
+| `selectors` | Classical/QAOA/SQD subset selection |
+| `context` / `woodland` | Coverage, lag and province-masked forest diagnostics |
+| `collect` | Reconstruct frozen predictions and kernel audits without fitting |
+
+The older incident workflow uses `pipeline.py doctor --verify`, `run`, `prepare`, `status`, `screen`, `collect` and `check`. `run` previews source acquisition through training features; `run --execute` prepares that historical incident dataset. It does not replace the annual commands. Existing final intents remain closed; use a separate replica and the pinned recipe below for reproduction.
+
+For forest display assets, `uv run --only-group data --frozen python scripts/context/pipeline.py plan --include-wms` previews acquisition; `prepare` fetches the declared layers into ignored replica paths. [Numeric/display contracts](DATA_SCHEMA.md#prepared-forest-context-contract) separate measurements from styled images.
+
+Raw snapshots stay under ignored `data/`, processing and experiment caches under `.cache/`, and private hardware receipts under ignored `results/`. Recipe/source hashes identify versions. A fresh clone contains public evidence, not ignored original run records. Collecting verifies arithmetic; it does not reacquire a physical experiment.
 
 ## Preserved incident recipe
 
@@ -166,8 +184,10 @@ The final [policy release QA](data/policy_repository_checks.json) supersedes tha
 
 ## Current workflow front door
 
-Use [the pipeline commands](PIPELINE.md) for acquisition through training features, optional bounded screening/summary and existing-result collection. `pipeline.py run` previews; `run --execute` acquires missing selected sources and passes the resulting dataset between preparation/join stages. With an explicit `--plan` and `--axis`, `run --execute` also fits the plan's training-only screen and saves a compact summary. This requires a separate replica with discovery open; the original final intent blocks it before preparation. `doctor --verify` distinguishes missing inputs, changed bytes and acquisition-receipt metadata. It preserves real metadata; identical table content can live in a new provenance namespace.
+Use [the pipeline commands](REPRODUCIBILITY.md#pipeline-commands) for acquisition through training features, optional bounded screening/summary and existing-result collection. `pipeline.py run` previews; `run --execute` acquires missing selected sources and passes the resulting dataset between preparation/join stages. With an explicit `--plan` and `--axis`, `run --execute` also fits the plan's training-only screen and saves a compact summary. This requires a separate replica with discovery open; the original final intent blocks it before preparation. `doctor --verify` distinguishes missing inputs, changed bytes and acquisition-receipt metadata. It preserves real metadata; identical table content can live in a new provenance namespace.
 
 The committed `df99ef6` preparation reproduces training SHA-256 `b60618f65e1f8a71ddd9b8afe099efff49e4adf1d48acf2be6465b91207de8d8` under `historical-woodland/2fd3898f9d72da066223`; the original scored cache remains intact. A preliminary prepublication preparation is named separately in the [integration receipt](data/workflow_integration_checks.json), without relabelling its parent-commit metadata. Neither preparation is a model replication.
 
 For saved evidence, `pipeline.py collect --output <new-directory>` runs the discovery/final/policy/goal collectors. The directory must be new, and original ignored run records are required. It does not refit or reopen the final test. [Current isolated QA](data/workflow_repository_checks.json) pins 115 fixtures/all 55 help paths at `8998e2a`, with unchanged normal dependency versions and all current code bytes matching. Earlier recipe commits and QA receipts remain valid for their own snapshots.
+
+Older deadline/goal collectors bind to the documentation snapshots in their receipts. Use the corresponding historical checkout for those administrative audits; the current docs have been consolidated without changing scientific evidence.

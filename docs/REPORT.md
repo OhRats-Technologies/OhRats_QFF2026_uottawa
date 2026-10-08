@@ -1,6 +1,6 @@
 # Ontario annual wildfire regression
 
-[Live presentation](https://fireline.ohrats.party/presentation/) · [Play Fireline](https://fireline.ohrats.party/) · [Documentation Index](README.md) · [Judge Guide](JUDGES.md) · [Hardware Shot Sweep](SELECTOR_HARDWARE.md#hardware-cost-accounting) · [Annual Final Results](ANNUAL_FINAL.md)
+[Live presentation](https://fireline.ohrats.party/presentation/) · [Play Fireline](https://fireline.ohrats.party/) · [Documentation Index](README.md) · [Hardware Shot Sweep](SELECTOR_HARDWARE.md#hardware-cost-accounting)
 
 
 Development and frozen reused-year findings · October 5, 2026 · Qiskit Fall Fest open challenge. Scientific deliverables were published before **5 PM Toronto**; the deadline review is closed. Models use **1988–2018 training** and **2019–2024 reused evaluation**.
@@ -89,17 +89,21 @@ Across outer maps, mean validation/training fidelity is **.07576 at four qubits 
 
 ## Frozen 2019–2024 evaluation
 
-All settings and learned states were [published before evaluation](ANNUAL_FINAL.md). The final runner computes predictions from saved coefficients, support weights and scalers: **zero predictor fits during evaluation**. These six years overlap the inspected incident branch; they are reused evaluation, not a pristine holdout.
+All settings and learned states were [published before evaluation](#training-freeze-and-saved-evidence). The final runner computes predictions from saved coefficients, support weights and scalers: **zero predictor fits during evaluation**. These six years overlap the inspected incident branch; they are reused evaluation, not a pristine holdout.
 
 | Model | MAE (ha/fire) | RMSE (ha/fire) | Bias (ha/fire) |
 |---|---:|---:|---:|
-| training mean | 276.81 | 336.12 | -205.34 |
-| linear year trend | 286.58 | 353.63 | -233.16 |
-| ridge 10 | 294.98 | 372.24 | -261.27 |
-| matched rbf svr 4 | 299.81 | 380.52 | -272.74 |
-| matched fidelity svr 4 | 280.68 | 352.51 | -250.92 |
-| matched rbf svr 10 | 309.25 | 382.01 | -265.45 |
-| matched fidelity svr 10 | 298.99 | 380.05 | -271.00 |
+| training_mean | 276.81 | 336.12 | -205.34 |
+| training_median | 287.03 | 355.68 | -236.00 |
+| linear_year_trend | 286.58 | 353.63 | -233.16 |
+| ridge_4 | 301.08 | 379.17 | -269.43 |
+| linear_svr_4 | 299.88 | 382.90 | -276.70 |
+| matched_rbf_svr_4 | 299.81 | 380.52 | -272.74 |
+| matched_fidelity_svr_4 | 280.68 | 352.51 | -250.92 |
+| ridge_10 | 294.98 | 372.24 | -261.27 |
+| linear_svr_10 | 294.50 | 370.68 | -256.58 |
+| matched_rbf_svr_10 | 309.25 | 382.01 | -265.45 |
+| matched_fidelity_svr_10 | 298.99 | 380.05 | -271.00 |
 
 QSVR improves on matched RBF by **19.13 ha/fire at four inputs** and **10.26 at ten**, yet loses to the train-mean control. The family ordering differs from development. Six shared years support descriptive paired errors, not a significance claim. All eleven main models underestimate on average.
 
@@ -109,9 +113,9 @@ Observed annual means range from 9.34 to 656.99 ha/fire, versus training means o
 
 ![Every reused-year error](figures/annual-final/annual-reused-errors.png)
 
-The fixed **eight selectors × three predictors × three seeds** crossover is complete. Mutual-information ridge averages 276.67 MAE, only 0.14 below the constant. QAOA loses to exact/uniform selection with ridge but slightly improves on those controls with QSVR; no consistent selector advantage emerges. All combinations, repeated-subset seeds and the different-budget all-ten control are in [final notes](ANNUAL_FINAL.md).
+The fixed **eight selectors × three predictors × three seeds** crossover is complete. Mutual-information ridge averages 276.67 MAE, only 0.14 below the constant. QAOA loses to exact/uniform selection with ridge but slightly improves on those controls with QSVR; no consistent selector advantage emerges. All combinations, repeated-subset seeds and the different-budget all-ten control are in [fixed selector crossover](#fixed-selector-crossover).
 
-Selected ten-qubit eigenvalues span **0.980–1.028**, condition number **1.049**, effective rank **30.998/31**, and cross-year fidelity **.000899**. Predictions span just **57.98–59.60** ha/fire. The matrix is stable but nearly identity: numerical conditioning alone cannot certify predictive usefulness. Its saved zero-cross intercept predicts 59.01 ha/fire; actual similarity-weighted contributions change this by just -1.03 to +0.59. Narrow-bandwidth RBF4 also stays near its 57.51 intercept (-5.06 to +2.70). [Audited algebraic decomposition](results/annual-kernel-signal.json). All 24 unique final kernel spectra and PSD/concentration checks are [published](results/annual-final-audit.json). The [guide adoption table and future protocols](ANNUAL_FINAL.md#guide-adoption-and-deferral) cover scale tuning, alignment and sampled repair; they are not unrun improvements disguised as results.
+Selected ten-qubit eigenvalues span **0.980–1.028**, condition number **1.049**, effective rank **30.998/31**, and cross-year fidelity **.000899**. Predictions span just **57.98–59.60** ha/fire. The matrix is stable but nearly identity: numerical conditioning alone cannot certify predictive usefulness. Its saved zero-cross intercept predicts 59.01 ha/fire; actual similarity-weighted contributions change this by just -1.03 to +0.59. Narrow-bandwidth RBF4 also stays near its 57.51 intercept (-5.06 to +2.70). [Audited algebraic decomposition](results/annual-kernel-signal.json). All 24 unique final kernel spectra and PSD/concentration checks are [published](results/annual-final-audit.json). Per-feature scale tuning and trainable alignment would require a new budget and independent evaluation. Later measured repair diagnostics are reported separately in [hardware studies](SELECTOR_HARDWARE.md).
 
 A separately frozen **post-final input-only bandwidth probe** makes that caveat concrete. With the same ten input features and one ZZ repetition, pi/4 → pi/32 changes training mean fidelity .000805 → .538897 and effective rank 30.998 → 5.187. Four-input rank falls to 2.190, with condition number 4.58e7: eliminating identity-like similarity can instead approach a poorly conditioned, near-constant regime. No targets, test rows or predictors were used; no scale was selected. This supports the guide’s geometry mechanism, not improved regression. Ten matrices cost 4,650 additional analytic pair circuits / 48.89 s. The original 83 predictions/24 kernels still audit unchanged. Diagnostic and replication commands · [expanded 145-test/69-CLI QA](data/annual_bandwidth_repository_checks.json).
 
@@ -123,6 +127,58 @@ The [annual evidence audit](results/annual-evidence-audit.json) reproduces the t
 
 Four bounded annual follow-up plans are complete: matched bandwidth budgets, continuous-target selectors, climate context, and province-masked woodland. We prune extra architecture search. This is a proposal/evaluate/prune workflow, not full Dream-RSI policy evolution. The earlier independent policy-code study concerns the incident branch only.
 
-Final training/evaluation took **93.75/9.63 s**, with 12,092/2,232 analytic fidelity-pair circuits respectively, 36 training quantum matrices, 80 final learned predictor fits and zero evaluation fits. Selector sampling is synthetic and its cost is separate. The 80 fit count covers sklearn/QSVR fits; the calendar trend adds one polynomial fit and two constants are deterministic summaries. The [final no-fit audit](results/annual-final-audit.json) reproduces 83 predictions and 24 matrix pairs. A [267 kB evidence package](data/annual_final_evidence.zip) supports collection without raw downloads or credentials. [Source/table checks](data/annual_table_reaggregation.json), [304 rounded table values](data/annual_reporting_audit.json), [local source and figure integrity](data/annual_source_integrity.json), and [GitHub/document checks](data/annual_document_checks.json) pass. The [handoff](HANDOFF.md) is complete; board review closed at 5 PM. Test reuse, small annual sample, network/reporting changes, retrospective sources, extreme-year error and ideal simulation remain explicit limitations.
+Final training/evaluation took **93.75/9.63 s**, with 12,092/2,232 analytic fidelity-pair circuits respectively, 36 training quantum matrices, 80 final learned predictor fits and zero evaluation fits. Selector sampling is synthetic and its cost is separate. The 80 fit count covers sklearn/QSVR fits; the calendar trend adds one polynomial fit and two constants are deterministic summaries. The [final no-fit audit](results/annual-final-audit.json) reproduces 83 predictions and 24 matrix pairs. A [267 kB evidence package](data/annual_final_evidence.zip) supports collection without raw downloads or credentials. [Source/table checks](data/annual_table_reaggregation.json), [304 rounded table values](data/annual_reporting_audit.json), [local source and figure integrity](data/annual_source_integrity.json), and [GitHub/document checks](data/annual_document_checks.json) pass. The [annual closeout receipt](data/annual_goal_handoff.json) preserves the original completion checks. Test reuse, small annual sample, network/reporting changes, retrospective sources, extreme-year error and ideal simulation remain explicit limitations.
 
 Run commands and detailed evidence · [current goal](../GOAL.md) · earlier scope correction · preserved incident findings.
+
+
+## Training freeze and saved evidence
+
+The plan is [`annual_final.json`](../experiments/annual_final.json). All parameter choices and learned model states were saved before evaluation in [`annual-final-training.json`](results/annual-final-training.json), with the byte-pinned [receipt](data/annual_final_training_receipt.json). Training completed in **93.75 s**, with 80 final predictor fits, 288 classical inner fits and 216 quantum inner fits. Reusing identical kernels across C/epsilon and repeated feature subsets required 36 quantum matrices, below the cap of 50. QAOA used 109 optimizer calls, below 120. Execution was local analytic simulation; no hardware jobs.
+
+Each kernel family had 36 chronological inner candidates per width. Selected configurations:
+
+| Model | Four inputs | Ten inputs |
+|---|---|---|
+| Ridge alpha | 10 | 10 |
+| Linear SVR C / epsilon | 0.1 / 0.5 | 0.1 / 0.2 |
+| RBF C / epsilon / gamma multiplier | 10 / 0.5 / 16 | 10 / 0.05 / 4 |
+| QSVR C / epsilon / repetitions / angle amplitude | 10 / 0.5 / 2 / pi/2 | 10 / 0.5 / 1 / pi/4 |
+
+The three expanding inner folds use only training years. Feature order is canonical across selectors; no test-based subset or circuit choice is allowed. Train-mean, train-median and calendar-year controls remain in the comparison.
+
+## Annual values and denominators
+
+| Year | Size-observed fires | Mean ha/fire | Recorded hectares | Identity exclusions |
+|---|---:|---:|---:|---:|
+| 2019 | 536 | 503.05 | 269,633.90 | 2 |
+| 2020 | 605 | 25.51 | 15,436.40 | 4 |
+| 2021 | 1,194 | 656.99 | 784,447.00 | 6 |
+| 2022 | 274 | 9.34 | 2,560.10 | 2 |
+| 2023 | 738 | 598.20 | 441,471.50 | 10 |
+| 2024 | 481 | 186.72 | 89,812.70 | 10 |
+
+Unknown/negative size is excluded only from the size denominator; this snapshot has no unknown sizes in these six years. These are recorded source values, not a complete final-area census.
+
+![Each annual error](figures/annual-final/annual-reused-errors.png)
+
+## Fixed selector crossover
+
+Mean MAE across three sensitivity seeds on the same years. Fixed ridge alpha=1, RBF C=1/epsilon=.2, and QSVR C=1/epsilon=.2/reps=1/amplitude=pi/2.
+
+| Selector | Ridge | RBF-SVR | QSVR |
+|---|---:|---:|---:|
+| physical_four | 302.64 | 300.51 | 295.19 |
+| all_ten | 291.12 | 299.07 | 292.94 |
+| lasso_ranking | 296.85 | 307.27 | 290.64 |
+| mutual_information | 276.67 | 297.26 | 286.70 |
+| exact_same_qubo | 277.22 | 293.02 | 299.13 |
+| qaoa_same_qubo | 286.80 | 299.51 | 297.55 |
+| uniform_bitstring_budget | 281.44 | 296.01 | 298.74 |
+| random_four | 296.67 | 306.04 | 294.79 |
+
+Mutual-information ridge is only 0.14 ha/fire below the training mean. This best-looking combination is not meaningful independent confirmation. QAOA ridge loses to exact QUBO and uniform sampling; with QSVR, QAOA is slightly below those two controls. Selector ranking depends on the predictor; no consistent QAOA benefit emerges. All-ten has a different input/qubit budget.
+
+![Selector crossover](figures/annual-final/annual-final-crossover.png)
+
+The [final audit](results/annual-final-audit.json) contains every selected kernel’s eigenspectrum, condition number, effective rank and cross-year similarity. The [saved-model signal check](results/annual-kernel-signal.json) reconstructs predictions as intercept plus weighted similarities. Both use saved states without fitting. Public collection commands are in [reproduction](REPRODUCIBILITY.md#current-annual-study).

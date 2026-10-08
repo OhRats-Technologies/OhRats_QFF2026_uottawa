@@ -16,7 +16,7 @@ From the repository root:
 bun run web/presentation/serve.ts
 ```
 
-Open `http://127.0.0.1:8790/web/demo/`. The same server serves the presentation at `/web/presentation/`. [Design and verification](../../docs/FIRELINE_CANVAS.md).
+Open `http://127.0.0.1:8790/web/demo/`. The same server serves the presentation at `/web/presentation/`. Numerical and browser checks are described below.
 
 The first three seasons use public 1988–2018 development data and a 20-feature library. Season four uses the reused 2019–2024 years with weather and fire-memory inputs. QAOA/SQD explores four-feature subsets. These are local teaching calculations; game scores do not enter scientific results. Playing needs no Python, credentials or QPU access.
 
@@ -29,3 +29,7 @@ bun test web/demo/canvas/*.test.js
 ```
 
 Authoring browser QA uses `canvas/browser-check.mjs` and `canvas/interaction-check.mjs` with an external Playwright installation. They are not needed to play. Public input export: `uv run --no-sync python scripts/build_canvas_data.py`.
+
+The JS engine has Qiskit amplitude/Gram-matrix goldens and sklearn precomputed-SVR controls. The sphere shows the first qubit’s reduced Bloch vector; entanglement can shorten it. The Ontario raster and recorded 2021 fire points are dated context, not predicted hotspots.
+
+[Coach verification](../../docs/data/fireline_coach_verification.json) covers sequential hints and cursor help through all four seasons. [Kernel teaching](../../docs/data/fireline_kernel_teaching_verification.json), [layout](../../docs/data/fireline_layout_verification.json) and [automatic testing](../../docs/data/fireline_live_test_verification.json) retain their dated checks. These receipts verify behavior and numerical agreement, not player enjoyment.
